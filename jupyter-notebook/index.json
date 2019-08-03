@@ -52,7 +52,7 @@
         "port": 8888
       }
     ],
-    "uimessage1": "\u001b[32mYour Interactive Bash Terminal.\r\n"
+    "uimessage1": "\u001b[32mYour Interactive Bash Terminal.  Ernesto.Net and LearningVoyage.com\r\n"
   },
   "backend": {
     "imageid": "docker"
