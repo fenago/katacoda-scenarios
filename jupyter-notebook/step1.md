@@ -4,7 +4,7 @@ You will now run a Docker container for Jupyter Notebook. Note: this may take up
 
 Run the Jupyter Notebook container image:
 
-`docker run -p 8888:8888 -d --name jupyter jupyter/scipy-notebook:83ed2c63671f`{{execute}}
+`docker run -p 8888:8888 -d --name lvlabenv fenago/lv-ml-jupyter:v1`{{execute}}
 
 ## Further prepare the container
 To prepare the container we will run a script inside the container to install several Python packages
@@ -14,7 +14,7 @@ Run this script to execute these steps:
 * copy the script, make the copy executable and then run the script inside the container - this will install several Python packages using pip
 * restart the container
 
-`sh runPrep.sh`{{execute}}
+`sh docker ps -a`{{execute}}
 
 ## Notes on what is happening under the covers
 These are the individual steps inside this script. You do not have to execute them - because they are in the *runPrep.sh* script.
