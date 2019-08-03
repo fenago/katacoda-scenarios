@@ -25,6 +25,14 @@
           "target": "~/"
         },
         {
+          "file": "iris.csv",
+          "target": "~/"
+        },
+        {
+          "file": "pima-indians-diabetes.csv",
+          "target": "~/"
+        },
+        {
           "file": "runPrep.sh",
           "target": "~/"
         }
