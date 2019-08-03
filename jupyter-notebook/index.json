@@ -2,7 +2,7 @@
   "title": "Machine Learning and Jupyter Notebook",
   "description": "A scenario to play with Jupyter Notebooks. You will have access to a Jupyter Scipy Notebook based on the jupyter/scipy-notebook image. You can create and load and run notebooks.",
   "difficulty": "beginner",
-  "time": "10 minutes (to get going)",
+  "time": "15 minutes (to get going)",
   "details": {
     "steps": [{
       "title": "Step 1 - Run the Jupyter Notebook environment",
@@ -13,7 +13,7 @@
     }],
     "intro": {
       "text": "intro.md",
-      "credits": ""
+      "credits": "Lucas Jellema, Ernesto.Net, LearningVoyage.com"
     },
     "finish": {
       "text": "finish.md"
@@ -32,10 +32,7 @@
           "file": "pima-indians-diabetes.csv",
           "target": "~/"
         },
-        {
-          "file": "abalone.csv",
-          "target": "~/"
-        },
+        
         {
           "file": "runPrep.sh",
           "target": "~/"
