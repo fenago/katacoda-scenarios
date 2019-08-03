@@ -33,38 +33,6 @@
           "target": "~/"
         },
         {
-          "file": "abalone.csv",
-          "target": "~/"
-        },
-        {
-          "file": "data_banknote_authentication.csv",
-          "target": "~/"
-        },
-        {
-          "file": "insurance.csv",
-          "target": "~/"
-        },
-        {
-          "file": "ionosphere.csv",
-          "target": "~/"
-        },
-        {
-          "file": "learning_rate.xlsx",
-          "target": "~/"
-        },
-        {
-          "file": "seeds_dataset.csv",
-          "target": "~/"
-        },
-        {
-          "file": "sonar.all-data.csv",
-          "target": "~/"
-        },
-        {
-          "file": "winequality-white.csv",
-          "target": "~/"
-        },
-        {
           "file": "runPrep.sh",
           "target": "~/"
         }
