@@ -2,7 +2,7 @@
   "title": "Load ML Data from CSV",
   "description": "You must know how to load data prior to training a ML model.",
   "difficulty": "Beginner",
-  "time": "30 Minutes",
+  "time": "15 Minutes",
   "details": {
     "steps": [
       {
@@ -29,19 +29,7 @@
       "text": "finish.md"
     }
   },
-    "assets": {
-      "client": [
-        {
-          "file": "iris.csv",
-          "target": "~/"
-        },
-        {
-          "file": "pima-indian-diabetes.csv",
-          "target": "~/"
-        }
-      ]
-    }
-  },
+   
   "environment": {
     "uilayout": "editor-terminal"
   },
