@@ -25,6 +25,13 @@
     "intro": {
       "text": "intro.md"
     },
+    "assets":{
+      "client":[
+        {
+          "file": "iris.csv"",
+          "target": "~/"
+        }
+        ],
     "finish": {
       "text": "finish.md"
     }
