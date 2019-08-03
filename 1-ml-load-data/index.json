@@ -29,6 +29,19 @@
       "text": "finish.md"
     }
   },
+    "assets": {
+      "client": [
+        {
+          "file": "iris.csv",
+          "target": "~/"
+        },
+        {
+          "file": "pima-indian-diabetes.csv",
+          "target": "~/"
+        }
+      ]
+    }
+  },
   "environment": {
     "uilayout": "editor-terminal"
   },
