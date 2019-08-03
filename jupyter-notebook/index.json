@@ -32,7 +32,6 @@
           "file": "pima-indians-diabetes.csv",
           "target": "~/"
         },
-        
         {
           "file": "runPrep.sh",
           "target": "~/"
