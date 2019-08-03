@@ -14,7 +14,7 @@ Run this script to execute these steps:
 * copy the script, make the copy executable and then run the script inside the container - this will install several Python packages using pip
 * restart the container
 
-`sh docker ps -a`{{execute}}
+`sh df -h`{{execute}}
 
 ## Notes on what is happening under the covers
 These are the individual steps inside this script. You do not have to execute them - because they are in the *runPrep.sh* script.
