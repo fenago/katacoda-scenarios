@@ -25,7 +25,11 @@
     "intro": {
       "text": "intro.md"
     },
-    "environment": {
+    "finish": {
+      "text": "finish.md"
+    }
+  },
+  "environment": {
     "uilayout": "editor-terminal"
   },
   "backend": {
