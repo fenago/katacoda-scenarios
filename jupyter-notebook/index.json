@@ -29,10 +29,6 @@
           "target": "~/"
         },
         {
-          "file": "abalone.csv",
-          "target": "~/"
-        },
-        {
           "file": "pima-indians-diabetes.csv",
           "target": "~/"
         },
