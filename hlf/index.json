@@ -21,7 +21,7 @@
       "text": "finish.md"
     }
   },
-  "environment": {},
+  "environment": {editor-terminal},
   "backend": {
     "imageid": "ubuntu"
   }
