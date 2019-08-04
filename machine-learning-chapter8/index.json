@@ -32,7 +32,6 @@
         {"file": "prepareContainer.sh"                    ,"target": "~/"},
         {"file": "predict.ipynb"                          ,"target": "~/"},
         {"file": "coefficients.ipynb"                     ,"target": "~/"},
-        {"file": "linear_regression_wine_quality.ipynb"   ,"target": "~/"},
         {"file": "quality-white.csv"                      ,"target": "~/"},
         {"file": "contrived-dataset.xlsx"                 ,"target": "~/"}
       ]
