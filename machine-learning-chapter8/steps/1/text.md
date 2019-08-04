@@ -7,7 +7,7 @@ When the container is running, execute this statement:
 Output of above command will show token. You need that for logging in.
 
 ```
-12cf40356573270384da65aa5fb82a02b6b4c20679dc34d5
+12cf40356573270384da65aa5fb82a02b6b4c20679dc34d
 ```
 
 Next, you can open the Jupyter Notebook at 

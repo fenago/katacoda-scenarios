@@ -1,4 +1,3 @@
-
 # %%
 '''
 ## Normalize Data
