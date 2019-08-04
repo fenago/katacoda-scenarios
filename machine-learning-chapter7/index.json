@@ -1,0 +1,66 @@
+{
+  "title": "Machine Learning - Chapter 7",
+  "description": "Run Python Code with Jupyter Notebooks",
+  "difficulty": "Beginner",
+  "time": "10 minutes",
+  "details": {
+    "steps": [{
+      "title": "Jupyter Notebook",
+      "text": "steps/1/text.md"
+    },
+ {
+      "title": "Mean and Variance",
+      "text": "steps/2/text.md"
+    },    
+	{
+      "title": "Covariance",
+      "text": "steps/3/text.md"
+    },
+	{
+      "title": "Calculate Coefficients",
+      "text": "steps/4/text.md"
+    },
+    {
+        "title": "Simple linear regression contrived",
+        "text": "steps/5/text.md"
+    },
+    {
+        "title": "Simple linear regression insurance",
+        "text": "steps/6/text.md"
+      }],
+    "intro": {
+      "text": "intro.md",
+      "code": "set-env.sh"
+    },
+    "finish": {
+      "text": "finish.md"
+    },
+    "assets": {
+      "client": [
+        {"file": "prepareContainer.sh"                        ,"target": "~/"},
+        {"file": "mean_and_variance.ipynb"                    ,"target": "~/"},
+        {"file": "covariance.ipynb"                           ,"target": "~/"},
+        {"file": "calculate_coefficients.ipynb"               ,"target": "~/"},
+        {"file": "simple_linear_regression_contrived.ipynb"   ,"target": "~/"},
+        {"file": "simple_linear_regression_insurance.ipynb"   ,"target": "~/"},
+        {"file": "contrived-dataset.xlsx"                     ,"target": "~/"},
+        {"file": "insurance-dataset.xlsx"                     ,"target": "~/"},
+        {"file": "insurance.csv"                              ,"target": "~/"}
+      ]
+    }
+  },
+  "environment": {
+    "uilayout": "terminal-iframe",
+    "showdashboard": true,
+    "dashboards": [
+      {
+        "name": "Jupyter Notebook",
+        "port": 8888
+      }
+    ],
+    "uimessage1": "\u001b[32mYour Interactive Bash Terminal.\r\n"
+  },
+  "backend": {
+    "imageid": "docker"
+  }
+}
