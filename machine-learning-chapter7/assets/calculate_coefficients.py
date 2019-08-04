@@ -20,6 +20,7 @@ requires the mean of the list to be provided as an argument, just so we don’t 
 it more than once.
 '''
 
+# %%
 # Calculate the variance of a list of numbers
 def variance(values, mean):
 	return sum([(x-mean)**2 for x in values])
@@ -32,7 +33,7 @@ We must estimate the values for two coefficients in simple linear regression.
 We already have functions to calculate covariance() and variance(). Next, we need to
 estimate a value for B0, also called the intercept as it controls the starting point of the line
 where it intersects the y-axis.<br />
-	B0 = mean(y) − B1 × mean(x) (7.8)
+	B0 = mean(y) − B1 × mean(x)<br />
 Again, we know how to estimate B1 and we have a function to estimate mean(). We can
 put all of this together into a function named coefficients() that takes the dataset as an
 argument and returns the coefficients.

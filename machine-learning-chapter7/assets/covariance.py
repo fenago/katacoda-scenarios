@@ -13,6 +13,7 @@ def mean(values):
 Below is a function named covariance() that calculates the covariance for a list of numbers.
 '''
 
+# %%
 # Calculate covariance between x and y
 def covariance(x, mean_x, y, mean_y):
 	covar = 0.0
