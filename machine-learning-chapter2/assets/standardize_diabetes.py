@@ -22,7 +22,7 @@ def str_column_to_float(dataset, column):
 
 # %%
 '''
-Standardize Data
+## Standardize Data
 Standardization is a rescaling technique that refers to centering the distribution of the data on
 the value 0 and the standard deviation to the value 1. Together, the mean and the standard
 deviation can be used to summarize a normal distribution, also called the Gaussian distribution
@@ -38,6 +38,7 @@ as the sum of all values for a column divided by the total number of values.
 The function below named column means() calculates the mean values for each column in
 the dataset
 '''
+
 # calculate column means
 def column_means(dataset):
 	means = [0 for i in range(len(dataset[0]))]
@@ -46,10 +47,13 @@ def column_means(dataset):
 		means[i] = sum(col_values) / float(len(dataset))
 	return means
 
+# %%
 '''
 The function below named column stdevs() calculates the standard deviation of values for
 each column in the dataset and assumes the means have already been calculated
 '''
+
+# %%
 # calculate column standard deviations
 def column_stdevs(dataset, means):
 	stdevs = [0 for i in range(len(dataset[0]))]
@@ -58,6 +62,7 @@ def column_stdevs(dataset, means):
 		stdevs[i] = sum(variance)
 	stdevs = [sqrt(x/(float(len(dataset)-1))) for x in stdevs]
 	return stdevs
+
 
 # %%
 '''
@@ -79,6 +84,8 @@ def standardize_dataset(dataset, means, stdevs):
 Running the example prints the first row of the dataset, first in a raw format as loaded, and
 then standardized which allows us to see the difference for comparison.
 '''
+
+# %%
 # Load pima-indians-diabetes dataset
 filename = 'pima-indians-diabetes.csv'
 dataset = load_csv(filename)

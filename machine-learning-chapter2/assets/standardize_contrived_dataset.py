@@ -2,9 +2,10 @@
 # Example of standardizing a contrived dataset
 from math import sqrt
 
+
 # %%
 '''
-Standardize Data
+## Standardize Data
 Standardization is a rescaling technique that refers to centering the distribution of the data on
 the value 0 and the standard deviation to the value 1. Together, the mean and the standard
 deviation can be used to summarize a normal distribution, also called the Gaussian distribution
@@ -29,11 +30,14 @@ def column_means(dataset):
 		col_values = [row[i] for row in dataset]
 		means[i] = sum(col_values) / float(len(dataset))
 	return means
+
 # %%
 '''
 The function below named column stdevs() calculates the standard deviation of values for
 each column in the dataset and assumes the means have already been calculated
 '''
+
+
 # %%
 # calculate column standard deviations
 def column_stdevs(dataset, means):

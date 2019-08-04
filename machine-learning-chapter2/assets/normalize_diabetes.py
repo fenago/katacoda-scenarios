@@ -44,6 +44,7 @@ def dataset_minmax(dataset):
 Below is an implementation of this in a function called normalize dataset() that normalizes
 values in each column of a provided dataset.
 '''
+
 # %%
 # Rescale dataset columns to the range 0-1
 def normalize_dataset(dataset, minmax):

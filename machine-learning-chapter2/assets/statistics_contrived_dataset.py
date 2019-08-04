@@ -2,6 +2,7 @@
 # Example of calculating stats on a contrived dataset
 from math import sqrt
 
+
 # %%
 '''
 ## Standardize Data
@@ -35,6 +36,7 @@ def column_means(dataset):
 The function below named column stdevs() calculates the standard deviation of values for
 each column in the dataset and assumes the means have already been calculated
 '''
+
 # %%
 # calculate column standard deviations
 def column_stdevs(dataset, means):
@@ -45,10 +47,12 @@ def column_stdevs(dataset, means):
 	stdevs = [sqrt(x/(float(len(dataset)-1))) for x in stdevs]
 	return stdevs
 
+
 # %%
 '''
 Using the contrived dataset, we can estimate the summary statistics.
 '''
+
 # %%
 # Standardize dataset
 dataset = [[50, 30], [20, 90], [30, 50]]
