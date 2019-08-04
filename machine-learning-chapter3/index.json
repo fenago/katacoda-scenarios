@@ -1,0 +1,56 @@
+{
+  "title": "Machine Learning - Chapter 3",
+  "description": "Run Python Code with Katacoda.",
+  "difficulty": "Beginner",
+  "time": "10 minutes",
+  "details": {
+    "steps": [{
+      "title": "Algorithm Evaluation Methods",
+      "text": "steps/1/text.md"
+    },
+ {
+      "title": "Train and Test Split",
+      "text": "steps/2/text.md",
+      "verify": "steps/2/verify.sh",
+      "answer": "steps/2/answer.md"
+    },    
+	{
+      "title": "k-fold Cross-Validation Split",
+      "text": "steps/3/text.md",
+      "verify": "steps/3/verify.sh",
+      "answer": "steps/3/answer.md"
+    }],
+    "intro": {
+      "text": "intro.md"
+    },
+    "finish": {
+      "text": "finish.md"
+    },
+    "assets": {
+      "client": [
+        {	
+          "file": "*",	
+          "target": "~/"	
+        }
+      ]
+    }
+  },
+  "files": [
+    "split_train_test.py",
+    "cross_validation_split.py"
+    ],
+  "environment": {
+    "uilayout": "editor-terminal",
+    "showdashboard": false,
+    "dashboards": [
+      {
+        "name": "Jupyter Notebook",
+        "port": 8888
+      }
+    ],
+    "uimessage1": "\u001b[32mYour Interactive Bash Terminal.\r\n"
+  },
+  "backend": {
+    "imageid": "python"
+  }
+}

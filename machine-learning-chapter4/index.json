@@ -1,0 +1,75 @@
+{
+  "title": "Machine Learning - Chapter 4",
+  "description": "Run Python Code with Katacoda.",
+  "difficulty": "Beginner",
+  "time": "10 minutes",
+  "details": {
+    "steps": [{
+      "title": "Evaluation Metrics",
+      "text": "steps/1/text.md"
+    },
+ {
+      "title": "Classification Accuracy",
+      "text": "steps/2/text.md",
+      "verify": "steps/2/verify.sh",
+      "answer": "steps/2/answer.md"
+    },    
+	{
+      "title": "Confusion Matrix",
+      "text": "steps/3/text.md",
+      "verify": "steps/3/verify.sh",
+      "answer": "steps/3/answer.md"
+    },
+  	{
+      "title": "Confusion Matrix Pretty",
+      "text": "steps/4/text.md"
+    },
+  	{
+      "title": "Mean Absolute Error",
+      "text": "steps/5/text.md",
+      "verify": "steps/5/verify.sh",
+      "answer": "steps/5/answer.md"
+    },
+  	{
+      "title": "Root Mean Squared Error",
+      "text": "steps/6/text.md",
+      "verify": "steps/6/verify.sh",
+      "answer": "steps/6/answer.md"
+    }],
+    "intro": {
+      "text": "intro.md"
+    },
+    "finish": {
+      "text": "finish.md"
+    },
+    "assets": {
+      "client": [
+        {	
+          "file": "*",	
+          "target": "~/"	
+        }
+      ]
+    }
+  },
+  "files": [
+    "classification_accuracy.py",
+    "confusion_matrix.py",
+    "confusion_matrix_pretty.py",
+    "mean_absolute_error.py",
+    "root_mean_squared_error.py"
+    ],
+  "environment": {
+    "uilayout": "editor-terminal",
+    "showdashboard": true,
+    "dashboards": [
+      {
+        "name": "Jupyter Notebook",
+        "port": 8888
+      }
+    ],
+    "uimessage1": "\u001b[32mYour Interactive Bash Terminal.\r\n"
+  },
+  "backend": {
+    "imageid": "python"
+  }
+}
