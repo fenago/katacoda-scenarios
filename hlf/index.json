@@ -1,6 +1,6 @@
 {
-  "title": "HyperLedger Fabric",
-  "description": "HyperLedger 1.4.x Environment",
+  "title": "HyperLedger Fabric 1.4.x Environment",
+  "description": "HyperLeger Playground",
   "difficulty": "Intermediate",
   "time": "60 minutes",
   "details": {
@@ -21,7 +21,9 @@
       "text": "finish.md"
     }
   },
-  "environment": {editor-terminal},
+  "environment": {
+    "uilayout": "editor-terminal"
+  },
   "backend": {
     "imageid": "ubuntu"
   }
