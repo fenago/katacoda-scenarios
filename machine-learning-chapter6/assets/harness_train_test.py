@@ -9,7 +9,7 @@ from csv import reader
 '''
 ## Train-Test Algorithm Test Harness
 The train-test split is a simple resampling method that can be used to evaluate a machine
-learning algorithm. As such, it is a good starting point for developing a test harness. <br/ >
+learning algorithm. As such, it is a good starting point for developing a test harness. <br />
 
 Below  function takes a dataset and an algorithm and return a performance score. It takes 3 fixed arguments
 including the dataset, the algorithm function and the split percentage for the train-test split.
