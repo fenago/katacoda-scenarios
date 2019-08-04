@@ -9,9 +9,6 @@ The first coefficient in is always the intercept, also called the bias or b0 as 
 not responsible for a specific input value.
 '''
 
-
-# Example of making a prediction with coefficients
-
 # %%
 # Make a prediction
 def predict(row, coefficients):

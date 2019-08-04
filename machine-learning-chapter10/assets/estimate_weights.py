@@ -1,5 +1,13 @@
-# Example of training weights
 
+# %%
+'''
+## Making Predictions
+The first step is to develop a function that can make predictions. This will be needed both in
+the evaluation of candidate weight values in stochastic gradient descent, and after the model is
+finalized and we wish to start making predictions on test data or new data. Below is a function
+named predict() that predicts an output value for a row given a set of weights. The first
+weight is always the bias as it is standalone and not responsible for a specific input value.
+'''
 
 # %%
 # Make a prediction with weights
@@ -8,7 +16,6 @@ def predict(row, weights):
 	for i in range(len(row)-1):
 		activation += weights[i + 1] * row[i]
 	return 1.0 if activation >= 0.0 else 0.0
-
 
 
 
