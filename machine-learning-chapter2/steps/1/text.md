@@ -2,12 +2,12 @@ We will run Jupyter Notebook as a Docker container. This setup will take some ti
 
 ## Login
 When the container is running, execute this statement:
-`docker exec -it jupyter bash -c 'jupyter notebook list'`{{execute}}
+`docker exec -it jupyter bash -c 'jupyter notebook list' | cut -d'=' -f 2 | cut -d' ' -f 1`{{execute}}
 
-This will show something like:
+Output of above command will show token. You need that for logging in.
+
 ```
-Currently running servers:
-http://0.0.0.0:8888/?token=12cf40356573270384da65aa5fb82a02b6b4c20679dc34d5 :: /home/jovyan
+12cf40356573270384da65aa5fb82a02b6b4c20679dc34d5
 ```
 
 The token is the value behind `/?token=`. You need that for logging in.
