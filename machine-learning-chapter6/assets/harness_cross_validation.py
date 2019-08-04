@@ -1,4 +1,3 @@
-
 # %%
 '''
 ## Cross-Validation Algorithm Test Harness
@@ -62,7 +61,7 @@ robust estimate of algorithm performance. We can tie all of this together with a
 example on the diabetes dataset with the Zero Rule algorithm.
 '''
 
-
+# %%
 # Evaluate an algorithm using a cross validation split
 def evaluate_algorithm(dataset, algorithm, n_folds, *args):
 	folds = cross_validation_split(dataset, n_folds)
