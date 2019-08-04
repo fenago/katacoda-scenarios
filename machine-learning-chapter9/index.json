@@ -31,7 +31,7 @@
       "client": [
         {"file": "prepareContainer.sh"                    ,"target": "~/"},
         {"file": "predict.ipynb"                          ,"target": "~/"},
-        {"file": "coefficients.ipynb"                     ,"target": "~/"},
+        {"file": "estimate_coefficients.ipynb"            ,"target": "~/"},
         {"file": "logistic_regression_diabetes.ipynb"     ,"target": "~/"},
         {"file": "pima-indians-diabetes.csv"              ,"target": "~/"},
         {"file": "contrived-dataset.xlsx"                 ,"target": "~/"}
