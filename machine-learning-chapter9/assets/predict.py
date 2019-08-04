@@ -24,7 +24,7 @@ The first coefficient in is always the intercept, also called the bias or b0 as 
 not responsible for a specific input value.
 '''
 
-
+# %%
 # Make a prediction with coefficients
 def predict(row, coefficients):
 	yhat = coefficients[0]
@@ -36,7 +36,6 @@ def predict(row, coefficients):
 
 # %%
 '''
-
 There are two inputs values (X1 and X2) and three coefficient values (b0, b1 and b2).
 Running the following snippet will give predictions that are reasonably close to the expected output
 (y) values and when rounded make correct predictions of the class.

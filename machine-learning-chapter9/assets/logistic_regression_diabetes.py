@@ -62,6 +62,8 @@ These behaviors are provided in the cross validation split(), accuracy metric() 
 evaluate algorithm() helper functions.
 '''
 
+
+# %%
 # Split a dataset into k folds
 def cross_validation_split(dataset, n_folds):
 	dataset_split = list()
@@ -130,6 +132,7 @@ def logistic_regression(train, test, l_rate, n_epoch):
 		yhat = round(yhat)
 		predictions.append(yhat)
 	return(predictions)
+
 
 
 # %%
