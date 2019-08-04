@@ -17,4 +17,10 @@ def cross_validation_split(dataset, folds=3):
 		dataset_split.append(fold)
 	return dataset_split
 
+# test cross validation split
+seed(1)
+dataset = [[1], [2], [3], [4], [5], [6], [7], [8], [9], [10]]
+folds = cross_validation_split(dataset, 4)
+print(folds)
+
 </pre>

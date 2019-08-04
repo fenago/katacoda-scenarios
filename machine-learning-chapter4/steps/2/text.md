@@ -24,3 +24,5 @@ accuracy = accuracy_metric(actual, predicted)
 print(accuracy)
 
 </pre>
+
+Now, run the python code by running: `python classification_accuracy.py`{{execute}}

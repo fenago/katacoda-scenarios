@@ -9,7 +9,6 @@ Output of above command will show token. You need that for logging in.
 ```
 12cf40356573270384da65aa5fb82a02b6b4c20679dc34d5
 ```
-The token is the value behind `/?token=`. You need that for logging in.
 
 Next, you can open the Jupyter Notebook at 
  https://[[HOST_SUBDOMAIN]]-8888-[[KATACODA_HOST]].environments.katacoda.com/
