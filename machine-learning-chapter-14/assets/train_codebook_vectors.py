@@ -1,8 +1,31 @@
+# %%
 # Example of training a set of codebook vectors
 from math import sqrt
 from random import randrange
 from random import seed
 
+
+# %%
+'''
+## Training Codebook Vectors
+The first step in training a set of codebook vectors is to initialize the set. We can initialize it with
+patterns constructed from random features in the training dataset. Below is a function named
+random codebook() that implements this. Random input and output features are selected from
+the training data.
+
+After the codebook vectors are initialized to a random set, they must be adapted to best summarize the training data. 
+This is done iteratively.
+
+- **Epochs:** At the top level, the process is repeated for a fixed number of epochs or exposures
+of the training data.
+- **Training Dataset:** Within an epoch, each training pattern is used one at a time to
+update the set of codebook vectors.
+- **Pattern Features:** For a given training pattern, each feature of a best matching codebook
+vector is updated to move it closer or further away.
+'''
+
+
+# %%
 # calculate the Euclidean distance between two vectors
 def euclidean_distance(row1, row2):
 	distance = 0.0
@@ -26,6 +49,17 @@ def random_codebook(train):
 	codebook = [train[randrange(n_records)][i] for i in range(n_features)]
 	return codebook
 
+
+# %%
+'''
+Below is a function named train codebooks()
+implements the procedure for training a set of codebook vectors given a training dataset. The
+function takes 3 additional arguments to the training dataset, the number of codebook vectors
+to create and train, the initial learning rate and the number of epochs for which to train the
+codebook vectors.
+'''
+
+# %%
 # Train a set of codebook vectors
 def train_codebooks(train, n_codebooks, lrate, epochs):
 	codebooks = [random_codebook(train) for i in range(n_codebooks)]
@@ -44,6 +78,18 @@ def train_codebooks(train, n_codebooks, lrate, epochs):
 		print('>epoch=%d, lrate=%.3f, error=%.3f' % (epoch, rate, sum_error))
 	return codebooks
 
+
+# %%
+'''
+Running this example trains a set of 2 codebook vectors for 10 epochs with an initial learning
+rate of 0.3. The details are printed each epoch and the set of 2 codebook vectors learned
+from the training data is displayed. We can see that the changes to learning rate meet our
+expectations explored above for each epoch. We can also see that the sum squared error each
+epoch does continue to drop at the end of training and that there may be an opportunity to
+tune the example further to achieve less error.
+'''
+
+# %%
 # Test the training function
 seed(1)
 dataset = [[2.7810836,2.550537003,0],

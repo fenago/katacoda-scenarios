@@ -1,8 +1,22 @@
+# %%
 # Bagging Algorithm on the Sonar dataset
 from random import seed
 from random import randrange
 from csv import reader
 
+
+# %%
+'''
+## Sonar Case Study
+In this section, we will apply the Bagging algorithm to the Sonar dataset. The example assumes that a CSV copy of the dataset is in the 
+current working directory with the file name sonar.all-data.csv.
+
+The dataset is first loaded, the string values converted to numeric and the output column
+is converted from strings to the integer values of 0 to 1. This is achieved with helper functions load csv(), str column to float() and str column to int() to load and prepare the
+dataset.
+'''
+
+# %%
 # Load a CSV file
 def load_csv(filename):
 	dataset = list()
@@ -30,6 +44,16 @@ def str_column_to_int(dataset, column):
 		row[column] = lookup[row[column]]
 	return lookup
 
+# %%
+'''
+We will use k-fold cross-validation to estimate the performance of the learned model on
+unseen data. This means that we will construct and evaluate k models and estimate the
+performance as the mean model error. Classification accuracy will be used to evaluate each
+model. These behaviors are provided in the cross validation split(), accuracy metric()
+and evaluate algorithm() helper functions.
+'''
+
+# %%
 # Split a dataset into k folds
 def cross_validation_split(dataset, n_folds):
 	dataset_split = list()
@@ -70,6 +94,18 @@ def evaluate_algorithm(dataset, algorithm, n_folds, *args):
 		scores.append(accuracy)
 	return scores
 
+
+# %%
+'''
+We will also use an implementation of the Classification and Regression Trees (CART)
+algorithm adapted for bagging with the helper functions from Chapter 11 including test split()
+to split a dataset into groups, gini index() to evaluate a split point, get split() to find an
+optimal split point, to terminal(), split() and build tree() used to create a single decision
+tree, predict() to make a prediction with a decision tree and the subsample() function
+described in the previous step to make a subsample of the training dataset.
+'''
+
+# %%
 # Split a dataset based on an attribute and an attribute value
 def test_split(index, value, dataset):
 	left, right = list(), list()
@@ -172,11 +208,28 @@ def subsample(dataset, ratio):
 		sample.append(dataset[index])
 	return sample
 
+# %%
+'''
+A new function named bagging_predict() is developed that is responsible for making a
+prediction with each decision tree and combining the predictions into a single return value. This
+is achieved by selecting the most common prediction from the list of predictions made by the
+bagged trees.
+'''
+
 # Make a prediction with a list of bagged trees
 def bagging_predict(trees, row):
 	predictions = [predict(tree, row) for tree in trees]
 	return max(set(predictions), key=predictions.count)
 
+
+# %%
+'''
+Finally, a new function named bagging() is developed that is responsible for creating the
+samples of the training dataset, training a decision tree on each, then making predictions on the
+test dataset using the list of bagged trees. The complete example is listed below.
+'''
+
+# %%
 # Bootstrap Aggregation Algorithm
 def bagging(train, test, max_depth, min_size, sample_size, n_trees):
 	trees = list()
@@ -187,6 +240,25 @@ def bagging(train, test, max_depth, min_size, sample_size, n_trees):
 	predictions = [bagging_predict(trees, row) for row in test]
 	return(predictions)
 
+
+# %%
+'''
+A k value of 5 was used for cross-validation, giving each fold 208 5 = 41:6 or just over 40
+records to be evaluated upon each iteration.
+
+Deep trees were constructed with a max depth of 6 and a minimum number of training rows
+at each node of 2. Samples of the training dataset were created with 50% the size of the original
+dataset. This was to force some variety in the dataset subsamples used to train each tree. The
+default for bagging is to have the size of sample datasets match the size of the original training
+dataset.
+
+A series of 4 different numbers of trees were evaluated to show the behavior of the algorithm.
+The accuracy from each fold and the mean accuracy for each configuration are printed. We can
+see a trend of some minor lift in performance as the number of trees is increased.
+'''
+
+
+# %%
 # Test bagging on the sonar dataset
 seed(1)
 # load and prepare data

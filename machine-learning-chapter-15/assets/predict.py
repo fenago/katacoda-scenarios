@@ -1,6 +1,22 @@
+# %%
 # Example of making predictions
 from math import exp
 
+# %%
+'''
+## Forward-Propagate
+We can calculate an output from a neural network by propagating an input signal through
+each layer until the output layer outputs its values. We call this forward-propagation. It is the
+technique we will need to generate predictions during training that will need to be corrected,
+and it is the method we will need after the network is trained to make predictions on new data.
+
+We can break forward-propagation down into three parts:
+1. Neuron Activation.
+2. Neuron Transfer.
+3. Forward-Propagation.
+'''
+
+# %%
 # Calculate neuron activation for an input
 def activate(weights, inputs):
 	activation = weights[-1]
@@ -24,11 +40,37 @@ def forward_propagate(network, row):
 		inputs = new_inputs
 	return inputs
 
+
+# %%
+'''
+## Predict
+Making predictions with a trained neural network is easy enough. We have already seen how
+to forward-propagate an input pattern to get an output. This is all we need to do to make a
+prediction. We can use the output values themselves directly as the probability of a pattern
+belonging to each output class.<br />
+
+It may be more useful to turn this output back into a crisp class prediction. We can do this
+by selecting the class value with the larger probability. This is also called the arg max function.
+Below is a function named predict() that implements this procedure. It returns the index in
+the network output that has the largest probability. It assumes that class values have been
+converted to integers starting at 0.
+'''
+
+# %%
 # Make a prediction with a network
 def predict(network, row):
 	outputs = forward_propagate(network, row)
 	return outputs.index(max(outputs))
 
+
+# %%
+'''
+We can use the above predict() function with our code above for forward-propagating input and with
+our small contrived dataset to test making predictions with an already-trained network. The
+example hardcodes a network trained from the previous step. The complete example is listed below.
+'''
+
+# %%
 # Test making predictions with the network
 dataset = [[2.7810836,2.550537003,0],
 	[1.465489372,2.362125076,0],
@@ -45,3 +87,11 @@ network = [[{'weights': [-1.482313569067226, 1.8308790073202204, 1.0783819220487
 for row in dataset:
 	prediction = predict(network, row)
 	print('Expected=%d, Got=%d' % (row[-1], prediction))
+
+
+# %%
+'''
+Running the example prints the expected output for each record in the training dataset,
+followed by the crisp prediction made by the network. It shows that the network achieves 100%
+accuracy on this small dataset
+'''

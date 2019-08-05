@@ -1,12 +1,36 @@
 # Example of getting the BMU
 from math import sqrt
 
+
+# %%
+'''
+## Best Matching Unit
+The Best Matching Unit or BMU is the codebook vector that is most similar to a new piece of
+data. To locate the BMU for a new piece of data within a dataset we must first calculate the
+distance between each codebook to the new piece of data. We can do this using our distance
+function above. Once distances are calculated, we must sort all of the codebooks by their
+distance to the new data. We can then return the first or most similar codebook vector. <br />
+
+We can do this by keeping track of the distance for each record in the dataset as a tuple,
+sort the list of tuples by the distance (in descending order) and then retrieve the BMU. Below
+is a function named **get_best_matching_unit()** that implements this.
+'''
+
+
+# %%
+'''
+Below function nemed euclidean_distance() developed in the previous step is used
+to calculate the distance between each codebook and the new test row. 
+'''
+
+# %%
 # calculate the Euclidean distance between two vectors
 def euclidean_distance(row1, row2):
 	distance = 0.0
 	for i in range(len(row1)-1):
 		distance += (row1[i] - row2[i])**2
 	return sqrt(distance)
+
 
 # Locate the best matching unit
 def get_best_matching_unit(codebooks, test_row):
@@ -17,6 +41,16 @@ def get_best_matching_unit(codebooks, test_row):
 	distances.sort(key=lambda tup: tup[1])
 	return distances[0][0]
 
+
+
+# %%
+'''
+Running this example prints the BMU in the dataset to the first record. As expected, the
+first record is the most similar to itself and is at the top of the list.
+'''
+
+
+# %%
 # Test best matching unit function
 dataset = [[2.7810836,2.550537003,0],
 	[1.465489372,2.362125076,0],

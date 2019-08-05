@@ -1,9 +1,35 @@
+# %%
 # Random Forest Algorithm on Sonar Dataset
 from random import seed
 from random import randrange
 from csv import reader
 from math import sqrt
 
+
+# %%
+'''
+## Random Forest
+Decision trees can suffer from high variance which makes their results fragile to the specific
+training data used. Building multiple models from samples of your training data, called bagging,
+can reduce this variance, but the trees are highly correlated.
+
+Random Forest is an extension of bagging that in addition to building trees based on multiple
+samples of your training data, it also constrains the features that can be used to build the trees,
+forcing trees to be different. This, in turn, can give a lift in performance. In this tutorial, you
+will discover how to implement the Random Forest algorithm from scratch in Python. 
+'''
+
+# %%
+'''
+## Sonar Dataset
+In this tutorial we will use the Sonar Dataset. This dataset involves the discrimination between
+mines and rocks. The baseline performance on the problem is approximately 53%.
+
+We will use the helper function load_csv() to load the file, str column to float() to convert string numbers to floats and
+str column to int() to convert the class column to integer values.
+'''
+
+# %%
 # Load a CSV file
 def load_csv(filename):
 	dataset = list()
@@ -31,6 +57,17 @@ def str_column_to_int(dataset, column):
 		row[column] = lookup[row[column]]
 	return lookup
 
+
+# %%
+'''
+We will use k-fold cross-validation to estimate the performance of the learned model on
+unseen data. This means that we will construct and evaluate k models and estimate the
+performance as the mean model error. Classification accuracy will be used to evaluate each
+model. These behaviors are provided in the cross validation split(), accuracy metric()
+and evaluate algorithm() helper functions.
+'''
+
+# %%
 # Split a dataset into k folds
 def cross_validation_split(dataset, n_folds):
 	dataset_split = list()
@@ -71,6 +108,16 @@ def evaluate_algorithm(dataset, algorithm, n_folds, *args):
 		scores.append(accuracy)
 	return scores
 
+
+# %%
+'''
+We need function test _split() to split a dataset into groups, gini index() to evaluate a split point, get split() to find an
+optimal split point, to terminal(), split() and build tree() used to create a single decision
+tree, predict() to make a prediction with a decision tree and the subsample() function
+described in the previous step to make a subsample of the training dataset.
+'''
+
+# %%
 # Split a dataset based on an attribute and an attribute value
 def test_split(index, value, dataset):
 	left, right = list(), list()
@@ -191,6 +238,23 @@ def random_forest(train, test, max_depth, min_size, sample_size, n_trees, n_feat
 	predictions = [bagging_predict(trees, row) for row in test]
 	return(predictions)
 
+
+
+# %%
+'''
+A k value of 5 was used for cross-validation, giving each fold 208 5 = 41:6 or just over 40
+records to be evaluated upon each iteration. Deep trees were constructed with a max depth of
+10 and a minimum number of training rows at each node of 1. Samples of the training dataset
+were created with the same size as the original dataset, which is a default expectation for the
+Random Forest algorithm.
+
+The number of features considered at each split point was set to suare root num_features which is equal to 7.74
+rounded to 7 features. A suite of 3 different numbers of trees were evaluated for comparison,
+showing the increasing skill as more trees are added. Running the example prints the scores for
+each fold and mean score for each configuration
+'''
+
+# %%
 # Test the random forest algorithm on sonar dataset
 seed(2)
 # load and prepare data

@@ -1,9 +1,24 @@
+# %%
 # k-Nearest Neighbors on the Abalone Dataset for Regression
 from random import seed
 from random import randrange
 from csv import reader
 from math import sqrt
 
+
+# %%
+'''
+## Abalone Case Study as Regression
+Regression may be a more useful way to model the problem given the large number of classes
+and sparseness of some class values.<br />
+
+The first step is to load the dataset and convert the loaded data to numbers that we can use with
+the Euclidean distance calculation. For this we will use the helper function load csv() to load
+the file, str column to float() to convert string numbers to floats and str column to int()
+to convert the sex column (column 0) to integer values.
+'''
+
+# %%
 # Load a CSV file
 def load_csv(filename):
 	dataset = list()
@@ -122,6 +137,16 @@ def k_nearest_neighbors(train, test, num_neighbors):
 		predictions.append(output)
 	return(predictions)
 
+
+# %%
+'''
+Running the following example prints the RMSE on each fold and the mean RMSE across all folds.
+We can see that the RMSE of about 2.2 rings is better than the baseline of 3.2 rings. We also
+have a model that is perhaps more useful in the domain with an performance that is easier to
+understand.
+'''
+
+# %%
 # Test the kNN on the Abalone dataset
 seed(1)
 # load and prepare data

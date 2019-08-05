@@ -1,3 +1,4 @@
+# %%
 # Backprop on the Seeds Dataset
 from random import seed
 from random import randrange
@@ -5,6 +6,26 @@ from random import random
 from csv import reader
 from math import exp
 
+# %%
+'''
+## Wheat Seeds Case Study
+This section applies the Backpropagation algorithm to the wheat seeds dataset. 
+
+Input values vary in scale and need to be normalized to the range of 0 and 1. It is generally
+good practice to normalize input values to the range of the chosen transfer function, in this
+case, the sigmoid function that outputs values between 0 and 1. The dataset minmax() and
+normalize dataset() helper functions were used to normalize the input values.
+'''
+
+# %%
+'''
+The first step is to load the dataset and convert the loaded data to numbers that we can use in our neural network.
+For this we will use the helper function load csv() to load the file, str column to float()
+to convert string numbers to floats and str column to int() to convert the class column to
+integer values.
+'''
+
+# %%
 # Load a CSV file
 def load_csv(filename):
 	dataset = list()
@@ -42,6 +63,20 @@ def normalize_dataset(dataset, minmax):
 		for i in range(len(row)-1):
 			row[i] = (row[i] - minmax[i][0]) / (minmax[i][1] - minmax[i][0])
 
+
+# %%
+'''
+We will evaluate the algorithm using k-fold cross-validation with 5 folds. This means that
+201/5 = 40.2 or 40 records will be in each fold. We will use the helper functions evaluate algorithm()
+to evaluate the algorithm with cross-validation and accuracy metric() to calculate the accuracy
+of predictions.
+A new function named back propagation() was developed to manage the application of the
+Backpropagation algorithm, first initializing a network, training it on the training dataset and
+then using the trained network to make predictions on a test dataset. The complete example is
+listed below.
+'''
+
+# %%
 # Split a dataset into k folds
 def cross_validation_split(dataset, n_folds):
 	dataset_split = list()
@@ -82,6 +117,20 @@ def evaluate_algorithm(dataset, algorithm, n_folds, *args):
 		scores.append(accuracy)
 	return scores
 
+# %%
+'''
+## Forward-Propagate
+We can calculate an output from a neural network by propagating an input signal through
+each layer until the output layer outputs its values. We call this forward-propagation. It is the
+technique we will need to generate predictions during training that will need to be corrected,
+and it is the method we will need after the network is trained to make predictions on new data.
+
+We can break forward-propagation down into three parts:
+1. Neuron Activation.
+2. Neuron Transfer.
+3. Forward-Propagation.
+'''
+
 # Calculate neuron activation for an input
 def activate(weights, inputs):
 	activation = weights[-1]
@@ -104,6 +153,21 @@ def forward_propagate(network, row):
 			new_inputs.append(neuron['output'])
 		inputs = new_inputs
 	return inputs
+
+
+# %%
+'''
+## Backpropagate Error
+The backpropagation algorithm is named for the way in which weights are trained. Error is
+calculated between the expected outputs and the outputs forward-propagated from the network.
+These errors are then propagated backward through the network from the output layer to the
+hidden layer, assigning blame for the error and updating weights as they go. The math for
+backpropagating error is rooted in calculus, but we will remain high level in this section and
+focus on what is calculated and how rather than why the calculations take this particular form.
+This part is broken down into two sections.
+1. Transfer Derivative.
+2. Error Backpropagation.
+'''
 
 # Calculate the derivative of an neuron output
 def transfer_derivative(output):
@@ -163,6 +227,15 @@ def predict(network, row):
 	outputs = forward_propagate(network, row)
 	return outputs.index(max(outputs))
 
+# %%
+'''
+A new function named back_propagation() was developed to manage the application of the
+Backpropagation algorithm, first initializing a network, training it on the training dataset and
+then using the trained network to make predictions on a test dataset. The complete example is
+listed below.
+'''
+
+# %%
 # Backpropagation Algorithm With Stochastic Gradient Descent
 def back_propagation(train, test, l_rate, n_epoch, n_hidden):
 	n_inputs = len(train[0]) - 1
@@ -175,6 +248,8 @@ def back_propagation(train, test, l_rate, n_epoch, n_hidden):
 		predictions.append(prediction)
 	return(predictions)
 
+
+# %%
 # Test Backprop on Seeds dataset
 seed(1)
 # load and prepare data
@@ -195,3 +270,16 @@ n_hidden = 5
 scores = evaluate_algorithm(dataset, back_propagation, n_folds, l_rate, n_epoch, n_hidden)
 print('Scores: %s' % scores)
 print('Mean Accuracy: %.3f%%' % (sum(scores)/float(len(scores))))
+
+
+# %%
+'''
+A network with 5 neurons in the hidden layer and 3 neurons in the output layer was
+constructed. The network was trained for 500 epochs with a learning rate of 0.3. These
+parameters were found with a little trial and error, but you may be able to do much better.
+Running the example prints the average classification accuracy on each fold as well as the
+average performance across all folds.
+
+You can see that backpropagation and the chosen configuration achieved a mean classification
+accuracy of about 93% which is dramatically better than the baseline of 28% accuracy.
+'''

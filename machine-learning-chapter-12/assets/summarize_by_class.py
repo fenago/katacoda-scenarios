@@ -1,6 +1,17 @@
+# %%
 # Example of summarizing data by class value
 from math import sqrt
 
+# %%
+'''
+## Summarize Data By Class
+We require statistics from our training dataset organized by class. 
+Below is a function named summarize by class() that implements this operation. The
+dataset is first split by class, then statistics are calculated on each subset. The results in the
+form of a list of tuples of statistics are then stored in a dictionary by their class value.
+'''
+
+# %%
 # Split the dataset by class values, returns a dictionary
 def separate_by_class(dataset):
 	separated = dict()
@@ -16,6 +27,14 @@ def separate_by_class(dataset):
 def mean(numbers):
 	return sum(numbers)/float(len(numbers))
 
+
+# %%
+'''
+Sample standard deviation is calculated as the mean difference from the mean value. Below is a function named stdev() calculates 
+standard deviation.
+'''
+
+# %%
 # Calculate the standard deviation of a list of numbers
 def stdev(numbers):
 	avg = mean(numbers)
@@ -36,6 +55,17 @@ def summarize_by_class(dataset):
 		summaries[class_value] = summarize_dataset(rows)
 	return summaries
 
+
+# %%
+'''
+Let’s test out all of these behaviors on our contrived dataset. <br />
+
+Running the following example calculates the statistics for each input variable and prints them
+organized by class value. Interpreting the results, we can see that the X1 values for rows for
+class 0 have a mean value of 2.7420144012
+'''
+
+# %%
 # Test summarizing by class
 dataset = [[3.393533211,2.331273381,0],
 	[3.110073483,1.781539638,0],

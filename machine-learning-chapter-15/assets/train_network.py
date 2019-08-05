@@ -1,8 +1,21 @@
+# %%
 # Example of training a network by backpropagation
 from math import exp
 from random import seed
 from random import random
 
+
+# %%
+'''
+## Train Network
+The network is trained using stochastic gradient descent. The procedure involves multiple iterations of exposing a training
+dataset to the network and for each row of data forward-propagating the inputs, backpropagating
+the error and updating the network weights. This part is broken down into two sections:
+1. Update Weights.
+2. Train Network
+'''
+
+# %%
 # Initialize a network
 def initialize_network(n_inputs, n_hidden, n_outputs):
 	network = list()
@@ -12,6 +25,22 @@ def initialize_network(n_inputs, n_hidden, n_outputs):
 	network.append(output_layer)
 	return network
 
+
+# %%
+'''
+## Forward-Propagate
+We can calculate an output from a neural network by propagating an input signal through
+each layer until the output layer outputs its values. We call this forward-propagation. It is the
+technique we will need to generate predictions during training that will need to be corrected,
+and it is the method we will need after the network is trained to make predictions on new data.
+
+We can break forward-propagation down into three parts:
+1. Neuron Activation.
+2. Neuron Transfer.
+3. Forward-Propagation.
+'''
+
+# %%
 # Calculate neuron activation for an input
 def activate(weights, inputs):
 	activation = weights[-1]
@@ -35,6 +64,22 @@ def forward_propagate(network, row):
 		inputs = new_inputs
 	return inputs
 
+
+# %%
+'''
+## Backpropagate Error
+The backpropagation algorithm is named for the way in which weights are trained. Error is
+calculated between the expected outputs and the outputs forward-propagated from the network.
+These errors are then propagated backward through the network from the output layer to the
+hidden layer, assigning blame for the error and updating weights as they go. The math for
+backpropagating error is rooted in calculus, but we will remain high level in this section and
+focus on what is calculated and how rather than why the calculations take this particular form.
+This part is broken down into two sections.
+1. Transfer Derivative.
+2. Error Backpropagation.
+'''
+
+# %%
 # Calculate the derivative of an neuron output
 def transfer_derivative(output):
 	return output * (1.0 - output)
@@ -58,6 +103,15 @@ def backward_propagate_error(network, expected):
 			neuron = layer[j]
 			neuron['delta'] = errors[j] * transfer_derivative(neuron['output'])
 
+
+# %%
+'''
+Train Network is broken down into two sections:
+1. Update Weights.
+2. Train Network
+'''
+
+# %%
 # Update network weights with error
 def update_weights(network, row, l_rate):
 	for i in range(len(network)):
@@ -82,6 +136,16 @@ def train_network(network, train, l_rate, n_epoch, n_outputs):
 			update_weights(network, row, l_rate)
 		print('>epoch=%d, lrate=%.3f, error=%.3f' % (epoch, l_rate, sum_error))
 
+
+# %%
+'''
+We now have all of the pieces to train the network. We can put together an example that
+includes everything we’ve seen so far including network initialization and train a network on
+a small dataset. Below is a small contrived dataset that we can use to test out training our
+neural network
+'''
+
+# %%
 # Test training backprop algorithm
 seed(1)
 dataset = [[2.7810836,2.550537003,0],
@@ -100,3 +164,12 @@ network = initialize_network(n_inputs, 2, n_outputs)
 train_network(network, dataset, 0.5, 20, n_outputs)
 for layer in network:
 	print(layer)
+
+
+# %%
+'''
+Running the example first prints the sum squared error each training epoch. We can see a
+trend of this error decreasing with each epoch. Once trained, the network is printed, showing
+the learned weights. Also still in the network are output and delta values that can be ignored.
+We could update our training function to delete these data if we wanted.
+'''

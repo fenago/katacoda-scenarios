@@ -1,3 +1,4 @@
+# %%
 # Stacking on the sonar dataset
 from random import seed
 from random import randrange
@@ -5,6 +6,30 @@ from csv import reader
 from math import sqrt
 from math import exp
 
+
+# %%
+'''
+## Stacked Generalization
+Stacked Generalization or stacking is an ensemble technique that uses a new model to learn how to best combine the predictions from two or more
+models trained on your dataset.
+
+Stacked Generalization is an ensemble algorithm where a new model is trained to combine the
+predictions from two or more models already trained or your dataset. The predictions from the
+existing models or submodels are combined using a new model, and as such stacking is often
+referred to as blending, as the predictions from submodels are blended together.
+'''
+
+# %%
+'''
+## Sonar Dataset
+In this section, we will apply the Stacking algorithm to the Sonar dataset. The example assumes that a CSV copy of the dataset is in the current 
+working directory with the filename sonar.all-data.csv.
+
+The dataset is first loaded, the string values converted to numeric and the output column is converted from strings to the integer values of 0 to 1.
+This is achieved with helper functions load csv(), str column to float() and str column to int() to load and prepare the dataset
+'''
+
+# %%
 # Load a CSV file
 def load_csv(filename):
 	dataset = list()
@@ -32,6 +57,17 @@ def str_column_to_int(dataset, column):
 		row[column] = lookup[row[column]]
 	return lookup
 
+
+# %%
+'''
+We will use k-fold cross-validation to estimate the performance of the learned model on
+unseen data. This means that we will construct and evaluate k models and estimate the
+performance as the mean model error. Classification accuracy will be used to evaluate the
+model. These behaviors are provided in the cross validation split(), accuracy metric()
+and evaluate algorithm() helper functions.
+'''
+
+# %%
 # Split a dataset into k folds
 def cross_validation_split(dataset, n_folds):
 	dataset_split = list()
@@ -72,6 +108,25 @@ def evaluate_algorithm(dataset, algorithm, n_folds, *args):
 		scores.append(accuracy)
 	return scores
 
+# %%
+'''
+## Submodels and Aggregator
+We are going to use two models as submodels for stacking and a linear model as the aggregator
+model.
+This part is divided into 3 sections:
+1. Submodel #1: k-Nearest Neighbors.
+2. Submodel #2: Perceptron.
+3. Aggregator Model: Logistic Regression.
+'''
+
+# %%
+'''
+Below are the helper functions that involve making predictions for a KNN model. The function euclidean distance() calculates the distance between two rows of data, get neighbors()
+function locates all neighbors in the training dataset for a new row of data and knn predict()
+makes a prediction from the neighbors for a new row of data.
+'''
+
+# %%
 # Calculate the Euclidean distance between two vectors
 def euclidean_distance(row1, row2):
 	distance = 0.0
@@ -98,10 +153,32 @@ def knn_predict(model, test_row, num_neighbors=2):
 	prediction = max(set(output_values), key=output_values.count)
 	return prediction
 
+# %%
+'''
+## Submodel #1: k-Nearest Neighbors
+The k-Nearest Neighbors algorithm or KNN uses the entire training dataset as the model.
+Therefore training the model involves retaining the training dataset. Below is a function named
+knn model() that does just this.
+'''
+
 # Prepare the kNN model
 def knn_model(train):
 	return train
 
+
+# %%
+'''
+## Submodel #2: Perceptron
+The model for the Perceptron algorithm is a set of weights learned from the training data. In
+order to train the weights, many predictions need to be made on the training data in order
+to calculate error values. Therefore, both model training and prediction require a function for
+prediction.
+Below are the helper functions for implementing the Perceptron algorithm. The perceptron model()
+function trains the Perceptron model on the training dataset and perceptron predict() is
+used to make a prediction for a row of data
+'''
+
+# %%
 # Make a prediction with weights
 def perceptron_predict(model, row):
 	activation = model[0]
@@ -121,6 +198,19 @@ def perceptron_model(train, l_rate=0.01, n_epoch=5000):
 				weights[i + 1] = weights[i + 1] + l_rate * error * row[i]
 	return weights
 
+
+# %%
+'''
+## Aggregator Model: Logistic Regression
+Like the Perceptron algorithm, Logistic Regression uses a set of weights, called coefficients, as
+the representation of the model. And like the Perceptron algorithm, the coefficients are learned
+by iteratively making predictions on the training data and updating them.
+Below are the helper functions for implementing the logistic regression algorithm. The
+logistic regression model() function is used to train the coefficients on the training dataset
+and logistic regression predict() is used to make a prediction for a row of data.
+'''
+
+# %%
 # Make a prediction with coefficients
 def logistic_regression_predict(model, row):
 	yhat = model[0]
@@ -149,6 +239,16 @@ def to_stacked_row(models, predict_list, row):
 	stacked_row.append(row[-1])
 	return row[0:len(row)-1] + stacked_row
 
+
+# %%
+'''
+Below function named stacking() does 4 things:
+1. It first trains a list of models (KNN and Perceptron).
+2. It then uses the models to make predictions and create a new stacked dataset.
+3. It then trains an aggregator model (logistic regression) on the stacked dataset.
+4. It then uses the submodels and aggregator model to make predictions on the test dataset
+'''
+
 # Stacked Generalization Algorithm
 def stacking(train, test):
 	model_list = [knn_model, perceptron_model]
@@ -171,6 +271,15 @@ def stacking(train, test):
 		predictions.append(prediction)
 	return predictions
 
+
+# %%
+'''
+A k value of 3 was used for cross-validation, giving each fold 208 3 = 69:3 or just under 70
+records to be evaluated upon each iteration. Running the example prints the scores and mean
+of the scores for the final configuration.
+'''
+
+# %%
 # Test stacking on the sonar dataset
 seed(1)
 # load and prepare data

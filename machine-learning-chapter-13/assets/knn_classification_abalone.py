@@ -1,9 +1,22 @@
+# %%
 # k-nearest neighbors on the Abalone Dataset
 from random import seed
 from random import randrange
 from csv import reader
 from math import sqrt
 
+
+# %%
+'''
+## Abalone Case Study as Classification
+In this section we will apply the k-Nearest Neighbors algorithm to the Abalone dataset. The
+first step is to load the dataset and convert the loaded data to numbers that we can use with
+the Euclidean distance calculation. For this we will use the helper function load csv() to load
+the file, str column to float() to convert string numbers to floats and str column to int()
+to convert the sex column (column 0) to integer values.
+'''
+
+# %%
 # Load a CSV file
 def load_csv(filename):
 	dataset = list()
@@ -47,6 +60,17 @@ def normalize_dataset(dataset, minmax):
 		for i in range(len(row)):
 			row[i] = (row[i] - minmax[i][0]) / (minmax[i][1] - minmax[i][0])
 
+
+
+# %%
+'''
+We will evaluate the algorithm using k-fold cross-validation with 5 folds. This means that
+4177/5 = 835.4 or just over 830 records will be in each fold. We will use the helper functions
+evaluate algorithm() to evaluate the algorithm with cross-validation and accuracy metric()
+to calculate the accuracy of predictions.
+'''
+
+# %%
 # Split a dataset into k folds
 def cross_validation_split(dataset, n_folds):
 	dataset_split = list()
@@ -121,6 +145,18 @@ def k_nearest_neighbors(train, test, num_neighbors):
 		predictions.append(output)
 	return(predictions)
 
+
+# %%
+'''
+A value of k=5 neighbors was used to make predictions. You may experiment with larger k
+values to increase accuracy. Running the example prints the accuracy scores achieved on each
+fold and the mean of those scores. We can see that the mean accuracy of 23% is better than the
+baseline of 16%, but is quite poor in general. This is because of the large number of classes
+making accuracy a poor judge of skill on this problem. This fact, combined with the fact that
+many of the classes have few or one example also makes the problem challenging.
+'''
+
+# %%
 # Test the kNN on the Abalone dataset
 seed(1)
 # load and prepare data

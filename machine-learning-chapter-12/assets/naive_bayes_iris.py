@@ -6,6 +6,18 @@ from math import sqrt
 from math import exp
 from math import pi
 
+
+# %%
+'''
+## Iris Flower Species Case Study
+This section applies the Naive Bayes algorithm to the Iris flowers dataset. The first step is to
+load the dataset and convert the loaded data to numbers that we can use with the mean and
+standard deviation calculations. For this we will use the helper function load csv() to load
+the file, str column to float() to convert string numbers to floats and str column to int()
+to convert the class column to integer values.
+'''
+
+# %%
 # Load a CSV file
 def load_csv(filename):
 	dataset = list()
@@ -33,6 +45,18 @@ def str_column_to_int(dataset, column):
 		row[column] = lookup[row[column]]
 	return lookup
 
+
+# %%
+'''
+We will evaluate the algorithm using k-fold cross-validation with 5 folds. This means that
+150/5 = 30 records will be in each fold. We will use the helper functions evaluate algorithm() to
+evaluate the algorithm with cross-validation and accuracy metric() to calculate the accuracy
+of predictions. A new function named predict() was developed to manage the calculation of
+the probabilities of a new row belonging to each class and selecting the class with the largest
+probability value.
+'''
+
+# %%
 # Split a dataset into k folds
 def cross_validation_split(dataset, n_folds):
 	dataset_split = list()
@@ -134,6 +158,13 @@ def predict(summaries, row):
 			best_label = class_value
 	return best_label
 
+
+# %%
+'''
+Below function named naive_bayes() will manage the application of the Naive Bayes algorithm, first learning the statistics from a training dataset
+and using them to make predictions for a test dataset.
+'''
+
 # Naive Bayes Algorithm
 def naive_bayes(train, test):
 	summarize = summarize_by_class(train)
@@ -143,6 +174,15 @@ def naive_bayes(train, test):
 		predictions.append(output)
 	return(predictions)
 
+
+# %%
+'''
+Running the following example prints the mean classification accuracy scores on each cross-validation
+fold as well as the mean accuracy score. We can see that the mean accuracy of about 95% is
+dramatically better than the baseline accuracy of 26%.
+'''
+
+# %%
 # Test Naive Bayes on Iris Dataset
 seed(1)
 filename = 'iris.csv'

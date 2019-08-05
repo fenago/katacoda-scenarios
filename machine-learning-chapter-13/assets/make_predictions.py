@@ -1,6 +1,19 @@
+# %%
 # Example of making predictions
 from math import sqrt
 
+# %%
+'''
+## Make Predictions
+The most similar neighbors collected from the training dataset can be used to make predictions.
+In the case of classification, we can return the most represented class among the neighbors.
+We can achieve this by performing the max() function on the list of output values from the
+neighbors. Given a list of class values observed in the neighbors, the max() function takes a set
+of unique class values and calls the count on the list of class values for each class value in the
+set. Below is the function named predict_classification() that implements this.
+'''
+
+# %%
 # calculate the Euclidean distance between two vectors
 def euclidean_distance(row1, row2):
 	distance = 0.0
@@ -27,6 +40,14 @@ def predict_classification(train, test_row, num_neighbors):
 	prediction = max(set(output_values), key=output_values.count)
 	return prediction
 
+
+# %%
+'''
+Running the following example prints the expected classification of 0 and the actual classification
+predicted from the 3 most similar neighbors in the dataset.
+'''
+
+# %%
 # Test distance function
 dataset = [[2.7810836,2.550537003,0],
 	[1.465489372,2.362125076,0],

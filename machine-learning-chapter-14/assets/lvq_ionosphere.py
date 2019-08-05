@@ -1,9 +1,23 @@
+# %%
 # LVQ for the Ionosphere Dataset
 from random import seed
 from random import randrange
 from csv import reader
 from math import sqrt
 
+
+# %%
+'''
+## Ionosphere Case Study
+In this section, we will apply the Learning Vector Quantization algorithm to the Ionosphere
+dataset. The first step is to load the dataset and convert the loaded data to numbers that
+we can use with the Euclidean distance calculation. For this we will use the helper function
+load csv() to load the file, str column to float() to convert string numbers to floats and
+str column to int() to convert the class column to integer values.
+'''
+
+
+# %%
 # Load a CSV file
 def load_csv(filename):
 	dataset = list()
@@ -31,6 +45,16 @@ def str_column_to_int(dataset, column):
 		row[column] = lookup[row[column]]
 	return lookup
 
+
+# %%
+'''
+We will evaluate the algorithm using k-fold cross-validation with 5 folds. This means
+that 351/5 = 70.2 or just over 70 records will be in each fold. We will use the helper functions
+evaluate algorithm() to evaluate the algorithm with cross-validation and accuracy metric()
+to calculate the accuracy of predictions. The complete example is listed below.
+'''
+
+# %%
 # Split a dataset into k folds
 def cross_validation_split(dataset, n_folds):
 	dataset_split = list()
@@ -123,6 +147,15 @@ def learning_vector_quantization(train, test, n_codebooks, lrate, epochs):
 		predictions.append(output)
 	return(predictions)
 
+
+# %%
+'''
+Running this example prints the classification accuracy on each fold and the mean classification accuracy across all folds. We can see that the 
+accuracy of about 87% is better than the baseline of 64%. We can also see that our library of 20 codebook vectors is far fewer than
+holding the entire training dataset.
+'''
+
+# %%
 # Test LVQ on Ionosphere dataset
 seed(1)
 # load and prepare data

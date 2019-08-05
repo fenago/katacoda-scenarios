@@ -1,5 +1,24 @@
-# Example of separating data by class value
 
+
+# %%
+'''
+## Naive Bayes
+Bayes’ Theorem provides a way that we can calculate the probability of a piece of data belonging
+to a given class, given our prior knowledge. Bayes’ Theorem is stated as:<br />
+P(class|data) = P(data|class) × P(class)/ P(data)
+'''
+
+# %%
+'''
+## Separate By Class
+We will need to calculate the probability of data by the class they belong to. This means that
+we will first need to separate our training data by class. A relatively straightforward operation.
+We can create a dictionary object where each key is the class value and then add a list of all the
+records as the value in the dictionary. Below is a function named separate_by_class() that
+implements this approach. It assumes that the last column in each row is the class value.
+'''
+
+# %%
 # Split the dataset by class values, returns a dictionary
 def separate_by_class(dataset):
 	separated = dict()
@@ -11,6 +30,16 @@ def separate_by_class(dataset):
 		separated[class_value].append(vector)
 	return separated
 
+
+# %%
+'''
+we can test our separate_by_class function on the contrived dataset.
+
+Running the example sorts observations in the dataset by their class value, then prints the
+class value followed by all identified records.
+'''
+
+# %%
 # Test separating data by class
 dataset = [[3.393533211,2.331273381,0],
 	[3.110073483,1.781539638,0],
