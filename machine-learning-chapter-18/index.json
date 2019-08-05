@@ -9,7 +9,7 @@
       "text": "steps/1/text.md"
     },
   {
-      "title": "Making Predictions",
+      "title": " Sonar Case Study",
       "text": "steps/2/text.md"
     }],
     "intro": {
@@ -21,9 +21,9 @@
     },
     "assets": {
       "client": [
-        {"file": "prepareContainer.sh"                    ,"target": "~/"},
-        {"file": "stacking_sonar.ipynb"                   ,"target": "~/"},
-        {"file": "sonar.all-data.csv"                     ,"target": "~/"}
+        {"file": "prepareContainer.sh"     ,"target": "~/"},
+        {"file": "stacking_sonar.ipynb"    ,"target": "~/"},
+        {"file": "sonar.all-data.csv"      ,"target": "~/"}
       ]
     }
   },

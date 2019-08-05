@@ -2,35 +2,27 @@
   "title": "Machine Learning - Chapter 14",
   "description": "Run Python Code with Jupyter Notebooks",
   "difficulty": "Beginner",
-  "time": "10 minutes",
+  "time": "15 minutes",
   "details": {
     "steps": [{
       "title": "Jupyter Notebook",
       "text": "steps/1/text.md"
     },
  {
-      "title": "Dataset min max",
+      "title": "Euclidean Distance",
       "text": "steps/2/text.md"
     },    
 	{
-      "title": "Normalize contrived dataset",
+      "title": "Best Matching Unit",
       "text": "steps/3/text.md"
     },
 	{
-      "title": "Normalize diabetes",
+      "title": "Training Codebook Vectors",
       "text": "steps/4/text.md"
     },
     {
-      "title": "Statistics contrived dataset",
+      "title": "Ionosphere Case Study",
       "text": "steps/5/text.md"
-      },
-    {
-      "title": "Standardize contrived dataset",
-      "text": "steps/6/text.md"
-    },
-    {
-      "title": "Standardize diabetes",
-      "text": "steps/7/text.md"
     }],
     "intro": {
       "text": "intro.md",

@@ -9,16 +9,12 @@
       "text": "steps/1/text.md"
     },
   {
-      "title": "Making Predictions",
+      "title": "Bootstrap Resample",
       "text": "steps/2/text.md"
     },    
 	{
-      "title": "Training Network Weights",
-      "text": "steps/3/text.md"
-  },    
-	{
       "title": "Sonar Case Study",
-      "text": "steps/4/text.md"
+      "text": "steps/3/text.md"
   }],
     "intro": {
       "text": "intro.md",
