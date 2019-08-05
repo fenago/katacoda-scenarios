@@ -9,27 +9,27 @@
       "text": "steps/1/text.md"
     },
  {
-      "title": "Dataset min max",
+      "title": "Separate By Class",
       "text": "steps/2/text.md"
     },    
 	{
-      "title": "Normalize contrived dataset",
+      "title": "Summarize Dataset",
       "text": "steps/3/text.md"
     },
 	{
-      "title": "Normalize diabetes",
+      "title": "Summarize Data By Class",
       "text": "steps/4/text.md"
     },
     {
-      "title": "Statistics contrived dataset",
+      "title": "Gaussian Probability Density Function",
       "text": "steps/5/text.md"
       },
     {
-      "title": "Standardize contrived dataset",
+      "title": "Class Probabilities",
       "text": "steps/6/text.md"
     },
     {
-      "title": "Standardize diabetes",
+      "title": "Iris Flower Species Case Study",
       "text": "steps/7/text.md"
     }],
     "intro": {
