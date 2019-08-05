@@ -1,8 +1,19 @@
+# %%
 # Example of CART on the Banknote dataset
 from random import seed
 from random import randrange
 from csv import reader
 
+
+# %%
+'''
+To load the CSV file, we will use the csv module that is a part of the standard
+library. The reader() function in the csv module takes a file as an argument.<br />
+We will create a function called load csv() to wrap this behavior that will take a filename
+and return our dataset. Add one rows of data at a time to our dataset to skip empty rows.
+'''
+
+# %%
 # Load a CSV file
 def load_csv(filename):
 	dataset = list()
@@ -14,11 +25,28 @@ def load_csv(filename):
 			dataset.append(row)
 	return dataset
 
+
+# %%
+'''
+The first step is to load the dataset and convert the loaded data to numbers that we can use to calculate split points. For
+this we will use the helper function str_column_to_float() to convert string numbers to floats.
+'''
+
 # Convert string column to float
 def str_column_to_float(dataset, column):
 	for row in dataset:
 		row[column] = float(row[column].strip())
 
+
+# %%
+'''
+We will evaluate the algorithm using k-fold cross-validation with 5 folds. This means that
+1372/5 = 274.4 or just over 270 records will be used in each fold. We will use the helper functions
+evaluate algorithm() to evaluate the algorithm with cross-validation and accuracy metric()
+to calculate the accuracy of predictions.
+'''
+
+# %%
 # Split a dataset into k folds
 def cross_validation_split(dataset, n_folds):
 	dataset_split = list()
@@ -150,6 +178,15 @@ def predict(node, row):
 		else:
 			return node['right']
 
+
+# %%
+'''
+A new function named decision_tree() was developed to manage the application of the
+CART algorithm, first creating the tree from the training dataset, then using the tree to make
+predictions on a test dataset. The complete example is listed below.
+'''
+
+# %%
 # Classification and Regression Tree Algorithm
 def decision_tree(train, test, max_depth, min_size):
 	tree = build_tree(train, max_depth, min_size)
@@ -159,6 +196,18 @@ def decision_tree(train, test, max_depth, min_size):
 		predictions.append(prediction)
 	return(predictions)
 
+
+# %%
+'''
+The following example uses the max tree depth of 5 layers and the minimum number of rows per node
+to 10. These parameters to CART were chosen with a little experimentation, but by no means
+are they optimal. Running the example prints the average classification accuracy on each fold
+as well as the average performance across all folds.
+You can see that CART and the chosen configuration achieved a mean classification accuracy
+of about 97% which is dramatically better than the baseline performance of 50% accuracy
+'''
+
+# %%
 # Test CART on Bank Note dataset
 seed(1)
 # load and prepare data

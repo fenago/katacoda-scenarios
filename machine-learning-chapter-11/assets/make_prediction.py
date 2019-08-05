@@ -1,5 +1,18 @@
-# Example of making predictions
+# %%
+'''
+## Make a Prediction
+Making predictions with a decision tree involves navigating the tree with the specifically provided
+row of data. Again, we can implement this using a recursive function, where the same prediction
+routine is called again with the left or the right child nodes, depending on how the split affects
+the provided data. We must check if a child node is either a terminal value to be returned as
+the prediction, or if it is a dictionary node containing another level of the tree to be considered.<br />
 
+Below is the predict() function that implements this procedure. You can see how the index
+and value in a given node is used to evaluate whether the row of provided data falls on the left
+or the right of the split.
+'''
+
+# %%
 # Make a prediction with a decision tree
 def predict(node, row):
 	if row[node['index']] < node['value']:
@@ -13,6 +26,15 @@ def predict(node, row):
 		else:
 			return node['right']
 
+
+# %%
+'''
+We can use our contrived dataset to test this function. Below is an example that uses a
+hard-coded decision tree with a single node that best splits the data (a decision stump). The
+example makes a prediction for each row in the dataset
+'''
+
+# %%
 # contrived dataset
 dataset = [[2.771244718,1.784783929,0],
 	[1.728571309,1.169761413,0],
@@ -29,3 +51,9 @@ stump = {'index': 0, 'right': 1, 'value': 6.642287351, 'left': 0}
 for row in dataset:
 	prediction = predict(stump, row)
 	print('Expected=%d, Got=%d' % (row[-1], prediction))
+
+
+# %%
+'''
+Running the example prints the correct prediction for each row, as expected
+'''

@@ -1,5 +1,27 @@
-# Example of getting the best split
+# %%
+'''
+## Create Split
+A split is comprised of an attribute in the dataset and a value. We can summarize this as the
+index of an attribute to split and the value by which to split rows on that attribute. This is just
+a useful shorthand for indexing into rows of data. Creating a split involves three parts, the first
+we have already looked at which is calculating the Gini score. The remaining two parts are:
+1. Splitting a Dataset.
+2. Evaluating All Splits.
+'''
 
+# %%
+'''
+## 1. Splitting a Dataset
+Splitting a dataset means separating a dataset into two lists of rows given the index of an
+attribute and a split value for that attribute. Once we have the two groups, we can then use
+our Gini score above to evaluate the cost of the split. Splitting a dataset involves iterating over
+each row, checking if the attribute value is below or above the split value and assigning it to the
+left or right group respectively. Below is a function named test split() that implements this
+procedure.
+'''
+
+
+# %%
 # Split a dataset based on an attribute and an attribute value
 def test_split(index, value, dataset):
 	left, right = list(), list()
@@ -10,6 +32,15 @@ def test_split(index, value, dataset):
 			right.append(row)
 	return left, right
 
+
+# %%
+'''
+Below is a function named gini_index() that calculates the Gini index for a list of groups
+and a list of known class values. You can see that there are some safety checks in there to avoid
+a divide by zero for an empty group.
+'''
+
+# %%
 # Calculate the Gini index for a split dataset
 def gini_index(groups, classes):
 	# count all samples at split point
@@ -30,6 +61,25 @@ def gini_index(groups, classes):
 		gini += (1.0 - score) * (size / n_instances)
 	return gini
 
+# %%
+'''
+## 2. Evaluating All Splits
+Given a dataset, we must check every value on each attribute as a candidate
+split, evaluate the cost of the split and find the best possible split we could make. Once the
+best split is found, we can use it as a node in our decision tree. <br />
+
+Each group of data is its own small dataset of just those rows assigned to the left or right
+group by the splitting process. You can imagine how we might split each group again, recursively
+as we build out our decision tree. <br />
+
+Below is a function named get split() that implements this
+procedure. You can see that it iterates over each attribute (except the class value) and then
+each value for that attribute, splitting and evaluating splits as it goes. The best split is recorded
+and then returned after all checks are complete.
+'''
+
+
+# %%
 # Select the best split point for a dataset
 def get_split(dataset):
 	class_values = list(set(row[-1] for row in dataset))
@@ -43,6 +93,14 @@ def get_split(dataset):
 				b_index, b_value, b_score, b_groups = index, row[index], gini, groups
 	return {'index':b_index, 'value':b_value, 'groups':b_groups}
 
+
+# %%
+'''
+We can contrive a small dataset to test out this function and our whole dataset splitting
+process.
+'''
+
+# %%
 # Test getting the best split
 dataset = [[2.771244718,1.784783929,0],
 	[1.728571309,1.169761413,0],
