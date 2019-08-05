@@ -1,0 +1,69 @@
+{
+  "title": "Machine Learning - Chapter 2",
+  "description": "Run Python Code with Jupyter Notebooks",
+  "difficulty": "Beginner",
+  "time": "10 minutes",
+  "details": {
+    "steps": [{
+      "title": "Jupyter Notebook",
+      "text": "steps/1/text.md"
+    },
+ {
+      "title": "Dataset min max",
+      "text": "steps/2/text.md"
+    },    
+	{
+      "title": "Normalize contrived dataset",
+      "text": "steps/3/text.md"
+    },
+	{
+      "title": "Normalize diabetes",
+      "text": "steps/4/text.md"
+    },
+    {
+      "title": "Statistics contrived dataset",
+      "text": "steps/5/text.md"
+      },
+    {
+      "title": "Standardize contrived dataset",
+      "text": "steps/6/text.md"
+    },
+    {
+      "title": "Standardize diabetes",
+      "text": "steps/7/text.md"
+    }],
+    "intro": {
+      "text": "intro.md",
+      "code": "set-env.sh"
+    },
+    "finish": {
+      "text": "finish.md"
+    },
+    "assets": {
+      "client": [
+        {"file": "prepareContainer.sh"                    ,"target": "~/"},
+        {"file": "pima-indians-diabetes.csv"              ,"target": "~/"},
+        {"file": "dataset_min_max.ipynb"                  ,"target": "~/"},
+        {"file": "normalize_contrived_dataset.ipynb"      ,"target": "~/"},
+        {"file": "normalize_diabetes.ipynb"               ,"target": "~/"},
+        {"file": "statistics_contrived_dataset.ipynb"     ,"target": "~/"},
+        {"file": "standardize_contrived_dataset.ipynb"    ,"target": "~/"},
+        {"file": "standardize_diabetes.ipynb"             ,"target": "~/"}
+      ]
+    }
+  },
+  "environment": {
+    "uilayout": "terminal-iframe",
+    "showdashboard": true,
+    "dashboards": [
+      {
+        "name": "Jupyter Notebook",
+        "port": 8888
+      }
+    ],
+    "uimessage1": "\u001b[32mYour Interactive Bash Terminal.\r\n"
+  },
+  "backend": {
+    "imageid": "docker"
+  }
+}

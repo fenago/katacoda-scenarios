@@ -1,0 +1,1 @@
+In this scenario, you will run a Jupyter Notebook in a Docker Container.
