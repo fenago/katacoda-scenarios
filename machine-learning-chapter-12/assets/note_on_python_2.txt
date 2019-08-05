@@ -1,0 +1,1 @@
+Note, if you are using Python 2.7, you must change all calls to the items() function on dictionary objects to iteritems().
