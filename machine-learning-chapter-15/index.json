@@ -41,14 +41,16 @@
     },
     "assets": {
       "client": [
-        {"file": "prepareContainer.sh"                    ,"target": "~/"},
-        {"file": "pima-indians-diabetes.csv"              ,"target": "~/"},
-        {"file": "dataset_min_max.ipynb"                  ,"target": "~/"},
-        {"file": "normalize_contrived_dataset.ipynb"      ,"target": "~/"},
-        {"file": "normalize_diabetes.ipynb"               ,"target": "~/"},
-        {"file": "statistics_contrived_dataset.ipynb"     ,"target": "~/"},
-        {"file": "standardize_contrived_dataset.ipynb"    ,"target": "~/"},
-        {"file": "standardize_diabetes.ipynb"             ,"target": "~/"}
+        {"file": "prepareContainer.sh"              ,"target": "~/"},
+        {"file": "seeds_dataset.csv"                ,"target": "~/"},
+        {"file": "predict.ipynb"                    ,"target": "~/"},
+        {"file": "backpropagate_error.ipynb"        ,"target": "~/"},
+        {"file": "forward_propagate.ipynb"          ,"target": "~/"},
+        {"file": "backpropagation_seeds.ipynb"      ,"target": "~/"},
+        {"file": "initialize_network.ipynb"         ,"target": "~/"},
+        {"file": "train_network.ipynb"              ,"target": "~/"},
+        {"file": "predict.ipynb"                    ,"target": "~/"},
+        {"file": "contrived-dataset.xlsx"           ,"target": "~/"}
       ]
     }
   },

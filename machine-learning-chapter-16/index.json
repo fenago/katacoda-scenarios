@@ -29,12 +29,10 @@
     },
     "assets": {
       "client": [
-        {"file": "prepareContainer.sh"                    ,"target": "~/"},
-        {"file": "perceptron_predictions.ipynb"           ,"target": "~/"},
-        {"file": "estimate_weights.ipynb"                 ,"target": "~/"},
-        {"file": "perceptron_sonar.ipynb"                 ,"target": "~/"},
-        {"file": "sonar.all-data.csv"                     ,"target": "~/"},
-        {"file": "contrived-dataset.xlsx"                 ,"target": "~/"}
+        {"file": "prepareContainer.sh"          ,"target": "~/"},
+        {"file": "bagging_sonar.ipynb"          ,"target": "~/"},
+        {"file": "subsample.ipynb"              ,"target": "~/"},
+        {"file": "sonar.all-data.csv"           ,"target": "~/"}
       ]
     }
   },

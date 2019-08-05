@@ -41,14 +41,14 @@
     },
     "assets": {
       "client": [
-        {"file": "prepareContainer.sh"                    ,"target": "~/"},
-        {"file": "pima-indians-diabetes.csv"              ,"target": "~/"},
-        {"file": "dataset_min_max.ipynb"                  ,"target": "~/"},
-        {"file": "normalize_contrived_dataset.ipynb"      ,"target": "~/"},
-        {"file": "normalize_diabetes.ipynb"               ,"target": "~/"},
-        {"file": "statistics_contrived_dataset.ipynb"     ,"target": "~/"},
-        {"file": "standardize_contrived_dataset.ipynb"    ,"target": "~/"},
-        {"file": "standardize_diabetes.ipynb"             ,"target": "~/"}
+        {"file": "prepareContainer.sh"                  ,"target": "~/"},
+        {"file": "contrived_dataset.xlsx"               ,"target": "~/"},
+        {"file": "data_banknote_authentication.csv"     ,"target": "~/"},
+        {"file": "cart_banknote.ipynb"                  ,"target": "~/"},
+        {"file": "split_dataset.ipynb"                  ,"target": "~/"},
+        {"file": "gini_split.ipynb"                     ,"target": "~/"},
+        {"file": "create_tree.ipynb"                    ,"target": "~/"},
+        {"file": "make_prediction.ipynb"                ,"target": "~/"}
       ]
     }
   },

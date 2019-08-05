@@ -41,14 +41,16 @@
     },
     "assets": {
       "client": [
-        {"file": "prepareContainer.sh"                    ,"target": "~/"},
-        {"file": "pima-indians-diabetes.csv"              ,"target": "~/"},
-        {"file": "dataset_min_max.ipynb"                  ,"target": "~/"},
-        {"file": "normalize_contrived_dataset.ipynb"      ,"target": "~/"},
-        {"file": "normalize_diabetes.ipynb"               ,"target": "~/"},
-        {"file": "statistics_contrived_dataset.ipynb"     ,"target": "~/"},
-        {"file": "standardize_contrived_dataset.ipynb"    ,"target": "~/"},
-        {"file": "standardize_diabetes.ipynb"             ,"target": "~/"}
+        {"file": "prepareContainer.sh"                ,"target": "~/"},
+        {"file": "iris.csv"                           ,"target": "~/"},
+        {"file": "contrived_dataset.xlsx"             ,"target": "~/"},
+        {"file": "note_on_python_2.txt"               ,"target": "~/"},
+        {"file": "naive_bayes_iris.ipynb"             ,"target": "~/"},
+        {"file": "gaussian_pdf.ipynb"                 ,"target": "~/"},
+        {"file": "separate_by_class.ipynb"            ,"target": "~/"},
+        {"file": "probabilities_by_class.ipynb"       ,"target": "~/"},
+        {"file": "summarize_by_class.ipynb"           ,"target": "~/"},
+        {"file": "summarize_dataset.ipynb"            ,"target": "~/"}
       ]
     }
   },
