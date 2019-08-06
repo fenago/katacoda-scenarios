@@ -39,7 +39,6 @@
       "client": [
         {"file": "prepareContainer.sh"              ,"target": "~/"},
         {"file": "abalone.csv"                      ,"target": "~/"},
-        {"file": "contrived-dataset.xlsx"           ,"target": "~/"},
         {"file": "get_neighbors.ipynb"              ,"target": "~/"},
         {"file": "make_predictions.ipynb"           ,"target": "~/"},
         {"file": "euclidean_distance.ipynb"         ,"target": "~/"},

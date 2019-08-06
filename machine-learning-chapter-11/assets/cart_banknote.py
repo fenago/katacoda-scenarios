@@ -32,6 +32,7 @@ The first step is to load the dataset and convert the loaded data to numbers tha
 this we will use the helper function str_column_to_float() to convert string numbers to floats.
 '''
 
+# %%
 # Convert string column to float
 def str_column_to_float(dataset, column):
 	for row in dataset:

@@ -11,8 +11,7 @@ out nodes of the decision tree with one line per node. Although not as striking 
 tree diagram, it gives an idea of the tree structure and decisions made throug
 '''
 
-
-
+# %%
 # Split a dataset based on an attribute and an attribute value
 def test_split(index, value, dataset):
 	left, right = list(), list()
@@ -31,6 +30,7 @@ and a list of known class values. You can see that there are some safety checks 
 a divide by zero for an empty group.
 '''
 
+# %%
 # Calculate the Gini index for a split dataset
 def gini_index(groups, classes):
 	# count all samples at split point
