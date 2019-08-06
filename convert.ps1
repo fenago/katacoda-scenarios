@@ -1,4 +1,4 @@
-Get-ChildItem ".\machine-learning-python\machine-learning-chapter-08\assets" -Filter *.py | 
+Get-ChildItem ".\machine-learning-python\machine-learning-chapter-18\assets" -Filter *.py | 
 Foreach-Object {
     $fileName = $_.FullName
 	$outFileName= $fileName.Replace('.py', '') + '.ipynb'
