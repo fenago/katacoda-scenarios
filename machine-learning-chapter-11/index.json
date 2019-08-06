@@ -27,10 +27,6 @@
     {
       "title": "Banknote Case Study",
       "text": "steps/6/text.md"
-    },
-    {
-      "title": "Standardize diabetes",
-      "text": "steps/7/text.md"
     }],
     "intro": {
       "text": "intro.md",
@@ -42,7 +38,6 @@
     "assets": {
       "client": [
         {"file": "prepareContainer.sh"                  ,"target": "~/"},
-        {"file": "contrived_dataset.xlsx"               ,"target": "~/"},
         {"file": "data_banknote_authentication.csv"     ,"target": "~/"},
         {"file": "gini_split.ipynb"                     ,"target": "~/"},
         {"file": "cart_banknote.ipynb"                  ,"target": "~/"},
