@@ -49,8 +49,7 @@
         {"file": "backpropagation_seeds.ipynb"      ,"target": "~/"},
         {"file": "initialize_network.ipynb"         ,"target": "~/"},
         {"file": "train_network.ipynb"              ,"target": "~/"},
-        {"file": "predict.ipynb"                    ,"target": "~/"},
-        {"file": "contrived-dataset.xlsx"           ,"target": "~/"}
+        {"file": "predict.ipynb"                    ,"target": "~/"}
       ]
     }
   },
