@@ -39,6 +39,7 @@ The function below named column means() calculates the mean values for each colu
 the dataset
 '''
 
+# %%
 # calculate column means
 def column_means(dataset):
 	means = [0 for i in range(len(dataset[0]))]
