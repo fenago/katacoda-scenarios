@@ -1,0 +1,18 @@
+{
+  "title": "Machine Learning with Python",
+  "description": "Machine Learning Algorithms From Scratch",
+  "courses": [
+    {
+      "course_id": "docker-basiccommands",
+      "title": "Docker Basic Commands",
+      "description": "Get started with the basic docker commands",
+      "difficulty": "beginner",
+      "time": "15 minutes"
+    },
+    {
+      "course_id": "docker-advancedcommands",
+      "title": "Docker Advanced Commands",
+      "description": "Get started with the advanced docker commands"
+    }
+  ]
+}
