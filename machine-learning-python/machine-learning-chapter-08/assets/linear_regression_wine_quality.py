@@ -164,11 +164,8 @@ print('Mean RMSE: %.3f' % (sum(scores)/float(len(scores))))
 
 # %%
 '''
-A k value of 5 was used for cross-validation, giving each fold 4898/5 = 979.6 or just under 1000
-records to be evaluated upon each iteration. A learning rate of 0.01 and 50 training epochs were
+A k value of 5 was used for cross-validation was used. A learning rate of 0.01 and 50 training epochs were
 chosen with a little experimentation. You can try your own configurations and see if you can
 beat my score. Running this example prints the scores for each of the 5 cross-validation folds
 then prints the mean RMSE.
-We can see that the RMSE (on the normalized dataset) is 0.126, lower than the baseline
-value of 0.148.
 '''

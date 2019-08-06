@@ -3,6 +3,7 @@
 Below is a function named mean() that calculates the mean for a list of numbers.
 '''
 
+# %%
 # Calculate the mean value of a list of numbers
 def mean(values):
 	return sum(values) / float(len(values))

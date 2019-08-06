@@ -1,4 +1,3 @@
-
 # %%
 '''
 ## Estimating Coefficients
