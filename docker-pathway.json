@@ -1,6 +1,6 @@
 {
-  "title": "Machine Learning with Python",
-  "description": "Machine Learning Algorithms From Scratch",
+  "title": "Docker Get Started",
+  "description": "Learn everthing about docker, runtimes and docker swarm",
   "courses": [
     {
       "course_id": "docker-basiccommands",
