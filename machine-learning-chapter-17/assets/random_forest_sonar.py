@@ -242,7 +242,7 @@ def random_forest(train, test, max_depth, min_size, sample_size, n_trees, n_feat
 
 # %%
 '''
-A k value of 5 was used for cross-validation, giving each fold 208 5 = 41:6 or just over 40
+A k value of 5 was used for cross-validation, giving each fold 208/5 = 41.6 or just over 40
 records to be evaluated upon each iteration. Deep trees were constructed with a max depth of
 10 and a minimum number of training rows at each node of 1. Samples of the training dataset
 were created with the same size as the original dataset, which is a default expectation for the

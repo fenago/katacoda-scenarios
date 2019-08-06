@@ -141,7 +141,7 @@ def k_nearest_neighbors(train, test, num_neighbors):
 # %%
 '''
 Running the following example prints the RMSE on each fold and the mean RMSE across all folds.
-We can see that the RMSE of about 2.2 rings is better than the baseline of 3.2 rings. We also
+We can see that the RMSE is better than the baseline of 3.2 rings. We also
 have a model that is perhaps more useful in the domain with an performance that is easier to
 understand.
 '''

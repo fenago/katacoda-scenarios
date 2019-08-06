@@ -161,6 +161,7 @@ Therefore training the model involves retaining the training dataset. Below is a
 knn model() that does just this.
 '''
 
+# %%
 # Prepare the kNN model
 def knn_model(train):
 	return train
@@ -249,6 +250,7 @@ Below function named stacking() does 4 things:
 4. It then uses the submodels and aggregator model to make predictions on the test dataset
 '''
 
+# %%
 # Stacked Generalization Algorithm
 def stacking(train, test):
 	model_list = [knn_model, perceptron_model]

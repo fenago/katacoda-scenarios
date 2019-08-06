@@ -151,7 +151,7 @@ def learning_vector_quantization(train, test, n_codebooks, lrate, epochs):
 # %%
 '''
 Running this example prints the classification accuracy on each fold and the mean classification accuracy across all folds. We can see that the 
-accuracy of about 87% is better than the baseline of 64%. We can also see that our library of 20 codebook vectors is far fewer than
+accuracy is better than the baseline of 64%. We can also see that our library of 20 codebook vectors is far fewer than
 holding the entire training dataset.
 '''
 

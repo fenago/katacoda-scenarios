@@ -150,7 +150,7 @@ def k_nearest_neighbors(train, test, num_neighbors):
 '''
 A value of k=5 neighbors was used to make predictions. You may experiment with larger k
 values to increase accuracy. Running the example prints the accuracy scores achieved on each
-fold and the mean of those scores. We can see that the mean accuracy of 23% is better than the
+fold and the mean of those scores. We can see that the mean accuracy is better than the
 baseline of 16%, but is quite poor in general. This is because of the large number of classes
 making accuracy a poor judge of skill on this problem. This fact, combined with the fact that
 many of the classes have few or one example also makes the problem challenging.

@@ -131,6 +131,7 @@ We can break forward-propagation down into three parts:
 3. Forward-Propagation.
 '''
 
+# %%
 # Calculate neuron activation for an input
 def activate(weights, inputs):
 	activation = weights[-1]
@@ -169,6 +170,7 @@ This part is broken down into two sections.
 2. Error Backpropagation.
 '''
 
+# %%
 # Calculate the derivative of an neuron output
 def transfer_derivative(output):
 	return output * (1.0 - output)
@@ -281,5 +283,5 @@ Running the example prints the average classification accuracy on each fold as w
 average performance across all folds.
 
 You can see that backpropagation and the chosen configuration achieved a mean classification
-accuracy of about 93% which is dramatically better than the baseline of 28% accuracy.
+accuracy which is dramatically better than the baseline of 28% accuracy.
 '''

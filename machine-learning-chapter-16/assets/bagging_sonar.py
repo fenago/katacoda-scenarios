@@ -216,6 +216,7 @@ is achieved by selecting the most common prediction from the list of predictions
 bagged trees.
 '''
 
+# %%
 # Make a prediction with a list of bagged trees
 def bagging_predict(trees, row):
 	predictions = [predict(tree, row) for tree in trees]
@@ -243,7 +244,7 @@ def bagging(train, test, max_depth, min_size, sample_size, n_trees):
 
 # %%
 '''
-A k value of 5 was used for cross-validation, giving each fold 208 5 = 41:6 or just over 40
+A k value of 5 was used for cross-validation, giving each fold 208/5 = 41.6 or just over 40
 records to be evaluated upon each iteration.
 
 Deep trees were constructed with a max depth of 6 and a minimum number of training rows
