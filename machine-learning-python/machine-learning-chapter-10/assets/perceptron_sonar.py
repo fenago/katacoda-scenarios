@@ -148,14 +148,3 @@ n_epoch = 500
 scores = evaluate_algorithm(dataset, perceptron, n_folds, l_rate, n_epoch)
 print('Scores: %s' % scores)
 print('Mean Accuracy: %.3f%%' % (sum(scores)/float(len(scores))))
-
-# %%
-'''
-A k value of 3 was used for cross-validation, giving each fold 208 3 = 69:3 or just under 70
-records to be evaluated upon each iteration. A learning rate of 0.1 and 500 training epochs were
-chosen with a little experimentation. You can try your own configurations and see if you can
-beat my score.
-Running this example prints the scores for each of the 3 cross-validation folds then prints
-the mean classification accuracy. We can see that the accuracy is about 72%, higher than the
-baseline value of just over 50%.
-'''
