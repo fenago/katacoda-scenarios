@@ -2,23 +2,95 @@
   "title": "Machine Learning with Python",
   "description": "Machine Learning Algorithms From Scratch",
   "courses": [
-	{
+    {
       "course_id": "machine-learning-chapter-01",
-      "title": "Test Machine Learning - Chapter 1",
-      "description": "Test Run Python Code with Jupyter Notebooks."
-    },
-	{
-      "course_id": "machine-learning-chapter-02",
-      "title": "Test Machine Learning - Chapter 2",
-      "description": ""
-    },
-	{
-      "course_id": "machine-learning-chapter-0211",
-      "title": "Test Machine Learning - Chapter 2",
-      "description": ""
+      "title": "Machine Learning - Chapter 1",
+      "description": "Run Python Code with Jupyter Notebooks."
     },
     {
-      "course_id": "machine-learning-chapter-03"
+      "course_id": "machine-learning-chapter-02",
+      "title": "Machine Learning - Chapter 2",
+      "description": "Run Python Code with Jupyter Notebooks."
+    },
+    {
+      "course_id": "machine-learning-chapter-03",
+      "title": "Machine Learning - Chapter 3",
+      "description": "Run Python Code with Jupyter Notebooks."
+    },
+    {
+      "course_id": "machine-learning-chapter-04",
+      "title": "Machine Learning - Chapter 4",
+      "description": "Run Python Code with Jupyter Notebooks."
+    },
+    {
+      "course_id": "machine-learning-chapter-05",
+      "title": "Machine Learning - Chapter 5",
+      "description": "Run Python Code with Jupyter Notebooks."
+    },
+    {
+      "course_id": "machine-learning-chapter-06",
+      "title": "Machine Learning - Chapter 6",
+      "description": "Run Python Code with Jupyter Notebooks."
+    },
+    {
+      "course_id": "machine-learning-chapter-07",
+      "title": "Machine Learning - Chapter 7",
+      "description": "Run Python Code with Jupyter Notebooks."
+    },
+    {
+      "course_id": "machine-learning-chapter-08",
+      "title": "Machine Learning - Chapter 8",
+      "description": "Run Python Code with Jupyter Notebooks."
+    },
+    {
+      "course_id": "machine-learning-chapter-09",
+      "title": "Machine Learning - Chapter 9",
+      "description": "Run Python Code with Jupyter Notebooks."
+    },
+    {
+      "course_id": "machine-learning-chapter-10",
+      "title": "Machine Learning - Chapter 10",
+      "description": "Run Python Code with Jupyter Notebooks."
+    },
+    {
+      "course_id": "machine-learning-chapter-11",
+      "title": "Machine Learning - Chapter 11",
+      "description": "Run Python Code with Jupyter Notebooks."
+    },
+    {
+      "course_id": "machine-learning-chapter-12",
+      "title": "Machine Learning - Chapter 12",
+      "description": "Run Python Code with Jupyter Notebooks."
+    },
+    {
+      "course_id": "machine-learning-chapter-13",
+      "title": "Machine Learning - Chapter 13",
+      "description": "Run Python Code with Jupyter Notebooks."
+    },
+    {
+      "course_id": "machine-learning-chapter-14",
+      "title": "Machine Learning - Chapter 14",
+      "description": "Run Python Code with Jupyter Notebooks."
+    },
+    {
+      "course_id": "machine-learning-chapter-15",
+      "title": "Machine Learning - Chapter 15",
+      "description": "Run Python Code with Jupyter Notebooks."
+    },
+    {
+      "course_id": "machine-learning-chapter-16",
+      "title": "Machine Learning - Chapter 16",
+      "description": "Run Python Code with Jupyter Notebooks."
+    },
+    {
+      "course_id": "machine-learning-chapter-17",
+      "title": "Machine Learning - Chapter 17",
+      "description": "Run Python Code with Jupyter Notebooks."
+    },
+    {
+      "course_id": "machine-learning-chapter-18",
+      "title": "Machine Learning - Chapter 18",
+      "description": "Run Python Code with Jupyter Notebooks."
     }
   ]
 }
