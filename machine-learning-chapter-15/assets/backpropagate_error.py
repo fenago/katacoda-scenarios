@@ -42,7 +42,7 @@ def backward_propagate_error(network, expected):
 
 # %%
 '''
-Let’s test out the backward-propagate of our network.. We define a fixed neural network
+Let's test out the backward-propagate of our network.. We define a fixed neural network
 with output values and backpropagate an expected output pattern. The complete example is
 listed below.
 

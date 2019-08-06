@@ -45,7 +45,7 @@ def forward_propagate(network, row):
 
 # %%
 '''
-Let’s test out the forward-propagation of our network.
+Let's test out the forward-propagation of our network.
 We define our network inline with one hidden neuron that expects 2 input values and an output
 layer with two neurons.
 '''

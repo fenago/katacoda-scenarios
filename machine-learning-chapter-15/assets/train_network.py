@@ -140,7 +140,7 @@ def train_network(network, train, l_rate, n_epoch, n_outputs):
 # %%
 '''
 We now have all of the pieces to train the network. We can put together an example that
-includes everything we’ve seen so far including network initialization and train a network on
+includes everything we've seen so far including network initialization and train a network on
 a small dataset. Below is a small contrived dataset that we can use to test out training our
 neural network
 '''

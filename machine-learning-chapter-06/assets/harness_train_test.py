@@ -68,7 +68,7 @@ def evaluate_algorithm(dataset, algorithm, split, *args):
 
 # %%
 '''
-Let’s piece this together with a worked example. We will use the Pima Indians Diabetes
+Let's piece this together with a worked example. We will use the Pima Indians Diabetes
 dataset and evaluate the Zero Rule algorithm.
 '''
 

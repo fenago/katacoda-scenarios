@@ -6,7 +6,7 @@ from math import sqrt
 # %%
 '''
 ## Summarize Dataset
-We need two statistics from a given set of data. We’ll see how these statistics are used in the
+We need two statistics from a given set of data. We'll see how these statistics are used in the
 calculation of probabilities in a few steps. The two statistics we require from a given dataset
 are the mean and the standard deviation (average deviation from the mean). The mean is the average value 
 '''

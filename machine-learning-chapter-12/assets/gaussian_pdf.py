@@ -22,7 +22,7 @@ def calculate_probability(x, mean, stdev):
 
 # %%
 '''
-Let’s test it out to see how it works. Below are some worked examples.
+Let's test it out to see how it works. Below are some worked examples.
 '''
 
 # %%

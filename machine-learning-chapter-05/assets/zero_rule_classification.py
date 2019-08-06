@@ -8,7 +8,7 @@ from random import seed
 ## Zero Rule Algorithm
 The Zero Rule Algorithm is a better baseline than the random algorithm. It uses more
 information about a given problem to create one rule in order to make predictions. This rule is
-different depending on the problem type. Let’s start with classification problems, predicting a
+different depending on the problem type. Let's start with classification problems, predicting a
 class label.
 '''
 

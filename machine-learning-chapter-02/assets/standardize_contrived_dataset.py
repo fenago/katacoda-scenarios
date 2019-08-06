@@ -14,7 +14,7 @@ or bell curve.
 
 # %%
 '''
-Let’s start with creating functions to estimate the mean and standard deviation statistics for each column from a dataset. The mean describes
+Let's start with creating functions to estimate the mean and standard deviation statistics for each column from a dataset. The mean describes
 the middle or central tendency for a collection of numbers. The mean for a column is calculated
 as the sum of all values for a column divided by the total number of values.
 

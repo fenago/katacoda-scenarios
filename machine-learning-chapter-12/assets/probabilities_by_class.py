@@ -87,7 +87,7 @@ def calculate_class_probabilities(summaries, row):
 
 # %%
 '''
-Let’s run an example on the contrived dataset. The example below first calculates the summary statistics by class for the training dataset, then 
+Let's run an example on the contrived dataset. The example below first calculates the summary statistics by class for the training dataset, then 
 uses these statistics to calculate the probability of the first record belonging to each class.
 '''
 

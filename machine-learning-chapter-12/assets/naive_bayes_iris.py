@@ -165,6 +165,7 @@ Below function named naive_bayes() will manage the application of the Naive Baye
 and using them to make predictions for a test dataset.
 '''
 
+# %%
 # Naive Bayes Algorithm
 def naive_bayes(train, test):
 	summarize = summarize_by_class(train)

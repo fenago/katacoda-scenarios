@@ -25,5 +25,5 @@ print(matrix)
 
 Now, run the python code by running: `python confusion_matrix.py`{{execute}}
 
-It’s hard to interpret the results this way. It would help if we could display the matrix as
+It's hard to interpret the results this way. It would help if we could display the matrix as
 intended with rows and columns. We will modify code in the next step.

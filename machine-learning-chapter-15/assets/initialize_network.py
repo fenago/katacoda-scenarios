@@ -31,7 +31,7 @@ def initialize_network(n_inputs, n_hidden, n_outputs):
 
 # %%
 '''
-Let’s test out above function. Below is a complete example that creates a small network.<br />
+Let's test out above function. Below is a complete example that creates a small network.<br />
 
 Running the example, you can see that the code prints out each layer one by one. You can
 see the hidden layer has one neuron with 2 input weights plus the bias. The output layer has 2

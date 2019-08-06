@@ -7,7 +7,7 @@ from random import randrange
 # %%
 '''
 ## Bootstrap Resample
-Let’s start off by getting a strong idea of how the bootstrap method works. We can create a
+Let's start off by getting a strong idea of how the bootstrap method works. We can create a
 new sample of a dataset by randomly selecting rows from the dataset and adding them to a new
 list. We can repeat this for a fixed number of rows or until the size of the new dataset matches
 a ratio of the size of the original dataset.

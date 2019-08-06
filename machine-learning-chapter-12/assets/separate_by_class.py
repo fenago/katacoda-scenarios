@@ -1,10 +1,8 @@
-
-
 # %%
 '''
 ## Naive Bayes
-Bayes’ Theorem provides a way that we can calculate the probability of a piece of data belonging
-to a given class, given our prior knowledge. Bayes’ Theorem is stated as:<br />
+Bayes Theorem provides a way that we can calculate the probability of a piece of data belonging
+to a given class, given our prior knowledge. Bayes Theorem is stated as:<br />
 P(class|data) = P(data|class) × P(class)/ P(data)
 '''
 

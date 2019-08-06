@@ -16,7 +16,7 @@ def covariance(x, mean_x, y, mean_y):
 # %%
 '''
 Below is a function named variance() that calculates the variance of a list of numbers. It
-requires the mean of the list to be provided as an argument, just so we don’t have to calculate
+requires the mean of the list to be provided as an argument, just so we don't have to calculate
 it more than once.
 '''
 

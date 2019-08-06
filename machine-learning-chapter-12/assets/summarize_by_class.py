@@ -58,7 +58,7 @@ def summarize_by_class(dataset):
 
 # %%
 '''
-Let’s test out all of these behaviors on our contrived dataset. <br />
+Let's test out all of these behaviors on our contrived dataset. <br />
 
 Running the following example calculates the statistics for each input variable and prints them
 organized by class value. Interpreting the results, we can see that the X1 values for rows for
