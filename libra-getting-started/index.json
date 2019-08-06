@@ -6,8 +6,7 @@
   "details": {
     "steps": [{
       "title": "Libra Concepts",
-      "text": "steps/1/text.md",
-      "verify": "steps/1/verify.sh"
+      "text": "steps/1/text.md"
     },
     {
       "title": "Clone and build Libra Core.",
@@ -41,7 +40,7 @@
   },
   "environment": {
     "uilayout": "terminal",
-    "uimessage1": "\u001b[32mBrought to you by https://container.training\u001b[m\r\n"
+    "uimessage1": "\u001b[32mBrought to you by ernesto\u001b[m\r\n"
   },
   "backend": {
     "imageid": "docker"

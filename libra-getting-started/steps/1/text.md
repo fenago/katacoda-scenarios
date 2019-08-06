@@ -1,8 +1,7 @@
 The Libra currency is built on the Libra Blockchain. This site documents Libra Core, an open source prototype of the Libra protocol, which powers this new blockchain. The site also documents the testnet, a demonstration of this new system. In contrast to the forthcoming Libra mainnet, the testnet uses a digital currency with no real-world value.
 
-
-## Move: A New Blockchain Programming Language
-“Move” is a new programming language for implementing custom transaction logic and "smart contracts" on the Libra Blockchain. Because of Libra’s goal to serve billions of people one day, Move is designed with safety and security as the highest priorities.
+## Move
+Move is a new programming language for implementing custom transaction logic and "smart contracts" on the Libra Blockchain. Because of Libra’s goal to serve billions of people one day, Move is designed with safety and security as the highest priorities.
 
 ## Libra Ecosystem
 The Libra ecosystem consists of different types of entities:
