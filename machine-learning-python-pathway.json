@@ -1,0 +1,24 @@
+{
+  "title": "Machine Learning with Python",
+  "description": "Machine Learning Algorithms From Scratch",
+  "courses": [
+	{
+      "course_id": "machine-learning-chapter-01",
+      "title": "Test Machine Learning - Chapter 1",
+      "description": "Test Run Python Code with Jupyter Notebooks."
+    },
+	{
+      "course_id": "machine-learning-chapter-02",
+      "title": "Test Machine Learning - Chapter 2",
+      "description": ""
+    },
+	{
+      "course_id": "machine-learning-chapter-0211",
+      "title": "Test Machine Learning - Chapter 2",
+      "description": ""
+    },
+    {
+      "course_id": "machine-learning-chapter-03"
+    }
+  ]
+}
