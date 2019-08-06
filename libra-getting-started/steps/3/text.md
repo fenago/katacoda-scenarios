@@ -1,4 +1,3 @@
-####  Build Libra CLI Client and Connect to the Testnet
 To connect to a validator node running on the Libra testnet, run the client as shown below.
 `./scripts/cli/start_cli_testnet.sh`{{execute}}
 
@@ -18,4 +17,4 @@ libra%
 ```
 
 **Note:** You can verify CLI Client Is Running on Your System by running `help`{{execute}} command. you should get 
-“connected to the validator” as output.
+**"connected to the validator"** as output.

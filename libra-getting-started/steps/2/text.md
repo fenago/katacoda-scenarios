@@ -6,7 +6,7 @@ In this step, we will clone and build Libra core.
 #### Install Dependencies
 To setup Libra Core, change to the libra directory and run the setup script to install the dependencies, as shown below:
 
-`cd libra && ./scripts/dev_setup.sh`{{execute}}
+`cd libra && yes | ./scripts/dev_setup.sh`{{execute}}
 
 The above setup script installs the following:
 
