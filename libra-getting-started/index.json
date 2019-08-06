@@ -1,0 +1,49 @@
+{
+  "title": "Docker Advanced Commands",
+  "description": "Get started with the advanced docker commands",
+  "difficulty": "Intermediate",
+  "time": "15 minutes",
+  "details": {
+    "steps": [{
+      "title": "Libra Concepts",
+      "text": "steps/1/text.md",
+      "verify": "steps/1/verify.sh"
+    },
+    {
+      "title": "Clone and build Libra Core.",
+      "text": "steps/2/text.md"
+    },    
+	{
+      "title": "Build Libra CLI client",
+      "text": "steps/3/text.md"
+    },
+	{
+      "title": "Create Accounts",
+      "text": "steps/4/text.md"
+    },
+	{
+      "title": "Mint coins",
+      "text": "steps/5/text.md",
+      "verify": "steps/5/verify.sh",
+      "answer": "steps/5/answer.md"
+    },
+	{
+      "title": "Submit a transaction",
+      "text": "steps/6/text.md"
+    }],
+    "intro": {
+      "text": "intro.md",
+      "credits": ""
+    },
+    "finish": {
+      "text": "finish.md"
+    }
+  },
+  "environment": {
+    "uilayout": "terminal",
+    "uimessage1": "\u001b[32mBrought to you by https://container.training\u001b[m\r\n"
+  },
+  "backend": {
+    "imageid": "docker"
+  }
+}
