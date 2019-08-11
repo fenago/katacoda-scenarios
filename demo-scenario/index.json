@@ -17,10 +17,10 @@
     }
   },
   "environment": {
-    "uilayout": "terminal",
-    "uimessage1": "\u001b[32mYour Interactive Bash Terminal.\u001b[m\r\n"
+    "uilayout": "editor-terminal",
+    "uimessage1": "\u001b[32mFeNAgO Interactive Bash Terminal.\u001b[m\r\n"
   },
   "backend": {
-    "imageid": "bash"
+    "imageid": "docker"
   }
 }
