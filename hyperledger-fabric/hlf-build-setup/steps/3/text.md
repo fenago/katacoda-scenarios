@@ -18,5 +18,3 @@ The above command will compile Golang chaincode images and spin up the correspon
 ```
 
 **Caution:** Do not run both of these commands. Only one language can be tried unless you bring down and recreate the network between.
-
-**Note:**

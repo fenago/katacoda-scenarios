@@ -29,7 +29,7 @@ If you choose not to supply a flag, the script will use default values.
 
 #### Generate Network Artifacts
 Ready to give it a go? Okay then! Execute the following command:
-`yes | ./byfn.sh generate`{{execute}}
+`./byfn.sh generate`{{execute}}
 
 You will see a brief description as to what will occur, along with a yes/no command line prompt. Respond with a y or hit the return key to execute the described action.
 

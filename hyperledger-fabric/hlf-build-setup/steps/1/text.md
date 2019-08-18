@@ -8,6 +8,7 @@ Before we begin, let's install all the Prerequisites on the platform(s) on which
 Now, move in the directory into which you will install the Fabric Samples and binaries, go ahead and execute the command to pull down the binaries and images.
 `cd fabric-samples && curl -sSL http://bit.ly/2ysbOFE | bash -s`{{execute}}
 
+**Note:** Please wait for the above script to complete, It will take around 3 minutes to complete.
 
 The build your first network (BYFN) scenario provisions a sample Hyperledger Fabric network consisting of two organizations, each maintaining two peer nodes. It also will deploy a “Solo” ordering service by default,though other ordering service implementations are available.
 
