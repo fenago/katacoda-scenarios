@@ -27,6 +27,10 @@
     {
         "title": "Querying the ledger",
         "text": "steps/6/text.md"
+    },
+    {
+        "title": "Continued..",
+        "text": "steps/6/text.md"
     }],
     "intro": {
       "text": "intro.md",
