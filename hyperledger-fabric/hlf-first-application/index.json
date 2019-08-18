@@ -30,7 +30,11 @@
     },
     {
         "title": "Continued..",
-        "text": "steps/6/text.md"
+        "text": "steps/7/text.md"
+    },
+    {
+        "title": "Updating the ledger",
+        "text": "steps/8/text.md"
     }],
     "intro": {
       "text": "intro.md",
