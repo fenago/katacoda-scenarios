@@ -4,6 +4,7 @@ Finally, let’s bring it all down so we can explore the network setup one step 
 
 Once again, you will be prompted to continue, respond with a y or hit the return key:
 
+```
 Stopping with channel 'mychannel' and CLI timeout of '10'
 Continue? [Y/n] y
 proceeding ...
@@ -15,4 +16,6 @@ Removing network net_byfn
 Untagged: dev-peer1.org2.example.com-mycc-1.0:latest
 Deleted: sha256:ed3230614e64e1c83e510c0c282e982d2b06d148b1c498bbdcc429e2b2531e91
 ...
-If you’d like to learn more about the underlying tooling and bootstrap mechanics, continue reading. In these next sections we’ll walk through the various steps and requirements to build a fully-functional Hyperledger Fabric network.
+```
+
+In these next sections we’ll walk through the various steps and requirements to build a fully-functional Hyperledger Fabric network.
