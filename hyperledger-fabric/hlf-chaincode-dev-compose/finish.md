@@ -1,1 +1,1 @@
-You've completed your Libra Blockchain Lab Exercise!
+You've completed your Hyperledger Fabric Lab Exercise!

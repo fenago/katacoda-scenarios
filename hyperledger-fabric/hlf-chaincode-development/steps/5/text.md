@@ -12,4 +12,4 @@ Now let’s compile your chaincode.
 
 `go build`{{execute}}
 
-If there are no errors, it means compilation was susccessful. In the upcoming scenario, we will also test  chaincode using docker-compose.
+If there are no errors, it means compilation was susccessful. In the upcoming [Chaincode Testing in Dev](https://www.katacoda.com/ernesto/courses/hyperledger-fabric/hlf-chaincode-development) scenario, we will also test chaincode using docker-compose.
