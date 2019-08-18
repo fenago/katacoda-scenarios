@@ -6,6 +6,6 @@ This process uses a Certificate Signing Request (CSR) — the private and public
 We will subsequently register and enroll a new application user which will be used by our application to interact with the blockchain.
 
 Let’s enroll user admin:
-`node enrollAdmin.js`{{execute}}
+`node enrollAdmin.js`{{execute T1}}
 
 This command has stored the CA administrator’s credentials in the wallet directory.

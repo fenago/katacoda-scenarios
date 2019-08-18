@@ -8,7 +8,7 @@ Each peer in a blockchain network hosts a copy of the ledger, and an application
 
 
 First, let’s run our query.js program to return a listing of all the cars on the ledger. This program uses our second identity – user1 – to access the ledger:
-`node query.js`{{execute}}
+`node query.js`{{execute T1}}
 
 The output should look like this:
 
