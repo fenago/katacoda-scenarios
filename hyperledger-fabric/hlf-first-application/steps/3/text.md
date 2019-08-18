@@ -1,4 +1,4 @@
-The following instructions require you to be in the fabcar/javascript subdirectory within your local clone of the fabric-samples repo `cd fabcar/javascript`{{execute}}
+The following instructions require you to be in the fabcar/javascript subdirectory within your local clone of the fabric-samples repo `cd fabcar/javascript`{{execute T1}}
 
 Run the following command to install the Fabric dependencies for the applications. It will take few moments to complete: `npm install`{{execute T1}}
 
