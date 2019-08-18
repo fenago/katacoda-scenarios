@@ -1,5 +1,5 @@
 {
-  "title": "Libra Get Started",
+  "title": "HLF",
   "description": "Introduction to Libra Blockchain and Move",
   "difficulty": "Intermediate",
   "time": "15 minutes",
@@ -23,10 +23,6 @@
 	{
       "title": "Bring Down the Network",
       "text": "steps/5/text.md"
-    },
-	{
-      "title": "Submit a transaction",
-      "text": "steps/6/text.md"
     }],
     "intro": {
       "text": "intro.md",
