@@ -13,11 +13,11 @@
       "text": "steps/2/text.md"
     },    
 	{
-      "title": "Terminal 1 - Build & start the chaincode",
+      "title": "Terminal 2 - Build & start the chaincode",
       "text": "steps/3/text.md"
     },
 	{
-      "title": "Terminal 2 - Use the chaincode",
+      "title": "Terminal 3 - Use the chaincode",
       "text": "steps/4/text.md"
     },
 	{
