@@ -1,6 +1,4 @@
 In this step, we will clone fabric samples repository and install prerequisites.
-
-#### Clone fabric samples repository
 `git clone https://github.com/hyperledger/fabric-samples.git`{{execute}}
 
 
