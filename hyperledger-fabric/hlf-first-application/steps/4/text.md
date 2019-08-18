@@ -1,6 +1,4 @@
 
-The following two sections involve communication with the Certificate Authority. You may find it useful to stream the CA logs when running the upcoming programs by opening a new terminal shell and running `docker logs -f ca.example.com`{{execute}}
-
 When we created the network, an admin user — literally called admin — was created as the registrar for the certificate authority (CA). Our first step is to generate the private key, public key, and X.509 certificate for admin using the enroll.js program. 
 
 This process uses a Certificate Signing Request (CSR) — the private and public key are first generated locally and the public key is then sent to the CA which returns an encoded certificate for use by the application. These three credentials are then stored in the wallet, allowing us to act as an administrator for the CA.

@@ -14,7 +14,6 @@ See how the applications calls the smart contract transaction createCar to creat
 
 **Note:** If the invoke is successful, you will see output like this:
 ```
-Wallet path: ...fabric-samples/fabcar/javascript/wallet
-2018-12-11T14:11:40.935Z - info: [TransactionEventHandler]: _strategySuccess: strategy success for transaction "9076cd4279a71ecf99665aed0ed3590a25bba040fa6b4dd6d010f42bb26ff5d1"
+Wallet path: /root/fabric-samples/fabcar/javascript/wallet
 Transaction has been submitted
-````
+```

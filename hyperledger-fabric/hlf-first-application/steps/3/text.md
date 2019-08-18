@@ -1,4 +1,4 @@
-The following instructions require you to be in the fabcar/javascript subdirectory within your local clone of the fabric-samples repo `cd javascript`{{execute}}
+The following instructions require you to be in the fabcar/javascript subdirectory within your local clone of the fabric-samples repo `cd fabcar/javascript`{{execute}}
 
 Run the following command to install the Fabric dependencies for the applications. It will take few moments to complete: `npm install`{{execute}}
 
@@ -11,5 +11,5 @@ You should see the following:
 ```
 enrollAdmin.js  node_modules  package.json
 registerUser.js invoke.js     package-lock.json 
-query.js      wallet
+query.js        wallet
 ```
