@@ -1,21 +1,12 @@
-Finally, let’s bring it all down so we can explore the network setup one step at a time. The following will kill your containers, remove the crypto material and four artifacts, and delete the chaincode images from your Docker Registry:
 
-`./byfn.sh down`{{execute}}
+In this step, we will update value if `a` to 20. We will also verify that the value was update using peer chaincode query command.
 
-Once again, you will be prompted to continue, respond with a y or hit the return key:
+Now issue an invoke to change the value of “a” to “20”.
+`peer chaincode invoke -n mycc -c '{"Args":["set", "a", "20"]}' -C myc`{{execute T3}}
 
-```
-Stopping with channel 'mychannel' and CLI timeout of '10'
-Continue? [Y/n] y
-proceeding ...
-WARNING: The CHANNEL_NAME variable is not set. Defaulting to a blank string.
-WARNING: The TIMEOUT variable is not set. Defaulting to a blank string.
-Removing network net_byfn
-468aaa6201ed
-...
-Untagged: dev-peer1.org2.example.com-mycc-1.0:latest
-Deleted: sha256:ed3230614e64e1c83e510c0c282e982d2b06d148b1c498bbdcc429e2b2531e91
-...
-```
+#### Testing chaincode
+Finally, query a. We should see a value of 20.
+`peer chaincode query -n mycc -c '{"Args":["query","a"]}' -C myc`{{execute T3}}
 
-In these next sections we’ll walk through the various steps and requirements to build a fully-functional Hyperledger Fabric network.
+#### Chaincode access control
+Chaincode can utilize the client (submitter) certificate for access control decisions by calling the GetCreator() function. Additionally the Go shim provides extension APIs that extract client identity from the submitter’s certificate that can be used for access control decisions, whether that is based on client identity itself, or the org identity, or on a client identity attribute.
