@@ -1,26 +1,26 @@
 {
   "title": "Hyperledger Fabric",
-  "description": "Intorduction to Hyperledger Fabric",
+  "description": "Introduction to Hyperledger Fabric",
   "courses": [
     {
       "course_id": "hlf-build-setup",
       "title": "Hyperledger Setup",
-      "description": "Introduction to Hyperledger"
+      "description": ""
     },
     {
       "course_id": "hlf-first-application",
       "title": "Hyperledger Sample Application",
-      "description": "Introduction to Hyperledger"
+      "description": ""
     },
     {
       "course_id": "hlf-chaincode-development",
       "title": "Chaincode for Developers",
-      "description": "Introduction to Hyperledger"
+      "description": ""
     },
     {
       "course_id": "hlf-chaincode-dev-compose",
       "title": "Hyperledger Chaincode Testing in Dev",
-      "description": "Introduction to Hyperledger"
+      "description": ""
     }
   ]
 }
