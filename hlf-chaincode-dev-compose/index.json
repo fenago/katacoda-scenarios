@@ -1,5 +1,5 @@
 {
-  "title": "Hyperledger Build Network",
+  "title": "Hyperledger Chaincode Testing in Dev mode",
   "description": "Introduction to Hyperledger",
   "difficulty": "Intermediate",
   "time": "15 minutes",
@@ -9,19 +9,19 @@
       "text": "steps/1/text.md"
     },
     {
-      "title": "Generate Artifacts",
+      "title": "Terminal 1 - Start the network",
       "text": "steps/2/text.md"
     },    
 	{
-      "title": "Bring Up the Network",
+      "title": "Terminal 1 - Build & start the chaincode",
       "text": "steps/3/text.md"
     },
 	{
-      "title": "Continued..",
+      "title": "Terminal 2 - Use the chaincode",
       "text": "steps/4/text.md"
     },
 	{
-      "title": "Bring Down the Network",
+      "title": "Docker Compose Logs",
       "text": "steps/5/text.md"
     }],
     "intro": {
@@ -33,7 +33,7 @@
     }
   },
   "environment": {
-    "uilayout": "terminal",
+    "uilayout": "terminal-terminal",
     "uimessage1": "\u001b[32mBrought to you by ernesto\u001b[m\r\n"
   },
   "backend": {

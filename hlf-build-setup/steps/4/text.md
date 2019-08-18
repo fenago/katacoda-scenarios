@@ -9,8 +9,7 @@ To bring up the network with a Kafka ordering service, issue:
 #### Logs
 You can scroll through these logs to see the various transactions.
 
-```
-Starting for channel 'mychannel' with CLI timeout of '10' seconds and CLI delay of '3' seconds
+```Starting for channel 'mychannel' with CLI timeout of '10' seconds and CLI delay of '3' seconds
 Continue? [Y/n]
 proceeding ...
 Creating network "net_byfn" with the default driver
@@ -20,13 +19,6 @@ Creating peer0.org2.example.com
 Creating orderer.example.com
 Creating peer1.org2.example.com
 Creating cli
-
-
- ____    _____      _      ____    _____
-/ ___|  |_   _|    / \    |  _ \  |_   _|
-\___ \    | |     / _ \   | |_) |   | |
- ___) |   | |    / ___ \  |  _ <    | |
-|____/    |_|   /_/   \_\ |_| \_\   |_|
 
 Channel name : mychannel
 Creating channel...
@@ -38,11 +30,4 @@ Query Result: 90
 2017-05-16 17:08:15.158 UTC [main] main -> INFO 008 Exiting.....
 ===================== Query successful on peer1.org2 on channel 'mychannel' =====================
 
-===================== All GOOD, BYFN execution completed =====================
-
- _____   _   _   ____
-| ____| | \ | | |  _ \
-|  _|   |  \| | | | | |
-| |___  | |\  | | |_| |
-|_____| |_| \_| |____/
-```
+===================== All GOOD, BYFN execution completed =====================```
