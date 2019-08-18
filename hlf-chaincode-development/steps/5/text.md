@@ -10,6 +10,7 @@ func main() {
 Now let’s compile your chaincode.
 
 `go get -u github.com/hyperledger/fabric/core/chaincode/shim`{{execute}}
+
 `go build`{{execute}}
 
 Assuming there are no errors, now we can proceed to the next step, testing your chaincode.
