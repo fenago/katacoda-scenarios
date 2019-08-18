@@ -1,0 +1,46 @@
+{
+  "title": "Libra Get Started",
+  "description": "Introduction to Libra Blockchain and Move",
+  "difficulty": "Intermediate",
+  "time": "15 minutes",
+  "details": {
+    "steps": [{
+      "title": "Libra Concepts",
+      "text": "steps/1/text.md"
+    },
+    {
+      "title": "Clone and build Libra Core.",
+      "text": "steps/2/text.md"
+    },    
+	{
+      "title": "Bring Up the Network",
+      "text": "steps/3/text.md"
+    },
+	{
+      "title": "Create Accounts",
+      "text": "steps/4/text.md"
+    },
+	{
+      "title": "Bring Down the Network",
+      "text": "steps/5/text.md"
+    },
+	{
+      "title": "Submit a transaction",
+      "text": "steps/6/text.md"
+    }],
+    "intro": {
+      "text": "intro.md",
+      "credits": ""
+    },
+    "finish": {
+      "text": "finish.md"
+    }
+  },
+  "environment": {
+    "uilayout": "terminal",
+    "uimessage1": "\u001b[32mBrought to you by ernesto\u001b[m\r\n"
+  },
+  "backend": {
+    "imageid": "docker"
+  }
+}
