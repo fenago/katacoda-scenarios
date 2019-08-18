@@ -4,4 +4,4 @@ Launch your network using the `startFabric.sh` shell script. This command will s
 `cd fabcar && ./startFabric.sh javascript`{{execute T1}}
 
 
-**Note:** Wait for the above script to complete fabric components before proceeding to next step. It will take around four minutes.
+**Note:** Wait for the above script to complete before proceeding to next step. It will take around four minutes.
