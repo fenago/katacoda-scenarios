@@ -1,0 +1,34 @@
+The following instructions require you to be in the fabcar/javascript subdirectory within your local clone of the fabric-samples repo `cd javascript`{{execute}}
+
+Run the following command to install the Fabric dependencies for the applications. It will take few moments to complete: `npm install`{{execute}}
+
+This process is installing the key application dependencies defined in package.json. The most important of which is the fabric-network class; it enables an application to use identities, wallets, and gateways to connect to channels, submit transactions, and wait for notifications. 
+
+Once npm install completes, everything is in place to run the application. For this tutorial, you’ll primarily be using the application JavaScript files in the fabcar/javascript directory. Let’s take a look at what’s inside: `ls`{{execute}}
+
+You should see the following:
+
+```
+enrollAdmin.js  node_modules  package.json
+registerUser.js invoke.js     package-lock.json 
+query.js      wallet
+```
+
+If you are using Mac OS and running Mojave, you will need to install Xcode.
+
+`docker exec -it chaincode bash`{{execute T2}}
+
+You should see the following:
+```
+root@d2629980e76b:/opt/gopath/src/chaincode#
+```
+
+Now, compile your chaincode:
+`cd sacc`{{execute T2}}
+
+`go build`{{execute T2}}
+
+You can view the contents of the `sacc.go` file by running `cat sacc.go`{{execute T2}}. The code has been covered in [Chaincode for Developers](https://www.katacoda.com/ernesto/scenarios/hlf-chaincode-development) scenario in detail.
+
+Now run the chaincode:
+`CORE_PEER_ADDRESS=peer:7052 CORE_CHAINCODE_ID_NAME=mycc:0 ./sacc`{{execute T2}}

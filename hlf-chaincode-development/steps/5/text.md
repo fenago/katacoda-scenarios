@@ -8,9 +8,8 @@ func main() {
 </pre>
 
 Now let’s compile your chaincode.
-
 `go get -u github.com/hyperledger/fabric/core/chaincode/shim`{{execute}}
 
 `go build`{{execute}}
 
-Assuming there are no errors, now we can proceed to the next step, testing your chaincode.
+If there are no errors, it means compilation was susccessful. In the upcoming scenario, we will also test  chaincode using docker-compose.
