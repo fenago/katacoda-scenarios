@@ -1,5 +1,3 @@
-Let’s take a closer look at this program. Use an editor (e.g. atom or visual studio) and open query.js.
-
 The application starts by bringing in scope two key classes from the fabric-network module; FileSystemWallet and Gateway. These classes will be used to locate the user1 identity in the wallet, and use it to connect to the network:
 ```
 const { FileSystemWallet, Gateway } = require('fabric-network');
