@@ -6,10 +6,9 @@ Open `fabric-setup.sh` by clicking `HLFADV` > `setup` folder in vscode **Explore
 You can verify cryptogen is installed on your System by running `cryptogen version`{{copy}} command.
 
 #### Usage
-Here’s some examples using the different available flags on the peer command.
+Here’s some examples using the different available flags on the peer command `cryptogen --help`{{copy}}
 
-`cryptogen --help`{{copy}}
-
+```
 usage: cryptogen [<flags>] <command> [<args> ...]
 
 Utility for generating Hyperledger Fabric key material

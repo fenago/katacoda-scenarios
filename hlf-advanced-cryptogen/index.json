@@ -19,12 +19,12 @@
 	{
       "title": "Generate",
       "text": "steps/4/text.md",
-      "answer": "steps/2/answer.md"
+      "answer": "steps/4/answer.md"
     },
   {
       "title": "Extend",
-      "text": "steps/3/text.md",
-      "answer": "steps/2/answer.md"
+      "text": "steps/5/text.md",
+      "answer": "steps/5/answer.md"
     }],
     "intro": {
       "text": "intro.md",
