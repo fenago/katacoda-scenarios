@@ -13,16 +13,16 @@
       "text": "steps/2/text.md"
     },    
 	{
-      "title": "Install Cryptogen",
+      "title": "Orderer And Peer Orgs",
       "text": "steps/3/text.md"
     },
 	{
-      "title": "Cryptogen Generate",
+      "title": "Cryptogen Template",
       "text": "steps/4/text.md",
       "answer": "steps/4/answer.md"
     },
   {
-      "title": "Cryptogen Extend",
+      "title": "Cryptogen Template",
       "text": "steps/5/text.md",
       "answer": "steps/5/answer.md"
     }],
@@ -34,8 +34,11 @@
       "text": "finish.md"
     }
   },
+  "files": [
+    "config.yaml"
+  ],
   "environment": {
-    "uilayout": "vscode",
+    "uilayout": "editor-terminal",
     "uimessage1": "\u001b[32mBrought to you by ernesto\u001b[m\r\n"
   },
   "backend": {
