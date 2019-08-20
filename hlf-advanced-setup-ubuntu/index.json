@@ -29,11 +29,9 @@
     }
   },
   "environment": {
-    "uilayout": "terminal",
-    "showdashboard": true,
-    "dashboards": [{"name": "VS Code", "port": 23000}]
+    "uilayout": "terminal"
   },
   "backend": {
-    "imageid": "ubuntu"
+    "imageid": "ubuntu-vscode"
   }
 }
