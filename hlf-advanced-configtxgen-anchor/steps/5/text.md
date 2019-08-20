@@ -1,5 +1,5 @@
-In this step, we will create a Tx file which will be used by peers for submitting transaction.
-`configtxgen -outputCreateChannelTx ./acme-channel.tx  -profile AcmeChannel -channelID acmechannel`{{copy}}
+In this step, we will generate the anchor peer update tx which will be used by peers for submitting transaction.
+`configtxgen -outputAnchorPeersUpdate ./Org1Anchors.tx -profile AcmeChannel -channelID acmechannel -asOrg Org1`{{copy}}
 
 ```
 Usage of configtxgen:
@@ -13,4 +13,4 @@ Usage of configtxgen:
 ```
 
 #### Verify
-You can verify Tx file was created by listing content of current directory `ls`{{copy}} command.
+You can verify `Org1Anchors.tx` file was created by listing content of current directory `ls`{{copy}} command.
