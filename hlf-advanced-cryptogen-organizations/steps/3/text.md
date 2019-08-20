@@ -5,7 +5,7 @@ The cryptogen showtemplate command shows the default configuration template.
 #### Syntax
 The cryptogen showtemplate command has the following syntax:
 
-`cryptogen showtemplate`{{execute}}
+`cryptogen showtemplate`{{execute}}execute}}
 
 There are two types of Orgs in cryptogen yaml file.
 1. OrdererOrgs
