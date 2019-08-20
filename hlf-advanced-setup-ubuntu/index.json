@@ -32,6 +32,6 @@
     "uilayout": "terminal"
   },
   "backend": {
-    "imageid": "vscode-ubuntu"
+    "imageid": "ubuntu"
   }
 }
