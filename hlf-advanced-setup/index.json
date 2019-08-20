@@ -1,28 +1,24 @@
 {
-  "title": "Hyperledger Setup",
+  "title": "Hyperledger Fabric Setup",
   "description": "Introduction to Hyperledger",
-  "difficulty": "Intermediate",
+  "difficulty": "Advanced",
   "time": "15 minutes",
   "details": {
     "steps": [{
-      "title": "Clone hyperledger fabric samples",
+      "title": "Requirements",
       "text": "steps/1/text.md"
     },
     {
-      "title": "Generate Artifacts",
+      "title": "Install Prerequisite",
       "text": "steps/2/text.md"
     },    
 	{
-      "title": "Bring Up the Network",
+      "title": "Fabric Binaries and Samples",
       "text": "steps/3/text.md"
     },
 	{
-      "title": "Continued..",
+      "title": "CA Server Setup",
       "text": "steps/4/text.md"
-    },
-	{
-      "title": "Bring Down the Network",
-      "text": "steps/5/text.md"
     }],
     "intro": {
       "text": "intro.md",
