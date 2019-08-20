@@ -1,0 +1,44 @@
+{
+  "title": "Hyperledger Setup",
+  "description": "Introduction to Hyperledger",
+  "difficulty": "Intermediate",
+  "time": "15 minutes",
+  "details": {
+    "steps": [{
+      "title": "Clone hyperledger fabric samples",
+      "text": "steps/1/text.md"
+    },
+    {
+      "title": "Generate Artifacts",
+      "text": "steps/2/text.md"
+    },    
+	{
+      "title": "Bring Up the Network",
+      "text": "steps/3/text.md"
+    },
+	{
+      "title": "Continued..",
+      "text": "steps/4/text.md"
+    },
+	{
+      "title": "Bring Down the Network",
+      "text": "steps/5/text.md"
+    }],
+    "intro": {
+      "text": "intro.md",
+      "credits": ""
+    },
+    "finish": {
+      "text": "finish.md"
+    }
+  },
+  "environment": {
+    "uilayout": "vscode",
+    "showdashboard": true,
+    "dashboards": [{"name": "VS Code", "port": 23000}],
+    "uimessage1": "\u001b[32mBrought to you by ernesto\u001b[m\r\n"
+  },
+  "backend": {
+    "imageid": "vscode"
+  }
+}

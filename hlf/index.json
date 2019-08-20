@@ -21,7 +21,10 @@
       "text": "finish.md"
     }
   },
-  "environment": {"uilayout": "vscode"},
+  "environment": {
+    "uilayout": "vscode",
+    "showdashboard": true,
+    "dashboards": [{"name": "VS Code", "port": 23000}]},
   "backend": {
     "imageid": "vscode"
   }
