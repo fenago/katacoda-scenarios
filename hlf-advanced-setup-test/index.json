@@ -1,0 +1,37 @@
+{
+  "title": "Hyperledger Fabric Setup",
+  "description": "Introduction to Hyperledger",
+  "difficulty": "Advanced",
+  "time": "15 minutes",
+  "details": {
+    "steps": [{
+      "title": "Requirements",
+      "text": "steps/1/text.md"
+    },
+    {
+      "title": "Install Prerequisites",
+      "text": "steps/2/text.md"
+    },    
+	{
+      "title": "Fabric Binaries and Samples",
+      "text": "steps/3/text.md"
+    },
+	{
+      "title": "CA Server Setup",
+      "text": "steps/4/text.md"
+    }],
+    "intro": {
+      "text": "intro.md",
+      "credits": ""
+    },
+    "finish": {
+      "text": "finish.md"
+    }
+  },
+  "environment": {
+    "showdashboard": true,
+    "dashboards": [{"name": "VS Code", "port": 23000}]},
+  "backend": {
+    "imageid": "ubuntu"
+  }
+}
