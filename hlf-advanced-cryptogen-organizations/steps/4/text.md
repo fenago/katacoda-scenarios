@@ -16,6 +16,7 @@ OrdererOrgs:
 
 Following yaml defines PeerOrgs which contains the definition of organizations managing peer nodes. Template allows for the definition of 1 or more hosts that are created sequentially.
 
+You will see a count variable within this yaml file. We use this to specify the number of peers per Organization; in our case there are one peers per Org.
 
 <pre class="file" data-filename="config.yaml">
 
@@ -46,4 +47,4 @@ PeerOrgs:
 	  
 </pre>
 
-In the next step, we will creat crypto material for the organizations and explore generated crypto-config directory.
+In the next step, we will create crypto material for the organizations and explore generated crypto-config directory.
