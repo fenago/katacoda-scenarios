@@ -3,13 +3,14 @@ In this step, we will generate the anchor peer update tx which will be used by p
 
 ```
 Usage of configtxgen:
+  -asOrg string
+        Performs the config generation as a particular organization (by name), only including values in the write set that org (likely) has privilege to set
   -channelID string
         The channel ID to use in the configtx
-  -outputCreateChannelTx string
-        The path to write a channel creation configtx to (if set)
+  -outputAnchorPeersUpdate string
+        Creates an config update to update an anchor peer (works only with the default channel creation, and only for the first update)
   -profile string
         The profile from configtx.yaml to use for generation. (default "SampleInsecureSolo")
-
 ```
 
 #### Verify
