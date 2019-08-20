@@ -16,20 +16,23 @@ In this step, we will add more organization to the cryptogen yaml file.
 </pre>
 
 
-You can generate the crypto material by running: `cryptogen generate --config ./config.yaml`{{copy}}
+You can generate the crypto material by running: `cryptogen generate --config ~/config.yaml`{{copy}}
 
 #### Output
-You will get both organization's name created as a output.
-
+You will get both organization's domain name as a output.
 ```
+org1.example.com
+org2.example.com
 ```
 
-`cd ~/first-network`{{execute}}
+#### OrdererOrganizations
+You can verify that orderer organization has been created by running following command. Orderer needs access to MSP & TLS.
+`cd ~/crypto-config/ordererOrganizations/example.com/ && ls`{{execute}}
 
-`cd ~/first-network`{{execute}}
+Orderer will only contain default Admin user because we didn't create any other users `cd users && ls`{{execute}}
 
+#### PeerOrganizations
+You can verify that peers orgs have been created by running following command. Orderer needs access to MSP & TLS.
+`cd ~/crypto-config/peerOrganizations/ && ls`{{execute}}
 
-Validate that the crypto material was created for the organizations by going into the generated crypto-config DIRECTORY and then navigate to peerOrganizations. Explore the various directories
-
-You can reate the crypto for the new peer with:
-`cryptogen extend --help`{{copy}}
+Peer will also contain another user `User1@org1.example.com` other than default Admin user bacause we specified user count equal to tone in config.yaml  `cd org1.example.com/users/ && ls`{{execute}}

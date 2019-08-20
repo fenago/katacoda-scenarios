@@ -46,5 +46,4 @@ PeerOrgs:
 	  
 </pre>
 
-#### Validate
-Validate that the crypto material was created for the organizations by going into the generated crypto-config DIRECTORY and then navigate to peerOrganizations. Explore the various directories
+In the next step, we will creat crypto material for the organizations and explore generated crypto-config directory.
