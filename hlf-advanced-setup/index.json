@@ -9,7 +9,7 @@
       "text": "steps/1/text.md"
     },
     {
-      "title": "Install Prerequisite",
+      "title": "Install Prerequisites",
       "text": "steps/2/text.md"
     },    
 	{
@@ -30,7 +30,6 @@
   },
   "environment": {
     "uilayout": "vscode",
-    "showdashboard": true,
     "uimessage1": "\u001b[32mBrought to you by ernesto\u001b[m\r\n"
   },
   "backend": {

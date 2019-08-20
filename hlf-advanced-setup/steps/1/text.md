@@ -1,12 +1,15 @@
 In this step, we will setup VScode editor and clone respository.
 
-Click **IDE Editor** tab to open Visual Studio and click open *Terminal* > *New Terminal* to open the VSCode integrated terminal which wil be used to run commands.
+Click **IDE Editor** tab to open Visual Studio and click _Terminal_ > _New Terminal_ to open the VSCode integrated terminal which wil be used to run commands.
 
 Next, clone the following repository by copying & executing following command in the vscode terminal.
 `git clone https://github.com/fenago/HLFADV.git`{{copy}}
 
-Now, move in the directory which contains scripts to install all the Prerequisites and the Fabric Samples and binaries, go ahead and execute the command to pull down the binaries and images.
-`cd HLFADV/setup`{{copy}}
+Now, move in the directory which contains scripts to install all the Prerequisites and the Fabric Samples and binaries, go ahead and execute the command. We also need to change permission to execute the script using **chmod**.
+`cd HLFADV/setup && chmod 755 *.sh`{{copy}}
+
+#### Permissions
+
 
 #### Install prerequisites
 We have to install following on the platform(s) on which you’ll be developing blockchain applications and/or operating Hyperledger Fabric.
