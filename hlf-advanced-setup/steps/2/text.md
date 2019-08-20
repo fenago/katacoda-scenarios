@@ -6,19 +6,18 @@ In this step, we will install all the Prerequisite i-e: doceker, docker-compose,
 4. JQ Utility
 
 #### Install Docker
-Open `docker.sh` to view the contents of the bash script. Copy & execute `./docker.sh`{{copy}} command to install and docker-compose.
+Open `docker.sh` to view the contents of the bash script. Copy & execute `./docker.sh`{{copy}} command in the vscode terminal to install and docker-compose.
 
-You can verify docker is running on Your System by running `docker version`{{execute}} command. Also, run `docker version`{{execute}}  to verify docker-compose.
+You can verify docker is running on your System by running `docker version`{{copy}} command. Also, run `docker version`{{copy}}  to verify docker-compose.
 
 #### Install Golang
-Open `fabric-setup.sh` to view the contents of the bash script. Copy & execute `./go.sh`{{copy}} command to install and docker-compose.
+Open `go.sh` to view the contents of the bash script. Copy & execute `./go.sh`{{copy}} command in the vscode terminal to install and docker-compose.
 
 
 #### Install JQ
 Open `jq.sh` to view the contents of the bash script. Copy & execute `./jq.sh`{{copy}} command to install and docker-compose.
 
-
-You can verify docker is running on Your System by running `jq`{{execute}} command. you should get `` as output.
+You can verify jq is installed on your System by running `jq --version`{{copy}} command. you should get `jq-1.5-1-a5b5cbe` as output.
 
 Let's install all the Prerequisites on the platform(s) on which you’ll be developing blockchain applications and/or operating Hyperledger Fabric.
 
@@ -59,7 +58,7 @@ If you choose not to supply a flag, the script will use default values.
 
 #### Generate Network Artifacts
 Ready to give it a go? Okay then! Execute the following command:
-`./byfn.sh generate`{{execute}}
+`./byfn.sh generate`{{copy}}
 
 You will see a brief description as to what will occur, along with a yes/no command line prompt. Respond with a y or hit the return key to execute the described action.
 
