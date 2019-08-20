@@ -6,7 +6,7 @@ In this step, we will install all the Prerequisite i-e: doceker, docker-compose,
 4. JQ Utility
 
 #### Install Docker
-Open `docker.sh` to view the contents of the bash script. Copy & execute `./docker.sh`{{copy}} command in the vscode terminal to install and docker-compose.
+Open `docker.sh` by clicking `HLFADV` > `setup` folder to view the contents of the bash script. Copy & execute `./docker.sh`{{copy}} command in the vscode terminal to install and docker-compose.
 
 You can verify docker is running on your System by running `docker version`{{copy}} command. Also, run `docker version`{{copy}}  to verify docker-compose.
 

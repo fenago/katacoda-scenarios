@@ -31,7 +31,6 @@
   "environment": {
     "uilayout": "vscode",
     "showdashboard": true,
-    "dashboards": [{"name": "VS Code", "port": 23000}],
     "uimessage1": "\u001b[32mBrought to you by ernesto\u001b[m\r\n"
   },
   "backend": {
