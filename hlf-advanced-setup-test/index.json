@@ -29,7 +29,7 @@
     }
   },
   "environment": {
-    "uilayout": "terminal-iframe",
+    "uilayout": "terminal",
     "showdashboard": true,
     "dashboards": [{"name": "VS Code", "port": 23000}]
   },
