@@ -1,37 +1,9 @@
+Now, move in the directory which contains the sample `crypto-config.yaml` file `cd ../configtx/simple-two-org`{{copy}} and extend it to create the crypto for a new Organization.  Name the organization something unique (Not budget.com).  Use the existing Org as a template.
 
-In this tutorial, We will use configtxgen utility for generating following:
-1. Channel Tx
-2. Anchor Peer Txn
+The genesis file is used for launching the orderer. Following configuration will be used to generate the genesis in the configtx.yaml file.
 
-
-#### Channel Tx
-Channel Tx requires the following:
-- Channel ID
-- Configuration for the Application
-- Configuration for the Consortiums
-
-
-The following configuration will be used to generate the Channel Tx in the configtx.yaml file.
-```
-  AcmeChannel:
-    Consortium: AirlineConsortium
-    Application:
-        <<: *ApplicationDefaults
-        Organizations:
-            - *Org1
-```
-
-Open `fabric-setup.sh` by clicking `HLFADV` > `setup` folder in vscode **Explorer** to view the contents of the bash script. Copy & execute `./fabric-setup.sh`{{copy}} the command to download and install configtxgen utility.
+Let's first generate crypto config using cryptogen utility
+`cryptogen generate --config=../../cryptogen/simple-two-org/crypto-config.yaml`{{copy}}
 
 #### Validate
-You can verify configtxgen is installed on your System by running `configtxgen --version`{{copy}} command.
-
-#### Usage
-Here’s some examples using the different available flags on the peer command `configtxgen --help`{{copy}}
-
-We will use configtxgen utility for generating following:
-1. Genesis Block
-2. Channel Tx
-3. Anchor Peer Txn
-
-**Note**: configtxgen looks for at path `FABRIC_CFG_PATH` for `configtx.yaml`. If unset, the tool searches the current folder for the yaml file.
+Validate that the crypto material was created for the organizations by verifying that generated crypto-config directory was generated `ls`{{copy}}

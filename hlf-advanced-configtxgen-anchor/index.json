@@ -9,28 +9,24 @@
       "text": "steps/1/text.md"
     },
     {
-      "title": "Configtxgen Syntax",
+      "title": "Install Configtxgen",
       "text": "steps/2/text.md"
     },    
 	{
-      "title": "Install Configtxgen",
+      "title": "Pre-reqs: Cryptogen",
       "text": "steps/3/text.md"
-    },
-	{
-      "title": "Pre-reqs: Cryptogen & Genesis Block",
-      "text": "steps/4/text.md"
     },
   {
       "title": "Create Anchor Peer Tx",
-      "text": "steps/5/text.md"
+      "text": "steps/4/text.md"
     },
     {
         "title": "Inspect a Anchor Peer Tx",
-        "text": "steps/6/text.md"
+        "text": "steps/5/text.md"
     },
     {
         "title": "Print an organization definition",
-        "text": "steps/7/text.md"
+        "text": "steps/6/text.md"
     }],
     "intro": {
       "text": "intro.md",

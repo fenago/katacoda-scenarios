@@ -8,9 +8,7 @@ You can verify configtxgen is installed on your System by running `configtxgen -
 #### Usage
 Here’s some examples using the different available flags on the peer command `configtxgen --help`{{copy}}
 
-We will use configtxgen utility for generating following:
-1. Genesis Block
-2. Channel Tx
-3. Anchor Peer Txn
+We will use configtxgen utility for generating Genesis Block.
+
 
 **Note**: configtxgen looks for at path `FABRIC_CFG_PATH` for `configtx.yaml`. If unset, the tool searches the current folder for the yaml file.

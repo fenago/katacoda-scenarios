@@ -1,11 +1,12 @@
-Print the contents of a channel creation tx named create_chan_tx.pb to the screen as JSON.
-`configtxgen -inspectChannelCreateTx ./Org1Anchors.tx`{{copy}}
+Construct an organization definition based on the parameters such as MSPDir from configtx.yaml and print it as JSON to the screen. (This output is useful for channel reconfiguration workflows, such as adding a member).
+
+`configtxgen -printOrg Org1`{{copy}}
 
 You can also store the result in the json file by running
-`mkdir -p temp && configtxgen -inspectChannelCreateTx ./Org1Anchors.tx > temp/updatepeers.json`{{copy}}
+`mkdir -p temp && configtxgen -printOrg Org1 > temp/Org1.json`{{copy}}
 
 ```
 Usage of configtxgen:
-  -inspectChannelCreateTx string
-        Prints the configuration contained in the transaction at the specified path
+  -printOrg string
+        Prints the definition of an organization as JSON. (useful for adding an org to a channel manually)
 ```

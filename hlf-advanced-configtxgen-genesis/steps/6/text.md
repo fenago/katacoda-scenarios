@@ -7,9 +7,6 @@ In this step, we will write a genesis block for channel ordererchannel for profi
 
 `configtxgen -profile AcmeOrdererGenesis -channelID ordererchannel -outputBlock acme-genesis.block`{{copy}}
 
-#### Verify
-You can verify genesis block was created by listing content of current directory `ls`{{copy}} command.
-
 ```
 Usage of configtxgen:
   -channelID string
@@ -19,3 +16,6 @@ Usage of configtxgen:
   -profile string
         The profile from configtx.yaml to use for generation. (default "SampleInsecureSolo")
 ```
+
+#### Verify
+You can verify genesis block was created by listing content of current directory `ls`{{copy}} command.
