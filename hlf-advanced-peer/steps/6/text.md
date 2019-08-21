@@ -1,14 +1,4 @@
-In this step, we will extend the organization by adding a new peer.  Do this by opening yaml file in Visual Studio Code by clicking in the vscode explorer: `crypto-config.addpeer.yaml`. It only contains the new peer information that you are adding.  
-
-
-peer/simple-two-org
-
-.  env.sh               Sets the environment variables - always use with . as prefix
-./show-env.sh           Shows the current environment setup for the peer
-
-init.sh                 Initializes the peer setup
-
-**Note:** All command in this step will run in terminal 3 (It will open automatically on executing commands)
+**Note:** All command in this step will run in terminal 3 (It will open automatically on executing command)
 
 Run following command to set the environment variables in terminal 3.
 `env.sh`{{execute T3}}
