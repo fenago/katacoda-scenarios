@@ -6,6 +6,8 @@ In this step, we will learn peer chaincode command.
 #### Instantiate Code
 `peer chaincode instantiate  -n gocc -v 1.0 -C acmechannel -c '{"Args":["init","a","100","b","200"]}'`{{execute T3}}
 
+**Note:** Please wait for the few seconds for the above command to get response.
+
 #### Check Status
 `peer chaincode list  --installed`{{execute T3}}
 

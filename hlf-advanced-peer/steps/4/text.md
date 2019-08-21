@@ -1,3 +1,5 @@
+**Note:** All commands in this step will run in terminal 1.
+
 In this step, we will launch the Orderer. Let's setup the orderer before proceeding. We also need to change permission to execute the script using **chmod**.
 
 `cd ../orderer/simple-two-org && chmod 755 *.sh`{{execute T1}}
