@@ -1,14 +1,8 @@
 
 
-Open `fabric-setup.sh` by clicking `HLFADV` > `setup` folder in vscode **Explorer** to view the contents of the bash script. Copy & execute `./fabric-setup.sh`{{copy}} the command to download and install configtxgen utility.
+Open `install.sh` by clicking `HLFADV` > `setup` > `kafka` folder in vscode **Explorer** to view the contents of the bash script. Copy & execute `./install.sh`{{copy}} the command to download and install Kafka, JRE and Zookeeper.
 
-
-Installation
-============
-> cd setup/kafka
-> ./install.sh
-This will install Kafka binaries in the folder $HOME/kafka
-
+The above script will install Kafka binaries in the folder $HOME/kafka
 
 
 #### Validate

@@ -1,19 +1,11 @@
-In this step, we will also launch orderer using bash script. We can do this by running `launch.sh`{{copy}} 
+In this step, we will shutdown. We will also verify that the kafka is not running anymore. `stop.sh`{{copy}}
 
 #### Verify
-You can verify orderer was launched successfully was created by listing content of current directory `ls`{{copy}} command.
+We can try publish a message to kafka topic.
+`echo "Hello, World" | ~/kafka/bin/kafka-console-producer.sh --broker-list localhost:9092 --topic TestTopic > /dev/null`{{copy}}
+
+You should get following message as output. Connection could not be established, broker may not be available.
 
 ```
-2019-08-21 15:23:47.905 UTC [orderer.common.server] Start -> INFO 013 Starting orderer:
- Version: 1.4.2
- Commit SHA: c6cc550
- Go version: go1.11.5
- OS/Arch: linux/amd64
-2019-08-21 15:23:47.905 UTC [orderer.common.server] Start -> INFO 014 Beginning to serve requests
+[2019-08-21 16:14:58,029] WARN [Producer clientId=console-producer] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Broker may not be available. (org.apache.kafka.clients.NetworkClient)
 ```
-
-
-Shutdown
-========
-> cd setup/kafka
-> stop.sh
