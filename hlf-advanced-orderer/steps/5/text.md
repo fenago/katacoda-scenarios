@@ -40,3 +40,12 @@ FileLedger:
     Location: /home/vagrant/ledgers/orderer/simple-two-orgs/ledger
     Prefix: hyperledger-fabric-ordererledger    
 ```
+
+#### LocalMSPDir
+Everything that interacts with a blockchain network, including peers, applications, admins, and orderers, acquires their organizational identity from their digital certificate and their Membership Service Provider (MSP) definition.
+
+We will have to speecify directory for the private crypto material needed by the orderer created by cryptogen tool. 
+
+```
+    LocalMSPDir: ./crypto-config/ordererOrganizations/acme.com/orderers/orderer.acme.com/msp
+```
