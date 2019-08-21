@@ -1,0 +1,48 @@
+{
+  "title": "Assignment Oprerator",
+  "description": "How we can use Assignment Oprerator in different situations",
+  "difficulty": "beginner",
+  "time": " 15 minutes",
+  "details": {
+    "steps": [
+      {
+        "title": "Strings",
+        "text": "steps/1/step1.md",
+        "answer": "steps/1/result.md"
+      },
+      {
+        "title": "Numbers",
+        "text": "steps/2/step2.md",
+        "answer": "steps/2/result.md"
+      },    
+      {
+        "title": "Boolean",
+        "text": "steps/3/step3.md",
+        "answer": "steps/3/result.md"
+      },
+      {
+        "title": "Multiple assignment",
+        "text": "steps/4/step4.md",
+        "answer": "steps/4/result.md"
+      },
+      {
+        "title": "No Value ",
+        "text": "steps/5/step5.md",
+        "answer": "steps/5/result.md"
+      }],
+    "intro": {
+      "text": "intro.md",
+      "credits": ""
+    },
+    "finish": {
+      "text": "finish.md"
+    }
+  },
+  "environment": {
+    "uilayout": "terminal",
+    "uimessage1": "\u001b[32mYour Interactive Bash Terminal.\r\nStart Kubernetes using `launch.sh`\u001b[m\r\n"
+  },
+  "backend": {
+    "imageid": "bash"
+  }
+}
