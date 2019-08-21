@@ -4,6 +4,7 @@ Open `fabric-setup.sh` by clicking `HLFADV` > `setup` folder in vscode **Explore
 
 #### Validate
 You can verify configtxgen is installed on your System by runningfollowing commands.
+
 `configtxgen --version`{{copy}}
 
 `cryptogen --version`{{copy}}

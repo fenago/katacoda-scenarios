@@ -1,13 +1,13 @@
+In this step, we will also launch orderer using bash script. We can do this by running `launch.sh`{{copy}} 
 
-Run following command to print the contents of a genesis block named acme-genesis.block to the screen as JSON.
-`configtxgen -inspectBlock ./acme-genesis.block`{{copy}}
-
-You can also store the result in the json file by running
-`mkdir temp && configtxgen -inspectBlock ./acme-genesis.block > temp/acme-genesis.json`{{copy}}
-
+#### Verify
+You can verify orderer was launched successfully was created by listing content of current directory `ls`{{copy}} command.
 
 ```
-Usage of configtxgen:
-  -inspectBlock string
-        Prints the configuration contained in the block at the specified path
+2019-08-21 15:23:47.905 UTC [orderer.common.server] Start -> INFO 013 Starting orderer:
+ Version: 1.4.2
+ Commit SHA: c6cc550
+ Go version: go1.11.5
+ OS/Arch: linux/amd64
+2019-08-21 15:23:47.905 UTC [orderer.common.server] Start -> INFO 014 Beginning to serve requests
 ```

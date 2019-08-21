@@ -13,23 +13,23 @@
       "text": "steps/2/text.md"
     },    
 	{
-      "title": "Install Configtxgen",
+      "title": "Install Pre-reqs",
       "text": "steps/3/text.md"
     },
 	{
-      "title": "Genesis Block",
+      "title": "Pre-reqs",
       "text": "steps/4/text.md"
     },
   {
-      "title": "Orderer Defaults",
+      "title": "Orderer.yaml",
       "text": "steps/5/text.md"
     },
     {
-        "title": "Create a genesis block",
+        "title": "init Orderer",
         "text": "steps/6/text.md"
     },
     {
-        "title": "Inspect a genesis block",
+        "title": "Launch Orderer",
         "text": "steps/7/text.md"
     }],
     "intro": {
