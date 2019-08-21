@@ -1,24 +1,7 @@
-In this exercise you will learn how to setup the configtxgen config yaml file.
+In this exercise you will talk about the orderer in the hyperledger fabric. We will learn to configure your node `using orderer.yaml`
 
-The configtxgen command allows users to create and inspect channel config related artifacts. The content of the generated artifacts is dictated by the contents of configtx.yaml.
 
-#### Syntax
-The configtxgen tool has no sub-commands, but supports flags which can be set to accomplish a number of tasks.
+Many distributed blockchains, such as Ethereum and Bitcoin, are not permissioned, which means that any node can participate in the consensus process, wherein transactions are ordered and bundled into blocks. Because of this fact, these systems rely on probabilistic consensus algorithms which eventually guarantee ledger consistency to a high degree of probability, but which are still vulnerable to divergent ledgers (also known as a ledger “fork”), where different participants in the network have a different view of the accepted order of transactions.
 
-```
-Usage of configtxgen:
-  -asOrg string
-  -channelCreateTxBaseProfile string
-  -channelID string
-  -configPath string
-  -inspectBlock string
-  -inspectChannelCreateTx string
-  -outputAnchorPeersUpdate string
-  -outputBlock string
-  -outputCreateChannelTx string
-  -printOrg string
-  -profile string
-```
-
-In the next steps, we will learn more these paramters using configtxgen utility.
+In the next steps, we will install configtxgen to generate crypto material and configtxgen utility for generating genesis block. A the end, we will also launch an orderer.
 
