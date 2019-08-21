@@ -1,5 +1,5 @@
 {
-  "title": "Hyperledger Fabric Cryptogen",
+  "title": "Hyperledger Fabric Peer",
   "description": "Introduction to Hyperledger",
   "difficulty": "Advanced",
   "time": "15 minutes",
@@ -9,7 +9,7 @@
       "text": "steps/1/text.md"
     },
     {
-      "title": "Cryptogen Syntax",
+      "title": "Peer Syntax",
       "text": "steps/2/text.md"
     },    
 	{

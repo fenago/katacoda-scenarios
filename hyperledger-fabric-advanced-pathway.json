@@ -1,0 +1,51 @@
+{
+  "title": "Hyperledger Fabric",
+  "description": "Introduction to Hyperledger Fabric",
+  "courses": [
+    {
+      "course_id": "hlf-advanced-setup",
+      "title": "Hyperledger Advanced Setup",
+      "description": ""
+    },
+    {
+      "course_id": "hlf-advanced-cryptogen",
+      "title": "Hyperledger Fabric Cryptogen",
+      "description": ""
+    },
+    {
+      "course_id": "hlf-advanced-cryptogen-organizations",
+      "title": "Hyperledger Fabric Cryptogen Organizations",
+      "description": ""
+    },
+    {
+      "course_id": "hlf-advanced-configtxgen-genesis",
+      "title": "Hyperledger Fabric Configtxgen - Genesis Block",
+      "description": ""
+    }
+	{
+      "course_id": "hlf-advanced-configtxgen-channeltx",
+      "title": "Hyperledger Fabric Configtxgen - Channel Tx",
+      "description": ""
+    },
+	{
+      "course_id": "hlf-advanced-configtxgen-anchor",
+      "title": "Hyperledger Fabric Configtxgen - Anchor Peer",
+      "description": ""
+    },
+	{
+      "course_id": "hlf-advanced-orderer",
+      "title": "Hyperledger Fabric Orderer",
+      "description": ""
+    },
+	{
+      "course_id": "hlf-advanced-kafka",
+      "title": "Hyperledger Fabric Kafka",
+      "description": ""
+    },
+	{
+      "course_id": "hlf-advanced-peer",
+      "title": "Hyperledger Fabric Peer",
+      "description": ""
+    },
+  ]
+}

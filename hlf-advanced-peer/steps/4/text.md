@@ -13,20 +13,12 @@ Validate that the crypto material was created for the organizations by going int
 # PS: Setup the orderer before proceeding
 
 
-`cd orderer/simple-two-org`{{execute T1}}
+ In this step, we will launch the Orderer. Let's setup the orderer before proceeding. We also need to change permission to execute the script using **chmod**.
 
+`cd ../orderer/simple-two-org && chmod 755 *.sh`{{execute T1}}
+
+Let's first generate crypto material and channel tx
 `./init.sh all`{{execute T1}}
+
+Next, launch the orderer using bash script. We can do this by running
 `./launch.sh`{{execute T1}}
-
-To experiment with recreation of the channel. Simply re-initialize 
-the orderer and launch.
-
-# Scripts
-peer/simple-two-org
-./clean.sh              Cleans up the ledger
-./clean.sh  all         Cleans up the ledger and other network artefacts
-
-.  env.sh               Sets the environment variables - always use with . as prefix
-./show-env.sh           Shows the current environment setup for the peer
-
-init.sh                 Initializes the peer setup
