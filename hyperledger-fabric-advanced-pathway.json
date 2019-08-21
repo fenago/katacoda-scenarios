@@ -21,7 +21,7 @@
       "course_id": "hlf-advanced-configtxgen-genesis",
       "title": "Hyperledger Fabric Configtxgen - Genesis Block",
       "description": ""
-    }
+    },
 	{
       "course_id": "hlf-advanced-configtxgen-channeltx",
       "title": "Hyperledger Fabric Configtxgen - Channel Tx",
