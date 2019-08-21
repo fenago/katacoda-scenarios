@@ -1,6 +1,6 @@
 
 
-Run `cat fabric-setup.sh`{{execute T1}} to view the contents of the bash script. Copy & execute `./fabric-setup.sh`{{execute T1}} the command to download and install peer CLI.
+Run `cat fabric-setup.sh`{{execute T1}} to view the contents of the bash script. Copy & execute following command to download and install peer CLI `./fabric-setup.sh`{{execute T1}}
 
 #### Validate
 You can verify peer is installed on your System by running `peer --version`{{execute T1}} command.

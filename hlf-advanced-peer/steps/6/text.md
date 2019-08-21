@@ -1,4 +1,7 @@
-**Note:** All command in this step will run in terminal 3 (It will open automatically on executing command)
+**Note:** All commands in this step will run in terminal 3 (It will open automatically on executing command)
+
+Now, move in the directory which contains scripts. We also need to change permission to execute the script using **chmod**.
+`cd HLFADV/peer/simple-two-org/ && chmod 755 *.sh`{{execute T3}}
 
 Run following command to set the environment variables in terminal 3.
 `env.sh`{{execute T3}}

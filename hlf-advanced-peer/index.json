@@ -13,23 +13,23 @@
       "text": "steps/2/text.md"
     },    
 	{
-      "title": "Terminal 1: Pre-reqs",
+      "title": "Terminal 1: Install",
       "text": "steps/3/text.md"
     },
 	{
-      "title": "Terminal 2: Start the Peer",
+      "title": "Terminal 2: launch Orderer",
       "text": "steps/4/text.md"
     },
   {
-      "title": "Terminal 3: Commands",
+      "title": "Terminal 2: Start the Peer",
       "text": "steps/5/text.md"
     },
     {
-        "title": "Create & Join Channel",
+        "title": "Terminal 3: Create & Join Channel",
         "text": "steps/6/text.md"
     },
     {
-        "title": "Chaincode",
+        "title": "Terminal 3: Chaincode",
         "text": "steps/7/text.md"
     }],
     "intro": {
@@ -41,7 +41,7 @@
     }
   },
   "environment": {
-    "uilayout": "vscode",
+    "uilayout": "terminal",
     "uimessage1": "\u001b[32mBrought to you by ernesto\u001b[m\r\n"
   },
   "backend": {
