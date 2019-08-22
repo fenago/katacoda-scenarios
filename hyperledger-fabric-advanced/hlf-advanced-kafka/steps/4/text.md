@@ -1,5 +1,4 @@
 
-In this step, we will launch the kafka service `start.sh`{{copy}}
+In this step, we will launch the kafka service `./start.sh`{{copy}}
 
-Check the logs - $HOME/kafka.log
-
+You can get kafka logs by running `$HOME/kafka.log`{{copy}}

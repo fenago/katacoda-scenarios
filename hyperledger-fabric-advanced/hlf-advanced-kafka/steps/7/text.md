@@ -1,4 +1,4 @@
-In this step, we will shutdown. We will also verify that the kafka is not running anymore. `stop.sh`{{copy}}
+In this step, we will shutdown. We will also verify that the kafka is not running anymore. `./stop.sh`{{copy}}
 
 #### Verify
 We can try publish a message to kafka topic.

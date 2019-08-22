@@ -13,11 +13,4 @@ You can Create the channel using the channel transaction created earlier
 Above command will generate the acmechannel.block. `ls`{{execute T3}}
 
 #### Join Channel
-`peer channel join -o localhost:7050 -b ./acmechannel.block`{{execute T3}}    
-
-#### List  Channels
-`peer channel list`{{execute T3}}    
-
-#### Fetch Channel
- `peer channel fetch 0 acmechannel.block -c acmechannel -o localhost:7050`{{execute T3}}    
-
+`peer channel join -o localhost:7050 -b ./acmechannel.block`{{execute T3}}

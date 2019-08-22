@@ -27,6 +27,10 @@
     {
         "title": "Terminal 3: Create & Join Channel",
         "text": "steps/6/text.md"
+    },
+    {
+        "title": "Terminal 3: List & Fetch Channel",
+        "text": "steps/7/text.md"
     }],
     "intro": {
       "text": "intro.md",
