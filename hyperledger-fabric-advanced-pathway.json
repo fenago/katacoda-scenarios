@@ -46,6 +46,11 @@
       "course_id": "hlf-advanced-peer",
       "title": "Hyperledger Fabric Peer",
       "description": ""
+    },
+	{
+      "course_id": "hlf-advanced-setup-docker",
+      "title": "Hyperledger Setup in Docker",
+      "description": ""
     }
   ]
 }
