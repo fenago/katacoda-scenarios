@@ -29,8 +29,7 @@
     }
   },
   "environment": {
-    "uilayout": "vscode",
-    "uimessage1": "\u001b[32mBrought to you by ernesto\u001b[m\r\n"
+    "uilayout": "terminal"
   },
   "backend": {
     "imageid": "ubuntu"
