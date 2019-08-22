@@ -9,24 +9,32 @@
       "text": "steps/1/text.md"
     },
     {
-      "title": "Peer Syntax",
+      "title": "Install Peer CLI",
       "text": "steps/2/text.md"
-    },    
+    },
 	{
-      "title": "Terminal 1: Install",
+      "title": "Pre-reqs: launch Orderer",
       "text": "steps/3/text.md"
     },
-	{
-      "title": "Terminal 1: launch Orderer",
+  {
+      "title": "Pre-reqs: Start the Peer & Join Channel",
       "text": "steps/4/text.md"
     },
-  {
-      "title": "Terminal 2: Start the Peer",
-      "text": "steps/5/text.md"
+    {
+        "title": "Terminal 3: Peer Chaincode CLI",
+        "text": "steps/5/text.md"
     },
     {
-        "title": "Terminal 3: Create & Join Channel",
+        "title": "Terminal 3: Install & Instantiate",
         "text": "steps/6/text.md"
+    },
+    {
+        "title": "Terminal 3: Chaincode List",
+        "text": "steps/7/text.md"
+    },
+    {
+        "title": "Terminal 3:  Query & Invoke",
+        "text": "steps/8/text.md"
     }],
     "intro": {
       "text": "intro.md",
