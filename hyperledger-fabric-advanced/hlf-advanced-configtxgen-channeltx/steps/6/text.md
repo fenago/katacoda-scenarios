@@ -4,6 +4,8 @@ Print the contents of a channel tx named acme-channel.tx to the screen as JSON.
 You can also store the result in the json file by running
 `mkdir -p temp && configtxgen -inspectChannelCreateTx ./acme-channel.tx > temp/acme-channel.json`{{copy}}
 
+#### Usage
+
 ```
 Usage of configtxgen:
   -inspectChannelCreateTx string

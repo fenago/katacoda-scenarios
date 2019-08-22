@@ -16,7 +16,7 @@ In this step, we will add more organization to the cryptogen yaml file.
 </pre>
 
 
-You can generate the crypto material by running: `cryptogen generate --config ~/config.yaml`{{execute}}
+You can generate the crypto material by running: `cryptogen generate --config ~/config.yaml --output ~/crypto-config`{{execute}}
 
 #### Output
 You will get both organization's domain name as a output.
