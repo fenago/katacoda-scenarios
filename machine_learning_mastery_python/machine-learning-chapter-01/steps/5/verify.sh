@@ -1,0 +1,1 @@
+docker images | grep busybox > /dev/null && echo "done"
