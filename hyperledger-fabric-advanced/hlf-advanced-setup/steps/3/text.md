@@ -7,6 +7,7 @@ It will create the folders under the current directory
     - fabric-samples
 
 You can also verify setup was successful by running following commands on your System.
+
 `orderer version`{{execute}}
 
 `peer version`{{execute}}
