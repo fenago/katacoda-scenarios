@@ -9,7 +9,7 @@ The peer chaincode query command has the following syntax:
 peer chaincode query [flags]
 ```
 
-Here is an example of the peer chaincode query command, which queries the peer ledger for the chaincode named mycc at version 1.0 for the value of variable a
+Here is an example of the peer chaincode query command, which queries the peer ledger for the chaincode named acmechannel for the value of variable a
 `peer chaincode query -C acmechannel -n gocc  -c '{"Args":["query","a"]}'`{{execute T3}}
 
 

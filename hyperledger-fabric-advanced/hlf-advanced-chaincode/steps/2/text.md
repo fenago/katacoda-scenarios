@@ -12,4 +12,4 @@ Run `cat fabric-setup.sh`{{execute T1}} to view the contents of the bash script.
 You can verify peer is installed on your System by running `peer  --version`{{execute T1}} command.
 
 #### Usage
-Here’s some examples using the different available flags on the peer command `peer chaincode --help`{{execute T1}}
+Here’s some examples using the different available flags on the peer chaincode command `peer chaincode --help`{{execute T1}}

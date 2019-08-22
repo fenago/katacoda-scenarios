@@ -14,9 +14,9 @@ Let's run an instance of an **ubuntu** image and pass `/bin/bash`{{copy}} as arg
 Now, we will install a package in our ubuntu container. We want git, so let's install it:
 `apt-get update && apt-get install -y git`{{execute}}
 
-Next, clone the following repository by copying & executing following command in the container shell.
-`apt-get update && apt-get install -y git`{{copy}}
+Next, clone the following repository by executing following command in the container shell.
+`git clone https://github.com/fenago/HLFADV.git`{{execute}}
 
 #### Permissions
 Now, move in the directory which contains scripts to install all the prerequisites and the Fabric Samples and binaries, copy and execute the command. We also need to change permission to execute the script using **chmod**.
-`cd HLFADV/setup && chmod 755 *.sh`{{copy}}
+`cd HLFADV/setup && chmod 755 *.sh`{{execute}}

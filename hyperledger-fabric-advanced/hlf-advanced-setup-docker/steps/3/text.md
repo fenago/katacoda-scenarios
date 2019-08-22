@@ -1,4 +1,4 @@
-Run `cat fabric-setup.sh`{{execute}} to view the contents of the bash script. Copy & execute `./fabric-setup.sh`{{execute}} the command to pull down the binaries and images.
+Run following command`cat fabric-setup.sh`{{execute}} to view the contents of the bash script. Copy & execute `./fabric-setup.sh`{{execute}} the command to pull down the binaries and images.
 
 #### Validate
 You can verify fabric setup was successful by listing contents of the directory is running on Your System by running `cd ../fabric-samples && ls -la && cd ../setup`{{execute}} command.
