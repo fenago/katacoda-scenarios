@@ -48,6 +48,11 @@
       "description": ""
     },
 	{
+      "course_id": "hlf-advanced-chaincode",
+      "title": "Hyperledger Fabric Chaincode",
+      "description": ""
+    },
+	{
       "course_id": "hlf-advanced-setup-docker",
       "title": "Hyperledger Setup in Docker",
       "description": ""
