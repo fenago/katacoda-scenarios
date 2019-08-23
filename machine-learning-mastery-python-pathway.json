@@ -1,0 +1,26 @@
+{
+  "title": "Machine Learning Mastery with Python",
+  "description": "Machine Learning Algorithms From Scratchhhhhhh",
+  "courses": [
+    {
+      "course_id": "functions",
+      "title": "functions",
+      "description": "Run Python Code with Jupyter Notebooks."
+    },
+    {
+      "course_id": "data-structure",
+      "title": "data structure",
+      "description": "Run Python Code with Jupyter Notebooks."
+    },
+    {
+      "course_id": "flow-control",
+      "title": "flow control",
+      "description": "Run Python Code with Jupyter Notebooks."
+    },
+    {
+      "course_id": "uses-of-assignment-operator",
+      "title": "uses of assignment operator",
+      "description": "Run Python Code with Jupyter Notebooks."
+    }
+  ]
+}
