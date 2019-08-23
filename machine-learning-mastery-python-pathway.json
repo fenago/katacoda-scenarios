@@ -4,22 +4,22 @@
   "courses": [
     {
       "course_id": "functions",
-      "title": "functions",
+      "title": "Functions",
       "description": "Run Python Code with Jupyter Notebooks."
     },
     {
       "course_id": "data-structure",
-      "title": "data structure",
+      "title": "Data Structure",
       "description": "Run Python Code with Jupyter Notebooks."
     },
     {
       "course_id": "flow-control",
-      "title": "flow control",
+      "title": "Flow Control",
       "description": "Run Python Code with Jupyter Notebooks."
     },
     {
       "course_id": "uses-of-assignment-operator",
-      "title": "uses of assignment operator",
+      "title": "Uses of Assignment Operator",
       "description": "Run Python Code with Jupyter Notebooks."
     }
   ]
