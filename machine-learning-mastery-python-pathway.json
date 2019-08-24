@@ -5,22 +5,22 @@
     {
       "course_id": "chapter-3",
       "title": "Chapter - 3",
-      "description": "Run Python Code with Jupyter Notebooks."
+      "description": "Crash Course in Python and SciPy"
     },
     {
       "course_id": "chapter-4",
       "title": "Chapter - 4",
-      "description": "Run Python Code with Jupyter Notebooks."
+      "description": "How To Load Machine Learning Data"
     },
     {
       "course_id": "chapter-5",
       "title": "Chapter - 5",
-      "description": "Run Python Code with Jupyter Notebooks."
+      "description": "Understand Your Data With Descriptive Statistics"
     },
     {
       "course_id": "chapter-6",
       "title": "Chapter - 6",
-      "description": "Run Python Code with Jupyter Notebooks."
+      "description": "Understand Your Data With Visualization"
     }
   ]
 }
