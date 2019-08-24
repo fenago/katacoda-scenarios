@@ -45,7 +45,7 @@
           "target": "~/"  
         },  
         { 
-          "file": "load-csv-using-pandas.ipynb", 
+          "file": "load-csv-using-panda.ipynb", 
           "target": "~/"  
         },
         { 
