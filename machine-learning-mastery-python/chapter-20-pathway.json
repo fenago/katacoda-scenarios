@@ -1,0 +1,11 @@
+{
+  "title": "Machine Learning Mastery with Python",
+  "description": "Regression Machine Learning Case Study Project",
+  "courses": [
+    {
+      "course_id": "regression-ml-case-study-project",
+      "title": "Regression Machine Learning Case Study Project",
+      "description": "Run Python Code with Jupyter Notebooks."
+    }
+  ]
+}
