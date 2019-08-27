@@ -14,14 +14,15 @@ spec:
         memory: 64Mi
       max:
         cpu: 150m
-        memory: 128Mi
+        memory: 64Mi
     - type: Container
       min:
         cpu: 50m
-        memory: 64Mi
+        memory: 16Mi
       max:
         cpu: 150m
-        memory: 128Mi
+        memory: 32Mi
+
 </pre>
 
 `oc create -f my-limits.yaml`{{execute}}
