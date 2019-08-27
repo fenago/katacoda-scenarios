@@ -46,10 +46,14 @@
       "text": "finish.md"
     }
   },
+  "files": [
+    "my-limits.yaml",
+    "hpa-memory.yml"
+	],
   "environment": {
     "showdashboard": true,
     "dashboards": [{"name": "Dashboard", "port": 8443}],
-    "uilayout": "terminal-iframe",
+    "uilayout": "terminal-editor",
     "uimessage1": "\u001b[32mBrought to you by ernesto\u001b[m\r\n"
   },
     "backend": {
