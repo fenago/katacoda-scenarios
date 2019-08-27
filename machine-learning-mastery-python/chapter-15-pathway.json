@@ -1,0 +1,21 @@
+{
+  "title": "Machine Learning Mastery with Python",
+  "description": "Improve Performance with Ensembles",
+  "courses": [
+    {
+      "course_id": "bagging-algorithms",
+      "title": "Bagging Algorithms",
+      "description": "Run Python Code with Jupyter Notebooks."
+    },
+    {
+      "course_id": "boosting-algorithms",
+      "title": "Boosting Algorithms",
+      "description": "Run Python Code with Jupyter Notebooks."
+    },
+    {
+      "course_id": "voting-ensemble",
+      "title": "Voting Ensemble",
+      "description": "Run Python Code with Jupyter Notebooks."
+    }
+  ]
+}

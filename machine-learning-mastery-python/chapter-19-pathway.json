@@ -1,0 +1,11 @@
+{
+  "title": "Machine Learning Mastery with Python",
+  "description": "Your First Machine Learning Project in Python Step-By-Step",
+  "courses": [
+    {
+      "course_id": "your-first-ml-project-in-step-by-step",
+      "title": "Your First Machine Learning Project in Python Step-By-Step",
+      "description": "Run Python Code with Jupyter Notebooks."
+    }
+  ]
+}

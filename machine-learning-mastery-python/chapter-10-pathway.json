@@ -1,0 +1,16 @@
+{
+  "title": "Machine Learning Mastery with Python",
+  "description": "Machine Learning Algorithm Performance Metrics",
+  "courses": [
+    {
+      "course_id": "classification-metrics",
+      "title": "Classification Metrics",
+      "description": "Run Python Code with Jupyter Notebooks."
+    },
+    {
+      "course_id": "regression-metrics",
+      "title": "Regression Metrics",
+      "description": "Run Python Code with Jupyter Notebooks."
+    }
+  ]
+}
