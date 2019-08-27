@@ -1,0 +1,34 @@
+Let's edit the pod's definition to comply with the defined LimitRange:
+
+
+`cat limits-example-pod.yml`{{execute}}
+...
+<output omitted>
+...
+    resources:
+      requests:
+cpu: 200m
+        memory: 256Mi
+      limits:
+cpu: 250m
+        memory: 256Mi
+
+
+Try to create it again and observe that it works:
+`oc create -f limits-example-pod.yml`{{execute}}
+
+
+`oc get pod`{{execute}}
+
+NAME          READY   STATUS    RESTARTS   AGE
+limits-example 1/1    Running    0         4s
+
+
+Let's clean up the lab to prepare for the next section:
+
+`oc delete po/limits-example`{{execute}}
+
+`oc delete limits/my-limits`{{execute}}
+limitrange "my-limits" delete
+
+Note: LimitRanges are considered a separate kind of resource as well, like templates, ConfigMaps, and ResourceQuotas, so they must be deleted by issuing a separate command.
