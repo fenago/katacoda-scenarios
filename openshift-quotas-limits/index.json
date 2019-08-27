@@ -10,32 +10,24 @@
       "text": "steps/1/text.md"
     },
     {
-      "title": "OpenShift Project",
+      "title": "Controlling resource consumption using ResourceQuotas",
       "text": "steps/2/text.md"
     },    
 	{
-      "title": "Managing projects in OpenShift",
+      "title": "Edit ResourceQuotas",
       "text": "steps/3/text.md"
     },
 	{
-      "title": "Managing users in OpenShift",
+      "title": "Controlling resource consumption using LimitRanges",
       "text": "steps/4/text.md"
     },
     {
-        "title": "Creating new applications in OpenShift",
+        "title": "Openshift Pods",
         "text": "steps/5/text.md"
     },
     {
-        "title": "Managing pods in OpenShift",
+        "title": "Using LimitRange with Pods",
         "text": "steps/6/text.md"
-    },
-    {
-        "title": "Managing services in OpenShift",
-        "text": "steps/7/text.md"
-    },
-    {
-        "title": "Managing services in OpenShift",
-        "text": "steps/8/text.md"
     }],
     "intro": {
       "code": "set-env.sh",
@@ -46,10 +38,16 @@
       "text": "finish.md"
     }
   },
+  "files": [
+    "nginx-pod.yml",
+    "httpd-pod.yml",
+    "my-limits.yaml",
+    "limits-example-pod.yml"
+	],
   "environment": {
     "showdashboard": true,
     "dashboards": [{"name": "Dashboard", "port": 8443}],
-    "uilayout": "terminal-iframe",
+    "uilayout": "editor-terminal",
     "uimessage1": "\u001b[32mBrought to you by ernesto\u001b[m\r\n"
   },
     "backend": {

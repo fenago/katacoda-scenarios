@@ -1,11 +1,3 @@
-Controlling resource consumption using ResourceQuotas
-One of the main ideas behind OpenShift projects in multi-tenant environments is the need to limit resource consumption at a more granular level than just a whole cluster, providing operations with the ability to scope such limitations to organizations and departments.
-
-OpenShift provides two mechanisms for setting limits on resource consumption in a cluster:
-- ResourceQuota
-- LimitRanges
-
-This section is dedicated solely to ResourceQuotas. LimitRanges will be discussed in the next section.
 
 ResourceQuota can be used to control the number of API resources that can be created, or the amount of CPU, memory, and storage consumed by pods in the same project the quotas were defined in. Essentially, they determine the capacity of a project. ResourceQuotas allows you to control the following types of resources:
 
@@ -27,12 +19,7 @@ Scope | Description
 `NotBestEffort` | *Applies to all pods running without BestEffort quality of service.*
 `Terminating` | *Applies to all pods deployed by jobs with spec.activeDeadlineSeconds >= 0, which means, for example, build pods that get deployed during S2I builds.*
 `NotTerminating` | *Applies to all pods deployed by jobs with spec.activeDeadlineSeconds is nil, which means the usual pods with applications.*
- 
 
-Now, let's see how to create quotas for a project. Like any other resource, they can be created through an API, but you can also use CLI, which is what we are going to do. Let's switch back to system:admin user since managing quotas requires admin privileges:
-
-
-`oc login -u system:admin`{{execute}}
 
 Then we will be able to create our first quota:
 
@@ -61,6 +48,8 @@ By creating this quota, we have set the limits of 500 CPU millicores (half-core)
 
 First, create a simple pod definition:
 
+<pre class="file" data-filename="nginx-pod.yml" data-target="replace">
+
 `cat nginx-pod.yml
 apiVersion: v1
 kind: Pod
@@ -72,16 +61,21 @@ spec:
   containers:
   - name: nginx
     image: nginx
+</pre>
+
+
 Let's try to create a pod from it:
-
-
 `oc create -f nginx-pod.yml`{{execute}}
 
+```
 Error from server (Forbidden): error when creating "nginx-pod.yml": pods "nginx" is forbidden: failed quota: my-quota: must specify cpu,memory
+```
+
 As you can see, our definition didn't pass the check by the quota because it explicitly limits the requested amount of CPU and RAM, but we didn't specify them. Let's modify nginx-pod.yml and add resources section:
 
 
-`cat nginx-pod.yml
+<pre class="file" data-filename="nginx-pod.yml" data-target="replace">
+
 apiVersion: v1
 kind: Pod
 metadata:
@@ -96,6 +90,7 @@ resources:
       requests:
         cpu: 100m
         memory: 128Mi
+</pre>
 
 
 Upon creation, the pod will request 1 CPU core and 128 MiB of RAM, which is well within the limits set by the quota. Let's try it again:

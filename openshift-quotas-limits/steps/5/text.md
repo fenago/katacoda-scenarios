@@ -1,34 +1,35 @@
-Let's edit the pod's definition to comply with the defined LimitRange:
+The next step is to create a pod that requests a specific amount of computing resources and sets limits on their usage for itself. Prepare the following pod definition:
 
+<pre class="file" data-filename="limits-example-pod.yml" data-target="replace">
 
-`cat limits-example-pod.yml`{{execute}}
-...
-<output omitted>
-...
+apiVersion: v1
+kind: Pod
+metadata:
+  name: limits-example
+  labels:
+    role: web
+spec:
+  containers:
+  - name: httpd
+    image: httpd
     resources:
       requests:
-cpu: 200m
+        cpu: 100m
         memory: 256Mi
       limits:
-cpu: 250m
+        cpu: 350m
         memory: 256Mi
+</pre>
 
 
-Try to create it again and observe that it works:
+Next, create a pod from the definition:
 `oc create -f limits-example-pod.yml`{{execute}}
 
+```
+Error from server (Forbidden): error when creating "limits-example-pod.yml": pods "limits-example" is forbidden: [minimum cpu usage per Pod is 200m, but request is 100m., maximum cpu usage per Container is 300m, but limit is 350m.]
+```
 
-`oc get pod`{{execute}}
+As you might expect after looking at the pod's definition, the operation was rejected because the pod's request and limit ranges violate the policy defined earlier.
 
-NAME          READY   STATUS    RESTARTS   AGE
-limits-example 1/1    Running    0         4s
+Note: Minimum boundaries are also enforced.
 
-
-Let's clean up the lab to prepare for the next section:
-
-`oc delete po/limits-example`{{execute}}
-
-`oc delete limits/my-limits`{{execute}}
-limitrange "my-limits" delete
-
-Note: LimitRanges are considered a separate kind of resource as well, like templates, ConfigMaps, and ResourceQuotas, so they must be deleted by issuing a separate command.

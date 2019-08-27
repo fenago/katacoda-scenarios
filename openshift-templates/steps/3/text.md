@@ -1,66 +1,82 @@
 
-Now, let's see what happens if we try to create one more pod. Prepare a new pod definition from the one used to create the first pod by replacing nginx with httpd:
+The process command generates default values from all dynamic expressions, making the template definition ready to be used for creating resources, which is done either by piping its output to the create command or by running the new-app command—we will get to that in a few moments. For now, let's use that command to see a List of objects to be created:
 
 
-`cat httpd-pod.yml
+`oc process openshift//mariadb-persistent`{{execute}}
+{
+    "kind": "List",
+    "apiVersion": "v1",
+    "metadata": {},
+    "items": [
+        {
+            "apiVersion": "v1",
+            "kind": "Secret",
+            ...
+            <output omitted>
+            ...
+            "stringData": {
+                "database-name": "sampledb",
+                "database-password": "tYuwInpmocV1Q1uy",
+                "database-root-password": "icq5jd8bfFPWXbaK",
+                "database-user": "userC7A"
+            }
+        },
+        ...
+        <output omitted>
+        ...
+    ]
+}
+
+Note: The process command allows for an alternate syntax, <NAMESPACE>//<TEMPLATE>. We used it here for demonstration purposes, but you are free to use the more familiar -n <NAMESPACE> notation.
+
+The list is quite long, so we only provided an excerpt showing the Secret resource that contains all generated sensitive values that are to be used for template instantiation.
+
+To make things clearer, let's take a look at the expressions for generating those values in the raw template definition:
+
+
+`oc export template mariadb-persistent -n openshift`{{execute}}
+
 apiVersion: v1
-kind: Pod
-metadata:
-  name: httpd
-  labels:
-    role: web
-spec:
-  containers:
-  - name: httpd
-    image: httpd
-    resources:
-      requests:
-        cpu: 400m
-        memory: 128Mi
-If we try to create the second pod, we will see the following:
+kind: Template
+...
+<output omitted>
+...
+objects:
+- apiVersion: v1
+  kind: Secret
+  ...
+  <output omitted>
+  ... 
+  stringData:
+    database-name: ${MYSQL_DATABASE}
+    database-password: ${MYSQL_PASSWORD}
+    database-root-password: ${MYSQL_ROOT_PASSWORD}
+    database-user: ${MYSQL_USER}
+...
+<output omitted>
+...
+parameters:
+...
+<output omitted>
+...
+- description: Username for MariaDB user that will be used for accessing the database.
+  displayName: MariaDB Connection Username
+from: user[A-Z0-9]{3}
+  generate: expression
+  name: MYSQL_USER
+  required: true
+...
+<output omitted>
+...
+- description: Name of the MariaDB database accessed.
+  displayName: MariaDB Database Name
+  name: MYSQL_DATABASE
+  required: true
+value: sampledb
+...
+<output omitted>
+...
+You may have noticed, for example, that MYSQL_DATABASE is sampledb, while MYSQL_USER starts with the string user with three alphanumeric characters, just as we saw in the previous listing.
 
-
-`create -f httpd-pod.yml`{{execute}}
-
-Error from server (Forbidden): error when creating "httpd-pod.yml": pods "httpd" is forbidden: exceeded quota: my-quota, requested: pods=1, used: pods=1, limited: pods=1
-Even though the amount of requested memory wouldn't violate the quota, pod creation was still denied because the quota limits the total number of pods to 1 for the current project.
-
-Edit the quota to allow 2 pods and 2 CPU cores:
-
-
-`oc edit quota/my-quota
-spec:
-  hard:
-    cpu: 500m
-    memory: 256Mi
-    pods: "2"
-    resourcequotas: "1"
-Try creating the second pod again:
-
-
-`oc create -f httpd-pod.yml
-pod "httpd" created
-It worked because the quota was set to allow 2 pods in the current project.
-
-Let's see how many resources are used from the total allowed by the quota again:
-
-
-`oc describe quota/my-quota`{{execute}}
-Name:            my-quota
-Namespace:       myproject
-Resource         Used    Hard
---------         ----    ----
-cpu              500m    500m
-memory           256Mi   256Mi
-pods             2       2
-resourcequotas   1       1
-
-As you can see, we have exhausted the entire quota and no new pods can be created.
-
-Now that this exercise is over, it's time to prepare for the next one by cleaning up our lab:
-
-
-`oc delete all --all`{{execute}}
-
-
-`oc delete quota/my-quota`{{execute}}
+Note
+To learn more about how to construct regular expressions for dynamic parameters, refer to http://perldoc.perl.org/perlre.html.

@@ -1,47 +1,93 @@
+Separating configuration from application code using ConfigMaps
+The ConfigMap resource is used to separate data from a pod running an application. These kinds of resource contain arbitrary data to be injected into a pod as configuration. Injection in this context means that the pod can use it in the following ways:
 
-Manually pushing images into the internal registry
-The last method of creating image streams we will discuss is pushing images directly into the OpenShift internal registry.
+Export its key/value pairs as environment variables
+Supply its values as command-line arguments to the application
+Mount it as a volume inside the pod to the location where the application expects to find its configuration file
+Before you begin, make sure you are logged in as an unprivileged user for the most representative experience:
 
- 
-Log in as alice unprivileged account, if you haven't already done so:
+
 `oc login -u alice`{{execute}}
+Let's look at the process of exporting ConfigMap as an environment variable into a container. First, we have to create ConfigMap itself from a list of environment variables:
 
-Then, run the following command to login to the internal registry:
-`docker login -u $(oc whoami) -p $(oc whoami -t) [[HOST_IP]]:5000`{{execute}}
 
-In the preceding command, we used a bash feature called command expansion, which allowed us to supply the login command with the username, password/token, and registry IP:port, from left to right. You can run all these commands (oc whoami and oc whoami -t) separately to see what output they provide.
+<pre class="file" data-filename="example.env" data-target="replace">
+VAR_1=Hello
+VAR_2=World
+</pre>
 
-Now that we are authenticated in the internal registry, we can push images into it directly, as if it were a general Docker registry. Let's see what we have in our OpenShift internal registry:
-`docker images`{{execute}}
+`oc create cm example-config-map --from-env-file=example.env`{{execute}}
 
-Let's delete the Lighttpd image left over from the previous exercise:
-`docker rmi cd7b7073c0fc`{{execute}}
 
-Now use the same Lighttpd image, as in the previous subsection:
-`docker pull gists/lighttpd`{{execute}}
+Use the following command to see what the actual resource looks like:
+`oc describe configmap/example-config-map`{{execute}}
 
-Tag it with the registry's address and port included in the tag:
-`docker tag docker.io/gists/lighttpd [[HOST_IP]]:5000/advanced/lighttpd`{{execute}}
 
-**Note:** We used the name of the project to create the image stream as part of the path to the image in the registry because the token we used grants developer user permission to create image streams in the myproject project only. OpenShift expects us to find images in particular locations so that it can create image streams from images.
+Now we are ready to inject it into a pod. Create a simple Pod definition that references the newly created ConfigMap:
 
-Let's see if the image with both tags referencing it is there:
-`docker images`{{execute}}
+<pre class="file" data-filename="example-pod-1.yml" data-target="replace">
+`cat example-pod-1.yml`{{execute}}
+apiVersion: v1
+kind: Pod
+metadata:
+  name: example
+spec:
+  containers:
+    - name: example
+      image: cirros
+      command: ["/bin/sh", "-c", "env"]
+      envFrom:
+        - configMapRef:
+            name: example-config-map
+</pre>
 
-Finally, we need to push the image into the repository:
-`docker push [[HOST_IP]]:5000/advanced/lighttpd`{{execute}}
+And create the pod using the preceding definition:
+`oc create -f example-pod-1.yml`{{execute}}
 
-The push refers to a repository [[[HOST_IP]]:5000/advanced/lighttpd]
-
-Now verify that the lighttpd image stream was created in OpenShift:
-`oc get is`{{execute}}
+Since the command is a simple Linux command, env, not a process or listening server of any kind, the pod exits right after it's completed, but you can still see its logs:
+`oc logs po/example`{{execute}}
 
 ```
-NAME     DOCKER REPO                                        TAGS   UPDATED
-lighttpd [[HOST_IP]]:5000/advanced/lighttpd latest 15 minutes ago
+...
+<output omitted>
+...
+VAR_1=Hello
+VAR_2=World
 ```
 
-As expected, the image stream was created.
+As you can see, the two environment variables we defined in ConfigMap were successfully injected into the container. If we were to run an application inside our container, it could read them.
 
-Just as before, we need to delete everything before going on to the next section:
-`oc delete is/lighttpd`{{execute}}
+The same method can be used to supply these variables as command-line arguments to the container command. First, let's delete the old pod:
+`oc delete po/example`{{execute}}
+
+Then, create a new pod definition so that you can use the variables as command-line arguments to echo the command:
+
+<pre class="file" data-filename="example-pod-2.yml" data-target="replace">
+apiVersion: v1
+kind: Pod
+metadata:
+  name: example2
+spec:
+  containers:
+    - name: example2
+      image: cirros
+      command: ["/bin/sh", "-c", "echo ${VAR_1} ${VAR_2}"]
+      envFrom:
+        - configMapRef:
+            name: example-config-map
+</pre>
+
+
+Now, create a container from the updated definition:
+`oc create -f example-pod-2.yml`{{execute}}
+
+As we mentioned previously, the container will exit right after the command returns, but its logs will contain the output of the command, constructed of two variables from our ConfigMap:
+
+`oc logs po/example2`{{execute}}
+
+```
+Hello World
+```
+
+Lastly, we will walk-through mounting ConfigMap as a configuration file into a pod. Again, let's delete the pod from the previous exercise:
+`oc delete po/example2`{{execute}}

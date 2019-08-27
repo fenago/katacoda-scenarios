@@ -13,9 +13,11 @@ You don't have any projects. You can try to create a new project, by running
     oc new-project <projectname>
 ```
 
-Openshift CLI has a lot of similarities with Kubernetes CLI. oc is short for OpenShift client, which works similarly to Kubernetes's kubectl. You will find a lot of similarities between these two commands as we go.
-
 # Openshift Project
 Openshift Project is similar to the Kubernetes namespace which also supports access controls for different users.
 
 To complete this step, create a new project called ``myproject`` using CLI.
+
+
+Creating complex stacks of applications with templates
+Another useful kind of OpenShift resource is a template. Instead of creating resources one-by-one – for example, a pod, service, and route – templates allow you to create multiple objects at once with a single CLI command. More than that —they may include parameters that can be optional, or default to values either static or generated in accordance with specific rules. In a sense, they are similar to Docker Compose or OpenStack Heat—all of these provide the facility to create entire application stacks from the ground up. With templates, the cluster administrator can provide developers with the ability to deploy multi-tier applications with all dependent services.

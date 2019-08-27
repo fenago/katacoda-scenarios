@@ -1,8 +1,4 @@
 
-
-
-Controlling resource consumption using LimitRanges
-
 This is another way of control resource allocation in OpenShift at the project level, but unlike ResourceQuotas, they are different in certain ways:
 
 - They are applied to individual pods, containers, images, or image streams
@@ -40,7 +36,8 @@ Just as in the previous section, setting LimitRanges requires administrative pri
 Let's consider an example of creating a LimitRange from scratch:
 
 
-`cat my-limits.yaml
+<pre class="file" data-filename="my-limits.yaml" data-target="replace">
+
 apiVersion: v1
 kind: LimitRange
 metadata:
@@ -61,46 +58,15 @@ spec:
       max:
         cpu: 300m
         memory: 256Mi
+</pre>
+
+
 Create limits from the preceding definition:
-
-
 `oc create -f my-limits.yaml`{{execute}}
-limitrange "my-limits" created
+
 Now, let's describe our newly created limits:
-
-
 `oc describe limits/my-limits`{{execute}}
 
 
-Note There are also the spec.limits[].default and spec.limits[].defaultRequest parameters, which determine the amount of CPU/RAM a container is limited to use and the amount it requests by default, respectively. Since we didn't specify them explicitly, they default to the same maximum value.
-
-The next step is to create a pod that requests a specific amount of computing resources and sets limits on their usage for itself. Prepare the following pod definition:
-
-
-`cat limits-example-pod.yml
-apiVersion: v1
-kind: Pod
-metadata:
-  name: limits-example
-  labels:
-    role: web
-spec:
-  containers:
-  - name: httpd
-    image: httpd
-    resources:
-      requests:
-        cpu: 100m
-        memory: 256Mi
-      limits:
-        cpu: 350m
-        memory: 256Mi
-Next, create a pod from the definition:
-
-
-`oc create -f limits-example-pod.yml`{{execute}}
-Error from server (Forbidden): error when creating "limits-example-pod.yml": pods "limits-example" is forbidden: [minimum cpu usage per Pod is 200m, but request is 100m., maximum cpu usage per Container is 300m, but limit is 350m.]
-As you might expect after looking at the pod's definition, the operation was rejected because the pod's request and limit ranges violate the policy defined earlier.
-
-Note: Minimum boundaries are also enforced.
+Note: There are also the spec.limits[].default and spec.limits[].defaultRequest parameters, which determine the amount of CPU/RAM a container is limited to use and the amount it requests by default, respectively. Since we didn't specify them explicitly, they default to the same maximum value.
 
