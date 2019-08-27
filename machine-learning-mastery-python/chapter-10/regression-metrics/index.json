@@ -1,5 +1,5 @@
 {
-  "title": "Classification Metrics",
+  "title": "Regression Metrics",
   "description": "Run Python Code with Jupyter Notebooks.",
   "difficulty": "Beginner",
   "time": "20 minutes",
@@ -9,29 +9,19 @@
       "text": "steps/1/step1.md"
     },
     {
-      "title": "Classification Accuracy",
+      "title": "Mean Absolute Error",
       "text": "steps/2/step2.md",
       "answer": "steps/2/answer.md"
     },    
     {
-      "title": "Logarithmic Loss",
+      "title": "Mean Squared Error",
       "text": "steps/3/step3.md",
       "answer": "steps/3/answer.md"
     },
     {
-      "title": "Area Under ROC Curve",
+      "title": "R Metric",
       "text": "steps/4/step4.md",
       "answer": "steps/4/answer.md"
-    },
-    {
-      "title": "Confusion Matrix",
-      "text": "steps/5/step5.md",
-      "answer": "steps/5/answer.md"
-    },
-    {
-      "title": "Classification Report",
-      "text": "steps/6/step6.md",
-      "answer": "steps/6/answer.md"
     }],
     "intro": {
       "text": "intro.md",
@@ -47,27 +37,19 @@
           "target": "~/"  
         },    
         { 
-          "file": "area-under-roc-curve.ipynb",  
+          "file": "mean-absolute.ipynb",  
           "target": "~/"
         },
         { 
-          "file": "classification-accuracy.ipynb",   
+          "file": "mean-squared.ipynb",   
           "target": "~/"  
         },  
         { 
-          "file": "classification-report.ipynb", 
+          "file": "r-metric.ipynb", 
           "target": "~/"  
         },
         { 
-          "file": "confusion-matrix.ipynb", 
-          "target": "~/"  
-        },
-        { 
-          "file": "logarithmic-loss.ipynb", 
-          "target": "~/"  
-        },
-        { 
-          "file": "pima-indians-diabetes.data.csv", 
+          "file": "housing.csv", 
           "target": "~/"  
         }
       ]
