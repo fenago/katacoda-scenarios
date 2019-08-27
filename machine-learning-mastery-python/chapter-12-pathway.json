@@ -1,0 +1,16 @@
+{
+  "title": "Machine Learning Mastery with Python",
+  "description": "Spot-Check Regression Algorithms",
+  "courses": [
+    {
+      "course_id": "linear-machine-learning-algorithms",
+      "title": "Linear Machine Learning Algorithms",
+      "description": "Run Python Code with Jupyter Notebooks."
+    },
+    {
+      "course_id": "nonlinear-machine-learning-algorithms",
+      "title": "Nonlinear Machine Learning Algorithms",
+      "description": "Run Python Code with Jupyter Notebooks."
+    }
+  ]
+}
