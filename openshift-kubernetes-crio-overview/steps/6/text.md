@@ -92,7 +92,8 @@ As the name implies, it is used internally by Kubernetes itself for all system r
 The last main missing component here is pods; as previously mentioned, pods represent a collection of containers and a pod is a basic management unit in Kubernetes. In our case, pods are Docker containers. We do not have any running pods yet, which can be easily verified by kubectl get pods:
 
 
-`kubectl get pods
+`kubectl get pods`{{execute}}
+
 No resources found.
 It says No resources found, all because the pod is a Kubernetes resource, similar to other resources we are going to cover in this book.
 
@@ -103,62 +104,44 @@ Running Kubernetes pods
 As with Docker, we can run a Kubernetes pod with the kubectl run command. Let's start with a simple web server example:
 
 
-`kubectl run httpd --image=httpd
+`kubectl run httpd --image=httpd`{{execute}}
+
 We can verify the result by getting a list of Kubernetes pods, by running the kubectl get pods command:
+`kubectl get pods`{{execute}}
 
 
-`kubectl get pods
-NAME                      READY    STATUS    RESTARTS    AGE
-httpd-8576c89d7-qjd62      1/1     Running    0          6m
-Note
-The first time you run this command, you will probably see that the Kubernetes pod status shows up as ContainerCreating. What is happening behind the scenes is that the Docker httpd image is being downloaded to Minikube VM. Be patient and give it some time to download the image. A few minutes later you should be able to see the container status is Running.  The kubectl run command does more than just download an image and run a container out of it. We are going to cover this later in this chapter. The 8576c89d7-qjd62 part is generated automatically. We are going to discuss this later in this chapter.
+Note: The first time you run this command, you will probably see that the Kubernetes pod status shows up as ContainerCreating. What is happening behind the scenes is that the Docker httpd image is being downloaded to Minikube VM. Be patient and give it some time to download the image. A few minutes later you should be able to see the container status is Running.  The kubectl run command does more than just download an image and run a container out of it. We are going to cover this later in this chapter. The 8576c89d7-qjd62 part is generated automatically. We are going to discuss this later in this chapter.
 
 Essentially, this pod is a Docker container inside our Minikube VM, and we can easily verify this. First, we need to ssh into Minikube VM with minikube ssh, and then run the docker ps command:
 
 
 `minikube ssh`{{execute}}
 $
-`docker ps
+`docker ps`{{execute}}
+
+
 CONTAINER ID IMAGE COMMAND CREATED STATUS PORTS NAMES
 c52c95f4d241 httpd "httpd -g 'daemon ..." 12 minutes ago Up 12 minutes k8s_httpd-container_httpd_default_39531635-23f8-11e8-ab32-080027dcd199_0
 ...
 <output omitted>
 ...
 We can try to kill this httpd Docker container, but Kubernetes will automatically spawn the new one:
-
-
 `docker rm -f c52c95f4d241`{{execute}}
+
 Check the container status one more time:
-
-
 `docker ps`{{execute}}
-CONTAINER ID IMAGE COMMAND CREATED STATUS PORTS NAMES
-5e5460e360b6 httpd "httpd -g 'daemon ..." 5 seconds ago Up 5 seconds k8s_httpd-container_httpd_default_4f5e05df-2416-11e8-ab32-080027dcd199_0
-`exit
-Note
-Note that the httpd container is still up, but with another ID. The initial ID was c52c95f4d241 and it became 5e5460e360b6 (you will have other IDs). That is one of the benefits of Kubernetes: if one container dies, Kubernetes will bring in a new one automatically. We are going to discuss this in detail later in this chapter.
+
+
+
+Note: The httpd container is still up, but with another ID. The initial ID was c52c95f4d241 and it became 5e5460e360b6 (you will have other IDs). That is one of the benefits of Kubernetes: if one container dies, Kubernetes will bring in a new one automatically. We are going to discuss this in detail later in this chapter.
 
 Describing Kubernetes resources 
 We can quickly take a look at the internals of this pod by running the kubectl describe command:
-
-
 `kubectl describe pod httpd-8576c89d7-qjd62`{{execute}}
 
-Name: httpd
-Namespace: default
-Node: minikube/192.168.99.101
-Start Time: Sat, 10 Mar 2018 00:01:33 -0700
-Annotations: <none>
-Status: Running
-IP: 172.17.0.4
-...
-<output omitted>
-...
 It gives us enough information to efficiently locate the pod and do the proper troubleshooting when necessary. In our case, we can ssh to Minikube VM and run the curl command to check if the pod is running the web server properly. 
 
-Note
-You may need to use another IP address for the curl command; in our case it is 172.17.0.4, derived from the kubectl describe command output.
-
+Note: You may need to use another IP address for the curl command; in our case it is 172.17.0.4, derived from the kubectl describe command output.
 
 `minikube ssh`{{execute}}
 
@@ -166,9 +149,11 @@ You may need to use another IP address for the curl command; in our case it is 1
 `curl 172.17.0.4`{{execute}}
 
 <html><body><h1>It works!</h1></body></html>
-`exit
-Note
-Note that this pod is accessible only inside the Kubernetes cluster. That is the reason why we need to log in to Minikube VM. If we try to access this address from our local PC, it will not work. We are going to discuss this in the following sections.
+
+`exit`{{execute}}
+
+
+Note: Note that this pod is accessible only inside the Kubernetes cluster. That is the reason why we need to log in to Minikube VM. If we try to access this address from our local PC, it will not work. We are going to discuss this in the following sections.
 
 Editing Kubernetes resources
 We can also edit the properties of a running container with kubectl edit pod httpd-8576c89d7-qjd62. We are not going to change anything at this point, but you can try to change something before we delete the container. We are going to work with the edit command while working with OpenShift in further chapters.
@@ -185,30 +170,27 @@ When we run a pod using the kubectl run command, this pod is accessible only ins
 `kubectl run httpd --image=httpd`{{execute}}
 
 `kubectl get pods`{{execute}}
-NAME READY STATUS RESTARTS AGE
-httpd-66c6df655-8h5f4 1/1 Running 0 27m
+
 Now let's use the kubectl expose command and expose the httpd web server to the outside of Kubernetes:
 
 
-`kubectl expose pod httpd-66c6df655-8h5f4 --port=80 --name=httpd-exposed --type=NodePort
+`kubectl expose pod httpd-66c6df655-8h5f4 --port=80 --name=httpd-exposed --type=NodePort`{{execute}}
+
 While using the kubectl expose command, we specify several options:
+- **port**: Pod (Docker container) port that we are going to expose to the outside of the Kubernetes cluster.
+- **name**: Kubernetes service name.
+- **type**: Kubernetes service type. NodePort uses Kubernetes Node IP.  
 
-port: Pod (Docker container) port that we are going to expose to the outside of the Kubernetes cluster.
-name: Kubernetes service name.
-type: Kubernetes service type. NodePort uses Kubernetes Node IP.  
 The command to get a list of exposed Kubernetes services is kubectl get services:
-
-
 `kubectl get services`{{execute}}
 
-Note
-Note that port 80 was mapped to dynamic port 31395 on the Minikube VM. The port is dynamically chosen in the range 30000–32767.Also, there is a ClusterIP field with the IP address 10.110.40.149 allocated for the httpd-expose service. Do not pay attention to this at the moment; we are going to discuss this later in the book.
+Note: Port 80 was mapped to dynamic port 31395 on the Minikube VM. The port is dynamically chosen in the range 30000–32767.Also, there is a ClusterIP field with the IP address 10.110.40.149 allocated for the httpd-expose service. Do not pay attention to this at the moment; we are going to discuss this later in the book.
 
 Finally, use curl to check if the httpd server is available from the outside of the Kubernetes cluster:
-
-
 `curl 192.168.99.101:31395`{{execute}}
+
 <html><body><h1>It works!</h1></body></html>
+
 If you open this link in your web browser, you should see It works! on the web page.
 
 Using Kubernetes labels
@@ -234,17 +216,11 @@ httpd2-5b4ff5cf57-9llkn 1/1         Running    0              2m
 
 Deleting Kubernetes resources
 If we've done something wrong with the pod, or it may have broken for some reason, there is a simple way to delete a pod using the kubectl delete pod command:
-
-
 `kubectl delete pod httpd-8576c89d7-qjd62`{{execute}}
+
 pod "httpd-8576c89d7-qjd62" deleted
 We can delete all pods using the --all option:
-
-
 `kubectl delete pod --all`{{execute}}
-pod "httpd-8576c89d7-qjd62" deleted
-pod "httpd1-c9f7d7fd9-rn2nz" deleted
-pod "httpd2-5b4ff5cf57-vlhb4" deleted
 
 **Note:** if you run kubectl get pods, you will see all the containers running again. The reason for this is that, when we run the kubectl run command, it creates several different Kubernetes resources, which we are going to discuss in the following section.
 

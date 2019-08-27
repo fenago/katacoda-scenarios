@@ -1,6 +1,6 @@
 {
   "icon": "fa-openshift",
-  "title": "Core OpenShift Concepts",
+  "title": "OpenShift HorizontalPodAutoscaler",
   "description": "Get started with openshift management",
   "difficulty": "beginner",
   "time": "15 minutes",
@@ -14,7 +14,7 @@
       "text": "steps/2/text.md"
     },    
 	{
-      "title": "Managing projects in OpenShift",
+      "title": "CPU-based autoscaling",
       "text": "steps/3/text.md"
     },
 	{
@@ -30,7 +30,7 @@
         "text": "steps/6/text.md"
     },
     {
-        "title": "Managing services in OpenShift",
+        "title": "Memory-based autoscaling",
         "text": "steps/7/text.md"
     },
     {

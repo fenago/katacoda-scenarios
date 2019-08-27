@@ -47,16 +47,13 @@ deployment "httpd" created
 **Note:**
 We need to specify a full path to a Docker image since CRI-O is a universal Runtime Interface and it does not know whether we want to use Docker or any other container technology registry. 
 
-Wait for a minute or so while Kubernetes **Note:** downloads the httpd image and then verify that we have a httpd pod up and running:
-
-
+Wait for a minute or so while Kubernetes downloads the httpd image and then verify that we have a httpd pod up and running:
 `kubectl get pods`{{execute}}
-NAME                   READY STATUS RESTARTS  AGE
-httpd-7dcb9bd6c4-x5dhm 1/1   Running  0       4m
+
+
 Again, from this point of view, it looks pretty standard, but if we run the kubectl describe command, we will see that the container ID starts with cri-o://:
-
-
 `kubectl describe pods/httpd-7dcb9bd6c4-x5dhm`{{execute}}
+
 Name: httpd-7dcb9bd6c4-x5dhm
 ...
 <output omitted>
@@ -71,20 +68,21 @@ At this point, this shows us that Kubernetes is using the CRI-O runtime interfac
 
 
 `minikube ssh docker images`{{execute}}
-REPOSITORY TAG IMAGE ID CREATED SIZE
-gcr.io/k8s-minikube/storage-provisioner v1.8.0 4689081edb10 4 months ago 80.8MB
 
-`minikube ssh docker ps
+`minikube ssh docker ps`{{execute}}
+
 CONTAINER ID IMAGE COMMAND CREATED STATUS PORTS NAMES
+
 As you can see, there are no images or containers named httpd. We mentioned earlier that CRI-O is using runc Container Runtime behind the scenes. To help us further with the verification process, we are going to use the runc command inside the Minikube VM. runc is a CLI command for running containers packaged according to the OCI format. The syntax of the runc command is very similar to the docker command we used in Chapter 1, Containers and Docker Overview.
 
 
-`minikube ssh "sudo runc ps \
-3f2c2826318f1526bdb9710050a29b5d4a3de78d61e07ac9d83cedb9827c62e4"`{{execute}}
+`minikube ssh "sudo runc ps 3f2c2826318f1526bdb9710050a29b5d4a3de78d61e07ac9d83cedb9827c62e4"`{{execute}}
+
 UID PID PPID C STIME TTY TIME CMD
 root 5746 5695 0 02:39 ? 00:00:00 httpd -DFOREGROUND
 daemon 5788 5746 0 02:39 ? 00:00:00 httpd -DFOREGROUND
 daemon 5792 5746 0 02:39 ? 00:00:00 httpd -DFOREGROUND
 daemon 5793 5746 0 02:39 ? 00:00:00 httpd -DFOREGROUND
-**Note:**
+
+
 **Note:** that 3f2c2826318f1526bdb9710050a29b5d4a3de78d61e07ac9d83cedb9827c62e4 is the container ID from the kubectl describe pods/httpd-7dcb9bd6c4-x5dhm command we ran previously.

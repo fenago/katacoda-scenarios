@@ -92,7 +92,7 @@ As the name implies, it is used internally by Kubernetes itself for all system r
 The last main missing component here is pods; as previously mentioned, pods represent a collection of containers and a pod is a basic management unit in Kubernetes. In our case, pods are Docker containers. We do not have any running pods yet, which can be easily verified by kubectl get pods:
 
 
-`kubectl get pods
+`kubectl get pods`{{execute}}
 No resources found.
 It says No resources found, all because the pod is a Kubernetes resource, similar to other resources we are going to cover in this book.
 
@@ -103,11 +103,12 @@ Running Kubernetes pods
 As with Docker, we can run a Kubernetes pod with the kubectl run command. Let's start with a simple web server example:
 
 
-`kubectl run httpd --image=httpd
+`kubectl run httpd --image=httpd`{{execute}}
 We can verify the result by getting a list of Kubernetes pods, by running the kubectl get pods command:
 
 
-`kubectl get pods
+`kubectl get pods`{{execute}}
+
 NAME                      READY    STATUS    RESTARTS    AGE
 httpd-8576c89d7-qjd62      1/1     Running    0          6m
 Note

@@ -1,40 +1,27 @@
-
-In this example, we will supply the Nginx web server with our custom configuration file, which will make its default virtual host listen on port 8888 instead of 80. Here's the simple configuration to achieve that:
-
-
-`cat nginx_custom_default.conf`{{execute}}
-server {
-    listen       8888;
-    server_name  localhost;
-    location / {
-        root   /usr/share/nginx/html;
-        index  index.html index.htm;
-    }
-}
-Now, let's go ahead and create a ConfigMap from this configuration:
+Let's go ahead and generate traffic for the application, just like in the previous section, but establish 1000 concurrent connections this time, instead of 100:
 
 
-`oc create cm nginx --from-file nginx_custom_default.conf`{{execute}}
-configmap "nginx" created
-If we take a look at the raw resource definition of this ConfigMap, we will see the following:
+`ab -c 1000 -n 10000000 -H 'Host: httpd-advanced.openshift.example.com' http://127.0.0.1/`{{execute}}
 
 
-`oc export configmap/nginx`{{execute}}
-apiVersion: v1
-data:
- nginx_custom_default.conf: |
-    server {
-        listen 8888;
-        server_name localhost;
-        location / {
-            root /usr/share/nginx/html;
-            index index.html index.htm;
-        }
-    }
-kind: ConfigMap
-metadata:
-  creationTimestamp: null
-  name: nginx
+
+Note: Leave benchmark open for 5-10 minutes, and meanwhile open your browser at https://hawkular-metrics.openshift.example.com/hawkular/metrics to make sure that hawkular metrics are running, and then at https://openshift.example.com:8443/console/project/advanced/overview
+
+You can observe autoscaling taking place from the web console. First it scales our web server to 3 replicas:
 
 
-As you can see, the entire contents of the configuration file was inserted as value into the config map definition with the key nginx_custom_default.conf, which can be used to reference the configuration in a pod.
+And shortly after, to 4:
+
+
+After ab is finished generating traffic, the number of pods slowly goes down:
+
+
+Note
+It is possible to observe short bursts in the number of replicas if you put too much load on the service. This is normal and you may see from events that the deploymentconfig scales, for example, from 3 to 6 without transient states, then quickly detects the anomaly and corrects it by scaling back to the maximum value.Due to the specifics of memory utilization by pods, it's common that the deploymentconfig/replicationcontroller doesn't fully scale back to the minimum number of replicas.
+
+The exercise is over, so it's time to clean-up:
+
+`oc delete all --all`{{execute}}
+
+`oc delete limits/my-limits`{{execute}}
+limitrange "my-limits" deleted

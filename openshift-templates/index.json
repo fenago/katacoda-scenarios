@@ -1,7 +1,7 @@
 {
   "icon": "fa-openshift",
-  "title": "Core OpenShift Concepts",
-  "description": "Get started with openshift management",
+  "title": "OpenShift Templates",
+  "description": "Get started with openshift templates",
   "difficulty": "beginner",
   "time": "15 minutes",
   "details": {

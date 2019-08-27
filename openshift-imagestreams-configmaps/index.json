@@ -1,7 +1,7 @@
 {
   "icon": "fa-openshift",
-  "title": "Core OpenShift Concepts",
-  "description": "Get started with openshift management",
+  "title": "OpenShift ImageStreams and ConfigMaps",
+  "description": "Get started with openshift",
   "difficulty": "beginner",
   "time": "15 minutes",
   "details": {

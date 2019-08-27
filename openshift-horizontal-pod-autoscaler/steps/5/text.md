@@ -1,34 +1,32 @@
-Let's edit the pod's definition to comply with the defined LimitRange:
 
 
-`cat limits-example-pod.yml`{{execute}}
+Now, we have to simulate a large number of user requests to our pods to increase the CPU load so that autoscaling takes effect. But to do that, we need to create a route first:
+`oc expose svc/httpd`{{execute}}
+
+`oc get route`{{execute}}
+... httpd-advanced.openshift.example.com ...
+At this point, we have everything we need, so let's start simulating CPU load with the ab Apache benchmarking utility:
+
+`apt-get update && apt-get install apache2-utils`{{execute}}
+
+`ab -c 100 -n 10000000 -H 'Host: httpd-advanced.openshift.example.com' http://127.0.0.1/`{{execute}}
+
+```
 ...
 <output omitted>
 ...
-    resources:
-      requests:
-cpu: 200m
-        memory: 256Mi
-      limits:
-cpu: 250m
-        memory: 256Mi
+^C
+Percentage of the requests served within a certain time (ms)
+  50% 46
+  66% 56
+  75% 66
+  80% 73
+  90% 95
+  95% 124
+  98% 171
+  99% 200
+ 100% 528 (longest request)
+```
 
 
-Try to create it again and observe that it works:
-`oc create -f limits-example-pod.yml`{{execute}}
-
-
-`oc get pod`{{execute}}
-
-NAME          READY   STATUS    RESTARTS   AGE
-limits-example 1/1    Running    0         4s
-
-
-Let's clean up the lab to prepare for the next section:
-
-`oc delete po/limits-example`{{execute}}
-
-`oc delete limits/my-limits`{{execute}}
-limitrange "my-limits" delete
-
-Note: LimitRanges are considered a separate kind of resource as well, like templates, ConfigMaps, and ResourceQuotas, so they must be deleted by issuing a separate command.
+When httpd DeploymentConfig is scaled up, you can just press Ctrl+C to stop generating the traffic, as is indicated by ^C in the output above.

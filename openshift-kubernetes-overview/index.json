@@ -1,6 +1,6 @@
 {
-  "title": "Docker Advanced Commands",
-  "description": "Get started with the advanced docker commands",
+  "title": "Kubernetes Overview",
+  "description": "Get started with the kubernetes docker commands",
   "difficulty": "Intermediate",
   "time": "15 minutes",
   "details": {
@@ -58,6 +58,6 @@
     "uimessage1": "\u001b[32mBrought to you by https://container.training\u001b[m\r\n"
   },
   "backend": {
-    "imageid": "docker"
+    "imageid": "minikube"
   }
 }

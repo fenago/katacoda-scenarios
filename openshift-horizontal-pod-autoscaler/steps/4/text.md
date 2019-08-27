@@ -1,106 +1,39 @@
 
+The autoscaling feature can be applied to deployment configs, so the easiest way to create one is to use the already familiar new-app command:
 
 
-Controlling resource consumption using LimitRanges
-
-This is another way of control resource allocation in OpenShift at the project level, but unlike ResourceQuotas, they are different in certain ways:
-
-- They are applied to individual pods, containers, images, or image streams
-- They don't control some resources such as secrets, ConfigMaps, ResourceQuotas, services, and ReplicationControllers
-- They can be created from a raw definition only
-
-Depending on the type of resource they are applied to, LimitRanges control various computing resources and objects:
-
-Resource type | Computing resources
---- | ---
-`Pod` | *<ul><li>CPU</li><li>RAM</li></ul>*
-`Container` | *<ul><li>CPU</li><li>RAM</li></ul>*
-`Image` | *Size of an image pushed into an internal registry.*
-`ImageStream` | *<ul><li>Number of unique image tags as per image stream's spec</li><li>Number of unique image references as per the image stream's status</li></ul>*
-`PersistentVolumeClaim` | *Amount of storage requested*
- 
+`oc new-app httpd
+...
+<output omitted>
+...
+--> Creating resources ...
+    deploymentconfig "httpd" created
+    service "httpd" created
+--> Success
+    Application is not exposed. You can expose services to the outside world by executing one or more of the commands below:
+     'oc expose svc/httpd' 
+    Run 'oc status' to view your app.
+For demonstration purposes, we used the Apache web server image to create an image stream, which, in turn, is used to create the application. Now that the deploymentconfig is ready to manage pods, we can create a HorizontalPodAutoscaler to manage the deploymentconfig itself:
 
 
-Pods and containers can explicitly state the amount of CPU and/or RAM they need and their limits, and LimitRanges takes care that they don't fall outside certain boundaries. Also, LimitRanges may provide defaults for a requested number of resources and their limits if they are not specified.
+`oc autoscale dc/httpd --min=2 --max=4 --cpu-percent=10`{{execute}}
+deploymentconfig "httpd" autoscaled
 
-Depending on the presence of, and differences between, requests and limits for computing resources declared by pods, they run with different Quality of Service (QoS) tiers that serve the purpose of prioritizing running pods when it comes to resource contention. The following table summarizes the available tiers and when they are applied:
+Note: We specified 2 as the minimum number of pods that must be maintained at any time so that you can observe the effect of autoscaling quickly without having to generate CPU load on pods to trigger it. We will do that in a few moments as well.
 
-QoS tier | Description
---- | ---
-`BestEffort` | *This tier is assigned to pods that don't specify requests and limits explicitly.*
-`Burstable` | *They run with a lower priority than BestEffort pods.*
-`Guaranteed` | *Each pod running with this QoS is entitled to the requested amount of resources, but no more.*
-`NotTerminating` | *Applies to all pods deployed by jobs with spec.activeDeadlineSeconds is nil, which means the usual pods with applications.*
- 
-
-Just as in the previous section, setting LimitRanges requires administrative privileges, so make sure you are logged in as system:admin user:
-`oc login -u system:admin`{{execute}}
+Let's make sure it was created:
 
 
-Let's consider an example of creating a LimitRange from scratch:
+`oc get hpa`{{execute}}
 
+NAME   REFERENCE              TARGETS   MINPODS MAXPODS REPLICAS  AGE
+httpd  DeploymentConfig/httpd 0% / 20%  2       4       2         3m
+Note
+If you run this command right after creation, you will most likely see unknown instead of 0% in the preceding output. That is expected because HorizontalPodAutoscaler usually needs a few minutes to collect enough metrics.
 
-`cat my-limits.yaml
-apiVersion: v1
-kind: LimitRange
-metadata:
-  name: my-limits
-spec:
-  limits:
-    - type: Pod
-      min:
-        cpu: 200m
-        memory: 256Mi
-      max:
-        cpu: 400m
-        memory: 512Mi
-    - type: Container
-      min:
-        cpu: 100m
-        memory: 128Mi
-      max:
-        cpu: 300m
-        memory: 256Mi
-Create limits from the preceding definition:
+In a few minutes, you may list running pods and notice that there are two of them now:
+`oc get po`{{execute}}
 
-
-`oc create -f my-limits.yaml`{{execute}}
-limitrange "my-limits" created
-Now, let's describe our newly created limits:
-
-
-`oc describe limits/my-limits`{{execute}}
-
-
-Note There are also the spec.limits[].default and spec.limits[].defaultRequest parameters, which determine the amount of CPU/RAM a container is limited to use and the amount it requests by default, respectively. Since we didn't specify them explicitly, they default to the same maximum value.
-
-The next step is to create a pod that requests a specific amount of computing resources and sets limits on their usage for itself. Prepare the following pod definition:
-
-
-`cat limits-example-pod.yml
-apiVersion: v1
-kind: Pod
-metadata:
-  name: limits-example
-  labels:
-    role: web
-spec:
-  containers:
-  - name: httpd
-    image: httpd
-    resources:
-      requests:
-        cpu: 100m
-        memory: 256Mi
-      limits:
-        cpu: 350m
-        memory: 256Mi
-Next, create a pod from the definition:
-
-
-`oc create -f limits-example-pod.yml`{{execute}}
-Error from server (Forbidden): error when creating "limits-example-pod.yml": pods "limits-example" is forbidden: [minimum cpu usage per Pod is 200m, but request is 100m., maximum cpu usage per Container is 300m, but limit is 350m.]
-As you might expect after looking at the pod's definition, the operation was rejected because the pod's request and limit ranges violate the policy defined earlier.
-
-Note: Minimum boundaries are also enforced.
-
+NAME            READY     STATUS    RESTARTS   AGE
+httpd-1-5845b   1/1       Running   0          7s
+httpd-1-scq85   1/1       Running   0          2m
