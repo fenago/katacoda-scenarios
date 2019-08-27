@@ -5,97 +5,97 @@
     {
       "course_id": "chapter-3",
       "title": "Chapter - 3",
-      "description": "Run Python Code with Jupyter Notebooks."
+      "description": "Crash Course in Python and SciPy"
     },
     {
       "course_id": "chapter-4",
       "title": "Chapter - 4",
-      "description": "Run Python Code with Jupyter Notebooks."
+      "description": "How To Load Machine Learning Data"
     },
     {
       "course_id": "chapter-5",
       "title": "Chapter - 5",
-      "description": "Run Python Code with Jupyter Notebooks."
+      "description": "Understand Your Data With Descriptive Statistics"
     },
     {
       "course_id": "chapter-6",
       "title": "Chapter - 6",
-      "description": "Run Python Code with Jupyter Notebooks."
+      "description": "Understand Your Data With Visualization"
     },
     {
       "course_id": "chapter-7",
       "title": "Chapter - 7",
-      "description": "Run Python Code with Jupyter Notebooks."
+      "description": "Prepare Your Data For Machine Learning"
     },
     {
       "course_id": "chapter-8",
       "title": "Chapter - 8",
-      "description": "Run Python Code with Jupyter Notebooks."
+      "description": "Feature Selection For Machine Learning"
     },
     {
       "course_id": "chapter-9",
       "title": "Chapter - 9",
-      "description": "Run Python Code with Jupyter Notebooks."
+      "description": "Evaluate the Performance of Machine Learning Algorithms with Resampling"
     },
     {
       "course_id": "chapter-10",
       "title": "Chapter - 10",
-      "description": "Run Python Code with Jupyter Notebooks."
+      "description": "Machine Learning Algorithm Performance Metrics"
     },
     {
       "course_id": "chapter-11",
       "title": "Chapter - 11",
-      "description": "Run Python Code with Jupyter Notebooks."
+      "description": "Spot-Check Classification Algorithms"
     },
     {
       "course_id": "chapter-12",
       "title": "Chapter - 12",
-      "description": "Run Python Code with Jupyter Notebooks."
+      "description": "Spot-Check Regression Algorithms"
     },
     {
       "course_id": "chapter-13",
       "title": "Chapter - 13",
-      "description": "Run Python Code with Jupyter Notebooks."
+      "description": "Compare Machine Learning Algorithms"
     },
     {
       "course_id": "chapter-14",
       "title": "Chapter - 14",
-      "description": "Run Python Code with Jupyter Notebooks."
+      "description": "Automate Machine Learning Workflows with Pipelines"
     },
     {
       "course_id": "chapter-15",
       "title": "Chapter - 15",
-      "description": "Run Python Code with Jupyter Notebooks."
+      "description": "Improve Performance with Ensembles"
     },
     {
       "course_id": "chapter-16",
       "title": "Chapter - 16",
-      "description": "Run Python Code with Jupyter Notebooks."
+      "description": "Improve Performance with Algorithm Tuning"
     },
     {
       "course_id": "chapter-17",
       "title": "Chapter - 17",
-      "description": "Run Python Code with Jupyter Notebooks."
+      "description": "Save and Load Machine Learning Models"
     },
     {
       "course_id": "chapter-18",
       "title": "Chapter - 18",
-      "description": "Run Python Code with Jupyter Notebooks."
+      "description": "Predictive Modeling Project Template"
     },
     {
       "course_id": "chapter-19",
       "title": "Chapter - 19",
-      "description": "Run Python Code with Jupyter Notebooks."
+      "description": "Your First Machine Learning Project in Python Step-By-Step"
     },
     {
       "course_id": "chapter-20",
       "title": "Chapter - 20",
-      "description": "Run Python Code with Jupyter Notebooks."
+      "description": "Regression Machine Learning Case Study Project"
     },
     {
       "course_id": "chapter-21",
       "title": "Chapter - 21",
-      "description": "Run Python Code with Jupyter Notebooks."
+      "description": "Binary Classification Machine Learning Case Study Project"
     }
   ]
 }
