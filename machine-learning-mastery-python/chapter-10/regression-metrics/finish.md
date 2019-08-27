@@ -1,1 +1,1 @@
-Congratulations , You've Completed the Task Classification Metrics!
+Congratulations , You've Completed the Task Regression Metrics!
