@@ -1,6 +1,5 @@
 Autoscaling your application depending on CPU and RAM utilization
 
-
 You can scale pods in your application using the oc scale command, but it has two disadvantages:
 - It has to be run manually every time you need to scale a pod up or down
 - You have to take into account CPU and RAM utilization yourself.
@@ -13,7 +12,6 @@ Note: Autoscaling can only track CPU and RAM usage.Traffic-based autoscaling, fo
 Let's login as system:admin and see if Hawkular, Cassandra, and Heapster pods are up and running:
 
 
-`oc login -u system:admin`{{execute}}
 ...
 <output omitted>
 ...

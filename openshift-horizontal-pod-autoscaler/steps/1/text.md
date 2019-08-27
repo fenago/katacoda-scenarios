@@ -1,7 +1,7 @@
 In this step, we will learn OpenShift CLI using the command _oc_.
 
 Before we begin, make sure that your OpenShift is up and running. Run the folowing command to login to the OpenShift cluster
-``oc login -u developer -p developer``{{execute}}
+`oc login -u system:admin`{{execute}}
 
 # Output
 
