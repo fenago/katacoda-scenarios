@@ -1,20 +1,22 @@
 <pre class="file" data-filename="pod.yaml" data-target="replace">
-apiVersion: "v1"
-kind: "Pod"
+apiVersion: v1
+kind: Pod
 metadata:
-  name: "mypod"
+  name: mywebserverpod
+  labels:
+    name: webserver
 spec:
   containers:
-    -
-      name: "myfrontend"
-      image: "nginx:latest"
+    - name: webserver
+      image: docker.io/centos/httpd
+      ports:
+        - name: web
+          containerPort: 80
       volumeMounts:
-        -
-          mountPath: "/logs"
-          name: "pvol"
+        - name: volume-webroot
+          mountPath: /var/www/html
   volumes:
-    -
-      name: "pvol"
+    - name: volume-webroot
       persistentVolumeClaim:
-        claimName: "claim1"
+        claimName: pvc-web
 </pre>

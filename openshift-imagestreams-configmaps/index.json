@@ -14,11 +14,11 @@
       "text": "steps/2/text.md"
     },    
 	{
-      "title": "Managing projects in OpenShift",
+      "title": "Tracking version history using ImageStreams",
       "text": "steps/3/text.md"
     },
 	{
-      "title": "Managing users in OpenShift",
+      "title": "",
       "text": "steps/4/text.md"
     },
     {

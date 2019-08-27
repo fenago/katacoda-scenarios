@@ -59,7 +59,8 @@
     "uimessage1": "\u001b[32mBrought to you by ernesto\u001b[m\r\n"
   },
   "backend": {
-      "trainingid": "openshift-3-11",
-      "imageid": "openshift"
+    "trainingid": "openshift-3-11", 
+    "imageid": "openshift-3-11", 
+    "port": 8443
   }
 }
