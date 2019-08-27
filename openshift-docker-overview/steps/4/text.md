@@ -39,6 +39,7 @@ There are a few things to note here. The STATUS field says that container mycont
 
 The last message says caught SIGTERM, shutting down. It happened after we pressed Ctrl + C. In order to run a container in background mode, we can use the -d option with the docker run command:
 `docker run --name=backgroundcontainer -d httpd`{{execute}}
+> Container_ID
 
 It generates a random ID, the first 12 characters of which are used for the container ID. Along with the generated ID, a random container name is also generated if not provided.
 

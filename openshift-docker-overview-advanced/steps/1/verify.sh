@@ -1,1 +1,1 @@
-docker ps -a | grep jpetazzo/clock > /dev/null && echo "done"
+docker ps -a | grep mariadb > /dev/null && echo "done"

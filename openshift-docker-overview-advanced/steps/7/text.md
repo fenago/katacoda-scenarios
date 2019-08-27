@@ -1,9 +1,3 @@
-Just like with the standard UNIX command tail -f, we can follow the logs of our
-container:
-
-`docker logs --tail 1 --follow mycontainer`{{execute}}
-
-Creating a custom Docker image
 The Docker community has Docker images for most popular software applications. These include, for example, images for web servers (Apache, Nginx, and so on), enterprise application platforms (JBoss EAP, Tomcat), images with programming languages (Perl, PHP, Python), and so on.
 
 There are a number of ways to create a new docker image:

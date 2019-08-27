@@ -1,16 +1,16 @@
 {
-  "title": "Docker Advanced Commands",
+  "title": "Containers & Docker Advanced",
   "description": "Get started with the advanced docker commands",
   "difficulty": "Intermediate",
   "time": "15 minutes",
   "details": {
     "steps": [{
-      "title": "Using environment variables",
+      "title": "Using Environment Variables",
       "text": "steps/1/text.md",
       "verify": "steps/1/verify.sh"
     },
     {
-      "title": "Managing images using Docker CLI",
+      "title": "MariaDb and Environment Variables",
       "text": "steps/2/text.md",
       "verify": "steps/2/verify.sh",
       "answer": "steps/2/answer.md"
@@ -21,7 +21,7 @@
       "verify": "steps/3/verify.sh"
     },
 	{
-      "title": "Managing containers using Docker CLI",
+      "title": "Docker Exec",
       "text": "steps/4/text.md",
       "verify": "steps/4/verify.sh"
     },

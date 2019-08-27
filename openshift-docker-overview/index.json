@@ -5,28 +5,27 @@
   "time": "15 minutes",
   "details": {
     "steps": [{
-      "title": "A non-interactive container",
-      "text": "steps/1/text.md",
-      "verify": "steps/1/verify.sh"
+      "title": "Docker architecture",
+      "text": "steps/1/text.md"
     },
     {
-      "title": "Managing images using Docker CLI",
+      "title": "Run a container in the background",
       "text": "steps/2/text.md",
       "verify": "steps/2/verify.sh",
       "answer": "steps/2/answer.md"
     },    
 	{
-      "title": "Saving and loading images",
+      "title": "List running containers",
       "text": "steps/3/text.md",
       "verify": "steps/3/verify.sh"
     },
 	{
-      "title": "Managing containers using Docker CLI",
+      "title": "Running multiple containers",
       "text": "steps/4/text.md",
       "verify": "steps/4/verify.sh"
     },
 	{
-      "title": "View the logs of a container",
+      "title": "Executing Commands Inside Container",
       "text": "steps/5/text.md"
     },
 	{
@@ -34,7 +33,7 @@
       "text": "steps/6/text.md"
     },
   	{
-      "title": "Removing Containers",
+      "title": "Real time logs",
       "text": "steps/7/text.md"
     },
     {

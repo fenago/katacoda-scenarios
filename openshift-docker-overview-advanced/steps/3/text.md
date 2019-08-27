@@ -1,7 +1,7 @@
 Environment variables adjust settings for a single container. The same approach can be used to start a multi-tier application where one container or application works alongside the other:
 
 
-####Multi-tier application example
+#### Multi-tier application example
 
 In a multi-tier application, both the application server container and database server container may need to share variables such as database login credentials. Of course, we can pass all database connectivity settings to the application container using environment variables. It is very easy to make a mistake while passing multiple -e options to the docker run command, and it is very time-consuming, not to mention that it is very ineffective. Another option is to use container IP addresses to establish connections. We can gather IP address information using docker inspect but it will be difficult to track this information in a multi-container environment.
 
