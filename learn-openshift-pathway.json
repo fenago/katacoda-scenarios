@@ -1,0 +1,56 @@
+{
+  "title": "Learn OpenShift",
+  "description": "Gain Hands-on experience with OpenShift Origin",
+  "courses": [
+    {
+      "course_id": "openshift-docker-overview",
+      "title": "Docker Overview",
+      "description": ""
+    },
+    {
+      "course_id": "openshift-docker-overview-advanced",
+      "title": "Containers & Docker Advanced",
+      "description": ""
+    },
+    {
+      "course_id": "openshift-kubernetes-overview",
+      "title": "Kubernetes Overview",
+      "description": ""
+    },
+    {
+      "course_id": "openshift-kubernetes-crio-overview",
+      "title": "Kubernetes CRI-O Overview",
+      "description": ""
+    },
+	{
+      "course_id": "openshift-volumes",
+      "title": "OpenShift Managing Persistent Storage",
+      "description": ""
+    },
+	{
+      "course_id": "openshift-core-concepts",
+      "title": "Core OpenShift Concepts",
+      "description": ""
+    },
+	{
+      "course_id": "openshift-imagestreams-configmaps",
+      "title": "OpenShift ImageStreams and ConfigMaps",
+      "description": ""
+    },
+	{
+      "course_id": "openshift-quotas-limits",
+      "title": "OpenShift ResourceQuotas & LimitRanges",
+      "description": ""
+    },
+	{
+      "course_id": "openshift-templates",
+      "title": "OpenShift Templates",
+      "description": ""
+    },
+	{
+      "course_id": "openshift-horizontal-pod-autoscaler",
+      "title": "OpenShift HorizontalPodAutoscaler",
+      "description": ""
+    }
+  ]
+}

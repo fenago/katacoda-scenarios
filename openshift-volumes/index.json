@@ -6,7 +6,7 @@
   "time": "15 minutes",
   "details": {
     "steps": [{
-      "title": "Step 1 - Create  Project",
+      "title": "Step 1 - Create Project",
       "text": "steps/1/text.md",
 	    "verify": "steps/1/verify.sh",
       "answer": "steps/1/answer.md"
