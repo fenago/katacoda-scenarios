@@ -1,1 +1,1 @@
-Welcome to The Exercise of Classification Metrics!
+Welcome to The Exercise of Regression Metrics!
