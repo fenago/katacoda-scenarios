@@ -7,7 +7,7 @@ Now, we have to simulate a large number of user requests to our pods to increase
 ... httpd-advanced.openshift.example.com ...
 At this point, we have everything we need, so let's start simulating CPU load with the ab Apache benchmarking utility:
 
-`apt-get update && apt-get install apache2-utils`{{execute}}
+`yum install httpd-tools`{{execute}}
 
 `ab -c 100 -n 10000000 -H 'Host: httpd-advanced.openshift.example.com' http://127.0.0.1/`{{execute}}
 
