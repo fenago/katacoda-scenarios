@@ -39,8 +39,11 @@
       "text": "finish.md"
     }
   },
+	"files": [
+    "pod.yaml"
+	],
   "environment": {
-    "uilayout": "terminal",
+    "uilayout": "editor-terminal",
     "uimessage1": "\u001b[32mBrought to you by https://container.training\u001b[m\r\n"
   },
   "backend": {
