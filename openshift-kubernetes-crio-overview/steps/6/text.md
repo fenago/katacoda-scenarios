@@ -1,4 +1,4 @@
-To complete this step, delete nginx pod using oc command.
+To complete this step, delete nginx pod using kubectl command.
 
 # Protip
-You can verify pod was deleted by running: ``oc kubectl pods``{{execute}}
+You can verify pod was deleted by running: `kubectl get pods`{{execute}}

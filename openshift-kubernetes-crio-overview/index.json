@@ -20,12 +20,14 @@
       "text": "steps/4/text.md"
     },
     {
-        "title": "Stopping your virtual environment",
-        "text": "steps/5/text.md"
+        "title": "Create Pod",
+        "text": "steps/5/text.md",
+        "answer": "steps/5/answer.md"
       },
       {
-          "title": "Stopping your virtual environment",
-          "text": "steps/6/text.md"
+          "title": "Delete Pod",
+          "text": "steps/6/text.md",
+          "answer": "steps/6/answer.md"
   },
 	{
       "title": "Stopping your virtual environment",
