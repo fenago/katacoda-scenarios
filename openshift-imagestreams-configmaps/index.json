@@ -52,7 +52,7 @@
   "environment": {
     "showdashboard": true,
     "dashboards": [{"name": "Dashboard", "port": 8443}],
-    "uilayout": "terminal-iframe",
+    "uilayout": "editor-terminal",
     "uimessage1": "\u001b[32mBrought to you by ernesto\u001b[m\r\n"
   },
     "backend": {

@@ -37,8 +37,7 @@ We will need to create a service for this pod and then expose it. First, create 
 `oc expose po/example3 --port 8888`{{execute}}
 
 
-Note
-We had to explicitly specify the port in the command because we didn't provide it in the containerPort parameter in the pod's definition.
+**Note:** We had to explicitly specify the port in the command because we didn't provide it in the containerPort parameter in the pod's definition.
 
 Then expose the service itself through route:
 `oc expose svc/example3`{{execute}}
@@ -46,9 +45,9 @@ Then expose the service itself through route:
 `oc get route`{{execute}}
 
 Finally, we can use the curl command to request a default web page from the server's default virtual host:
+`curl -H 'Host: example3-advanced.[[HOST_SUBDOMAIN]]-80-[[KATACODA_HOST]].environments.katacoda.com' 127.0.0.1`{{execute}}
 
-
-`curl -H 'Host: example3-advanced.openshift.example.com' 127.0.0.1`{{execute}}
+```
 ...
 <output omitted>
 ...
@@ -56,9 +55,7 @@ Finally, we can use the curl command to request a default web page from the serv
 ...
 <output omitted>
 ...
-
-Note
-We could have created a separate record for the route above in /etc/hosts, pointing to 127.0.0.1, but in order to keep the environment as clean as possible, it's a good practice to use Host HTTP header instead to select a particular application.
+```
 
 The preceding output indicates that Nginx indeed listens on port 8888/tcp, as specified in the ConfigMap. This concludes our exercise with ConfigMaps, so let's clean up our lab:
 `oc delete all --all`{{execute}}
