@@ -10,7 +10,7 @@
       "text": "steps/1/text.md"
     },
     {
-      "title": "OpenShift Project",
+      "title": "Creating complex stacks of applications with templates",
       "text": "steps/2/text.md"
     },    
 	{
@@ -22,11 +22,11 @@
       "text": "steps/4/text.md"
     },
     {
-        "title": "Creating new applications in OpenShift",
+        "title": "Oc Process",
         "text": "steps/5/text.md"
     },
     {
-        "title": "Managing pods in OpenShift",
+        "title": "Using CURL",
         "text": "steps/6/text.md"
     },
     {
@@ -43,10 +43,13 @@
       "text": "finish.md"
     }
   },
+  "files": [
+    "example-template.yml"
+	],
   "environment": {
     "showdashboard": true,
     "dashboards": [{"name": "Dashboard", "port": 8443}],
-    "uilayout": "terminal-iframe",
+    "uilayout": "editor-terminal",
     "uimessage1": "\u001b[32mBrought to you by ernesto\u001b[m\r\n"
   },
     "backend": {

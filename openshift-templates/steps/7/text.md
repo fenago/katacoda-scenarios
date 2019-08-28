@@ -1,4 +1,3 @@
-
 You can also perform a reverse operation—creating a template from existing resources. To do that, use the export command:
 `oc export all --as-template=exported-template > exported-template.yml`{{execute}}
 

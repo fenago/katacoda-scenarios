@@ -3,14 +3,14 @@
 Let's try to process it:
 `oc process --parameters example-template`{{execute}}
 
+```
 NAME       DESCRIPTION             GENERATOR         VALUE
 WEB_SERVER Web server image to use                   nginx
+```
 
 You can see the only parameter with the default value and description that you defined earlier.
 
 Now, it's time to create a stack of resources from our template. This can be done by either piping the output of the process command to the create command, which we mentioned previously, or by using the new-app command. Let's start with the former approach:
-
-
 `oc process example-template | oc create -f -`{{execute}}
 
 
@@ -21,10 +21,9 @@ But another way to instantiate a template gives you more information about what 
 
 
 We don't have to delete the template as it's not going to change. Now, we can use the new-app command:
-
-
 `oc new-app --template=example-template`{{execute}}
 
+```
 --> Deploying template "myproject/example-template" to project myproject
 
      example-template
@@ -47,9 +46,8 @@ In project advanced on server https://172.24.0.11:8443
 
 http://example-route-advanced.openshift.example.com (svc/example-svc)
   pod/example-pod runs nginx
+```
 
-
-1 info identified, use 'oc status -v' to see details.
 As you can see, we created the pod, fronted it with the service, and exposed it through the route in just a single command. Notice that you don't need to run the oc get route  command to find out what URL your application is accessible through—it all shows in the output.
 
 Let's see if our web server is reachable through curl:

@@ -1,8 +1,7 @@
 
 Now, we will create our own simple template. Create a new template definition with the following contents:
 
-
-`cat example-template.yml`{{execute}}
+<pre class="file" data-filename="example-template.yml" data-target="replace">
 kind: Template
 apiVersion: v1
 metadata:
@@ -41,6 +40,9 @@ parameters:
     displayName: Web Server
     description: Web server image to use
     value: nginx
+</pre>
+
+
 Note
 Though in our case the message parameter is used in quite a rudimentary way, in more complex templates, its purpose is to tell the user how to use the template—what usernames, passwords, URLs, and so on were generated.
 
