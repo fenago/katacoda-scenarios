@@ -1,1 +1,1 @@
-You've completed your Openshift Core Concepts Lab Exercise!
+You've completed your Openshift Templates Lab Exercise!

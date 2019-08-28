@@ -34,6 +34,7 @@
         "text": "steps/7/text.md"
     }],
     "intro": {
+
       "code": "set-env.sh",
       "text": "intro.md",
       "credits": ""
@@ -50,6 +51,6 @@
   },
     "backend": {
         "trainingid": "openshift-3-11",
-        "imageid": "openshift"
+        "imageid": "openshift-3-11"
     }
 }
