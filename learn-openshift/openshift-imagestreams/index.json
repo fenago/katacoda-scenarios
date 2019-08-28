@@ -42,17 +42,10 @@
       "text": "finish.md"
     }
   },
-  "files": [
-    "example.env",
-    "example-pod-1.yml",
-    "example-pod-2.yml",
-    "nginx_custom_default.conf",
-    "example-pod-3.yml"
-	],
   "environment": {
     "showdashboard": true,
     "dashboards": [{"name": "Dashboard", "port": 8443}],
-    "uilayout": "editor-terminal",
+    "uilayout": "terminal-iframe",
     "uimessage1": "\u001b[32mBrought to you by ernesto\u001b[m\r\n"
   },
     "backend": {

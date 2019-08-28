@@ -1,1 +1,0 @@
-In this Lab we will get introduced to Advanced OpenShift Concepts such as ImageStreams and ConfigMaps.

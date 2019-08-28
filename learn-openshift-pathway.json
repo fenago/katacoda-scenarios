@@ -34,8 +34,13 @@
       "description": ""
     },
 	{
-      "course_id": "openshift-imagestreams-configmaps",
-      "title": "OpenShift ImageStreams and ConfigMaps",
+      "course_id": "openshift-imagestreams",
+      "title": "OpenShift ImageStreams",
+      "description": ""
+    },
+	{
+      "course_id": "openshift-configmaps",
+      "title": "OpenShift ConfigMaps",
       "description": ""
     },
 	{
