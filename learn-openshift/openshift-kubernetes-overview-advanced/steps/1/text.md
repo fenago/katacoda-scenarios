@@ -14,4 +14,4 @@ Once download and setup stages are complete, check your Kubernetes cluster statu
 Check the Kubernetes cluster status with the kubectl command:
 `kubectl cluster-info`{{execute}}
 
-Kubernetes master is running at https://[[HOST_IP]]:8443
+Kubernetes master is running at http://[[HOST_SUBDOMAIN]]-8443-[[KATACODA_HOST]].environments.katacoda.com/

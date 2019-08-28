@@ -18,5 +18,3 @@ And delete the Minikube VM:
 Deleting local Kubernetes cluster...
 Machine deleted.
 ```
-
-**Note:** CRI-O is still under development.
