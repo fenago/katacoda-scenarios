@@ -1,12 +1,8 @@
 
-Running Kubernetes pods
 As with Docker, we can run a Kubernetes pod with the kubectl run command. Let's start with a simple web server example:
-
-
 `kubectl run httpd --image=httpd`{{execute}}
+
 We can verify the result by getting a list of Kubernetes pods, by running the kubectl get pods command:
-
-
 `kubectl get pods`{{execute}}
 
 ```
@@ -22,7 +18,6 @@ Essentially, this pod is a Docker container inside our Minikube VM, and we can e
 `minikube ssh`{{execute}}
 
 `docker ps`{{execute}}
-
 
 We can try to kill this httpd Docker container, but Kubernetes will automatically spawn the new one:
 `docker rm -f container-id`{{copy}}

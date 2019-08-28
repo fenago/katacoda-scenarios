@@ -5,45 +5,41 @@
   "time": "15 minutes",
   "details": {
     "steps": [{
-      "title": "A non-interactive container",
+      "title": "Container Management",
       "text": "steps/1/text.md",
       "verify": "steps/1/verify.sh"
     },
     {
-      "title": "Managing images using Docker CLI",
+      "title": "Kubernetes Resources",
       "text": "steps/2/text.md",
       "verify": "steps/2/verify.sh",
       "answer": "steps/2/answer.md"
     },    
 	{
-      "title": "Saving and loading images",
+      "title": "Minikube",
       "text": "steps/3/text.md",
       "verify": "steps/3/verify.sh"
     },
 	{
-      "title": "Managing containers using Docker CLI",
+      "title": "Web Console",
       "text": "steps/4/text.md",
       "verify": "steps/4/verify.sh"
     },
 	{
-      "title": "View the logs of a container",
+      "title": "Working with kubectl",
       "text": "steps/5/text.md"
     },
 	{
-      "title": "Tail of the logs",
+      "title": "Using the kubectl get command",
       "text": "steps/6/text.md"
     },
   	{
-      "title": "Removing Containers",
+      "title": "Running Kubernetes pods",
       "text": "steps/7/text.md"
     },
     {
-      "title": "Stop docker container",
+      "title": "Describing Kubernetes resources",
       "text": "steps/8/text.md"
-    },
-    {
-      "title": "List stopped containers",
-      "text": "steps/9/text.md"
     }],
     "intro": {
       "text": "intro.md",
