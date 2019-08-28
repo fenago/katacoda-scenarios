@@ -9,13 +9,11 @@ Login Succeeded
 ```
 
 Copy the Docker image you want to push to a different path in the Docker repository on your server:
-
 `docker tag httpd:latest <username>/httpd:latest`{{copy}} 
 
-`docker tag httpd:latest flashdumper/httpd:latest`{{execute}}
 
 You can push image to docker hub by running following command:
-`docker push <username>/hlf-custom:latest`{{execute}} 
+`docker push <username>/httpd:latest`{{execute}} 
 
 Now the image is pushed to your Docker Hub and available for anyone to download. 
 `docker search <username>/*`{{copy}}

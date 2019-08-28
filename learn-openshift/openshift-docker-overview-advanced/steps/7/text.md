@@ -55,7 +55,6 @@ In our case, docker diff httpd command shows that index.html was changed.
 Create a new image from the running container:
 `docker commit httpd custom_image`{{execute}}
 
-sha256:ffd3a523f9848776d65de8302253de9dc78e4948a792569ee46fad5c099312f6
 Verify that the new image has been created:
 `docker images`{{execute}}
 
