@@ -3,13 +3,8 @@
   "description": "Understand Your Data With Visualization",
   "courses": [
     {
-      "course_id": "multi-variate-plots",
-      "title": "Multi Variate Plots",
-      "description": "Run Python Code with Jupyter Notebooks."
-    },
-    {
-      "course_id": "univariate-plots",
-      "title": "Univariate Plots",
+      "course_id": "understand-your-data-with-visualization",
+      "title": "Understand Your Data With Visualization",
       "description": "Run Python Code with Jupyter Notebooks."
     }
   ]
