@@ -1,10 +1,3 @@
-
-# Note:
-Above curl command will return project information you created in the earlier step.
- 
- 
- 
-
 When we use the oc command, it makes an API call to the OpenShift cluster using user credentials.
 
 Let's quickly talk about each of user types in OpenShift. 
@@ -32,10 +25,6 @@ We should be able to see two users: developer and user1.
 **Note:** Developer users are created as a part of the oc cluster up command, as well as the project myproject.    The IDENTITIES field defines the authentication method. In our lab environment setup, the developer user takes anything as a password. This is what anypassword:developer means. 
 
 The last essential things we need to learn is how to switch between different users. We can use the oc login command to do so:
-
-
 `oc login -u developer`{{execute}}
 
-Logged into "https://127.0.0.1:8443" as "developer" using existing credentials.
-You have one project on this server: "myproject"
-Using project "myproject".
+You can access the `OpenShift Web Console` by clicking `Dashboard` tab located right to the terminal window.
