@@ -1,6 +1,8 @@
 CPU-based autoscaling also requires limit ranges to be set on CPU requests for the pods being scaled, so we can use the LimitRange definition from one of the previous sections.
 
 
+Let's login as alice: `oc login -u alice`{{execute}}
+
 <pre class="file" data-filename="my-limits.yaml" data-target="replace">
 apiVersion: v1
 kind: LimitRange

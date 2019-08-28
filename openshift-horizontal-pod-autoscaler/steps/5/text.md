@@ -4,12 +4,13 @@ Now, we have to simulate a large number of user requests to our pods to increase
 `oc expose svc/httpd`{{execute}}
 
 `oc get route`{{execute}}
-... httpd-advanced.openshift.example.com ...
+
+```
+... httpd-advanced.2886795307-80-kitek02.environments.katacoda.com ...
+```
+
 At this point, we have everything we need, so let's start simulating CPU load with the ab Apache benchmarking utility:
-
-`yum install httpd-tools`{{execute}}
-
-`ab -c 100 -n 10000000 -H 'Host: httpd-advanced.openshift.example.com' http://127.0.0.1/`{{execute}}
+`ab -c 100 -n 10000000 -H 'Host: httpd-advanced.[[HOST_SUBDOMAIN]]-80-[[KATACODA_HOST]].environments.katacoda.com' http://127.0.0.1/`{{execute}}
 
 ```
 ...

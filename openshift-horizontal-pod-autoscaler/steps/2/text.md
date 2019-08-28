@@ -8,6 +8,8 @@ This approach doesn't allow businesses to adapt quickly to constantly changing c
 
 **Note:** Autoscaling can only track CPU and RAM usage.Traffic-based autoscaling, for instance, isn't supported.
 
+Let's login as system:admin first: `oc login -u system:admin`{{execute}}
+
 Let's see if Hawkular, Cassandra, and Heapster pods are up and running:
 `oc get po -n openshift-infra`{{execute}}
 
