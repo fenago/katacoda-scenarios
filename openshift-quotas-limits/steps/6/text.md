@@ -25,12 +25,12 @@ spec:
 Try to create it again and observe that it works:
 `oc create -f limits-example-pod.yml`{{execute}}
 
-
 `oc get pod`{{execute}}
 
+```
 NAME          READY   STATUS    RESTARTS   AGE
 limits-example 1/1    Running    0         4s
-
+```
 
 Let's clean up the lab to prepare for the next section:
 

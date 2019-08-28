@@ -20,17 +20,22 @@ spec:
 </pre>
 
 If we try to create the second pod, we will see the following:
-
-
 `oc create -f httpd-pod.yml`{{execute}}
 
+```
 Error from server (Forbidden): error when creating "httpd-pod.yml": pods "httpd" is forbidden: exceeded quota: my-quota, requested: pods=1, used: pods=1, limited: pods=1
+```
+
 Even though the amount of requested memory wouldn't violate the quota, pod creation was still denied because the quota limits the total number of pods to 1 for the current project.
 
-Edit the quota to allow 2 pods and 2 CPU cores:
 
+Update the quota to allow 2 pods and 2 CPU cores:
 
-`oc edit quota/my-quota`{{execute}}
+`oc delete quota/my-quota`{{execute}}
+
+`oc create quota my-quota \
+--hard=cpu=500m,memory=256Mi,pods=2,resourcequotas=1`{{execute}}
+
 
 ```
 spec:

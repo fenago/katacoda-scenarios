@@ -49,8 +49,6 @@ By creating this quota, we have set the limits of 500 CPU millicores (half-core)
 First, create a simple pod definition:
 
 <pre class="file" data-filename="nginx-pod.yml" data-target="replace">
-
-`cat nginx-pod.yml
 apiVersion: v1
 kind: Pod
 metadata:
@@ -86,7 +84,7 @@ spec:
   containers:
   - name: nginx
     image: nginx
-resources:
+    resources:
       requests:
         cpu: 100m
         memory: 128Mi
@@ -99,6 +97,7 @@ Upon creation, the pod will request 1 CPU core and 128 MiB of RAM, which is well
 The pod was created successfully, as expected. At this point, we can take a look at how much of our quota was consumed:
 `oc describe quota/my-quota`{{execute}}
 
+```
 Name:            my-quota
 Namespace:       advanced
 Resource         Used    Hard
@@ -107,3 +106,4 @@ cpu              100m    500m
 memory           128Mi   256Mi
 pods             1       1
 resourcequotas   1       1
+```
