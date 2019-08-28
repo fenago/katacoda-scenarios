@@ -16,13 +16,3 @@ You chose to deploy httpd
 ```
 
 `curl -I example-route-advanced.[[HOST_SUBDOMAIN]]-80-[[KATACODA_HOST]].environments.katacoda.com`{{execute}}
-
-`curl -I example-route-advanced.[[HOST_SUBDOMAIN]]-80-[[KATACODA_HOST]].environments.katacoda.com`{{execute}}
-
-```
-<html><body><h1>It works!</h1></body></html>
-```
-
-`curl -IH 'Host: example-route-advanced.openshift.example.com' 127.0.0.1`{{execute}}
-
-That's it—one parameter and you have a different web server deployed for you in a matter of seconds.

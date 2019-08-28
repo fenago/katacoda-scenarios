@@ -2,10 +2,7 @@
 
 By default, OpenShift comes installed with quite a few default templates, called Instant App and Quick Start templates. They can be used to deploy runtime environments based on various languages and frameworks, such as Ruby on Rails (Ruby), Django (Python), and CakePHP (PHP). They also include templates for SQL and NoSQL database engines with persistent storage, which includes PersistentVolumeClaims as one of the objects to provide persistence of data.
 
-For this exercise, you will not require admin privileges, so you can login as a regular user:
 
-
-`oc login -u alice`{{execute}}
 Default templates are created in the openshift project during installation. You can see them by running the following command:
 
 

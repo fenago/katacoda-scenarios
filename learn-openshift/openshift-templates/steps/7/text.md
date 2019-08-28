@@ -20,7 +20,7 @@ And recreate them from the exported template:
     Run 'oc status' to view your app.
 ```
 
-Note: You might have noticed that the web server was exposed through the same URL as before. This is because the exported template was created from already instantiated resources with all parameters resolved to values, so OpenShift has no way of knowing which fields were parameterized. You can also infer this from the output of the process command, which will show you that all the fields are already initialized. So, strictly speaking, this isn't a fully reverse operation, but it can be used for backups.
+**Note:** You might have noticed that the web server was exposed through the same URL as before. This is because the exported template was created from already instantiated resources with all parameters resolved to values, so OpenShift has no way of knowing which fields were parameterized. You can also infer this from the output of the process command, which will show you that all the fields are already initialized. So, strictly speaking, this isn't a fully reverse operation, but it can be used for backups.
 
 Now that we are finished, let's do a clean-up:
 `oc delete all --all`{{execute}}
