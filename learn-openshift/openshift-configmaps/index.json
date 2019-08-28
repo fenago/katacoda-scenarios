@@ -14,15 +14,15 @@
       "text": "steps/2/text.md"
     },    
 	{
-      "title": "Tracking version history using ImageStreams",
+      "title": "Separating configuration from application code using ConfigMaps",
       "text": "steps/3/text.md"
     },
 	{
-      "title": "",
+      "title": "OpenShift ConfigMaps",
       "text": "steps/4/text.md"
     },
     {
-        "title": "OpenShift ConfigMaps",
+        "title": "ConfigMaps with command-line arguments",
         "text": "steps/5/text.md"
     },
     {

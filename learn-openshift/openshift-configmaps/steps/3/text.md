@@ -1,4 +1,3 @@
-Separating configuration from application code using ConfigMaps
 The ConfigMap resource is used to separate data from a pod running an application. These kinds of resource contain arbitrary data to be injected into a pod as configuration. Injection in this context means that the pod can use it in the following ways:
 
 #### Export its key/value pairs as environment variables
