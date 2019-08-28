@@ -1,7 +1,6 @@
 
 In order to start Kubernetes with CRI-O as a Container Runtime Interface, we are going to use Minikube with an additional --container-runtime crio option:
 
-
 `minikube start --container-runtime crio`{{execute}}
 Starting local Kubernetes v1.9.0 cluster...
 ...

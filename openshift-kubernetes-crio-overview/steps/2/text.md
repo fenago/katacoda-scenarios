@@ -1,27 +1,20 @@
 
-Deleting Kubernetes resources
+When you have an application that consists of one pod and one service, there is no problem operating these resources. But when your application grows, or you have tens or hundreds of projects, pods, services and other Kubernetes resources, it will get harder to operate and effectively troubleshoot Kubernetes. This is where we can use the Kubernetes labels we mentioned earlier in this chapter. We are going to run a couple more Kubernetes pods using labels:
 
-If we've done something wrong with the pod, or it may have broken for some reason, there is a simple way to delete a pod using the kubectl delete pod command:
+
+`kubectl run httpd1 --image=httpd --labels="app=httpd-demo1"`{{execute}}
+
+`kubectl run httpd2 --image=httpd --labels="app=httpd-demo2"`{{execute}}
+
+Check the Kubernetes pods we have at the moment:
+`kubectl get pods`{{execute}}
+
+Now, imagine you have at least 10 or more pods. In order to efficiently filter out this output, we can use the -l option:
+`kubectl get pods -l="app=httpd-demo2"`{{execute}}
+
 ```
-kubectl delete pod <pod-name>
+NAME                   READY       STATUS      RESTARTS       AGE
+httpd2-5b4ff5cf57-9llkn 1/1         Running    0              2m
 ```
 
-We can delete all pods using the --all option:
-`kubectl delete pod --all`{{execute}}
-
-
-
-**Note:** if you run kubectl get pods, you will see all the containers running again. The reason for this is that, when we run the kubectl run command, it creates several different Kubernetes resources, which we are going to discuss in the following section.
-
-We can delete Kubernetes resources by running kubectl delete all with the -l option:
-`kubectl delete all -l app=httpd-demo1`{{execute}}
-
-
-
-`kubectl get pods`{{execute}} 
-
-
-This command will delete all Kubernetes with a httpd-demo1 label only. The other two pods will be still available.
-
-Alternatively, we can delete all Kubernetes resources we have created so far by running the kubectl delete all --all command:
-`kubectl delete all --all`{{execute}}
+**Note:** Filtering out output with Kubernetes labels is not the only use case. Labels are also used alongside selectors. You can get more information on both topics using the Kubernetes official documentation at https://kubernetes.io/docs/concepts/overview/working-with-objects/labels/.

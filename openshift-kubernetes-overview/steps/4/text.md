@@ -1,6 +1,7 @@
 We can also open a browser or use the curl command to verify the Kubernetes API:
-
 `curl https://[[HOST_IP]]:8443`{{execute}}
+
+```
 {
 "kind": "Status",
 "apiVersion": "v1",
@@ -11,7 +12,7 @@ We can also open a browser or use the curl command to verify the Kubernetes API:
 "reason": "Unauthorized",
 "code": 401
 }
-
+```
 #### Kubernetes GUI 
 There is a nice dashboard that comes with Kubernetes's nice-looking GUI, available on port 30000 via HTTP (for example, http://[[HOST_IP]]:30000/). You can open your browser using the same IP we used for cluster verification:
 

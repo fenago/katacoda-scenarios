@@ -1,21 +1,17 @@
+Minikube is a tool that makes it easy to run Kubernetes locally. Minikube runs a single-node Kubernetes cluster inside a VM on your laptop for users looking to try out Kubernetes or develop with it day-to-day.
 
-Using Kubernetes labels
-When you have an application that consists of one pod and one service, there is no problem operating these resources. But when your application grows, or you have tens or hundreds of projects, pods, services and other Kubernetes resources, it will get harder to operate and effectively troubleshoot Kubernetes. This is where we can use the Kubernetes labels we mentioned earlier in this chapter. We are going to run a couple more Kubernetes pods using labels:
+#### Kubernetes installation and configuration
+
+In this chapter, you will install Minikube—a simple single-node Kubernetes cluster. While not suitable for any production-grade workload, it is a useful tool to learn the basics of cluster management quickly. Although it supports several drivers for VM providers, in this tutorial we will use the KVM2 driver since KVM virtualization is available even in a base Linux environment.
+`minikube start`{{execute}}
+
+**Note:** Please wait for the above command to complete, It will take around 3 minutes to complete.
 
 
-`kubectl run httpd1 --image=httpd --labels="app=httpd-demo1"`{{execute}}
+Once download and setup stages are complete, check your Kubernetes cluster status with the minikube command:
+`minikube status`{{execute}}
 
-`kubectl run httpd2 --image=httpd --labels="app=httpd-demo2"`{{execute}}
+Check the Kubernetes cluster status with the kubectl command:
+`kubectl cluster-info`{{execute}}
 
-Check the Kubernetes pods we have at the moment:
-`kubectl get pods`{{execute}}
-
-Now, imagine you have at least 10 or more pods. In order to efficiently filter out this output, we can use the -l option:
-`kubectl get pods -l="app=httpd-demo2"`{{execute}}
-
-```
-NAME                   READY       STATUS      RESTARTS       AGE
-httpd2-5b4ff5cf57-9llkn 1/1         Running    0              2m
-```
-
-**Note:** Filtering out output with Kubernetes labels is not the only use case. Labels are also used alongside selectors. You can get more information on both topics using the Kubernetes official documentation at https://kubernetes.io/docs/concepts/overview/working-with-objects/labels/.
+Kubernetes master is running at https://[[HOST_IP]]:8443

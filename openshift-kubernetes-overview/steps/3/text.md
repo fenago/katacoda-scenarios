@@ -5,6 +5,9 @@ Minikube is a tool that makes it easy to run Kubernetes locally. Minikube runs a
 In this chapter, you will install Minikube—a simple single-node Kubernetes cluster. While not suitable for any production-grade workload, it is a useful tool to learn the basics of cluster management quickly. Although it supports several drivers for VM providers, in this tutorial we will use the KVM2 driver since KVM virtualization is available even in a base Linux environment.
 `minikube start`{{execute}}
 
+**Note:** Please wait for the above command to complete, It will take around 3 minutes to complete.
+
+
 Once download and setup stages are complete, check your Kubernetes cluster status with the minikube command:
 `minikube status`{{execute}}
 

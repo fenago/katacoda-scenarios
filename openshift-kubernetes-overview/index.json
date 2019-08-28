@@ -6,14 +6,11 @@
   "details": {
     "steps": [{
       "title": "Container Management",
-      "text": "steps/1/text.md",
-      "verify": "steps/1/verify.sh"
+      "text": "steps/1/text.md"
     },
     {
       "title": "Kubernetes Resources",
-      "text": "steps/2/text.md",
-      "verify": "steps/2/verify.sh",
-      "answer": "steps/2/answer.md"
+      "text": "steps/2/text.md"
     },    
 	{
       "title": "Minikube",

@@ -1,15 +1,25 @@
 
+If we've done something wrong with the pod, or it may have broken for some reason, there is a simple way to delete a pod using the kubectl delete pod command:
+```
+kubectl delete pod <pod-name>
+```
 
-`kubectl run httpd1 --image=httpd`{{execute}}
-We can take a look at the series of events that took place during this process by running the kubectl get events command. It shows you what Kubernetes did behind the scenes to launch this application. You will see quite a long list, which may seem confusing at first glance, but we can narrow it down by using the following command: 
+We can delete all pods using the --all option:
+`kubectl delete pod --all`{{execute}}
 
 
-`kubectl get events --sort-by=.metadata.creationTimestamp | tail -n 8`{{execute}}
-4s 4s ... kubelet, minikube pulling image "httpd"
-4s 4s ... replicaset-controller Created pod: httpd1-6d8bb9cdf9-thlkg
-4s 4s ... default-scheduler Successfully assigned httpd1-6d8bb9cdf9-thlkg to minikube
-4s 4s ... deployment-controller Scaled up replica set httpd1-6d8bb9cdf9 to 1
-4s 4s ... kubelet, minikube MountVolume.SetUp succeeded for volume "default-token-dpzmw"
-2s 2s ... kubelet, minikube Created container
-2s 2s ... kubelet, minikube Successfully pulled image "httpd"
-2s 2s ... kubelet, minikube Started containe
+
+**Note:** if you run kubectl get pods, you will see all the containers running again. The reason for this is that, when we run the kubectl run command, it creates several different Kubernetes resources, which we are going to discuss in the following section.
+
+We can delete Kubernetes resources by running kubectl delete all with the -l option:
+`kubectl delete all -l app=httpd-demo1`{{execute}}
+
+
+
+`kubectl get pods`{{execute}} 
+
+
+This command will delete all Kubernetes with a httpd-demo1 label only. The other two pods will be still available.
+
+Alternatively, we can delete all Kubernetes resources we have created so far by running the kubectl delete all --all command:
+`kubectl delete all --all`{{execute}}

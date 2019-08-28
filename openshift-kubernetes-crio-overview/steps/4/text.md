@@ -1,18 +1,19 @@
-Clearing the virtual environment
-Once you are done working with Kubernetes, you can easily stop the Minikube cluster by running the minikube stop command:
-`minikube stop`{{execute}}
+
+
+We can take a look at the series of events that took place during this process by running the kubectl get events command. It shows you what Kubernetes did behind the scenes to launch this application. You will see quite a long list, which may seem confusing at first glance, but we can narrow it down by using the following command: 
+
+`kubectl run httpd1 --image=httpd`{{execute}}
+
+`kubectl get events --sort-by=.metadata.creationTimestamp | tail -n 8`{{execute}}
+
 
 ```
-Stopping local Kubernetes cluster...
-Machine stopped.
+4s 4s ... kubelet, minikube pulling image "httpd"
+4s 4s ... replicaset-controller Created pod: httpd1-6d8bb9cdf9-thlkg
+4s 4s ... default-scheduler Successfully assigned httpd1-6d8bb9cdf9-thlkg to minikube
+4s 4s ... deployment-controller Scaled up replica set httpd1-6d8bb9cdf9 to 1
+4s 4s ... kubelet, minikube MountVolume.SetUp succeeded for volume "default-token-dpzmw"
+2s 2s ... kubelet, minikube Created container
+2s 2s ... kubelet, minikube Successfully pulled image "httpd"
+2s 2s ... kubelet, minikube Started container
 ```
-
-After that, you can delete the Minikube VM if you want by running the minikube delete command:
-`minikube delete`{{execute}}
-
-Verify that the Minikube cluster no longer exists:
-`minikube status`{{execute}}
-
-minikube:
-cluster:
-kubectl:
