@@ -1,89 +1,23 @@
-Separating configuration from application code using ConfigMaps
-The ConfigMap resource is used to separate data from a pod running an application. These kinds of resource contain arbitrary data to be injected into a pod as configuration. Injection in this context means that the pod can use it in the following ways:
 
-#### Export its key/value pairs as environment variables
-Supply its values as command-line arguments to the application
-Mount it as a volume inside the pod to the location where the application expects to find its configuration file
+Another way to create an image stream is to use the new-app command to create an application from a ready-to-use Docker image:
 
-Let's look at the process of exporting ConfigMap as an environment variable into a container. First, we have to create ConfigMap itself from a list of environment variables:
+`oc new-app gists/lighttpd`{{execute}}
 
+**Note:** Lighttpd is yet another web server, like Nginx or Apache. We used it in this example, because both Nginx and Apache image streams are supplied with OpenShift out-of-the-box.
 
-<pre class="file" data-filename="example.env" data-target="replace">
-VAR_1=Hello
-VAR_2=World
-</pre>
+This creates a number of resources, one of which is an image stream.
 
-`oc create cm example-config-map --from-env-file=example.env`{{execute}}
+If you describe the newly created deployment config, you will see that it actually references the image stream, not the image itself:
+`oc describe dc/lighttpd`{{execute}}
 
-
-Use the following command to see what the actual resource looks like:
-`oc describe configmap/example-config-map`{{execute}}
-
-
-Now we are ready to inject it into a pod. Create a simple Pod definition that references the newly created ConfigMap:
-
-<pre class="file" data-filename="example-pod-1.yml" data-target="replace">
-apiVersion: v1
-kind: Pod
-metadata:
-  name: example
-spec:
-  containers:
-    - name: example
-      image: cirros
-      command: ["/bin/sh", "-c", "env"]
-      envFrom:
-        - configMapRef:
-            name: example-config-map
-</pre>
-
-And create the pod using the preceding definition:
-`oc create -f example-pod-1.yml`{{execute}}
-
-Since the command is a simple Linux command, env, not a process or listening server of any kind, the pod exits right after it's completed, but you can still see its logs:
-`oc logs po/example`{{execute}}
+In the preceding example, DeploymentConfig references a Lighttpd server image in the image stream according to the following scheme:
 
 ```
-...
-<output omitted>
-...
-VAR_1=Hello
-VAR_2=World
+gists/lighttpd: Image stream name
+sha256: Indicates that the image identifier is generated using the SHA256 hash algorithm
+23c7c16d3c294e6595832dccc95c49ed56a5b34e03c8905b6db6fb8d66b8d950: The image hash/ID itself
 ```
+This is how deployment configs and replication controllers usually reference images in OpenShift.
 
-As you can see, the two environment variables we defined in ConfigMap were successfully injected into the container. If we were to run an application inside our container, it could read them.
-
-The same method can be used to supply these variables as command-line arguments to the container command. First, let's delete the old pod:
-`oc delete po/example`{{execute}}
-
-Then, create a new pod definition so that you can use the variables as command-line arguments to echo the command:
-
-<pre class="file" data-filename="example-pod-2.yml" data-target="replace">
-apiVersion: v1
-kind: Pod
-metadata:
-  name: example2
-spec:
-  containers:
-    - name: example2
-      image: cirros
-      command: ["/bin/sh", "-c", "echo ${VAR_1} ${VAR_2}"]
-      envFrom:
-        - configMapRef:
-            name: example-config-map
-</pre>
-
-
-Now, create a container from the updated definition:
-`oc create -f example-pod-2.yml`{{execute}}
-
-As we mentioned previously, the container will exit right after the command returns, but its logs will contain the output of the command, constructed of two variables from our ConfigMap:
-
-`oc logs po/example2`{{execute}}
-
-```
-Hello World
-```
-
-Lastly, we will walk-through mounting ConfigMap as a configuration file into a pod. Again, let's delete the pod from the previous exercise:
-`oc delete po/example2`{{execute}}
+Again, let's clean up the environment:
+`oc delete all --all`{{execute}}
