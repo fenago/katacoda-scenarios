@@ -1,13 +1,13 @@
 <pre class="file" data-filename="volume-claim.yaml" data-target="replace">
-apiVersion: v1
-kind: PersistentVolumeClaim
+apiVersion: "v1"
+kind: "PersistentVolumeClaim"
 metadata:
-  name: pvc-web
+  name: "claim1"
 spec:
   accessModes:
-  - ReadWriteOnce 
+    - "ReadWriteOnce"
   resources:
-     requests:
-       storage: 1Gi
-  volumeName: "volume-webroot"
+    requests:
+      storage: "5Gi"
+  volumeName: "volume1"
 </pre>

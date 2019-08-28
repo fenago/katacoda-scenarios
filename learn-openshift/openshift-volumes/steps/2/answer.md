@@ -3,14 +3,14 @@
 apiVersion: v1
 kind: PersistentVolume
 metadata:
-    name: volume-webroot
+    name: volume1
 spec:
     accessModes:
         - ReadWriteOnce
         - ReadWriteMany
         - ReadOnlyMany
     capacity:
-        storage: 1Gi
+        storage: 10Gi
     hostPath:
         path: /data/volume1
     persistentVolumeReclaimPolicy: Recycle

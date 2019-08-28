@@ -1,21 +1,15 @@
-In this step, we will learn OpenShift CLI using the command _oc_.
-
 Before we begin, make sure that your OpenShift is up and running. Run the folowing command to login to the OpenShift cluster
-``oc login -u developer -p developer``{{execute}}
 
-# Output
+Log in as an unprivileged user:
+`oc login -u alice -p 1234`{{execute}}
 
 ```
+Username: alice
+Password: 1234
 Login successful.
-
-You don't have any projects. You can try to create a new project, by running
-
-    oc new-project <projectname>
 ```
 
-Openshift CLI has a lot of similarities with Kubernetes CLI. oc is short for OpenShift client, which works similarly to Kubernetes's kubectl. You will find a lot of similarities between these two commands as we go.
+**Note:** Remember that since this time we didn't configure identity provider explicitly, OpenShift defaults to AllowAll, so we can use any password.
 
-# Openshift Project
-Openshift Project is similar to the Kubernetes namespace which also supports access controls for different users.
-
-To complete this step, create a new project called ``myproject`` using CLI.
+Next, create a dedicated project for our lab:
+`oc new-project advanced`{{execute}}
