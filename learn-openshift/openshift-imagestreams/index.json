@@ -24,10 +24,6 @@
     {
         "title": "Creating applications directly from Docker images",
         "text": "steps/5/text.md"
-    },
-    {
-        "title": "Manually pushing images into the internal registry",
-        "text": "steps/6/text.md"
     }],
     "intro": {
       "code": "set-env.sh",
