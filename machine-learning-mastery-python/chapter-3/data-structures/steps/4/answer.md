@@ -1,5 +1,5 @@
 <pre class="file" data-target="clipboard">
-# Hint: You can copy Solution to ClipBoard from Solution tab in Step 4
+# Hint: You can copy Solution to ClipBoard from Solution Tab
 # Example of Dictionary
 
 mydict = {'a': 1, 'b': 2, 'c': 3}
