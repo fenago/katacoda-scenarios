@@ -44,6 +44,7 @@
       "text": "steps/9/text.md"
     }],
     "intro": {
+      "code": "set-env.sh",
       "text": "intro.md",
       "credits": ""
     },

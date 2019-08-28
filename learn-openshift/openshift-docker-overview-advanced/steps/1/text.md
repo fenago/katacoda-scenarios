@@ -1,8 +1,6 @@
 Due to the dynamic and stateless nature of containers, applications cannot rely on either fixed IP addresses or DNS hostnames while communicating with middleware and other application services. Docker lets you store data such as configuration settings, encryption keys, and external resource addresses in environment variables.
 
 #### Passing environment variables to a container
-At runtime, environment variables are exposed to the application inside the container. You can set environment variables in a service's containers with the environment key, just like with docker run -e VARIABLE=VALUE. You can also pass environment variables from your shell straight through to a service's containers with the environment key by not giving them a value, just like with docker run -e VARIABLE.
-
 Environment variables are used to set specific application parameters, like IP addresses, for a server to connect the database server address with login credentials.
 
 Some container startup scripts use environment variables to perform the initial configuration of an application.
