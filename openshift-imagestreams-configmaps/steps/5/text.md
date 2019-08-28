@@ -26,7 +26,6 @@ Use the following command to see what the actual resource looks like:
 Now we are ready to inject it into a pod. Create a simple Pod definition that references the newly created ConfigMap:
 
 <pre class="file" data-filename="example-pod-1.yml" data-target="replace">
-`cat example-pod-1.yml`{{execute}}
 apiVersion: v1
 kind: Pod
 metadata:

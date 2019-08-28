@@ -1,39 +1,33 @@
-Just like with the standard UNIX command tail -f, we can follow the logs of our
-container:
 
-`docker logs --tail 1 --follow mycontainer`{{execute}}
-
-## Output
-> Sat Aug  3 11:43:28 UTC 2019
-> Sat Aug  3 11:43:29 UTC 2019
-
-- This will display the last line in the log file.
-- Then, it will continue to display the logs in real time.
-- Use ^C to exit.
+Running Kubernetes pods
+As with Docker, we can run a Kubernetes pod with the kubectl run command. Let's start with a simple web server example:
 
 
-In order to delete a container, you can use the docker rm command. If the container you want to delete is running, you can stop and delete it or use the -f option and it will do the job:
+`kubectl run httpd --image=httpd`{{execute}}
+We can verify the result by getting a list of Kubernetes pods, by running the kubectl get pods command:
 
 
-`docker rm 3b1150b50343`{{execute}}
+`kubectl get pods`{{execute}}
 
 ```
-Error response from daemon: You cannot remove a running container 3b1150b5034329cd9e70f90ee21531b8b1ab1d4a85141fd3a362cd40db80e193. 
+NAME                      READY    STATUS    RESTARTS    AGE
+httpd-8576c89d7-qjd62      1/1     Running    0          6m
 ```
 
-Stop the container before attempting removal or force remove. Let's try using -f option.
-`docker rm  -f 3b1150b50343`{{execute}}
 
-Another trick you can use to delete all containers, both stopped and running, is the following command:
-`docker rm -f $(docker ps -qa)`{{execute}}
+Note
+The first time you run this command, you will probably see that the Kubernetes pod status shows up as ContainerCreating. What is happening behind the scenes is that the Docker httpd image is being downloaded to Minikube VM. Be patient and give it some time to download the image. A few minutes later you should be able to see the container status is Running.  The kubectl run command does more than just download an image and run a container out of it. We are going to cover this later in this chapter. The 8576c89d7-qjd62 part is generated automatically. We are going to discuss this later in this chapter.
+
+Essentially, this pod is a Docker container inside our Minikube VM, and we can easily verify this. First, we need to ssh into Minikube VM with minikube ssh, and then run the docker ps command:
+`minikube ssh`{{execute}}
+
+`docker ps`{{execute}}
 
 
-```
-830a42f2e727
-backgroundcontainer
-mycontainer
-419e7ce2567e
-```
+We can try to kill this httpd Docker container, but Kubernetes will automatically spawn the new one:
+`docker rm -f container-id`{{copy}}
 
-Verify that all the containers are deleted:
-`docker ps  -a`{{execute}}
+Check the container status one more time:
+`docker ps`{{execute}}
+
+Note that the httpd container is still up, but with another ID. The initial ID was c52c95f4d241 and it became 5e5460e360b6 (you will have other IDs). That is one of the benefits of Kubernetes: if one container dies, Kubernetes will bring in a new one automatically. We are going to discuss this in detail later in this chapter.

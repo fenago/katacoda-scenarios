@@ -1,7 +1,21 @@
-Container management systems overview
-Containers offer unmatched benefits in terms of density, deployment speed, and scalability in comparison to virtualization. But containers by themselves are not enough to match all the requirements of today's business, which expects the infrastructure to be adaptable to dynamic challenges. It is quite simple to start and manage a couple dozen containers, but things get complicated when the number climbs to hundreds, which is very common for large workloads. This is where Container Orchestration Engines (COE) come in. They bring true power to containers, offering various mechanisms to deploy, destroy, and scale multiple containers rapidly.
 
-There are multiple container management solutions available, with the most popular being Kubernetes and Docker Swarm:
+Using Kubernetes labels
+When you have an application that consists of one pod and one service, there is no problem operating these resources. But when your application grows, or you have tens or hundreds of projects, pods, services and other Kubernetes resources, it will get harder to operate and effectively troubleshoot Kubernetes. This is where we can use the Kubernetes labels we mentioned earlier in this chapter. We are going to run a couple more Kubernetes pods using labels:
 
-Kubernetes: First released in July 2015, Kubernetes comes directly from Borg—a cluster management and job scheduling system developed by Google. Kubernetes was also developed by Google engineers; in fact, many developers who previously worked on Borg later moved to working on Kubernetes. Like Docker, it is written in Go, the language also designed and implemented by Google in 2007. It's built around the concept of resources—complex API entities that serve as an interface to the underlying mechanisms and serialized in YAML or JSON. All software components run on two types of machine: masters and nodes. Masters perform management, dispatching, and synchronization functions, while nodes provide a runtime environment for running containers.
-Docker Swarm: Docker Swarm is a native container orchestration solution provided by the Docker project. It has many features that Kubernetes provides, but does this using different mechanisms and can be used to quickly deploy a single service or even a stack of services on worker nodes. Swarm Cluster consists of two types of node: managers and workers. Managers control the placement of containers, which are referred to as tasks in Swarm terminology, and workers do the heavy lifting of running containers.
+
+`kubectl run httpd1 --image=httpd --labels="app=httpd-demo1"`{{execute}}
+
+`kubectl run httpd2 --image=httpd --labels="app=httpd-demo2"`{{execute}}
+
+Check the Kubernetes pods we have at the moment:
+`kubectl get pods`{{execute}}
+
+Now, imagine you have at least 10 or more pods. In order to efficiently filter out this output, we can use the -l option:
+`kubectl get pods -l="app=httpd-demo2"`{{execute}}
+
+```
+NAME                   READY       STATUS      RESTARTS       AGE
+httpd2-5b4ff5cf57-9llkn 1/1         Running    0              2m
+```
+
+**Note:** Filtering out output with Kubernetes labels is not the only use case. Labels are also used alongside selectors. You can get more information on both topics using the Kubernetes official documentation at https://kubernetes.io/docs/concepts/overview/working-with-objects/labels/.

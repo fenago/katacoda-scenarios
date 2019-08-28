@@ -1,18 +1,22 @@
-Clearing the virtual environment
-Once you are done working with Kubernetes, you can easily stop the Minikube cluster by running the minikube stop command:
+
+It's time to get hands-on with CRI-O. We are not going to explore CRI-O in depth, but rather show you how to bring up a development environment with CRI-O configured with some basic functionality. 
+
+
+Let's bring down your virtual environment:
+
 `minikube stop`{{execute}}
 
 ```
 Stopping local Kubernetes cluster...
 Machine stopped.
+And delete the Minikube VM:
 ```
 
-After that, you can delete the Minikube VM if you want by running the minikube delete command:
 `minikube delete`{{execute}}
 
-Verify that the Minikube cluster no longer exists:
-`minikube status`{{execute}}
+```
+Deleting local Kubernetes cluster...
+Machine deleted.
+```
 
-minikube:
-cluster:
-kubectl:
+**Note:** At the time of writing, CRI-O is still under development. Therefore, the setup instructions in your case might be a bit different and you will need to refer to the official Minikube documentation.  

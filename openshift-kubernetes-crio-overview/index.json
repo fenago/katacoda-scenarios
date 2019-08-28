@@ -26,24 +26,16 @@
       "verify": "steps/4/verify.sh"
     },
 	{
-      "title": "View the logs of a container",
+      "title": "Stopping your virtual environment",
       "text": "steps/5/text.md"
     },
 	{
-      "title": "Tail of the logs",
+      "title": "Installing and working with CRI-O",
       "text": "steps/6/text.md"
     },
   	{
       "title": "Removing Containers",
       "text": "steps/7/text.md"
-    },
-    {
-      "title": "Stop docker container",
-      "text": "steps/8/text.md"
-    },
-    {
-      "title": "List stopped containers",
-      "text": "steps/9/text.md"
     }],
     "intro": {
       "text": "intro.md",
