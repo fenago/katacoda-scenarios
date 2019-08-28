@@ -2,7 +2,7 @@
   "title": "Understand Your Data With Visualization",
   "description": "Run Python Code with Jupyter Notebooks.",
   "difficulty": "Beginner",
-  "time": "10 minutes",
+  "time": "20 minutes",
   "details": {
     "steps": [{
         "title": "Jupyter Notebook",
