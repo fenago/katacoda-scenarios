@@ -1,16 +1,3 @@
-In this step, we will run multiple containers of the same image.
-
-# Task 
-Let's start two more containers.
-`docker run -d jpetazzo/clock`{{execute}}
-> Container_ID
-
-`docker run -d jpetazzo/clock`{{execute}}
-> Container_ID
-
-Check that `docker ps`{{execute}} correctly reports all containers.
-
-
 In this step, we will run a container from the image we pulled from Docker Hub or a private registry in the previous chapter. We are going to use the docker run command to run a container. Before we do that, let's check if we have any containers running already by using the docker ps command:
 `docker ps`{{execute}}
 
@@ -19,16 +6,14 @@ Run a container with the docker run command:
 
 The container is running, but we cannot leave the terminal and continue working in the foreground. And the only way we can escape it is by sending a TERM signal (Ctrl + C) and killing it.
 
-Docker ps and logs
+
 Run the docker ps command to show that there are no running containers:
-
 `docker ps`{{execute}}
-CONTAINER ID IMAGE COMMAND CREATED STATUS PORTS NAMES
+
+
 Run docker ps -a to show both running and stopped containers:
-
-
 `docker ps -a`{{execute}}
-The output of the preceding command will be as shown in the following screenshot:
+
 
 There are a few things to note here. The STATUS field says that container mycontainer exited about one minute ago. In order to get container log information, we can use the docker logs command:
 `docker logs mycontainer`{{execute}}

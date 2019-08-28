@@ -1,10 +1,4 @@
-To avoid being spammed with eleventy pages of output, we can use the --tail option:
-`docker logs --tail 3 mycontainer`{{execute}}
 
-**Note:** The parameter is the number of lines that we want to see.
-
-
-#### Docker port mapping
 In order to actually benefit from the container, we need to make it publicly accessible from the outside. This is where we will need to use the -p option with a few arguments while running the docker run command:
 
 
@@ -16,22 +10,17 @@ In order to actually benefit from the container, we need to make it publicly acc
 
 Option -p maps container port 80 to your server port 8080. Verify that you have a httpd container exposed and a web server running:
 
+`ssh root@hos01`{{execute}}
 
 `curl localhost:8080`{{execute}}
+
+`exit`{{execute}}
 
 ```
 <html><body><h1>It works!</h1></body></html>
 ```
-Inspecting the Docker container
+
+
+#### Inspecting the Docker container
 While the container is running, we can inspect its parameters by using the docker inspect command. The output is provided in JSON format and it gives us a very comprehensive output:
-
-
 `docker inspect backgroundcontainer`{{execute}}
-[
-   {
-       "Id": "backgroundcontainerf26c24e02cd61d6a37bbc36106b3b0372073673c2983cb6f",
-       ...
-       output truncated for brevity
-       ...
-   }
-]

@@ -11,22 +11,10 @@ Docker has a featured called linked containers to solve this problem. It automat
 
 Using linked containers is done by simply adding the --link container:alias option to the docker run command. For example, the following command links to a container named MariaDB using the DB alias:
 
+`docker run -d --link mariadb:db --name my_application  httpd`{{execute}}
 
-`docker run --link mariadb:db --name my_application  httpd`{{execute}}
 The new my_application container will then get all variables defined from the linked container mariadb. Those variable names are prefixed by DB_ENV_ so as not to conflict with the new container's own environment variables.
 
-Note
-Please be aware that the aliases are all uppercase.
-
-Variables providing information about container IP addresses and ports are named according to the following scheme:
-
-{ALIAS}_PORT_{exposed-port}_TCP_ADDR
-{ALIAS}_PORT_{exposed-port}_TCP_PORT
-Continuing with the MariaDB image example, the application container would get the following variables:
-
-DB_PORT_3306_TCP_ADDR
-DB_PORT_3306_TCP_PORT
-If the linked container exposes multiple ports, each of them generates a set of environment variables.
 
 Let's take an example. We will be creating a WordPress container which needs access to a database server. This integration will require shared database access credentials. The first step in creating this application is to create a database server:
 `docker rm -f $(docker ps -qa)`{{execute}}

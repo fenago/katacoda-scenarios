@@ -9,18 +9,16 @@
       "text": "steps/1/text.md"
     },
     {
-      "title": "Run a container in the background",
-      "text": "steps/2/text.md",
-      "verify": "steps/2/verify.sh",
-      "answer": "steps/2/answer.md"
+      "title": "Docker Images",
+      "text": "steps/2/text.md"
     },    
 	{
-      "title": "List running containers",
+      "title": "Docker Save",
       "text": "steps/3/text.md",
       "verify": "steps/3/verify.sh"
     },
 	{
-      "title": "Running multiple containers",
+      "title": "Running Container",
       "text": "steps/4/text.md",
       "verify": "steps/4/verify.sh"
     },
@@ -29,20 +27,12 @@
       "text": "steps/5/text.md"
     },
 	{
-      "title": "Tail of the logs",
+      "title": "Docker port mapping",
       "text": "steps/6/text.md"
     },
   	{
-      "title": "Real time logs",
+      "title": "Remove Container",
       "text": "steps/7/text.md"
-    },
-    {
-      "title": "Stop docker container",
-      "text": "steps/8/text.md"
-    },
-    {
-      "title": "List stopped containers",
-      "text": "steps/9/text.md"
     }],
     "intro": {
       "text": "intro.md",

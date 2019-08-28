@@ -15,7 +15,7 @@ By default, Docker will try to pull the image with the latest tag, but we can al
 
 
 #### Docker Hub image details
-There we are able to see all the image tags available for us to pull from Docker Hub. There are ways to achieve the same goal using the docker search CLI command, which we are going to cover later in this book.
+There we are able to see all the image tags available for us to pull from Docker Hub. There are ways to achieve the same goal using the docker search CLI command.
 `docker pull httpd:2.2.29`{{execute}} 
 
 

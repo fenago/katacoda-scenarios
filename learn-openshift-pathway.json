@@ -1,5 +1,6 @@
 {
   "title": "Learn OpenShift",
+  "icon": "fa-openshift",
   "description": "Gain Hands-on experience with OpenShift Origin",
   "courses": [
     {

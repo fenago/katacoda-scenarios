@@ -17,9 +17,10 @@ Output truncated for brevity
 Option -i (--interactive) allows you to run a Docker without dropping inside the container. But we can easily override this behavior and enter this container by using -i and -t (--tty) options (or just -it):
 `docker exec -it backgroundcontainer /bin/bash`{{execute}}
 
-We should fall into container bash CLI. From here, we can execute other general Linux commands. This trick is very useful for troubleshooting. To exit the container console, just type exit or press Ctrl + D.
 
-Starting and stopping containers
+To exit the container console, just type `exit`{{execute}} or press Ctrl + D.
+
+#### Starting and stopping containers
 We can also stop and start running containers by running docker stop and docker start commands:
 
 

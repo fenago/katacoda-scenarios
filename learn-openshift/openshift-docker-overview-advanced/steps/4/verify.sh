@@ -1,1 +1,1 @@
-docker ps -a | grep wordpress > /dev/null && echo "done"
+echo "done"

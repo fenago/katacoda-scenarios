@@ -11,9 +11,7 @@
     },
     {
       "title": "MariaDb and Environment Variables",
-      "text": "steps/2/text.md",
-      "verify": "steps/2/verify.sh",
-      "answer": "steps/2/answer.md"
+      "text": "steps/2/text.md"
     },    
 	{
       "title": "Linking Containers",
