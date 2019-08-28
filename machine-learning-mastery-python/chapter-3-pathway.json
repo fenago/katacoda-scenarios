@@ -8,6 +8,11 @@
       "description": "Run Python Code with Jupyter Notebooks."
     },
     {
+      "course_id": "data-structures",
+      "title": "Data Structures",
+      "description": "Run Python Code with Jupyter Notebooks."
+    },
+    {
       "course_id": "flow-control",
       "title": "Flow Control",
       "description": "Run Python Code with Jupyter Notebooks."
