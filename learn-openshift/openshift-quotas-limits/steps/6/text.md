@@ -39,4 +39,4 @@ Let's clean up the lab to prepare for the next section:
 `oc delete limits/my-limits`{{execute}}
 limitrange "my-limits" delete
 
-Note: LimitRanges are considered a separate kind of resource as well, like templates, ConfigMaps, and ResourceQuotas, so they must be deleted by issuing a separate command.
+**Note:** LimitRanges are considered a separate kind of resource as well, like templates, ConfigMaps, and ResourceQuotas, so they must be deleted by issuing a separate command.

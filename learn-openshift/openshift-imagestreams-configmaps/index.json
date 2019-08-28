@@ -22,7 +22,7 @@
       "text": "steps/4/text.md"
     },
     {
-        "title": "Managing pods in OpenShift",
+        "title": "OpenShift ConfigMaps",
         "text": "steps/5/text.md"
     },
     {
@@ -30,7 +30,7 @@
         "text": "steps/6/text.md"
     },
     {
-        "title": "Managing services in OpenShift",
+        "title": "Nginx Service",
         "text": "steps/7/text.md"
     }],
     "intro": {

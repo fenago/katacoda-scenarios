@@ -55,15 +55,6 @@ It worked because the quota was set to allow 2 pods in the current project.
 Let's see how many resources are used from the total allowed by the quota again:
 `oc describe quota/my-quota`{{execute}}
 
-Name:            my-quota
-Namespace:       myproject
-Resource         Used    Hard
---------         ----    ----
-cpu              500m    500m
-memory           256Mi   256Mi
-pods             2       2
-resourcequotas   1       1
-
 As you can see, we have exhausted the entire quota and no new pods can be created.
 
 Now that this exercise is over, it's time to prepare for the next one by cleaning up our lab:

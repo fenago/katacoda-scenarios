@@ -13,6 +13,9 @@ You don't have any projects. You can try to create a new project, by running
     oc new-project <projectname>
 ```
 
+To create a new project called ``advanced`` run the command:
+
+`oc new-project advanced`{{execute}}
 
 One of the main ideas behind OpenShift projects in multi-tenant environments is the need to limit resource consumption at a more granular level than just a whole cluster, providing operations with the ability to scope such limitations to organizations and departments.
 

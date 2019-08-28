@@ -97,6 +97,7 @@ Upon creation, the pod will request 1 CPU core and 128 MiB of RAM, which is well
 The pod was created successfully, as expected. At this point, we can take a look at how much of our quota was consumed:
 `oc describe quota/my-quota`{{execute}}
 
+
 ```
 Name:            my-quota
 Namespace:       advanced

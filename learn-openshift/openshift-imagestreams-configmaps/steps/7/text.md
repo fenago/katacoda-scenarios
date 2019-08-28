@@ -62,4 +62,4 @@ The preceding output indicates that Nginx indeed listens on port 8888/tcp, as sp
 
 `oc delete configmap --all`{{execute}}
 
-Note: ConfigMaps are not considered similar to other resources such as pods or services and must be deleted separately.
+**Note:** ConfigMaps are not considered similar to other resources such as pods or services and must be deleted separately.
