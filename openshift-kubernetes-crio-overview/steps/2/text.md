@@ -17,4 +17,4 @@ NAME                   READY       STATUS      RESTARTS       AGE
 httpd2-5b4ff5cf57-9llkn 1/1         Running    0              2m
 ```
 
-**Note:** Filtering out output with Kubernetes labels is not the only use case. Labels are also used alongside selectors. You can get more information on both topics using the Kubernetes official documentation at https://kubernetes.io/docs/concepts/overview/working-with-objects/labels/.
+**Note:** Filtering out output with Kubernetes labels is not the only use case. Labels are also used alongside selectors.

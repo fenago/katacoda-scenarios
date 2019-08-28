@@ -1,13 +1,22 @@
-We mentioned earlier that CRI-O is using runc Container Runtime behind the scenes. To help us further with the verification process, we are going to use the runc command inside the Minikube VM. runc is a CLI command for running containers packaged according to the OCI format. The syntax of the runc command is very similar to the docker command we used in Chapter 1, Containers and Docker Overview.
+
+It's time to get hands-on with CRI-O. We are not going to explore CRI-O in depth, but rather show you how to bring up a development environment with CRI-O configured with some basic functionality. 
 
 
-`minikube ssh "sudo runc ps 3f2c2826318f1526bdb9710050a29b5d4a3de78d61e07ac9d83cedb9827c62e4"`{{execute}}
+Let's bring down your virtual environment:
 
-UID PID PPID C STIME TTY TIME CMD
-root 5746 5695 0 02:39 ? 00:00:00 httpd -DFOREGROUND
-daemon 5788 5746 0 02:39 ? 00:00:00 httpd -DFOREGROUND
-daemon 5792 5746 0 02:39 ? 00:00:00 httpd -DFOREGROUND
-daemon 5793 5746 0 02:39 ? 00:00:00 httpd -DFOREGROUND
+`minikube stop`{{execute}}
 
+```
+Stopping local Kubernetes cluster...
+Machine stopped.
+And delete the Minikube VM:
+```
 
-**Note:** that 3f2c2826318f1526bdb9710050a29b5d4a3de78d61e07ac9d83cedb9827c62e4 is the container ID from the kubectl describe pods/httpd-7dcb9bd6c4-x5dhm command we ran previously.
+`minikube delete`{{execute}}
+
+```
+Deleting local Kubernetes cluster...
+Machine deleted.
+```
+
+**Note:** CRI-O is still under development.

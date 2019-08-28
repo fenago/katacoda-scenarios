@@ -1,12 +1,12 @@
 {
-  "title": "Kubernetes CRI-O Overview",
-  "description": "Get started with the kubernetes CRI-O",
+  "title": "Kubernetes Advanced Overview",
+  "description": "Get started with the kubernetes",
   "difficulty": "Intermediate",
   "time": "15 minutes",
   "details": {
     "steps": [{
       "title": "Minikube Installation",
-      "text": "steps/2/text.md"
+      "text": "steps/1/text.md"
     },{
       "title": "Using Kubernetes labels",
       "text": "steps/2/text.md"
@@ -19,16 +19,16 @@
       "title": "Kubernetes Events",
       "text": "steps/4/text.md"
     },
+    {
+        "title": "Stopping your virtual environment",
+        "text": "steps/5/text.md"
+      },
+      {
+          "title": "Stopping your virtual environment",
+          "text": "steps/6/text.md"
+  },
 	{
       "title": "Stopping your virtual environment",
-      "text": "steps/5/text.md"
-    },
-	{
-      "title": "Installing and working with CRI-O",
-      "text": "steps/6/text.md"
-    },
-  	{
-      "title": "working with CRI-O",
       "text": "steps/7/text.md"
     }],
     "intro": {

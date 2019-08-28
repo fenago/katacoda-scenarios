@@ -1,22 +1,11 @@
+To complete this step, define a pod called `mypod` and with that pod define a container called `myfrontend`, which is based on the official `nginx:latest` docker image and also exposes container port 80. We will send request to nginx at this port.
 
-It's time to get hands-on with CRI-O. We are not going to explore CRI-O in depth, but rather show you how to bring up a development environment with CRI-O configured with some basic functionality. 
+Create nginx pod by running `kubectl create -f pod.yaml`{{execute HOST1}}
 
+**Note:** It might take few seconds for _nginx_ pod status to become `Running` .
 
-Let's bring down your virtual environment:
+# Protip
+You can get the clusterIP of running nginx pod by running: 
+``kubectl get pods -o wide``{{execute}}
 
-`minikube stop`{{execute}}
-
-```
-Stopping local Kubernetes cluster...
-Machine stopped.
-And delete the Minikube VM:
-```
-
-`minikube delete`{{execute}}
-
-```
-Deleting local Kubernetes cluster...
-Machine deleted.
-```
-
-**Note:** At the time of writing, CRI-O is still under development. Therefore, the setup instructions in your case might be a bit different and you will need to refer to the official Minikube documentation.  
+After that, send request to nginx container using `<curl CLUSTER_IP>` to get response. We will discuss better way to expose our application in upcoming scenario.
