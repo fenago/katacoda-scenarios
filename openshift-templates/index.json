@@ -14,11 +14,11 @@
       "text": "steps/2/text.md"
     },    
 	{
-      "title": "Managing projects in OpenShift",
+      "title": "Template Overview",
       "text": "steps/3/text.md"
     },
 	{
-      "title": "Managing users in OpenShift",
+      "title": "Create Template",
       "text": "steps/4/text.md"
     },
     {
@@ -26,7 +26,7 @@
         "text": "steps/5/text.md"
     },
     {
-        "title": "Using CURL",
+        "title": "Using Custom WebServer",
         "text": "steps/6/text.md"
     },
     {

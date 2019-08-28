@@ -15,8 +15,9 @@ You chose to deploy httpd
     Run 'oc status' to view your app.
 ```
 
+`curl -I example-route-advanced.[[HOST_SUBDOMAIN]]-80-[[KATACODA_HOST]].environments.katacoda.com`{{execute}}
 
-`curl -H 'Host: example-route-advanced.openshift.example.com' 127.0.0.1`{{execute}}
+`curl -I example-route-advanced.[[HOST_SUBDOMAIN]]-80-[[KATACODA_HOST]].environments.katacoda.com`{{execute}}
 
 ```
 <html><body><h1>It works!</h1></body></html>

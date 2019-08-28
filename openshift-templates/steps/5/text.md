@@ -51,7 +51,7 @@ http://example-route-advanced.openshift.example.com (svc/example-svc)
 As you can see, we created the pod, fronted it with the service, and exposed it through the route in just a single command. Notice that you don't need to run the oc get route  command to find out what URL your application is accessible through—it all shows in the output.
 
 Let's see if our web server is reachable through curl:
-`curl -IH 'Host: example-route-advanced.openshift.example.com' 127.0.0.1`{{execute}}
+`curl -I example-route-default.[[HOST_SUBDOMAIN]]-80-[[KATACODA_HOST]].environments.katacoda.com`{{execute}}
 
 ```
 HTTP/1.1 200 OK
