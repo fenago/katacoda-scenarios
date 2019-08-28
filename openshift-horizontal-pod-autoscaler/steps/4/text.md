@@ -1,10 +1,5 @@
 
-The autoscaling feature can be applied to deployment configs, so the easiest way to create one is to use the already familiar new-app command:
-`oc new-app httpd`{{execute}}
-
-
-For demonstration purposes, we used the Apache web server image to create an image stream, which, in turn, is used to create the application. Now that the deploymentconfig is ready to manage pods, we can create a HorizontalPodAutoscaler to manage the deploymentconfig itself:
-
+We used the Apache web server image to create an image stream, which, in turn, is used to create the application. Now that the deploymentconfig is ready to manage pods, we can create a HorizontalPodAutoscaler to manage the deploymentconfig itself:
 `oc autoscale dc/httpd --min=2 --max=4 --cpu-percent=10`{{execute}}
 
 
@@ -18,8 +13,7 @@ NAME   REFERENCE              TARGETS   MINPODS MAXPODS REPLICAS  AGE
 httpd  DeploymentConfig/httpd 0% / 20%  2       4       2         3m
 ```
 
-Note
-If you run this command right after creation, you will most likely see unknown instead of 0% in the preceding output. That is expected because HorizontalPodAutoscaler usually needs a few minutes to collect enough metrics.
+**Note:** If you run this command right after creation, you will most likely see unknown instead of 0% in the preceding output. That is expected because HorizontalPodAutoscaler usually needs a few minutes to collect enough metrics.
 
 In a few minutes, you may list running pods and notice that there are two of them now:
 `oc get po`{{execute}}

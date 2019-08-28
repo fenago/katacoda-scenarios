@@ -1,32 +1,10 @@
-CPU-based autoscaling also requires limit ranges to be set on CPU requests for the pods being scaled, so we can use the LimitRange definition from one of the previous sections.
 
+The autoscaling feature can be applied to deployment configs, so the easiest way to create one is to use the already familiar new-app command:
+`oc new-app httpd`{{execute}}
 
-Let's login as alice: `oc login -u alice`{{execute}}
+Switch to the _Dashboard_ and login to the OpenShift web console using the same credentials you used above.
 
-<pre class="file" data-filename="my-limits.yaml" data-target="replace">
-apiVersion: v1
-kind: LimitRange
-metadata:
-  name: my-limits
-spec:
-  limits:
-    - type: Pod
-      min:
-        cpu: 50m
-        memory: 64Mi
-      max:
-        cpu: 150m
-        memory: 64Mi
-    - type: Container
-      min:
-        cpu: 50m
-        memory: 16Mi
-      max:
-        cpu: 150m
-        memory: 32Mi
+* Username: **alice**
+* Password: **1234**
 
-</pre>
-
-`oc create -f my-limits.yaml`{{execute}}
-
-Note: Depending on your host machine's CPU, you might have to tweak the values in the file above in order for autoscaling to work, that is why in the listing above they are different than in the beginning of the chapter.
+**Note:** You can get deployment status in web console as well https://[[HOST_SUBDOMAIN]]-8443-[[KATACODA_HOST]].environments.katacoda.com/console/project/advanced/browse/deployments

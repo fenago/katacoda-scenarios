@@ -10,7 +10,7 @@
       "text": "steps/1/text.md"
     },
     {
-      "title": "OpenShift Project",
+      "title": "OpenShift Metrics",
       "text": "steps/2/text.md"
     },    
 	{
@@ -18,11 +18,11 @@
       "text": "steps/3/text.md"
     },
 	{
-      "title": "Managing users in OpenShift",
+      "title": "Create Application",
       "text": "steps/4/text.md"
     },
     {
-        "title": "Creating new applications in OpenShift",
+        "title": "Expose Application",
         "text": "steps/5/text.md"
     },
     {
