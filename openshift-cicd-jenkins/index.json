@@ -34,7 +34,7 @@
         "text": "steps/7/text.md"
     }],
     "intro": {
-
+      "courseData": "env-init.sh",
       "code": "set-env.sh",
       "text": "intro.md",
       "credits": ""
