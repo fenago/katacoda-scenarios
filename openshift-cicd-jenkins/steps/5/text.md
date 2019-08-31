@@ -1,17 +1,22 @@
 
 Once both the Jenkins and MongoDB pods are running, go back to the Builds | Pipelines sub-menu: 
 
+![Progress](https://github.com/fenago/katacoda-scenarios/raw/master/openshift-cicd-jenkins/steps/5/start.JPG)
+
 
 Click the Start Pipeline button. This will trigger a CI/CD pipeline, to start building. Depending on your internet connection, this step will take some time to complete; by the end of it, you should be able to see that two stages were completed successfully:
 
+![Progress](https://github.com/fenago/katacoda-scenarios/raw/master/openshift-cicd-jenkins/steps/5/complete.JPG)
 
 Clicking on View Log should open a new tab with the Jenkins console output from the Jenkins login page:
 
+![](https://github.com/fenago/katacoda-scenarios/raw/master/openshift-cicd-jenkins/steps/5/log.JPG)
 
 Jenkins login page
 
 Click on Log in with OpenShift and use the same credentials that you used to authenticate in OpenShift (use the developer user, with any password):
 
+![permission](https://github.com/fenago/katacoda-scenarios/raw/master/openshift-cicd-jenkins/steps/5/permission.JPG)
 
 Jenkins user authorization
 

@@ -5,7 +5,7 @@ OpenShift login page
 
 Use the developer user, with any password, to log in on the welcome page:
 
-![Welcome](welcome.jpg)
+![Welcome](https://github.com/fenago/katacoda-scenarios/raw/master/openshift-cicd-jenkins/steps/4/welcome.jpg)
 
 OpenShift welcome page
 
@@ -15,9 +15,11 @@ Click on My Project to access the OpenShift Project Overview page. From there, c
 
 From here, you should be able to click on Create Sample Pipeline. Then, scroll all the way down and click on the Create button. It should tell you that the Pipeline Build Example has been created:
 
+![Created](https://github.com/fenago/katacoda-scenarios/raw/master/openshift-cicd-jenkins/steps/4/created.JPG)
 
 OpenShift creates a set of pods including Jenkins, mongodb and nodejs, with further integration with OpenShift. And all of that with just one click. This is just a demo, but isn't that cool? Now go back to the Overview menu to check the overall progress:
 
+![Progress](https://github.com/fenago/katacoda-scenarios/raw/master/openshift-cicd-jenkins/steps/4/progress.JPG)
 
 OpenShift project menu
 

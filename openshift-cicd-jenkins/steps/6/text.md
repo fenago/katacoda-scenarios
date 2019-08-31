@@ -1,7 +1,10 @@
 Go back to the pipeline sub-menu:
 
+![edit](https://github.com/fenago/katacoda-scenarios/raw/master/openshift-cicd-jenkins/steps/6/main.JPG)
 
 Clicking on Edit Pipeline should redirect us to editing our first pipeline.
+
+![edit](https://github.com/fenago/katacoda-scenarios/raw/master/openshift-cicd-jenkins/steps/6/edit.JPG)
 
 
 You should see the Jenkins pipeline configuration file, Jenkinsfile, as shown in the following screenshot:
@@ -14,15 +17,16 @@ Jenkins uses the Apache Groovy Programming Language. It is pretty easy to learn,
 
 We simply need to add a new stage with an arbitrary name; let's call it the approval stage, in between the build and deploy stages. This new approval stage will put the deployment stage on hold, until you manually approve it:
 
+```
 Copy
 ...
 node('nodejs') {
  stage('build') {
  openshiftBuild(buildConfig: 'nodejs-mongodb-example', showBuildLogs: 'true')
  }
- stage('approval') {
- input "Approve moving to deploy stage?"
- }
+ **stage('approval') {**
+ **input "Approve moving to deploy stage?"**
+ **}**
  stage('deploy') {
  openshiftDeploy(deploymentConfig: 'nodejs-mongodb-example')
  }
