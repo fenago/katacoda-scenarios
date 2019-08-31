@@ -15,7 +15,5 @@ You have access to the following projects and can switch between them with 'oc p
     openshift-infra
 ```
 
-# Openshift Project
-Openshift Project is similar to the Kubernetes namespace which also supports access controls for different users.
-
-To complete this step, create a new project called ``myproject`` using CLI.
+First, we want to place the application into a separate namespace:
+`oc new-project wp`{{execute 

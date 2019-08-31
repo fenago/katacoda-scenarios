@@ -1,1 +1,1 @@
-In this Lab we will get introduced to OpenShift Templates.
+In this Lab we will get learn to Deploying Applications Using DockerFile.

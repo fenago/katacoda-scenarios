@@ -1,4 +1,3 @@
-A simple Dockerfile build
 Well, we know about directory structure and want to build and deploy a Redis application from the available Dockerfile. Let's focus on version 3.2. The oc new-app may initiate a build from source code using a sub-directory. We are ready to initiate a simple Dockerfile build:
 `oc new-app https://github.com/docker-library/redis.git --context-dir=3.2`{{execute}}
 

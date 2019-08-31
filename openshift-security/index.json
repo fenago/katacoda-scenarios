@@ -10,7 +10,7 @@
       "text": "steps/1/text.md"
     },
     {
-      "title": "Step 2 - PersistentVolume",
+      "title": "Delete User and its Identity",
       "text": "steps/2/text.md"
     },    
 	{
@@ -18,11 +18,11 @@
       "text": "steps/3/text.md"
     },
 	{
-      "title": "Volume and Claim",
+      "title": "Create/Delete Service Accounts",
       "text": "steps/4/text.md"
     },
 	{
-      "title": "Using Persistent Volume",
+      "title": "Security context constraints",
       "text": "steps/5/text.md"
     },
 	{

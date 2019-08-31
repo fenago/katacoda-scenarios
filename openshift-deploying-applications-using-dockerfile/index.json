@@ -1,7 +1,7 @@
 {
   "icon": "fa-openshift",
-  "title": "OpenShift Templates",
-  "description": "Get started with openshift templates",
+  "title": "Deploying Applications Using DockerFile",
+  "description": "Get started with openshift",
   "difficulty": "beginner",
   "time": "15 minutes",
   "details": {
@@ -10,19 +10,19 @@
       "text": "steps/1/text.md"
     },
     {
-      "title": "Creating complex stacks of applications with templates",
+      "title": "Building an application from Dockerfile",
       "text": "steps/2/text.md"
     },    
 	{
-      "title": "Template Overview",
+      "title": "A simple Dockerfile build",
       "text": "steps/3/text.md"
     },
 	{
-      "title": "Create Template",
+      "title": "Build & Deploy",
       "text": "steps/4/text.md"
     },
     {
-        "title": "Oc Process",
+        "title": "Trigger New Build",
         "text": "steps/5/text.md"
     },
     {
@@ -30,7 +30,7 @@
         "text": "steps/6/text.md"
     },
     {
-        "title": "Export Template",
+        "title": "Cleanup",
         "text": "steps/7/text.md"
     }],
     "intro": {

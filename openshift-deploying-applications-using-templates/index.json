@@ -1,8 +1,8 @@
 {
   "icon": "fa-openshift",
-  "title": "OpenShift Templates",
+  "title": "Deploying Multi-Tier Applications Using Templates",
   "description": "Get started with openshift templates",
-  "difficulty": "beginner",
+  "difficulty": "Advanced",
   "time": "15 minutes",
   "details": {
     "steps": [{

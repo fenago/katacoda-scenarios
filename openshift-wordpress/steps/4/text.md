@@ -1,11 +1,23 @@
-To complete this step, verify that the PVC is bound to a volum. We will use it in the next step.
+Building a WordPress application
 
-Run following command to verify whether a claim is bound using the CLI: `oc get pvc`{{execute}}
 
-```NAME        LABELS    STATUS    VOLUME
-claim1      map[]     Bound     volume1```
+Now using project "wp" on server "https://openshift.example.com:8443".
+First, since it is a new template for us, we want to gather some information regarding available parameters. As was previously described, oc process --parameters can be helpful:
 
-**Note:** It might take few seconds for volume claim to be bound with persistent volume.
 
-# Protip
-Execute `oc get pv`{{execute HOST1}} to verify persistent volume `volume1` exist. 
+`oc process --parameters -f  wordpress-quickstart/templates/classic-standalone.json`{{execute}}
+
+```
+NAME DESCRIPTION GENERATOR VALUE
+APPLICATION_NAME The name of the WordPress instance.
+QUICKSTART_REPOSITORY_URL The URL of the quickstart Git repository. https://github.com/openshift-evangelists/wordpress-quickstart
+WORDPRESS_DEPLOYMENT_STRATEGY Type of the deployment strategy for Wordpress. Recreate
+WORDPRESS_MEMORY_LIMIT Amount of memory available to WordPress. 512Mi
+DATABASE_MEMORY_LIMIT Amount of memory available to the database. 512Mi
+DATABASE_USERNAME The name of the database user. expression user[a-f0-9]{8}
+DATABASE_PASSWORD The password for the database user. expression [a-zA-Z0-9]{12}
+MYSQL_VERSION The version of the MySQL database. 5.7
+PHP_VERSION The version of the PHP builder. 7.0
+```
+
+Notice that only APPLICATION_NAME doesn't have a default value.

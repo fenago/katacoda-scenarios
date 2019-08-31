@@ -1,4 +1,3 @@
-Dockerfile build customization
 As we saw before, OpenShift can build an application from Dockerfile. Sometimes, application source code is updated and there is a need to initiate the build process again using the new source code. OpenShift supports this functionality through the oc start-build command. 
 
 During this section, we will initiate a build process using the new source code of the application using the image stream created recently by the oc new-app command.

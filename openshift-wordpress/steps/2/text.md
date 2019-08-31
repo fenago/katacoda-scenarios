@@ -1,10 +1,1 @@
-In this step, you will create PersistentVolume. It is a storage resource which is used by pods to store persistent data in OpenShift.
-
-# Task
-To complete this step, define a PersistentVolume called `volume1` and define `hostPath` as 
-_path: /data/volume1_ with `capacity` as _storage: 10Gi_.
-
-Create hostpath persistent volume by running `oc create -f volume.yaml`{{execute HOST1}}. 
-
-As a result, persistent volume is created pointing at host path `/data/volume1`.
-
+We explained to you previously how to use templates to deploy simple and multi-tier applications. This allows for deploying complex applications by creating deployment configs and deploying a number of pods, services, and routes. This approach is limited since most of the multi-tier applications need to be built from source code. OpenShift templates allow building applications from source code. The combination of building an application from source code and using templates to deploy and build a multi-tier application is described in this chapter. This is a hands-on chapter that gives you real examples of leveraging OpenShift templates to deploy applications in a production environment. Now it is time to see how to build a WordPress application from source code using MariaDB as a database.

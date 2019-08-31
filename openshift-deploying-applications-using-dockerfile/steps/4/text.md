@@ -22,8 +22,5 @@ redis-1-build    0/1      Completed   0         2m
 redis-1-js789    1/1      Running     0         1m
 ```
 
-`oc exec <redis-pod-name> /usr/local/bin/redis-cli ping`{{execute}}
-
-```
-PONG
-```
+Copy pod name from the command and update following and run following to get `PONG` as response.
+`oc exec <redis-pod-name> /usr/local/bin/redis-cli ping`{{copy}}

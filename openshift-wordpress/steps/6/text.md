@@ -1,15 +1,11 @@
-To create an interactive shell within the same container running the application, you can use the ``oc rsh`` command, by providing the name of the pod.
-``oc rsh mypod``{{execute HOST1}}
-
-From within the interactive shell, set directory to ``cd /logs``{{execute HOST1}}
-
-Run this command to create text file inside volume `echo "This file will be persisted" > log.txt`{{execute}}
-
-Run `exit`{{execute}} to exit the pod.
-
-Verify `log.txt` exists at host path by running ``cat /data/volume1/log.txt``{{execute HOST1}}.
-
-# Protip
-You can also run ``oc describe pod mypod``{{execute HOST1}} to verify volume was mounted successfully.
+This indicates that our application should work now. Let's see what URL it was exposed through and try to access it via a web browser:
 
 
+`oc get route`{{execute}}
+
+```
+NAME HOST/PORT PATH SERVICES PORT TERMINATION WILDCARD
+wordpress wordpress-wp.127.0.0.1.nip.io wordpress 8080 edge/Allow None
+```
+
+Once you open your browser and go to wordpress-wp.[[HOST_SUBDOMAIN]]-80-[[KATACODA_HOST]].environments.katacoda.com, the WordPress application should display a configuration page. Choose you favorite language and press continue On the next page, just fill in the fields, as shown here, and click on Install WordPress.

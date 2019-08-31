@@ -36,6 +36,4 @@ As you can see, now that we have added the appropriate SCC to the service accoun
 **Note:** Instead of allowing your image to run as the root, an even better practice would be to optimize it to run as an arbitrary user by specifying an unprivileged USER, setting the appropriate permissions on files and directories, and configuring your application to listen on unprivileged ports.
 
 Clean up after our exercise, but leave myserviceaccount with the anyuid SCC assigned in place – we will need it later on to run privileged pods:
-
-
 `oc delete po/nginx`{{execute}}

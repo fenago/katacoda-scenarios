@@ -7,9 +7,9 @@ If you are familiar with the template layout, you might want to develop a templa
 Some of OpenShift's features may speed up the process of template development. For example, oc explain allows you to explore the syntax of all OpenShift API objects, serving as a form of documentation.
 
 If given no parameters, oc explain lists all of the kinds of resources supported by the current version of OpenShift:
+`oc explain`{{execute}}
 
-Copy
-# oc explain
+```
 You must specify the type of resource to explain. Valid resource types include:
 
     * all
@@ -21,32 +21,19 @@ You must specify the type of resource to explain. Valid resource types include:
 ...
 <output omitted>
 ...
-    error: Required resource not specified.
-See 'oc explain -h' for help and examples.
+```
+
 The preceding command accepts the type of a resource as an argument, in order to display its syntax:
+`oc explain svc`{{execute}}
 
-Copy
-# oc explain svc
-...
-<output omitted>
-...
-FIELDS:
-   metadata    <Object>
-     Standard object's metadata. More info:
-     https://git.k8s.io/community/contributors/devel/api-conventions.md#metadata
-...
-<output omitted>
-...
+
 Some OpenShift resources have multilevel structures. Use . (the dot) as a level separator, to find out the structure of such an attribute:
+`oc explain svc.metadata`{{execute}}
 
-Copy
-# oc explain svc.metadata
-
- 
 
 And you can go even further in this hierarchy:
 
-$ oc explain svc.metadata.uid
+`oc explain svc.metadata.uid`{{execute}}
 
 ```
 DESCRIPTION:

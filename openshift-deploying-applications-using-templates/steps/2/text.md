@@ -8,8 +8,8 @@ An OpenShift template is a set of API resources that can be parameterized and pr
 Template syntax
 Templates, like any other OpenShift resources, can be created from a raw YAML or JSON definition. An example is as follows:
 
-Copy
-# cat mytemplate.yaml
+
+`cat mytemplate.yaml
 apiVersion: v1
 kind: Template 
 metadata:
@@ -35,4 +35,5 @@ parameters:
   required: true
 labels: 
   mylabel: app1
+  
 The preceding example includes only one resource—a pod named app1. It also includes a parameter—SHOW_DATA. Parameters can be used to customize application deployment and accommodate all kinds of use cases.

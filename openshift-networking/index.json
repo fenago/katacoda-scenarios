@@ -6,7 +6,7 @@
   "time": "15 minutes",
   "details": {
     "steps": [{
-      "title": "Openshift CLI",
+      "title": "SDN plugins",
       "text": "steps/1/text.md"
     },
     {
@@ -14,15 +14,15 @@
       "text": "steps/2/text.md"
     },    
 	{
-      "title": "Tracking version history using ImageStreams",
+      "title": "Openshift DNS",
       "text": "steps/3/text.md"
     },
 	{
-      "title": "Importing images",
+      "title": "Openshift DNS",
       "text": "steps/4/text.md"
     },
     {
-        "title": "Creating applications directly from Docker images",
+        "title": "Dig",
         "text": "steps/5/text.md"
     }],
     "intro": {
@@ -34,10 +34,13 @@
       "text": "finish.md"
     }
   },
+  "files": [
+    "httpd-pod.yml"
+  ],
   "environment": {
     "showdashboard": true,
     "dashboards": [{"name": "Dashboard", "port": 8443}],
-    "uilayout": "terminal-iframe",
+    "uilayout": "editor-terminal",
     "uimessage1": "\u001b[32mBrought to you by ernesto\u001b[m\r\n"
   },
     "backend": {

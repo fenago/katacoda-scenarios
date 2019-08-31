@@ -1,6 +1,15 @@
-In this step, you will create PersistentVolumeClaim. We will request storage by creating PersistentVolumeClaim.
+WordPress template
+WordPress is a free and open-source Content Management System (CMS) based on PHP and MySQL. We want to demonstrate the Source-to-Image (S2I) build process for WordPress using templates prepared at https://github.com/openshift-evangelists/wordpress-quickstart. This repository contains ready-to-use templates for deploying WordPress on an OpenShift cluster. There are two example templates available in the repository. Let's clone the repository first:
 
-# Task
-To complete this step, define a PersistentVolumeClaim called `claim1` and define `volumeName` as _volume1_ with `requests` as _storage: "5Gi"_.
 
-Create persistent volume claim which will bound to using volume `volume1` by running `oc create -f volume-claim.yaml`{{execute HOST1}}
+`git clone https://github.com/openshift-evangelists/wordpress-quickstart.git`{{execute}}
+
+```
+Cloning into 'wordpress-quickstart'...
+remote: Counting objects: 331, done.
+remote: Total 331 (delta 0), reused 0 (delta 0), pack-reused 331
+Receiving objects: 100% (331/331), 1.07 MiB | 1.96 MiB/s, done.
+Resolving deltas: 100% (119/119), done.
+```
+
+We are going to apply the `wordpress-quickstart/templates/classic-standalone.json` WordPress template.

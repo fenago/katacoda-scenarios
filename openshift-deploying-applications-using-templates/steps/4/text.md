@@ -2,15 +2,14 @@ Adding templates
 Once a template is developed, it can be added to OpenShift like any other YAML or JSON-defined objects, using the oc create command. It is a common practice to use a separate tenant specifically for templates, which will be shared between multiple projects. A default installation of the Red Hat OpenShift Container Platform (OCP) provides a number of templates in the openshift project. All of an OpenShift cluster's users have read access to the project, but only the cluster admin is able to modify or create templates in the project.
 
 The following example shows how to add a template to your current project:
+`oc create -f mytemplate.yaml`{{execute}}
 
-Copy
-# oc create -f mytemplate.yaml
-template "template1" created
+`oc get template`{{execute}}
 
-# oc get template
+```
 NAME        DESCRIPTION    PARAMETERS    OBJECTS
 template1                  1 (1 blank)   1
-
+```
 
 OpenShift template overview
 An OpenShift template is a set of API resources that can be parameterized and processed to produce a list of objects for creation by OpenShift. A template can be processed to create any desired OpenShift objects (such as deployment configurations, build configurations, and so on). A template can also define a set of labels to apply to every object defined in the template. You can apply a template by using the CLI or the web console. For example, a template might contain two pods (an application and a database), a service, and a route. Once the template has been developed, you can reuse it.
@@ -22,8 +21,8 @@ An OpenShift template is a set of API resources that can be parameterized and pr
 Template syntax
 Templates, like any other OpenShift resources, can be created from a raw YAML or JSON definition. An example is as follows:
 
-Copy
-# cat mytemplate.yaml
+
+`cat mytemplate.yaml
 apiVersion: v1
 kind: Template 
 metadata:
@@ -57,7 +56,7 @@ The preceding example includes only one resource—a pod named app1. It also inc
 
 Parameters can also have the following default values: 
 
-Copy
+
 parameters: 
 - description: Myapp configuration data
   name: SHOW_DATA
@@ -65,7 +64,7 @@ parameters:
   value: Example value
 In some cases, we may want to generate values according to a certain pattern, as shown here:
 
-Copy
+
 parameters:
   - description: Password used for Redis authentication
     from: '[A-Z0-9]{8}'
@@ -86,20 +85,20 @@ Once a template is developed, it can be added to OpenShift like any other YAML o
 
 The following example shows how to add a template to your current project:
 
-Copy
-# oc create -f mytemplate.yaml
+
+`oc create -f mytemplate.yaml
 template "template1" created
 
-# oc get template
+`oc get template
 NAME        DESCRIPTION    PARAMETERS    OBJECTS
 template1                  1 (1 blank)   1
 You will need to become the system:admin user to create a template in the openshift tenant:
 
-Copy
-# oc login -u system:admin
 
-# oc create -f mytemplate.json -n openshift
+`oc login -u system:admin
+
+`oc create -f mytemplate.json -n openshift
 template "template1" created
 
-# oc get template -n openshift|grep temp
+`oc get template -n openshift|grep temp
 template1

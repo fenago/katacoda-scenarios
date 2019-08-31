@@ -1,8 +1,3 @@
-Building an application from Dockerfile
-It is good practice to deploy an application in a separate namespace:
-`oc new-project dockerfile`{{execute}}
-
-
 For this lab, we are going to use the redis container. First, we need a Dockerfile with additional files located at   https://github.com/docker-library/redis.git. Let's clone this repository locally to understand its structure:
 `git clone https://github.com/docker-library/redis.git`{{execute}}
 
