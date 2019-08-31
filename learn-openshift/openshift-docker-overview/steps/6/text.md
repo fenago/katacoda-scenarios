@@ -10,7 +10,7 @@ In order to actually benefit from the container, we need to make it publicly acc
 
 Option -p maps container port 80 to your server port 8080. Verify that you have a httpd container exposed and a web server running:
 
-`ssh root@hos01`{{execute}}
+`ssh root@host01`{{execute}}
 
 `curl localhost:8080`{{execute}}
 

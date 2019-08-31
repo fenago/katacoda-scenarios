@@ -22,6 +22,8 @@ There are a few things to note here. The STATUS field says that container mycont
 - You can, of course, specify the full ID.
 - The logs command will output the entire logs of the container.
 
+Press `Ctrl` + `C` to exit the container logs.
+
 The last message says caught SIGTERM, shutting down. It happened after we pressed Ctrl + C. In order to run a container in background mode, we can use the -d option with the docker run command:
 `docker run --name=backgroundcontainer -d httpd`{{execute}}
 > Container_ID

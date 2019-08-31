@@ -1,10 +1,10 @@
 Go back to the pipeline sub-menu:
 
-![edit](https://github.com/fenago/katacoda-scenarios/raw/master/openshift-cicd-jenkins/steps/6/main.JPG)
+![edit](https://github.com/fenago/katacoda-scenarios/raw/master/learn-openshift/openshift-cicd-jenkins/steps/6/main.JPG)
 
 Clicking on Edit Pipeline should redirect us to editing our first pipeline.
 
-![edit](https://github.com/fenago/katacoda-scenarios/raw/master/openshift-cicd-jenkins/steps/6/edit.JPG)
+![edit](https://github.com/fenago/katacoda-scenarios/raw/master/learn-openshift/openshift-cicd-jenkins/steps/6/edit.JPG)
 
 
 You should see the Jenkins pipeline configuration file, Jenkinsfile, as shown in the following screenshot:
