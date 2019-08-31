@@ -11,7 +11,7 @@ OpenShift welcome page
 
 Click on My Project to access the OpenShift Project Overview page. From there, click on the Builds | Pipelines sub-menu:
 
-![Create Sample Pipeline](sample.jpg)
+![Create Sample Pipeline](https://github.com/fenago/katacoda-scenarios/raw/master/openshift-cicd-jenkins/steps/4/sample.JPG)
 
 From here, you should be able to click on Create Sample Pipeline. Then, scroll all the way down and click on the Create button. It should tell you that the Pipeline Build Example has been created:
 
