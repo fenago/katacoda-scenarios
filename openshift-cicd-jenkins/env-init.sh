@@ -11,3 +11,5 @@ ssh root@host01 "oc create -f https://github.com/openshift/origin/raw/release-3.
 ssh root@host01 "oc create -f https://github.com/openshift/origin/raw/release-3.11/examples/db-templates/postgresql-persistent-template.json -n openshift"
 ssh root@host01 "oc create -f https://github.com/openshift/origin/raw/release-3.11/examples/db-templates/redis-ephemeral-template.json -n openshift"
 ssh root@host01 "oc create -f https://github.com/openshift/origin/raw/release-3.11/examples/db-templates/redis-persistent-template.json -n openshift"
+ssh root@host01 "oc create -f https://raw.githubusercontent.com/openshift/origin/master/examples/image-streams/image-streams-centos7.json -n openshift"
+ssh root@host01 "oc create -f https://raw.githubusercontent.com/openshift/origin/master/examples/jenkins/jenkins-ephemeral-template.json -n openshift"
