@@ -14,23 +14,23 @@
       "text": "steps/2/text.md"
     },    
 	{
-      "title": "Build & Deploy",
+      "title": "Cluster Roles",
       "text": "steps/3/text.md"
     },
     {
-      "title": "Openshift Build Process",
+      "title": "Using built-in Roles",
       "text": "steps/4/text.md"
     },
 	{
-      "title": "Understanding the PHP build process",
+      "title": "Nginx Pod",
       "text": "steps/5/text.md"
     },
     {
-        "title": "Trigger New Build",
+        "title": "Security context constraints",
         "text": "steps/6/text.md"
     },
     {
-        "title": "Cleanup Resources",
+        "title": "Creating Custom Roles",
         "text": "steps/7/text.md"
     }],
     "intro": {

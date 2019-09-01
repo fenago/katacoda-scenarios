@@ -1,5 +1,4 @@
 
-Using built-in roles
 Let's see how we can use the edit pre-defined role to grant a user access to another user's project. First, login at MiniShift as alice:
 `oc login -u alice -p 1234`{{execute}}
 
