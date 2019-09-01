@@ -50,6 +50,6 @@
   },
     "backend": {
         "trainingid": "openshift-3-11",
-        "imageid": "openshift"
+        "imageid": "openshift-3-11"
     }
 }
