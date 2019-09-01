@@ -4,7 +4,7 @@ By running the oc new-app command, OpenShift creates a service automatically. We
 `oc get services`{{execute}}
 
 We can delete and recreate this service again by running the oc delete and oc expose commands. Before we do that, run the curl command to verify that the service is up and running:
-`curl -I -m3 http://<service-IP>::8080`{{copy}}
+`curl -I <service-IP>:8080`{{copy}}
 
 **Note:** You will need to uupdteservice Cluster-IP in the above command.
 
@@ -31,4 +31,4 @@ Finally, check that the service is available again by running the curl command:
 
 `oc get svc`{{execute}}
 
-`curl -I -m3 http://<service-IP>::8080`{{copy}}
+`curl -I <service-IP>:8080`{{copy}}
