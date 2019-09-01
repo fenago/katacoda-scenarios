@@ -1,4 +1,5 @@
 **Creating a custom template**
+
 In most cases, developers use the predefined OpenShift templates that come with the OpenShift installation; however, at times they don't suit a particular case, so a customized template has to be developed. In this section, we will provide you with an overview of how to create your own template.
 
 Some of OpenShift's features may speed up the process of template development. For example, oc explain allows you to explore the syntax of all OpenShift API objects, serving as a form of documentation.

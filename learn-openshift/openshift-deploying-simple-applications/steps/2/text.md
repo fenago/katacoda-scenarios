@@ -73,10 +73,9 @@ httpd 1/1 Running 0 2m
 This pod provides the same functionality as a more complex application would (default httpd web page). We may want to verify that, as shown as follows.
 
 First, get the pod's internal IP address:
-
-
 `oc describe pod httpd | grep IP:`{{execute}}
 
+**Note:** Please wait for the few seconds to get Pod's IP.
 
 And then use curl to query the IP from the output above:
 `curl -s <pod-ip>:8080 | head -n 4`{{copy}}

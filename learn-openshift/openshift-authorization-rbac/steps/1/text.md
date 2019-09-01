@@ -12,7 +12,3 @@ You don't have any projects. You can try to create a new project, by running
 
     oc new-project <projectname>
 ```
-
-To create a new project called ``phpinfo`` run the command:
-`oc new-project phpinfo`{{execute}}
-
