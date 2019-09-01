@@ -1,7 +1,7 @@
 Before we begin, make sure that your OpenShift is up and running. Run the folowing command to login to the OpenShift cluster
 
 Log in as an unprivileged user:
-`oc login -u alice -p 1234`{{execute}}
+`yes | oc login -u alice -p 1234 [[HOST_SUBDOMAIN]]-8443-[[KATACODA_HOST]].environments.katacoda.com`{{execute}}
 
 ```
 Username: alice

@@ -50,7 +50,7 @@
     "showdashboard": true,
     "dashboards": [{"name": "Dashboard", "port": 8443}],
     "uilayout": "terminal-iframe",
-    "uimessage1": "\u001b[32mBrought to you by ernesto\u001b[m\r\n"
+    "uimessage1": "\u001b[32mBrought to you by https://LearningVoyage.com\u001b[m\r\n"
   },
     "backend": {
         "trainingid": "openshift-3-11",
