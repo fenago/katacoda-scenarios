@@ -6,7 +6,7 @@
   "time": "15 minutes",
   "details": {
     "steps": [{
-      "title": "Openshift CLI",
+      "title": "Openshift SCC",
       "text": "steps/1/text.md"
     },
     {
