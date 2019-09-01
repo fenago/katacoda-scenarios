@@ -12,7 +12,7 @@ spec:
     hostPath:
         path: /data/volume1
     persistentVolumeReclaimPolicy: Recycle
-	
+
 ---
 apiVersion: v1
 kind: PersistentVolume

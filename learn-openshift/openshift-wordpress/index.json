@@ -6,40 +6,33 @@
   "time": "15 minutes",
   "details": {
     "steps": [{
-      "title": "Step 1 - Create Project",
-      "text": "steps/1/text.md",
-	    "verify": "steps/1/verify.sh",
-      "answer": "steps/1/answer.md"
+      "title": "Create Project",
+      "text": "steps/1/text.md"
     },
     {
       "title": "Building a multi-tier application",
-      "text": "steps/2/text.md",
-      "verify": "steps/2/verify.sh",
-      "answer": "steps/2/answer.md"
+      "text": "steps/2/text.md"
     },    
 	{
-      "title": "Step 3 - PersistentVolume Claim",
-      "text": "steps/3/text.md",
-      "verify": "steps/3/verify.sh",
-      "answer": "steps/3/answer.md"
+      "title": "WordPress Template",
+      "text": "steps/3/text.md"
     },
 	{
-      "title": "Step 4 - Volume and Claim",
-      "text": "steps/4/text.md",
-      "verify": "steps/4/verify.sh",
-      "answer": "steps/4/answer.md"
+      "title": "Building a WordPress application",
+      "text": "steps/4/text.md"
     },
 	{
-      "title": "Step 5 - Using Persistent Volume",
-      "text": "steps/5/text.md",
-      "verify": "steps/5/verify.sh",
-      "answer": "steps/5/answer.md"
+      "title": "Build & Deploy",
+      "text": "steps/5/text.md"
     },
 	{
-      "title": "Step 6 - Interactive Shell",
-      "text": "steps/6/text.md",
-      "verify": "steps/6/verify.sh"
-    }],
+      "title": "Access WordPress Application",
+      "text": "steps/6/text.md"
+    },
+    {
+        "title": "Delete WordPress Application",
+        "text": "steps/7/text.md"
+  }],
     "intro": {
         "courseData": "env-init.sh",
         "code": "set-env.sh",
@@ -53,6 +46,8 @@
     }
   },
   "environment": {
+    "showdashboard": true,
+    "dashboards": [{"name": "Wordpress", "port": 80}],
     "uilayout": "terminal",
     "uimessage1": "\u001b[32mBrought to you by ernesto\u001b[m\r\n"
   },

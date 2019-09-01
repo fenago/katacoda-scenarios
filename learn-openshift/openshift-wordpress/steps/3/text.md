@@ -1,8 +1,5 @@
-WordPress template
-WordPress is a free and open-source Content Management System (CMS) based on PHP and MySQL. We want to demonstrate the Source-to-Image (S2I) build process for WordPress using templates prepared at https://github.com/openshift-evangelists/wordpress-quickstart. This repository contains ready-to-use templates for deploying WordPress on an OpenShift cluster. There are two example templates available in the repository. Let's clone the repository first:
-
-
-`git clone https://github.com/openshift-evangelists/wordpress-quickstart.git`{{execute}}
+WordPress is a free and open-source Content Management System (CMS) based on PHP and MySQL. We want to demonstrate the Source-to-Image (S2I) build process for WordPress using templates. The following repository contains ready-to-use templates for deploying WordPress on an OpenShift cluster. There are two example templates available in the repository. Let's clone the repository first:
+`git clone https://github.com/athertahir/wordpress-quickstart.git`{{execute}}
 
 ```
 Cloning into 'wordpress-quickstart'...
@@ -12,4 +9,4 @@ Receiving objects: 100% (331/331), 1.07 MiB | 1.96 MiB/s, done.
 Resolving deltas: 100% (119/119), done.
 ```
 
-We are going to apply the `wordpress-quickstart/templates/classic-standalone.json` WordPress template.
+We are going to apply the wordpress-quickstart `classic-standalone.json` WordPress template.

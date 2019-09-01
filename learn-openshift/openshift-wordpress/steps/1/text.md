@@ -16,4 +16,4 @@ You have access to the following projects and can switch between them with 'oc p
 ```
 
 First, we want to place the application into a separate namespace:
-`oc new-project wp`{{execute 
+`oc new-project wp`{{execute}}

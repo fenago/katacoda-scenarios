@@ -1,7 +1,4 @@
-Building a WordPress application
-
-
-Now using project "wp" on server "https://openshift.example.com:8443".
+Now using project "wp" in openshift".
 First, since it is a new template for us, we want to gather some information regarding available parameters. As was previously described, oc process --parameters can be helpful:
 
 
@@ -20,4 +17,4 @@ MYSQL_VERSION The version of the MySQL database. 5.7
 PHP_VERSION The version of the PHP builder. 7.0
 ```
 
-Notice that only APPLICATION_NAME doesn't have a default value.
+Notice that only most of the variables have a default value.
