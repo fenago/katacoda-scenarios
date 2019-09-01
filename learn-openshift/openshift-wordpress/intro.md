@@ -1,1 +1,1 @@
-In this Lab we will get introduced to OpenShift Volumes
+In this Lab we will deploy wordpress in OpenShift.

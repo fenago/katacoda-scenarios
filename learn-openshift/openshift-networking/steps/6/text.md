@@ -1,3 +1,5 @@
+Let's exit from container bash shell first `exit`{{execute}}
+
 Run the following command on the master to see what processes are listening on TCP and UDP ports ending with 53 
 (DNS):
 `ss -tulpn | grep '53 '`{{execute}}

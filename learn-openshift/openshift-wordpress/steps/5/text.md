@@ -5,6 +5,7 @@ Let's build the application from source code by instantiating that template with
 You may want to check the build logs for WordPress application:
 `oc logs bc/wordpress -f`{{execute}}
 
+**Note:** Press `Ctrl` + `C` to exit the log console.
 
 ```
 Cloning "https://github.com/openshift-evangelists/wordpress-quickstart" ...

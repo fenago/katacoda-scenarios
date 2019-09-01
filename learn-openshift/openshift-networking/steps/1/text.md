@@ -14,6 +14,7 @@ This is the default plugin that's enabled after OpenShift has just been installe
 In order to see for yourself what exactly the ovs-subnet plugin does (or, rather, does not do), create two projects with one pod each and try to reach one of them from the other one.
 
 First, create a `demo-1` project:
+
 `oc new-project demo-1`{{execute}}
 
 Next, launch a pod by running the httpd web server using the same YAML definition, like we did in the Tracing connectivity subsection:
