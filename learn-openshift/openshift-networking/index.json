@@ -24,6 +24,10 @@
     {
         "title": "Dig",
         "text": "steps/5/text.md"
+    },
+    {
+        "title": "Openshift Networking",
+        "text": "steps/6/text.md"
     }],
     "intro": {
       "code": "set-env.sh",

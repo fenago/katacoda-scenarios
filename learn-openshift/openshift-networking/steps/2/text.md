@@ -6,7 +6,7 @@ And create the same pod in that project:
 
 Now, let's see whether we can ping the first pod from the one we have just created:
 
-`oc rsh httpd ping 10.129.0.22`{{copy}}
+`oc rsh httpd ping <pod-1-ip>`{{copy}}
 
 ```
 PING 10.129.0.22 (10.129.0.22) 56(84) bytes of data.
@@ -16,4 +16,4 @@ PING 10.129.0.22 (10.129.0.22) 56(84) bytes of data.
 ...
 ```
 
-As you can see, communication between pods is completely uninhibited, which may be undesirable. In the two following subsections, we will demonstrate how to enforce project isolation using other OpenShift plugins.
+Press `Ctrl` + `C` to exit the ping command. As you can see, communication between pods is completely uninhibited.

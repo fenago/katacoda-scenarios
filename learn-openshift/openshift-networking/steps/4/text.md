@@ -1,7 +1,7 @@
 In the following exercise, we will see how two applications that are deployed in different projects can reach each other.
 
 First, let's create a project called demo-1:
-`oc new-project demo-1`{{execute}}
+`oc new-project demo-3`{{execute}}
 
 
 Next, create a pod running Apache web server. We will be using the same YAML configuration as before:

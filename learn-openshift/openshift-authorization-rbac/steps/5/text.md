@@ -13,6 +13,14 @@ spec:
     image: nginx
 </pre>
 
+`oc create -f nginx-pod.yml`{{execute}}
+
+`oc get po`{{execute}}
+
+```
+NAME      READY     STATUS             RESTARTS   AGE
+nginx     0/1       CrashLoopBackOff   2          57s
+```
 
 What happened? Let's take a look into the pod's logs:
 `oc logs -f nginx`{{execute}}
