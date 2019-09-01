@@ -1,7 +1,3 @@
-
-Finally, log back in as alice:
-`oc login -u alice`{{execute}}
-
 Log in as an unprivileged user:
 `oc login -u alice -p 1234 --insecure-skip-tls-verify [[HOST_SUBDOMAIN]]-8443-[[KATACODA_HOST]].environments.katacoda.com`{{execute}}
 
