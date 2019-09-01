@@ -8,7 +8,7 @@ Create nginx pod by running `kubectl create -f pod.yaml`{{execute HOST1}}
 You can get the clusterIP of running nginx pod by running: 
 ``kubectl get pods -o wide``{{execute}}
 
-After that, send request to nginx container using `curl <CLUSTER_IP>` to get response.
+After that, send request to nginx container using `curl <CLUSTER_IP>`{{copy}} to get response.
 
 ```
 <h1>Welcome to nginx!</h1>

@@ -16,6 +16,8 @@ CONTAINER ID IMAGE COMMAND CREATED STATUS PORTS NAMES
 41139532924e mariadb "docker-entrypoint.sh" 4 seconds ago Up 3 seconds 3306/tcp mariadb
 ```
 
+**Note:** Please wait few seconds for the mysql container to bootup, if you get error in following commands.
+
 Create a new database and verify the existence of this new DB:
 `docker exec -it mariadb mysql -uroot -ppassword -e "create database persistent;"`{{execute}}
 

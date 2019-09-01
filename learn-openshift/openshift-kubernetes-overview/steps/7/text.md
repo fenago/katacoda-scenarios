@@ -11,11 +11,9 @@ httpd-8576c89d7-qjd62      1/1     Running    0          6m
 ```
 
 
-Note
-The first time you run this command, you will probably see that the Kubernetes pod status shows up as ContainerCreating. What is happening behind the scenes is that the Docker httpd image is being downloaded to Minikube VM. Be patient and give it some time to download the image. A few minutes later you should be able to see the container status is Running.  The kubectl run command does more than just download an image and run a container out of it. We are going to cover this later in this chapter. The 8576c89d7-qjd62 part is generated automatically. We are going to discuss this later in this chapter.
-
-
-`docker ps`{{execute}}
+**Note:**
+The first time you run this command, you will probably see that the Kubernetes pod status shows up as   `ContainerCreating`. What is happening behind the scenes is that the Docker httpd image is being downloaded to Minikube VM. Be patient and give it some time to download the image. A few minutes later you should be able to see the container status is Running.  The kubectl run command does more than just download an image and run a container out of it.
+`docker ps | grep httpd-foreground`{{execute}}
 
 We can try to kill this httpd Docker container, but Kubernetes will automatically spawn the new one:
 `docker rm -f container-id`{{copy}}

@@ -18,7 +18,7 @@
       "verify": "steps/3/verify.sh"
     },
 	{
-      "title": "Web Console",
+      "title": "Kubernetes REST API",
       "text": "steps/4/text.md",
       "verify": "steps/4/verify.sh"
     },
