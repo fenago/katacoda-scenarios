@@ -18,19 +18,19 @@
       "text": "steps/3/text.md"
     },
 	{
-      "title": "Create Template",
+      "title": "Adding templates",
       "text": "steps/4/text.md"
     },
     {
-        "title": "Oc Process",
+        "title": "Displaying template parameters",
         "text": "steps/5/text.md"
     },
     {
-        "title": "Using Custom WebServer",
+        "title": "Deploy Jenkins Using Templates",
         "text": "steps/6/text.md"
     },
     {
-        "title": "Export Template",
+        "title": "Openshift Explain",
         "text": "steps/7/text.md"
     },
     {
@@ -48,7 +48,7 @@
     }
   },
   "files": [
-    "example-template.yml"
+    "mytemplate.yaml"
 	],
   "environment": {
     "showdashboard": true,
