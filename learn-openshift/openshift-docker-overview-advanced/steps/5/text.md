@@ -5,12 +5,6 @@ In the next example, we will create a MariaDB container with persistent storage 
 First, remove all previously created containers:
 `docker rm -f $(docker ps -aq)`{{execute}}
 
-We have to prepare persistent storage on the node before we begin. Be aware that we need to give read/write permissions to the persistent storage directory. The MariaDB application works with a MySQL user with UID=999 inside the container. Also, it is important to mention that the special SE Linux security context svirt_sandbox_file_t is required. This can be achieved using the following commands:
-
-`mkdir /mnt/data && chown 999:999 /mnt/data`{{execute}}
-
-`chcon -Rt svirt_sandbox_file_t /mnt/data`{{execute}}
-
 The next step is to create the container running the MariaDB service:
 `docker run -d -v /mnt/data:/var/lib/mysql --name mariadb -e MYSQL_ROOT_PASSWORD=password mariadb`{{execute}}
 
@@ -40,14 +34,18 @@ Create a new database and verify the existence of this new DB:
 
 Verify that there is new data in the /mnt/data directory created by the mariadb container. This is how we make the data persistent:
 
+`ssh root@host01`{{execute}}
 
 `ls -l /mnt/data/`{{execute}}
+
+```
 drwx------. 2 polkitd ssh_keys 4096 Mar 6 16:18 mysql
 drwx------. 2 polkitd ssh_keys 20 Mar 6 16:18 performance_schema
 drwx------. 2 polkitd ssh_keys 20 Mar 6 16:23 persistent
 ...
 output truncated for brevity
 ...
+```
 
 
 Delete the mariadb container and verify that all files will be kept:

@@ -60,10 +60,12 @@ Verify that the new image has been created:
 
 
 The final step is to verify that the image works properly:
-`docker run -d --name custom_httpd -p 80:8080 custom_image`{{execute}}
+`docker run -d --name custom_httpd -p 8080:80 custom_image`{{execute}}
 
 `curl localhost:8080`{{execute}}
 
 ```
 This is a custom image
 ```
+
+**Important:** Run `exit`{{execute}} to exit from ssh session with host01.

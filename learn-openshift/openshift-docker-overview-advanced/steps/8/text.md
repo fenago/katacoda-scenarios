@@ -10,6 +10,7 @@ RUN echo "This is a custom image" > /usr/local/apache2/htdocs/index.html
 Once this Dockerfile is created, we can build a custom image using the docker build command:
 `docker build -t custom_image2 .`{{execute}}
 
+```
 Sending build context to Docker daemon 2.048 kB
 Step 1 : FROM httpd
  ---> 01154c38b473
@@ -17,6 +18,7 @@ Step 2 : RUN echo "This is a custom image" > /usr/local/apache2/htdocs/index.htm
  ---> Using cache
  ---> 6b9be8efcb3a
 Successfully built 6b9be8efcb3a
+```
 
 **Note:** Please note that the . at the end of the first line is important as it specifies the working directory. Alternatively, you can use ./ or even $(pwd).
 
