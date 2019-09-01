@@ -58,9 +58,14 @@
       "title": "OpenShift HorizontalPodAutoscaler",
       "description": ""
     },
-	    {
+	{
       "course_id": "openshift-security",
       "title": "OpenShift Users and ServiceAccounts",
+      "description": ""
+    },
+	{
+      "course_id": "openshift-authorization-rbac",
+      "title": "Openshift Authorization and RBAC",
       "description": ""
     },
     {
