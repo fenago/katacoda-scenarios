@@ -1,12 +1,12 @@
 Now we can check the version of our application:
-`oc rsh redis-2-l6bbl /usr/local/bin/redis-server --version`{{execute}}
+`oc rsh <redis-pod-name> /usr/local/bin/redis-server --version`{{copy}}
 
 ```
-Redis server v=4.0.9 sha=00000000:0 malloc=jemalloc-4.0.3 bits=64 build=40ca48d6a92db598
+Redis server v=5.0.5 sha=00000000:0 malloc=jemalloc-5.1.0 bits=64 build=20ef5c20bbb09517
 ```
 
 Finally, let's make sure that the application is up and running:
-`oc rsh redis-2-l6bbl /usr/local/bin/redis-cli ping`{{execute}}
+`oc rsh <redis-pod-name> /usr/local/bin/redis-cli ping`{{copy}}
 
 We were able to initiate the build from the updated source code.
 

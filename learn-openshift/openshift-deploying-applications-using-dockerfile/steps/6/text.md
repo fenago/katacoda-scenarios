@@ -5,7 +5,7 @@ We highlighted a source element that specifies which directory to use during the
 
 
 Below is an example of how to use the oc patch command to update the object content:
-`oc patch bc/redis --patch '{"spec":{"source":{"contextDir":"4.0"}}}'`{{execute}}
+`oc patch bc/redis --patch '{"spec":{"source":{"contextDir":"5.0"}}}'`{{execute}}
 
 
 `oc get bc/redis -o yaml|grep contextDir:`{{execute}}
@@ -29,7 +29,7 @@ So, recently, we initiated a build, which was completed some time ago. Let's try
 The build creates a number of new pods representing the new version (version 2). After some time, the pod statuses will be changed:
 `oc get pod`{{execute}}
 
-You can see that redis is now going through Build and Deploy stages before the new version of redis container is up and running. If you wait for a minute or so, you should see the following:
+You can see that redis is now going through Build and Deploy stages before the new version of redis container is up and running.
 `oc get pod`{{execute}}
 
 

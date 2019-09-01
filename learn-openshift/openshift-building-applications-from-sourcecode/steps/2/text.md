@@ -1,4 +1,3 @@
-Building a simple PHP application
 The first S2I lab will use a very simple PHP application that displays the PHP configuration using a standard PHP function—phpinfo(). It's composed of a single index.php file, with the following content:
 
 

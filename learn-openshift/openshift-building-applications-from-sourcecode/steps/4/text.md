@@ -1,24 +1,28 @@
-Understanding the PHP build process
-Now that we know that the phpinfo application works as expected, let's focus on the low-level details that are required to understand the build process. OpenShift created a number of API resources to make the build possible. Some of them are related to the deployment process, which we learned about in previous chapters. We can display all entities as follows:
+A summary of the build process can be displayed by running the oc status or oc status -v commands:
 
 
-`oc get all`{{execute}}
+`oc status -v`{{execute}}
 
+View details with 'oc describe <resource>/<name>' or list everything with 'oc get all'.
+The preceding command shows that deployment #1 has been rolled out. It can also contain some useful information for troubleshooting the build, in case something goes wrong.
 
-Most of the entities (the pod, service, replication controller, and deployment configuration) in the preceding output are already familiar to you, from previous chapters. 
+There is another way to display build logs with low-level details—using the oc logs command. We need to show the log for the buildconfig (or just bc) entity, which can be displayed, as follows, by using the oc logs bc/phpinfo command:
+`oc logs bc/phpinfo`{{execute}}
 
-The S2I build strategy uses the following additional entities—build configuration, build, and image stream. The build config has all of the information necessary to build the application. As with the rest of the OpenShift API resources, its configuration can be gathered using the oc get command:
+```
+Cloning "https://github.com/neoncyrex/phpinfo.git" ...
+  Commit: 638030df45052ad1d9300248babe0b141cf5dbed (initial commit)
+  Author: vagrant <vagrant@openshift.example.com>
+  Date: Sat Jun 2 04:22:59 2018 +0000
+---> Installing application source...
+=> sourcing 20-copy-config.sh ...
+---> 05:00:11 Processing additional arbitrary httpd configuration provided by s2i ...
+=> sourcing 00-documentroot.conf ...
+=> sourcing 50-mpm-tuning.conf ...
+=> sourcing 40-ssl-certs.sh ...
+Pushing image 172.30.1.1:5000/phpinfo/phpinfo:latest ...
+...
+Push successful
+```
 
-
-`oc get bc phpinfo -o yaml`{{execute}}
-
-The following fields are especially important:
-
-spec.source.git: Repository URL for the application source code
-spec.strategy.sourceStrategy: Contains information on which builder will be used.
-In our case, OpenShift uses a built-in builder from image stream php:7.0, in the openshift namespace. Let's look at its configuration:
-
-
-`oc get is php -o yaml -n openshift`{{execute}}
-
-The PHP builder image used to build our application is centos/php-70-centos7:latest.
+The preceding output gives us some insight into how builds work.

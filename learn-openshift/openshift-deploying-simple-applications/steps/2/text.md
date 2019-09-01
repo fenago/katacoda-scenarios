@@ -1,66 +1,92 @@
-Using oc new-app
-The oc utility allows you to deploy a simple application in a user-friendly way. Generally, you just need to pass one or more options to the oc new-app command, which will then create all required resources, including pod(s) and service(s), for your application. Additionally, that command creates ReplicationController and DeploymentConfig API objects that control how your application is being deployed.
-
- 
-The oc new-app command
-So,oc new-appcreates the following resources during application deployment from an existing Docker image:
-
-Resource | Abbreviation | Description
---- | ---
-`Pod` | *pod* | *Pod representing your container*
-`Service:admin` | *svc* | *Service containing an internal application endpoint*
-`ReplicationController` | *rc* | *A replication controller is an OpenShift object that controls the number of replicas for an application*
-`DeploymentConfig` | *dc* | *Deployment configuration is a definition of your deployment*
-
- 
-
-oc new-app is a very simple utility, yet it's powerful enough to satisfy most simple deployments.
-
-**Note:**
-oc new-app doesn't create a route when deploying an application from its Docker image!
-
-The functionality provided by oc new-app is also exposed via a web console which is what developers usually are inclined to use. 
-
-Using oc new-app with default options
-
-Let's delete the resources created previously:
-`oc delete all --all`{{execute}}
 
 
-**Note:**
-Another method to delete everything is to delete the project and create it again.
+Among other methods, OpenShift allows for deploying applications directly from existing Docker images. Imagine that your development team has an in-house process of building Docker images from their applications—this way, you can deploy applications in an OpenShift environment by using these images without any modification, which greatly simplifies migration to OpenShift. It takes several steps to create all required OpenShift entities.
 
-Recently, we showed that OpenShift comes with an image stream that contains the path to the OpenShift-ready httpd image. The oc new-app utility uses Docker images referenced by image streams by default.
+First, you have to create a pod, which runs a container deployed from the application's Docker image. Once the pod is up and running, you may need to create a service to have a persistent IP address and internal DNS record associated with it. The service allows your application to be accessible via a consistent address:port pair internally inside OpenShift. This may be enough for internal applications that don't require external accesses, like databases or key/value storage.
 
-Here is an example of creating a basic httpd application:
-`oc new-app httpd`{{execute}}
+If your application has to be available from the outside, you need toexposeit to make it available from an external network, like the internet. This process can be achieved by creating an OpenShift route.
 
+In short, the process looks like this:
 
-Run `oc status`{{execute}} to view your app.
+- Create a pod
+- Create a service by exposing the pod
+- Create a route by exposing the service
 
-The deployment process takes some time. Once everything is ready, you can check that all resources have been created:
-`oc get all`{{execute}}
+In this scenario, we will be working with a simple httpd Docker container to demonstrate the application deployment process. We have chosen httpd because it is simple enough and it still allows us to focus on the main goal—the demonstration of OpenShift-related tasks.
+
+Creating a pod
+
+The httpd Docker image is available on Docker Hub. You may want to confirm this by running the following command:
+`docker search httpd`{{execute}}
 
 ```
-NAME REVISION DESIRED CURRENT TRIGGERED BY
-deploymentconfigs/httpd 1 1 1 config,image(httpd:2.4)
+INDEX NAME DESCRIPTION STARS OFFICIAL AUTOMATED
+docker.io docker.io/httpd The Apache HTTP Server Project 1719 [OK]
+<OMITTED>
+```
 
+According to the image documentation, it listens on TCP port 80. We cannot simply use this container, because it binds to a privileged port. The default security policy in OpenShift doesn't allow applications to bind on ports below 1024. To avoid problems, OpenShift comes with an image stream named httpd which points to an OpenShift-ready httpd image build. For example, in our version of OpenShift, the httpd image stream points to the docker.io/centos/httpd-24-centos7 Docker container. You may want to verify that by running the following command:
+`oc get is -n openshift | grep httpd`{{execute}}
+
+```
+NAME DOCKER REPO TAGS UPDATED
+httpd 172.30.1.1:5000/openshift/httpd latest,2.4 3 hours ago
+```
+
+`oc describe is httpd -n openshift | grep "tagged from"`{{execute}}
+
+Each time we want to deploy a pod using an httpd image, we need to use centos/httpd-24-centos7 instead. 
+
+The simple httpd pod can be deployed manually from its definition:
+
+<pre class="file" data-filename="pod_httpd.yml" data-target="replace">
+apiVersion: v1
+kind: Pod
+metadata:
+  name: httpd
+  labels:
+    name: httpd
+spec:
+  containers:
+    - name: httpd
+      image: centos/httpd-24-centos7
+      ports:
+        - name: web
+          containerPort: 8080
+</pre>
+
+Note
+centos/httpd-24-centos7 binds on port 8080, which allows for running the container inside OpenShift without tuning its default security policy.
+
+Once the file is created, we can create a pod by running oc create:
+
+
+`oc create -f pod_httpd.yml`{{execute}}
+
+OpenShift needs some time to download the Docker image and deploy the pod. Once everything is finished, you should be able to have the httpd pod in the Running state:
+`oc get pod`{{execute}}
+
+```
 NAME READY STATUS RESTARTS AGE
-po/httpd-1-n7st4 1/1 Running 0 31s
+httpd 1/1 Running 0 2m
+```
 
-NAME DESIRED CURRENT READY AGE
-rc/httpd-1 1 1 1 32s
+This pod provides the same functionality as a more complex application would (default httpd web page). We may want to verify that, as shown as follows.
 
-NAME CLUSTER-IP EXTERNAL-IP PORT(S) AGE
-svc/httpd 172.30.222.179 <none> 8080/TCP,8443/TCP 33s
-``` 
+First, get the pod's internal IP address:
 
-Let's make sure that the proper image has been used:
-`oc describe pod httpd-1-n7st4 | grep Image:`{{copy}}
 
-What is left is to expose the service to make the application externally available:
+`oc describe pod httpd | grep IP:`{{execute}}
 
-`oc expose svc httpd`{{execute}}
 
-`curl -s http://httpd-simpleappication.127.0.0.1.nip.io | head -n 4`{{execute}}
+And then use curl to query the IP from the output above:
+`curl -s <pod-ip>:8080 | head -n 4`{{copy}}
 
+```
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+ <head>
+```
+
+
+**Note:** This is the beginning of the default Apache welcome page. You may want to replace it for the production installation. This can be achieved by mounting a persistent volume at /var/www/html. For demo purposes, this output indicates that the application itself works and is accessible.

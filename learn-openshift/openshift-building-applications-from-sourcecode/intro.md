@@ -1,1 +1,1 @@
-In this Lab we will get learn to Deploy Simple Applications in OpenShift
+In this Lab we will get learn to Deploy Applications using SourceCode.

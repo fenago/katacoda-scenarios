@@ -1,1 +1,1 @@
-In this Lab we will get learn to Deploying Applications Using DockerFile.
+In this Lab we will get learn to Deploy Applications Using DockerFile.

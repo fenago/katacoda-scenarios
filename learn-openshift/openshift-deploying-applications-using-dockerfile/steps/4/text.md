@@ -22,5 +22,7 @@ redis-1-build    0/1      Completed   0         2m
 redis-1-js789    1/1      Running     0         1m
 ```
 
+**Note:** Please wait for the redis deployment to complete and all the pods to be running, It will take around **2 minutes** to complete.
+
 Copy pod name from the command and update following and run following to get `PONG` as response.
 `oc exec <redis-pod-name> /usr/local/bin/redis-cli ping`{{copy}}

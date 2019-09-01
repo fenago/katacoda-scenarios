@@ -1,31 +1,23 @@
-We now have all the information on how to build an application from source code. OpenShift puts together all the information (provided by you and inferred from the source code) and starts a new build. Each build has a sequential number, starting from 1. You can display all builds by running the following command:
+Now that we know that the phpinfo application works as expected, let's focus on the low-level details that are required to understand the build process. OpenShift created a number of API resources to make the build possible. Some of them are related to the deployment process, which we learned about in previous chapters. We can display all entities as follows:
 
 
-`oc get build`{{execute}}
+`oc get all`{{execute}}
 
-```
-NAME      TYPE   FROM        STATUS   STARTED     DURATION
-phpinfo-1 Source Git@638030d Complete 2 hours ago 34s
-```
 
-This build is reported as Complete, as our application is already up and running.
+Most of the entities (the pod, service, replication controller, and deployment configuration) in the preceding output are already familiar to you, from previous chapters. 
 
-Starting a new build
-If an application's source code was updated, you can trigger the rebuild process by running the oc start-build command. The build itself is managed by the build configuration.
+The S2I build strategy uses the following additional entities—build configuration, build, and image stream. The build config has all of the information necessary to build the application. As with the rest of the OpenShift API resources, its configuration can be gathered using the oc get command:
 
-First, we need to gather information on all available build configurations:
-`oc get bc`{{execute}}
 
-As you can see, we only have one build, phpinfo, and it was deployed only once; hence, the number 1.
+`oc get bc phpinfo -o yaml`{{execute}}
 
-Let's start a new build, as follows:
-`oc start-build phpinfo`{{execute}}
+The following fields are especially important:
 
-`oc get pod`{{execute}}
+spec.source.git: Repository URL for the application source code
+spec.strategy.sourceStrategy: Contains information on which builder will be used.
+In our case, OpenShift uses a built-in builder from image stream php:7.0, in the openshift namespace. Let's look at its configuration:
 
-```
-NAME             READY  STATUS    RESTARTS AGE
-phpinfo-1-build  0/1    Completed 0        2h
-phpinfo-1-h9xt5  1/1    Running   0        2h
-phpinfo-2-build  0/1    Init:0/2  0        3s
-```
+
+`oc get is php -o yaml -n openshift`{{execute}}
+
+The PHP builder image used to build our application is centos/php-70-centos7:latest.

@@ -10,24 +10,28 @@
       "text": "steps/1/text.md"
     },
     {
-      "title": "Controlling resource consumption using ResourceQuotas",
+      "title": "Manual application deployment",
       "text": "steps/2/text.md"
     },    
 	{
-      "title": "Edit ResourceQuotas",
+      "title": "Creating a service using oc expose",
       "text": "steps/3/text.md"
     },
 	{
-      "title": "Controlling resource consumption using LimitRanges",
+      "title": "Creating Service & Route from a YAML definition",
       "text": "steps/4/text.md"
     },
     {
-        "title": "Openshift Pods",
+        "title": "Using oc new-app",
         "text": "steps/5/text.md"
     },
     {
-        "title": "Using LimitRange with Pods",
+        "title": "Deploy Applications using oc new-app",
         "text": "steps/6/text.md"
+    },
+    {
+        "title": "Advanced deployment",
+        "text": "steps/7/text.md"
     }],
     "intro": {
       "code": "set-env.sh",
