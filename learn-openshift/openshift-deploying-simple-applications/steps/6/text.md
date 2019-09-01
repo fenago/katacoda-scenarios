@@ -42,11 +42,12 @@ svc/httpd 172.30.222.179 <none> 8080/TCP,8443/TCP 33s
 ``` 
 
 Let's make sure that the proper image has been used:
-`oc describe pod httpd-1-n7st4 | grep Image:`{{copy}}
+`oc describe pod <httpd-pod-name> | grep Image:`{{copy}}
 
 What is left is to expose the service to make the application externally available:
 
 `oc expose svc httpd`{{execute}}
 
-`curl -s http://httpd-simpleappication.127.0.0.1.nip.io | head -n 4`{{execute}}
+`curl -s httpd-simpleapplication.[[HOST_SUBDOMAIN]]-80-[[KATACODA_HOST]].environments.katacoda.com | head -n 4`{{execute}}
+
 

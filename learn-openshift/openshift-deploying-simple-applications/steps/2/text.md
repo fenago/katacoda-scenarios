@@ -1,10 +1,9 @@
 
-
-Among other methods, OpenShift allows for deploying applications directly from existing Docker images. Imagine that your development team has an in-house process of building Docker images from their applications—this way, you can deploy applications in an OpenShift environment by using these images without any modification, which greatly simplifies migration to OpenShift. It takes several steps to create all required OpenShift entities.
+OpenShift allows for deploying applications directly from existing Docker images. Imagine that your development team has an in-house process of building Docker images from their applications—this way, you can deploy applications in an OpenShift environment by using these images without any modification, which greatly simplifies migration to OpenShift. It takes several steps to create all required OpenShift entities.
 
 First, you have to create a pod, which runs a container deployed from the application's Docker image. Once the pod is up and running, you may need to create a service to have a persistent IP address and internal DNS record associated with it. The service allows your application to be accessible via a consistent address:port pair internally inside OpenShift. This may be enough for internal applications that don't require external accesses, like databases or key/value storage.
 
-If your application has to be available from the outside, you need toexposeit to make it available from an external network, like the internet. This process can be achieved by creating an OpenShift route.
+If your application has to be available from the outside, you need to expose it to make it available from an external network, like the internet. This process can be achieved by creating an OpenShift route.
 
 In short, the process looks like this:
 
@@ -14,7 +13,7 @@ In short, the process looks like this:
 
 In this scenario, we will be working with a simple httpd Docker container to demonstrate the application deployment process. We have chosen httpd because it is simple enough and it still allows us to focus on the main goal—the demonstration of OpenShift-related tasks.
 
-Creating a pod
+#### Creating a pod
 
 The httpd Docker image is available on Docker Hub. You may want to confirm this by running the following command:
 `docker search httpd`{{execute}}
@@ -89,4 +88,4 @@ And then use curl to query the IP from the output above:
 ```
 
 
-**Note:** This is the beginning of the default Apache welcome page. You may want to replace it for the production installation. This can be achieved by mounting a persistent volume at /var/www/html. For demo purposes, this output indicates that the application itself works and is accessible.
+**Note:** This is the beginning of the default Apache welcome page.

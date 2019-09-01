@@ -14,5 +14,5 @@ You don't have any projects. You can try to create a new project, by running
 ```
 
 Let's create a separate project for the lab as follows:
-`oc new-project simpleappication`{{execute}}
+`oc new-project simpleapplication`{{execute}}
 
