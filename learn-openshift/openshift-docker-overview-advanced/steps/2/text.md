@@ -5,7 +5,7 @@ Run the docker ps command to verify that the container is up and running:
 `docker ps`{{execute}}
 
 The container was created successfully. Run the verification command to check that example_user has access to the example database:
-`docker exec -it mariadb mysql -u example_user -p password example -e "show databases;"`{{execute}}
+`docker exec -it mariadb mysql -uexample_user -ppassword example -e "show databases;"`{{execute}}
 
 ```
 +--------------------+
