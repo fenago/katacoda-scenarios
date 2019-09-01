@@ -1,7 +1,3 @@
-
-Login in a separate terminal as system:admin and at some point you should be able to see that you have 4 pods running :
-`oc get po`{{execute}}
-
 Once you press Ctrl + C and benchmarking stops, then after a while, the number of pods will go back to normal:
 `oc get po`{{execute}}
 

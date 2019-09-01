@@ -19,6 +19,7 @@ By default, all pods, except those for builds and deployments, use a default ser
 
 Use docker inspect to see what user is specified in the nginx image metadata:
 
+`docker run -d  --name=nginx nginx`{{execute}}
 
 `docker inspect nginx`{{execute}}
 

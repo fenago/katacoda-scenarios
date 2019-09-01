@@ -9,6 +9,8 @@ Now, we have to simulate a large number of user requests to our pods to increase
 ... httpd-advanced.2886795307-80-kitek02.environments.katacoda.com ...
 ```
 
+**Note:** Please wait for few seconds for the pods to be runnin before running following command.
+
 At this point, we have everything we need, so let's start simulating CPU load with the ab Apache benchmarking utility:
 `ab -c 100 -n 10000000 -H 'Host: httpd-advanced.[[HOST_SUBDOMAIN]]-80-[[KATACODA_HOST]].environments.katacoda.com' http://127.0.0.1/`{{execute}}
 
@@ -28,6 +30,3 @@ Percentage of the requests served within a certain time (ms)
   99% 200
  100% 528 (longest request)
 ```
-
-
-When httpd DeploymentConfig is scaled up, you can just press Ctrl+C to stop generating the traffic, as is indicated by ^C in the output above.

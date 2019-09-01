@@ -3,10 +3,13 @@ A user is any human actor that can make requests to the OpenShift API to access 
 To support multiple identity providers, OpenShift relies on the concept of identities serving as a bridge between users and identity providers. By default, a new user and identity are created upon the first login.
 
 
-Go to https://172.24.0.11:8443 in your web browser and you will see the login page:
+Go to Openshift Web console by clicking `Dashboard` tab located next to terminal and you will see the login page:
 
 
-Log in via browser using the username alice and the password supersecret, and observe that the user was created using CLI:
+Log in via browser using the following credentials and observe that the user was created using CLI:
+
+* Username: **alice**
+* Password: **1234**
 
 `oc get user`{{execute}}
 
@@ -16,20 +19,13 @@ alice bf11471e-47a8-11e8-8dee-525400daa710  Alice Springs   LDAP:uid=alice,cn=us
 ```
 
 You can also see that an identity was created as well and mapped to the user:
-
 `oc get identity`{{execute}}
 
 
 #### Authentication
-The term authentication refers to the process of validating one's identity. Usually, users aren't created in OpenShift itself, but provided by an external entity, such as the LDAP server or GitHub. The only part where OpenShift steps in is authorization—determining roles and, therefore, permissions for a user. OpenShift supports integration with various identity management solutions used in corporate environments, such as FreeIPA/Identity Management, Active Directory, GitHub, Gitlab, OpenStack Keystone, and OpenID. For the purpose of brevity, we will only discuss the most commonly used ones, but you can refer to https://docs.openshift.org/latest/install_config/configuring_authentication.html for the complete documentation.
+The term authentication refers to the process of validating one's identity. Usually, users aren't created in OpenShift itself, but provided by an external entity, such as the LDAP server or GitHub. The only part where OpenShift steps in is authorization—determining roles and, therefore, permissions for a user. OpenShift supports integration with various identity management solutions used in corporate environments, such as FreeIPA/Identity Management, Active Directory, GitHub, Gitlab, OpenStack Keystone, and OpenID.
 
-Users and identities
-A user is any human actor that can make requests to the OpenShift API to access resources and perform actions. Users are typically created in an external identity provider, usually a corporate identity management solution such as Lightweight Directory Access Protocol (LDAP) or Active Directory.
-
-To support multiple identity providers, OpenShift relies on the concept of identities serving as a bridge between users and identity providers. By default, a new user and identity are created upon the first login. There are four ways to map users to identities:
-
-
-
+There are four ways to map users to identities:
 
 Method | Description
 --- | ---
