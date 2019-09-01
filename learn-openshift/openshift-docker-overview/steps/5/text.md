@@ -18,7 +18,7 @@ Option -i (--interactive) allows you to run a Docker without dropping inside the
 `docker exec -it backgroundcontainer /bin/bash`{{execute}}
 
 
-To exit the container console, just type `exit`{{execute}} or press Ctrl + D.
+To exit the container console, just type `exit`{{execute}} or press `Ctrl` + `D`.
 
 #### Starting and stopping containers
 We can also stop and start running containers by running docker stop and docker start commands:

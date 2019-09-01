@@ -1,7 +1,7 @@
 In this step, we will run a container from the image we pulled from Docker Hub or a private registry in the previous chapter. We are going to use the docker run command to run a container. Before we do that, let's check if we have any containers running already by using the docker ps command:
 `docker ps`{{execute}}
 
-Run a container with the docker run command:
+Run a container with the docker run command. Press `Ctrl` + `C` to kill the container.
 `docker run --name=mycontainer httpd`{{execute}} 
 
 The container is running, but we cannot leave the terminal and continue working in the foreground. And the only way we can escape it is by sending a TERM signal (Ctrl + C) and killing it.
@@ -21,8 +21,6 @@ There are a few things to note here. The STATUS field says that container mycont
 - We specified a container name.
 - You can, of course, specify the full ID.
 - The logs command will output the entire logs of the container.
-
-Press `Ctrl` + `C` to exit the container logs.
 
 The last message says caught SIGTERM, shutting down. It happened after we pressed Ctrl + C. In order to run a container in background mode, we can use the -d option with the docker run command:
 `docker run --name=backgroundcontainer -d httpd`{{execute}}

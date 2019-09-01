@@ -27,6 +27,7 @@ Create a new database and verify the existence of this new DB:
 
 `docker exec -it mariadb mysql -uroot -ppassword -e "show databases;"`{{execute}}
 
+```
 +--------------------+
 | Database           |
 +--------------------+
@@ -35,6 +36,7 @@ Create a new database and verify the existence of this new DB:
 | performance_schema |
 | persistent         |
 +--------------------+
+```
 
 Verify that there is new data in the /mnt/data directory created by the mariadb container. This is how we make the data persistent:
 

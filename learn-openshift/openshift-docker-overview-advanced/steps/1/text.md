@@ -27,4 +27,5 @@ error: database is uninitialized and password option is not specified
 ```
 
 You need to specify one of `MYSQL_ROOT_PASSWORD`, `MYSQL_ALLOW_EMPTY_PASSWORD` and `MYSQL_RANDOM_ROOT_PASSWORD`
+
 The docker run command failed because the MariaDB image initial startup script was not able to find the required variables. This script expects us to have at least the MariaDB root password to start a database server. 

@@ -26,6 +26,5 @@ Now we want to check the images available on our local server. To do this, we ca
 If we downloaded a wrong image, we can always delete it from the local server by using the docker rmi command: ReMove Image (RMI). In our case, we have two versions of the same image, so we can specify a tag for the image we want to delete:
 `docker rmi httpd:2.2.29`{{execute}} 
 
-
+The output of the preceding command will not list `httpd:2.2.29` :
 `docker images`{{execute}} 
-The output of the preceding command will be as shown in the following screenshot:
