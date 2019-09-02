@@ -1,0 +1,16 @@
+{
+  "title": "Mastering Ethereum",
+  "description": "Introduction to Mastering Ethereum",
+  "courses": [
+    {
+      "course_id": "ethereum-virtual-machine",
+      "title": "Ethereum Virtual Machine (EVM)",
+      "description": ""
+    },
+    {
+      "course_id": "mastering-dApps",
+      "title": "Mastering dApps",
+      "description": ""
+    }
+  ]
+}
