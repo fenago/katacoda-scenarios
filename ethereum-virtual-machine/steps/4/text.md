@@ -30,8 +30,10 @@ Then, we have 55, which is a STORE instruction that writes uint256 permanently t
 
 ```
 uint256 myNumber = 3;
-This is equivalent to the following:
 
+```
+
+This is equivalent to the following:
 ```
 6003600055
 ```
