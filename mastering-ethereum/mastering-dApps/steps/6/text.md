@@ -13,4 +13,4 @@ Then, run it for your distribution folder:
 
 Click on dApp located next to terminal  to see your dApp project live
 
-**Note:** You can also access dApp by visiting `[[HOST_SUBDOMAIN]]-8080-[[KATACODA_HOST]].environments.katacoda.com` on your browser.
+**Note:** You can also access dApp by visiting [this](https://[[HOST_SUBDOMAIN]]-8080-[[KATACODA_HOST]].environments.katacoda.com/) on your browser.
