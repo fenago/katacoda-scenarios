@@ -1,3 +1,5 @@
+Let's install all the required node package in package.json by running: `npm install`{{execute}}
+
 Finally, you can compile those files with the following, where -p means production:
 `webpack -p`{{execute}}
 
@@ -11,4 +13,4 @@ Then, run it for your distribution folder:
 
 Click on dApp located next to terminal  to see your dApp project live
 
-**Note:** You can also access dApp by visiting [[HOST_SUBDOMAIN]]-8080-[[KATACODA_HOST]].environments.katacoda.com on your browser.
+**Note:** You can also access dApp by visiting `[[HOST_SUBDOMAIN]]-8080-[[KATACODA_HOST]].environments.katacoda.com` on your browser.

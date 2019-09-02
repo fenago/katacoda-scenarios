@@ -7,4 +7,4 @@ Now, move in the directory which contains the sample application
 `cd mastering-ethereum/Chapter05/dapp-master/dapp-master`{{execute}}
 
 **Note:**
-Click **IDE Editor** tab to open Visual Studio and open solution explorer and navigate to mastering-ethereum/Chapter05/dapp-master/dapp-master folder to view files.
+Click **IDE Editor** tab to open Visual Studio and open solution explorer and navigate to `mastering-ethereum/Chapter05/dapp-master/dapp-master` folder to view files.

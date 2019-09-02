@@ -24,9 +24,7 @@ module.exports = {
 ```
 
 Module exports is the export object that's used in node.js projects. It contains the rules array, where you indicate which files must be passed through which compilers, in this case, babel-loader. The entry and output properties define where our files will be generated after combining them. Amplify the webpack configuration file with some additional information for defining the HTML resulting file; this is required to generate a valid HTML page automatically with your JavaScript files bundled together. Install the following loaders:
-
-```
-npm i -S html-webpack-plugin html-loader
+`npm i -S html-webpack-plugin html-loader`{{execute}}
 
 Update your webpack configuration like so:
 

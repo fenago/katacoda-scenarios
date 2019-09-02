@@ -1,3 +1,3 @@
-Welcome to your Hyperledger Lab Exercise!
+Welcome to your Mastering Ethereum Lab Exercise!
 
-In this Lab we will learn about cryptogen utility.
+In this Lab we will look into dApp.
