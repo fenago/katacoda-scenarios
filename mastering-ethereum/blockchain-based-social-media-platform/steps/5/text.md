@@ -6,7 +6,10 @@ Set up the required imports for any React project plus the css file that we can 
 import React from 'react'
 import ReactDOM from 'react-dom'
 import './index.css'
+```
+
 Set up the constructor with some dummy data to see how the final application will look once we populate it with variables from the smart contract:
+
 ```
 class Main extends React.Component {
     constructor() {
@@ -30,7 +33,10 @@ class Main extends React.Component {
             displaySubscribeId: '',
         }
     }
+```
+
 Create the render() function with the ReactDOM render:
+
 ```
     render() {
         return (
@@ -41,4 +47,6 @@ Create the render() function with the ReactDOM render:
 }
 
 ReactDOM.render(<Main />, document.querySelector('#root'))
+```
+
 As you can see, the state of our application contains the content object with an Ethereum address as the author of that piece, the message, the hashtags, and the time. We may later change that, but for now it's good enough. We also added two arrays, which contain the top hashtags and the followed tags for this particular user. Those display subscribe variables are a necessary evil to display a subscribe button every time a user hovers a hashtag so that they have the choice to subscribe to improve interactivity of the dApp. 

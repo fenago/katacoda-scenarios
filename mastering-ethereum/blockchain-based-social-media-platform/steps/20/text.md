@@ -15,6 +15,8 @@ async setup() {
     })
     await this.setState({contract, user})
 }
+```
+
 You'll also have to update your render() function for when you don't have any top hashtags, since you just deployed your smart contract. We'll get the content from another function named getContent():
 
 ```
@@ -43,3 +45,5 @@ render() {
         </div>
     )
 }
+
+```

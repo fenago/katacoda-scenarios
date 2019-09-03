@@ -13,4 +13,5 @@ Now, move in the directory which contains the sample application
 `cd mastering-ethereum/Chapter10/machine-learning-ethereum-master`{{execute}}
 
 **Note:**
-Click **IDE Editor** tab to open Visual Studio and open solution explorer and navigate to `mastering-ethereum/Chapter10/machine-learning-ethereum-master/linearRegression.py` to view py file.
+
+Click **IDE Editor** tab to open Visual Studio and open solution explorer and open `mastering-ethereum/Chapter10/machine-learning-ethereum-master/linearRegression.py` to view py file.

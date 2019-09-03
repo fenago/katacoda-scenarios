@@ -15,6 +15,9 @@ class Hashtag extends React.Component {
             isSubscribed: false,
         }
     }
+
+```
+
 Create the bytes32() and checkExistingSubscription() functions to check whether the current user is already following this particular hashtag:
 ```
     componentDidMount() {
@@ -33,6 +36,9 @@ Create the bytes32() and checkExistingSubscription() functions to check whether 
         const isSubscribed = await this.props.contract.methods.checkExistingSubscription(this.bytes32(this.props.hashtag)).call()
         this.setState({isSubscribed})
    }
+
+```
+
 The render() function is quite large, so we'll break it down into two main pieces: the functionality to detect whether a user is subscribed and the functionality to display the right buttons:
 ```
     render() {
@@ -56,7 +62,11 @@ The render() function is quite large, so we'll break it down into two main piece
                     displayUnsubscribe: false,
                 })
             }}>
+
+```
+
 Implement the subscribe or unsubscribe buttons that will be shown when the user hovers over the hashtag:
+
 ```
                 <a className="hashtag" href="#">#{this.props.hashtag}</a>
                 <span className="spacer"></span>
@@ -73,8 +83,8 @@ Implement the subscribe or unsubscribe buttons that will be shown when the user 
         )
     }
 }
- 
 
- 
+``` 
+
 
 The render() function displays the hashtag, which shows a subscribe or unsubscribe button when hovered. The checkExistingSubscription() function gets the state of a particular hashtag subscription to display the right type of button for the user that wishes to unsubscribe.

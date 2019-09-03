@@ -25,7 +25,7 @@ this.setup()
         }
     }
 }
- 
+```
 
 We created a new setup function because we can't use await on the constructor, given that it's not an asynchronous function. Inside it, we created a global web3js variable which is not called web3 (in lowercase), since MetaMask is already using that variable name and we risk using the wrong version. As you can see, the provider in this case is called ethereum, a global variable coming from MetaMask that includes all we need to start using web3; it's a new way of initializing a web3 instance that is compatible with older dApps because of some changes the MetaMask team made regarding security. Then we wait for the enable() function to get permission from the user to inject web3 because we don't want to expose user keys without the user's consent. If the user doesn't allow it, we show an error to let them know that we need them to grant permission for this dApp in order to work properly.
 
@@ -34,11 +34,15 @@ Set up the smart contract instance. Because we have Truffle installed, we can co
 truffle compile
 
 truffle deploy --network ropsten --reset
-You might get the following message:
 
 ```
+
+You might get the following message:
+
 "Unknown network "ropsten". See your Truffle configuration file for available networks."
-This means that you didn't set up the Truffle config file properly with the ropsten network. Install the wallet provider with npm i -S truffle-hdwallet-provider. Then modify truffle-config.js with the following code:
+This means that you didn't set up the Truffle config file properly with the ropsten network. Install the wallet provider with npm i -S truffle-hdwallet-provider. 
+
+Then modify truffle-config.js with the following code:
 ```
 const HDWalletProvider = require('truffle-hdwallet-provider')
 const infuraKey = "https://ropsten.infura.io/v3/8e12dd4433454738a522d9ea7ffcf2cc"
@@ -58,6 +62,8 @@ module.exports = {
     }
   }
 }
+```
+
 Tell Truffle to deploy your contract by creating a 2_deploy_contract.js filename inside your migrations/ folder with the following code:
 ```
 const SocialMedia = artifacts.require("./SocialMedia.sol")
@@ -65,8 +71,12 @@ const SocialMedia = artifacts.require("./SocialMedia.sol")
 module.exports = function(deployer) {
   deployer.deploy(SocialMedia);
 }
+```
+
 As you can see, we only have the minimal configuration parameters so keep it clean. Create a .secret file in your project folder and paste your Ethereum seed phrase, which you can get by resetting MetaMask or installing it in another browser if you are worried about making your seed public. That seed phrase will be used by Truffle to deploy the contracts, so be sure to have enough ropsten Ether in your first account. Then run truffle deploy --network ropsten --reset again.
+
 Update your setup function with the following to create a contract instance:
+
 ```
 async setup() {
     window.web3js = new Web3Js(ethereum)
@@ -81,4 +91,6 @@ async setup() {
     })
     await this.setState({contract, user})
 }
+```
+
 We've set up the user account in the app's state to have easy access whenever we need it.

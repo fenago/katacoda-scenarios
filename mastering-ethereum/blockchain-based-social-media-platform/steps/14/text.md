@@ -2,6 +2,7 @@ Documenting the future functions
 Those function are not clear enough yet, so why don't you write the NatSpec documentation about each one of them? It's a tedious process but you'll thank yourself for it since it will remind you of what you're doing while coding. Here is my version with the included documentation:
 
 Start with the add content, subscribe, and unsubscribe functions:
+
 ```
 /// @notice To add new content to the social media dApp. If no hashtags are sent, the content is added to the #general hashtag list.
 /// @param _content The string of content
@@ -30,6 +31,7 @@ function getFollowedHashtags() public view returns(bytes32[] memory) {}
 ```
 
 The getter functions by ID. We need them to return the struct variables broken down into individual pieces:
+
 ```
 /// @notice To get the contents for a particular hashtag. It returns the ids because we can't return arrays of strings and we can't return structs so the user has to manually make a new request for each piece of content using the function below.
 /// @param _hashtag The hashtag from which get content
@@ -41,7 +43,10 @@ function getContentIdsByHashtag(bytes32 _hashtag, uint256 _amount) public view r
 /// @param _id The id of the content
 /// @return Returns the id, author, date, content and hashtags for that piece of content
 function getContentById(uint256 _id) public view returns(uint256, address, uint256, string memory, bytes32[] memory) {}
+```
+
 The helper functions to sort hashtags and check existing subscriptions. These will be used when a user subscribes to update the score of the entire hashtags by ordering them, depending on the score:
+
 ```
 /// @notice Sorts the hashtags given their hashtag score
 /// @return bytes32[] Returns the sorted array of hashtags

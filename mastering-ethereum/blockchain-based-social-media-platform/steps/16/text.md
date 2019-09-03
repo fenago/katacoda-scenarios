@@ -13,6 +13,8 @@ hashtagScore[_hashtag]++;
         hashtags = sortHashtagsByScore();
     }
 }
+```
+
 Then we have the unsubscribe function, which reduces the hashtag value because it's becoming less relevant:
 
 ```
@@ -30,6 +32,8 @@ hashtagScore[_hashtag]--;
         }
     }
 }
+```
+
 The subcribeToHashtag function simply checks whether the user is subscribed already to add that new topic to their list of interests, while also sorting the hashtags since the score of that particular one has been increased. In our smart contract, hashtags are valued by use. The more people that subscribe to them and the more content that gets created for that particular tag, the higher its ranking will be.
 
 The unsubscribeToHashtag function loops through all the hashtags for that particular user and removes the selected one from their list. This loop shouldn't cause any gas problems since we don't expect people to follow hundreds of thousands of topics. Regardless, the right thing to do is to limit the number of subscribable tags to avoid gas errors. I'll leave that up to you. Finally, we reduce the score of that hashtag and we sort all of them with the changes.
