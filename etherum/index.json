@@ -36,12 +36,12 @@
     "config.yaml"
   ],
   "environment": {
-    "uilayout": "vscode",
+    "uilayout": "terminal",
     "showdashboard": true,
     "dashboards": [{"name": "VS Code", "port": 23000}],
     "uimessage1": "\u001b[32mBrought to you by https://LearningVoyage.com\u001b[m\r\n"
   },
   "backend": {
-    "imageid": "vscode"
+    "imageid": "ubuntu"
   }
 }
