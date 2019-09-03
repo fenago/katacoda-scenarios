@@ -6,8 +6,6 @@ Geth, also known as Go Ethereum, is the most popular Ethereum implementation tha
 
 `sudo add-apt-repository -y ppa:ethereum/ethereum`{{execute}}
 
-`sudo apt-get update`{{execute}}
-
-`sudo apt-get install ethereum`{{execute}}
+`sudo apt-get update && yes | sudo apt-get install ethereum`{{execute}}
 
 **Note:** Please run all commands and wait for the them to complete, It will take around 5-8 minutes to complete.
