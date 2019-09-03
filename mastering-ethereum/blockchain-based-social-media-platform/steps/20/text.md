@@ -1,4 +1,3 @@
-Decentralizing your data
 To fully implement the smart contract, we have to take a look at each section of the website to update its contents with data from the smart contract. Let's go from top-left to bottom-right. In that order, the first thing we have to decentralize is the top hashtags sections, using the getTopHashtags() function:
 
 ```

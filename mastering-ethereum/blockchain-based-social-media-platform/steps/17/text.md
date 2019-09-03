@@ -1,4 +1,3 @@
-Implementing the getter functions
 Next, let's see the getter functions that we'll use to show data to our users. These functions don't cost any gas because they are reading data from the downloaded and synchronized blockchain, which is always available without depending on an internet connection. Let's take a look at the following steps:
 
 Create the getTopHashtags() function, which returns a list of names in bytes32 format to the user so that they can see which ones are trending. This is the main discovery system for new content:

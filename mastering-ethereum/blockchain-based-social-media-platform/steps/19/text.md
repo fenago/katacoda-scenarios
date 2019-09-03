@@ -1,4 +1,3 @@
-Setting up the smart contract instance
 The first thing that must be done when implementing a smart contract inside a React application is the contract instance so that we can start calling methods from that contract all over the decentralized application. We'll use the compiled contract provided by Truffle and the address of it. Let's perform the following steps:
 
 Import web3 into your project:
@@ -29,18 +28,9 @@ this.setup()
 
 We created a new setup function because we can't use await on the constructor, given that it's not an asynchronous function. Inside it, we created a global web3js variable which is not called web3 (in lowercase), since MetaMask is already using that variable name and we risk using the wrong version. As you can see, the provider in this case is called ethereum, a global variable coming from MetaMask that includes all we need to start using web3; it's a new way of initializing a web3 instance that is compatible with older dApps because of some changes the MetaMask team made regarding security. Then we wait for the enable() function to get permission from the user to inject web3 because we don't want to expose user keys without the user's consent. If the user doesn't allow it, we show an error to let them know that we need them to grant permission for this dApp in order to work properly.
 
-Set up the smart contract instance. Because we have Truffle installed, we can compile our smart contract to generate the JSON file that contains the ABI, which is required to use the application. Then we can deploy our contract to ropsten:
-```
-truffle compile
+Set up the smart contract instance. Because we have Truffle installed, we can compile our smart contract to generate the JSON file that contains the ABI, which is required to use the application.
 
-truffle deploy --network ropsten --reset
-
-```
-
-You might get the following message:
-
-"Unknown network "ropsten". See your Truffle configuration file for available networks."
-This means that you didn't set up the Truffle config file properly with the ropsten network. Install the wallet provider with npm i -S truffle-hdwallet-provider. 
+Install the wallet provider with `npm i -S truffle-hdwallet-provider`. 
 
 Then modify truffle-config.js with the following code:
 ```

@@ -1,4 +1,3 @@
-Setting up the data structures
 After doing the required planning, feel free to write the function signatures for all of the needed parts by performing the following steps:
 
 Define the variables that you'll use later on with structs and events first:

@@ -1,4 +1,3 @@
-Creating the hashtag getter
 We can now create a function to get the top hashtags and the followed hashtags from the smart contract when the page loads. We'll do it by retrieving the followed and top hashtags. Those will be shown to the user by looping through all of them until the interface is filled with data.
 
 Try to implement it yourself and see the following result once you're done:

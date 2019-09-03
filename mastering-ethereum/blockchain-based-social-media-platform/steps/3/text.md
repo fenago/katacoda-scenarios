@@ -1,4 +1,4 @@
-Creating the user interface
+
 The user interface for this particular project will be focused around content and hashtags since hashtags are the way users will discover new trending content. Users will be able to subscribe to particular hashtags to receive content from those topics on their feed.
 
 

@@ -1,4 +1,3 @@
-Implementing the adding content function
 The adding content function is the most complex in the dApp that we're building because we need to complete the following tasks:
 
 - Check whether the content given by the user is valid

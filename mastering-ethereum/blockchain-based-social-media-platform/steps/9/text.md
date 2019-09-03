@@ -1,5 +1,4 @@
-Improving the appearance
-I've also imported the index.css file, which includes grid components for displaying our application in the best way possible, with a clean structure that is easy to maintain:
+Open index.css file, which includes grid components for displaying our application in the best way possible, with a clean structure that is easy to maintain:
 
 Add the general styling to the main components of your application, such as the body and buttons, to make them look better:
 ```

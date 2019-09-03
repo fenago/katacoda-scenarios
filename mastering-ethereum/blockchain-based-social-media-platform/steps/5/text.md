@@ -1,4 +1,3 @@
-Setting up the initial structure
 Open the index.js file and start creating your user interface. First, I start with the constructor by creating some necessary variables that we'll use later on:
 
 Set up the required imports for any React project plus the css file that we can now import thanks to the style and css loaders:

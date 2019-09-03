@@ -1,4 +1,3 @@
-Creating the publishing functionality
 Publishing new pieces of content is a simple task that requires that we verify that all the inputs contain valid strings of text. Since we are storing hashtags in a bytes32 variable, we need to format the hashtags introduced by the user properly so that the smart contract is able to process them securely.
 
 Let's make the publish function work so that we can start generating content by performing the following steps:

@@ -1,4 +1,3 @@
-Documenting the future functions
 Those function are not clear enough yet, so why don't you write the NatSpec documentation about each one of them? It's a tedious process but you'll thank yourself for it since it will remind you of what you're doing while coding. Here is my version with the included documentation:
 
 Start with the add content, subscribe, and unsubscribe functions:

@@ -1,4 +1,3 @@
-Creating the hashtag component
 Each hashtag is a little machine that contains lots of logic to detect whether the user is subscribed. It may seem simple, but remember that we need to get the state of each hashtag for each user, which means that we have to execute a lot of requests that could slow our dApp's performance. Be clean when creating the function so that they run smoothly.
 
 We're using a new component named Hashtag, which is an HTML object that returns an interactive hashtag text that can be clicked to subscribe to it, or unsubscribe. This is the cleanest way of creating such functionality to reduce complexity:
