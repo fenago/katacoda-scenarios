@@ -8,8 +8,28 @@
       "description": ""
     },
     {
+      "course_id": "ethereum-protocol-implementations",
+      "title": "Ethereum protocol implementations",
+      "description": ""
+    },
+	{
+      "course_id": "ethereum-wallet",
+      "title": "Ethereum Wallets",
+      "description": ""
+    },
+    {
       "course_id": "mastering-dApps",
       "title": "Mastering dApps",
+      "description": ""
+    },
+	{
+      "course_id": "machine-learning-ethereum-blockchain",
+      "title": "Machine Learning on the Ethereum Blockchain",
+      "description": ""
+    },
+    {
+      "course_id": "blockchain-based-social-media-platform",
+      "title": "Creating a Blockchain-based Social Media Platform",
       "description": ""
     }
   ]
