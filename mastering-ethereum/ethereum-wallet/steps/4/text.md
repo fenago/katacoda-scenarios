@@ -2,8 +2,7 @@ MetaMask is another famous wallet that is mainly used as an intermediary wallet 
 
 What's interesting about this wallet is that it injects web3.js into whatever page you're examining, meaning that you can use any dApp as long as you have logged into MetaMask:
 
-![](https://github.com/fenago/katacoda-scenarios/raw/master/mastering-ethereum/ethereum-wallet/steps/2/account.JPG)
-
+![](https://github.com/fenago/katacoda-scenarios/raw/master/mastering-ethereum/ethereum-wallet/steps/4/account.JPG)
 
 Whenever you want to interact with the blockchain by making a transaction on a decentralized application, MetaMask will open a pop-up window, asking you how much it will cost you, with gas price included. Then, you'll be able to make the transaction straight from the browser.
 

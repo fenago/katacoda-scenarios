@@ -1,3 +1,3 @@
-Welcome to your Hyperledger Lab Exercise!
+Welcome to your Lab Exercise!
 
-In this Lab we will learn about cryptogen utility.
+In this Lab we will learn about Ethereum Wallets.
