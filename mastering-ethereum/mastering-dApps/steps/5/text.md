@@ -18,7 +18,7 @@ Create a new file inside src/ called index.html with this code:
 </html>
 ```
 
-The <div id="root"> object will be where our React project will start. With HTML, webpack, and babel set up, we can start creating the main react.js file that will be used in our project. Inside the src/ folder, create a file called index.jsx, which will contain our initial react.js file:
+The `<div id="root">` object will be where our React project will start. With HTML, webpack, and babel set up, we can start creating the main react.js file that will be used in our project. Inside the src/ folder, create a file called index.jsx, which will contain our initial react.js file:
 
 ```
 import React from 'react'

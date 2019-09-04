@@ -1,8 +1,6 @@
 in this step, we'll set up the basic file structure so that we have a clean environment to work with for all of our desired dApps. You'll be able to use it over and over as long as you need to, because it has all the dependencies set up.
 
-First, let's create a folder called dapp, which will contain all of our files. Then, with your Terminal or command line, execute truffle init to set up Truffle, making sure that you're inside the dapp folder.
-
-After installing Truffle in that folder, run npm init to set up your package.json file of  Node.js that will allow you to install npm plugins. It will ask you for some general information about your project; simply fill it in as you please or press Enter to leave them empty, which is what I usually do unless I'm planning on distributing that project for others to use.
+First, we have a folder called dapp, which will contain all of our files.
 
 You'll see that you have the following folders created:
 
