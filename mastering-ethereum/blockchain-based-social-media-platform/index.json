@@ -110,8 +110,6 @@
   },
   "environment": {
     "uilayout": "vscode",
-    "showdashboard": true,
-    "dashboards": [{"name": "dApp", "port": 8080}],
     "uimessage1": "\u001b[32mBrought to you by https://LearningVoyage.com\u001b[m\r\n"
   },
   "backend": {
