@@ -2,7 +2,7 @@ What we have to do now is install the essential packages that we'll need for usi
 `npm i -g npm@latest`{{execute}}
 
 Go to your dapp project folder if you haven't done so already and install webpack with the following:
-`npm i -S webpack webpack-cli`{{execute}}
+`npm i -g webpack webpack-cli`{{execute}}
 
 #### Webpack
 Webpack is a utility that takes all of your JavaScript files and combines them into one single, gigantic, easy-to-manage JavaScript file so that you can optimize development times.
