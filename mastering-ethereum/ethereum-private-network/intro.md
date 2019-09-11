@@ -1,3 +1,3 @@
 Welcome to your Lab Exercise!
 
-In this Lab we will learn about Ethereum protocol implementations.
+In this Lab we will create private Ethereum network.

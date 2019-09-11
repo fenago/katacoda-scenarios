@@ -5,36 +5,28 @@
   "time": "15 minutes",
   "details": {
     "steps": [{
-      "title": "Ethereum",
+      "title": "Installing Geth & Puppeth",
       "text": "steps/1/text.md"
     },
     {
-      "title": "Understanding Geth",
+      "title": "Creating accounts",
       "text": "steps/2/text.md"
     },    
 	{
-      "title": "Creating accounts",
+      "title": "Puppeth",
       "text": "steps/3/text.md"
     },
 	{
-      "title": "Update accounts",
+      "title": "Puppeth",
       "text": "steps/4/text.md"
     },
   {
-      "title": "Downloading the blockchain",
+      "title": "Genesis",
       "text": "steps/5/text.md"
     },
     {
-        "title": "Mining with your CPU",
+        "title": "Initialize Blockchain",
         "text": "steps/6/text.md"
-  },
-    {
-        "title": "Parity",
-        "text": "steps/7/text.md"
-  },
-  {
-      "title": "Creating accounts",
-      "text": "steps/8/text.md"
   }],
     "intro": {
       "text": "intro.md",
@@ -45,9 +37,8 @@
     }
   },
   "environment": {
-    "uilayout": "terminal-iframe",
-    "showdashboard": true,
-    "dashboards": [{"name": "Parity Dashboard", "port": 8080}],
+    "uilayout": "terminal",
+    "showdashboard": false,
     "uimessage1": "\u001b[32mBrought to you by https://LearningVoyage.com\u001b[m\r\n"
   },
   "backend": {
