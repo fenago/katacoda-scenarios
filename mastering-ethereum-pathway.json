@@ -13,6 +13,11 @@
       "description": ""
     },
 	{
+      "course_id": "ethereum-private-ethereum-network",
+      "title": "Private Ethereum Network",
+      "description": ""
+    },
+	{
       "course_id": "ethereum-wallet",
       "title": "Ethereum Wallets",
       "description": ""
