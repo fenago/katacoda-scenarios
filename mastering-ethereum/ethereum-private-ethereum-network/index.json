@@ -44,9 +44,6 @@
       "text": "finish.md"
     }
   },
-  "files": [
-    "config.yaml"
-  ],
   "environment": {
     "uilayout": "terminal-iframe",
     "showdashboard": true,
