@@ -1,6 +1,6 @@
 Then, it will ask you where you want to export the genesis files to:
 
-![](https://github.com/fenago/katacoda-scenarios/raw/master/mastering-ethereum/ethereum-private-ethereum-network/steps/5/save.JPG)
+![](https://github.com/fenago/katacoda-scenarios/raw/master/mastering-ethereum/ethereum-private-network/steps/5/save.JPG)
 
 
 You'll see your files in the selected folder. If you didn't choose one, the files will be created in your user folder or wherever your Terminal's location is at that moment. These are the files that you'll find:
