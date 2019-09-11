@@ -3,7 +3,7 @@
   "description": "Introduction to Mastering Ethereum",
   "courses": [
     {
-      "course_id": "ethereum-private-ethereum-network",
+      "course_id": "ethereum-virtual-machine",
       "title": "Ethereum Virtual Machine (EVM)",
       "description": ""
     },
