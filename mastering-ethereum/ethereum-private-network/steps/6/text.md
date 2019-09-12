@@ -1,4 +1,5 @@
- To initialize your blockchain, execute the following command:
+Press `Ctrl` + `C` to exit puppeth command prompt. To initialize your blockchain, execute the following command:
+
 `geth --nousb --datadir .ethereum/ init new.json`{{execute}}
 
 **Note:** You will need to update filenme in above command if you saved it with a differene name.

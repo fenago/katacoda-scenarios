@@ -27,6 +27,10 @@
     {
         "title": "Initialize Blockchain",
         "text": "steps/6/text.md"
+  },
+  {
+      "title": "Remix IDE",
+      "text": "steps/7/text.md"
   }],
     "intro": {
       "text": "intro.md",
