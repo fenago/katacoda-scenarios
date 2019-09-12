@@ -28,6 +28,11 @@
       "description": ""
     },
 	{
+      "course_id": "ethereum-deployment-testnet",
+      "title": "Deployment on Testnet",
+      "description": ""
+    },
+	{
       "course_id": "machine-learning-ethereum-blockchain",
       "title": "Machine Learning on the Ethereum Blockchain",
       "description": ""
