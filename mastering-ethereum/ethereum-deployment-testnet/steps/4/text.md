@@ -2,12 +2,10 @@ To get Ether in this network, you must go to https://faucet.rinkeby.io or https:
 
 The process is a bit confusing, so here's the breakdown in steps:
 
-Copy your Rinkeby Ethereum address by opening MetaMask and clicking on your address:
+#### Install Metamask
+Install the metamask chrome extension and set up a new wallet.
 
-
-Install the metmask chrome extension and set up a new wallet.
-
-![](https://github.com/fenago/katacoda-scenarios/raw/master/mastering-ethereum/ethereum-deployment-testnet/steps/4/metmask.JPG)
+![](https://github.com/fenago/katacoda-scenarios/raw/master/mastering-ethereum/ethereum-deployment-testnet/steps/4/metamask.JPG)
 
 
 Copy your Rinkeby Ethereum address by opening MetaMask and clicking on your address:
