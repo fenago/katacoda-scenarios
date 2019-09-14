@@ -9,20 +9,20 @@ Use the function app settings as specified in the table below the image.
 
 Setting	| Suggested value | Description
 --- | --- | ---
-`App name	` | Globally unique name	*Name that identifies your new function app.*
+`App name	` | `Globally unique name`	*Name that identifies your new function app.*
 `Subscription` |	`Your subscription` |	*The subscription under which this new function app is created.*
 `Resource Group` |	`myResourceGroup` |	*Name for the new resource group in which to create your function app.*
-`OS` |	`Windows` |	The language options available depend on the OS of the function app. For example, Python requires Linux.*
+`OS` |	`Windows` |	*The language options available depend on the OS of the function app. For example, Python requires Linux.*
 `Hosting plan` |	`Consumption plan` |	*Hosting plan that defines how resources are allocated to your function app.*
-`Location` |	`West Europe` |	Choose a region near you or near other services your functions access.*
-`Runtime stack` |	`Preferred language` |	*Choose a runtime that supports your favorite function programming language. Choose .NET for C# and F# functions.
-`Storage` |	`Globally unique name` |	*Create a storage account used by your function app. 
+`Location` |	`West Europe` |	*Choose a region near you or near other services your functions access.*
+`Runtime stack` |	`Preferred language` |	*Choose a runtime that supports your favorite function programming language. Choose .NET for C# and F# functions.*
+`Storage` |	`Globally unique name` |	*Create a storage account used by your function app.*
 `Application Insights` |	`Default` |	*Creates an Application Insights resource of the same App name in the nearest supported region. 
 
 
 
 #### Create function app
-Select Create to provision and deploy the function app.
+Select **Create** to provision and deploy the function app.
 
 Select the Notification icon in the upper-right corner of the portal and watch for the Deployment succeeded message.
 

@@ -5,7 +5,7 @@
   "time": "15 minutes",
   "details": {
     "steps": [{
-      "title": "Prerequisites",
+      "title": "Azure Account",
       "text": "steps/1/text.md"
     },
     {
@@ -17,7 +17,7 @@
       "text": "steps/3/text.md"
     },
 	{
-      "title": "Maven Project",
+      "title": "Configure New Trigger",
       "text": "steps/4/text.md"
     },
 	{
