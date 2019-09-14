@@ -1,0 +1,27 @@
+Update function to run predictions
+Open classify/__init__.py in your editor. Import the predict library that you added to the same folder earlier. Add the following import statements below the other imports already in the file.
+
+Python
+
+Copy
+import json
+from .predict import predict_image_from_url
+Replace the function template code with the following.
+
+Python
+
+Copy
+def main(req: func.HttpRequest) -> func.HttpResponse:
+    image_url = req.params.get('img')
+    results = predict_image_from_url(image_url)
+
+    headers = {
+        "Content-type": "application/json",
+        "Access-Control-Allow-Origin": "*"
+    }
+    return func.HttpResponse(json.dumps(results), headers = headers)
+Make sure to save your changes.
+
+This function receives an image URL in a query string parameter named img. It calls predict_image_from_url from the helper library that downloads the image and returns a prediction using the TensorFlow model. The function then returns an HTTP response with the results.
+
+Since the HTTP endpoint is called by a web page hosted on another domain, the HTTP response includes an Access-Control-Allow-Origin header to satisfy the browser's Cross-Origin Resource Sharing (CORS) requirements.

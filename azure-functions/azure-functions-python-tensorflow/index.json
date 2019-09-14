@@ -1,0 +1,83 @@
+{
+  "title": "Apply machine learning models in Azure Functions with Python and TensorFlow",
+  "description": "Introduction to Azure Functions",
+  "difficulty": "Intermediate",
+  "time": "15 minutes",
+  "details": {
+    "steps": [{
+      "title": "Java Azure Functions",
+      "text": "steps/1/text.md"
+    },
+    {
+      "title": "Prerequisites",
+      "text": "steps/2/text.md"
+    },    
+	{
+      "title": "Clone the tutorial repository",
+      "text": "steps/3/text.md"
+    },
+	{
+      "title": "Create and activate a Python virtual environment",
+      "text": "steps/4/text.md"
+    },
+	{
+      "title": "Java Code",
+      "text": "steps/5/text.md"
+    },
+	{
+      "title": "Enable extension bundles",
+      "text": "steps/6/text.md"
+    },
+    {
+        "title": "Maven Build",
+        "text": "steps/7/text.md"
+  },
+	{
+      "title": "Run the function locally",
+      "text": "steps/8/text.md"
+  },
+	{
+      "title": "Make Changes",
+      "text": "steps/9/text.md"
+  },
+	{
+      "title": "",
+      "text": "steps/10/text.md"
+  },
+	{
+      "title": "",
+      "text": "steps/11/text.md"
+  },
+	{
+      "title": "",
+      "text": "steps/12/text.md"
+  },
+	{
+      "title": "",
+      "text": "steps/13/text.md"
+  },
+	{
+      "title": "",
+      "text": "steps/14/text.md"
+  },
+	{
+      "title": "",
+      "text": "steps/15/text.md"
+  }],
+    "intro": {
+      "code": "set-env.sh",
+      "text": "intro.md",
+      "credits": ""
+    },
+    "finish": {
+      "text": "finish.md"
+    }
+  },
+  "environment": {
+    "uilayout": "vscode",
+    "uimessage1": "\u001b[32mBrought to you by https://LearningVoyage.com\u001b[m\r\n"
+  },
+  "backend": {
+    "imageid": "vscode"
+  }
+}

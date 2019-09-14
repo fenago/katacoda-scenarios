@@ -17,7 +17,7 @@ When the deploy is complete, you see the URL you can use to access your Azure fu
 [INFO] ------------------------------------------------------------------------
 ```
 
-Test the function app running on Azure using cURL. You'll need to change the URL from the sample below to match the deployed URL for your own function app from the previous step.
+Test the function app running on Azure using cURL. You'll need to change the URL from the sample below to match the deployed URL for your own function app.
 
 **Note:**
 Make sure you set the Access rights to Anonymous. When you choose the default level of Function, you are required to present the function key in requests to access your function endpoint.
