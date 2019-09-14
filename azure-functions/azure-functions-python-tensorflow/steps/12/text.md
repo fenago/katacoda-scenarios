@@ -1,16 +1,14 @@
-Update function to run predictions
-Open classify/__init__.py in your editor. Import the predict library that you added to the same folder earlier. Add the following import statements below the other imports already in the file.
+Open **classify/__init__.py** in your vscode editor. Import the predict library that you added to the same folder earlier. Add the following import statements below the other imports already in the file.
 
-Python
 
-Copy
+<pre class="file" data-target="clipboard">
 import json
 from .predict import predict_image_from_url
+</pre>
+
 Replace the function template code with the following.
 
-Python
-
-Copy
+<pre class="file" data-target="clipboard">
 def main(req: func.HttpRequest) -> func.HttpResponse:
     image_url = req.params.get('img')
     results = predict_image_from_url(image_url)
@@ -20,7 +18,7 @@ def main(req: func.HttpRequest) -> func.HttpResponse:
         "Access-Control-Allow-Origin": "*"
     }
     return func.HttpResponse(json.dumps(results), headers = headers)
-Make sure to save your changes.
+</pre>
 
 This function receives an image URL in a query string parameter named img. It calls predict_image_from_url from the helper library that downloads the image and returns a prediction using the TensorFlow model. The function then returns an HTTP response with the results.
 

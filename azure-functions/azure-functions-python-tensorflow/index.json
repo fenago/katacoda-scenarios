@@ -5,7 +5,7 @@
   "time": "15 minutes",
   "details": {
     "steps": [{
-      "title": "Java Azure Functions",
+      "title": "Python and TensorFlow",
       "text": "steps/1/text.md"
     },
     {
@@ -21,47 +21,47 @@
       "text": "steps/4/text.md"
     },
 	{
-      "title": "Java Code",
+      "title": "Create an Azure Functions project",
       "text": "steps/5/text.md"
     },
 	{
-      "title": "Enable extension bundles",
+      "title": "Create an HTTP function",
       "text": "steps/6/text.md"
     },
     {
-        "title": "Maven Build",
+        "title": "Run the function",
         "text": "steps/7/text.md"
   },
 	{
-      "title": "Run the function locally",
+      "title": "Import the TensorFlow model",
       "text": "steps/8/text.md"
   },
 	{
-      "title": "Make Changes",
+      "title": "Add the helper functions and dependencies",
       "text": "steps/9/text.md"
   },
 	{
-      "title": "",
+      "title": "Install Dependencies",
       "text": "steps/10/text.md"
   },
 	{
-      "title": "",
+      "title": "Caching the model in global variables",
       "text": "steps/11/text.md"
   },
 	{
-      "title": "",
+      "title": "Update function to run predictions",
       "text": "steps/12/text.md"
   },
 	{
-      "title": "",
+      "title": "Run the function app",
       "text": "steps/13/text.md"
   },
 	{
-      "title": "",
+      "title": "Run the web app",
       "text": "steps/14/text.md"
   },
 	{
-      "title": "",
+      "title": "Run the web app",
       "text": "steps/15/text.md"
   }],
     "intro": {

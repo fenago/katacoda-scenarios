@@ -1,9 +1,8 @@
-To begin, open a terminal and clone the following repository using Git:
+To begin, clone the following repository using Git:
 
+`git clone https://github.com/Azure-Samples/functions-python-tensorflow-tutorial.git`{{execute T1}}
 
-git clone https://github.com/Azure-Samples/functions-python-tensorflow-tutorial.git
-
-cd functions-python-tensorflow-tutorial
+`cd functions-python-tensorflow-tutorial`{{execute T1}}
 
 The repository contains a few folders.
 - **start:** This is your working folder for the tutorial

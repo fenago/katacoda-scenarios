@@ -7,7 +7,6 @@ To create Azure Functions in Python, you need to install a few tools.
 #### Install Core Tools
 Run following command to install Azure functions core tools.
 `npm install -g azure-functions-core-tools`{{execute T1}}
- apt-get install python3-venv
 
 #### Python
 In this environment you can check that Python is already installed by running `python --version`{{execute T1}}
