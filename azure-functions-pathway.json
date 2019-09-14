@@ -1,0 +1,36 @@
+{
+  "title": "Azure Functions",
+  "description": "Introduction to Azure Functions",
+  "courses": [
+    {
+      "course_id": "azure-functions-azure-cli",
+      "title": "Create function from command line",
+      "description": ""
+    },
+    {
+      "course_id": "azure-functions-java",
+      "title": "Java to create and publish a function to Azure Functions",
+      "description": ""
+    },
+    {
+      "course_id": "azure-functions-python",
+      "title": "Create an HTTP triggered python function",
+      "description": ""
+    },
+    {
+      "course_id": "azure-functions-python-tensorflow",
+      "title": "Apply machine learning models in Azure Functions with Python and TensorFlow",
+      "description": ""
+    },
+	{
+      "course_id": "azure-functions-linux",
+      "title": "Create function hosted on Linux using Core Tools and the Azure CLI",
+      "description": ""
+    },
+	{
+      "course_id": "azure-functions-timer",
+      "title": "Create a timer based function in Azure",
+      "description": ""
+    }
+  ]
+}
