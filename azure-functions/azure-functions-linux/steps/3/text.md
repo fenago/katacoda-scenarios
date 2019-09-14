@@ -1,10 +1,18 @@
-In an empty folder, run the following command to generate the Functions project from a Maven archetype.
+Run the following command from the command line to create a function app project in the MyFunctionProj folder of the current local directory. A GitHub repo is also created in MyFunctionProj.
 
-```mvn archetype:generate \
-    -DarchetypeGroupId=com.microsoft.azure \
-	-DarchetypeArtifactId=azure-functions-archetype```{{execute T1}}
+command
 
+Copy
+func init MyFunctionProj
+When prompted, select a worker runtime from the following language choices:
 
-Maven will ask you for values needed to finish generating the project. For `groupId`, `artifactId`, and `version` values. The appName value must be unique across Azure, so Maven generates an app name based on the previously entered artifactId as a default. The packageName value determines the Java package for the generated function code.
+dotnet: creates a .NET class library project (.csproj).
+node: creates a Node.js-based project. Choose either javascript or typescript.
+python: for a Python project, please instead complete Create an HTTP triggered function in Azure.
+powershell: for a PowerShell project, please instead complete Create your first PowerShell function in Azure.
+After the project is created, use the following command to navigate to the new MyFunctionProj project folder.
 
-**Note:** We will provide values and finish generating the project in the next step.
+command
+
+Copy
+cd MyFunctionProj

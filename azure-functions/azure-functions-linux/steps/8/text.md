@@ -1,22 +1,5 @@
-You see this output when the function is running locally on your system and ready to respond to HTTP requests:
+Functions uses a general-purpose account in Azure Storage to maintain state and other information about your functions. Create a general-purpose storage account in the resource group you created by using the az storage account create command.
 
-#### Output
-```
-Listening on http://localhost:7071
-Hit CTRL-C to exit...
+In the following command, substitute a globally unique storage account name where you see the <storage_name> placeholder. Storage account names must be between 3 and 24 characters in length and may contain numbers and lowercase letters only.
 
-Http Functions:
-
-   hello: http://localhost:7071/api/HttpTrigger-Java
-Trigger the function from the command line using curl in a new terminal window:
-```
-
-#### CURL
-`curl -w "\n" http://localhost:7071/api/HttpTrigger-Java -d LocalFunction`{{execute T1}}
-
-
-```
-Hello LocalFunction!
-```
-
-Use `Ctrl` + `C` in the terminal to stop the function code.
+az storage account create --name <storage_name> --location westeurope --resource-group myResourceGroup --sku Standard_LRS

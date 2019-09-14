@@ -1,13 +1,10 @@
-The easiest way to install binding extensions is to enable extension bundles. When you enable bundles, a predefined set of extension packages is automatically installed.
+The following command starts the function app. The app runs using the same Azure Functions runtime that is in Azure. The start command varies, depending on your project language.
 
-To enable extension bundles, open the `host.json` file in vscode editor and update its contents to match the following code:
+C#
+command
 
-<pre class="file" data-target="clipboard">
-{
-    "version": "2.0",
-    "extensionBundle": {
-        "id": "Microsoft.Azure.Functions.ExtensionBundle",
-        "version": "[1.*, 2.0.0)"
-    }
-}
-</pre>
+Copy
+func start --build
+
+
+Now that you have run your function locally, you can create the function app and other required resources in Azure.

@@ -1,18 +1,13 @@
-The `com.fabrikam.functions` and `fabrikam-functions` identifiers below are used as an example and to make later steps in this quickstart easier to read.
+The easiest way to install binding extensions is to enable extension bundles. When you enable bundles, a predefined set of extension packages is automatically installed.
 
-**groupId**: `com.fabrikam.functions`{{copy}}
+To enable extension bundles, open the `host.json` file in vscode editor and update its contents to match the following code:
 
-**artifactId**: `fabrikam-functions`{{copy}}
-
-```
-Define value for property 'groupId' (should match expression '[A-Za-z0-9_\-\.]+'): com.fabrikam.functions
-Define value for property 'artifactId' (should match expression '[A-Za-z0-9_\-\.]+'): fabrikam-functions
-Define value for property 'version' 1.0-SNAPSHOT : 
-Define value for property 'package': com.fabrikam.functions
-Define value for property 'appName' fabrikam-functions-20170927220323382:
-Define value for property 'appRegion' westus: :
-Define value for property 'resourceGroup' java-functions-group: :
-Confirm properties configuration: Y
-```
-
-
+<pre class="file" data-target="clipboard">
+{
+    "version": "2.0",
+    "extensionBundle": {
+        "id": "Microsoft.Azure.Functions.ExtensionBundle",
+        "version": "[1.*, 2.0.0)"
+    }
+}
+</pre>
