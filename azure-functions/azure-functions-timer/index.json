@@ -5,11 +5,11 @@
   "time": "15 minutes",
   "details": {
     "steps": [{
-      "title": "Java Azure Functions",
+      "title": "Prerequisites",
       "text": "steps/1/text.md"
     },
     {
-      "title": "Prerequisites",
+      "title": "Create an Azure Function app",
       "text": "steps/2/text.md"
     },    
 	{
@@ -21,28 +21,12 @@
       "text": "steps/4/text.md"
     },
 	{
-      "title": "Java Code",
+      "title": "Update the timer schedule",
       "text": "steps/5/text.md"
     },
 	{
-      "title": "Enable extension bundles",
+      "title": "Clean up resources",
       "text": "steps/6/text.md"
-    },
-    {
-        "title": "Maven Build",
-        "text": "steps/7/text.md"
-  },
-	{
-      "title": "Run the function locally",
-      "text": "steps/8/text.md"
-  },
-	{
-      "title": "Make Changes",
-      "text": "steps/9/text.md"
-  },
-	{
-      "title": "Deploy the function to Azure (Optional)",
-      "text": "steps/10/text.md"
   }],
     "intro": {
       "code": "set-env.sh",

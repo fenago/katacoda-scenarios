@@ -1,10 +1,16 @@
-In an empty folder, run the following command to generate the Functions project from a Maven archetype.
 
-```mvn archetype:generate \
-    -DarchetypeGroupId=com.microsoft.azure \
-	-DarchetypeArtifactId=azure-functions-archetype```{{execute T1}}
+Select **Go to resource** to view your new function app. You can also select **Pin to dashboard**. Pinning makes it easier to return to this function app resource from your dashboard.
+
+![](https://github.com/fenago/katacoda-scenarios/raw/master/azure-functions/azure-functions-timer/steps/3/timer.JPG)
+
+#### Create a timer triggered function
+Expand your function app and click the + button next to Functions. 
+
+![](https://github.com/fenago/katacoda-scenarios/raw/master/azure-functions/azure-functions-timer/steps/3/create.JPG)
+
+Next, you create a function in the new function app.
+
+Choose More templates then Finish and view templates.
 
 
-Maven will ask you for values needed to finish generating the project. For `groupId`, `artifactId`, and `version` values. The appName value must be unique across Azure, so Maven generates an app name based on the previously entered artifactId as a default. The packageName value determines the Java package for the generated function code.
-
-**Note:** We will provide values and finish generating the project in the next step.
+![](https://github.com/fenago/katacoda-scenarios/raw/master/azure-functions/azure-functions-timer/steps/3/template.JPG)

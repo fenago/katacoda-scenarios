@@ -1,18 +1,17 @@
-The `com.fabrikam.functions` and `fabrikam-functions` identifiers below are used as an example and to make later steps in this quickstart easier to read.
+In the search field, type `timer` and configure the new trigger with the settings as specified in the table below the image.
 
-**groupId**: `com.fabrikam.functions`{{copy}}
-
-**artifactId**: `fabrikam-functions`{{copy}}
-
-```
-Define value for property 'groupId' (should match expression '[A-Za-z0-9_\-\.]+'): com.fabrikam.functions
-Define value for property 'artifactId' (should match expression '[A-Za-z0-9_\-\.]+'): fabrikam-functions
-Define value for property 'version' 1.0-SNAPSHOT : 
-Define value for property 'package': com.fabrikam.functions
-Define value for property 'appName' fabrikam-functions-20170927220323382:
-Define value for property 'appRegion' westus: :
-Define value for property 'resourceGroup' java-functions-group: :
-Confirm properties configuration: Y
-```
+![](https://github.com/fenago/katacoda-scenarios/raw/master/azure-functions/azure-functions-timer/steps/5/timer.JPG)
 
 
+Setting	| Suggested value | Description
+--- | --- | ---
+`Name` | *Default*	| Defines the name of your timer triggered function.
+`Subscription` |	`0 */1 * * * *` | A six field CRON expression that schedules your function to run every minute.
+
+
+Click **Create**. A function is created in your chosen language that runs every minute.
+
+#### Verify
+Verify execution by viewing trace information written to the logs.
+
+![](https://github.com/fenago/katacoda-scenarios/raw/master/azure-functions/azure-functions-timer/steps/2/verify.JPG)
