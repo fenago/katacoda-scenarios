@@ -1,5 +1,5 @@
 {
-  "title": "Java to create and publish a function to Azure Functions",
+  "title": "Create a function in Azure that is triggered by a timer",
   "description": "Introduction to Azure Functions",
   "difficulty": "Intermediate",
   "time": "15 minutes",
@@ -13,7 +13,7 @@
       "text": "steps/2/text.md"
     },    
 	{
-      "title": "Generate a new Functions project",
+      "title": "Create a timer triggered function",
       "text": "steps/3/text.md"
     },
 	{
