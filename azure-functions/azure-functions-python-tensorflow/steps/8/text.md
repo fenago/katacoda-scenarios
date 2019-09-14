@@ -5,4 +5,4 @@ The model consists of two files in the <REPOSITORY_ROOT>/resources/model folder:
 
 `cp ../resources/model/* classify`{{execute T1}}
 
-Be sure to include the * in the above command. Confirm that classify now contains files named model.db and labels.txt.
+Be sure to include the * in the above command. Confirm that classify now contains files named model.pb and labels.txt.

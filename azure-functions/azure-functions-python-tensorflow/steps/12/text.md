@@ -20,6 +20,6 @@ def main(req: func.HttpRequest) -> func.HttpResponse:
     return func.HttpResponse(json.dumps(results), headers = headers)
 </pre>
 
-This function receives an image URL in a query string parameter named img. It calls predict_image_from_url from the helper library that downloads the image and returns a prediction using the TensorFlow model. The function then returns an HTTP response with the results.
+This function receives an image URL in a query string parameter named img. It calls **predict_image_from_url** from the helper library that downloads the image and returns a prediction using the TensorFlow model. The function then returns an HTTP response with the results.
 
 Since the HTTP endpoint is called by a web page hosted on another domain, the HTTP response includes an Access-Control-Allow-Origin header to satisfy the browser's Cross-Origin Resource Sharing (CORS) requirements.
