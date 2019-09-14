@@ -1,15 +1,15 @@
-Create a local Functions project
-A Functions project is the equivalent of a function app in Azure. It can have multiple functions that all share the same local and hosting configurations.
 
-In the virtual environment, run the following command, choosing python as your worker runtime.
+To add a function to your project, run the following command:
+`func new`{{execute T1}}
 
-`func init MyFunctionProj`{{execute}}
+Choose the HTTP trigger template, type HttpTrigger as the name for the function, then press Enter.
 
-A folder named MyFunctionProj is created, which contains the following three files:
+A subfolder named `HttpTrigger` is created, which contains the following files:
 
-- **local.settings.json:** is used to store app settings and connection strings when running locally. This file doesn't get published to Azure.
-- **requirements.txt:**contains the list of packages to be installed on publishing to Azure.
-- **host.json:**  contains global configuration options that affect all functions in a function app. This file does get published to Azure.
+- **function.json:** configuration file that defines the function, trigger, and other bindings. Review this file and see that the value for scriptFile points to the file containing the function, while the invocation trigger and bindings are defined in the bindings array.
 
-Navigate to the new MyFunctionProj folder:
-`cd MyFunctionProj`{{execute}}
+Each binding requires a direction, type and a unique name. The HTTP trigger has an input binding of type httpTrigger and output binding of type http.
+
+- **__init__.py:** script file that is your HTTP triggered function. Review this script and see that it contains a default main(). HTTP data from the trigger is passed to this function using the req named binding parameter. Defined in function.json, req is an instance of the azure.functions.HttpRequest class.
+
+The return object, defined as $return in function.json, is an instance of `azure.functions.HttpResponse` class.

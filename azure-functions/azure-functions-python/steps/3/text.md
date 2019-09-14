@@ -1,4 +1,3 @@
-Create and activate a virtual environment (optional)
 To locally develop and test Python functions, it is recommended to use a Python 3.6 environment. Run the following commands to create and activate a virtual environment named .venv.
 
 Azure Functions requires Python 3.6.x. You'll create a virtual environment to ensure you're using the required Python version.

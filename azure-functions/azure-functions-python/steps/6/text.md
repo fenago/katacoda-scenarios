@@ -1,4 +1,3 @@
-Run the function locally
 The following command starts the function app, which runs locally using the same Azure Functions runtime that is in Azure.
 
 console
@@ -7,8 +6,8 @@ console
 func host start
 When the Functions host starts, it writes something like the following output, which has been truncated for readability:
 
-output
 
+```
 `
 
                   %%%%%%
@@ -37,4 +36,12 @@ Http Functions:
 
 [8/27/2018 10:38:27 PM] Host started (29486ms)
 [8/27/2018 10:38:27 PM] Job host started
-` the URL of your HttpTrigger function from the runtime output and paste it into your browser's address bar. Append the query string ?name=<yourname> to this URL and execute the request. The following shows the response in the browser to the GET request returned by the local function:
+```
+
+**Note:** Command below will run in terminal 2 (It will open automatically on executing command). 
+
+`curl http://localhost:7071/api/HttpTrigger?name=Azure`{{execute T2}}
+
+The function should execute and return **Hello Azure!**. Interface will switch back to terminal 1 after executing above command, you can manually click terminal 2 to see response.
+
+**Important:** Use `Ctrl` + `C` to stop the function app.
