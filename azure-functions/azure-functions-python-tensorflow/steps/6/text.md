@@ -7,14 +7,3 @@ A new folder named classify is created, containing two files.
 
 - **__init__.py:** A file for the main function
 - **function.json:** A file describing the function's trigger and its input and output bindings
-
-
-<pre class="file" data-target="clipboard">
-{
-    "version": "2.0",
-    "extensionBundle": {
-        "id": "Microsoft.Azure.Functions.ExtensionBundle",
-        "version": "[1.*, 2.0.0)"
-    }
-}
-</pre>
