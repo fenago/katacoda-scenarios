@@ -1,4 +1,8 @@
-Maven creates the project files in a new folder with a name of artifactId, in this example **fabrikam-functions**. The ready to run generated code in the project is an HTTP triggered function that echoes the body of the request. Replace `src/main/java/com/fabrikam/functions/Function.java` with the following code:
+Maven creates the project files in a new folder with a name of artifactId, in this example **fabrikam-functions**. The ready to run generated code in the project is an HTTP triggered function that echoes the body of the request. 
+
+
+#### VSCode Editor
+Open `Function.java` by clicking `fabrikam-functions` folder in vscode **Explorer** to view the contents of the file. Replace `src/main/java/com/fabrikam/functions/Function.java` with the following code:
 
 
 <pre class="file" data-target="clipboard">
