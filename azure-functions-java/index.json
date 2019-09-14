@@ -1,6 +1,6 @@
 {
   "title": "Java to create and publish a function to Azure Functions",
-  "description": "Introduction to Libra Blockchain and Move",
+  "description": "Introduction to Azure Functions",
   "difficulty": "Intermediate",
   "time": "15 minutes",
   "details": {
@@ -41,7 +41,7 @@
       "text": "steps/9/text.md"
   },
 	{
-      "title": "Publish Function on Azure (Optional)",
+      "title": "Deploy the function to Azure (Optional)",
       "text": "steps/10/text.md"
   }],
     "intro": {

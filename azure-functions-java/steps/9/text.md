@@ -1,7 +1,5 @@
 Edit the `src/main.../Function.java` source file in the generated project using **vscode** editor to alter the text returned by your Function app. Change this line:
 
-Java
-
 ```
 return request.createResponseBuilder(HttpStatus.OK).body("Hello, " + name).build();
 ```
@@ -19,13 +17,11 @@ Save the changes. Run mvn clean package and run application by running azure-fun
 Run following in second terminal to get new response.
 `curl -w "\n" http://localhost:7071/api/HttpTrigger-Java -d LocalFunction`{{execute T2}}
 
-
-
 ## Output
-
-Will have updated output:
+You should get an updated output:
 ```
 Hi, AzureFunctionsTest
 ```
+
 
 
