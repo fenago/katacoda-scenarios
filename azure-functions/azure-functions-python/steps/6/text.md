@@ -1,13 +1,40 @@
-The easiest way to install binding extensions is to enable extension bundles. When you enable bundles, a predefined set of extension packages is automatically installed.
+Run the function locally
+The following command starts the function app, which runs locally using the same Azure Functions runtime that is in Azure.
 
-To enable extension bundles, open the `host.json` file in vscode editor and update its contents to match the following code:
+console
 
-<pre class="file" data-target="clipboard">
-{
-    "version": "2.0",
-    "extensionBundle": {
-        "id": "Microsoft.Azure.Functions.ExtensionBundle",
-        "version": "[1.*, 2.0.0)"
-    }
-}
-</pre>
+`
+func host start
+When the Functions host starts, it writes something like the following output, which has been truncated for readability:
+
+output
+
+`
+
+                  %%%%%%
+                 %%%%%%
+            @   %%%%%%    @
+          @@   %%%%%%      @@
+       @@@    %%%%%%%%%%%    @@@
+     @@      %%%%%%%%%%        @@
+       @@         %%%%       @@
+         @@      %%%       @@
+           @@    %%      @@
+                %%
+                %
+
+...
+
+Content root path: C:\functions\MyFunctionProj
+Now listening on: http://0.0.0.0:7071
+Application started. Press Ctrl+C to shut down.
+
+...
+
+Http Functions:
+
+        HttpTrigger: http://localhost:7071/api/HttpTrigger
+
+[8/27/2018 10:38:27 PM] Host started (29486ms)
+[8/27/2018 10:38:27 PM] Job host started
+` the URL of your HttpTrigger function from the runtime output and paste it into your browser's address bar. Append the query string ?name=<yourname> to this URL and execute the request. The following shows the response in the browser to the GET request returned by the local function:

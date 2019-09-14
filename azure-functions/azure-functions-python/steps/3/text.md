@@ -1,10 +1,12 @@
-In an empty folder, run the following command to generate the Functions project from a Maven archetype.
+Create and activate a virtual environment (optional)
+To locally develop and test Python functions, it is recommended to use a Python 3.6 environment. Run the following commands to create and activate a virtual environment named .venv.
 
-```mvn archetype:generate \
-    -DarchetypeGroupId=com.microsoft.azure \
-	-DarchetypeArtifactId=azure-functions-archetype```{{execute T1}}
+Azure Functions requires Python 3.6.x. You'll create a virtual environment to ensure you're using the required Python version.
 
+`apt-get update`{{execute T1}}
 
-Maven will ask you for values needed to finish generating the project. For `groupId`, `artifactId`, and `version` values. The appName value must be unique across Azure, so Maven generates an app name based on the previously entered artifactId as a default. The packageName value determines the Java package for the generated function code.
+`yes | apt-get install python3-venv`{{execute T1}}
 
-**Note:** We will provide values and finish generating the project in the next step.
+`python3.6 -m venv .venv`{{execute T1}}
+
+`source .venv/bin/activate`{{execute T1}}

@@ -1,22 +1,8 @@
-You see this output when the function is running locally on your system and ready to respond to HTTP requests:
-
-#### Output
-```
-Listening on http://localhost:7071
-Hit CTRL-C to exit...
-
-Http Functions:
-
-   hello: http://localhost:7071/api/HttpTrigger-Java
-Trigger the function from the command line using curl in a new terminal window:
-```
-
-#### CURL
-`curl -w "\n" http://localhost:7071/api/HttpTrigger-Java -d LocalFunction`{{execute T1}}
+You'll use a pre-built TensorFlow model that was trained with and exported from Azure Custom Vision Service.
 
 
-```
-Hello LocalFunction!
-```
+The model consists of two files in the <REPOSITORY_ROOT>/resources/model folder: `model.db` and `labels.txt`. ` them into the classify function's folder.
 
-Use `Ctrl` + `C` in the terminal to stop the function code.
+`cp ../resources/model/* classify`{{execute T1}}
+
+Be sure to include the * in the above command. Confirm that classify now contains files named model.pb and labels.txt.

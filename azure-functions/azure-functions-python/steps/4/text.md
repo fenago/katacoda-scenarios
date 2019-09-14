@@ -1,18 +1,16 @@
-The `com.fabrikam.functions` and `fabrikam-functions` identifiers below are used as an example and to make later steps in this quickstart easier to read.
+Create a local Functions project
+A Functions project is the equivalent of a function app in Azure. It can have multiple functions that all share the same local and hosting configurations.
 
-**groupId**: `com.fabrikam.functions`{{copy}}
+In the virtual environment, run the following command, choosing python as your worker runtime.
+`func init MyFunctionProj`{{execute}}
 
-**artifactId**: `fabrikam-functions`{{copy}}
+A folder named MyFunctionProj is created, which contains the following three files:
 
-```
-Define value for property 'groupId' (should match expression '[A-Za-z0-9_\-\.]+'): com.fabrikam.functions
-Define value for property 'artifactId' (should match expression '[A-Za-z0-9_\-\.]+'): fabrikam-functions
-Define value for property 'version' 1.0-SNAPSHOT : 
-Define value for property 'package': com.fabrikam.functions
-Define value for property 'appName' fabrikam-functions-20170927220323382:
-Define value for property 'appRegion' westus: :
-Define value for property 'resourceGroup' java-functions-group: :
-Confirm properties configuration: Y
-```
+local.settings.json is used to store app settings and connection strings when running locally. This file doesn't get published to Azure.
+requirements.txt contains the list of packages to be installed on publishing to Azure.
+host.json contains global configuration options that affect all functions in a function app. This file does get published to Azure.
 
 
+Navigate to the new MyFunctionProj folder:
+
+`cd MyFunctionProj`{{execute}}

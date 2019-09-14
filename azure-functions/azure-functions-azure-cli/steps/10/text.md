@@ -19,3 +19,4 @@ After the function app has been created, the Azure CLI shows information similar
 }
 ```
 
+

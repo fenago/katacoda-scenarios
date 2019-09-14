@@ -1,40 +1,15 @@
-Maven creates the project files in a new folder with a name of artifactId, in this example **fabrikam-functions**. The ready to run generated code in the project is an HTTP triggered function that echoes the body of the request. 
+Create a local Functions project
+A Functions project is the equivalent of a function app in Azure. It can have multiple functions that all share the same local and hosting configurations.
 
+In the virtual environment, run the following command, choosing python as your worker runtime.
 
-#### VSCode Editor
-Open `Function.java` by clicking `fabrikam-functions` folder in vscode **Explorer** to view the contents of the file. Replace `src/main/java/com/fabrikam/functions/Function.java` with the following code:
+`func init MyFunctionProj`{{execute}}
 
+A folder named MyFunctionProj is created, which contains the following three files:
 
-<pre class="file" data-target="clipboard">
-package com.fabrikam.functions;
+- **local.settings.json:** is used to store app settings and connection strings when running locally. This file doesn't get published to Azure.
+- **requirements.txt:**contains the list of packages to be installed on publishing to Azure.
+- **host.json:**  contains global configuration options that affect all functions in a function app. This file does get published to Azure.
 
-import java.util.*;
-import com.microsoft.azure.functions.annotation.*;
-import com.microsoft.azure.functions.*;
-
-public class Function {
-    /**
-     * This function listens at endpoint "/api/HttpTrigger-Java". Two ways to invoke it using "curl" command in bash:
-     * 1. curl -d "HTTP Body" {your host}/api/HttpTrigger-Java
-     * 2. curl {your host}/api/HttpTrigger-Java?name=HTTP%20Query
-     */
-    @FunctionName("HttpTrigger-Java")
-    public HttpResponseMessage run(
-            @HttpTrigger(name = "req", methods = { HttpMethod.GET, HttpMethod.POST }, authLevel = AuthorizationLevel.FUNCTION) HttpRequestMessage<Optional<String>> request,
-            final ExecutionContext context) {
-        context.getLogger().info("Java HTTP trigger processed a request.");
-
-        // Parse query parameter
-        String query = request.getQueryParameters().get("name");
-        String name = request.getBody().orElse(query);
-
-        if (name == null) {
-            return request.createResponseBuilder(HttpStatus.BAD_REQUEST).body("Please pass a name on the query string or in the request body").build();
-        } else {
-            return request.createResponseBuilder(HttpStatus.OK).body("Hello, " + name).build();
-        }
-    }
-}
-
-</pre>
-
+Navigate to the new MyFunctionProj folder:
+`cd MyFunctionProj`{{execute}}

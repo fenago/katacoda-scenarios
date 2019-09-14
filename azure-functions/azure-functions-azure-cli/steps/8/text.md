@@ -2,4 +2,4 @@ Functions uses a general-purpose account in Azure Storage to maintain state and 
 
 In the following command, substitute a globally unique storage account name where you see the <storage_name> placeholder. Storage account names must be between 3 and 24 characters in length and may contain numbers and lowercase letters only.
 
-az storage account create --name <storage_name> --location westeurope --resource-group myResourceGroup --sku Standard_LRS
+`az storage account create --name <storage_name> --location westeurope --resource-group myResourceGroup --sku Standard_LRS`{{copy}}
