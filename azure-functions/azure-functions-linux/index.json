@@ -41,20 +41,8 @@
       "text": "steps/9/text.md"
   },
 	{
-      "title": "Consumption Plan",
+      "title": "Deploy & Test the function in Azure",
       "text": "steps/10/text.md"
-  },
-	{
-      "title": "Deploy the function app project to Azure",
-      "text": "steps/11/text.md"
-  },
-	{
-      "title": "Test the function in Azure",
-      "text": "steps/12/text.md"
-  },
-	{
-      "title": "Clean up resources",
-      "text": "steps/13/text.md"
   }],
     "intro": {
       "code": "set-env.sh",

@@ -1,22 +1,6 @@
-Setting the consumption-plan-location parameter means that the function app is hosted in a Consumption hosting plan. In this serverless plan, resources are added dynamically as required by your functions and you only pay when functions are running. For more information, see Choose the correct hosting plan.
+After the function app is created in Azure, you can use the func azure functionapp publish Core Tools command to deploy your project code to Azure. In these examples, replace <APP_NAME> with the name of your app from the previous step.
 
-After the function app has been created, the Azure CLI shows information similar to the following example:
-```
-{
-  "availabilityState": "Normal",
-  "clientAffinityEnabled": true,
-  "clientCertEnabled": false,
-  "containerSize": 1536,
-  "dailyMemoryTimeQuota": 0,
-  "defaultHostName": "quickstart.azurewebsites.net",
-  "enabled": true,
-  "enabledHostNames": [
-    "quickstart.azurewebsites.net",
-    "quickstart.scm.azurewebsites.net"
-  ],
-   ....
-    // Remaining output has been truncated for readability.
-}
-```
+`func azure functionapp publish <APP_NAME>`{{copy}}
 
 
+Copy the Invoke url value for your HttpTrigger, which you can now use to test your function in Azure. The URL contains a code query string value that is your function key. This key makes it difficult for others to call your HTTP trigger endpoint in Azure.
