@@ -8,7 +8,7 @@ Open **index.html** in he vscode editor and update `apiBaseUrl` by going to line
 Replace `http://localhost:7071` with the following url:
 `https://[[HOST_SUBDOMAIN]]-7071-[[KATACODA_HOST]].environments.katacoda.com`{{copy}}
 
-**Note:** All commands below will run in terminal 2.
+**Important:** All commands below will run in terminal 2. Interface will keep switching back to terminal 1 because function app is running there after executing following command, you can manually switch by clicking `terminal 2`.
 
 Let's change to the frontend folder. Start an HTTP server with Python 3.6.
 

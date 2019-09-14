@@ -7,3 +7,5 @@ A new folder named classify is created, containing two files.
 
 - **__init__.py:** A file for the main function
 - **function.json:** A file describing the function's trigger and its input and output bindings
+
+**Note:** Refresh explorer if you don't see classify folder.

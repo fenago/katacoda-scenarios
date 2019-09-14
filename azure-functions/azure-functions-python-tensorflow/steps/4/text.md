@@ -2,7 +2,9 @@ Azure Functions requires Python 3.6.x. You'll create a virtual environment to en
 
 Change the current working directory to the start folder. Then create and activate a virtual environment named `.venv`.
 
-`apt-get update && yes | apt-get install python3-venv`{{execute T1}}
+`apt-get update`{{execute T1}}
+
+`yes | apt-get install python3-venv`{{execute T1}}
 
 `cd start && python3.6 -m venv .venv`{{execute T1}}
 

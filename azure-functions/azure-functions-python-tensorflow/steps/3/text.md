@@ -9,5 +9,3 @@ The repository contains a few folders.
 - **end:** This is the final result and full implementation for your reference
 - **resources:** Contains the machine learning model and helper libraries
 - **frontend:** A website that calls the function app
-
-**Note:** We will provide values and finish generating the project in the next step.
