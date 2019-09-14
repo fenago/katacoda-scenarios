@@ -1,12 +1,9 @@
 Create a resource group with the az group create. An Azure resource group is a logical container into which Azure resources like function apps, databases, and storage accounts are deployed and managed.
 
-The following example creates a resource group named myResourceGroup.
-If you are not using Cloud Shell, sign in first using az login.
+The following example creates a resource group named `myResourceGroup`.
 
-Azure CLI
+If you are not using Cloud Shell, sign in first using `az login`{{execute}}.
 
-Copy
+`az group create --name myResourceGroup --location westeurope`{{execute}}
 
-Try It
-az group create --name myResourceGroup --location westeurope
 You generally create your resource group and the resources in a region near you.

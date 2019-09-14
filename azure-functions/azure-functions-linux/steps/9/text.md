@@ -2,10 +2,7 @@ You must have a function app to host the execution of your functions. The functi
 
 In the following command, substitute a unique function app name where you see the <APP_NAME> placeholder and the storage account name for <STORAGE_NAME>. The <APP_NAME> is used as the default DNS domain for the function app, and so the name needs to be unique across all apps in Azure. You should also set the <language> runtime for your function app, from dotnet (C#) or node (JavaScript).
 
-Azure CLI
+#### Azure CLI
 
-Copy
-
-Try It
-az functionapp create --resource-group myResourceGroup --consumption-plan-location westeurope \
---name <APP_NAME> --storage-account  <STORAGE_NAME> --runtime <language>
+`az functionapp create --resource-group myResourceGroup --consumption-plan-location westeurope \
+--name <APP_NAME> --storage-account  <STORAGE_NAME> --runtime <language>`{{copy}}
