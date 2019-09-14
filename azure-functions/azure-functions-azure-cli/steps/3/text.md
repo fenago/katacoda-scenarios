@@ -1,7 +1,7 @@
 Run the following command from the command line to create a function app project in the MyFunctionProj folder of the current local directory. A GitHub repo is also created in MyFunctionProj.
 `func init MyFunctionProj`{{execute}}
 
-When prompted, select a worker runtime **dotenet** from the following language choices:
+When prompted, select a worker runtime **javascript** from the following language choices:
 
 - dotnet: creates a .NET class library project (.csproj).
 - node: creates a Node.js-based project. Choose either javascript or typescript.

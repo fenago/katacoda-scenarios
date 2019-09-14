@@ -5,4 +5,4 @@ In the following command, substitute a unique function app name where you see th
 #### Azure CLI
 
 `az functionapp create --resource-group myResourceGroup --consumption-plan-location westeurope \
---name <APP_NAME> --storage-account  <STORAGE_NAME> --runtime <language>`{{execute}}
+--name <APP_NAME> --storage-account  <STORAGE_NAME> --runtime <language>`{{copy}}

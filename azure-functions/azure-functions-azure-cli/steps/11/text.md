@@ -1,10 +1,6 @@
 After the function app is created in Azure, you can use the func azure functionapp publish Core Tools command to deploy your project code to Azure. In these examples, replace <APP_NAME> with the name of your app from the previous step.
 
-C# / JavaScript
-command
-
-Copy
-func azure functionapp publish <APP_NAME>
+`func azure functionapp publish <APP_NAME>`{{copy}}
 
 
 You'll see output similar to the following, which has been truncated for readability:
