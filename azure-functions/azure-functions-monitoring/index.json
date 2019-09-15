@@ -1,15 +1,15 @@
 {
-  "title": "Manage your function app",
+  "title": "Monitor Azure Functions",
   "description": "Introduction to Azure Cloud",
   "difficulty": "Intermediate",
   "time": "15 minutes",
   "details": {
     "steps": [{
-      "title": "Manage your function app",
+      "title": "Monitoring",
       "text": "steps/1/text.md"
     },
     {
-      "title": "Get started in the Azure portal",
+      "title": "Enable Application Insights integration",
       "text": "steps/2/text.md"
     },    
 	{
@@ -17,32 +17,48 @@
       "text": "steps/3/text.md"
     },
 	{
-      "title": "Azure CLI",
+      "title": "Add to an existing function app",
       "text": "steps/4/text.md"
     },
 	{
-      "title": "Use application settings",
+      "title": "View telemetry in Monitor tab",
       "text": "steps/5/text.md"
     },
 	{
-      "title": "Platform features",
+      "title": "View telemetry in Application Insights",
       "text": "steps/6/text.md"
   },
 	{
-      "title": "App Service Editor & Console",
+      "title": "Query telemetry data",
       "text": "steps/7/text.md"
   },
 	{
-      "title": "Kudu",
+      "title": "Configure categories and log levels",
       "text": "steps/8/text.md"
   },
 	{
-      "title": "Portal",
+      "title": "Write logs in JavaScript functions",
       "text": "steps/9/text.md"
   },
 	{
-      "title": "Authentication",
+      "title": "Log custom telemetry in JavaScript functions",
       "text": "steps/10/text.md"
+  },
+	{
+      "title": "Streaming Logs",
+      "text": "steps/11/text.md"
+  },
+	{
+      "title": "Azure Portal",
+      "text": "steps/12/text.md"
+  },
+	{
+      "title": "Live Metrics Stream",
+      "text": "steps/13/text.md"
+  },
+	{
+      "title": "Azure CLI & Azure PowerShell",
+      "text": "steps/14/text.md"
   }],
     "intro": {
       "code": "set-env.sh",

@@ -1,12 +1,5 @@
+Azure Functions offers built-in integration with Azure Application Insights to monitor functions. This article shows you how to configure Azure Functions to send system-generated log files to Application Insights.
 
-In Azure Functions, a function app provides the execution context for your individual functions. Function app behaviors apply to all functions hosted by a given function app. All functions in a function app must be of the same language.
+We recommend using Application Insights because it collects log, performance, and error data. It automatically detects performance anomalies and includes powerful analytics tools to help you diagnose issues and to understand how your functions are used. It's designed to help you continuously improve performance and usability. You can even use Application Insights during local function app project development. For more information, see What is Application Insights?.
 
-Individual functions in a function app are deployed together and are scaled together. All functions in the same function app share resources, per instance, as the function app scales.
-
-Connection strings, environment variables, and other application settings are defined separately for each function app. Any data that must be shared between function apps should be stored externally in a persisted store.
-
-This article describes how to configure and manage your function apps.
-
- Tip
-
-Many configuration options can also be managed by using the Azure CLI.
+As the required Application Insights instrumentation is built into Azure Functions, all you need is a valid instrumentation key to connect your function app to an Application Insights resource

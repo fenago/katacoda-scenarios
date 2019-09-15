@@ -1,16 +1,15 @@
-When you configure the Allowed origins list for your function app, the Access-Control-Allow-Origin header is automatically added to all responses from HTTP endpoints in your function app.
-
-Configure function app's CORS list
-
-![](https://github.com/fenago/katacoda-scenarios/raw/master/azure-functions/azure-functions-manage/steps/9/cors.JPG)
+In Node.js functions, use context.log to write logs. Structured logging isn't enabled.
 
 
+```
+context.log('JavaScript HTTP trigger function processed a request.' + context.invocationId);
+```
 
-When the wildcard (*) is used, all other domains are ignored.
+#### Custom metrics logging
+When you're running on version 1.x of the Functions runtime, Node.js functions can use the context.log.metric method to create custom metrics in Application Insights. This method isn't currently supported in version 2.x. Here's a sample method call:
 
-Use the az functionapp cors add command to add a domain to the allowed origins list. The following example adds the contoso.com domain:
+```
+context.log.metric("TestMetric", 1234);
+```
 
-az functionapp cors add --name <FUNCTION_APP_NAME> \
---resource-group <RESOURCE_GROUP_NAME> \
---allowed-origins https://contoso.com
-Use the az functionapp cors show command to list the current allowed origins.
+This code is an alternative to calling trackMetric by using the Node.js SDK for Application Insights.

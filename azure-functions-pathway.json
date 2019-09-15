@@ -74,7 +74,7 @@
     },
 	{
       "course_id": "azure-functions-monitoring",
-      "title": "Create a timer based function in Azure",
+      "title": "Monitor Azure Functions",
       "description": ""
     },
 	{
