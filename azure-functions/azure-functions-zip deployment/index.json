@@ -1,0 +1,79 @@
+{
+  "title": "Azure Functions Java Developer Guide",
+  "description": "Introduction to Azure Functions",
+  "difficulty": "Intermediate",
+  "time": "15 minutes",
+  "details": {
+    "steps": [{
+      "title": "Java Azure Functions",
+      "text": "steps/1/text.md"
+    },
+    {
+      "title": "Folder structure",
+      "text": "steps/2/text.md"
+    },    
+	{
+      "title": "Triggers and annotations",
+      "text": "steps/3/text.md"
+    },
+	{
+      "title": "Maven Plugin",
+      "text": "steps/4/text.md"
+    },
+	{
+      "title": "JDK runtime availability and support",
+      "text": "steps/5/text.md"
+    },
+	{
+      "title": "Application Settings",
+      "text": "steps/6/text.md"
+    },
+    {
+        "title": "Data type support",
+        "text": "steps/7/text.md"
+  },
+	{
+      "title": "Bindings",
+      "text": "steps/8/text.md"
+  },
+	{
+      "title": "Output binding example",
+      "text": "steps/9/text.md"
+  },
+	{
+      "title": "HttpRequestMessage and HttpResponseMessage",
+      "text": "steps/10/text.md"
+  },
+	{
+      "title": "Metadata",
+      "text": "steps/11/text.md"
+  },
+	{
+      "title": "Logger",
+      "text": "steps/12/text.md"
+  },
+	{
+      "title": "View logs and trace",
+      "text": "steps/13/text.md"
+  },
+	{
+      "title": "Environment variables",
+      "text": "steps/14/text.md"
+  }],
+    "intro": {
+      "code": "set-env.sh",
+      "text": "intro.md",
+      "credits": ""
+    },
+    "finish": {
+      "text": "finish.md"
+    }
+  },
+  "environment": {
+    "uilayout": "vscode",
+    "uimessage1": "\u001b[32mBrought to you by https://LearningVoyage.com\u001b[m\r\n"
+  },
+  "backend": {
+    "imageid": "vscode"
+  }
+}
