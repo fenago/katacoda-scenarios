@@ -1,0 +1,47 @@
+{
+  "title": "Create a function in Azure that is triggered by a timer",
+  "description": "Introduction to Azure Functions",
+  "difficulty": "Intermediate",
+  "time": "15 minutes",
+  "details": {
+    "steps": [{
+      "title": "Azure Account",
+      "text": "steps/1/text.md"
+    },
+    {
+      "title": "Create an Azure Function app",
+      "text": "steps/2/text.md"
+    },    
+	{
+      "title": "Create a timer triggered function",
+      "text": "steps/3/text.md"
+    },
+	{
+      "title": "Configure New Trigger",
+      "text": "steps/4/text.md"
+    },
+	{
+      "title": "Update the timer schedule",
+      "text": "steps/5/text.md"
+    },
+	{
+      "title": "Clean up resources",
+      "text": "steps/6/text.md"
+  }],
+    "intro": {
+      "code": "set-env.sh",
+      "text": "intro.md",
+      "credits": ""
+    },
+    "finish": {
+      "text": "finish.md"
+    }
+  },
+  "environment": {
+    "uilayout": "terminal",
+    "uimessage1": "\u001b[32mBrought to you by https://LearningVoyage.com\u001b[m\r\n"
+  },
+  "backend": {
+    "imageid": "ubuntu"
+  }
+}

@@ -1,0 +1,51 @@
+{
+  "title": "Disable functions in Azure Functions",
+  "description": "Introduction to Azure Functions",
+  "difficulty": "Intermediate",
+  "time": "15 minutes",
+  "details": {
+    "steps": [{
+      "title": "Azure Functions Runtime Versions",
+      "text": "steps/1/text.md"
+    },
+    {
+      "title": "Functions 2.x - all languages",
+      "text": "steps/2/text.md"
+    },    
+	{
+      "title": "Azure CLI",
+      "text": "steps/3/text.md"
+    },
+	{
+      "title": "Azure Portal",
+      "text": "steps/4/text.md"
+    },
+	{
+      "title": "Functions 1.x - scripting languages",
+      "text": "steps/5/text.md"
+    },
+	{
+      "title": "Azure Portal",
+      "text": "steps/6/text.md"
+    },
+    {
+        "title": "Functions 1.x - C# class libraries",
+        "text": "steps/7/text.md"
+  }],
+    "intro": {
+      "code": "set-env.sh",
+      "text": "intro.md",
+      "credits": ""
+    },
+    "finish": {
+      "text": "finish.md"
+    }
+  },
+  "environment": {
+    "uilayout": "vscode",
+    "uimessage1": "\u001b[32mBrought to you by https://LearningVoyage.com\u001b[m\r\n"
+  },
+  "backend": {
+    "imageid": "vscode"
+  }
+}

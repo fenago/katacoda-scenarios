@@ -1,0 +1,47 @@
+{
+  "title": "Azure Functions runtime versions",
+  "description": "Introduction to Azure Cloud",
+  "difficulty": "Intermediate",
+  "time": "15 minutes",
+  "details": {
+    "steps": [{
+      "title": "Runtime Versions",
+      "text": "steps/1/text.md"
+    },
+    {
+      "title": "Automatic and manual version updates",
+      "text": "steps/2/text.md"
+    },    
+	{
+      "title": "View and update the current runtime version",
+      "text": "steps/3/text.md"
+    },
+	{
+      "title": "From the Azure portal",
+      "text": "steps/4/text.md"
+    },
+	{
+      "title": "From the Azure CLI",
+      "text": "steps/5/text.md"
+    },
+	{
+      "title": "From the Azure CLI",
+      "text": "steps/6/text.md"
+  }],
+    "intro": {
+      "code": "set-env.sh",
+      "text": "intro.md",
+      "credits": ""
+    },
+    "finish": {
+      "text": "finish.md"
+    }
+  },
+  "environment": {
+    "uilayout": "vscode",
+    "uimessage1": "\u001b[32mBrought to you by https://LearningVoyage.com\u001b[m\r\n"
+  },
+  "backend": {
+    "imageid": "vscode"
+  }
+}
