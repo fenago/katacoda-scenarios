@@ -1,31 +1,31 @@
 {
-  "title": "Create a function in Azure that is triggered by a timer",
-  "description": "Introduction to Azure Functions",
+  "title": "Install Azure CLI on Linux",
+  "description": "Introduction to Azure Cloud",
   "difficulty": "Intermediate",
   "time": "15 minutes",
   "details": {
     "steps": [{
-      "title": "Azure Account",
+      "title": "Start Cloud Shell",
       "text": "steps/1/text.md"
     },
     {
-      "title": "Create an Azure Function app",
+      "title": "Select the Bash environment",
       "text": "steps/2/text.md"
     },    
 	{
-      "title": "Create a timer triggered function",
+      "title": "Create a resource group",
       "text": "steps/3/text.md"
     },
 	{
-      "title": "Configure New Trigger",
+      "title": "Create a Linux VM",
       "text": "steps/4/text.md"
     },
 	{
-      "title": "Update the timer schedule",
+      "title": "SSH into your Linux VM",
       "text": "steps/5/text.md"
     },
 	{
-      "title": "Clean up resources",
+      "title": "Cleaning up",
       "text": "steps/6/text.md"
   }],
     "intro": {
@@ -38,10 +38,10 @@
     }
   },
   "environment": {
-    "uilayout": "terminal",
+    "uilayout": "vscode",
     "uimessage1": "\u001b[32mBrought to you by https://LearningVoyage.com\u001b[m\r\n"
   },
   "backend": {
-    "imageid": "ubuntu"
+    "imageid": "vscode"
   }
 }

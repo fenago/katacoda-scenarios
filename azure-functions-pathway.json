@@ -1,7 +1,32 @@
 {
-  "title": "Azure Functions",
-  "description": "Introduction to Azure Functions",
+  "title": "Azure Cloud & Functions",
+  "description": "Introduction to Azure Cloud & Functions",
   "courses": [
+    {
+      "course_id": "azure-install-cli",
+      "title": "Install Azure CLI on Linux",
+      "description": "Introduction to Azure Cloud"
+    },
+    {
+      "course_id": "azure-cli-authentication",
+      "title": "Azure CLI Authentication",
+      "description": "Introduction to Azure Cloud"
+    },
+    {
+      "course_id": "persist-files-azure-shell",
+      "title": "Persist files in Azure Cloud Shell",
+      "description": "Introduction to Azure Cloud"
+    },
+	  {
+      "course_id": "azure-cloud-shell-powershell",
+      "title": "PowerShell in Azure Cloud Shell",
+      "description": ""
+    },
+	  {
+      "course_id": "azure-cloud-shell-bash",
+      "title": "Bash in Azure Cloud Shell",
+      "description": "Introduction to Azure Cloud"
+    },
     {
       "course_id": "azure-functions-azure-cli",
       "title": "Create function from command line",

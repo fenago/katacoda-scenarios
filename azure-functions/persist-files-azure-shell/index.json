@@ -1,0 +1,63 @@
+{
+  "title": "Persist files in Azure Cloud Shell",
+  "description": "Introduction to Azure Cloud",
+  "difficulty": "Intermediate",
+  "time": "15 minutes",
+  "details": {
+    "steps": [{
+      "title": "Azure Cloud Shell",
+      "text": "steps/1/text.md"
+    },
+    {
+      "title": "Create new storage",
+      "text": "steps/2/text.md"
+    },    
+	{
+      "title": "Use existing resources",
+      "text": "steps/3/text.md"
+    },
+	{
+      "title": "Supported storage regions",
+      "text": "steps/4/text.md"
+    },
+	{
+      "title": "How Cloud Shell storage works",
+      "text": "steps/5/text.md"
+    },
+	{
+      "title": "Clouddrive commands",
+      "text": "steps/6/text.md"
+    },
+    {
+        "title": "Mount a new clouddrive",
+        "text": "steps/7/text.md"
+  },
+	{
+      "title": "Unmount clouddrive",
+      "text": "steps/8/text.md"
+  },
+	{
+      "title": "PowerShell-specific commands",
+      "text": "steps/9/text.md"
+  },
+	{
+      "title": "Transfer local files to Cloud Shell",
+      "text": "steps/10/text.md"
+  }],
+    "intro": {
+      "code": "set-env.sh",
+      "text": "intro.md",
+      "credits": ""
+    },
+    "finish": {
+      "text": "finish.md"
+    }
+  },
+  "environment": {
+    "uilayout": "vscode",
+    "uimessage1": "\u001b[32mBrought to you by https://LearningVoyage.com\u001b[m\r\n"
+  },
+  "backend": {
+    "imageid": "vscode"
+  }
+}

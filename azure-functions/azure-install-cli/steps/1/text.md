@@ -1,0 +1,2 @@
+The Azure Command-Line Interface (CLI)
+The Azure command-line interface (CLI) is Microsoft's cross-platform command-line experience for managing Azure resources. The Azure CLI is designed to be easy to learn and get started with, but powerful enough to be a great tool for building custom automation to use Azure resources.
