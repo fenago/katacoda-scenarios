@@ -1,59 +1,18 @@
-Input and output bindings provide a declarative way to connect to data from within your code. A function can have multiple input and output bindings.
+The following example uses Publish-AzWebapp upload the .zip file. Replace the placeholders <group-name>, <app-name>, and <zip-file-path>.
 
-Input binding example
-Java
+```
+Publish-AzWebapp -ResourceGroupName <group-name> -Name <app-name> -ArchivePath <zip-file-path>
+```
 
-Copy
-package com.example;
+This request triggers push deployment from the uploaded .zip file.
 
-import com.microsoft.azure.functions.annotation.*;
+To review the current and past deployments, run the following commands. Again, replace the <deployment-user>, <deployment-password>, and <app-name> placeholders.
 
-public class Function {
-    @FunctionName("echo")
-    public static String echo(
-        @HttpTrigger(name = "req", methods = { "put" }, authLevel = AuthorizationLevel.ANONYMOUS, route = "items/{id}") String inputReq,
-        @TableInput(name = "item", tableName = "items", partitionKey = "Example", rowKey = "{id}", connection = "AzureWebJobsStorage") TestInputData inputData
-		@TableOutput(name = "myOutputTable", tableName = "Person", connection = "AzureWebJobsStorage") OutputBinding<Person> testOutputData,
-    ) {
-		testOutputData.setValue(new Person(httpbody + "Partition", httpbody + "Row", httpbody + "Name"));
-        return "Hello, " + inputReq + " and " + inputData.getKey() + ".";
-    }
-
-    public static class TestInputData {
-        public String getKey() { return this.RowKey; }
-        private String RowKey;
-    }
-	public static class Person {
-        public String PartitionKey;
-        public String RowKey;
-        public String Name;
-
-        public Person(String p, String r, String n) {
-            this.PartitionKey = p;
-            this.RowKey = r;
-            this.Name = n;
-        }
-    }
-}
-You invoke this function with an HTTP request.
-
-HTTP request payload is passed as a String for the argument inputReq.
-One entry is retrieved from Table storage, and is passed as TestInputData to the argument inputData.
-To receive a batch of inputs, you can bind to String[], POJO[], List<String>, or List<POJO>.
-
-Java
-
-Copy
-@FunctionName("ProcessIotMessages")
-    public void processIotMessages(
-        @EventHubTrigger(name = "message", eventHubName = "%AzureWebJobsEventHubPath%", connection = "AzureWebJobsEventHubSender", cardinality = Cardinality.MANY) List<TestEventData> messages,
-        final ExecutionContext context)
-    {
-        context.getLogger().info("Java Event Hub trigger received messages. Batch size: " + messages.size());
-    }
-    
-    public class TestEventData {
-    public String id;
-}
-
-This function gets triggered whenever there is new data in the configured event hub. Because the cardinality is set to MANY, the function receives a batch of messages from the event hub. EventData from event hub gets converted to TestEventData for the function execution.
+```
+$username = "<deployment-user>"
+$password = "<deployment-password>"
+$apiUrl = "https://<app-name>.scm.azurewebsites.net/api/deployments"
+$base64AuthInfo = [Convert]::ToBase64String([Text.Encoding]::ASCII.GetBytes(("{0}:{1}" -f $username, $password)))
+$userAgent = "powershell/1.0"
+Invoke-RestMethod -Uri $apiUrl -Headers @{Authorization=("Basic {0}" -f $base64AuthInfo)} -UserAgent $userAgent -Method GET
+```

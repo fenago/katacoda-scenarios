@@ -1,8 +1,9 @@
-The Azure Functions runtime supports Java SE 8 LTS (zulu8.31.0.2-jre8.0.181-win_x64). This guide contains information about the intricacies of writing Azure Functions with Java.
+In this scenario, we will describes how to deploy your function app project files to Azure from a .zip (compressed) file. You learn how to do a push deployment, both by using Azure CLI and by using the REST APIs. Azure Functions Core Tools also uses these deployment APIs when publishing a local project to Azure.
 
-A Java function is a public method, decorated with the annotation @FunctionName. This method defines the entry for a Java function, and must be unique in a particular package.
 
-You should complete the Functions scenario to create your first function using Maven.
+To speed development, you may find it easier to deploy your function app project files directly from a .zip file. The .zip deployment API takes the contents of a .zip file and extracts the contents into the wwwroot folder of your function app. This .zip file deployment uses the same Kudu service that powers continuous integration-based deployments, including:
 
-#### Programming model
-The concepts of triggers and bindings are fundamental to Azure Functions. Triggers start the execution of your code. Bindings give you a way to pass data to and return data from a function, without having to write custom data access code.
+- Deletion of files that were left over from earlier deployments.
+- Deployment customization, including running deployment scripts.
+- Deployment logs.
+- Syncing function triggers in a Consumption plan function app.

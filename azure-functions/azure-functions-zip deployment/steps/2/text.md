@@ -1,28 +1,26 @@
+The .zip file that you use for push deployment must contain all of the files needed to run your function.
 
-Here is the folder structure of an Azure Functions Java project:
+Important
 
-```
-FunctionsProject
- | - src
- | | - main
- | | | - java
- | | | | - FunctionApp
- | | | | | - MyFirstFunction.java
- | | | | | - MySecondFunction.java
- | - target
- | | - azure-functions
- | | | - FunctionApp
- | | | | - FunctionApp.jar
- | | | | - host.json
- | | | | - MyFirstFunction
- | | | | | - function.json
- | | | | - MySecondFunction
- | | | | | - function.json
- | | | | - bin
- | | | | - lib
- | - pom.xml
-```
+When you use .zip deployment, any files from an existing deployment that aren't found in the .zip file are deleted from your function app.
 
-You can use a shared host.json file to configure the function app. Each function has its own code file (.java) and binding configuration file (function.json).
+The code for all the functions in a specific function app is located in a root project folder that contains a host configuration file and one or more subfolders. Each subfolder contains the code for a separate function. The folder structure is shown in the following representation:
 
-You can put more than one function in a project. Avoid putting your functions into separate jars. The FunctionApp in the target directory is what gets deployed to your function app in Azure.
+
+Copy
+FunctionApp
+ | - host.json
+ | - Myfirstfunction
+ | | - function.json
+ | | - ...  
+ | - mysecondfunction
+ | | - function.json
+ | | - ...  
+ | - SharedCode
+ | - bin
+In version 2.x of the Functions runtime, all functions in the function app must share the same language stack.
+
+The host.json file contains runtime-specific configurations and is in the root folder of the function app. A bin folder contains packages and other library files that the function app requires. 
+
+A function app includes all of the files and folders in the wwwroot directory. A .zip file deployment includes the contents of the wwwroot directory, but not the directory itself. When deploying a C# class library project, you must include the compiled library files and dependencies in a bin subfolder in your .zip package.
+

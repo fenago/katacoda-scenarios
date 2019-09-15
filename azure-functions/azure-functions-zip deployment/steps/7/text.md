@@ -1,22 +1,12 @@
+The following example uses the cURL tool to deploy a .zip file. Replace the placeholders <username>, <password>, <zip_file_path>, and <app_name>. When prompted by cURL, type in the password.
 
-You can use Plain old Java objects (POJOs), types defined in azure-functions-java-library, or primitive data types such as String and Integer to bind to input or output bindings.
-
-POJOs
-For converting input data to POJO, azure-functions-java-worker uses the gson library. POJO types used as inputs to functions should be public.
-
-Binary data
-Bind binary inputs or outputs to byte[], by setting the dataType field in your function.json to binary:
-
-Java
+bash
 
 Copy
-   @FunctionName("BlobTrigger")
-    @StorageAccount("AzureWebJobsStorage")
-     public void blobTrigger(
-        @BlobTrigger(name = "content", path = "myblob/{fileName}", dataType = "binary") byte[] content,
-        @BindingName("fileName") String fileName,
-        final ExecutionContext context
-    ) {
-        context.getLogger().info("Java Blob trigger function processed a blob.\n Name: " + fileName + "\n Size: " + content.length + " Bytes");
-    }
-If you expect null values, use Optional<T>.
+curl -X POST -u <deployment_user> --data-binary @"<zip_file_path>" https://<app_name>.scm.azurewebsites.net/api/zipdeploy
+This request triggers push deployment from the uploaded .zip file. You can review the current and past deployments by using the https://<app_name>.scm.azurewebsites.net/api/deployments endpoint, as shown in the following cURL example. Again, replace <app_name> with the name of your app and <deployment_user> with the username of your deployment credentials.
+
+bash
+
+Copy
+curl -u <deployment_user> https://<app_name>.scm.azurewebsites.net/api/deployments

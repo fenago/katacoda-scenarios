@@ -1,13 +1,11 @@
-For local development of Java function apps, download and use the Azul Zulu Enterprise for Azure Java 8 JDKs from Azul Systems. Azure Functions uses the Azul Java 8 JDK runtime when you deploy your function apps to the cloud.
+You can use Azure CLI to trigger a push deployment. Push deploy a .zip file to your function app by using the az functionapp deployment source config-zip command. To use this command, you must use Azure CLI version 2.0.21 or later. To see what Azure CLI version you are using, use the az --version command.
 
-Azure support for issues with the JDKs and function apps is available with a qualified support plan.
+In the following command, replace the <zip_file_path> placeholder with the path to the location of your .zip file. Also, replace <app_name> with the unique name of your function app.
 
-Customize JVM
-Functions lets you customize the Java virtual machine (JVM) used to run your Java functions. The following JVM options are used by default:
 
--XX:+TieredCompilation
--XX:TieredStopAtLevel=1
--noverify
--Djava.net.preferIPv4Stack=true
--jar
-You can provide additional arguments in an app setting named JAVA_OPTS. You can add app settings to your function app deployed to Azure in the Azure portal or the Azure CLI.
+az functionapp deployment source config-zip  -g myResourceGroup -n \
+<app_name> --src <zip_file_path>
+
+This command deploys project files from the downloaded .zip file to your function app in Azure. It then restarts the app. To view the list of deployments for this function app, you must use the REST APIs.
+
+When you're using Azure CLI on your local computer, <zip_file_path> is the path to the .zip file on your computer. You can also run Azure CLI in Azure Cloud Shell. When you use Cloud Shell, you must first upload your deployment .zip file to the Azure Files account that's associated with your Cloud Shell. In that case, <zip_file_path> is the storage location that your Cloud Shell account uses.

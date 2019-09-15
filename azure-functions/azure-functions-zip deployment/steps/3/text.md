@@ -1,20 +1,13 @@
-Functions are invoked by a trigger, such as an HTTP request, a timer, or an update to data. Your function needs to process that trigger, and any other inputs, to produce one or more outputs.
+When you are developing on a local computer, it's easy to create a .zip file of the function app project folder on your development computer.
 
-Use the Java annotations included in the com.microsoft.azure.functions.annotation.* package to bind input and outputs to your methods. For more information, see the Java reference docs.
+However, you might have created your functions by using the editor in the Azure portal. You can download an existing function app project in one of these ways:
 
- Important
+From the Azure portal:
 
-You must configure an Azure Storage account in your local.settings.json to run Azure Blob storage, Azure Queue storage, or Azure Table storage triggers locally.
+Sign in to the Azure portal, and then go to your function app.
 
-Example:
+On the Overview tab, select Download app content. Select your download options, and then select Download.
 
-Java
 
-Copy
-public class Function {
-    public String echo(@HttpTrigger(name = "req", 
-      methods = {"post"},  authLevel = AuthorizationLevel.ANONYMOUS) 
-        String req, ExecutionContext context) {
-        return String.format(req);
-    }
-}
+The downloaded .zip file is in the correct format to be republished to your function app by using .zip push deployment. The portal download can also add the files needed to open your function app directly in Visual Studio.
+
