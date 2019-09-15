@@ -37,6 +37,11 @@
       "title": "Java to create and publish a function to Azure Functions",
       "description": ""
     },
+	{
+      "course_id": "azure-functions-java-developer guide",
+      "title": "Java to create and publish a function to Azure Functions",
+      "description": ""
+    },
     {
       "course_id": "azure-functions-python",
       "title": "Create an HTTP triggered python function",
@@ -53,7 +58,42 @@
       "description": ""
     },
 	{
-      "course_id": "azure-functions-timer",
+      "course_id": "azure-functions-disable",
+      "title": "Create a timer based function in Azure",
+      "description": ""
+    },
+	{
+      "course_id": "azure-functions-runtime",
+      "title": "Create a timer based function in Azure",
+      "description": ""
+    },
+	{
+      "course_id": "azure-functions-manage",
+      "title": "Create a timer based function in Azure",
+      "description": ""
+    },
+	{
+      "course_id": "azure-functions-monitoring",
+      "title": "Create a timer based function in Azure",
+      "description": ""
+    },
+	{
+      "course_id": "azure-functions-trigger-cosmosdb",
+      "title": "Create a timer based function in Azure",
+      "description": ""
+    },
+	{
+      "course_id": "azure-functions-trigger-blob",
+      "title": "Create a timer based function in Azure",
+      "description": ""
+    },
+	{
+      "course_id": "azure-functions-trigger-queue",
+      "title": "Create a timer based function in Azure",
+      "description": ""
+    },
+	{
+      "course_id": "azure-functions-trigger-timer",
       "title": "Create a timer based function in Azure",
       "description": ""
     }
