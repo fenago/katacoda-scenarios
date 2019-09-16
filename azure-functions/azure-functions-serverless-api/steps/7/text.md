@@ -16,7 +16,7 @@ Field | Sample value | Description
 
 The `%HELLO_HOST%` syntax will reference the app setting you created earlier. The resolved URL will point to your original function.
 
-- Click Create.
+- Click **Create**.
 
 You can try out your new proxy by copying the Proxy URL and testing it in the browser or with your favorite HTTP client.
 

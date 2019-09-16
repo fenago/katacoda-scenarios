@@ -1,16 +1,16 @@
-1. Open a second instance of the Azure portal in a new tab in the browser.
+Open a second instance of the Azure portal in a new tab in the browser.
 
-2. On the left side of the portal, expand the icon bar, type cosmos in the search field, and select Azure Cosmos DB.
+On the left side of the portal, expand the icon bar, type cosmos in the search field, and select Azure Cosmos DB.
 
-![](https://github.com/fenago/katacoda-scenarios/raw/master/azure-functions/azure-functions-trigger-cosmosdb/steps/5/2.JPG)
+![](https://github.com/fenago/katacoda-scenarios/raw/master/azure-functions/azure-functions-trigger-cosmosdb/steps/5/1.JPG)
 
-3. Choose your Azure Cosmos DB account, then select the Data Explorer.
+Choose your Azure Cosmos DB account, then select the Data Explorer.
 
-4. In Collections, choose taskDatabase and select New Collection.
+In Collections, choose taskDatabase and select New Collection.
 
 ![](https://github.com/fenago/katacoda-scenarios/raw/master/azure-functions/azure-functions-trigger-cosmosdb/steps/5/4.png)
 
-5. In Add Collection, use the settings shown in the table below the image.
+In Add Collection, use the settings shown in the table below the image.
 
 ![](https://github.com/fenago/katacoda-scenarios/raw/master/azure-functions/azure-functions-trigger-cosmosdb/steps/5/5.png)
 
@@ -22,6 +22,6 @@ Setting	| Suggested value | Description
 `Throughput` | `400 RU` | `	Use the default value. If you want to reduce latency, you can scale up the throughput later.
 `Partition key` | `/category` | A partition key that distributes data evenly to each partition. Selecting the correct partition key is **Important:** in creating a performant collection.
 
-6. Click OK to create the Items collection. It may take a short time for the collection to get created.
+Click OK to create the Items collection. It may take a short time for the collection to get created.
 
 After the collection specified in the function binding exists, you can test the function by adding documents to this new collection.

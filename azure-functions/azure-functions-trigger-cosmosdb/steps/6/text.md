@@ -1,20 +1,17 @@
-Other quick starts in this collection build upon this quick start. If you plan to work with subsequent quick starts, tutorials, or with any of the services you have created in this quick start, do not clean up the resources.
 
-Resources in Azure refers to function apps, functions, storage accounts, and so forth. They are grouped into resource groups, and you can delete everything in a group by deleting the group.
+1. Expand the new taskCollection collection in Data Explorer, choose Documents, then select New Document.
+    ![](https://github.com/fenago/katacoda-scenarios/raw/master/azure-functions/azure-functions-trigger-cosmosdb/steps/6/1.png)
 
-In the Azure portal, go to the Resource group page.
+2. Replace the contents of the new document with the following content, then choose Save.
+    <pre class="file" data-target="clipboard">
+    {
+        "id": "task1",
+        "category": "general",
+        "description": "some task"
+    }
+    </pre>
 
-To get to that page from the function app page, select the Overview tab and then select the link under Resource group.
+3. Switch to the first browser tab that contains your function in the portal. Expand the function logs and verify that the new document has triggered the function. See that the task1 document ID value is written to the logs.
+    ![](https://github.com/fenago/katacoda-scenarios/raw/master/azure-functions/azure-functions-trigger-cosmosdb/steps/6/3.png)
 
-
-![](https://github.com/fenago/katacoda-scenarios/raw/master/azure-functions/azure-functions-trigger-cosmosdb/steps/6/1.png)
-
-Select the resource group to delete from the function app page.
-
-To get to that page from the dashboard, select Resource groups, and then select the resource group that you used for this quickstart.
-
-In the Resource group page, review the list of included resources, and verify that they are the ones you want to delete.
-
-Select Delete resource group, and follow the instructions.
-
-Deletion may take a couple of minutes. When it's done, a notification appears for a few seconds. You can also select the bell icon at the top of the page to view the notification.
+4. (Optional) Go back to your document, make a change, and click Update. Then, go back to the function logs and verify that the update has also triggered the function.
