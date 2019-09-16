@@ -5,11 +5,11 @@
   "time": "15 minutes",
   "details": {
     "steps": [{
-      "title": "Azure Functions",
+      "title": "Create an Azure Function app",
       "text": "steps/1/text.md"
     },
     {
-      "title": "Create an Azure Function app",
+      "title": "Create an HTTP triggered function",
       "text": "steps/2/text.md"
     },    
 	{

@@ -2,9 +2,9 @@ Next, you will use a proxy to create a mock API for your solution. This allows c
 
 To create this mock API, we will create a new proxy, this time using the App Service Editor. To get started, navigate to your function app in the portal. Select Platform features and under Development Tools find App Service Editor. Clicking this will open the App Service Editor in a new tab.
 
-Select proxies.json in the left navigation. This is the file which stores the configuration for all of your proxies. If you use one of the Functions deployment methods, this is the file you will maintain in source control. To learn more about this file, see Proxies advanced configuration.
+Select `proxies.json` in the left navigation. This is the file which stores the configuration for all of your proxies. 
 
-If you've followed along so far, your proxies.json should look like the following:
+If you've followed along so far, your `proxies.json` should look like the following:
 
 ```
 {

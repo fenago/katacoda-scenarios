@@ -3,7 +3,7 @@ Use the following procedure to view and update the runtime version currently use
 1. In the Azure portal, browse to your function app.
 
 2. Under Configured Features, choose Function app settings.
-    ![](https://github.com/fenago/katacoda-scenarios/raw/master/azure-functions/azure-functions-runtime/steps/4/1.png)
+    ![](https://github.com/fenago/katacoda-scenarios/raw/master/azure-functions/azure-functions-runtime/steps/4/2.png)
 
 3. In the Function app settings tab, locate the Runtime version. **Note:** the specific runtime version and the         requested major version. In the example below, the version is set to ~2.
     ![](https://github.com/fenago/katacoda-scenarios/raw/master/azure-functions/azure-functions-runtime/steps/4/3.png)

@@ -1,18 +1,24 @@
-Select the Create a resource button found on the upper left-hand corner of the Azure portal, then select Compute > Function App.
+Expand your new function app, then select the + button next to Functions, choose In-portal, and select Continue.
 
-![](https://github.com/fenago/katacoda-scenarios/raw/master/azure-functions/azure-functions-serverless-api/steps/2/1.png)
+![](https://github.com/fenago/katacoda-scenarios/raw/master/azure-functions/azure-functions-serverless-api/steps/2/4.png)
 
-Use the function app settings as specified in the table below the image.
+Choose WebHook + API and then select Create.
 
-![](https://github.com/fenago/katacoda-scenarios/raw/master/azure-functions/azure-functions-serverless-api/steps/2/2.png)
+![](https://github.com/fenago/katacoda-scenarios/raw/master/azure-functions/azure-functions-serverless-api/steps/2/5.png)
 
-Select **Create** to provision and deploy the function app.
+A function is created using a language-specific template for an HTTP triggered function.
 
-Select the Notification icon in the upper-right corner of the portal and watch for the Deployment succeeded message.
+Now, you can run the new function by sending an HTTP request.
 
-![](https://github.com/fenago/katacoda-scenarios/raw/master/azure-functions/azure-functions-serverless-api/steps/2/3.png)
+#### Test the function
+In your new function, click </> Get function URL at the top right, select default (Function key), and then click Copy.
 
+![](https://github.com/fenago/katacoda-scenarios/raw/master/azure-functions/azure-functions-serverless-api/steps/2/6.png)
 
-Select Go to resource to view your new function app. You can also select Pin to dashboard. Pinning makes it easier to return to this function app resource from your dashboard.
+Paste the function URL into your browser's address bar. Add the query string value &name=<yourname> to the end of this URL and press the Enter key on your keyboard to execute the request. You should see the response returned by the function displayed in the browser.
 
-Next, you create a function in the new function app.
+The following example shows the response in the browser:
+
+![](https://github.com/fenago/katacoda-scenarios/raw/master/azure-functions/azure-functions-serverless-api/steps/6/7.png)
+
+The request URL includes a key that is required, by default, to access your function over HTTP.

@@ -1,8 +1,6 @@
 You can also view and set the FUNCTIONS_EXTENSION_VERSION from the Azure CLI.
 
- **Note:**
-
-Because other settings may be impacted by the runtime version, you should change the version in the portal. The portal automatically makes the other needed updates, such as Node.js version and runtime stack, when you change runtime versions.
+**Note:** Because other settings may be impacted by the runtime version, you should change the version in the portal. The portal automatically makes the other needed updates, such as Node.js version and runtime stack, when you change runtime versions.
 
 Using the Azure CLI, view the current runtime version with the az functionapp config appsettings set command.
 
