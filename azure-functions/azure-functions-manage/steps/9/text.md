@@ -5,12 +5,12 @@ Configure function app's CORS list
 ![](https://github.com/fenago/katacoda-scenarios/raw/master/azure-functions/azure-functions-manage/steps/9/cors.JPG)
 
 
+When the wildcard `(*)` is used, all other domains are ignored.
 
-When the wildcard (*) is used, all other domains are ignored.
+Use the az functionapp cors add command to add a domain to the allowed origins list. The following example adds the `contoso.com` domain:
 
-Use the az functionapp cors add command to add a domain to the allowed origins list. The following example adds the contoso.com domain:
-
-az functionapp cors add --name <FUNCTION_APP_NAME> \
+```az functionapp cors add --name <FUNCTION_APP_NAME> \
 --resource-group <RESOURCE_GROUP_NAME> \
---allowed-origins https://contoso.com
+--allowed-origins https://contoso.com```{{copy}}
+
 Use the az functionapp cors show command to list the current allowed origins.

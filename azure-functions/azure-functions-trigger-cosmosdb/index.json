@@ -1,5 +1,5 @@
 {
-  "title": "Create a function in Azure that is triggered by a timer",
+  "title": "Create a function triggered by Azure Cosmos DB",
   "description": "Introduction to Azure Functions",
   "difficulty": "Intermediate",
   "time": "15 minutes",

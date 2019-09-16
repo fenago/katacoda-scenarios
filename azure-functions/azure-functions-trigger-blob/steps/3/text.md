@@ -19,8 +19,8 @@
 
 Setting | Suggested value | Description
 --- | --- | ---
-`Name` |	`	Unique in your function app` |	Name of this blob triggered function.
-`Path` |	`	samples-workitems/{name}` |	Location in Blob storage being monitored. The file name of the blob is passed in the binding as the name parameter.
+`Name` |	`Unique in your function app` |	Name of this blob triggered function.
+`Path` |	`samples-workitems/{name}` |	Location in Blob storage being monitored. The file name of the blob is passed in the binding as the name parameter.
 `Storage account connection` |	`AzureWebJobsStorage` |	You can use the storage account connection already being used by your function app, or create a new one.
 
 6. Click Create to create your function.

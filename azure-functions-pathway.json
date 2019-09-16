@@ -79,7 +79,7 @@
     },
 	{
       "course_id": "azure-functions-manage",
-      "title": "Create a timer based function in Azure",
+      "title": "Manage your function app",
       "description": ""
     },
 	{
@@ -89,7 +89,7 @@
     },
 	{
       "course_id": "azure-functions-trigger-cosmosdb",
-      "title": "Create a timer based function in Azure",
+      "title": "Create a function triggered by Azure Cosmos DB",
       "description": ""
     },
 	{
