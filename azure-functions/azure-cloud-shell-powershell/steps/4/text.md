@@ -2,7 +2,7 @@ Type dir under AllResources directory to view your Azure resources.
 
 Azure PowerShell
 
-Copy
+`
 
 Try It
 PS Azure:\MySubscriptionName> dir AllResources
@@ -23,6 +23,6 @@ TestVm1   westus     Succeeded         Standard_DS2_v2 WindowsServer 2016-Datace
 TestVm2   westus     Succeeded         Standard_DS1_v2 WindowsServer 2016-Datacenter Latest    AdminUser      demo271
 
 
- Note
+ **Note:**
 
 You may notice that the second time when you type dir, the Cloud Shell is able to display the items much faster. This is because the child items are cached in memory for a better user experience. However, you can always use dir -Force to get fresh data.

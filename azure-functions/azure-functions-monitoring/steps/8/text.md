@@ -28,7 +28,7 @@ The v2.x runtime uses the .NET Core logging filter hierarchy.
 
 JSON
 
-Copy
+`
 {
   "logging": {
     "fileLoggingMode": "always",
@@ -43,7 +43,7 @@ Copy
 Version 1.x
 JSON
 
-Copy
+`
 {
   "logger": {
     "categoryFilter": {
@@ -68,7 +68,7 @@ If host.json includes multiple categories that start with the same string, the l
 Version 2.x
 JSON
 
-Copy
+`
 {
   "logging": {
     "fileLoggingMode": "always",
@@ -83,7 +83,7 @@ Copy
 Version 1.x
 JSON
 
-Copy
+`
 {
   "logger": {
     "categoryFilter": {

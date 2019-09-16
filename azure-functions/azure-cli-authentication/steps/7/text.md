@@ -3,7 +3,7 @@ On resources configured for managed identities for Azure resources, you can sign
 
 Azure CLI
 
-Copy
+`
 
 Try It
 az login --identity

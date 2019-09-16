@@ -2,7 +2,7 @@ Other quickstarts in this collection build upon this quickstart. If you plan to 
 
 Azure CLI
 
-Copy
+`
 
 Try It
 az group delete --name myResourceGroup

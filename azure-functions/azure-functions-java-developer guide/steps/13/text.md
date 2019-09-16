@@ -4,7 +4,7 @@ Here's how to configure your function app to write application logging by using 
 
 Azure CLI
 
-Copy
+`
 
 Try It
 az webapp log config --name functionname --resource-group myResourceGroup --application-logging true
@@ -12,7 +12,7 @@ To stream logging output for your function app by using the Azure CLI, open a ne
 
 Azure CLI
 
-Copy
+`
 
 Try It
 az webapp log tail --name webappname --resource-group myResourceGroup
@@ -22,7 +22,7 @@ To download the log files as a single ZIP file by using the Azure CLI, open a ne
 
 Azure CLI
 
-Copy
+`
 
 Try It
 az webapp log download --resource-group resourcegroupname --name functionappname

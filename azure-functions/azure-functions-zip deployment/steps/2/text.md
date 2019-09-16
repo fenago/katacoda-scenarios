@@ -1,13 +1,13 @@
 The .zip file that you use for push deployment must contain all of the files needed to run your function.
 
-Important
+**Important:**
 
 When you use .zip deployment, any files from an existing deployment that aren't found in the .zip file are deleted from your function app.
 
 The code for all the functions in a specific function app is located in a root project folder that contains a host configuration file and one or more subfolders. Each subfolder contains the code for a separate function. The folder structure is shown in the following representation:
 
 
-Copy
+`
 FunctionApp
  | - host.json
  | - Myfirstfunction

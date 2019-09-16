@@ -19,7 +19,7 @@ When the deploy is complete, you see the URL you can use to access your Azure fu
 
 Test the function app running on Azure using cURL. You'll need to change the URL from the sample below to match the deployed URL for your own function app.
 
-**Note:**
+**Note:**:
 Make sure you set the Access rights to Anonymous. When you choose the default level of Function, you are required to present the function key in requests to access your function endpoint.
 
 `curl -w "\n" https://fabrikam-function-<update-me>.azurewebsites.net/api/HttpTrigger-Java -d AzureFunctions`{{copy}}

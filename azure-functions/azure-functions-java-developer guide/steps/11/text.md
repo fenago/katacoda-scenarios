@@ -2,7 +2,7 @@ Few triggers send trigger metadata along with input data. You can use annotation
 
 Java
 
-Copy
+`
 package com.example;
 
 import java.util.Optional;
@@ -22,7 +22,7 @@ In the preceding example, the queryValue is bound to the query string parameter 
 
 Java
 
-Copy
+`
  @FunctionName("QueueTriggerMetadata")
     public void QueueTriggerMetadata(
         @QueueTrigger(name = "message", queueName = "test-input-java-metadata", connection = "AzureWebJobsStorage") String message,@BindingName("Id") String metadataId,
@@ -34,6 +34,6 @@ Copy
         testData.id = metadataId;
         output.setValue(testData);
     }
- Note
+ **Note:**
 
 The name provided in the annotation needs to match the metadata property.

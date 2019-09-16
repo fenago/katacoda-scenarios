@@ -2,7 +2,7 @@ To clone a Git repo in the Cloud Shell, you need to create a personal access tok
 
 Azure PowerShell
 
-Copy
+`
 
 Try It
   git clone https://<your-access-token>@github.com/username/repo.git

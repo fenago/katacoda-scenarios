@@ -7,7 +7,7 @@ The Subscription setting
 
 The file share mounts as clouddrive in your $Home directory. This is a one-time action, and the file share mounts automatically in subsequent sessions.
 
- Note
+ **Note:**
 
 For security, each user should provision their own storage account. For role-based access control (RBAC), users must have contributor access or above at the storage account level.
 

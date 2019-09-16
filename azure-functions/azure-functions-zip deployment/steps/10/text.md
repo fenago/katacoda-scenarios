@@ -10,5 +10,5 @@ The following shows a function app configured to run from a .zip file hosted in 
 
 ![](https://github.com/fenago/katacoda-scenarios/raw/master/azure-functions/azure-functions-zip deployment/steps/10/settings.JPG)
 
-Note
+**Note:**
 Currently, only .zip package files are supported.

@@ -3,7 +3,7 @@ Input and output bindings provide a declarative way to connect to data from with
 Input binding example
 Java
 
-Copy
+`
 package com.example;
 
 import com.microsoft.azure.functions.annotation.*;
@@ -43,7 +43,7 @@ To receive a batch of inputs, you can bind to String[], POJO[], List<String>, or
 
 Java
 
-Copy
+`
 @FunctionName("ProcessIotMessages")
     public void processIotMessages(
         @EventHubTrigger(name = "message", eventHubName = "%AzureWebJobsEventHubPath%", connection = "AzureWebJobsEventHubSender", cardinality = Cardinality.MANY) List<TestEventData> messages,

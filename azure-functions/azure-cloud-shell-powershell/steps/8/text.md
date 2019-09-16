@@ -2,7 +2,7 @@ You can use Enter-AzVM to interactively log into a VM running in Azure.
 
 Azure PowerShell
 
-Copy
+`
 
 Try It
 PS Azure:\> Enter-AzVM -Name MyVM1 -ResourceGroupName MyResourceGroup -Credential (Get-Credential)

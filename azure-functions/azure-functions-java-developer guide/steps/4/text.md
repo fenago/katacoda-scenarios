@@ -2,7 +2,7 @@ Here is the generated corresponding function.json by the azure-functions-maven-p
 
 JSON
 
-Copy
+`
 {
   "scriptFile": "azure-functions-example.jar",
   "entryPoint": "com.example.Function.echo",

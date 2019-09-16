@@ -3,7 +3,7 @@ You can select a tenant to sign in under with the --tenant argument. The value o
 
 Azure CLI
 
-Copy
+`
 
 Try It
 az login --tenant <tenant>

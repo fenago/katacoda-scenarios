@@ -1,5 +1,5 @@
 az login --service-principal -u <app-url> -p <password-or-cert> --tenant <tenant>
- Important
+ **Important:**
 
 If you want to avoid displaying your password on console and are using az login interactively, use the read -s command under bash.
 

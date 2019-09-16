@@ -2,7 +2,7 @@ You can update the FUNCTIONS_EXTENSION_VERSION setting in the function app with 
 
 Azure CLI
 
-Copy
+`
 
 Try It
 az functionapp config appsettings set --name <function_app> \

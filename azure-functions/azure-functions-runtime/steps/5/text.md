@@ -1,6 +1,6 @@
 You can also view and set the FUNCTIONS_EXTENSION_VERSION from the Azure CLI.
 
- Note
+ **Note:**
 
 Because other settings may be impacted by the runtime version, you should change the version in the portal. The portal automatically makes the other needed updates, such as Node.js version and runtime stack, when you change runtime versions.
 
@@ -8,7 +8,7 @@ Using the Azure CLI, view the current runtime version with the az functionapp co
 
 Azure CLI
 
-Copy
+`
 
 Try It
 az functionapp config appsettings list --name <function_app> \
@@ -19,7 +19,7 @@ You see the FUNCTIONS_EXTENSION_VERSION in the following output, which has been 
 
 output
 
-Copy
+`
 [
   {
     "name": "FUNCTIONS_EXTENSION_VERSION",

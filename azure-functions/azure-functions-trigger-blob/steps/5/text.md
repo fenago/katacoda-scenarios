@@ -10,6 +10,6 @@
 
 ![](https://github.com/fenago/katacoda-scenarios/raw/master/azure-functions/azure-functions-trigger-blob/steps/5/4.png)
 
-Note
+**Note:**
 
 When your function app runs in the default Consumption plan, there may be a delay of up to several minutes between the blob being added or updated and the function being triggered. If you need low latency in your blob triggered functions, consider running your function app in an App Service plan.

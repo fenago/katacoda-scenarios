@@ -1,6 +1,6 @@
 To authenticate to servers or VMs using SSH, generate the public-private key pair in Cloud Shell and publish the public key to authorized_keys on the remote machine, such as /home/user/.ssh/authorized_keys.
 
- Note
+ **Note:**
 
 You can create SSH private-public keys using ssh-keygen and publish them to $env:USERPROFILE\.ssh in Cloud Shell.
 
@@ -9,7 +9,7 @@ Follow instructions here to create a new VM configuration using Azure PowerShell
 
 Azure PowerShell
 
-Copy
+`
 
 Try It
 # Create VM config object - $vmConfig using instructions on linked page above

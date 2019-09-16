@@ -2,7 +2,7 @@ List all your subscriptions from Azure drive
 
 Azure PowerShell
 
-Copy
+`
 
 Try It
 PS Azure:\> dir
@@ -10,7 +10,7 @@ cd to your preferred subscription
 
 Azure PowerShell
 
-Copy
+`
 
 Try It
 PS Azure:\> cd MySubscriptionName
@@ -21,7 +21,7 @@ Type dir to list multiple views of your Azure resources.
 
 Azure PowerShell
 
-Copy
+`
 
 Try It
 PS Azure:\MySubscriptionName> dir

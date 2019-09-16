@@ -19,4 +19,4 @@ Functions in myfunctionapp:
         Invoke url: https://myfunctionapp.azurewebsites.net/api/httptrigger?code=cCr8sAxfBiow548FBDLS1....
 ```
 
-Copy the Invoke url value for your HttpTrigger, which you can now use to test your function in Azure. The URL contains a code query string value that is your function key. This key makes it difficult for others to call your HTTP trigger endpoint in Azure.
+` the Invoke url value for your HttpTrigger, which you can now use to test your function in Azure. The URL contains a code query string value that is your function key. This key makes it difficult for others to call your HTTP trigger endpoint in Azure.

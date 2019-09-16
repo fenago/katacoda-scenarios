@@ -11,6 +11,6 @@ You will get following response:
 {"created": "2019-09-14T15:47:34.949519", "predictedTagName": "cat", "prediction": [{"tagName": "cat", "probability": 1.0}]}
 ```
 
-**Note:** Interface will switch back to terminal 1 after executing above command, you can manually click terminal 2 to see response.
+**Note:**: Interface will switch back to terminal 1 after executing above command, you can manually click terminal 2 to see response.
 
 Keep the function app running.

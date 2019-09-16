@@ -4,7 +4,7 @@ Function apps run in, and are maintained, by the Azure App Service platform. As 
 
 
 
- Note
+ **Note:**
 
 Not all App Service features are available when a function app runs on the Consumption hosting plan.
 

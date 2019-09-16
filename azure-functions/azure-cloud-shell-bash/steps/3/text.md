@@ -3,7 +3,7 @@ Create a new resource group in WestUS named "MyRG".
 
 Azure CLI
 
-Copy
+`
 
 Try It
 az group create --location westus --name MyRG

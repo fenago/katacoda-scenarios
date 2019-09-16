@@ -6,7 +6,7 @@ List subscriptions you have access to.
 
 Azure CLI
 
-Copy
+`
 
 Try It
 az account list
@@ -14,7 +14,7 @@ Set your preferred subscription:
 
 Azure CLI
 
-Copy
+`
 
 Try It
 az account set --subscription 'my-subscription-name'

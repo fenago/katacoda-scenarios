@@ -4,7 +4,7 @@ Application Insights Analytics gives you access to all telemetry data in the for
 Here's a query example that shows the distribution of requests per worker over the last 30 minutes.
 
 
-Copy
+`
 requests
 | where timestamp > ago(30m) 
 | summarize count() by cloud_RoleInstance, bin(timestamp, 1m)
@@ -23,7 +23,7 @@ The other tables are for availability tests, and client and browser telemetry. Y
 Within each table, some of the Functions-specific data is in a customDimensions field. For example, the following query retrieves all traces that have log level Error.
 
 
-Copy
+`
 traces 
 | where customDimensions.LogLevel == "Error"
 The runtime provides the customDimensions.LogLevel and customDimensions.Category fields. You can provide additional fields in logs that you write in your function code.

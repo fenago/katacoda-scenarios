@@ -11,7 +11,7 @@ Type Get-Help to get information about PowerShell in Azure Cloud Shell.
 
 Azure PowerShell
 
-Copy
+`
 
 Try It
 Get-Help
@@ -19,7 +19,7 @@ For a specific command, you can still do Get-Help followed by a cmdlet.
 
 Azure PowerShell
 
-Copy
+`
 
 Try It
 Get-Help Get-AzVM

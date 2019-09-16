@@ -5,27 +5,27 @@
   "time": "15 minutes",
   "details": {
     "steps": [{
-      "title": "Start Cloud Shell",
+      "title": "The Azure Command-Line Interface (CLI)",
       "text": "steps/1/text.md"
     },
     {
-      "title": "Select the Bash environment",
+      "title": "Azure CLI",
       "text": "steps/2/text.md"
     },    
 	{
-      "title": "Create a resource group",
+      "title": "Install",
       "text": "steps/3/text.md"
     },
 	{
-      "title": "Create a Linux VM",
+      "title": "Manual install instructions",
       "text": "steps/4/text.md"
     },
 	{
-      "title": "SSH into your Linux VM",
+      "title": "az login",
       "text": "steps/5/text.md"
     },
 	{
-      "title": "Cleaning up",
+      "title": "Update",
       "text": "steps/6/text.md"
   }],
     "intro": {

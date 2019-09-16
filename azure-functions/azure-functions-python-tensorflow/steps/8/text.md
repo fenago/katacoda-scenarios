@@ -1,7 +1,7 @@
 You'll use a pre-built TensorFlow model that was trained with and exported from Azure Custom Vision Service.
 
 
-The model consists of two files in the <REPOSITORY_ROOT>/resources/model folder: `model.db` and `labels.txt`. Copy them into the classify function's folder.
+The model consists of two files in the <REPOSITORY_ROOT>/resources/model folder: `model.db` and `labels.txt`. ` them into the classify function's folder.
 
 `cp ../resources/model/* classify`{{execute T1}}
 

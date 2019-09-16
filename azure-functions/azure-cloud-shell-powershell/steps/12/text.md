@@ -3,7 +3,7 @@ You can create a script, say helloworld.ps1, and save it to your clouddrive to u
 
 Azure PowerShell
 
-Copy
+`
 
 Try It
 cd $HOME\clouddrive

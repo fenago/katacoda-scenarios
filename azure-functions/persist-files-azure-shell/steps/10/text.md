@@ -15,4 +15,4 @@ Select the file or files that you want to upload.
 Confirm the upload.
 You should now see the files that are accessible in your clouddrive directory in Cloud Shell.
 
-Note: If you need to define a function in a file and call it from the PowerShell cmdlets, then the dot operator must be included. For example: . .\MyFunctions.ps1
+**Note:**: If you need to define a function in a file and call it from the PowerShell cmdlets, then the dot operator must be included. For example: . .\MyFunctions.ps1

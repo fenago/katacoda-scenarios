@@ -3,7 +3,7 @@ You can bind an output binding to the return value by using $return.
 
 Java
 
-Copy
+`
 package com.example;
 
 import com.microsoft.azure.functions.annotation.*;

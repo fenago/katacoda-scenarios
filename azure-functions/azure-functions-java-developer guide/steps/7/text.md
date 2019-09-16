@@ -9,7 +9,7 @@ Bind binary inputs or outputs to byte[], by setting the dataType field in your f
 
 Java
 
-Copy
+`
    @FunctionName("BlobTrigger")
     @StorageAccount("AzureWebJobsStorage")
      public void blobTrigger(

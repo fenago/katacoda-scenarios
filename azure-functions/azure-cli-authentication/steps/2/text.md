@@ -5,7 +5,7 @@ Run the login command.
 
 Azure CLI
 
-Copy
+`
 
 Try It
 az login

@@ -3,4 +3,4 @@ After the function app is created in Azure, you can use the func azure functiona
 `func azure functionapp publish <APP_NAME>`{{copy}}
 
 
-Copy the Invoke url value for your HttpTrigger, which you can now use to test your function in Azure. The URL contains a code query string value that is your function key. This key makes it difficult for others to call your HTTP trigger endpoint in Azure.
+` the Invoke url value for your HttpTrigger, which you can now use to test your function in Azure. The URL contains a code query string value that is your function key. This key makes it difficult for others to call your HTTP trigger endpoint in Azure.

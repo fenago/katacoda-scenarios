@@ -20,7 +20,7 @@ Setting	| Suggested value | Description
 `Collection ID` | `Items` | The name for the new collection. This must match the name defined in your function binding.
 `Storage capacity` | `Fixed (10 GB)` | Use the default value. This value is the storage capacity of the database.
 `Throughput` | `400 RU` | `	Use the default value. If you want to reduce latency, you can scale up the throughput later.
-`Partition key` | `/category` | A partition key that distributes data evenly to each partition. Selecting the correct partition key is important in creating a performant collection.
+`Partition key` | `/category` | A partition key that distributes data evenly to each partition. Selecting the correct partition key is **Important:** in creating a performant collection.
 
 6. Click OK to create the Items collection. It may take a short time for the collection to get created.
 

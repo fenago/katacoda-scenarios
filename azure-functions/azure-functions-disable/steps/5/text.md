@@ -2,7 +2,7 @@ For scripting languages such as C# script and JavaScript, you use the disabled p
 
 JSON
 
-Copy
+`
 {
     "bindings": [
         {
@@ -19,7 +19,7 @@ or
 
 JSON
 
-Copy
+`
     "bindings": [
         ...
     ],
