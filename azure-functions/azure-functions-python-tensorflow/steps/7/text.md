@@ -8,4 +8,4 @@ In the terminal with the Python virtual environment activated, start the functio
 
 The function should execute and return **Hello Azure!**. Interface will switch back to terminal 1 after executing above command, you can manually click terminal 2 to see response.
 
-****Important:**:** Use `Ctrl` + `C` to stop the function app.
+**Important:** Use `Ctrl` + `C` to stop the function app.
