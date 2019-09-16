@@ -6,20 +6,13 @@ Because other settings may be impacted by the runtime version, you should change
 
 Using the Azure CLI, view the current runtime version with the az functionapp config appsettings set command.
 
-Azure CLI
+`az functionapp config appsettings list --name <function_app> --resource-group <my_resource_group>`{{copy}}
 
-`
+In this code, replace `<function_app>` with the name of your function app. Also replace `<my_resource_group>` with the name of the resource group for your function app.
 
-Try It
-az functionapp config appsettings list --name <function_app> \
---resource-group <my_resource_group>
-In this code, replace <function_app> with the name of your function app. Also replace <my_resource_group> with the name of the resource group for your function app.
+You see the **FUNCTIONS_EXTENSION_VERSION** in the following output, which has been truncated for clarity:
 
-You see the FUNCTIONS_EXTENSION_VERSION in the following output, which has been truncated for clarity:
-
-output
-
-`
+```
 [
   {
     "name": "FUNCTIONS_EXTENSION_VERSION",
@@ -40,3 +33,4 @@ output
     "value": "8.11.1"
   }
 ]
+```

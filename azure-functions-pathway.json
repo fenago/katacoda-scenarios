@@ -64,12 +64,12 @@
   },
 	{
       "course_id": "azure-functions-disable",
-      "title": "Create a timer based function in Azure",
+      "title": "Disable functions in Azure Functions",
       "description": ""
     },
 	{
       "course_id": "azure-functions-runtime",
-      "title": "Create a timer based function in Azure",
+      "title": "Azure Functions runtime versions",
       "description": ""
     },
     {

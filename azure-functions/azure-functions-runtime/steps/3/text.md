@@ -1,1 +1,3 @@
-You can change the runtime version used by your function app. Because of the potential of breaking changes, you can only change the runtime version before you have created any functions in your function app. Although the runtime version is determined by the FUNCTIONS_EXTENSION_VERSION setting, you should make this change in the Azure portal and not by changing the setting directly. This is because the portal validates your changes and makes other related changes as needed.
+You can change the runtime version used by your function app. Because of the potential of breaking changes, you can only change the runtime version before you have created any functions in your function app. Although the runtime version is determined by the `FUNCTIONS_EXTENSION_VERSION` setting.
+
+**Caution:** You should make this change in the Azure portal and not by changing the setting directly. This is because the portal validates your changes and makes other related changes as needed.
