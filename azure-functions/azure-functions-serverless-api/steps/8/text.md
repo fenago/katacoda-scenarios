@@ -1,59 +1,21 @@
-Input and output bindings provide a declarative way to connect to data from within your code. A function can have multiple input and output bindings.
+Next, you will use a proxy to create a mock API for your solution. This allows client development to progress, without needing the backend fully implemented. Later in development, you could create a new function app which supports this logic and redirect your proxy to it.
 
-Input binding example
-Java
+To create this mock API, we will create a new proxy, this time using the App Service Editor. To get started, navigate to your function app in the portal. Select Platform features and under Development Tools find App Service Editor. Clicking this will open the App Service Editor in a new tab.
 
-Copy
-package com.example;
+Select proxies.json in the left navigation. This is the file which stores the configuration for all of your proxies. If you use one of the Functions deployment methods, this is the file you will maintain in source control. To learn more about this file, see Proxies advanced configuration.
 
-import com.microsoft.azure.functions.annotation.*;
+If you've followed along so far, your proxies.json should look like the following:
 
-public class Function {
-    @FunctionName("echo")
-    public static String echo(
-        @HttpTrigger(name = "req", methods = { "put" }, authLevel = AuthorizationLevel.ANONYMOUS, route = "items/{id}") String inputReq,
-        @TableInput(name = "item", tableName = "items", partitionKey = "Example", rowKey = "{id}", connection = "AzureWebJobsStorage") TestInputData inputData
-		@TableOutput(name = "myOutputTable", tableName = "Person", connection = "AzureWebJobsStorage") OutputBinding<Person> testOutputData,
-    ) {
-		testOutputData.setValue(new Person(httpbody + "Partition", httpbody + "Row", httpbody + "Name"));
-        return "Hello, " + inputReq + " and " + inputData.getKey() + ".";
-    }
-
-    public static class TestInputData {
-        public String getKey() { return this.RowKey; }
-        private String RowKey;
-    }
-	public static class Person {
-        public String PartitionKey;
-        public String RowKey;
-        public String Name;
-
-        public Person(String p, String r, String n) {
-            this.PartitionKey = p;
-            this.RowKey = r;
-            this.Name = n;
+```
+{
+    "$schema": "http://json.schemastore.org/proxies",
+    "proxies": {
+        "HelloProxy": {
+            "matchCondition": {
+                "route": "/api/remotehello"
+            },
+            "backendUri": "https://%HELLO_HOST%/api/hello"
         }
     }
 }
-You invoke this function with an HTTP request.
-
-HTTP request payload is passed as a String for the argument inputReq.
-One entry is retrieved from Table storage, and is passed as TestInputData to the argument inputData.
-To receive a batch of inputs, you can bind to String[], POJO[], List<String>, or List<POJO>.
-
-Java
-
-Copy
-@FunctionName("ProcessIotMessages")
-    public void processIotMessages(
-        @EventHubTrigger(name = "message", eventHubName = "%AzureWebJobsEventHubPath%", connection = "AzureWebJobsEventHubSender", cardinality = Cardinality.MANY) List<TestEventData> messages,
-        final ExecutionContext context)
-    {
-        context.getLogger().info("Java Event Hub trigger received messages. Batch size: " + messages.size());
-    }
-    
-    public class TestEventData {
-    public String id;
-}
-
-This function gets triggered whenever there is new data in the configured event hub. Because the cardinality is set to MANY, the function receives a batch of messages from the event hub. EventData from event hub gets converted to TestEventData for the function execution.
+```

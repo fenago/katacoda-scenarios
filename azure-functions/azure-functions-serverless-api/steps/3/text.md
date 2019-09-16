@@ -1,20 +1,18 @@
-Functions are invoked by a trigger, such as an HTTP request, a timer, or an update to data. Your function needs to process that trigger, and any other inputs, to produce one or more outputs.
+By default, your HTTP-triggered function is configured to accept any HTTP method. There is also a default URL of the form http://<yourapp>.azurewebsites.net/api/<funcname>?code=<functionkey>. If you followed the quickstart, then <funcname> probably looks something like "HttpTriggerJS1". In this section, you will modify the function to respond only to GET requests against /api/hello route instead.
 
-Use the Java annotations included in the com.microsoft.azure.functions.annotation.* package to bind input and outputs to your methods. For more information, see the Java reference docs.
+Navigate to your function in the Azure portal. Select Integrate in the left navigation.
 
- Important
+![](https://github.com/fenago/katacoda-scenarios/raw/master/azure-functions/azure-functions-serverless-api/steps/3/1.png)
 
-You must configure an Azure Storage account in your local.settings.json to run Azure Blob storage, Azure Queue storage, or Azure Table storage triggers locally.
+2. Use the HTTP trigger settings as specified in the table.
 
-Example:
+Field	Sample value	Description
+Allowed HTTP methods	Selected methods	Determines what HTTP methods may be used to invoke this function
+Selected HTTP methods	GET	Allows only selected HTTP methods to be used to invoke this function
+Route template	/hello	Determines what route is used to invoke this function
+Authorization Level	Anonymous	Optional: Makes your function accessible without an API key
+ Note
 
-Java
+Note that you did not include the /api base path prefix in the route template, as this is handled by a global setting.
 
-Copy
-public class Function {
-    public String echo(@HttpTrigger(name = "req", 
-      methods = {"post"},  authLevel = AuthorizationLevel.ANONYMOUS) 
-        String req, ExecutionContext context) {
-        return String.format(req);
-    }
-}
+Click Save.

@@ -1,28 +1,18 @@
+Select the Create a resource button found on the upper left-hand corner of the Azure portal, then select Compute > Function App.
 
-Here is the folder structure of an Azure Functions Java project:
+![](https://github.com/fenago/katacoda-scenarios/raw/master/azure-functions/azure-functions-serverless-api/steps/2/1.png)
 
-```
-FunctionsProject
- | - src
- | | - main
- | | | - java
- | | | | - FunctionApp
- | | | | | - MyFirstFunction.java
- | | | | | - MySecondFunction.java
- | - target
- | | - azure-functions
- | | | - FunctionApp
- | | | | - FunctionApp.jar
- | | | | - host.json
- | | | | - MyFirstFunction
- | | | | | - function.json
- | | | | - MySecondFunction
- | | | | | - function.json
- | | | | - bin
- | | | | - lib
- | - pom.xml
-```
+Use the function app settings as specified in the table below the image.
 
-You can use a shared host.json file to configure the function app. Each function has its own code file (.java) and binding configuration file (function.json).
+![](https://github.com/fenago/katacoda-scenarios/raw/master/azure-functions/azure-functions-serverless-api/steps/2/2.png)
 
-You can put more than one function in a project. Avoid putting your functions into separate jars. The FunctionApp in the target directory is what gets deployed to your function app in Azure.
+Select **Create** to provision and deploy the function app.
+
+Select the Notification icon in the upper-right corner of the portal and watch for the Deployment succeeded message.
+
+![](https://github.com/fenago/katacoda-scenarios/raw/master/azure-functions/azure-functions-serverless-api/steps/2/3.png)
+
+
+Select Go to resource to view your new function app. You can also select Pin to dashboard. Pinning makes it easier to return to this function app resource from your dashboard.
+
+Next, you create a function in the new function app.

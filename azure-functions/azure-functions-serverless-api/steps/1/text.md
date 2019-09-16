@@ -1,8 +1,9 @@
-The Azure Functions runtime supports Java SE 8 LTS (zulu8.31.0.2-jre8.0.181-win_x64). This guide contains information about the intricacies of writing Azure Functions with Java.
+In this scenario, you learn how Azure Functions allows you to build highly scalable APIs. Azure Functions comes with a collection of built-in HTTP triggers and bindings, which make it easy to author an endpoint in a variety of languages, including Node.JS, C#, and more. In this article, you will customize an HTTP trigger to handle specific actions in your API design. You will also prepare for growing your API by integrating it with Azure Functions Proxies and setting up mock APIs. All of this is accomplished on top of the Functions serverless compute environment, so you don't have to worry about scaling resources - you can just focus on your API logic.
 
-A Java function is a public method, decorated with the annotation @FunctionName. This method defines the entry for a Java function, and must be unique in a particular package.
+#### Prerequisites
+This topic uses as its starting point the resources created in Create your first function from the Azure portal. If you haven't already done so, please complete these steps now to create your function app.
 
-You should complete the Functions scenario to create your first function using Maven.
+The resulting function will be used for the rest of this article.
 
-#### Programming model
-The concepts of triggers and bindings are fundamental to Azure Functions. Triggers start the execution of your code. Bindings give you a way to pass data to and return data from a function, without having to write custom data access code.
+Sign in to Azure
+Open the Azure portal. To do this, sign in to https://portal.azure.com with your Azure account.

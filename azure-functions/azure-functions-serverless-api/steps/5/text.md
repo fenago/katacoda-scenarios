@@ -1,13 +1,8 @@
-For local development of Java function apps, download and use the Azul Zulu Enterprise for Azure Java 8 JDKs from Azul Systems. Azure Functions uses the Azul Java 8 JDK runtime when you deploy your function apps to the cloud.
+In the next section, you will surface your API through a proxy. Azure Functions Proxies allows you to forward requests to other resources. You define an HTTP endpoint just like with HTTP trigger, but instead of writing code to execute when that endpoint is called, you provide a URL to a remote implementation. This allows you to compose multiple API sources into a single API surface which is easy for clients to consume. This is particularly useful if you wish to build your API as microservices.
 
-Azure support for issues with the JDKs and function apps is available with a qualified support plan.
+A proxy can point to any HTTP resource, such as:
 
-Customize JVM
-Functions lets you customize the Java virtual machine (JVM) used to run your Java functions. The following JVM options are used by default:
-
--XX:+TieredCompilation
--XX:TieredStopAtLevel=1
--noverify
--Djava.net.preferIPv4Stack=true
--jar
-You can provide additional arguments in an app setting named JAVA_OPTS. You can add app settings to your function app deployed to Azure in the Azure portal or the Azure CLI.
+- Azure Functions
+- API apps in Azure App Service
+- Docker containers in App Service on Linux
+- Any other hosted API

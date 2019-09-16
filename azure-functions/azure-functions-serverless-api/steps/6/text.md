@@ -1,18 +1,14 @@
-Azure portal
-In the Azure portal, use the Application Settings tab to add the JAVA_OPTS setting.
 
-![](https://github.com/fenago/katacoda-scenarios/raw/master/azure-functions/azure-functions-java-developer-guide/steps/6/settings.JPG)
+Repeat the steps to Create a function app to create a new function app in which you will create your proxy. This new app's URL will serve as the frontend for our API, and the function app you were previously editing will serve as a backend.
 
-Azure CLI
-You can use the az functionapp config appsettings set command to set JAVA_OPTS, as in the following example:
+Navigate to your new frontend function app in the portal.
 
-az functionapp config appsettings set --name <APP_NAME> \
---resource-group <RESOURCE_GROUP> \
---settings "JAVA_OPTS=-Djava.awt.headless=true"
+Select Platform Features and choose Application Settings.
 
-This example enables headless mode. Replace <APP_NAME> with the name of your function app, and <RESOURCE_GROUP> with the resource group.
+Scroll down to Application settings where key/value pairs are stored and create a new setting with key "HELLO_HOST". Set its value to the host of your backend function app, such as <YourBackendApp>.azurewebsites.net. This is part of the URL that you copied earlier when testing your HTTP function. You'll reference this setting in the configuration later.
 
-Warning
+ Note
 
-In the Consumption plan, you must add the WEBSITE_USE_PLACEHOLDER setting with a value of 0.
-This setting does increase the cold start times for Java functions.
+App settings are recommended for the host configuration to prevent a hard-coded environment dependency for the proxy. Using app settings means that you can move the proxy configuration between environments, and the environment-specific app settings will be applied.
+
+Click Save.

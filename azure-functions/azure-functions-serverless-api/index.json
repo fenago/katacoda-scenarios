@@ -9,56 +9,36 @@
       "text": "steps/1/text.md"
     },
     {
-      "title": "Folder structure",
+      "title": "Create an Azure Function app",
       "text": "steps/2/text.md"
     },    
 	{
-      "title": "Triggers and annotations",
+      "title": "Customize your HTTP function",
       "text": "steps/3/text.md"
     },
 	{
-      "title": "Maven Plugin",
+      "title": "Test your API",
       "text": "steps/4/text.md"
     },
 	{
-      "title": "JDK runtime availability and support",
+      "title": "Proxies overview",
       "text": "steps/5/text.md"
     },
 	{
-      "title": "Application Settings",
+      "title": "Setting up the frontend environment",
       "text": "steps/6/text.md"
     },
     {
-        "title": "Data type support",
+        "title": "Creating a proxy on the frontend",
         "text": "steps/7/text.md"
   },
 	{
-      "title": "Bindings",
+      "title": "Create a mock API",
       "text": "steps/8/text.md"
   },
 	{
-      "title": "Output binding example",
+      "title": "Create a mock API",
       "text": "steps/9/text.md"
-  },
-	{
-      "title": "HttpRequestMessage and HttpResponseMessage",
-      "text": "steps/10/text.md"
-  },
-	{
-      "title": "Metadata",
-      "text": "steps/11/text.md"
-  },
-	{
-      "title": "Logger",
-      "text": "steps/12/text.md"
-  },
-	{
-      "title": "View logs and trace",
-      "text": "steps/13/text.md"
-  },
-	{
-      "title": "Environment variables",
-      "text": "steps/14/text.md"
   }],
     "intro": {
       "code": "set-env.sh",

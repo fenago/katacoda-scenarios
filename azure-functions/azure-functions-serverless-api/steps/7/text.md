@@ -1,22 +1,25 @@
+Navigate back to your frontend function app in the portal.
 
-You can use Plain old Java objects (POJOs), types defined in azure-functions-java-library, or primitive data types such as String and Integer to bind to input or output bindings.
+In the left-hand navigation, click the plus sign '+' next to "Proxies". Creating a proxy
 
-POJOs
-For converting input data to POJO, azure-functions-java-worker uses the gson library. POJO types used as inputs to functions should be public.
+![](https://github.com/fenago/katacoda-scenarios/raw/master/azure-functions/azure-functions-serverless-api/steps/7/2.png)
 
-Binary data
-Bind binary inputs or outputs to byte[], by setting the dataType field in your function.json to binary:
 
-Java
+Use proxy settings as specified in the table.
 
-Copy
-   @FunctionName("BlobTrigger")
-    @StorageAccount("AzureWebJobsStorage")
-     public void blobTrigger(
-        @BlobTrigger(name = "content", path = "myblob/{fileName}", dataType = "binary") byte[] content,
-        @BindingName("fileName") String fileName,
-        final ExecutionContext context
-    ) {
-        context.getLogger().info("Java Blob trigger function processed a blob.\n Name: " + fileName + "\n Size: " + content.length + " Bytes");
-    }
-If you expect null values, use Optional<T>.
+Field	Sample value	Description
+Name	HelloProxy	A friendly name used only for management
+Route template	/api/remotehello	Determines what route is used to invoke this proxy
+Backend URL	https://%HELLO_HOST%/api/hello	Specifies the endpoint to which the request should be proxied
+Note that Proxies does not provide the /api base path prefix, and this must be included in the route template.
+
+The %HELLO_HOST% syntax will reference the app setting you created earlier. The resolved URL will point to your original function.
+
+Click Create.
+
+You can try out your new proxy by copying the Proxy URL and testing it in the browser or with your favorite HTTP client.
+
+For an anonymous function use:
+https://YOURPROXYAPP.azurewebsites.net/api/remotehello?name="Proxies"
+For a function with authorization use:
+https://YOURPROXYAPP.azurewebsites.net/api/remotehello?code=YOURCODE&name="Proxies"
