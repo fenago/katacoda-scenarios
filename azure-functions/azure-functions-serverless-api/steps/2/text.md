@@ -19,6 +19,6 @@ Paste the function URL into your browser's address bar. Add the query string val
 
 The following example shows the response in the browser:
 
-![](https://github.com/fenago/katacoda-scenarios/raw/master/azure-functions/azure-functions-serverless-api/steps/6/7.png)
+![](https://github.com/fenago/katacoda-scenarios/raw/master/azure-functions/azure-functions-serverless-api/steps/2/7.png)
 
 The request URL includes a key that is required, by default, to access your function over HTTP.

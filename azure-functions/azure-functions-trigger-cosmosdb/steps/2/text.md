@@ -9,11 +9,11 @@ You must have an Azure Cosmos DB account that uses the SQL API before you create
 
 3. On the Create Azure Cosmos DB Account page, enter the basic settings for the new Azure Cosmos account.
 
-Setting	Value	Description
+Setting	| Value | Description
 --- | --- | ---
 `Subscription` | `Subscription name` | Select the Azure subscription that you want to use for this Azure Cosmos account.
 `Resource Group` | `Resource group name` | Select a resource group, or select Create new, then enter a unique name for the new resource group.
-`Account` | `Name` | Enter a unique name	Enter a name to identify your Azure Cosmos account. Because documents.azure.com is appended to the ID that you provide to create your URI, use a unique ID.
+`Account Name` | `Enter a unique name` |	Enter a name to identify your Azure Cosmos account. Because documents.azure.com is appended to the ID that you provide to create your URI, use a unique ID.
 Select Core (SQL) to create a document database and query by using SQL syntax.
 `Location` | `Select the region closest to your users` | Select a geographic location to host your Azure Cosmos DB account. Use the location that is closest to your users to give them the fastest access to the data.
 

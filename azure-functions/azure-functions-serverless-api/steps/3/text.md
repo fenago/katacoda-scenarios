@@ -7,10 +7,10 @@ By default, your HTTP-triggered function is configured to accept any HTTP method
 
     Field |	Sample value | Description
     --- | --- | ---
-    `Allowed HTTP methods` |	`Selected methods` | Determines what HTTP methods may be used to invoke this function
-    `Selected HTTP methods` |	`GET Allows only` |	selected HTTP methods to be used to invoke this function
-    `Route template` |	`/hello` | Determines what route is used to invoke this function
-    `Authorization Level` |	`Anonymous` | Optional: Makes your function accessible without an API key
+    `Allowed HTTP methods` | `Selected methods` | *Determines what HTTP methods may be used to invoke this function*
+    `Selected HTTP methods` | `GET Allows only` |	*selected HTTP methods to be used to invoke this function*
+    `Route template` |	`/hello` | *Determines what route is used to invoke this function*
+    `Authorization Level` |	`Anonymous` | *Optional: Makes your function accessible without an API key*
 
     **Note:** that you did not include the /api base path prefix in the route template, as this is handled by a global setting.
 
