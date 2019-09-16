@@ -1,5 +1,4 @@
-#### Execution context
-ExecutionContext, defined in the azure-functions-java-library, contains helper methods to communicate with the functions runtime.
+**ExecutionContext** defined in the azure-functions-java-library, contains helper methods to communicate with the functions runtime.
 
 #### Logger
 Use getLogger, defined in ExecutionContext, to write logs from function code.

@@ -5,8 +5,6 @@ Individual functions in a function app are deployed together and are scaled toge
 
 Connection strings, environment variables, and other application settings are defined separately for each function app. Any data that must be shared between function apps should be stored externally in a persisted store.
 
-This article describes how to configure and manage your function apps.
+This scenario describes how to configure and manage your function apps.
 
- **Tip:**
-
-Many configuration options can also be managed by using the Azure CLI.
+**Tip:** Many configuration options can also be managed by using the Azure CLI.

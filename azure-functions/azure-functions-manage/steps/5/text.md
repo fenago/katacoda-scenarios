@@ -1,7 +1,7 @@
 The function app settings values can also be read in your code as environment variables. 
 
 #### Environment variables
-In Functions, app settings, such as service connection strings, are exposed as environment variables during execution. You can access these settings by using, System.getenv("AzureWebJobsStorage").
+In Functions, app settings, such as service connection strings, are exposed as environment variables during execution. You can access these settings by using `System.getenv("AzureWebJobsStorage")`.
 
 The following example gets the application setting, with the key named myAppSetting:
 
