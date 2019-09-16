@@ -1,17 +1,17 @@
-In the search field, type `timer` and configure the new trigger with the settings as specified in the table below the image.
+1. In your function, click Integrate, expand Documentation, and copy both Account name and Account key. You use these credentials to connect to the storage account. If you have already connected your storage account, skip to step 4.
 
-![](https://github.com/fenago/katacoda-scenarios/raw/master/azure-functions/azure-functions-timer/steps/4/timer.JPG)
+![](https://github.com/fenago/katacoda-scenarios/raw/master/azure-functions/azure-functions-trigger-blob/steps/4/1.png)
 
+2. Run the Microsoft Azure Storage Explorer tool, click the connect icon on the left, choose Use a storage account name and key, and click Next.
 
-Setting	| Suggested value | Description
---- | --- | ---
-`Name` | *Default*	| Defines the name of your timer triggered function.
-`Schedule` |	`0 */1 * * * *` | A six field CRON expression that schedules your function to run every minute.
+![](https://github.com/fenago/katacoda-scenarios/raw/master/azure-functions/azure-functions-trigger-blob/steps/4/2.png)
 
+3. Enter the Account name and Account key from step 1, click Next and then Connect.
 
-Click **Create**. A function is created in your chosen language that runs every minute.
+![](https://github.com/fenago/katacoda-scenarios/raw/master/azure-functions/azure-functions-trigger-blob/steps/4/3.png)
 
-#### Verify
-Verify execution by viewing trace information written to the logs.
+4. Expand the attached storage account, right-click Blob containers, click Create blob container, type samples-workitems, and then press enter.
 
-![](https://github.com/fenago/katacoda-scenarios/raw/master/azure-functions/azure-functions-timer/steps/4/verify.JPG)
+![](https://github.com/fenago/katacoda-scenarios/raw/master/azure-functions/azure-functions-trigger-blob/steps/4/4.png)
+
+Now that you have a blob container, you can test the function by uploading a file to the container.

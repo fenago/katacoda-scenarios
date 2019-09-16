@@ -94,12 +94,12 @@
     },
 	{
       "course_id": "azure-functions-trigger-blob",
-      "title": "Create a timer based function in Azure",
+      "title": "Create a function triggered by Azure Blob storage",
       "description": ""
     },
 	{
       "course_id": "azure-functions-trigger-queue",
-      "title": "Create a timer based function in Azure",
+      "title": "Create a function triggered by Azure Queue storage",
       "description": ""
     },
 	{

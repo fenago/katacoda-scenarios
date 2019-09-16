@@ -1,29 +1,30 @@
+You must have an Azure Cosmos DB account that uses the SQL API before you create the trigger.
 
-Select the **Create a resource** button found on the upper left-hand corner of the Azure portal, then select **Compute** > **Function App**.
+1. Sign in to the Azure portal.
 
-![](https://github.com/fenago/katacoda-scenarios/raw/master/azure-functions/azure-functions-timer/steps/2/create.JPG)
+2. Select Create a resource > Databases > Azure Cosmos DB.
 
-Use the function app settings as specified in the table below the image.
+![](https://github.com/fenago/katacoda-scenarios/raw/master/azure-functions/azure-functions-trigger-cosmosdb/steps/2/create.JPG)
 
-![](https://github.com/fenago/katacoda-scenarios/raw/master/azure-functions/azure-functions-timer/steps/2/settings.JPG)
 
-Setting	| Suggested value | Description
+3. On the Create Azure Cosmos DB Account page, enter the basic settings for the new Azure Cosmos account.
+
+Setting	Value	Description
 --- | --- | ---
-`App name	` | `Globally unique name` | *Name that identifies your new function app.*
-`Subscription` |	`Your subscription` | *The subscription under which this new function app is created.*
-`Resource Group` |	`myResourceGroup` |	*Name for the new resource group in which to create your function app.*
-`OS` |	`Windows` |	*The language options available depend on the OS of the function app. For example, Python requires Linux.*
-`Hosting plan` |	`Consumption plan` |	*Hosting plan that defines how resources are allocated to your function app.*
-`Location` |	`West Europe` |	*Choose a region near you or near other services your functions access.*
-`Runtime stack` |	`Preferred language` |	*Choose a runtime that supports your favorite function programming language. Choose .NET for C# and F# functions.*
-`Storage` |	`Globally unique name` |	*Create a storage account used by your function app.*
-`Application Insights` |	`Default` |	*Creates an Application Insights resource of the same App name in the nearest supported region.*
+`Subscription` | `Subscription name` | Select the Azure subscription that you want to use for this Azure Cosmos account.
+`Resource Group` | `Resource group name` | Select a resource group, or select Create new, then enter a unique name for the new resource group.
+`Account` | `Name` | Enter a unique name	Enter a name to identify your Azure Cosmos account. Because documents.azure.com is appended to the ID that you provide to create your URI, use a unique ID.
+Select Core (SQL) to create a document database and query by using SQL syntax.
+`Location` | `Select the region closest to your users` | Select a geographic location to host your Azure Cosmos DB account. Use the location that is closest to your users to give them the fastest access to the data.
 
+![](https://github.com/fenago/katacoda-scenarios/raw/master/azure-functions/azure-functions-trigger-cosmosdb/steps/2/review.JPG)
 
+4. Select Review + create. You can skip the Network and Tags sections.
 
-#### Create function app
-Select **Create** to provision and deploy the function app.
+5. Review the account settings, and then select Create. It takes a few minutes to create the account. Wait for the portal page to display Your deployment is complete.
 
-Select the Notification icon in the upper-right corner of the portal and watch for the Deployment succeeded message.
+![](https://github.com/fenago/katacoda-scenarios/raw/master/azure-functions/azure-functions-trigger-cosmosdb/steps/2/deployment.JPG)
 
-![](https://github.com/fenago/katacoda-scenarios/raw/master/azure-functions/azure-functions-timer/steps/2/success.JPG)
+6. Select Go to resource to go to the Azure Cosmos DB account page.
+
+![](https://github.com/fenago/katacoda-scenarios/raw/master/azure-functions/azure-functions-trigger-cosmosdb/steps/2/deployment.JPG)

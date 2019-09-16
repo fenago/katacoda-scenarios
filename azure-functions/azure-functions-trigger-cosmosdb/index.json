@@ -9,24 +9,28 @@
       "text": "steps/1/text.md"
     },
     {
-      "title": "Create an Azure Function app",
+      "title": "Create an Azure Cosmos DB account",
       "text": "steps/2/text.md"
     },    
 	{
-      "title": "Create a timer triggered function",
+      "title": "Create an Azure Function app",
       "text": "steps/3/text.md"
     },
 	{
-      "title": "Configure New Trigger",
+      "title": "Create Azure Cosmos DB trigger",
       "text": "steps/4/text.md"
     },
 	{
-      "title": "Update the timer schedule",
+      "title": "Create the Items collection",
       "text": "steps/5/text.md"
     },
 	{
-      "title": "Clean up resources",
+      "title": "Test the function",
       "text": "steps/6/text.md"
+  },
+	{
+      "title": "Clean up resources",
+      "text": "steps/7/text.md"
   }],
     "intro": {
       "code": "set-env.sh",

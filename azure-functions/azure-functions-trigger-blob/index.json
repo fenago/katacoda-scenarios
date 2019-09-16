@@ -1,5 +1,5 @@
 {
-  "title": "Create a function in Azure that is triggered by a timer",
+  "title": "Create a function triggered by Azure Blob storage",
   "description": "Introduction to Azure Functions",
   "difficulty": "Intermediate",
   "time": "15 minutes",
@@ -13,11 +13,11 @@
       "text": "steps/2/text.md"
     },    
 	{
-      "title": "Create a timer triggered function",
+      "title": "Create a Blob storage triggered function",
       "text": "steps/3/text.md"
     },
 	{
-      "title": "Configure New Trigger",
+      "title": "Create the container",
       "text": "steps/4/text.md"
     },
 	{
