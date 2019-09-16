@@ -11,12 +11,11 @@ Azure Cloud Shell is an interactive, authenticated, browser-accessible shell for
 
 #### Cloud Shell
 1. Launch Cloud Shell from the top navigation of the Azure portal.
-
-![](https://github.com/fenago/katacoda-scenarios/raw/master/azure-functions/azure-cloud-shell-bash/steps/1/1.png)
+    ![](https://github.com/fenago/katacoda-scenarios/raw/master/azure-functions/azure-cloud-shell-bash/steps/1/1.png)
 
 2. Select a subscription to create a storage account and Microsoft Azure Files share.
 
-3. Select "Create storage"
+3. Select **"Create storage"**
 
-****Tip:**:** You are automatically authenticated for Azure CLI in every session.
+**Tip:**: You are automatically authenticated for Azure CLI in every session.
 

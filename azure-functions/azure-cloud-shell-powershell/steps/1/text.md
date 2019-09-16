@@ -3,9 +3,7 @@ Azure Cloud Shell is an interactive, authenticated, browser-accessible shell for
 
 #### Start Cloud Shell
 1. Click on Cloud Shell button from the top navigation bar of the Azure portal
-
-![](https://github.com/fenago/katacoda-scenarios/raw/master/azure-functions/azure-cloud-shell-powershell/steps/1/1.png)
+    ![](https://github.com/fenago/katacoda-scenarios/raw/master/azure-functions/azure-cloud-shell-powershell/steps/1/1.png)
 
 2. Select the PowerShell environment from the drop-down and you will be in Azure drive (Azure:)
-
-![](https://github.com/fenago/katacoda-scenarios/raw/master/azure-functions/azure-cloud-shell-powershell/steps/1/2.png)
+    ![](https://github.com/fenago/katacoda-scenarios/raw/master/azure-functions/azure-cloud-shell-powershell/steps/1/2.png)

@@ -13,5 +13,6 @@ Under PowerShell, use the Get-Credential cmdlet.
 
 ```
 $AzCred = Get-Credential -UserName <username>
+
 az login -u $AzCred.UserName -p $AzCred.GetNetworkCredential().Password
 ```

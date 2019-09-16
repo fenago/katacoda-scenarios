@@ -10,6 +10,7 @@ Under PowerShell, use the Get-Credential cmdlet.
 
 ```
 $AzCred = Get-Credential -UserName <app-url>
+
 az login --service-principal -u $AzCred.UserName -p $AzCred.GetNetworkCredential().Password --tenant <tenant>
 ```
 

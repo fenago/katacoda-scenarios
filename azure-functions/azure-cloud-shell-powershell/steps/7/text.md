@@ -6,6 +6,7 @@ Assuming you have a VM, **MyVM1**, let's use `Invoke-AzVMCommand` to invoke a Po
 
 <pre class="file" data-target="clipboard">
 Enable-AzVMPSRemoting -Name MyVM1 -ResourceGroupname MyResourceGroup
+
 Invoke-AzVMCommand -Name MyVM1 -ResourceGroupName MyResourceGroup -Scriptblock {Get-ComputerInfo} -Credential (Get-Credential)
 </pre>
 

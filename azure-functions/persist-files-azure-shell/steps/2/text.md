@@ -1,8 +1,8 @@
 When you use basic settings and select only a subscription, Cloud Shell creates three resources on your behalf in the supported region that's nearest to you:
 
-- Resource group: cloud-shell-storage-<region>
-- Storage account: cs<uniqueGuid>
-- File share: cs-<user>-<domain>-com-<uniqueGuid>
+- Resource group: `cloud-shell-storage-<region>`
+- Storage account: `cs<uniqueGuid>`
+- File share: `cs-<user>-<domain>-com-<uniqueGuid>`
 
 ![](https://github.com/fenago/katacoda-scenarios/raw/master/azure-functions/persist-files-azure-shell/steps/2/mount.png)
 

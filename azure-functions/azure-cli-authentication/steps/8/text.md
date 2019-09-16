@@ -9,4 +9,5 @@ Remove the signing key:
 `sudo rm /etc/apt/trusted.gpg.d/microsoft.asc.gpg`{{execute}} 
 
 Remove any unneeded packages:
+
 `sudo apt autoremove`{{execute}} 

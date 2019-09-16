@@ -3,7 +3,7 @@ You can unmount a file share that's mounted to Cloud Shell at any time. Since Cl
 1. Run `clouddrive unmount`.
 2. Acknowledge and confirm prompts.
 
-Your file share will continue to exist unless you delete it manually. Cloud Shell will no longer search for this file share on subsequent sessions. To view more details, run `clouddrive unmount -h`{{copy}} , as shown here:
+Your file share will continue to exist unless you delete it manually. Cloud Shell will no longer search for this file share on subsequent sessions. To view more details, run `clouddrive unmount -h`{{copy}} as shown here:
 
 ![](https://github.com/fenago/katacoda-scenarios/raw/master/azure-functions/persist-files-azure-shell/steps/7/1.png)
 

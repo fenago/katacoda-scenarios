@@ -4,7 +4,7 @@ Get packages needed for the install process:
 
 `sudo apt-get update`{{execute}} 
 
-`sudo apt-get install ca-certificates curl apt-transport-https lsb-release gnupg`{{execute}} 
+`yes | sudo apt-get install ca-certificates curl apt-transport-https lsb-release gnupg`{{execute}} 
 
 Download and install the Microsoft signing key:
 
@@ -24,4 +24,8 @@ echo "deb [arch=amd64] https://packages.microsoft.com/repos/azure-cli/ $AZ_REPO 
 Update repository information and install the azure-cli package:
 
 `sudo apt-get update`{{execute}} 
-`sudo apt-get install azure-cli`{{execute}} 
+
+`yes | sudo apt-get install azure-cli`{{execute}}
+
+You can verify that azure CLI is installed successfully by running:
+`az --version`{{execute}}
