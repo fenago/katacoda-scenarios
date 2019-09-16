@@ -1,5 +1,4 @@
-In this scenario, you will learn how to create a function triggered when files are uploaded to or updated in Azure Blob storage.
-
+In this scenario, you will learn how to create a function that is triggered when messages are submitted to an Azure Storage queue.
 
 #### Prerequisites
 - Download and install the [Microsoft Azure Storage Explorer](https://storageexplorer.com/).

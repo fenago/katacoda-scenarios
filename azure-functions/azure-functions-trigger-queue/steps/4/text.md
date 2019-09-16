@@ -14,4 +14,4 @@
 
     ![](https://github.com/fenago/katacoda-scenarios/raw/master/azure-functions/azure-functions-trigger-queue/steps/4/4.png)
 
-Now that you have a blob container, you can test the function by uploading a file to the container.
+Now that you have a storage queue, you can test the function by adding a message to the queue.

@@ -13,7 +13,7 @@
       "text": "steps/2/text.md"
     },    
 	{
-      "title": "Create a Blob storage triggered function",
+      "title": "Create a Queue storage triggered function",
       "text": "steps/3/text.md"
     },
 	{
