@@ -1,8 +1,6 @@
-Here is the generated corresponding function.json by the azure-functions-maven-plugin:
+Here is the generated corresponding function.json by the **azure-functions-maven-plugin**:
 
-JSON
-
-`
+```
 {
   "scriptFile": "azure-functions-example.jar",
   "entryPoint": "com.example.Function.echo",
@@ -21,3 +19,4 @@ JSON
     }
   ]
 }
+```

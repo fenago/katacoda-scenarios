@@ -1,9 +1,8 @@
 Input and output bindings provide a declarative way to connect to data from within your code. A function can have multiple input and output bindings.
 
-Input binding example
-Java
+#### Input binding example
 
-`
+```
 package com.example;
 
 import com.microsoft.azure.functions.annotation.*;
@@ -35,15 +34,15 @@ public class Function {
         }
     }
 }
+```
+
 You invoke this function with an HTTP request.
 
 HTTP request payload is passed as a String for the argument inputReq.
 One entry is retrieved from Table storage, and is passed as TestInputData to the argument inputData.
 To receive a batch of inputs, you can bind to String[], POJO[], List<String>, or List<POJO>.
 
-Java
-
-`
+```
 @FunctionName("ProcessIotMessages")
     public void processIotMessages(
         @EventHubTrigger(name = "message", eventHubName = "%AzureWebJobsEventHubPath%", connection = "AzureWebJobsEventHubSender", cardinality = Cardinality.MANY) List<TestEventData> messages,
@@ -55,5 +54,6 @@ Java
     public class TestEventData {
     public String id;
 }
+```
 
 This function gets triggered whenever there is new data in the configured event hub. Because the cardinality is set to MANY, the function receives a batch of messages from the event hub. EventData from event hub gets converted to TestEventData for the function execution.

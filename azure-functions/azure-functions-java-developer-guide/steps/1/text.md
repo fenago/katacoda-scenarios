@@ -1,4 +1,4 @@
-The Azure Functions runtime supports Java SE 8 LTS (zulu8.31.0.2-jre8.0.181-win_x64). This guide contains information about the intricacies of writing Azure Functions with Java.
+The Azure Functions runtime supports `Java SE 8 LTS (zulu8.31.0.2-jre8.0.181-win_x64)`. This guide contains information about the intricacies of writing Azure Functions with Java.
 
 A Java function is a public method, decorated with the annotation @FunctionName. This method defines the entry for a Java function, and must be unique in a particular package.
 

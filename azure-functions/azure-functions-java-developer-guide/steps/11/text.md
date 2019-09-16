@@ -1,8 +1,6 @@
 Few triggers send trigger metadata along with input data. You can use annotation @BindingName to bind to trigger metadata.
 
-Java
-
-`
+```
 package com.example;
 
 import java.util.Optional;
@@ -18,11 +16,11 @@ public class Function {
         return body.orElse(queryValue);
     }
 }
+```
+
 In the preceding example, the queryValue is bound to the query string parameter name in the http request URL, http://{example.host}/api/metadata?name=test. Here's another example, showing how to bind to Id from queue trigger metadata.
 
-Java
-
-`
+```
  @FunctionName("QueueTriggerMetadata")
     public void QueueTriggerMetadata(
         @QueueTrigger(name = "message", queueName = "test-input-java-metadata", connection = "AzureWebJobsStorage") String message,@BindingName("Id") String metadataId,
@@ -34,6 +32,7 @@ Java
         testData.id = metadataId;
         output.setValue(testData);
     }
- **Note:**
+```
 
+**Note:**
 The name provided in the annotation needs to match the metadata property.

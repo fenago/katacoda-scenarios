@@ -1,9 +1,7 @@
 
 You can bind an output binding to the return value by using $return.
 
-Java
-
-`
+```
 package com.example;
 
 import com.microsoft.azure.functions.annotation.*;
@@ -16,11 +14,13 @@ public class Function {
         return content;
     }
 }
+```
 
 If there are multiple output bindings, use the return value for only one of them.
 
 To send multiple output values, use OutputBinding<T> defined in the azure-functions-java-library package.
 
+```
 @FunctionName("QueueOutputPOJOList")
     public HttpResponseMessage QueueOutputPOJOList(@HttpTrigger(name = "req", methods = { HttpMethod.GET,
             HttpMethod.POST }, authLevel = AuthorizationLevel.ANONYMOUS) HttpRequestMessage<Optional<String>> request,
@@ -50,3 +50,4 @@ To send multiple output values, use OutputBinding<T> defined in the azure-functi
      public static class TestData {
         public String id;
     }
+```

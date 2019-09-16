@@ -10,4 +10,4 @@ Remove the signing key:
 
 Remove any unneeded packages:
 
-`sudo apt autoremove`{{execute}} 
+`yes | sudo apt autoremove`{{execute}} 
