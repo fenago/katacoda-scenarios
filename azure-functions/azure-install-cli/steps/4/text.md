@@ -2,8 +2,6 @@ If you don't want to run a script as superuser or the all-in-one script fails, f
 
 Get packages needed for the install process:
 
-bash
-
 `sudo apt-get update`{{execute}} 
 
 `sudo apt-get install ca-certificates curl apt-transport-https lsb-release gnupg`{{execute}} 

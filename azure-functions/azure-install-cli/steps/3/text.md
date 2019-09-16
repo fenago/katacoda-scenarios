@@ -7,5 +7,4 @@ We offer and maintain a script which runs all of the installation commands in on
 
 `curl -sL https://aka.ms/InstallAzureCLIDeb | sudo bash`{{copy}}
 
-
 **Note:**: We will install azure cli using manual commands in the next step. You can also install cli with the above script.

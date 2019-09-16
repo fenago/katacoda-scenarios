@@ -14,7 +14,7 @@ LogLevel	Code
 Trace	0
 Debug	1
 Information	2
-Warning	3
+**Warning:**	3
 Error	4
 Critical	5
 None	6
@@ -58,7 +58,7 @@ JSON
 }
 This example sets up the following rules:
 
-For logs with category Host.Results or Function, send only Error level and above to Application Insights. Logs for Warning level and below are ignored.
+For logs with category Host.Results or Function, send only Error level and above to Application Insights. Logs for **Warning:** level and below are ignored.
 For logs with category Host.Aggregator, send all logs to Application Insights. The Trace log level is the same as what some loggers call Verbose, but use Trace in the host.json file.
 For all other logs, send only Information level and above to Application Insights.
 The category value in host.json controls logging for all categories that begin with the same value. Host in host.json controls logging for Host.General, Host.Executor, Host.Results, and so on.

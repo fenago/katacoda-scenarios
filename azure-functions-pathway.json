@@ -12,11 +12,6 @@
       "title": "Azure CLI Authentication",
       "description": "Introduction to Azure Cloud"
     },
-    {
-      "course_id": "persist-files-azure-shell",
-      "title": "Persist files in Azure Cloud Shell",
-      "description": "Introduction to Azure Cloud"
-    },
 	  {
       "course_id": "azure-cloud-shell-powershell",
       "title": "PowerShell in Azure Cloud Shell",
@@ -25,6 +20,11 @@
 	  {
       "course_id": "azure-cloud-shell-bash",
       "title": "Bash in Azure Cloud Shell",
+      "description": "Introduction to Azure Cloud"
+    },
+    {
+      "course_id": "persist-files-azure-shell",
+      "title": "Persist files in Azure Cloud Shell",
       "description": "Introduction to Azure Cloud"
     },
     {

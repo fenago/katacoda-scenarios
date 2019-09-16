@@ -3,6 +3,7 @@ Associated Azure storage accounts must reside in the same region as the Cloud Sh
 Cloud Shell machines exist in the following regions:
 
 Area	Region
-Americas	East US, South Central US, West US
-Europe	North Europe, West Europe
-Asia Pacific	India Central, Southeast Asia
+--- | ---
+`Americas` |	East US, South Central US, West US
+`Europe` |	North Europe, West Europe
+`Asia Pacific` | India Central, Southeast Asia

@@ -1,26 +1,12 @@
-Uninstall
 
 Uninstall with apt-get remove:
+`sudo apt-get remove -y azure-cli`{{execute}} 
 
-bash
-
-`
-sudo apt-get remove -y azure-cli
 If you don't plan to reinstall the CLI, remove the Azure CLI repository information:
+`sudo rm /etc/apt/sources.list.d/azure-cli.list`{{execute}} 
 
-bash
-
-`
-sudo rm /etc/apt/sources.list.d/azure-cli.list
 Remove the signing key:
+`sudo rm /etc/apt/trusted.gpg.d/microsoft.asc.gpg`{{execute}} 
 
-bash
-
-`
-sudo rm /etc/apt/trusted.gpg.d/microsoft.asc.gpg
 Remove any unneeded packages:
-
-bash
-
-`
-sudo apt autoremove
+`sudo apt autoremove`{{execute}} 

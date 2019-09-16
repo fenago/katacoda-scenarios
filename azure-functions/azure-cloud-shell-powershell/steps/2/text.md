@@ -1,15 +1,7 @@
 Run regular PowerShell commands in the Cloud Shell, such as:
 
-PS Azure:\> Get-Date
+`Get-Date`{{copy}}
 
-# Expected Output
-Friday, July 27, 2018 7:08:48 AM
+`Get-AzVM -Status`{{copy}}
 
-PS Azure:\> Get-AzVM -Status
-
-# Expected Output
-ResourceGroupName       Name       Location                VmSize   OsType     ProvisioningState  PowerState
------------------       ----       --------                ------   ------     -----------------  ----------
-MyResourceGroup2        Demo        westus         Standard_DS1_v2  Windows    Succeeded           running
-MyResourceGroup         MyVM1       eastus            Standard_DS1  Windows    Succeeded           running
-MyResourceGroup         MyVM2       eastus   Standard_DS2_v2_Promo  Windows    Succeeded           deallocated
+![](https://github.com/fenago/katacoda-scenarios/raw/master/azure-functions/azure-cloud-shell-powershell/steps/1/1.JPG)

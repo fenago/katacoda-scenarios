@@ -12,7 +12,7 @@ az functionapp config appsettings set --name <APP_NAME> \
 
 This example enables headless mode. Replace <APP_NAME> with the name of your function app, and <RESOURCE_GROUP> with the resource group.
 
-Warning
+**Warning:**
 
 In the Consumption plan, you must add the WEBSITE_USE_PLACEHOLDER setting with a value of 0.
 This setting does increase the cold start times for Java functions.

@@ -1,3 +1,3 @@
-Welcome to your Azure Functions Lab Exercise!
+Welcome to your Azure Cloud Lab Exercise!
 
-In this Lab we will write Java Azure Functions.
+In this Lab we will install Azure CLI with apt.

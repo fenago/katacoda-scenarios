@@ -7,6 +7,6 @@ Connection strings, environment variables, and other application settings are de
 
 This article describes how to configure and manage your function apps.
 
- Tip
+ **Tip:**
 
 Many configuration options can also be managed by using the Azure CLI.

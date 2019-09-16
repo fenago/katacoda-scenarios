@@ -1,10 +1,14 @@
-Use the clouddrive command
-In Cloud Shell, you can run a command called clouddrive, which enables you to manually update the file share that is mounted to Cloud Shell. Running the "clouddrive" command
+#### Use the clouddrive command
+In Cloud Shell, you can run a command called `clouddrive -h`{{copy}}, which enables you to manually update the file share that is mounted to Cloud Shell. Running the "clouddrive" command
 
-List clouddrive
-To discover which file share is mounted as clouddrive, run the df command.
+![](https://github.com/fenago/katacoda-scenarios/raw/master/azure-functions/persist-files-azure-shell/steps/6/1.png)
 
-The file path to clouddrive shows your storage account name and file share in the URL. For example, //storageaccountname.file.core.windows.net/filesharename
+
+#### List clouddrive
+To discover which file share is mounted as `clouddrive`, run the `df`{{copy}} command.
+
+The file path to clouddrive shows your storage account name and file share in the URL. For example, 
+`//storageaccountname.file.core.windows.net/filesharename`
 
 
 ```

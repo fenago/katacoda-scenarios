@@ -1,29 +1,21 @@
-List all your subscriptions from Azure drive
+1. List all your subscriptions from Azure drive
 
-Azure PowerShell
-
-`
-
-Try It
+```
 PS Azure:\> dir
-cd to your preferred subscription
+```
 
-Azure PowerShell
+2. `cd` to your preferred subscription
 
-`
-
-Try It
+```
 PS Azure:\> cd MySubscriptionName
 PS Azure:\MySubscriptionName>
-View all your Azure resources under the current subscription
+```
 
-Type dir to list multiple views of your Azure resources.
+3. View all your Azure resources under the current subscription.
 
-Azure PowerShell
+Type `dir`{{copy}} to list multiple views of your Azure resources.
 
-`
-
-Try It
+```
 PS Azure:\MySubscriptionName> dir
 
     Directory: azure:\MySubscriptionName
@@ -35,3 +27,4 @@ Mode Name
 +    StorageAccounts
 +    VirtualMachines
 +    WebApps
+```

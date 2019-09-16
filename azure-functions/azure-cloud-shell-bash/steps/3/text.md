@@ -1,12 +1,5 @@
-Create a resource group
 Create a new resource group in WestUS named "MyRG".
-
-Azure CLI
-
-`
-
-Try It
-az group create --location westus --name MyRG
+`az group create --location westus --name MyRG`{{copy}}
 
 
 You will get following output:
@@ -24,3 +17,4 @@ You will get following output:
   "type": null
 }
 ```
+

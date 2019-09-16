@@ -1,16 +1,5 @@
-Exit your ssh session.
+1. Exit your ssh session.
+    `exit`{{copy}}
 
-Azure CLI
-
-`
-
-Try It
-exit
-Delete your resource group and any resources within it.
-
-Azure CLI
-
-`
-
-Try It
-az group delete -n MyRG
+2. Delete your resource group and any resources within it.
+    `az group delete -n MyRG`{{copy}}
