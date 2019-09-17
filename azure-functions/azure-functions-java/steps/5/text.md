@@ -2,7 +2,7 @@ Maven creates the project files in a new folder with a name of artifactId, in th
 
 
 #### VSCode Editor
-Open `Function.java` by clicking `fabrikam-functions` folder in vscode **Explorer** to view the contents of the file. Replace `src/main/java/com/fabrikam/functions/Function.java` with the following code:
+Open `Function.java` by clicking `fabrikam-functions` folder in vscode **Explorer** to view the contents of the file. Validate that the code there `src/main/java/com/fabrikam/functions/Function.java` is the same as the following code (do a line by line validation and ensure there are no errors):
 
 
 ```
