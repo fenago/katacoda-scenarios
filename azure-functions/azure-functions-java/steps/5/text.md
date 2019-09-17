@@ -5,7 +5,7 @@ Maven creates the project files in a new folder with a name of artifactId, in th
 Open `Function.java` by clicking `fabrikam-functions` folder in vscode **Explorer** to view the contents of the file. Replace `src/main/java/com/fabrikam/functions/Function.java` with the following code:
 
 
-<pre class="file" data-target="clipboard">
+```
 package com.fabrikam.functions;
 
 import java.util.*;
@@ -35,5 +35,4 @@ public class Function {
         }
     }
 }
-</pre>
-
+```
