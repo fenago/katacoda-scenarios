@@ -1,3 +1,6 @@
+Launch Cloud Shell from the top navigation of the Azure portal. Check that the environment drop-down from the left-hand side of shell window says `Bash`.
+![](https://github.com/fenago/katacoda-scenarios/raw/master/azure-functions/azure-cloud-shell-bash/steps/2/1.png)
+
 #### Use the clouddrive command
 In Cloud Shell, you can run a command called `clouddrive -h`{{copy}}, which enables you to manually update the file share that is mounted to Cloud Shell. Running the "clouddrive" command
 
