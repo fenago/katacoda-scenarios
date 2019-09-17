@@ -2,7 +2,6 @@
 
 2. In Storage Explorer, expand your storage account, Queues, and myqueue-items, then click Add message.
     ![](https://github.com/fenago/katacoda-scenarios/raw/master/azure-functions/azure-functions-trigger-queue/steps/5/1.png)
-Add a message to the queue.
 
 3. Type your "Hello World!" message in Message text and click OK.
 

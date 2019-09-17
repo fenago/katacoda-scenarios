@@ -24,4 +24,5 @@ Setting | Suggested value | Description
 
 6. Click **Create** to create your function.
 
-Next, you connect to your Azure Storage account and create the samples-workitems container.
+Next, you connect to your Azure Storage account and create the `myqueue-items` storage queue.
+

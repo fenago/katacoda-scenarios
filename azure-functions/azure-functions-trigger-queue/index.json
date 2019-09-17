@@ -17,11 +17,11 @@
       "text": "steps/3/text.md"
     },
 	{
-      "title": "Create the container",
+      "title": "Create the queue",
       "text": "steps/4/text.md"
     },
 	{
-      "title": "Update the timer schedule",
+      "title": "Test the function",
       "text": "steps/5/text.md"
     },
 	{
