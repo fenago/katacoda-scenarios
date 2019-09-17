@@ -2,7 +2,7 @@ In the terminal with the Python virtual environment activated, start the functio
 
 `func start`{{execute T1}}
 
-**Note:**: Command below will run in terminal 2 (It will open automatically on executing command). 
+**Note:** Command below will run in terminal 2 (It will open automatically on executing command). 
 
 `curl http://localhost:7071/api/classify?name=Azure`{{execute T2}}
 

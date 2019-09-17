@@ -1,10 +1,10 @@
-**Note:**: Command below will run in terminal 2 (It will open automatically on executing command). 
+**Note:** Command below will run in terminal 2 (It will open automatically on executing command). 
 
 `curl http://localhost:7071/api/HttpTrigger?name=Azure`{{execute T2}}
 
 The function should execute and return **Hello Azure!**. 
 
-You can get access python azure function by opening following link in the browser.
+You can access python azure function by opening following link in the browser.
 https://[[HOST_SUBDOMAIN]]-7071-[[KATACODA_HOST]].environments.katacoda.com/api/HttpTrigger?name=Azure
 
 

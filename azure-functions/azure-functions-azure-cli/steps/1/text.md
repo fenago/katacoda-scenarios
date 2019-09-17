@@ -10,4 +10,4 @@ Before running this sample, you must have the following:
 
 If you don't have an Azure subscription, create a [free account](https://azure.microsoft.com/free/?ref=microsoft.com&utm_source=microsoft.com&utm_medium=docs&utm_campaign=visualstudio) before you begin.
 
-**Note:**: Creating an azure account is optional, if you don't want to publish your function on Azure.
+**Note:** Creating an azure account is optional, if you don't want to publish your function on Azure.

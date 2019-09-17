@@ -11,7 +11,7 @@ Http Functions:
 Trigger the function from the command line using curl in a new terminal window:
 ```
 
-**Note:**: Command below will run in terminal 2 (It will open automatically on executing command). 
+**Note:** Command below will run in terminal 2 (It will open automatically on executing command). 
 
 #### CURL
 `curl -w "\n" http://localhost:7071/api/HttpTrigger-Java -d LocalFunction`{{execute T2}}
