@@ -1,8 +1,11 @@
 A Functions project is the equivalent of a function app in Azure. It can have multiple functions that all share the same local and hosting configurations.
 
-In the virtual environment, run the following command, choosing **python** as your worker runtime.
+In the virtual environment, run the following command, choosing **python** as your worker runtime. You can do it by typing **3** when prompted to select language.
 
 `func init MyFunctionProj`{{execute}}
+
+![](https://github.com/fenago/katacoda-scenarios/raw/master/azure-functions/azure-functions-python/steps/4/1.JPG)
+
 
 A folder named MyFunctionProj is created, which contains the following three files:
 
