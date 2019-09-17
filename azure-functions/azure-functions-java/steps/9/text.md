@@ -17,7 +17,7 @@ Save the changes. Run mvn clean package and run application by running azure-fun
 Run following in second terminal to get new response.
 `curl -w "\n" http://localhost:7071/api/HttpTrigger-Java -d LocalFunction`{{execute T2}}
 
-## Output
+#### Output
 You should get an updated output:
 ```
 Hi, AzureFunctionsTest

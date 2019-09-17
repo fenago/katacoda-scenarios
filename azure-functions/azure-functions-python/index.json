@@ -27,6 +27,10 @@
 	{
       "title": "Run the function locally",
       "text": "steps/6/text.md"
+  },
+	{
+      "title": "Test the function",
+      "text": "steps/7/text.md"
   }],
     "intro": {
       "code": "set-env.sh",

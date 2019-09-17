@@ -7,3 +7,8 @@ If you get output with Maven version information, then Maven is already installe
 
 #### Azure CLI
 Run the Azure CLI with the az command `az --version`{{execute T1}}
+
+
+#### Install Core Tools
+Run following command to install Azure functions core tools.
+`npm install -g azure-functions-core-tools`{{execute T1}}

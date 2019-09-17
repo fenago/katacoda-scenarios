@@ -3,8 +3,6 @@
 #### Logger
 Use getLogger, defined in ExecutionContext, to write logs from function code.
 
-Example:
-
 ```
 import com.microsoft.azure.functions.*;
 import com.microsoft.azure.functions.annotation.*;

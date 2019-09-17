@@ -16,4 +16,4 @@ A subfolder named `HttpTrigger` is created, which contains the following files:
 
 The return object, defined as $return in function.json, is an instance of `azure.functions.HttpResponse` class.
 
-**Note:** You can have a look at the `__init__.py` file in **vscode** editor by clicking `IDE editor` tab and navigating to `MyFunctionProj` > `HttpTrigger` folder.
+**Note:** You can have a look at the `__init__.py` file in **vscode** editor by clicking `IDE editor` tab and navigating to `MyFunctionProj` > `HttpTrigger` folder. Refresh vscode explorer if you don't see new folder.

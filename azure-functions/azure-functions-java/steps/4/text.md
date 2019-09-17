@@ -1,4 +1,4 @@
-The `com.fabrikam.functions` and `fabrikam-functions` identifiers below are used as an example and to make later steps in this quickstart easier to read.
+The `com.fabrikam.functions` and `fabrikam-functions` identifiers below are used as an example and to make later steps in this quickstart easier to read. Use default values for remaining parameters as shown below by pressing `enter`.
 
 **groupId**: `com.fabrikam.functions`{{copy}}
 

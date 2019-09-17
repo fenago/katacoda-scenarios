@@ -1,9 +1,5 @@
-Other quickstarts in this collection build upon this quickstart. If you plan to continue on with subsequent quickstarts or with the tutorials, don't clean up the resources created in this quickstart. If you don't plan to continue, use the following command to delete all resources created in this quickstart:
+Resources in Azure refers to function apps, functions, storage accounts, and so forth. They are grouped into resource groups, and you can delete everything in a group by deleting the group.
 
-Azure CLI
+`az group delete --name myResourceGroup`{{execute}} 
 
-`
-
-Try It
-az group delete --name myResourceGroup
-Select y when prompted.
+Select `y` when prompted. Deletion may take a couple of minutes. 

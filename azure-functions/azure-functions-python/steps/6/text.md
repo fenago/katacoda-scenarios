@@ -35,12 +35,4 @@ Http Functions:
 [8/27/2018 10:38:27 PM] Job host started
 ```
 
-**Note:**: Command below will run in terminal 2 (It will open automatically on executing command). 
-
-`curl http://localhost:7071/api/HttpTrigger?name=Azure`{{execute T2}}
-
-The function should execute and return **Hello Azure!**. 
-
-**Important:**
-- Interface will keep switching back to terminal 1 because function app is running there after executing following command, you can manually switch by clicking `terminal 2`.
-- Use `Ctrl` + `C` to stop the function app.
+We will test this python function using cURL in the next step.
