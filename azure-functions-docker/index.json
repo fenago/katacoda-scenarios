@@ -1,0 +1,75 @@
+{
+  "title": "Create a function on Linux using a custom image",
+  "description": "Introduction to Azure Functions",
+  "difficulty": "Intermediate",
+  "time": "15 minutes",
+  "details": {
+    "steps": [{
+      "title": "Azure CLI",
+      "text": "steps/1/text.md"
+    },
+    {
+      "title": "Prerequisites",
+      "text": "steps/2/text.md"
+    },    
+	{
+      "title": "Create the local function app project",
+      "text": "steps/3/text.md"
+    },
+	{
+      "title": "Enable extension bundles",
+      "text": "steps/4/text.md"
+    },
+	{
+      "title": "Create a function",
+      "text": "steps/5/text.md"
+    },
+	{
+      "title": "Run the function locally",
+      "text": "steps/6/text.md"
+    },
+    {
+        "title": "Create a resource group",
+        "text": "steps/7/text.md"
+  },
+	{
+      "title": "Create an Azure Storage account",
+      "text": "steps/8/text.md"
+  },
+	{
+      "title": "Create a function app",
+      "text": "steps/9/text.md"
+  },
+	{
+      "title": "Consumption Plan",
+      "text": "steps/10/text.md"
+  },
+	{
+      "title": "Deploy the function app project to Azure",
+      "text": "steps/11/text.md"
+  },
+	{
+      "title": "Test the function in Azure",
+      "text": "steps/12/text.md"
+  },
+	{
+      "title": "Clean up resources",
+      "text": "steps/13/text.md"
+  }],
+    "intro": {
+      "code": "set-env.sh",
+      "text": "intro.md",
+      "credits": ""
+    },
+    "finish": {
+      "text": "finish.md"
+    }
+  },
+  "environment": {
+    "uilayout": "terminal",
+    "uimessage1": "\u001b[32mBrought to you by https://LearningVoyage.com\u001b[m\r\n"
+  },
+  "backend": {
+    "imageid": "ubuntu"
+  }
+}
