@@ -36,5 +36,3 @@ This method lets you enable and disable the function by changing the app setting
 The Disabled attribute is the only way to disable a class library function. The generated function.json file for a class library function is not meant to be edited directly. If you edit that file, whatever you do to the disabled property will have no effect.
 
 The same goes for the **Function state** switch on the **Manage** tab, since it works by changing the function.json file.
-
-**Note:** that the portal may indicate the function is disabled when it isn't.

@@ -1,4 +1,4 @@
-For scripting languages such as C# script and JavaScript, you use the disabled property of the function.json file to tell the runtime not to trigger a function. This property can be set to true or to the name of an app setting:
+For scripting languages such as C# script and JavaScript, you use the disabled property of the **function.json** file to tell the runtime not to trigger a function. This property can be set to true or to the name of an app setting:
 
 ##### Method 1:
 

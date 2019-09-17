@@ -9,6 +9,6 @@ The function should execute and return **Hello Azure!**.
 
 **Important:**
 - Interface will keep switching back to terminal 1 because function app is running there after executing following command, you can manually switch by clicking `terminal 2`.
-- Use `Ctrl` + `C` to stop the function app.
+- Use `Ctrl` + `C` to stop the function app in terminal 1.
 
 Now that you have run your function locally, you can create the function app and other required resources in Azure.
