@@ -1,4 +1,4 @@
-The helper library has some dependencies that need to be installed. Open **requirements.txt** by selecting `classify` > `start` folder in your editor and add the following dependencies to the file.
+The helper library has some dependencies that need to be installed. Open **requirements.txt** by selecting `functions-python-tensorflow-tutorial` > `start` folder in your editor and add the following dependencies to the file.
 
 <pre class="file" data-target="clipboard">
 tensorflow
