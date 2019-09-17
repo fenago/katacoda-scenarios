@@ -19,6 +19,6 @@ Select the Notification icon in the upper-right corner of the portal and watch f
 ![](https://github.com/fenago/katacoda-scenarios/raw/master/azure-functions/azure-functions-serverless-api/steps/1/3.png)
 
 
-Select Go to resource to view your new function app. You can also select Pin to dashboard. Pinning makes it easier to return to this function app resource from your dashboard.
+Select **Go to resource** to view your new function app. You can also select Pin to dashboard. Pinning makes it easier to return to this function app resource from your dashboard.
 
 Next, you create a function in the new function app.

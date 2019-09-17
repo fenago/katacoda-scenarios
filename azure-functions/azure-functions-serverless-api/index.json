@@ -31,14 +31,6 @@
     {
         "title": "Creating a proxy on the frontend",
         "text": "steps/7/text.md"
-  },
-	{
-      "title": "Create a mock API",
-      "text": "steps/8/text.md"
-  },
-	{
-      "title": "Mock API cont...",
-      "text": "steps/9/text.md"
   }],
     "intro": {
       "code": "set-env.sh",
