@@ -1,5 +1,5 @@
 {
-  "title": "Create a function on Linux using a custom image.. ",
+  "title": "Create a function on Linux using a custom image.",
   "description": "Introduction to Azure Functions",
   "difficulty": "Intermediate",
   "time": "15 minutes",
@@ -70,6 +70,6 @@
     "uimessage1": "\u001b[32mBrought to you by https://LearningVoyage.com\u001b[m\r\n"
   },
   "backend": {
-    "imageid": "docker"
+    "imageid": "node"
   }
 }
