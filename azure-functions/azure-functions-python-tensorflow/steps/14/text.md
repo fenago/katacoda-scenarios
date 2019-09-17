@@ -15,3 +15,5 @@ Let's change to the frontend folder. Start an HTTP server with Python 3.6.
 `cd functions-python-tensorflow-tutorial/frontend/`{{execute T2}}
 
 `python3.6 -m http.server`{{execute T2}}
+
+**Note:** Interface will switch back to terminal 1 after executing above commands beofre function app is running, you can manually click terminal 2 to see response.
