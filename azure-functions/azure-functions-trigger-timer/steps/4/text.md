@@ -1,6 +1,6 @@
 In the search field, type `timer` and configure the new trigger with the settings as specified in the table below the image.
 
-![](https://github.com/fenago/katacoda-scenarios/raw/master/azure-functions/azure-functions-timer/steps/4/timer.JPG)
+![](https://github.com/fenago/katacoda-scenarios/raw/master/azure-functions/azure-functions-trigger-timer/steps/4/timer.JPG)
 
 
 Setting	| Suggested value | Description
@@ -14,4 +14,4 @@ Click **Create**. A function is created in your chosen language that runs every 
 #### Verify
 Verify execution by viewing trace information written to the logs.
 
-![](https://github.com/fenago/katacoda-scenarios/raw/master/azure-functions/azure-functions-timer/steps/4/verify.JPG)
+![](https://github.com/fenago/katacoda-scenarios/raw/master/azure-functions/azure-functions-trigger-timer/steps/4/verify.JPG)

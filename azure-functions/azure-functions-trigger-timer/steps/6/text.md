@@ -7,7 +7,7 @@ You created resources to complete these quickstarts. You may be billed for these
 
 To get to that page from the function app page, select the **Overview tab** and then select the link under **Resource group**.
 
-![](https://github.com/fenago/katacoda-scenarios/raw/master/azure-functions/azure-functions-timer/steps/6/clean.JPG)
+![](https://github.com/fenago/katacoda-scenarios/raw/master/azure-functions/azure-functions-trigger-timer/steps/6/clean.JPG)
 
 To get to that page from the dashboard, select **Resource groups**, and then select the resource group that you used for this quickstart.
 
