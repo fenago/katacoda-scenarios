@@ -8,7 +8,7 @@
 
 3. In the search field, type blob and then choose the Blob trigger template.
 
-4.  prompted, select Install to install the Azure Storage extension any dependencies in the function app. After installation succeeds, select Continue.
+4. If prompted, select **Install** to install the Azure Storage extension any dependencies in the function app. After installation succeeds, select **Continue**.
 
     ![](https://github.com/fenago/katacoda-scenarios/raw/master/azure-functions/azure-functions-trigger-blob/steps/3/4.png)
 

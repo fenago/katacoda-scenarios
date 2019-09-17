@@ -1,3 +1,3 @@
-The advanced tools for App Service (also known as Kudu) provide access to advanced administrative features of your function app. From Kudu, you manage system information, app settings, environment variables, site extensions, HTTP headers, and server variables. You can also launch Kudu by browsing to the SCM endpoint for your function app, like https://<myfunctionapp>.scm.azurewebsites.net/
+The advanced tools for App Service (also known as Kudu) provide access to advanced administrative features of your function app. From Kudu, you manage system information, app settings, environment variables, site extensions, HTTP headers, and server variables. You can also launch Kudu by browsing to the SCM endpoint for your function app, like `https://<myfunctionapp>.scm.azurewebsites.net/`
 
 ![](https://github.com/fenago/katacoda-scenarios/raw/master/azure-functions/azure-functions-manage/steps/8/kudu.JPG)

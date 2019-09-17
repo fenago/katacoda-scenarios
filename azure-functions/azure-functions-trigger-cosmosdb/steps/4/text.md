@@ -31,5 +31,5 @@ Setting	| Suggested value | Description
 
 Click Create to create your Azure Cosmos DB triggered function. After the function is created, the template-based function code is displayed.
 
-![](https://github.com/fenago/katacoda-scenarios/raw/master/azure-functions/azure-functions-trigger-cosmosdb/steps/4/1.JPG)
+![](https://github.com/fenago/katacoda-scenarios/raw/master/azure-functions/azure-functions-trigger-cosmosdb/steps/4/6.JPG)
 

@@ -1,6 +1,6 @@
 
 1. Expand the new taskCollection collection in Data Explorer, choose Documents, then select New Document.
-    ![](https://github.com/fenago/katacoda-scenarios/raw/master/azure-functions/azure-functions-trigger-cosmosdb/steps/6/1.png)
+    ![](https://github.com/fenago/katacoda-scenarios/raw/master/azure-functions/azure-functions-trigger-cosmosdb/steps/6/1.JPG)
 
 2. Replace the contents of the new document with the following content, then choose Save.
     <pre class="file" data-target="clipboard">
