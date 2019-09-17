@@ -2,4 +2,4 @@ Some helper functions for preparing the input image and making a prediction usin
 
 `cp ../resources/predict.py classify`{{execute T1}}
 
-Confirm that classify now contains a file named predict.py.
+Confirm that classify now contains a file named `predict.py`.
