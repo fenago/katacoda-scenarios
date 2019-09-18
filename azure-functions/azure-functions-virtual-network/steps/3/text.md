@@ -1,10 +1,10 @@
-6. Select **OK** to create the plan, then use the remaining function app settings as specified in the table below the image.
+- Select **OK** to create the plan, then use the remaining function app settings as specified in the table below the image.
 
     ![](https://github.com/fenago/katacoda-scenarios/raw/master/azure-functions/azure-functions-virtual-network/steps/3/4.png)
 
-7. After your settings are validated, select **Create**.
+- After your settings are validated, select **Create**.
 
-8. Select the Notification icon in the upper-right corner of the portal and watch for the **Deployment succeeded** message.
+- Select the Notification icon in the upper-right corner of the portal and watch for the **Deployment succeeded** message.
 
     ![](https://github.com/fenago/katacoda-scenarios/raw/master/azure-functions/azure-functions-virtual-network/steps/3/5.png)
 

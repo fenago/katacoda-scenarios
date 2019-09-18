@@ -10,11 +10,11 @@ Next, create a preconfigured VM that runs WordPress inside a virtual network (Wo
 Setting	| Suggested value | Description
 --- | --- | ---
 `Subscription` | `Your subscription` | The subscription under which your resources are created.
-`Resource group` | `myResourceGroup` | `	Choose myResourceGroup, or the resource group you created with your function app. Using the same resource group for the function app, WordPress VM, and hosting plan makes it easier to clean up resources when you are done with this tutorial.
-`Virtual machine name` | `VNET-Wordpress` | `	The VM name needs to be unique in the resource group
-`Region` | `(Europe) West Europe` | `	Choose a region near you or near the functions that access the VM.
-`Size` | `	B1s	Choose Change size and then select the B1s standard image, which has 1 vCPU and 1 GB of memory.
-`Authentication type` | `Password` | `	To use password authentication, you must also specify a Username, a secure Password, and then Confirm password. For this tutorial, you won't need to sign in to the VM unless you need to troubleshoot.
+`Resource group` | `myResourceGroup` | Choose myResourceGroup, or the resource group you created with your function app. Using the same resource group for the function app, WordPress VM, and hosting plan makes it easier to clean up resources when you are done with this tutorial.
+`Virtual machine name` | `VNET-Wordpress` | The VM name needs to be unique in the resource group
+`Region` | `(Europe) West Europe` | Choose a region near you or near the functions that access the VM.
+`Size` | `B1s` | Choose Change size and then select the B1s standard image, which has 1 vCPU and 1 GB of memory.
+`Authentication type` | `Password` | To use password authentication, you must also specify a Username, a secure Password, and then Confirm password. For this tutorial, you won't need to sign in to the VM unless you need to troubleshoot.
 
 
 - Choose the **Networking** tab and under Configure virtual networks select **Create new**.

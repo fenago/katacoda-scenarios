@@ -1,20 +1,16 @@
 With a WordPress site running in a VM in a virtual network, you can now connect your function app to that virtual network.
 
-In your new function app, select **Platform features** > **Networking**.
+1. In your new function app, select **Platform features** > **Networking**.
+    ![](https://github.com/fenago/katacoda-scenarios/raw/master/azure-functions/azure-functions-virtual-network/steps/6/1.png)
 
-![](https://github.com/fenago/katacoda-scenarios/raw/master/azure-functions/azure-functions-virtual-network/steps/6/1.png)
+2. Under **VNet Integration**, select **Click here to configure**.
+    ![](https://github.com/fenago/katacoda-scenarios/raw/master/azure-functions/azure-functions-virtual-network/steps/6/2.png)
 
-Under **VNet Integration**, select **Click here to configure**.
+3. On the virtual network integration page, select **Add VNet (preview)**.
+    ![](https://github.com/fenago/katacoda-scenarios/raw/master/azure-functions/azure-functions-virtual-network/steps/6/3.png)
 
-![](https://github.com/fenago/katacoda-scenarios/raw/master/azure-functions/azure-functions-virtual-network/steps/6/2.png)
-
-On the virtual network integration page, select **Add VNet (preview)**.
-
-![](https://github.com/fenago/katacoda-scenarios/raw/master/azure-functions/azure-functions-virtual-network/steps/6/3.png)
-
-In **Network Feature Status**, use the settings in the table below the image:
-
-![](https://github.com/fenago/katacoda-scenarios/raw/master/azure-functions/azure-functions-virtual-network/steps/6/4.png)
+4. In **Network Feature Status**, use the settings in the table below the image:
+    ![](https://github.com/fenago/katacoda-scenarios/raw/master/azure-functions/azure-functions-virtual-network/steps/6/4.png)
 
 Setting	| Suggested value | Description
 --- | --- | ---

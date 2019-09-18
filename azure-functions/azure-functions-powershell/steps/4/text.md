@@ -4,7 +4,7 @@ To add a function to your project, run the following command:
 
 Choose the **HTTP trigger** template, type `HttpTrigger`{{copy}} as the name for the function, then press Enter.
 
-![](https://github.com/fenago/katacoda-scenarios/raw/master/azure-functions/azure-functions-powershell/steps/5/1.JPG)
+![](https://github.com/fenago/katacoda-scenarios/raw/master/azure-functions/azure-functions-powershell/steps/4/1.JPG)
 
 A subfolder named `HttpTrigger` is created, which contains the following files:
 
@@ -14,4 +14,4 @@ A subfolder named `HttpTrigger` is created, which contains the following files:
 
 **Note:** You can have a look at the `run.ps1` file in **vscode** editor by clicking `IDE editor` tab and navigating to `MyFunctionProj` > `HttpTrigger` folder. Refresh vscode explorer if you don't see new folder.
 
-![](https://github.com/fenago/katacoda-scenarios/raw/master/azure-functions/azure-functions-powershell/steps/5/2.JPG)
+![](https://github.com/fenago/katacoda-scenarios/raw/master/azure-functions/azure-functions-powershell/steps/4/2.JPG)

@@ -14,6 +14,6 @@ https://[[HOST_SUBDOMAIN]]-7071-[[KATACODA_HOST]].environments.katacoda.com/api/
 
 
 #### Protip: 
-If you have powershell. You can test the function using following command.
+If you have powershell available. You can test the function using following command.
 
 `Invoke-RestMethod -Method Get -Uri http://localhost:7071/api/HttpTrigger?name=PowerShell`
