@@ -1,9 +1,18 @@
-Create a resource group with the az group create. An Azure resource group is a logical container into which Azure resources like function apps, databases, and storage accounts are deployed and managed.
+Take a look at the Dockerfile in the root folder of the project. This file describes the environment that is required to run the function app on Linux. The following example is a Dockerfile that creates a container that runs a function app on the JavaScript (Node.js) worker runtime:
 
-The following example creates a resource group named `myResourceGroup`.
+#### Dockerfile
 
-If you are not using Cloud Shell, sign in first using `az login`{{execute}}.
+```
+FROM mcr.microsoft.com/azure-functions/node:2.0
 
-`az group create --name myResourceGroup --location westeurope`{{execute}}
+ENV AzureWebJobsScriptRoot=/home/site/wwwroot
+COPY . /home/site/wwwroot
+```
 
-You generally create your resource group and the resources in a region near you.
+#### Run the build command
+In the root folder, run the docker build command, and provide a name, mydockerimage, and tag, v1.0.0. Replace <docker-id> with your [Docker Hub](https://hub.docker.com)account ID. This command builds the Docker image for the container.
+`docker build --tag <docker-id>/mydockerimage:v1.0.0 .`{{copy}}
+
+When the command executes, you see something like the following output, which in this case is for a Typescript worker runtime:
+
+![](https://github.com/fenago/katacoda-scenarios/raw/master/azure-functions/azure-functions-azure-cli/steps/7/1.JPG)

@@ -29,32 +29,44 @@
       "text": "steps/6/text.md"
     },
     {
+      "title": "Build the image from the Docker file",
+      "text": "steps/7/text.md"
+    },
+    {
+        "title": "Test the image locally",
+        "text": "steps/8/text.md"
+    },
+    {
+        "title": "Push the custom image to Docker Hub",
+        "text": "steps/9/text.md"
+    },
+    {
         "title": "Create a resource group",
-        "text": "steps/7/text.md"
+        "text": "steps/10/text.md"
   },
 	{
       "title": "Create an Azure Storage account",
-      "text": "steps/8/text.md"
-  },
-	{
-      "title": "Create a function app",
-      "text": "steps/9/text.md"
-  },
-	{
-      "title": "Consumption Plan",
-      "text": "steps/10/text.md"
-  },
-	{
-      "title": "Deploy the function app project to Azure",
       "text": "steps/11/text.md"
   },
 	{
-      "title": "Test the function in Azure",
+      "title": "Create a Premium plan",
       "text": "steps/12/text.md"
   },
 	{
-      "title": "Clean up resources",
+      "title": "Create and deploy the custom image",
       "text": "steps/13/text.md"
+  },
+  {
+    "title": "Configure the function app",
+    "text": "steps/14/text.md"
+  },
+	{
+      "title": "Test the function in Azure",
+      "text": "steps/15/text.md"
+  },
+	{
+      "title": "Clean up resources",
+      "text": "steps/16/text.md"
   }],
     "intro": {
       "code": "set-env.sh",

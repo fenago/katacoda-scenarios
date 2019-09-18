@@ -1,8 +1,23 @@
-You must have a function app to host the execution of your functions. The function app provides an environment for serverless execution of your function code. It lets you group functions as a logic unit for easier management, deployment, and sharing of resources. Create a function app by using the az functionapp create command.
+A registry is an application that hosts images and provides services image and container services. To share your image, you must push it to a registry. Docker Hub is a registry for Docker images that allows you to host your own repositories, either public or private.
 
-In the following command, substitute a unique function app name where you see the <APP_NAME> placeholder and the storage account name for <STORAGE_NAME>. The <APP_NAME> is used as the default DNS domain for the function app, and so the name needs to be unique across all apps in Azure. You should also set the <language> runtime for your function app, from dotnet (C#) or node (JavaScript).
+Before you can push an image, you must sign in to Docker Hub using the docker login command. Replace <docker-id> with your account name and type in your password into the console at the prompt. For other Docker Hub password options, see the docker login command documentation.
 
-#### Azure CLI
+`docker login --username <docker-id>`{{copy}}
 
-`az functionapp create --resource-group myResourceGroup --consumption-plan-location westeurope \
---name <APP_NAME> --storage-account  <STORAGE_NAME> --runtime <language>`{{copy}}
+A **"login succeeded"** message confirms that you're logged in. After you have signed in, you push the image to Docker Hub by using the docker push command.
+
+`docker push <docker-id>/mydockerimage:v1.0.0`{{copy}}
+
+Verify that the push succeeded by examining the command's output.
+
+```
+The push refers to a repository [docker.io/<docker-id>/mydockerimage:v1.0.0]
+24d81eb139bf: Pushed
+fd9e998161c9: Mounted from <docker-id>/mydockerimage
+e7796c35add2: Mounted from <docker-id>/mydockerimage
+ae9a05b85848: Mounted from <docker-id>/mydockerimage
+45c86e20670d: Mounted from <docker-id>/mydockerimage
+v1.0.0: digest: sha256:be080d80770df71234eb893fbe4d... size: 1796
+```
+
+Now, you can use this image as the deployment source for a new function app in Azure.

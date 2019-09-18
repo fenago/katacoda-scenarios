@@ -1,9 +1,11 @@
-Use cURL to test the deployed function. Using the URL, including the function key, that you copied from the previous step, append the query string &name=<yourname> to the URL.
+Linux hosting for custom Functions containers supported on Dedicated (App Service) plans and Premium plans. This tutorial uses a Premium plan, which can scale as needed. To learn more about hosting, see Azure Functions hosting plans comparison.
 
-using cURL to call the function in Azure.
+The following example creates a Premium plan named myPremiumPlan in the Elastic Premium 1 pricing tier (--sku EP1), in the West US region (-location WestUS), and in a Linux container (--is-linux).
 
-![](https://github.com/fenago/katacoda-scenarios/raw/master/azure-functions/azure-functions-azure-cli/steps/12/curl.JPG)
+Azure CLI
 
-You can also paste the copied URL, including the function key, in to the address of your web browser. Again, append the query string &name=<yourname> to the URL before you execute the request.
+Copy
 
-![](https://github.com/fenago/katacoda-scenarios/raw/master/azure-functions/azure-functions-azure-cli/steps/12/browser.JPG)
+Try It
+az functionapp plan create --resource-group myResourceGroup --name myPremiumPlan \
+--location WestUS --number-of-workers 1 --sku EP1 --is-linux
