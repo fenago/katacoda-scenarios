@@ -10,3 +10,5 @@ In this case, `<storage_name>` is the name of the storage account you created. G
 --resource-group myResourceGroup \
 --settings AzureWebJobsDashboard=$storageConnectionString \
 AzureWebJobsStorage=$storageConnectionString`{{copy}}
+
+You can now test your functions running on Linux in Azure.

@@ -5,4 +5,4 @@ In the following command, substitute a unique function app name where you see th
 `az functionapp create --name <app_name> --storage-account  <storage_name>  --resource-group myResourceGroup \
 --plan myPremiumPlan --deployment-container-image-name <docker-id>/mydockerimage:v1.0.0`{{copy}}
 
-The deployment-container-image-name parameter indicates the image hosted on Docker Hub to use to create the function app. Use the az functionapp config container show command to view information about the image used for deployment. Use the az functionapp config container set command to deploy from a different image.
+The deployment-container-image-name parameter indicates the image hosted on Docker Hub to use to create the function app.

@@ -7,6 +7,8 @@ Setting | Suggested value | Description
 --- | --- | ---
 `Name` | `	Plant` | The name can be any value. It's used to identify the proxy.
 `Route Template` | `/plant` | Route that maps to a VM resource.
-`Backend URL` | `http://<YOUR_VM_IP>/wp-content/themes/twentyseventeen/assets/images/header.jpg` | Replace '<YOUR_VM_IP>' with the IP address of your WordPress VM that you created earlier. This mapping returns a single file from the site.
+`Backend URL` |  *Mentioned Below* | Replace '<YOUR_VM_IP>' with the IP address of your WordPress VM that you created earlier. This mapping returns a single file from the site.
+
+**Backend URL:** `http://<YOUR_VM_IP>/wp-content/themes/twentyseventeen/assets/images/header.jpg`
 
 - Select **Create** to add the proxy to your function app.

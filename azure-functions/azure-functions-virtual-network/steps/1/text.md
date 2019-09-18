@@ -12,7 +12,7 @@ This tutorial creates a function app in the Premium plan. This hosting plan is c
 #### Topology
 The following diagram shows the architecture of the solution that you create:
 
-![](https://github.com/fenago/katacoda-scenarios/raw/master/azure-functions/azure-functions-virtual-network/steps/0/1.png)
+![](https://github.com/fenago/katacoda-scenarios/raw/master/azure-functions/azure-functions-virtual-network/steps/1/1.png)
 
 Functions running in the Premium plan have the same hosting capabilities as web apps in Azure App Service, which includes the VNet Integration feature.
 

@@ -1,6 +1,6 @@
 A registry is an application that hosts images and provides services image and container services. To share your image, you must push it to a registry. Docker Hub is a registry for Docker images that allows you to host your own repositories, either public or private.
 
-Before you can push an image, you must sign in to Docker Hub using the docker login command. Replace <docker-id> with your account name and type in your password into the console at the prompt. For other Docker Hub password options, see the docker login command documentation.
+Before you can push an image, you must sign in to Docker Hub using the docker login command. Replace `<docker-id>` with your account name and type in your **password** into the console at the prompt.
 
 `docker login --username <docker-id>`{{copy}}
 
