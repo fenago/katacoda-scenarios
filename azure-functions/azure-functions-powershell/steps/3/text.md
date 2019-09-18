@@ -1,6 +1,6 @@
 A Functions project is the equivalent of a function app in Azure. It can have multiple functions that all share the same local and hosting configurations.
 
-In the lab environment, run the following command, choosing **powershell(preview)** as your worker runtime. You can do it by typing **4** when prompted to select language.
+In the lab environment, run the following command, choosing **powershell** as your worker runtime. You can do it by typing **4** when prompted to select language.
 
 `func init MyFunctionProj`{{execute}}
 

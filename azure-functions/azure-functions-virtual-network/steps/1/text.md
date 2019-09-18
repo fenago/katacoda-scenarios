@@ -6,8 +6,7 @@ In this scenario, you will learn how to use Azure Functions to connect to resour
 - Create a function proxy to access WordPress resources
 - Request a WordPress file from inside the virtual network
 
-Note
-This tutorial creates a function app in the Premium plan. This hosting plan is currently in preview. For more information, see Premium plan.
+**Note:** This scenario creates a function app in the Premium plan. This hosting plan is currently in preview. For more information, see Premium plan.
 
 #### Topology
 The following diagram shows the architecture of the solution that you create:

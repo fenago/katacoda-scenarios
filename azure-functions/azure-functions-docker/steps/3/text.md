@@ -3,10 +3,10 @@ Run the following command from the command line to create a function app project
 
 When prompted, select a worker runtime **node** > **typescript** from the following language choices:
 
-- **dotnet:** 
-- **node:** 
-- **python:** 
-- **powershell:** 
+- **dotnet** 
+- **node** 
+- **python** 
+- **powershell** 
 
 ![](https://github.com/fenago/katacoda-scenarios/raw/master/azure-functions/azure-functions-docker/steps/3/1.JPG)
 

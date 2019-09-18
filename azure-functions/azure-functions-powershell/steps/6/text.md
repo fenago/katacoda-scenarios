@@ -9,11 +9,12 @@ https://[[HOST_SUBDOMAIN]]-7071-[[KATACODA_HOST]].environments.katacoda.com/api/
 
 
 **Important:**
+- Wait for the few seconds for the powershell function to get ready.
 - Interface will keep switching back to `terminal 1` because function app is running there after executing above command, you can manually switch by clicking `terminal 2`.
 - Use `Ctrl` + `C` to stop the function app.
 
 
 #### Protip: 
-If you have powershell available. You can test the function using following command.
+If you have powershell available. You can also test the function using following command.
 
 `Invoke-RestMethod -Method Get -Uri http://localhost:7071/api/HttpTrigger?name=PowerShell`

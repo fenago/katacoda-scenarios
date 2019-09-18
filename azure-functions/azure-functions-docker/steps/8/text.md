@@ -3,6 +3,7 @@ Verify that the image you built works by running the Docker image in a local con
 `docker run -p 8080:80 -it <docker-ID>/mydockerimage:v1.0.0`{{copy}}
 
 You can also run following command if you built image without docker username in the previous step.
+
 `docker run -p 8080:80 -it mydockerimage:v1.0.0`{{execute}}
 
 With the custom image running in a local Docker container, verify the function app and container are functioning correctly by clicking `Docker Azure` tab located next to terminal icon.

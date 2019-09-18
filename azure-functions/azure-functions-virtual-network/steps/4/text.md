@@ -1,6 +1,6 @@
 Next, create a preconfigured VM that runs WordPress inside a virtual network (WordPress LEMP7 Max Performance by Jetware). A WordPress VM is used because of its low cost and convenience. This same scenario works with any resource in a virtual network, such as REST APIs, App Service Environments, and other Azure services.
 
-- In the portal, choose + **Create a resource** on the left navigation pane, in the search field type WordPress LEMP7 Max Performance, and press Enter.
+- In the portal, choose + **Create a resource** on the left navigation pane, in the search field type `WordPress LEMP7 Max Performance`{{copy}}, and press Enter.
 
 - Choose **Wordpress LEMP Max Performance** in the search results. Select a software plan of **Wordpress LEMP Max Performance for CentOS** as the Software Plan and select **Create**.
 

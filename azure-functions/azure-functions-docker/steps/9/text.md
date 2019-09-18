@@ -4,7 +4,7 @@ Before you can push an image, you must sign in to Docker Hub using the docker lo
 
 `docker login --username <docker-id>`{{copy}}
 
-A **"login succeeded"** message confirms that you're logged in. After you have signed in, you push the image to Docker Hub by using the docker push command.
+**"login succeeded"** message confirms that you're logged in. After you have signed in, you push the image to Docker Hub by using the docker push command.
 
 `docker push <docker-id>/mydockerimage:v1.0.0`{{copy}}
 

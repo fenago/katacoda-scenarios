@@ -2,9 +2,7 @@
 
 Open the Azure portal. To do this, sign in to https://portal.azure.com with your Azure account.
 
-**Prerequisites**
-
-It's important that you understand IP addressing and subnetting. You can start with this article that covers the basics of [addressing and subnetting](https://support.microsoft.com/en-us/help/164015/understanding-tcp-ip-addressing-and-subnetting-basics) 
+**Prerequisites** It's important that you understand IP addressing and subnetting. You can start with this article that covers the basics of [addressing and subnetting](https://support.microsoft.com/en-us/help/164015/understanding-tcp-ip-addressing-and-subnetting-basics) 
 
 
 First, you create a function app in the Premium plan. This plan provides serverless scale while supporting virtual network integration.
