@@ -1,10 +1,10 @@
 Next, create a preconfigured VM that runs WordPress inside a virtual network (WordPress LEMP7 Max Performance by Jetware). A WordPress VM is used because of its low cost and convenience. This same scenario works with any resource in a virtual network, such as REST APIs, App Service Environments, and other Azure services.
 
-- In the portal, choose + Create a resource on the left navigation pane, in the search field type WordPress LEMP7 Max Performance, and press Enter.
+- In the portal, choose + **Create a resource** on the left navigation pane, in the search field type WordPress LEMP7 Max Performance, and press Enter.
 
-- Choose Wordpress LEMP Max Performance in the search results. Select a software plan of Wordpress LEMP Max Performance for CentOS as the Software Plan and select Create.
+- Choose **Wordpress LEMP Max Performance** in the search results. Select a software plan of **Wordpress LEMP Max Performance for CentOS** as the Software Plan and select **Create**.
 
-- In the Basics tab, use the VM settings as specified in the table below the image:
+- In the **Basics** tab, use the VM settings as specified in the table below the image:
     ![](https://github.com/fenago/katacoda-scenarios/raw/master/azure-functions/azure-functions-virtual-network/steps/4/1.png)
 
 Setting	| Suggested value | Description
@@ -17,9 +17,9 @@ Setting	| Suggested value | Description
 `Authentication type` | `Password` | `	To use password authentication, you must also specify a Username, a secure Password, and then Confirm password. For this tutorial, you won't need to sign in to the VM unless you need to troubleshoot.
 
 
-- Choose the Networking tab and under Configure virtual networks select Create new.
+- Choose the **Networking** tab and under Configure virtual networks select **Create new**.
 
-- In Create virtual network, use the settings in the table below the image:
+- In **Create virtual network**, use the settings in the table below the image:
     ![](https://github.com/fenago/katacoda-scenarios/raw/master/azure-functions/azure-functions-virtual-network/steps/4/2.png)
 
 

@@ -6,10 +6,6 @@
   "details": {
     "steps": [{
       "title": "Azure virtual network",
-      "text": "steps/0/text.md"
-    },
-    {
-      "title": "Create an Azure Function app",
       "text": "steps/1/text.md"
     },
     {

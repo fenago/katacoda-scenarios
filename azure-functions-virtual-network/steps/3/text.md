@@ -1,17 +1,13 @@
-By default, your HTTP-triggered function is configured to accept any HTTP method. There is also a default URL of the form `http://<yourapp>.azurewebsites.net/api/<funcname>?code=<functionkey>`. In this section, you will modify the function to respond only to GET requests against `/api/hello` route instead.
+6. Select **OK** to create the plan, then use the remaining function app settings as specified in the table below the image.
 
-- Navigate to your function in the Azure portal. Select Integrate in the left navigation.
-    ![](https://github.com/fenago/katacoda-scenarios/raw/master/azure-functions/azure-functions-virtual-network/steps/3/1.png)
+    ![](https://github.com/fenago/katacoda-scenarios/raw/master/azure-functions/azure-functions-virtual-network/steps/2/4.png)
 
-- Use the HTTP trigger settings as specified in the table.
+7. After your settings are validated, select **Create**.
 
-Field |	Sample value | Description
---- | --- | ---
-`Allowed HTTP methods` | `Selected methods` | *Determines what HTTP methods may be used to invoke this function*
-`Selected HTTP methods` | `GET Allows only` |	*selected HTTP methods to be used to invoke this function*
-`Route template` |	`/hello` | *Determines what route is used to invoke this function*
-`Authorization Level` |	`Anonymous` | *Optional: Makes your function accessible without an API key*
+8. Select the Notification icon in the upper-right corner of the portal and watch for the **Deployment succeeded** message.
 
-**Note:** that you did not include the /api base path prefix in the route template, as this is handled by a global setting.
+    ![](https://github.com/fenago/katacoda-scenarios/raw/master/azure-functions/azure-functions-virtual-network/steps/2/5.png)
 
-- Click **Save**.
+9. Select **Go to resource** to view your new function app. You can also select **Pin to dashboard**. Pinning makes it easier to return to this function app resource from your dashboard.
+
+You can pin the function app to the dashboard by selecting the pin icon in the upper right-hand corner. Pinning makes it easier to return to this function app after you create your VM.

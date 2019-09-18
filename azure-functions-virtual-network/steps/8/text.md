@@ -1,6 +1,6 @@
-In your browser, try to access the URL you used as the Backend URL. As expected, the request times out. A timeout occurs because your WordPress site is connected only to your virtual network and not the internet.
+In your browser, try to access the URL you used as the **Backend URL**. As expected, the request times out. A timeout occurs because your WordPress site is connected only to your virtual network and not the internet.
 
-Copy the Proxy URL value from your new proxy and paste it into the address bar of your browser. The returned image is from the WordPress site running inside your virtual network.
+Copy the **Proxy URL** value from your new proxy and paste it into the address bar of your browser. The returned image is from the WordPress site running inside your virtual network.
 
 ![](https://github.com/fenago/katacoda-scenarios/raw/master/azure-functions/azure-functions-virtual-network/steps/8/1.png)
 
