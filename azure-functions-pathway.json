@@ -52,6 +52,11 @@
       "title": "Apply machine learning models in Azure Functions with Python and TensorFlow",
       "description": ""
     },
+    {
+      "course_id": "azure-functions-powershell",
+      "title": "Create an HTTP triggered powershell function",
+      "description": ""
+    },
 	{
       "course_id": "azure-functions-linux",
       "title": "Create function hosted on Linux using Core Tools and the Azure CLI",
@@ -61,6 +66,16 @@
       "course_id": "azure-functions-serverless-api",
       "title": "Customize an HTTP endpoint in Azure Functions",
       "description": ""
+  },
+  {
+    "course_id": "azure-functions-docker",
+    "title": "Create a function on Linux using a custom image",
+    "description": ""
+  },
+  {
+    "course_id": "azure-functions-virtual-network",
+    "title": "Integrate Functions with an Azure virtual network",
+    "description": ""
   },
 	{
       "course_id": "azure-functions-disable",
