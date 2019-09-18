@@ -1,5 +1,5 @@
-Run the following command from the command line to create a function app project in the MyFunctionProj folder of the current local directory. A GitHub repo is also created in MyFunctionProj.
-`func init MyFunctionProj`{{execute}}
+Run the following command from the command line to create a function app project in the MyFunctionProj folder of the current local directory. 
+`func init MyFunctionProj --docker`{{execute}}
 
 When prompted, select a worker runtime **node** > **typescript** from the following language choices:
 
@@ -8,7 +8,7 @@ When prompted, select a worker runtime **node** > **typescript** from the follow
 - **python:** 
 - **powershell:** 
 
-![](https://github.com/fenago/katacoda-scenarios/raw/master/azure-functions/azure-functions-azure-cli/steps/3/1.JPG)
+![](https://github.com/fenago/katacoda-scenarios/raw/master/azure-functions/azure-functions-docker/steps/3/1.JPG)
 
 When the command executes, you see something like the following output:
 

@@ -18,6 +18,7 @@ e7796c35add2: Mounted from <docker-id>/mydockerimage
 ae9a05b85848: Mounted from <docker-id>/mydockerimage
 45c86e20670d: Mounted from <docker-id>/mydockerimage
 v1.0.0: digest: sha256:be080d80770df71234eb893fbe4d... size: 1796
+
 ```
 
 Now, you can use this image as the deployment source for a new function app in Azure.

@@ -1,3 +1,14 @@
+#### Prerequisites
+Before running this sample, you must have the following:
+
+- Install Azure Functions Core Tools version.
+- Install the Azure CLI. This article requires the Azure CLI version 2.0 or later. Run az --version to find the version you have
+- An active Azure subscription.
+
+If you don't have an Azure subscription, create a [free account](https://azure.microsoft.com/free/?ref=microsoft.com&utm_source=microsoft.com&utm_medium=docs&utm_campaign=visualstudio) before you begin.
+
+**Note:** Creating an azure account is optional, if you don't want to publish your function on Azure.
+
 #### Install Core Tools on Linux
 Run following commands to install Azure functions core tools.
 `curl https://packages.microsoft.com/keys/microsoft.asc | gpg --dearmor > microsoft.gpg`{{execute T1}}
@@ -8,7 +19,7 @@ Run following commands to install Azure functions core tools.
 
 `sudo apt-get update`{{execute T1}}
 
-yes | sudo apt-get install azure-functions-core-tools`{{execute T1}}
+`yes | sudo apt-get install azure-functions-core-tools`{{execute T1}}
 
 #### Azure CLI
 Verify the Azure CLI version with the az command `az --version`{{execute T1}}

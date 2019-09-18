@@ -17,10 +17,6 @@
       "text": "steps/3/text.md"
     },
 	{
-      "title": "Enable extension bundles",
-      "text": "steps/4/text.md"
-    },
-	{
       "title": "Create a function",
       "text": "steps/5/text.md"
     },
@@ -78,7 +74,9 @@
     }
   },
   "environment": {
-    "uilayout": "terminal",
+    "showdashboard": true,
+    "dashboards": [{"name": "Docker Azure", "port": 8080}],
+    "uilayout": "terminal-iframe",
     "uimessage1": "\u001b[32mBrought to you by https://LearningVoyage.com\u001b[m\r\n"
   },
   "backend": {

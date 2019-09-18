@@ -3,4 +3,4 @@ In this scenario, you will learn how to create your first serverless PowerShell 
 #### Prerequisites
 Before running this sample, you must have the following:
 - Install Azure Functions Core Tools version.
-- Install Dotnet for PowerShell Functions.
+- Install Dotnet SDK required for PowerShell Functions.

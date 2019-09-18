@@ -21,7 +21,7 @@ When the Functions host starts, it writes something like the following output, w
 
 ...
 
-Content root path: C:\functions\MyFunctionProj
+Content root path: /home/scrapbook/tutorial/MyFunctionProj
 Now listening on: http://0.0.0.0:7071
 Application started. Press Ctrl+C to shut down.
 
@@ -31,8 +31,8 @@ Http Functions:
 
         HttpTrigger: http://localhost:7071/api/HttpTrigger
 
-[8/27/2018 10:38:27 PM] Host started (29486ms)
-[8/27/2018 10:38:27 PM] Job host started
+[09/18/2019 10:03:32] Host started (29486ms)
+[09/18/2019 10:03:32] Job host started
 ```
 
-We will test this powershell function using cURL in the next step.
+We will test this powershell function using `cURL` in the next step.
