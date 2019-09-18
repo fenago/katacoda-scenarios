@@ -4,7 +4,7 @@ In the lab environment, run the following command, choosing **powershell(preview
 
 `func init MyFunctionProj`{{execute}}
 
-![](https://github.com/fenago/katacoda-scenarios/raw/master/azure-functions/azure-functions-python/steps/4/1.JPG)
+![](https://github.com/fenago/katacoda-scenarios/raw/master/azure-functions/azure-functions-powershell/steps/4/1.JPG)
 
 
 A folder named MyFunctionProj is created, which contains the following three files:

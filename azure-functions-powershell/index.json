@@ -1,11 +1,11 @@
 {
-  "title": "Create an HTTP triggered python function",
+  "title": "Create an HTTP triggered powershell function",
   "description": "Introduction to Azure Functions",
   "difficulty": "Intermediate",
   "time": "15 minutes",
   "details": {
     "steps": [{
-      "title": "Python Azure Functions",
+      "title": "Powershell Azure Functions",
       "text": "steps/1/text.md"
     },
     {
