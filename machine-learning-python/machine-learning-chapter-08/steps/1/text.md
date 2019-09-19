@@ -2,7 +2,8 @@ We will run Jupyter Notebook as a Docker container. This setup will take some ti
 
 ## Login
 When the container is running, execute this statement:
-`docker logs jupyter`{{execute}}
+`docker logs jupyter 2>&1 | grep -v "HEAD" `{{execute}}
+
 
 This will show something like:
 ```
