@@ -8,25 +8,25 @@
       "title": "Jupyter Notebook",
       "text": "steps/1/text.md"
     },
- {
-      "title": "Convert string to float",
-      "text": "steps/2/text.md",
-      "answer": "steps/2/answer.md"
-    },    
-	{
+    {
+        "title": "Load csv",
+        "text": "steps/4/text.md",
+        "answer": "steps/4/answer.md"
+      },
+    {
+        "title": "Load csv better",
+        "text": "steps/5/text.md",
+        "answer": "steps/5/answer.md"
+      },
+    {
+          "title": "Convert string to float",
+          "text": "steps/2/text.md",
+          "answer": "steps/2/answer.md"
+        },    
+    {
       "title": "Convert string to int",
       "text": "steps/3/text.md",
       "answer": "steps/3/answer.md"
-    },
-	{
-      "title": "Load csv",
-      "text": "steps/4/text.md",
-      "answer": "steps/4/answer.md"
-    },
-	{
-      "title": "Load csv better",
-      "text": "steps/5/text.md",
-      "answer": "steps/5/answer.md"
     }],
     "intro": {
       "text": "intro.md",
