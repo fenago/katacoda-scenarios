@@ -276,7 +276,7 @@ def stacking(train, test):
 
 # %%
 '''
-A k value of 3 was used for cross-validation, giving each fold 208 3 = 69:3 or just under 70
+A k value of 3 was used for cross-validation, giving each fold 208/3 = 69.3  or just under 70
 records to be evaluated upon each iteration. Running the example prints the scores and mean
 of the scores for the final configuration.
 '''
