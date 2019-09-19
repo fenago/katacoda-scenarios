@@ -1,4 +1,4 @@
-We will run Jupyter Notebook as a Docker container. This setup will take some time because of the size of the image.
+In this scenario, we will run Jupyter Notebook as a Docker container. This setup will take some time because of the size of the image.
 
 ## Login
 When the container is running, execute this statement:
