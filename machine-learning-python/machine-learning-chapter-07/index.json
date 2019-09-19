@@ -43,8 +43,6 @@
         {"file": "calculate_coefficients.ipynb"               ,"target": "~/"},
         {"file": "simple_linear_regression_contrived.ipynb"   ,"target": "~/"},
         {"file": "simple_linear_regression_insurance.ipynb"   ,"target": "~/"},
-        {"file": "contrived-dataset.xlsx"                     ,"target": "~/"},
-        {"file": "insurance-dataset.xlsx"                     ,"target": "~/"},
         {"file": "insurance.csv"                              ,"target": "~/"}
       ]
     }
