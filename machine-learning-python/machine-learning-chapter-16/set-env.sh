@@ -5,6 +5,9 @@ docker cp prepareContainer.sh jupyter:/tmp/prepareContainerRoot.sh
 
 docker cp  ~/tutorial/. jupyter:/home/jovyan/work
 
+# copy file from fenago jupyter image to work folder.
+docker exec -it jupyter bash -c 'if [ -f "/home/jovyan/sonar.all-data.csv" ]; then rm -rf /home/jovyan/work/sonar.all-data.csv && cp /home/jovyan/sonar.all-data.csv /home/jovyan/work/sonar.all-data.csv; fi'
+
 # copy the script to make it accessible and executable 
 docker exec -it jupyter bash -c 'cp /tmp/prepareContainerRoot.sh ~/prepareContainer.sh && chmod +x ~/prepareContainer.sh'
 # execute the script inside the container - to install a number of packages
