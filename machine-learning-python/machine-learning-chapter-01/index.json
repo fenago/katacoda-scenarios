@@ -44,6 +44,10 @@
         {	
           "file": "pima-indians-diabetes.csv",	
           "target": "~/"	
+        },
+		{	
+          "file": "iris.csv",	
+          "target": "~/"	
         },	
         {	
           "file": "convert_string_to_float.ipynb",	
