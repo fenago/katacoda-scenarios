@@ -1,5 +1,5 @@
-
 Now try sending defective messages; first, try messages that are not in JSON format:
+
 `I am not JSON, I am Freedy.`{{execute T1}} 
 
 `I am a Kafkeeter!`{{execute T1}} 
