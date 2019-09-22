@@ -1,0 +1,21 @@
+{
+  "title": "Apache Kafka Quick Start Guide",
+  "description": "Introduction to Apache Kafka",
+  "courses": [
+    {
+      "course_id": "apache-kafka-installation",
+      "title": "Hyperledger Advanced Setup",
+      "description": ""
+    },
+    {
+      "course_id": "apache-kafka-producer-consumer",
+      "title": "Hyperledger Fabric Cryptogen",
+      "description": ""
+    },
+    {
+      "course_id": "apache-kafka-message-validation",
+      "title": "Hyperledger Fabric Cryptogen Organizations",
+      "description": ""
+    }
+  ]
+}
