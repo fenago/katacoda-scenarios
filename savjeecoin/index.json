@@ -1,0 +1,38 @@
+{
+  "title": "SavjeeCoin",
+  "description": "A simple blockchain in Javascript.",
+  "difficulty": "Advanced",
+  "time": "15 minutes",
+  "details": {
+    "steps": [{
+      "title": "Clone Repository",
+      "text": "steps/1/text.md"
+    },  
+	{
+      "title": "Installing the required packages",
+      "text": "steps/3/text.md"
+    },
+  {
+      "title": "",
+      "text": "steps/5/text.md"
+    },
+    {
+      "title": "Run Application",
+      "text": "steps/6/text.md"
+  }],
+    "intro": {
+      "text": "intro.md",
+      "credits": ""
+    },
+    "finish": {
+      "text": "finish.md"
+    }
+  },
+  "environment": {
+    "uilayout": "vscode",
+    "uimessage1": "\u001b[32mBrought to you by https://LearningVoyage.com\u001b[m\r\n"
+  },
+  "backend": {
+    "imageid": "vscode"
+  }
+}
