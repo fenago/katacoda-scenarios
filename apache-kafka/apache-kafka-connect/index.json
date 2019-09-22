@@ -1,0 +1,98 @@
+{
+  "title": "Hyperledger: Kafka & Zookeeper",
+  "description": "Introduction to Hyperledger",
+  "difficulty": "Advanced",
+  "time": "15 minutes",
+  "details": {
+    "steps": [{
+      "title": "Clone Repository",
+      "text": "steps/1/text.md"
+    },
+    {
+      "title": "What is Kafka?",
+      "text": "steps/2/text.md"
+    },    
+	{
+      "title": "Installation",
+      "text": "steps/3/text.md"
+    },
+	{
+      "title": "Start Kafka",
+      "text": "steps/4/text.md"
+    },
+  {
+      "title": "Zookeeper",
+      "text": "steps/5/text.md"
+    },
+    {
+        "title": "Publish & Subscribe",
+        "text": "steps/6/text.md"
+    },
+    {
+        "title": "",
+        "text": "steps/7/text.md"
+    },
+    {
+        "title": "",
+        "text": "steps/8/text.md"
+    },
+    {
+        "title": "",
+        "text": "steps/9/text.md"
+    },
+    {
+        "title": "",
+        "text": "steps/10/text.md"
+    },
+    {
+        "title": "",
+        "text": "steps/11/text.md"
+    },
+    {
+        "title": "Coding a validator in Java",
+        "text": "steps/12/text.md"
+    },
+    {
+        "title": "",
+        "text": "steps/13/text.md"
+    },
+    {
+        "title": "",
+        "text": "steps/14/text.md"
+    },
+    {
+        "title": "",
+        "text": "steps/15/text.md"
+    },
+    {
+        "title": "",
+        "text": "steps/16/text.md"
+    },
+    {
+        "title": "",
+        "text": "steps/17/text.md"
+    },
+    {
+        "title": "",
+        "text": "steps/18/text.md"
+    },
+    {
+        "title": "",
+        "text": "steps/19/text.md"
+    }],
+    "intro": {
+      "text": "intro.md",
+      "credits": ""
+    },
+    "finish": {
+      "text": "finish.md"
+    }
+  },
+  "environment": {
+    "uilayout": "vscode",
+    "uimessage1": "\u001b[32mBrought to you by https://LearningVoyage.com\u001b[m\r\n"
+  },
+  "backend": {
+    "imageid": "ubuntu"
+  }
+}

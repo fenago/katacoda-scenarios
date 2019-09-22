@@ -4,17 +4,42 @@
   "courses": [
     {
       "course_id": "apache-kafka-installation",
-      "title": "Hyperledger Advanced Setup",
+      "title": "Apache Kafka",
       "description": ""
     },
     {
       "course_id": "apache-kafka-producer-consumer",
-      "title": "Hyperledger Fabric Cryptogen",
+      "title": "Apache Kafka",
       "description": ""
     },
     {
       "course_id": "apache-kafka-message-validation",
-      "title": "Hyperledger Fabric Cryptogen Organizations",
+      "title": "Apache Kafka Message Validation",
+      "description": ""
+    },
+    {
+      "course_id": "apache-kafka-message-enrichment",
+      "title": "Apache Kafka Message Enrichment",
+      "description": ""
+    },
+    {
+      "course_id": "apache-kafka-serialization",
+      "title": "Apache Kafka Serialization",
+      "description": ""
+    },
+    {
+      "course_id": "apache-kafka-schema-registry",
+      "title": "Apache Kafka Schema Registry",
+      "description": ""
+    },
+    {
+      "course_id": "apache-kafka-streams",
+      "title": "Apache Kafka Streams",
+      "description": ""
+    },
+    {
+      "course_id": "apache-kafka-connect",
+      "title": "Apache Kafka Connect",
       "description": ""
     }
   ]
