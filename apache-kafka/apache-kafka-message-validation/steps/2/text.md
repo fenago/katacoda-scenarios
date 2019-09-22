@@ -2,7 +2,6 @@ We are going to build our project with Gradle. The first step is to download and
 
 Gradle only requires a Java JDK (version 7 or higher).
 
-
 ```
 ==> Downloading https://services.gradle.org/distributions/gradle-4.10.2-all.zip
 ==> Downloading from https://downloads.gradle.org/distributions/gradle-4.10.2-al
@@ -12,10 +11,12 @@ Gradle only requires a Java JDK (version 7 or higher).
 
 Linux users can install Gradle with the apt-get command, as follows:
 
-`apt-get update && yes | apt-get install gradle`{{execute T1}} 
+`apt-get update`{{execute T1}} 
  
+`yes | apt-get install gradle`{{execute T1}} 
 
 `gradle -v`{{execute T1}} 
+
 The output is something like the following:
 
 ```
