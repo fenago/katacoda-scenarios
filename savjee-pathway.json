@@ -1,0 +1,16 @@
+{
+  "title": "Savjee",
+  "description": "Introduction to Apache Kafka",
+  "courses": [
+    {
+      "course_id": "savjeecoin",
+      "title": "SavjeeCoin",
+      "description": ""
+    },
+    {
+      "course_id": "savjeecoin-frontend",
+      "title": "SavjeeCoin Frontend",
+      "description": ""
+    }
+  ]
+}
