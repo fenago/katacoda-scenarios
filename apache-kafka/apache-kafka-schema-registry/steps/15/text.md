@@ -1,18 +1,90 @@
 
 
-To rebuild the project from the monedero directory, run the following command:
-`gradle jar`{{execute T1}} 
+Now, in the src/main/java/kioto/avro directory, create a file called AvroProducer.java with the contents of Listing 5.4:
 
-If everything is OK, the output should be similar to the following:
+Copy
+package kioto.avro;
+import ...
+public final class AvroProducer {
+ /* here the Constructor code in Listing 5.3 */
 
-```
-...
-BUILD SUCCESSFUL
-...
-```
+ public final class AvroProducer {
 
-To run the project, we need four different command-line windows. Following figure shows the command-line windows arrangement:
+  private final Producer<String, GenericRecord> producer;
+  private Schema schema;
 
-![](https://github.com/fenago/katacoda-scenarios/raw/master/apache-kafka/apache-kafka-message-validation/steps/15/1.jpg)
+  public AvroProducer(String brokers, String schemaRegistryUrl) {
+    Properties props = new Properties();
+    props.put("bootstrap.servers", brokers);
+    props.put("key.serializer", StringSerializer.class);
+    props.put("value.serializer", KafkaAvroSerializer.class);
+    props.put("schema.registry.url", schemaRegistryUrl);
+    producer = new KafkaProducer<>(props);
+    try {
+      schema = (new Parser()).parse(new                   
+      File("src/main/resources/healthcheck.avsc"));
+    } catch (IOException e) {
+      e.printStackTrace();
+    }
+  }
 
-The four terminal windows to test the processing engine including: message producer, valid-message consumer, invalid-message consumer, and the processing engine itself
+  public final void produce(int ratePerSecond) {
+    long waitTimeBetweenIterationsMs = 1000L / (long)ratePerSecond;
+    Faker faker = new Faker();
+
+    while(true) {
+      HealthCheck fakeHealthCheck =
+          new HealthCheck(
+              "HEALTH_CHECK",
+              faker.address().city(),
+              faker.bothify("??##-??##", true),
+              Constants.machineType.values()                                                                                                                 
+              [faker.number().numberBetween(0,4)].toString(),
+              Constants.machineStatus.values()                                        
+              [faker.number().numberBetween(0,3)].toString(),
+              faker.date().past(100, TimeUnit.DAYS),
+              faker.number().numberBetween(100L, 0L),
+              faker.internet().ipV4Address());
+              GenericRecordBuilder recordBuilder = new                                       
+              GenericRecordBuilder(schema);
+              recordBuilder.set("event", fakeHealthCheck.getEvent());
+              recordBuilder.set("factory", 
+              fakeHealthCheck.getFactory());
+              recordBuilder.set("serialNumber",                                          
+              fakeHealthCheck.getSerialNumber());
+              recordBuilder.set("type", fakeHealthCheck.getType());
+              recordBuilder.set("status", fakeHealthCheck.getStatus());
+              recordBuilder.set("lastStartedAt",                                      
+              fakeHealthCheck.getLastStartedAt().getTime());
+              recordBuilder.set("temperature",                                          
+              fakeHealthCheck.getTemperature());
+              recordBuilder.set("ipAddress",   
+              fakeHealthCheck.getIpAddress());
+              Record avroHealthCheck = recordBuilder.build();
+              Future futureResult = producer.send(new ProducerRecord<>               
+              (Constants.getHealthChecksAvroTopic(), avroHealthCheck));
+      try {
+        Thread.sleep(waitTimeBetweenIterationsMs);
+        futureResult.get();
+      } catch (InterruptedException | ExecutionException e) {
+        e.printStackTrace();
+      }
+    }
+  }
+
+  public static void main( String[] args) {
+    new AvroProducer("localhost:9092",                                       
+    "http://localhost:8081").produce(2);
+  }
+}
+Listing 5.4: AvroProducer.java
+
+An analysis of the AvroProducer class shows the following:
+
+In line //1, ratePerSecond is the number of messages to send in a 1-second period
+In line //2, to simulate repetition, we use an infinite loop (try to avoid this in production)
+In line //3, now we can create GenericRecord objects using GenericRecordBuilder
+In line //4, we use a Java Future to send the record to the healthchecks-avro topic
+In line //5, we wait this time to send messages again
+In line //6, we read the result of the Future
+In line //7, everything runs on the broker on the localhost in port 9092, and with the Schema Registry running on the localhost in port 8081, sending two messages in an interval of 1 second

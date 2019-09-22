@@ -1,14 +1,34 @@
-In the fourth command-line terminal, start up the processing engine. From the project root directory (where the gradle jar command were executed), run the following command:
+Java AvroConsumer
+Let's create a Kafka AvroConsumer that we will use to receive the input records. As we already know, there are two prerequisites that all the Kafka Consumers should have: to be a KafkaConsumer and to set specific properties, such as in Listing 5.5:
 
-`java -jar ./build/libs/monedero-0.1.0.jar localhost:9092 foo input-topic valid-messages invalid-messages`{{execute T4}} 
+Copy
+import io.confluent.kafka.serializers.KafkaAvroDeserializer;
+import org.apache.avro.generic.GenericRecord;
+import org.apache.kafka.clients.consumer.KafkaConsumer;
+import org.apache.kafka.clients.consumer.Consumer;
+import org.apache.kafka.common.serialization.StringSerializer;
 
-From the first command-line terminal (the console producer), send the following three messages (remember to type enter between messages and execute each one in just one line):
+public final class AvroConsumer {
+  private Consumer<String, GenericRecord> consumer; //1
+  public AvroConsumer(String brokers, String schemaRegistryUrl) { //2
+     Properties props = new Properties();
+     props.put("group.id", "healthcheck-processor");
+     props.put("bootstrap.servers", brokers);
+     props.put("key.deserializer", StringDeserializer.class); //3
+     props.put("value.deserializer", KafkaAvroDeserializer.class); //4
+     props.put("schema.registry.url", schemaRegistryUrl); //5
+     consumer = new KafkaConsumer<>(props); //6
+  }
+ ...
+}
+Listing 5.5: AvroConsumer constructor
 
+An analysis of the changes in the AvroConsumer constructor shows the following:
 
-`{"event": "CUSTOMER_CONSULTS_ETHPRICE", "customer": {"id": "14862768", "name": "Snowden, Edward", "ipAddress": "95.31.18.111"}, "currency": {"name": "ethereum", "price": "RUB"}, "timestamp": "2018-09-28T09:09:09Z"}`{{execute T1}} 
-
-`{"event": "CUSTOMER_CONSULTS_ETHPRICE", "customer": {"id": "13548310", "name": "Assange, Julian", "ipAddress": "185.86.151.11"}, "currency": {"name": "ethereum", "price": "EUR"}, "timestamp": "2018-09-28T08:08:14Z"}`{{execute T1}} 
-
-`{"event": "CUSTOMER_CONSULTS_ETHPRICE", "customer": {"id": "15887564", "name": "Mills, Lindsay", "ipAddress": "186.46.129.15"}, "currency": {"name": "ethereum", "price": "USD"}, "timestamp": "2018-09-28T19:51:35Z"}`{{execute T1}} 
-
-As these are valid messages, the messages typed in the producer console should appear in the valid-messages consumer console window.
+In line //1, the values now are of type org.apache.avro.generic.GenericRecord
+In line //2, the constructor now receives the Schema Registry URL
+In line //3, the deserializer type for the messages' keys remains as StringDeserializer
+In line //4, the deserializer type for the values is now KafkaAvroDeserializer
+In line //5, the Schema Registry URL is added to the consumer properties
+In line //6, with these Properties, we build a KafkaConsumer with string keys and GenericRecord values: <String, GenericRecord>
+It is important to note that when defining the Schema Registry URL for the deserializer to fetch schemas, the messages only contain the schema ID and not the schema itself.
