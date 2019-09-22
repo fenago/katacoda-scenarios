@@ -1,31 +1,40 @@
-Running the validation
-At the moment, the ProcessingEngine class coordinates the Reader and Writer classes. It contains the main method to coordinate them. We have to edit the ProcessingEngine class located in the src/main/java/monedero/ directory and change Writer with Validator, as in Listing 2.10.
+Now, in the src/main/java/kioto/custom directory, create a file called CustomProducer.java with the content of Listing 4.13.
 
-The following is the content of Listing 2.10, ProcessingEngine.java:
+The following is the content of Listing 4.13, CustomProducer.java:
 
-```
-package monedero;
-public class ProcessingEngine {
-  public static void main(String[] args) {
-    String servers = args[0];
-    String groupId = args[1];
-    String inputTopic = args[2];
-    String validTopic = args[3];
-    String invalidTopic = args[4];
-    Reader reader = new Reader(servers, groupId, inputTopic);
-    Validator validator = new Validator(servers, validTopic, invalidTopic);
-    reader.run(validator);
+Copy
+package kioto.plain;
+import ...
+public final class CustomProducer {
+  /* here the Constructor code in Listing 4.12 */
+  public void produce(int ratePerSecond) {
+    long waitTimeBetweenIterationsMs = 1000L / (long)ratePerSecond; //1
+    Faker faker = new Faker();
+    while(true) { //2
+      HealthCheck fakeHealthCheck /* here the code in Listing 4.5 */;
+      Future futureResult = producer.send( new ProducerRecord<>(
+         Constants.getHealthChecksTopic(), fakeHealthCheck));       //3
+      try {
+        Thread.sleep(waitTimeBetweenIterationsMs); //4
+        futureResult.get();      //5          
+      } catch (InterruptedException | ExecutionException e) {
+        // deal with the exception
+      }
+    }
+  }
+public static void main(String[] args) {
+    new CustomProducer("localhost:9092").produce(2); //6
   }
 }
-```
+Listing 4.13: CustomProducer.java
 
-Listing 2.10: ProcessingEngine.java
+An analysis of the CustomProducer class includes the following:
 
-ProcessingEngine receives five arguments from the command line:
-
-- args[0]servers, indicates the host and port of the Kafka broker
-- args[1]groupId, indicates that the consumer is part of this Kafka consumer group
-- args[2]inputTopic, the topic where Reader reads from
-- args[3]validTopic, the topic where valid messages are sent
-- args[4]invalidTopic, the topic where invalid messages are sent
+In line //1, ratePerSecond is the number of messages to send in a one-second period
+In line //2, to simulate repetition, we use a infinite loop (try to avoid this in production)
+In line //3, we use a Java future to send the message to HealthChecksTopic
+In line //4, we wait this time to send messages again
+In line //5, we read the result of the future created previously
+In line //6, everything runs on the broker in localhost in port 9092, sending two messages in an interval of one second
  
+

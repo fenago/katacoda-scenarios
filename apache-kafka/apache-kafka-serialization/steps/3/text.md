@@ -1,17 +1,44 @@
-Reading from Kafka
-Now that we have our project skeleton, let's recall the project requirements for the stream processing engine. Remember that our event customer consults ETH price occurs outside Monedero and that these messages may not be well formed, that is, they may have defects. The first step in our pipeline is to validate that the input events have the correct data and the correct structure. Our project will be called ProcessingEngine.
+The constants
+The first step is to code our Constants class. This class is a static class with all of the Constants needed in our project.
 
-The ProcessingEngine specification shall create a pipeline application that does the following:
+Open the project with your favorite IDE and, under the src/main/java/kiotodirectory, create a file called Constants.java with the content of Listing 4.3.
 
-Reads each message from a Kafka topic called input-messages
-Validates each message, sending any invalid event to a specific Kafka topic called invalid-messages
-Writes the correct messages in a Kafka topic called valid-messages
-These steps are detailed in Figure 2.1, the first sketch for the pipeline processing engine:
+The following is the content of Listing 4.3, Constants.java: 
 
+Copy
+package kioto;
+import com.fasterxml.jackson.databind.ObjectMapper;
+import com.fasterxml.jackson.databind.SerializationFeature;
+import com.fasterxml.jackson.databind.util.StdDateFormat;
+public final class Constants {
+  private static final ObjectMapper jsonMapper;
+  static {
+    ObjectMapper mapper = new ObjectMapper();
+    mapper.disable(SerializationFeature.WRITE_DATES_AS_TIMESTAMPS);
+    mapper.setDateFormat(new StdDateFormat());
+    jsonMapper = mapper;
+  }
+  public static String getHealthChecksTopic() {
+    return "healthchecks";
+  }
+  public static String getHealthChecksAvroTopic() {
+    return "healthchecks-avro";
+  }
+  public static String getUptimesTopic() {
+    return "uptimes";
+  }
+  public enum machineType {GEOTHERMAL, HYDROELECTRIC, NUCLEAR, WIND, SOLAR}
+  public enum machineStatus {STARTING, RUNNING, SHUTTING_DOWN, SHUT_DOWN}
+  public static ObjectMapper getJsonMapper() {
+    return jsonMapper;
+  }
+}
+In our Constants class, there are some methods that we will need later. These are as follows:
 
-Figure 2.1: The processing engine reads events from the input-messages topic, validates the messages, and routes the defective ones to invalid-messages topic and the correct ones to valid-messages topic
-
-The processing engine stream construction has two phases:
-
-Create a simple Kafka worker that reads from the input-messages topic in Kafka and writes the events to another topic
-Modify the Kafka worker to make the validation
+getHealthChecksTopic: It returns the name of the health checks input topic
+getHealthChecksAvroTopic: It returns the name of the topic with the health checks in Avro
+getUptimesTopic: It returns the name of the uptimes topic
+machineType: This is an enum with the types of the Kioto energy producing machines types
+machineType: This is an enum with the types of the Kioto machines' possible statuses
+getJsonMapper: It returns the object mapper for JSON serialization and we set the serialization format for dates
+This is a Constants class; in languages such as Kotlin, the constants don't require an independent class, but we are using Java. Some purists of object-oriented programming argue that to code constant classes is an object-oriented anti-pattern. However, for simplicity here, we need some constants in our system.

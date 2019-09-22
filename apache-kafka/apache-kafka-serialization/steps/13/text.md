@@ -1,66 +1,23 @@
-The first step is create a new Validator.java file in the src/main/java/monedero/ directory, and copy therein the content of Listing 2.9.
+Now, to incorporate the serializer in our producer, there are two requisites that all Kafka producers should fulfill: to be a KafkaProducer, and to set the specific properties, such as Listing 4.12.
 
-The following is the content of Listing 2.9, Validator.java:
+The following is the content of Listing 4.12, the constructor method for CustomProducer:
 
-```
-package monedero;
-import com.fasterxml.jackson.databind.JsonNode;
-import com.fasterxml.jackson.databind.ObjectMapper;
+Copy
+import kioto.serde.HealthCheckSerializer;
 import org.apache.kafka.clients.producer.KafkaProducer;
-import java.io.IOException;
-
-public class Validator implements Producer {
-  private final KafkaProducer<String, String> producer;
-  private final String validMessages;
-  private final String invalidMessages;
-  private static final ObjectMapper MAPPER = new ObjectMapper();
-
-  public Validator(String servers, String validMessages, String invalidMessages) { //1
-    this.producer = new KafkaProducer<>(Producer.createConfig(servers));
-    this.validMessages = validMessages;
-    this.invalidMessages = invalidMessages;
+import org.apache.kafka.clients.producer.Producer;
+import org.apache.kafka.common.serialization.StringSerializer;
+public final class CustomProducer {
+  private final Producer<String, HealthCheck> producer;
+  public CustomProducer(String brokers) {
+    Properties props = new Properties();
+    props.put("bootstrap.servers", brokers);                    //1
+    props.put("key.serializer", StringSerializer.class);        //2
+    props.put("value.serializer", HealthCheckSerializer.class); //3
+    producer = new KafkaProducer<>(props);                      //4
   }
+An analysis of the CustomProducer constructor includes the following:
 
-  @Override
-  public void process(String message) {
-    try {
-      JsonNode root = MAPPER.readTree(message);
-      String error = "";
-      error = error.concat(validate(root, "event")); //2
-      error = error.concat(validate(root, "customer"));
-      error = error.concat(validate(root, "currency"));
-      error = error.concat(validate(root, "timestamp"));
-      if (error.length() > 0) {
-        Producer.write(this.producer, this.invalidMessages, //3
-        "{\"error\": \" " + error + "\"}");
-      } else {
-        Producer.write(this.producer, this.validMessages, //4
-        MAPPER.writeValueAsString(root));
-      }
-    } catch (IOException e) {
-      Producer.write(this.producer, this.invalidMessages, "{\"error\": \""
-      + e.getClass().getSimpleName() + ": " + e.getMessage() + "\"}");//5 
-    }
-  }
-  private String validate(JsonNode root, String path) {
-    if (!root.has(path)) {
-      return path.concat(" is missing. ");
-    }
-    JsonNode node = root.path(path);
-    if (node.isMissingNode()) {
-      return path.concat(" is missing. ");
-    }
-    return "";
-  }
-}
-```
-
-Listing 2.9: Validator.java
-
-As with Writer, the Validator class also implements the Producer class, but with the following:
-
-- In line //1, its constructor takes two topics: the valid and the invalid-messages topic
-- In line //2, the process method validates the fact that the message is in JSON format along with the existence of the fields: event, customer, currency, and timestamp
-- In line //3, in case the message doesn't have any required field, an error message is sent to the invalid-messages topic
-- In line //4, in case the message is valid, the message is sent to the valid-messages topic
-- In line //5, in case the message is not in JSON format, an error message is sent to the invalid-messages topic
+In line //1, this is the list of the brokers where our producer will be running.
+In line //2, the serializer type for the messages' keys in this case keys remains as strings. In line //3, this is the serializer type for the messages' values, in this case, the values are HealthCheck.
+In line //4, with these properties we build a KafkaProducer with string keys and HealthCheck values, for example, <String, HealthCheck>.

@@ -1,21 +1,22 @@
+To build the project, run the following command from the kioto directory:
 
-Now try sending defective messages; first, try messages that are not in JSON format:
-`I am not JSON, I am Freedy.`{{execute T1}} 
+Copy
+$ gradle jar
+If everything is correct, the output is something like the following:
 
-`I am a Kafkeeter!`{{execute T1}} 
- 
-This message should be received in the invalid messages topic (and displayed in the window), as in the following example:
-
-```
-{"error": "JsonParseException: Unrecognized token ' I am not JSON, I am Freedy.': was expecting 'null','true', 'false' or NaN
-at [Source: I am not JSON, I am Freedy.; line: 1, column: 4]"}
-```
-
-Then, let's try something more complex, the first message but without a timestamp, as in the example:
-
-`{"event": "CUSTOMER_CONSULTS_ETHPRICE", "customer": {"id": "14862768", "name": "Snowden, Edward", "ipAddress": "95.31.18.111"}, "currency": {"name": "ethereum", "price": "RUB"}}`{{execute T1}} 
-
-This message should be received in the invalid messages topic, as follows:
-{"error": "timestamp is missing."}
-
-The message validation is complete.
+Copy
+BUILD SUCCESSFUL in 3s
+1 actionable task: 1 executed
+Run a console consumer for the uptimes topic as follows:
+Copy
+$ ./bin/kafka-console-consumer --bootstrap-server localhost:9092 
+--topic uptimes --property print.key=true
+From our IDE, run the main method of CustomProcessor
+From our IDE, run the main method of CustomProducer
+The output on the console consumer for the uptimes topic should be similar to the following:
+Copy
+EW05-HV36   33
+BO58-SB28   20
+DV03-ZT93   46
+...
+Now, we have seen how to create our own SerDe to abstract the serialization code from our application's main logic. Now you know how a Kafka SerDe works.

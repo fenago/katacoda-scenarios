@@ -1,40 +1,35 @@
-Writing to Kafka
-Our Reader invokes the process() method; this method belonging to the Producer class. As with the consumer interface, the producer interface encapsulates all of the common behavior of the Kafka producers. The two producers in this chapter implement this producer interface.
+Registering a new version of a schema under a – value subject
+To register the Avro schema healthcheck.avsc, located in the src/main/resources/path listed in Listing 5.2, using the curl command, we use the following:
 
-In a file called Producer.java, located in the src/main/java/monedero directory, copy the content of Listing 2.6:
+Copy
+$ curl -X POST -H "Content-Type: application/vnd.schemaregistry.v1+json" \
+--data '{ "schema": "{ \"name\": \"HealthCheck\", \"namespace\": \"kioto.avro\", \"type\": \"record\", \"fields\": [ { \"name\": \"event\", \"type\": \"string\" }, { \"name\": \"factory\", \"type\": \"string\" }, { \"name\": \"serialNumber\", \"type\": \"string\" }, { \"name\": \"type\", \"type\": \"string\" }, { \"name\": \"status\", \"type\": \"string\"}, { \"name\": \"lastStartedAt\", \"type\": \"long\", \"logicalType\": \"timestamp-millis\"}, { \"name\": \"temperature\", \"type\": \"float\" }, { \"name\": \"ipAddress\", \"type\": \"string\" } ]} " }' \
+http://localhost:8081/subjects/healthchecks-avro-value/versions
+The output should be something like this:
+
+Copy
+{"id":1}
+This means that we have registered the HealthChecks schema with the version "id":1 (congratulations, your first version).
+
+Note that the command registers the schema on a subject called healthchecks-avro-value. The Schema Registry doesn't have information about topics (we still haven't created the healthchecks-avro topic). It is a convention, followed by the serializers/deserializers, to register schemas under a name following the <topic>-value format. In this case, since the schema is used for the message values, we use the suffix-value. If we wanted to use Avro to identify our messages keys, we would use the <topic>-key format.
+
+For example, to obtain the ID of our schema, we use the following command:
+
+Copy
+$ curl http://localhost:8081/subjects/healthchecks-avro-value/versions/
+The following output is the schema ID:
+
+Copy
+[1]
+With the schema ID, to check the value of our schema, we use the following command:
+
+Copy
+$ curl http://localhost:8081/subjects/healthchecks-avro-value/versions/1
+ 
+
+The output is the schema value shown here:
 
 ```
-package monedero;
-import java.util.Properties;
-import org.apache.kafka.clients.producer.KafkaProducer;
-import org.apache.kafka.clients.producer.ProducerRecord;
-public interface Producer {
-  void process(String message);                                 //1
-  static void write(KafkaProducer<String, String> producer,
-                    String topic, String message) {             //2
-    ProducerRecord<String, String> pr = new ProducerRecord<>(topic, message);
-    producer.send(pr);
-  }
-  static Properties createConfig(String servers) {              //3
-    Properties config = new Properties();
-    config.put("bootstrap.servers", servers);
-    config.put("acks", "all");
-    config.put("retries", 0);
-    config.put("batch.size", 1000);
-    config.put("linger.ms", 1);
-    config.put("key.serializer",
-"org.apache.kafka.common.serialization.StringSerializer");
-config.put("value.serializer",
-        "org.apache.kafka.common.serialization.StringSerializer"); 
-         return config;
-}
-}
+{"subject":"healthchecks-avro-value","version":1,"id":1,"schema":"{\"type\":\"record\",\"name\":\"HealthCheck\",\"namespace\":\"kioto.avro\",\"fields\":[{\"name\":\"event\",\"type\":\"string\"},{\"name\":\"factory\",\"type\":\"string\"},{\"name\":\"serialNumber\",\"type\":\"string\"},{\"name\":\"type\",\"type\":\"string\"},{\"name\":\"status\",\"type\":\"string\"},{\"name\":\"lastStartedAt\",\"type\":\"long\",\"logicalType\":\"timestamp-millis\"},{\"name\":\"temperature\",\"type\":\"float\"},{\"name\":\"ipAddress\",\"type\":\"string\"}]}"}
+
 ```
-
-Listing 2.6: Producer.java
-
-The producer interface has the following observations:
-
-- An abstract method called process invoked in the Reader class
-- A static method called write that sends a message to the producer in the specified topic
-- A static method called createConfig, where it sets all of the properties required for a generic producer

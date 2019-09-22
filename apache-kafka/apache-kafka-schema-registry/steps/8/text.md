@@ -1,15 +1,9 @@
-To build the project, run this command from the monedero directory:
-`gradle jar`{{execute T1}} 
+Listing all schema versions registered under the healthchecks–value subject
+To list all schema versions registered under the healthchecks-value subject, you can use the following command:
 
-If everything is OK, the output is something like the following:
+Copy
+curl -X GET http://localhost:8081/subjects/healthchecks-value/versions
+The output should be something like this:
 
-```
-...
-BUILD SUCCESSFUL
-...
-```
-To run the project, we need to open three different command-line windows. Following image shows what the command-line windows should look:
-
-![](https://github.com/fenago/katacoda-scenarios/raw/master/apache-kafka/apache-kafka-message-validation/steps/3/1.jpg)
-	
-The three terminal windows to test the processing engine including message producer, message consumer, and the application itself
+Copy
+[1]

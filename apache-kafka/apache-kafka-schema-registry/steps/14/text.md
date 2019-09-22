@@ -1,4 +1,3 @@
-Running the validation
 At the moment, the ProcessingEngine class coordinates the Reader and Writer classes. It contains the main method to coordinate them. We have to edit the ProcessingEngine class located in the src/main/java/monedero/ directory and change Writer with Validator, as in Listing 2.10.
 
 The following is the content of Listing 2.10, ProcessingEngine.java:
@@ -19,13 +18,11 @@ public class ProcessingEngine {
 }
 ```
 
-Listing 2.10: ProcessingEngine.java
-
 ProcessingEngine receives five arguments from the command line:
 
-- args[0]servers, indicates the host and port of the Kafka broker
-- args[1]groupId, indicates that the consumer is part of this Kafka consumer group
-- args[2]inputTopic, the topic where Reader reads from
-- args[3]validTopic, the topic where valid messages are sent
-- args[4]invalidTopic, the topic where invalid messages are sent
+- **args[0]:** servers, indicates the host and port of the Kafka broker
+- **args[1]:** groupId, indicates that the consumer is part of this Kafka consumer group
+- **args[2]:** inputTopic, the topic where Reader reads from
+- **args[3]:** validTopic, the topic where valid messages are sent
+- **args[4]:** invalidTopic, the topic where invalid messages are sent
  

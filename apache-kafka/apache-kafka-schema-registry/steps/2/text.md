@@ -1,25 +1,41 @@
-We are going to build our project with Gradle. The first step is to download and install Gradle from http://www.gradle.org/downloads.
+The first step is to define the Avro schema. As a reminder, our HealthCheck class looks like Listing 5.1:
 
-Gradle only requires a Java JDK (version 7 or higher).
+Copy
+public final class HealthCheck {
+ private String event;
+ private String factory;
+ private String serialNumber;
+ private String type;
+ private String status;
+ private Date lastStartedAt;
+ private float temperature;
+ private String ipAddress;
+}
+Listing 5.1: HealthCheck.java
 
+Now, with the representation of this message in Avro format, the schema (that is, the template) of all the messages of this type in Avro would be Listing 5.2:
 
-```
-==> Downloading https://services.gradle.org/distributions/gradle-4.10.2-all.zip
-==> Downloading from https://downloads.gradle.org/distributions/gradle-4.10.2-al
-######################################################################## 100.0%
-  /usr/local/Cellar/gradle/4.10.2: 203 files, 83.7MB, built in 59 seconds
-```
+Copy
+{
+ "name": "HealthCheck",
+ "namespace": "kioto.avro",
+ "type": "record",
+ "fields": [
+ { "name": "event", "type": "string" },
+ { "name": "factory", "type": "string" },
+ { "name": "serialNumber", "type": "string" },
+ { "name": "type", "type": "string" },
+ { "name": "status", "type": "string"},
+ { "name": "lastStartedAt", "type": "long", "logicalType": "timestamp-
+    millis"},
+ { "name": "temperature", "type": "float" },
+ { "name": "ipAddress", "type": "string" }
+ ]
+}
+Listing 5.2: healthcheck.avsc
 
-Linux users can install Gradle with the apt-get command, as follows:
+This file must be saved in the kioto project in the src/main/resources directory.
 
-`apt-get update && yes | apt-get install gradle`{{execute T1}} 
- 
+It is important to note that there are the types string, float, and double. But, in the case of Date, it can be stored as a long or as a string.
 
-`gradle -v`{{execute T1}} 
-The output is something like the following:
-
-```
-------------------------------------------------------------
-Gradle 4.10.2
-------------------------------------------------------------
-```
+For this example, we will serializeDate as a long. Avro doesn't have a dedicated Date type; we have to choose between a long and a string (an ISO-8601 string is usually better), but the point with this example is to show how to use different data types.

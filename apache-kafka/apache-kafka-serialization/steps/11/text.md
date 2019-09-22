@@ -1,16 +1,19 @@
-In the third command-line terminal, start the processing engine. Go to the project root directory where the gradle jar command was executed and run, as follows:
+From our IDE, run the main method of PlainProcessor
+From our IDE, run the main method of PlainProducer
+The output on the console consumer for the uptimes topic should be similar to the following:
+Copy
+EW05-HV36   33
+BO58-SB28   20
+DV03-ZT93   46
+...
+We have said that, when producing data, there are two factors to think about; one is the delivery guarantee, and the other is the partitioning.
 
-`java -jar ./build/libs/monedero-0.1.0.jar localhost:9092 foo input-topic output-topic`{{execute T3}}
+When consuming data, we have to think about the following four factors:
 
-Now, the show consists in reading all of the events from input-topic and writing them in output-topic.
+The number of consumers to run in parallel (in parallel threads and/or parallel processes)
+The amount of data to consume at once (think in terms of memory)
+The time to wait to receive messages (throughput and latency)
+When to mark a message as processed (committing offset)
+If enable.auto.commit is set to true (the default is true), the consumer automatically will commit the offsets in the next call to the poll method.
 
-Go to the first command-line terminal (the message producer) and send the following three messages (remember to type enter between messages and execute each one in just one line):
-
-
-`{"event": "CUSTOMER_CONSULTS_ETHPRICE", "customer": {"id": "14862768", "name": "Snowden, Edward", "ipAddress": "95.31.18.111"}, "currency": {"name": "ethereum", "price": "RUB"}, "timestamp": "2018-09-28T09:09:09Z"}`{{execute T1}} 
-
-`{"event": "CUSTOMER_CONSULTS_ETHPRICE", "customer": {"id": "13548310", "name": "Assange, Julian", "ipAddress": "185.86.151.11"}, "currency": {"name": "ethereum", "price": "EUR"}, "timestamp": "2018-09-28T08:08:14Z"}`{{execute T1}} 
-
-`{"event": "CUSTOMER_CONSULTS_ETHPRICE", "customer": {"id": "15887564", "name": "Mills, Lindsay", "ipAddress": "186.46.129.15"}, "currency": {"name": "ethereum", "price": "USD"}, "timestamp": "2018-09-28T19:51:35Z"}`{{execute T1}} 
-
-If everything is working fine, the messages typed in the console-producer should be appearing in the console-consumer window, because the processing engine is copying from `input-topic` to `output-topic`.
+Note that the whole batch of records is committed; if something fails and the application crashes after processing only some messages, but not all of the batch, the events are not committed and they will be reprocessed by other consumer; this way to process data is called at least once processing. 

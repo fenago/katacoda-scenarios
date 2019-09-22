@@ -1,16 +1,41 @@
-The Writer class implements the producer interface. The idea is to modify that Writer and build a validation class with minimum effort. The Validator process is as follows:
+So far, we have seen how to produce and consume JSON messages using plain Java and Jackson. We will see here how to create our custom serializers and deserializers.
 
-- Read the Kafka messages from the input-messages topic
-- Validate the messages, sending defective messages to the invalid-messages topic
-- Write the well-formed messages to valid-messages topic
-A
-t the moment, for this example, the definition of a valid message is a message t0 which the following applies:
-- It is in JSON format
-- It contains the four required fields: event, customer, currency, and timestamp
+We have seen how to use StringSerializer in the producer and StringDeserializer in the consumer. Now, we will see how to build our own SerDe to abstract the serialization/deserialization processes away from the core code of the application.
 
-If these conditions are not met, a new error message in JSON format is generated, sending it to the invalid-messages Kafka topic. The schema of this error message is very simple:
+To build a custom serializer, we need to create a class that implements the org.apache.kafka.common.serialization.Serializer interface. This is a generic type, so we can indicate the custom type to be converted into an array of bytes (serialization).
 
-```
-{"error": "Failure description" }
-```
+In the src/main/java/kioto/serdedirectory, create a file called HealthCheckSerializer.java with the content of Listing 4.11.
 
+The following is the content of Listing 4.11, HealthCheckSerializer.java: 
+
+Copy
+package kioto.serde;
+import com.fasterxml.jackson.core.JsonProcessingException;
+import kioto.Constants;
+import java.util.Map;
+import org.apache.kafka.common.serialization.Serializer;
+public final class HealthCheckSerializer implements Serializer {
+  @Override
+  public byte[] serialize(String topic, Object data) {
+    if (data == null) {
+      return null;
+    }
+    try {
+      return Constants.getJsonMapper().writeValueAsBytes(data);
+    } catch (JsonProcessingException e) {
+      return null;
+    }
+  }
+
+  @Override
+  public void close() {}
+  @Override
+  public void configure(Map configs, boolean isKey) {}
+}
+Listing 4.11: HealthCheckSerializer.java
+
+Note that the serializer class is located in a special module called kafka-clients in the org.apache.kafka route. The objective here is to use the serializer class instead of Jackson (manually).
+
+Also note that the important method to implement is the serialize method. The close and configure methods can be left with an empty body.
+
+We import the JsonProcessingException of Jackson just because the writeValueAsBytes method throws this exception, but we don't use Jackson for serialization.

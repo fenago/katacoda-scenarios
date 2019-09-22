@@ -1,30 +1,39 @@
-As with the consumer interface, an implementation of the producer interface is needed. In this first version, we just pass the incoming messages to another topic without modifying the messages. The implementation code is in Listing 2.7 and should be saved in a file called Writer.java in the src/main/java/m directory.
+Running the PlainProducer
+To build the project, run this command from the kioto directory:
 
-The following is the content of Listing 2.7,  Writer.java:
+Copy
+$ gradle jar
+If everything is okay, the output is something like the following:
 
-```
-package monedero;
-import org.apache.kafka.clients.producer.KafkaProducer;
-public class Writer implements Producer {
-  private final KafkaProducer<String, String> producer;
-  private final String topic;
-  Writer(String servers, String topic) {
-    this.producer = new KafkaProducer<>(
-        Producer.createConfig(servers));//1
-    this.topic = topic;
-  }
-  @Override
-  public void process(String message) {
-    Producer.write(this.producer, this.topic, message);//2
-  }
-}
-```
+Copy
+BUILD SUCCESSFUL in 3s
+1 actionable task: 1 executed
+From a command-line terminal, move to the confluent directory and start it by typing the following:
+Copy
+$ ./bin/confluent start
+The broker is running on port 9092. To create the healthchecks topic, execute the following:
+Copy
+$ ./bin/kafka-topics --zookeeper localhost:2181 --create --topic             
+healthchecks --replication-factor 1 --partitions 4
+Run a console consumer for the healthchecks topic by typing the following:
+Copy
+$ ./bin/kafka-console-consumer --bootstrap-server localhost:9092       
+--topic healthchecks
+From our IDE, run the main method of the PlainProducer
+The output on the console consumer should be similar to the following:
+Copy
+{"event":"HEALTH_CHECK","factory":"Lake Anyaport","serialNumber":"EW05-HV36","type":"WIND","status":"STARTING","lastStartedAt":"2018-09-17T11:05:26.094+0000","temperature":62.0,"ipAddress":"15.185.195.90"}
 
-Listing 2.7: Writer.java
+{"event":"HEALTH_CHECK","factory":"Candelariohaven","serialNumber":"BO58-SB28","type":"SOLAR","status":"STARTING","lastStartedAt":"2018-08-16T04:00:00.179+0000","temperature":75.0,"ipAddress":"151.157.164.162"}
 
-In this implementation of the Producer class, we see the following: 
+{"event":"HEALTH_CHECK","factory":"Ramonaview","serialNumber":"DV03-ZT93","type":"SOLAR","status":"RUNNING","lastStartedAt":"2018-07-12T10:16:39.091+0000","temperature":70.0,"ipAddress":"173.141.90.85"}
+...
+ 
 
-- The `createConfig` method is invoked to set the necessary properties from the producer interface
-- The process method writes each incoming message in the output topic. As the message arrives from the topic, it is sent to the target topic.
+Remember that, when producing data, there are several write guarantees that we could achieve.
 
-This producer implementation is very simple; it doesn't modify, validate, or enrich the messages. It just writes them to the output topic.
+For example, in case of a network failure or a broker failure, is our system ready to lose data?
+
+There is a trade-off among three factors: the availability to produce messages, the latency in the production, and the guarantee of the safe write.
+
+In this example, we just have one broker, and we use the default value for acks of 1. When we call the get() method in the future, we are waiting for the broker acknowledgment, that is, we have a guarantee that the message is persisted before sending another message. In this configuration, we don't lose messages, but our latency is higher than in a fire and forget schema.

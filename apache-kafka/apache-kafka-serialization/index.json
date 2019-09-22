@@ -1,5 +1,5 @@
 {
-  "title": "Apache Kafka Message Validation",
+  "title": "Apache Kafka Serialization",
   "description": "Introduction to Apache Kafka",
   "difficulty": "Advanced",
   "time": "15 minutes",
@@ -9,75 +9,75 @@
       "text": "steps/1/text.md"
     },
     {
-      "title": "What is Kafka?",
+      "title": "Install Gradle",
       "text": "steps/2/text.md"
     },    
 	{
-      "title": "Installation",
+      "title": "Reading from Kafka",
       "text": "steps/3/text.md"
     },
 	{
-      "title": "Start Kafka",
+      "title": "Reading from Kafka",
       "text": "steps/4/text.md"
     },
   {
-      "title": "Zookeeper",
+      "title": "Writing to Kafka",
       "text": "steps/5/text.md"
     },
     {
-        "title": "Publish & Subscribe",
+        "title": "Writing to Kafka",
         "text": "steps/6/text.md"
     },
     {
-        "title": "",
+        "title": "Running the processing engine",
         "text": "steps/7/text.md"
     },
     {
-        "title": "",
+        "title": "Java PlainProcessor",
         "text": "steps/8/text.md"
     },
     {
-        "title": "",
+        "title": "Java PlainProcessor...",
         "text": "steps/9/text.md"
     },
     {
-        "title": "",
+        "title": "Running the PlainProcessor",
         "text": "steps/10/text.md"
     },
     {
-        "title": "",
+        "title": "Running the PlainProcessor",
         "text": "steps/11/text.md"
     },
     {
-        "title": "Coding a validator in Java",
+        "title": "Custom serializer",
         "text": "steps/12/text.md"
     },
     {
-        "title": "",
+        "title": "Java CustomProducer",
         "text": "steps/13/text.md"
     },
     {
-        "title": "",
+        "title": "Java CustomProducer",
         "text": "steps/14/text.md"
     },
     {
-        "title": "",
+        "title": "Running the CustomProducer",
         "text": "steps/15/text.md"
     },
     {
-        "title": "",
+        "title": "Custom deserializer",
         "text": "steps/16/text.md"
     },
     {
-        "title": "",
+        "title": "Java custom consumer",
         "text": "steps/17/text.md"
     },
     {
-        "title": "",
+        "title": "Java custom processor",
         "text": "steps/18/text.md"
     },
     {
-        "title": "",
+        "title": "Running the custom processor",
         "text": "steps/19/text.md"
     }],
     "intro": {

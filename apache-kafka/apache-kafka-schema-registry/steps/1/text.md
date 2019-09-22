@@ -7,7 +7,18 @@ Next, clone the following repository by copying & executing following command in
 
 #### Permissions
 Now, move in the directory which contains scripts to install kafka, copy and execute the command. We also need to change permission to execute the script using **chmod**.
-`cd HLFADV/setup/kafka && chmod 755 *.sh`{{copy}}
+`cd setup && chmod 755 *.sh`{{execute T1}} 
+
+`./install.sh && ./start.sh`{{execute T1}} 
 
 **Note:**
 The supplied commands in the next steps MUST be run from your setup/kafka sub-directory of the **HLFADV** repository clone.
+
+
+In this scenario, we will see how to serialize the same messages with Apache Avro.
+
+- Avro in a nutshell
+- Defining the schema
+- Using the Schema Registry
+- How to build a Java AvroProducer, a consumer, and a processor
+- How to run the Java AvroProducer and the processor

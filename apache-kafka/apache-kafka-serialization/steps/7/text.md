@@ -1,62 +1,40 @@
-Running the processing engine
-The ProcessingEngine class coordinates the Reader and Writer classes. It contains the main method to coordinate them. Create a new file called ProcessingEngine.java in the src/main/java/monedero/directory and copy therein the code in Listing 2.8.
+Java plain consumer
+As we already know, to build a Kafka message consumer, we use the Java client library—in particular, the consumer API (in the following chapters, we will see how to use Kafka Streams and KSQL).
 
-The following is the content of Listing 2.8, ProcessingEngine.java:
+Let's create a Kafka consumer that we will use to receive the input messages.
 
-```
-package monedero;
-public class ProcessingEngine {
-  public static void main(String[] args) {
-    String servers = args[0];
-    String groupId = args[1];
-    String sourceTopic = args[2];
-    String targetTopic = args[3];
-    Reader reader = new Reader(servers, groupId, sourceTopic);
-    Writer writer = new Writer(servers, targetTopic);
-    reader.run(writer);
+As we already know, there are two requisites that all of the Kafka consumers should have: to be a KafkaConsumer and to set the specific properties, such as  those shown in Listing 4.8.
+
+The following is the content of Listing 4.8, the constructor method for plain consumer:
+
+Copy
+import org.apache.kafka.clients.consumer.KafkaConsumer;
+import org.apache.kafka.clients.consumer.Consumer;
+import org.apache.kafka.common.serialization.StringSerializer;
+public final class PlainConsumer {
+  private Consumer<String, String> consumer;
+  public PlainConsumer(String brokers) {
+    Properties props = new Properties();
+    props.put("group.id", "healthcheck-processor");         //1
+    props.put("bootstrap.servers", brokers);                   //2
+    props.put("key.deserializer", StringDeserializer.class);   //3
+    props.put("value.deserializer", StringDeserializer.class); //4
+    consumer = new KafkaConsumer<>(props);                        //5
   }
+  ...
 }
-```
+ 
 
-Listing 2.8: ProcessingEngine.java
+An analysis of the plain consumer constructor includes the following:
 
-ProcessingEngine receives four arguments from the command line:
+In line //1, the group ID of our consumer, in this case, healthcheck-processor
+In line //2, the list of brokers where our consumer will be running
+In line //3, the deserializer type for the messages' keys (we will see deserializers later)
+In line //4, the deserializer type for the messages' values, in this case, values are strings
+In line //5, with these properties, we build a KafkaConsumer with string keys and string values, for example,  <String, String>
+For the customers, we need to provide a group ID to specify the consumer group that our consumer will join.
 
-- args[0]servers, the host and port of the Kafka broker
-- args[1]groupId, the consumer group of the consumer
-- args[2]sourceTopic, inputTopic where Reader reads from
-- args[3]targetTopic, outputTopic where Writer writes to
+In the case that multiple consumers are started in parallel, through different threads or through different processes, each consumer will be assigned with a subset of the topic partitions. In our example, we created our topic with four partitions, which means that, to consume the data in parallel, we could create up to four consumers.
 
+For a consumer, we provide deserializers rather than serializers. Although we don't use the key deserializer (because if you remember, it is null), the key deserializer is a mandatory parameter for the consumer specification. On the other hand, we need the deserializer for the value, because we are reading our data in a JSON string, whereas here we deserialize the object manually with Jackson.
 
-
-In this step, we will shutdown. We will also verify that the kafka is not running anymore. `./stop.sh`{{copy}}
-
-
-
-
-In this step, we will publish a message using kafka. We will also verify that the message is consumed by the client.
-
-#### Publish a message
-We can publish a message to kafka topic and consumers can get these messages from the beginning.
-`echo "Hello, World" | ~/kafka/bin/kafka-console-producer.sh --broker-list localhost:9092 --topic TestTopic > /dev/null`{{copy}}
-
-#### Subscribe to a message
-We can subscribe to a kafka topic and get messages from the beginning.
-`~/kafka/bin/kafka-console-consumer.sh --bootstrap-server localhost:9092 --topic TestTopic --from-beginning`{{copy}}
-
-You should get following message as output. This is the message which we published.
-```
-Hello, World
-```
-
-**Note** Press `Ctrl + C` after receiving the message to quit above script.
-
-#### Verify
-We can try publish a message to kafka topic.
-`echo "Hello, World" | ~/kafka/bin/kafka-console-producer.sh --broker-list localhost:9092 --topic TestTopic > /dev/null`{{copy}}
-
-You should get following message as output. Connection could not be established, broker may not be available.
-
-```
-[2019-08-21 16:14:58,029] WARN [Producer clientId=console-producer] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Broker may not be available. (org.apache.kafka.clients.NetworkClient)
-```

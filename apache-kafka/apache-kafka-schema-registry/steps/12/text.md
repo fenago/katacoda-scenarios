@@ -1,16 +1,11 @@
-The Writer class implements the producer interface. The idea is to modify that Writer and build a validation class with minimum effort. The Validator process is as follows:
+ Globally updating the compatibility requirements
+To globally update the compatibility requirements, you can use the following command:
 
-- Read the Kafka messages from the input-messages topic
-- Validate the messages, sending defective messages to the invalid-messages topic
-- Write the well-formed messages to valid-messages topic
-A
-t the moment, for this example, the definition of a valid message is a message t0 which the following applies:
-- It is in JSON format
-- It contains the four required fields: event, customer, currency, and timestamp
+Copy
+curl -X PUT -H "Content-Type: application/vnd.schemaregistry.v1+json" \
+--data '{"compatibility": "NONE"}' \
+http://localhost:8081/config
+The output should be something like this:
 
-If these conditions are not met, a new error message in JSON format is generated, sending it to the invalid-messages Kafka topic. The schema of this error message is very simple:
-
-```
-{"error": "Failure description" }
-```
-
+Copy
+{"compatibility":"NONE"}

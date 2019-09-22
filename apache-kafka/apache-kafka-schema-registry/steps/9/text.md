@@ -1,14 +1,27 @@
-In the first command-line terminal, move to the Confluent directory and start it, as follows:
-`~/kafka/bin/confluent start`{{execute T1}} 
+Deleting version 1 of the schema registered under the healthchecks-value subject
+To delete version 1 of the schema registered under the healthchecks-value subject, you can use the following command:
 
-Once the control center (Zookeeper and Kafka included) is running in the same command-line terminal, generate the two necessary topics, as follows:
+Copy
+curl -X DELETE http://localhost:8081/subjects/healthchecks-value/versions/1
+The output should be something like this:
 
-`~/kafka/bin/kafka-topics.sh --create --zookeeper localhost:2181 --replication-factor 1 --partitions 1 --topic input-topic`{{execute T1}} 
+Copy
+1
+Deleting the most recently registered schema under the healthchecks-value subject
+To delete the most recently registered schema under the healthchecks-value subject, you can use the following command:
 
-`~/kafka/bin/kafka-topics.sh --create --zookeeper localhost:2181 --replication-factor 1 --partitions 1 --topic output-topic`{{execute T1}} 
+Copy
+curl -X DELETE http://localhost:8081/subjects/healthchecks-value/versions/latest
+The output should be something like this:
 
-Recall, to display the topics running in our cluster type, use the following:
-`~/kafka/bin/kafka-topics.sh --list --zookeeper localhost:2181`{{execute T1}} 
+Copy
+2
+Deleting all the schema versions registered under the healthchecks–value subject
+To delete all the schema versions registered under the healthchecks-value subject, you can use the following command:
 
-In the same command-line terminal, start the console producer running the input-topic topic, as follows:
-`~/kafka/bin/kafka-console-producer --broker-list localhost:9092 --topic input-topic`{{execute T1}} 
+Copy
+curl -X DELETE http://localhost:8081/subjects/healthchecks-value
+The output should be something like this:
+
+Copy
+[3]

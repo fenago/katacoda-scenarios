@@ -1,9 +1,40 @@
-In the first command-line terminal, go to the Kafka installation directory and generate the two necessary topics:
 
-`bin/kafka-topics --create --zookeeper localhost:2181 --replication-factor 1 --partitions 1 --topic valid-messages`{{execute T1}} 
+In a similar way, to build a custom deserializer, we need to create a class that implements the org.apache.kafka.common.serialization.Deserializer interface. We must indicate how to convert an array of bytes into a custom type (deserialization).
 
-`bin/kafka-topics --create --zookeeper localhost:2181 --replication-factor 1 --partitions 1 --topic invalid-messages`{{execute T1}} 
-Then, start a console producer to the input-topic topic, as follows:
+In the src/main/java/kioto/serde directory, create a file called HealthCheckDeserializer.java with the content of Listing 4.14.
 
-`bin/kafka-console-producer --broker-list localhost:9092 --topic input-topic`{{execute T1}} 
-This window is where the input messages are produced (typed).
+ 
+
+The following is the content of Listing 4.14, HealthCheckDeserializer.java: 
+
+Copy
+package kioto.serde;
+import kioto.Constants;
+import kioto.HealthCheck;
+import java.io.IOException;
+import java.util.Map;
+import org.apache.kafka.common.serialization.Deserializer;
+public final class HealthCheckDeserializer implements Deserializer {
+  @Override
+  public HealthCheck deserialize(String topic, byte[] data) {
+    if (data == null) {
+      return null;
+    }
+    try {
+      return Constants.getJsonMapper().readValue(data, HealthCheck.class);
+    } catch (IOException e) {
+      return null;
+    }
+  }
+  @Override
+  public void close() {}
+  @Override
+  public void configure(Map configs, boolean isKey) {}
+}
+Listing 4.14: HealthCheckDeserializer.java
+
+Note that the deserializer class is located in a module called kafka-clients in the org.apache.kafka route. The objective here is to use the deserializer class instead of Jackson (manually).
+
+Also note that the important method to implement is the deserialize method. The close and configure methods can be left with an empty body.
+
+We import the HealthCheck class because the readValue method requires a POJO (a class with public constructor and public getters and setters). Note also that all of the POJO attributes should be serializables.

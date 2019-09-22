@@ -1,74 +1,61 @@
-So, let's proceed with the first step. Build a Kafka worker that reads individual raw messages from the  input-messagestopic. We say in the Kafka jargon that a consumer is needed. If you recall, in the first chapter we built a command-line producer to write events to a topic and a command-line consumer to read the events from that topic. Now, we will code the same consumer in Java.
+HealthCheck message
+The second step is to code the HealthCheck class. This class is a Plain Old Java Object (POJO). The model class is the template for the value object.
 
-For our project, a consumer is a Java interface that contains all of the necessary behavior for all classes that implement consumers.
+Open the project with your favorite IDE and, in the src/main/java/kioto directory, create a file called HealthCheck.java with the content of Listing 4.4.
 
- 
+The following is the content of Listing 4.4, HealthCheck.java: 
 
-Create a file called Consumer.java in the src/main/java/monedero/directory with the content of Listing 2.4:
-
-```
-package monedero;
-import java.util.Properties;
-public interface Consumer {
-  static Properties createConfig(String servers, String groupId) {
-    Properties config = new Properties();
-    config.put("bootstrap.servers", servers);
-    config.put("group.id", groupId);
-    config.put("enable.auto.commit", "true");
-    config.put("auto.commit.interval.ms", "1000");
-    config.put("auto.offset.reset", "earliest");
-    config.put("session.timeout.ms", "30000");
-    config.put("key.deserializer",
-        "org.apache.kafka.common.serialization.StringDeserializer");
-    config.put("value.deserializer",
-        "org.apache.kafka.common.serialization.StringDeserializer");
-    return config;
-  }
+Copy
+package kioto;
+import java.util.Date;
+public final class HealthCheck {
+  private String event;
+  private String factory;
+  private String serialNumber;
+  private String type;
+  private String status;
+  private Date lastStartedAt;
+  private float temperature;
+  private String ipAddress;
 }
-```
+Listing 4.4: HealthCheck.java
 
-Listing 2.4: Consumer.java
+With your IDE, generate the following:
 
-The consumer interface encapsulates the common behavior of the Kafka consumers. The consumer interface has the createConfig method that sets all of the properties needed by all of the Kafka consumers. Note that the deserializers are of the StringDeserializertype because the Kafka consumer reads Kafka key-value records where the value are of the type string.
+A no-parameter constructor
+A constructor with all of the attributes passed as parameters
+The getters and the setters for each attribute
+This is a data class, a POJO in Java. In languages such as Kotlin, the model classes require so much less boilerplate code, but now we are in Java. Some purists of object-oriented programming argue that value objects is an object-oriented anti-pattern. However, the serialization libraries to produce messages need these classes.
 
-Now, create a file called Reader.java in the src/main/java/monedero/directory with the content of Listing 2.5:
+To generate fake data with JavaFaker, our code should be as shown in Listing 4.5.
 
-```
-package monedero;
-import org.apache.kafka.clients.consumer.ConsumerRecord;
-import org.apache.kafka.clients.consumer.ConsumerRecords;
-import org.apache.kafka.clients.consumer.KafkaConsumer;
-import java.time.Duration;
-import java.util.Collections;
-class Reader implements Consumer {
-  private final KafkaConsumer<String, String> consumer;//1
-  private final String topic;
-  Reader(String servers, String groupId, String topic) {
-    this.consumer =
-        new KafkaConsumer<>(Consumer.createConfig(servers, groupId));
-    this.topic = topic;
-  }
-  void run(Producer producer) {
-    this.consumer.subscribe(Collections.singletonList(this.topic));//2
- while (true) {//3
-      ConsumerRecords<String, String> records = consumer.poll(Duration.ofMillis(100));  //4
-      for (ConsumerRecord<String, String> record : records) {
-producer.process(record.value());//5
-      }
-    }
-  }
-}
-```
+The following is the content of Listing 4.5, a health check mock generator with JavaFaker:
 
-Listing 2.5: Reader.java
+Copy
+HealthCheck fakeHealthCheck =
+   new HealthCheck(
+        "HEALTH_CHECK",
+        faker.address().city(),                    //1
+        faker.bothify("??##-??##", true),    //2
+              Constants.machineType.values()
+                   [faker.number().numberBetween(0,4)].toString(), //3
+        Constants.machineStatus.values()
+                   [faker.number().numberBetween(0,3)].toString(), //4
+        faker.date().past(100, TimeUnit.DAYS),           //5
+        faker.number().numberBetween(100L, 0L),          //6
+        faker.internet().ipV4Address());                 //7
+The following is an analysis of how to generate fake health check data:
 
-The Reader class implements the consumer interface. So, Reader is a Kafka consumer:
+In line //1, address().city() generates a fictitious city name
+In line //2, in the expression ? for alpha # for numeric, true if alpha is uppercase
+In line //3, we use the machine type enum in Constants , and a fake number between 0 and 4
+In line //4, we use the machine status enum in Constants and a fake number between 0 and 3, inclusively
+In line //5, we are saying that we want a fake date between the past 100 days from today
+In line //6, we build a fake IP address
+Here, we depend on the attributes order of the constructor. Other languages, such as Kotlin, allow specifying each assigned attribute name.
 
-- In line //1, <String, String> says that KafkaConsumer reads Kafka records where the key and value are both of the type string
-- In line //2, the consumer subscribes to the Kafka topic specified in its constructor
-- In line //3, there is a while(true) infinite loop for demonstrative purposes; in practice, we need to deal with more robust code maybe, implementing Runnable
-- In line //4, this consumer will be pooling data from the specified topics every 100 milliseconds
-- In line //5, the consumer sends the message to be processed by the producer
-This consumer reads all of the messages from the specified Kafka topic and sends them to the process method of the specified producer. All of the configuration properties are specified in the consumer interface, but specifically the groupId property is important because it associates the consumer with a specific consumer group.
+Now, to transform our Java POJO into a JSON string, we use the method in the Constants class—something like the following:
 
-The consumer group is useful when we need to share the topic's events across all of the group's members. Consumer groups are also used to group or isolate different instances.
+Copy
+String fakeHealthCheckJson fakeHealthCheckJson = Constants.getJsonMapper().writeValueAsString(fakeHealthCheck);
+Don't forget that this method throws a JSON processing exception.
