@@ -1,0 +1,50 @@
+{
+  "title": "Hyperledger: Kafka & Zookeeper",
+  "description": "Introduction to Hyperledger",
+  "difficulty": "Advanced",
+  "time": "15 minutes",
+  "details": {
+    "steps": [{
+      "title": "Clone Repository",
+      "text": "steps/1/text.md"
+    },
+    {
+      "title": "What is Kafka?",
+      "text": "steps/2/text.md"
+    },    
+	{
+      "title": "Installation",
+      "text": "steps/3/text.md"
+    },
+	{
+      "title": "Start Kafka",
+      "text": "steps/4/text.md"
+    },
+  {
+      "title": "Zookeeper",
+      "text": "steps/5/text.md"
+    },
+    {
+        "title": "Publish & Subscribe",
+        "text": "steps/6/text.md"
+    },
+    {
+        "title": "Kafka Stop",
+        "text": "steps/7/text.md"
+    }],
+    "intro": {
+      "text": "intro.md",
+      "credits": ""
+    },
+    "finish": {
+      "text": "finish.md"
+    }
+  },
+  "environment": {
+    "uilayout": "vscode",
+    "uimessage1": "\u001b[32mBrought to you by https://LearningVoyage.com\u001b[m\r\n"
+  },
+  "backend": {
+    "imageid": "ubuntu"
+  }
+}
