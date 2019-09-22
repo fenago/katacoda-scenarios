@@ -5,12 +5,12 @@
     {
       "course_id": "savjeecoin",
       "title": "SavjeeCoin",
-      "description": ""
+      "description": "A simple blockchain in Javascript"
     },
     {
       "course_id": "savjeecoin-frontend",
       "title": "SavjeeCoin Frontend",
-      "description": ""
+      "description": "Angular app to visualize & interact with a blockchain"
     }
   ]
 }

@@ -1,5 +1,5 @@
 Let's run the program using node:
-`node ./src/main.js`{{execute}}
+`node start`{{execute}}
 
 Click on `Frontend` tab located next to terminal to access the angular application.
 

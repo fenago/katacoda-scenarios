@@ -4,7 +4,7 @@ Let's first setup VScode editor and clone respository. Clone the following repos
 `git clone https://github.com/Savjee/savjeecoin-frontend.git`{{execute}}
 
 Now, move in the directory which contains the application
-`cd SavjeeCoin`{{execute}}
+`cd savjeecoin-frontend`{{execute}}
 
 **Note:**
-Click **IDE Editor** tab to open Visual Studio and open solution explorer and navigate to `SavjeeCoin` folder to view files.
+Click **IDE Editor** tab to open Visual Studio and open solution explorer and navigate to `savjeecoin-frontend` folder to view files.
