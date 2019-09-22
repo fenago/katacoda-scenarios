@@ -1,10 +1,25 @@
-In this exercise you will talk about the orderer in the hyperledger fabric. We will learn to configure your node using `orderer.yaml`
+We are going to build our project with Gradle. The first step is to download and install Gradle from http://www.gradle.org/downloads.
 
-Kafka is primarily a distributed, horizontally-scalable, fault-tolerant, commit log. A commit log is basically a data structure that only appends. No modification or deletion is possible, which leads to no read/write locks, and the worst case complexity O(1). There can be multiple Kafka nodes in the blockchain network, with their corresponding Zookeeper ensemble.
+Gradle only requires a Java JDK (version 7 or higher).
 
-- High ThroughPut
-- Durable 
-- Highly Scalable
-- High Performance
 
-In the next steps, we will install kafka, zookeeper and JRE8.
+```
+==> Downloading https://services.gradle.org/distributions/gradle-4.10.2-all.zip
+==> Downloading from https://downloads.gradle.org/distributions/gradle-4.10.2-al
+######################################################################## 100.0%
+  /usr/local/Cellar/gradle/4.10.2: 203 files, 83.7MB, built in 59 seconds
+```
+
+Linux users can install Gradle with the apt-get command, as follows:
+
+`apt-get update && yes | apt-get install gradle`{{execute T1}} 
+ 
+
+`gradle -v`{{execute T1}} 
+The output is something like the following:
+
+```
+------------------------------------------------------------
+Gradle 4.10.2
+------------------------------------------------------------
+```

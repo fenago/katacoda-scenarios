@@ -1,16 +1,30 @@
-In this step, we will publish a message using kafka. We will also verify that the message is consumed by the client.
+As with the consumer interface, an implementation of the producer interface is needed. In this first version, we just pass the incoming messages to another topic without modifying the messages. The implementation code is in Listing 2.7 and should be saved in a file called Writer.java in the src/main/java/m directory.
 
-#### Publish a message
-We can publish a message to kafka topic and consumers can get these messages from the beginning.
-`echo "Hello, World" | ~/kafka/bin/kafka-console-producer.sh --broker-list localhost:9092 --topic TestTopic > /dev/null`{{copy}}
+The following is the content of Listing 2.7,  Writer.java:
 
-#### Subscribe to a message
-We can subscribe to a kafka topic and get messages from the beginning.
-`~/kafka/bin/kafka-console-consumer.sh --bootstrap-server localhost:9092 --topic TestTopic --from-beginning`{{copy}}
-
-You should get following message as output. This is the message which we published.
 ```
-Hello, World
+package monedero;
+import org.apache.kafka.clients.producer.KafkaProducer;
+public class Writer implements Producer {
+  private final KafkaProducer<String, String> producer;
+  private final String topic;
+  Writer(String servers, String topic) {
+    this.producer = new KafkaProducer<>(
+        Producer.createConfig(servers));//1
+    this.topic = topic;
+  }
+  @Override
+  public void process(String message) {
+    Producer.write(this.producer, this.topic, message);//2
+  }
+}
 ```
 
-**Note** Press `Ctrl + C` after receiving the message to quit above script.
+Listing 2.7: Writer.java
+
+In this implementation of the Producer class, we see the following: 
+
+- The `createConfig` method is invoked to set the necessary properties from the producer interface
+- The process method writes each incoming message in the output topic. As the message arrives from the topic, it is sent to the target topic.
+
+This producer implementation is very simple; it doesn't modify, validate, or enrich the messages. It just writes them to the output topic.
