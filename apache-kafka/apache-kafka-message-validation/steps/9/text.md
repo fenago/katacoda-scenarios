@@ -1,7 +1,5 @@
-In the first command-line terminal, move to the Confluent directory and start it, as follows:
-`~/kafka/bin/confluent start`{{execute T1}} 
 
-Once the control center (Zookeeper and Kafka included) is running in the same command-line terminal, generate the two necessary topics, as follows:
+Zookeeper and Kafka are already running, generate the two necessary topics, as follows:
 
 `~/kafka/bin/kafka-topics.sh --create --zookeeper localhost:2181 --replication-factor 1 --partitions 1 --topic input-topic`{{execute T1}} 
 

@@ -11,7 +11,8 @@ BUILD SUCCESSFUL
 ...
 ```
 
-To run the project, we need four different command-line windows. Figure 2.3 shows the command-line windows arrangement:
+To run the project, we need four different command-line windows. Following figure shows the command-line windows arrangement:
 
+![](https://github.com/fenago/katacoda-scenarios/raw/master/apache-kafka/apache-kafka-message-validation/steps/15/1.jpg)
 
-Figure 2.3: The four terminal windows to test the processing engine including: message producer, valid-message consumer, invalid-message consumer, and the processing engine itself
+The four terminal windows to test the processing engine including: message producer, valid-message consumer, invalid-message consumer, and the processing engine itself

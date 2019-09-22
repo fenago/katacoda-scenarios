@@ -1,4 +1,4 @@
-We are going to build our project with Gradle. The first step is to download and install Gradle from http://www.gradle.org/downloads.
+We are going to build our project with Gradle. The first step is to download and install Gradle.
 
 Gradle only requires a Java JDK (version 7 or higher).
 

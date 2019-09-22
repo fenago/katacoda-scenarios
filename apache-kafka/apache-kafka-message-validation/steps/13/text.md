@@ -1,4 +1,4 @@
-The first step is create a new Validator.java file in the src/main/java/monedero/ directory, and copy therein the content of Listing 2.9.
+The first step is create a new `Validator.java` file in the src/main/java/monedero/ directory, and copy therein the content of Listing 2.9.
 
 The following is the content of Listing 2.9, Validator.java:
 
@@ -55,12 +55,10 @@ public class Validator implements Producer {
 }
 ```
 
-Listing 2.9: Validator.java
-
 As with Writer, the Validator class also implements the Producer class, but with the following:
 
-- In line //1, its constructor takes two topics: the valid and the invalid-messages topic
-- In line //2, the process method validates the fact that the message is in JSON format along with the existence of the fields: event, customer, currency, and timestamp
-- In line //3, in case the message doesn't have any required field, an error message is sent to the invalid-messages topic
-- In line //4, in case the message is valid, the message is sent to the valid-messages topic
-- In line //5, in case the message is not in JSON format, an error message is sent to the invalid-messages topic
+- In line `//1`, its constructor takes two topics: the valid and the invalid-messages topic
+- In line `//2`, the process method validates the fact that the message is in JSON format along with the existence of the fields: event, customer, currency, and timestamp
+- In line `//3`, in case the message doesn't have any required field, an error message is sent to the invalid-messages topic
+- In line `//4`, in case the message is valid, the message is sent to the valid-messages topic
+- In line `//5`, in case the message is not in JSON format, an error message is sent to the invalid-messages topic

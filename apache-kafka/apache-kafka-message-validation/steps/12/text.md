@@ -3,8 +3,9 @@ The Writer class implements the producer interface. The idea is to modify that W
 - Read the Kafka messages from the input-messages topic
 - Validate the messages, sending defective messages to the invalid-messages topic
 - Write the well-formed messages to valid-messages topic
-A
-t the moment, for this example, the definition of a valid message is a message t0 which the following applies:
+
+At the moment, for this example, the definition of a valid message is a message t0 which the following applies:
+
 - It is in JSON format
 - It contains the four required fields: event, customer, currency, and timestamp
 
@@ -13,4 +14,3 @@ If these conditions are not met, a new error message in JSON format is generated
 ```
 {"error": "Failure description" }
 ```
-

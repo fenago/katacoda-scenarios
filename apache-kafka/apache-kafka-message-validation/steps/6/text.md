@@ -1,6 +1,6 @@
 As with the consumer interface, an implementation of the producer interface is needed. In this first version, we just pass the incoming messages to another topic without modifying the messages. The implementation code is in Listing 2.7 and should be saved in a file called Writer.java in the src/main/java/m directory.
 
-The following is the content of Listing 2.7,  Writer.java:
+The following is the content of  Writer.java:
 
 ```
 package monedero;
@@ -19,8 +19,6 @@ public class Writer implements Producer {
   }
 }
 ```
-
-Listing 2.7: Writer.java
 
 In this implementation of the Producer class, we see the following: 
 

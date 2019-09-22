@@ -1,4 +1,3 @@
-Writing to Kafka
 Our Reader invokes the process() method; this method belonging to the Producer class. As with the consumer interface, the producer interface encapsulates all of the common behavior of the Kafka producers. The two producers in this chapter implement this producer interface.
 
 In a file called Producer.java, located in the src/main/java/monedero directory, copy the content of Listing 2.6:
@@ -30,8 +29,6 @@ config.put("value.serializer",
 }
 }
 ```
-
-Listing 2.6: Producer.java
 
 The producer interface has the following observations:
 
