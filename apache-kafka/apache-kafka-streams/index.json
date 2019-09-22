@@ -17,68 +17,72 @@
       "text": "steps/3/text.md"
     },
 	{
-      "title": "Start Kafka",
+      "title": "Java PlainStreamsProcessor",
       "text": "steps/4/text.md"
     },
   {
-      "title": "Zookeeper",
+      "title": "Java PlainStreamsProcessor",
       "text": "steps/5/text.md"
     },
     {
-        "title": "Publish & Subscribe",
+        "title": "Running the PlainStreamsProcessor",
         "text": "steps/6/text.md"
     },
     {
-        "title": "",
+        "title": "Scaling out with Kafka Streams",
         "text": "steps/7/text.md"
     },
     {
-        "title": "",
+        "title": "Scaling out with Kafka Streams...",
         "text": "steps/8/text.md"
     },
     {
-        "title": "",
+        "title": "Java CustomStreamsProcessor",
         "text": "steps/9/text.md"
     },
     {
-        "title": "",
+        "title": "Java CustomStreamsProcessor",
         "text": "steps/10/text.md"
     },
     {
-        "title": "",
+        "title": "Running the CustomStreamsProcessor",
         "text": "steps/11/text.md"
     },
     {
-        "title": "Coding a validator in Java",
+        "title": "Java AvroStreamsProcessor",
         "text": "steps/12/text.md"
     },
     {
-        "title": "",
+        "title": "Running the AvroStreamsProcessor",
         "text": "steps/13/text.md"
     },
     {
-        "title": "",
+        "title": "Late event processing",
         "text": "steps/14/text.md"
     },
     {
-        "title": "",
+        "title": "Basic scenario",
         "text": "steps/15/text.md"
     },
     {
-        "title": "",
+        "title": "Late event generation",
         "text": "steps/16/text.md"
     },
     {
-        "title": "",
+        "title": "Running the EventProducer",
         "text": "steps/17/text.md"
     },
     {
-        "title": "",
+        "title": "Kafka Streams processor",
         "text": "steps/18/text.md"
     },
     {
-        "title": "",
+        "title": "Running the Streams processor",
         "text": "steps/19/text.md"
+    },
+    {
+        "title": "Stream processor analysis",
+        "text": "steps/20/text.md"
     }],
     "intro": {
       "text": "intro.md",

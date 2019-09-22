@@ -1,31 +1,14 @@
-Running the validation
-At the moment, the ProcessingEngine class coordinates the Reader and Writer classes. It contains the main method to coordinate them. We have to edit the ProcessingEngine class located in the src/main/java/monedero/ directory and change Writer with Validator, as in Listing 2.10.
+Previously, we talked about message processing, but now we will talk about events. An event in this context is something that happens at a particular time. An event is a message that happens at a point in time.
 
-The following is the content of Listing 2.10, ProcessingEngine.java:
+In order to understand events, we have to know the timestamp semantics. An event always has two timestamps, shown as follows:
 
-```
-package monedero;
-public class ProcessingEngine {
-  public static void main(String[] args) {
-    String servers = args[0];
-    String groupId = args[1];
-    String inputTopic = args[2];
-    String validTopic = args[3];
-    String invalidTopic = args[4];
-    Reader reader = new Reader(servers, groupId, inputTopic);
-    Validator validator = new Validator(servers, validTopic, invalidTopic);
-    reader.run(validator);
-  }
-}
-```
+Event time: The point in time when the event happened at the data source
+Processing time: The point in time when the event is processed in the data processor
+Due to limitations imposed by the laws of physics, the processing time will always be subsequent to and necessarily different from the event time, for the following reasons: 
 
-Listing 2.10: ProcessingEngine.java
+There is always network latency: The time to travel from the data source to the Kafka broker cannot be zero.
+The client could have a cache: If the client cached some events before, send them to the data processor. As an example, think about a mobile device that is not always connected to the network because there are zones without network access, and the device holds some data before sending it.
+The existence of back pressure: Sometimes, the broker will not process the events as they arrive, because it is busy and there are too many.
+Having said the previous points, it is always important that our messages have a timestamp. Since version 0.10 of Kafka, the messages stored in Kafka always have an associated timestamp. The timestamp is normally assigned by the producer; if the producer sends a message without a timestamp, the broker assigns it one.
 
-ProcessingEngine receives five arguments from the command line:
-
-- args[0]servers, indicates the host and port of the Kafka broker
-- args[1]groupId, indicates that the consumer is part of this Kafka consumer group
-- args[2]inputTopic, the topic where Reader reads from
-- args[3]validTopic, the topic where valid messages are sent
-- args[4]invalidTopic, the topic where invalid messages are sent
- 
+As a professional tip, when generating messages, always assign a timestamp from the producer.

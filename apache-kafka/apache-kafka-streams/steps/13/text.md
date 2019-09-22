@@ -1,66 +1,21 @@
-The first step is create a new Validator.java file in the src/main/java/monedero/ directory, and copy therein the content of Listing 2.9.
+To build the project, run this command from the kioto directory:
 
-The following is the content of Listing 2.9, Validator.java:
+Copy
+$ gradle build
+If everything is correct, the output is something like the following:
 
-```
-package monedero;
-import com.fasterxml.jackson.databind.JsonNode;
-import com.fasterxml.jackson.databind.ObjectMapper;
-import org.apache.kafka.clients.producer.KafkaProducer;
-import java.io.IOException;
-
-public class Validator implements Producer {
-  private final KafkaProducer<String, String> producer;
-  private final String validMessages;
-  private final String invalidMessages;
-  private static final ObjectMapper MAPPER = new ObjectMapper();
-
-  public Validator(String servers, String validMessages, String invalidMessages) { //1
-    this.producer = new KafkaProducer<>(Producer.createConfig(servers));
-    this.validMessages = validMessages;
-    this.invalidMessages = invalidMessages;
-  }
-
-  @Override
-  public void process(String message) {
-    try {
-      JsonNode root = MAPPER.readTree(message);
-      String error = "";
-      error = error.concat(validate(root, "event")); //2
-      error = error.concat(validate(root, "customer"));
-      error = error.concat(validate(root, "currency"));
-      error = error.concat(validate(root, "timestamp"));
-      if (error.length() > 0) {
-        Producer.write(this.producer, this.invalidMessages, //3
-        "{\"error\": \" " + error + "\"}");
-      } else {
-        Producer.write(this.producer, this.validMessages, //4
-        MAPPER.writeValueAsString(root));
-      }
-    } catch (IOException e) {
-      Producer.write(this.producer, this.invalidMessages, "{\"error\": \""
-      + e.getClass().getSimpleName() + ": " + e.getMessage() + "\"}");//5 
-    }
-  }
-  private String validate(JsonNode root, String path) {
-    if (!root.has(path)) {
-      return path.concat(" is missing. ");
-    }
-    JsonNode node = root.path(path);
-    if (node.isMissingNode()) {
-      return path.concat(" is missing. ");
-    }
-    return "";
-  }
-}
-```
-
-Listing 2.9: Validator.java
-
-As with Writer, the Validator class also implements the Producer class, but with the following:
-
-- In line //1, its constructor takes two topics: the valid and the invalid-messages topic
-- In line //2, the process method validates the fact that the message is in JSON format along with the existence of the fields: event, customer, currency, and timestamp
-- In line //3, in case the message doesn't have any required field, an error message is sent to the invalid-messages topic
-- In line //4, in case the message is valid, the message is sent to the valid-messages topic
-- In line //5, in case the message is not in JSON format, an error message is sent to the invalid-messages topic
+Copy
+BUILD SUCCESSFUL in 1s
+ 6 actionable task: 6 up-to-date
+The first step is to run a console consumer for the uptimes topic, shown as follows:
+Copy
+      $ ./bin/kafka-console-consumer --bootstrap-server localhost:9092 
+      --topic uptimes --property print.key=true
+From our IDE, run the main method of the AvroStreamsProcessor
+From our IDE, run the main method of the AvroProducer (built in previous chapters)
+The output on the console consumer for the uptimes topic should be similar to the following:
+Copy
+       EW05-HV36 33
+       BO58-SB28 20
+       DV03-ZT93 46
+       ...

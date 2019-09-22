@@ -1,4 +1,3 @@
-Stream processor analysis
 If you have a lot of questions here, it is normal.
 
 The first thought to consider is that in streaming aggregation, and in streaming in general, the Streams are unbounded. It is never clear when we will take the final results, that is, we as programmers have to decide when to consider a partial value of an aggregation as a final result.

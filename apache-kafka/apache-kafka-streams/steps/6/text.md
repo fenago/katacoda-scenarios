@@ -1,30 +1,21 @@
-As with the consumer interface, an implementation of the producer interface is needed. In this first version, we just pass the incoming messages to another topic without modifying the messages. The implementation code is in Listing 2.7 and should be saved in a file called Writer.java in the src/main/java/m directory.
+To build the project, run this command from the kioto directory:
 
-The following is the content of Listing 2.7,  Writer.java:
+Copy
+$ gradle build
+If everything is correct, the output is something like the following:
 
-```
-package monedero;
-import org.apache.kafka.clients.producer.KafkaProducer;
-public class Writer implements Producer {
-  private final KafkaProducer<String, String> producer;
-  private final String topic;
-  Writer(String servers, String topic) {
-    this.producer = new KafkaProducer<>(
-        Producer.createConfig(servers));//1
-    this.topic = topic;
-  }
-  @Override
-  public void process(String message) {
-    Producer.write(this.producer, this.topic, message);//2
-  }
-}
-```
-
-Listing 2.7: Writer.java
-
-In this implementation of the Producer class, we see the following: 
-
-- The `createConfig` method is invoked to set the necessary properties from the producer interface
-- The process method writes each incoming message in the output topic. As the message arrives from the topic, it is sent to the target topic.
-
-This producer implementation is very simple; it doesn't modify, validate, or enrich the messages. It just writes them to the output topic.
+Copy
+BUILD SUCCESSFUL in 1s
+6 actionable task: 6 up-to-date
+The first step is to run a console consumer for the uptimes topic, shown in the following code snippet:
+Copy
+$ ./bin/kafka-console-consumer --bootstrap-server localhost:9092 
+--topic uptimes --property print.key=true
+From the IDE, run the main method of the PlainStreamsProcessor
+From the IDE, run the main method of the PlainProducer (built in previous chapters)
+The output on the console consumer for the uptimes topic should be similar to the following:
+Copy
+EW05-HV36 33
+BO58-SB28 20
+DV03-ZT93 46
+...

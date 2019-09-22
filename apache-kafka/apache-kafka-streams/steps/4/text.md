@@ -1,74 +1,59 @@
-So, let's proceed with the first step. Build a Kafka worker that reads individual raw messages from the  input-messagestopic. We say in the Kafka jargon that a consumer is needed. If you recall, in the first chapter we built a command-line producer to write events to a topic and a command-line consumer to read the events from that topic. Now, we will code the same consumer in Java.
+Now, in the src/main/java/kioto/plaindirectory, create a file called PlainStreamsProcessor.java with the contents of Listing 6.2, shown as follows:
 
-For our project, a consumer is a Java interface that contains all of the necessary behavior for all classes that implement consumers.
+Copy
+import ...
+public final class PlainStreamsProcessor {
+  private final String brokers;
+  public PlainStreamsProcessor(String brokers) {
+    super();
+    this.brokers = brokers;
+  }
+  public final void process() {
+    // below we will see the contents of this method 
+  }
+  public static void main(String[] args) {
+    (new PlainStreamsProcessor("localhost:9092")).process();
+  }
+}
+Listing 6.2: PlainStreamsProcessor.java
+
+All the magic happens inside the process() method. The first step in a Kafka Streams application is to get a StreamsBuilder instance, as shown in the following code:
+
+Copy
+StreamsBuilder streamsBuilder = new StreamsBuilder();
+The StreamsBuilder is an object that allows building a topology. A topology in Kafka Streams is a structural description of a data pipeline. The topology is a succession of steps that involve transformations between streams. A topology is a very important concept in streams; it is also used in other technologies such as Apache Storm.
+
+The StreamsBuilder is used to consume data from a topic. There are other two important concepts in the context of Kafka Streams: a KStream, a representation of a stream of records, and a KTable, a log of the changes in a stream (we will see KTables in detail in Chapter 7, KSQL). To obtain a KStream from a topic, we use the stream() method of the StreamsBuilder, shown as follows:
+
+Copy
+KStream healthCheckJsonStream = 
+  streamsBuilder.stream( Constants.getHealthChecksTopic(), 
+    Consumed.with(Serdes.String(), Serdes.String()));
+ 
 
  
 
-Create a file called Consumer.java in the src/main/java/monedero/directory with the content of Listing 2.4:
+ 
 
-```
-package monedero;
-import java.util.Properties;
-public interface Consumer {
-  static Properties createConfig(String servers, String groupId) {
-    Properties config = new Properties();
-    config.put("bootstrap.servers", servers);
-    config.put("group.id", groupId);
-    config.put("enable.auto.commit", "true");
-    config.put("auto.commit.interval.ms", "1000");
-    config.put("auto.offset.reset", "earliest");
-    config.put("session.timeout.ms", "30000");
-    config.put("key.deserializer",
-        "org.apache.kafka.common.serialization.StringDeserializer");
-    config.put("value.deserializer",
-        "org.apache.kafka.common.serialization.StringDeserializer");
-    return config;
+ 
+
+There is an implementation of the stream() method that just receives the topic name as a parameter. But, it is good practice to use the implementation where we can also specify the serializers, as in this example we have to specify the Serializer for the key and the Serializer for the value for the Consumed class; in this case, both are strings.
+
+Don't let the serializers be specified through application-wide properties, because the same Kafka Streams application might read from several data sources with different data formats.
+
+We have obtained a JSON stream. The next step in the topology is to obtain the HealthCheck object stream, and we do so by building the following Stream:
+
+Copy
+KStream healthCheckStream = healthCheckJsonStream.mapValues((v -> {
+  try {
+    return Constants.getJsonMapper().readValue(
+      (String) v, HealthCheck.class);
+  } catch (IOException e) {
+    // deal with the Exception
   }
-}
-```
+ }));
+First, note that we are using the mapValues() method, so as in Java 8, the method receives a lambda expression. There are other implementations for the mapValues() method, but here we are using the lambda with just one argument (v->).
 
-Listing 2.4: Consumer.java
+The mapValues() here could be read as follows: for each element in the input Stream, we are applying a transformation from the JSON object to the HealthCheck object, and this transformation could raise an IOException, so we are catching it.
 
-The consumer interface encapsulates the common behavior of the Kafka consumers. The consumer interface has the createConfig method that sets all of the properties needed by all of the Kafka consumers. Note that the deserializers are of the StringDeserializertype because the Kafka consumer reads Kafka key-value records where the value are of the type string.
-
-Now, create a file called Reader.java in the src/main/java/monedero/directory with the content of Listing 2.5:
-
-```
-package monedero;
-import org.apache.kafka.clients.consumer.ConsumerRecord;
-import org.apache.kafka.clients.consumer.ConsumerRecords;
-import org.apache.kafka.clients.consumer.KafkaConsumer;
-import java.time.Duration;
-import java.util.Collections;
-class Reader implements Consumer {
-  private final KafkaConsumer<String, String> consumer;//1
-  private final String topic;
-  Reader(String servers, String groupId, String topic) {
-    this.consumer =
-        new KafkaConsumer<>(Consumer.createConfig(servers, groupId));
-    this.topic = topic;
-  }
-  void run(Producer producer) {
-    this.consumer.subscribe(Collections.singletonList(this.topic));//2
- while (true) {//3
-      ConsumerRecords<String, String> records = consumer.poll(Duration.ofMillis(100));  //4
-      for (ConsumerRecord<String, String> record : records) {
-producer.process(record.value());//5
-      }
-    }
-  }
-}
-```
-
-Listing 2.5: Reader.java
-
-The Reader class implements the consumer interface. So, Reader is a Kafka consumer:
-
-- In line //1, <String, String> says that KafkaConsumer reads Kafka records where the key and value are both of the type string
-- In line //2, the consumer subscribes to the Kafka topic specified in its constructor
-- In line //3, there is a while(true) infinite loop for demonstrative purposes; in practice, we need to deal with more robust code maybe, implementing Runnable
-- In line //4, this consumer will be pooling data from the specified topics every 100 milliseconds
-- In line //5, the consumer sends the message to be processed by the producer
-This consumer reads all of the messages from the specified Kafka topic and sends them to the process method of the specified producer. All of the configuration properties are specified in the consumer interface, but specifically the groupId property is important because it associates the consumer with a specific consumer group.
-
-The consumer group is useful when we need to share the topic's events across all of the group's members. Consumer groups are also used to group or isolate different instances.
+Recapitulating until the moment, in the first transformation, we read from the topic a stream with (String, String) pairs. In the second transformation, we go from the value in JSON to the value in HealthCheckobjects.

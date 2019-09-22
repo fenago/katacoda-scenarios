@@ -1,25 +1,10 @@
-We are going to build our project with Gradle. The first step is to download and install Gradle from http://www.gradle.org/downloads.
+Kafka Streams is a library and part of Apache Kafka, used to process streams into and from Kafka. In functional programming, there are several operations over collections, such as the following:
 
-Gradle only requires a Java JDK (version 7 or higher).
-
-
-```
-==> Downloading https://services.gradle.org/distributions/gradle-4.10.2-all.zip
-==> Downloading from https://downloads.gradle.org/distributions/gradle-4.10.2-al
-######################################################################## 100.0%
-  /usr/local/Cellar/gradle/4.10.2: 203 files, 83.7MB, built in 59 seconds
-```
-
-Linux users can install Gradle with the apt-get command, as follows:
-
-`apt-get update && yes | apt-get install gradle`{{execute T1}} 
+filter
+map
+flatMap
+groupBy
+join
  
 
-`gradle -v`{{execute T1}} 
-The output is something like the following:
-
-```
-------------------------------------------------------------
-Gradle 4.10.2
-------------------------------------------------------------
-```
+The success of streaming platforms such as Apache Spark, Apache Flink, Apache Storm, and Akka Streams is to incorporate these stateless functions to process data streams. Kafka Streams provides a DSL to incorporate these functions to manipulate data streams.

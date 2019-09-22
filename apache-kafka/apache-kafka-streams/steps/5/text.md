@@ -1,40 +1,46 @@
-Writing to Kafka
-Our Reader invokes the process() method; this method belonging to the Producer class. As with the consumer interface, the producer interface encapsulates all of the common behavior of the Kafka producers. The two producers in this chapter implement this producer interface.
 
-In a file called Producer.java, located in the src/main/java/monedero directory, copy the content of Listing 2.6:
+In the third step, we are going to calculate the uptime and send it to the uptimeStream, as shown in the following block:
 
-```
-package monedero;
-import java.util.Properties;
-import org.apache.kafka.clients.producer.KafkaProducer;
-import org.apache.kafka.clients.producer.ProducerRecord;
-public interface Producer {
-  void process(String message);                                 //1
-  static void write(KafkaProducer<String, String> producer,
-                    String topic, String message) {             //2
-    ProducerRecord<String, String> pr = new ProducerRecord<>(topic, message);
-    producer.send(pr);
-  }
-  static Properties createConfig(String servers) {              //3
-    Properties config = new Properties();
-    config.put("bootstrap.servers", servers);
-    config.put("acks", "all");
-    config.put("retries", 0);
-    config.put("batch.size", 1000);
-    config.put("linger.ms", 1);
-    config.put("key.serializer",
-"org.apache.kafka.common.serialization.StringSerializer");
-config.put("value.serializer",
-        "org.apache.kafka.common.serialization.StringSerializer"); 
-         return config;
-}
-}
-```
+Copy
+KStream uptimeStream = healthCheckStream.map(((KeyValueMapper)(k, v)-> {
+  HealthCheck healthCheck = (HealthCheck) v;
+  LocalDate startDateLocal = healthCheck.getLastStartedAt().toInstant()
+              .atZone(ZoneId.systemDefault()).toLocalDate();
+  int uptime = Period.between(startDateLocal, LocalDate.now()).getDays();
+  return new KeyValue<>(
+    healthCheck.getSerialNumber(), String.valueOf(uptime));
+ }));
+ 
+ 
 
-Listing 2.6: Producer.java
+Note that we are using the map() method, also as in Java 8, the method receives a lambda expression. There are other implementations for the map() method; here, we are using a lambda with two arguments ((k, v)->)
 
-The producer interface has the following observations:
+The map() here could be read as follows: for each element in the input stream, we extract the tuples (key, value). We are using just the value (anyway, the key is null), cast it to HealthCheck, extract two attributes (the start time and the SerialNumber), calculate the uptime, and return a new KeyValue pair with (SerialNumber, uptime).
 
-- An abstract method called process invoked in the Reader class
-- A static method called write that sends a message to the producer in the specified topic
-- A static method called createConfig, where it sets all of the properties required for a generic producer
+The last step is to write these values into the uptimes topic, shown as follows:
+
+Copy
+uptimeStream.to( Constants.getUptimesTopic(), 
+  Produced.with(Serdes.String(), Serdes.String()));
+Again, I will emphasize it until I get tired: it is widely recommended to declare the data types of our Streams. Always stating, in this case for example, that key value pairs are of type (String, String).
+
+Here is a summary of the steps:
+
+Read from the input topic key value pairs of type (String, String)
+Deserialize each JSON object to HealthCheck
+Calculate the uptimes
+Write the uptimes to the output topic in key value pairs of type (String, String)
+Finally, it is time to start the Kafka Streams engine.
+
+Before starting it, we need to specify the topology and two properties, the broker and the application ID, shown as follows:
+
+Copy
+Topology topology = streamsBuilder.build();
+Properties props = new Properties();
+props.put("bootstrap.servers", this.brokers);
+props.put("application.id", "kioto");
+KafkaStreams streams = new KafkaStreams(topology, props);
+streams.start();
+Note that the serializers and deserializers are just explicitly defined when reading from and writing to topics. So, we are not tied application-wide to a single data type, and we can read from and write to topics with different data types, as happens continuously in practice.
+
+Also with this good practice, between different topics, there is no ambiguity about which Serde to use.

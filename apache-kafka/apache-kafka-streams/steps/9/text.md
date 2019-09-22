@@ -1,14 +1,38 @@
-In the first command-line terminal, move to the Confluent directory and start it, as follows:
-`~/kafka/bin/confluent start`{{execute T1}} 
+Summing up what has happened so far, in previous chapters we saw how to make a producer, a consumer, and a simple processor in Kafka. We also saw how to do the same with a custom SerDe, how to use Avro, and the Schema Registry. So far in this chapter, we have seen how to make a simple processor with Kafka Streams.
 
-Once the control center (Zookeeper and Kafka included) is running in the same command-line terminal, generate the two necessary topics, as follows:
+In this section, we will use all our knowledge so far to build a CustomStreamsProcessor with Kafka Streams to use our own SerDe.
 
-`~/kafka/bin/kafka-topics.sh --create --zookeeper localhost:2181 --replication-factor 1 --partitions 1 --topic input-topic`{{execute T1}} 
+Now, in the src/main/java/kioto/custom directory, create a file called CustomStreamsProcessor.java with the contents of Listing 6.3, shown as follows:
 
-`~/kafka/bin/kafka-topics.sh --create --zookeeper localhost:2181 --replication-factor 1 --partitions 1 --topic output-topic`{{execute T1}} 
+Copy
+import ...
+public final class CustomStreamsProcessor {
+  private final String brokers;
+  public CustomStreamsProcessor(String brokers) {
+    super();
+    this.brokers = brokers;
+  }
+  public final void process() {
+    // below we will see the contents of this method
+  }
+  public static void main(String[] args) {
+    (new CustomStreamsProcessor("localhost:9092")).process();
+  }
+}
+Listing 6.3: CustomStreamsProcessor.java
 
-Recall, to display the topics running in our cluster type, use the following:
-`~/kafka/bin/kafka-topics.sh --list --zookeeper localhost:2181`{{execute T1}} 
+All the magic happens inside the process() method.
 
-In the same command-line terminal, start the console producer running the input-topic topic, as follows:
-`~/kafka/bin/kafka-console-producer --broker-list localhost:9092 --topic input-topic`{{execute T1}} 
+The first step in a Kafka Streams application is to get a StreamsBuilder instance, shown as follows:
+
+Copy
+StreamsBuilder streamsBuilder = new StreamsBuilder();
+We can reuse the Serdes built in the previous chapters. The following code creates a KStream that deserializes the values of the messages as HealthCheckobjects.
+
+Copy
+Serde customSerde = Serdes.serdeFrom(
+  new HealthCheckSerializer(), new HealthCheckDeserializer());
+ 
+
+ 
+The serdeFrom() method of the Serde class dynamically wraps our HealthCheckSerializer and HealthCheckDeserializer into a single HealthCheck Serde.

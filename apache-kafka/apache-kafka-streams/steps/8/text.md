@@ -1,15 +1,26 @@
-To build the project, run this command from the monedero directory:
-`gradle jar`{{execute T1}} 
 
-If everything is OK, the output is something like the following:
+ From a new command-line window, we execute the same command, shown as follows:
+Copy
+$ java -cp ./build/libs/kioto-0.1.0.jar 
+kioto.plain.PlainStreamsProcessor
+The output should be something like the following:
 
-```
+Copy
+2017/07/05 15:03:18.045 INFO ... Setting newly assigned 
+partitions [healthchecks-2, healthchecks -3]
+If we remember the theory of Chapter 1, Configuring Kafka, when we created our topic, we specified that it had four partitions. This nice message from Kafka Streams is telling us that the application was assigned to partitions two and three of our topic.
+
+Take a look at the following log:
+
+Copy
 ...
-BUILD SUCCESSFUL
+2017/07/05 15:03:18.045 INFO ... Revoking previously assigned partitions [healthchecks -0, healthchecks -1, healthchecks -2, healthchecks -3]
+2017/07/05 15:03:18.044 INFO ... State transition from RUNNING to PARTITIONS_REVOKED
+2017/07/05 15:03:18.044 INFO ... State transition from RUNNING to REBALANCING
+2017/07/05 15:03:18.044 INFO ... Setting newly assigned partitions [healthchecks-2, healthchecks -3]
 ...
-```
-To run the project, we need to open three different command-line windows. Following image shows what the command-line windows should look:
+We can read that the first instance was using the four partitions, then when we ran the second instance, it entered a state where the partitions were reassigned to consumers; to the first instance was assigned two partitions:healthchecks-0 and  healthchecks-1.
 
-![](https://github.com/fenago/katacoda-scenarios/raw/master/apache-kafka/apache-kafka-message-validation/steps/3/1.jpg)
-	
-The three terminal windows to test the processing engine including message producer, message consumer, and the application itself
+And this is how Kafka Streams smoothly scale out. Remember that all this works because the consumers are part of the same consumer group and are controlled from Kafka Streams through the application.id property.
+
+We must also remember that the number of threads assigned to each instance of our application can also be modified by setting the num.stream.threads property. Thus, each thread would be independent, with its own producer and consumer. This ensures that the resources of our servers are used in a more efficient way.

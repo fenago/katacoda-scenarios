@@ -1,17 +1,63 @@
-Reading from Kafka
-Now that we have our project skeleton, let's recall the project requirements for the stream processing engine. Remember that our event customer consults ETH price occurs outside Monedero and that these messages may not be well formed, that is, they may have defects. The first step in our pipeline is to validate that the input events have the correct data and the correct structure. Our project will be called ProcessingEngine.
 
-The ProcessingEngine specification shall create a pipeline application that does the following:
+We are going to build our project with Gradle. The first step is to download and install Gradle from http://www.gradle.org/downloads.
 
-Reads each message from a Kafka topic called input-messages
-Validates each message, sending any invalid event to a specific Kafka topic called invalid-messages
-Writes the correct messages in a Kafka topic called valid-messages
-These steps are detailed in Figure 2.1, the first sketch for the pipeline processing engine:
+Gradle only requires a Java JDK (version 7 or higher).
 
 
-Figure 2.1: The processing engine reads events from the input-messages topic, validates the messages, and routes the defective ones to invalid-messages topic and the correct ones to valid-messages topic
+```
+==> Downloading https://services.gradle.org/distributions/gradle-4.10.2-all.zip
+==> Downloading from https://downloads.gradle.org/distributions/gradle-4.10.2-al
+######################################################################## 100.0%
+  /usr/local/Cellar/gradle/4.10.2: 203 files, 83.7MB, built in 59 seconds
+```
 
-The processing engine stream construction has two phases:
+Linux users can install Gradle with the apt-get command, as follows:
 
-Create a simple Kafka worker that reads from the input-messages topic in Kafka and writes the events to another topic
-Modify the Kafka worker to make the validation
+`apt-get update && yes | apt-get install gradle`{{execute T1}} 
+ 
+
+`gradle -v`{{execute T1}} 
+The output is something like the following:
+
+```
+------------------------------------------------------------
+Gradle 4.10.2
+------------------------------------------------------------
+```
+
+
+For the examples in this chapter, we also need the dependencies for Jackson. To use Kafka Streams, we just need one dependency, which is given in the following code snippet:
+
+```
+compile 'org.apache.kafka:kafka-streams:2.0.0'
+```
+
+To use Apache Avro with Kafka Streams, we add the serializers and deserializers as given in the following code:
+
+```
+compile 'io.confluent:kafka-streams-avro-serde:5.0.0'
+```
+
+The following lines are needed to run a Kafka Streams application as a jar. The build generates a fat jar:
+
+```
+configurations.compile.collect {
+  it.isDirectory() ? it : zipTree(it)
+}
+```
+
+The directory tree structure of the project should be as follows:
+
+```
+src
+main
+--java
+----kioto
+------avro
+------custom
+------events
+------plain
+------serde
+--resources
+test
+```
