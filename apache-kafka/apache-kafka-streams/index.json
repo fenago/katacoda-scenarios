@@ -1,6 +1,6 @@
 {
-  "title": "Hyperledger: Kafka & Zookeeper",
-  "description": "Introduction to Hyperledger",
+  "title": "Apache Kafka Streams",
+  "description": "Introduction to Apache Kafka",
   "difficulty": "Advanced",
   "time": "15 minutes",
   "details": {
