@@ -1,4 +1,3 @@
-Java AvroProcessor
 Now, in the src/main/java/kioto/avro directory, create a file called AvroProcessor.java with the contents of Listing 5.6:
 
 ```

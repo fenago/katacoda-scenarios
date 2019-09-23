@@ -10,7 +10,7 @@ BUILD SUCCESSFUL in 3s
 
 Run a console consumer in **terminal 1** for the uptimes topic, as shown here:
 
-`~/kafka/bin/kafka-console-consumer --bootstrap-server localhost:9092 --topic uptimes --property print.key=true`{{execute T1}} 
+`~/kafka/bin/kafka-console-consumer.sh --bootstrap-server localhost:9092 --topic uptimes --property print.key=true`{{execute T1}} 
 
 #### Run AvroProcessor
 Run the main method of the `AvroProcessor` in **terminal 2** by running following command.

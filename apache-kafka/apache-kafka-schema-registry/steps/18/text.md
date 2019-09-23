@@ -1,4 +1,3 @@
-Java AvroConsumer
 Let's create a Kafka AvroConsumer that we will use to receive the input records. As we already know, there are two prerequisites that all the Kafka Consumers should have: to be a KafkaConsumer and to set specific properties, such as in Listing 5.5:
 
 ```

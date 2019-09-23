@@ -25,7 +25,7 @@
       "text": "steps/5/text.md"
     },
     {
-        "title": "Publish & Subscribe",
+        "title": "",
         "text": "steps/6/text.md"
     },
     {
@@ -39,10 +39,6 @@
     {
         "title": "",
         "text": "steps/9/text.md"
-    },
-    {
-        "title": "",
-        "text": "steps/10/text.md"
     },
     {
         "title": "",
@@ -73,11 +69,11 @@
         "text": "steps/17/text.md"
     },
     {
-        "title": "",
+        "title": "Java AvroConsumer",
         "text": "steps/18/text.md"
     },
     {
-        "title": "",
+        "title": "Java AvroProcessor",
         "text": "steps/19/text.md"
     },
     {
@@ -85,6 +81,7 @@
         "text": "steps/20/text.md"
     }],
     "intro": {
+	  "code": "set-env.sh",
       "text": "intro.md",
       "credits": ""
     },
