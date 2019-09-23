@@ -2,9 +2,10 @@ To test the Kafka Streams solution for late events, the first thing we need is a
 
 To simplify things, our generator will constantly send events at a fixed rate. And from time to time, it will generate a late event. The generator generates events with the following process:
 
-Each window is 10 seconds long
-It produces one event every second
-The event should be generated in 54th second of each minute, and will be delayed by 12 seconds; that is, it will arrive in the sixth second of the next minute (in the next window)
+- Each window is 10 seconds long
+- It produces one event every second
+- The event should be generated in 54th second of each minute, and will be delayed by 12 seconds; that is, it will arrive in the sixth second of the next minute (in the next window)
+
 When we say that the window is of 10 seconds, we mean that we will make aggregations every 10 seconds. Remember that the objective of the test is that the late events are counted in the correct window.
 
 Create the src/main/java/kioto/events directory and, inside it, create a file called EventProducer.java with the contents of Listing 6.5, shown as follows:
@@ -31,7 +32,7 @@ public final class EventProducer {
     (new EventProducer("localhost:9092")).produce();
   }
 }
-Listing 6.5: EventProducer.java
+```
 
 The event generator is a Java KafkaProducer, so declare the same properties as all the Kafka Producers.
 
@@ -55,9 +56,11 @@ private void produce() {
     }
   }, delay, 1000);
 }
+```
+
 When the timer is triggered, the run method is executed. We send one event each second except on second 54, where we delay this event by 12 seconds. Then, we send this late event in the sixth second of the next minute, modifying the timestamp.
 
-In the sendMessage() method, we just assign the timestamp of the event, shown as follows:
+In the `sendMessage()` method, we just assign the timestamp of the event, shown as follows:
 
 ```
 private void sendMessage(long id, long ts, String info) {
@@ -72,3 +75,4 @@ private void sendMessage(long id, long ts, String info) {
     // deal with the exception
   }
 }
+```

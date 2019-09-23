@@ -29,3 +29,4 @@ props.put("bootstrap.servers", this.brokers);
 props.put("application.id", "kioto");
 KafkaStreams streams = new KafkaStreams(topology, props);
 streams.start(); 
+```

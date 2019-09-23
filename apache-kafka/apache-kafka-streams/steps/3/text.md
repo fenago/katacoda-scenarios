@@ -3,14 +3,6 @@ We are going to build our project with Gradle. The first step is to download and
 
 Gradle only requires a Java JDK (version 7 or higher).
 
-
-```
-==> Downloading https://services.gradle.org/distributions/gradle-4.10.2-all.zip
-==> Downloading from https://downloads.gradle.org/distributions/gradle-4.10.2-al
-######################################################################## 100.0%
-  /usr/local/Cellar/gradle/4.10.2: 203 files, 83.7MB, built in 59 seconds
-```
-
 Linux users can install Gradle with the apt-get command, as follows:
 
 `apt-get update && yes | apt-get install gradle`{{execute T1}} 
@@ -26,7 +18,7 @@ Gradle 4.10.2
 ```
 
 
-For the examples in this chapter, we also need the dependencies for Jackson. To use Kafka Streams, we just need one dependency, which is given in the following code snippet:
+For the examples in this scenario, we also need the dependencies for Jackson. To use Kafka Streams, we just need one dependency, which is given in the following code snippet:
 
 ```
 compile 'org.apache.kafka:kafka-streams:2.0.0'

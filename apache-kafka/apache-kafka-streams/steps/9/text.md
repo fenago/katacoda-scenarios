@@ -19,7 +19,7 @@ public final class CustomStreamsProcessor {
     (new CustomStreamsProcessor("localhost:9092")).process();
   }
 }
-Listing 6.3: CustomStreamsProcessor.java
+```
 
 All the magic happens inside the process() method.
 
@@ -32,7 +32,6 @@ We can reuse the Serdes built in the previous chapters. The following code creat
 ```
 Serde customSerde = Serdes.serdeFrom(
   new HealthCheckSerializer(), new HealthCheckDeserializer());
+```
  
-
- 
-The serdeFrom() method of the Serde class dynamically wraps our HealthCheckSerializer and HealthCheckDeserializer into a single HealthCheck Serde.
+The `serdeFrom()` method of the Serde class dynamically wraps our `HealthCheckSerializer` and `HealthCheckDeserializer` into a single HealthCheck Serde.

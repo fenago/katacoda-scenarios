@@ -1,4 +1,4 @@
-Run a console consumer for the uptimes topic as follows:
+Run a console consumer in **terminal 1** for the uptimes topic as follows:
 
 `~/kafka/bin/kafka-console-consumer.sh --bootstrap-server localhost:9092 --topic uptimes --property print.key=true`{{execute T1}}
 

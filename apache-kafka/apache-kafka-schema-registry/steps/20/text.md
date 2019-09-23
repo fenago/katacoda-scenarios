@@ -11,7 +11,7 @@ BUILD SUCCESSFUL in 3s
 Run a console consumer for the uptimes topic, as shown here:
 
 ```
-$ ./bin/kafka-console-consumer --bootstrap-server localhost:9092 --topic uptimes --property print.key=true
+`~/kafka/bin/kafka-console-consumer --bootstrap-server localhost:9092 --topic uptimes --property print.key=true
 From the IDE, run the main method of the AvroProcessor
 From the IDE, run the main method of the AvroProducer
 The output on the console consumer for the uptimes topic should be similar to this:

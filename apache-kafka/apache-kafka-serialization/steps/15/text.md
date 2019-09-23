@@ -1,8 +1,8 @@
-Run a console consumer for HealthChecksTopic as follows:
+Run a console consumer  in **terminal 1** for HealthChecksTopic as follows:
 `~/kafka/bin/kafka-console-consumer.sh --bootstrap-server localhost:9092 --topic healthchecks`{{execute T1}} 
 
 #### Run CustomProducer
-Run the main method of the `CustomProducer` in **terminal 3** by running following command.
+Run the main method of the `CustomProducer` in **terminal 2** by running following command.
 `cd ~/kafka/Chapter04/kioto && java -cp ./build/libs/kioto-0.1.0.jar kioto.custom.CustomProducer`{{execute T2}} 
 
 #### Output

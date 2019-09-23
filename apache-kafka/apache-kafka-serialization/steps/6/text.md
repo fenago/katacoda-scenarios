@@ -9,7 +9,7 @@ BUILD SUCCESSFUL in 3s
 ```
 
 
-**Note:** Commands below will run in terminal 2 (It will open automatically on executing command). 
+**Note:** Commands below will run in **terminal 2** (It will open automatically on executing command). 
 
 #### Kafka topics
 The broker is running on port 9092. To create the healthchecks topic, execute the following:

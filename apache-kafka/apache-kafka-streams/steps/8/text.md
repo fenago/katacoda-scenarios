@@ -8,7 +8,7 @@ The output should be something like the following:
 ```
 2017/07/05 15:03:18.045 INFO ... Setting newly assigned 
 partitions [healthchecks-2, healthchecks -3]
-If we remember the theory of Chapter 1, Configuring Kafka, when we created our topic, we specified that it had four partitions. This nice message from Kafka Streams is telling us that the application was assigned to partitions two and three of our topic.
+```
 
 Take a look at the following log:
 
@@ -19,6 +19,8 @@ Take a look at the following log:
 2017/07/05 15:03:18.044 INFO ... State transition from RUNNING to REBALANCING
 2017/07/05 15:03:18.044 INFO ... Setting newly assigned partitions [healthchecks-2, healthchecks -3]
 ...
+```
+
 We can read that the first instance was using the four partitions, then when we ran the second instance, it entered a state where the partitions were reassigned to consumers; to the first instance was assigned two partitions:healthchecks-0 and  healthchecks-1.
 
 And this is how Kafka Streams smoothly scale out. Remember that all this works because the consumers are part of the same consumer group and are controlled from Kafka Streams through the application.id property.

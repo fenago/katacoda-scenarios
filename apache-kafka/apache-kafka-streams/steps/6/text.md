@@ -7,15 +7,25 @@ If everything is correct, the output is something like the following:
 ```
 BUILD SUCCESSFUL in 1s
 6 actionable task: 6 up-to-date
-The first step is to run a console consumer for the uptimes topic, shown in the following code snippet:
-```
-$ ./bin/kafka-console-consumer --bootstrap-server localhost:9092 
---topic uptimes --property print.key=true
-From the IDE, run the main method of the PlainStreamsProcessor
-From the IDE, run the main method of the PlainProducer (built in previous chapters)
+
+
+The first step is to run a console consumer in **terminal 1** for the uptimes topic, shown in the following code snippet:
+`~/kafka/bin/kafka-console-consumer.sh --bootstrap-server localhost:9092 --topic uptimes --property print.key=true`{{execute T1}}
+
+
+#### Run PlainStreamsProcessor
+Run the main method of the `PlainStreamsProcessor` in **terminal 2** by running following command.
+`cd ~/kafka/Chapter06/kioto && java -cp ./build/libs/kioto-0.1.0.jar kioto.plain.PlainStreamsProcessor`{{execute T2}} 
+
+
+#### Run PlainProducer
+Run the main method of the `PlainProducer` in **terminal 3** by running following command.
+`cd ~/kafka/Chapter06/kioto && java -cp ./build/libs/kioto-0.1.0.jar kioto.plain.PlainProducer`{{execute T3}} 
+
 The output on the console consumer for the uptimes topic should be similar to the following:
 ```
 EW05-HV36 33
 BO58-SB28 20
 DV03-ZT93 46
 ...
+```

@@ -9,11 +9,11 @@
       "text": "steps/1/text.md"
     },
     {
-      "title": "What is Kafka?",
+      "title": "Kafka Streams in a nutshell",
       "text": "steps/2/text.md"
     },    
 	{
-      "title": "Installation",
+      "title": "Install Gradle",
       "text": "steps/3/text.md"
     },
 	{

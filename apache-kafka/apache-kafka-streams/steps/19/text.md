@@ -1,52 +1,40 @@
-Stream processor analysis
-If you have a lot of questions here, it is normal.
+To run the EventProcessor, follow these steps:
 
-The first thought to consider is that in streaming aggregation, and in streaming in general, the Streams are unbounded. It is never clear when we will take the final results, that is, we as programmers have to decide when to consider a partial value of an aggregation as a final result.
+Create the aggregates topic as follows:
+`~/kafka/bin/kafka-topics --zookeeper localhost:2181 --create --topic aggregates --replication-factor 1 --partitions 4`{{execute T1}} 
 
-Recall that the print of the Stream is an instant photo of the KTable at a certain time. Therefore, the results of a KTable are only valid at the time of the output. It is important to remember that in the future, the values of the KTable may be different. Now, to see results more frequently, change the value of the commit interval to zero, shown as follows:
+Run a console consumer for the aggregates topic, as follows:
+`~/kafka/bin/kafka-console-consumer --bootstrap-server localhost:9092 --topic aggregates --property print.key=true`{{execute T1}} 
+
+#### Run EventProducer
+Run the main method of the `EventProducer` in **terminal 2** by running following command.
+`cd ~/kafka/Chapter06/kioto && java -cp ./build/libs/kioto-0.1.0.jar kioto.events.EventProducer`{{execute T2}} 
+
+
+#### Run EventProcessor
+Run the main method of the `EventProcessor` in **terminal 3** by running following command.
+`cd ~/kafka/Chapter06/kioto && java -cp ./build/libs/kioto-0.1.0.jar kioto.events.EventProcessor`{{execute T3}} 
+
+Remember that it writes to the topic every 30 seconds. The output on the console consumer for the aggregates topic should be similar to the following:
 
 ```
-props.put("commit.interval.ms", 0);
-This line says that the results of the KTable will be printed when they are modified, that is, it will print new values every second. If you run the program, the value of the KTable will be printed with each update (every second), shown as follows:
+1532529050000 10
+1532529060000 10
+1532529070000 9
+1532529080000 3
+```
+
+After the second window, we can see that the values in the KTable are updated with fresh (and correct) data, shown as follows:
 
 ```
-1532529080000 6
-1532529080000 7
-1532529080000 8
-1532529080000 9
-1532529080000 10 <-- Window end
-1532529090000 1  <-- Window beginning
-1532529090000 2
-1532529090000 3
-1532529090000 5  <-- The 4th didn't arrive
-1532529090000 6
-1532529090000 7
-1532529090000 8
-1532529090000 9  <-- Window end
-1532529100000 1
-1532529100000 2
-1532529100000 3
+1532529050000 10
+1532529060000 10
+1532529070000 10
+1532529080000 10
+1532529090000 10
 1532529100000 4
-1532529100000 5
-1532529100000 6
-1532529090000 10 <-- The 4th arrived, so the count value is updated
-1532529100000 7
-1532529100000 8
-...
- 
+```
+
+Note how in the first print, the value for the last window is 3, and the window started in 1532529070000 has a value of 9. Then in the second print, the values are correct. This behavior is because in the first print, the delayed event had not arrived yet. When this finally arrived, the count values were corrected for all the windows.
 
  
-
- 
-
- 
-
- 
-
- 
-
-Keep a note of two effects:
-
-The aggregate result (the count) for the window stops at 9 when the window ends and the next window events begin to arrive
-When the late event finally arrives, it produces an update in the window's count
-Yes, Kafka Streams apply event time semantics in order to do the aggregation. It is important to remember that in order to visualize the data, we had to modify the commit interval. Leaving this value at zero would have negative repercussions on a production environment.
