@@ -1,10 +1,4 @@
-In this exercise you will talk about the orderer in the hyperledger fabric. We will learn to configure your node using `orderer.yaml`
+Running Kafka topics
+The power inside a broker is the topic, namely the queues inside it. Now that we have two brokers running, let's create a Kafka topic on them.
 
-Kafka is primarily a distributed, horizontally-scalable, fault-tolerant, commit log. A commit log is basically a data structure that only appends. No modification or deletion is possible, which leads to no read/write locks, and the worst case complexity O(1). There can be multiple Kafka nodes in the blockchain network, with their corresponding Zookeeper ensemble.
-
-- High ThroughPut
-- Durable 
-- Highly Scalable
-- High Performance
-
-In the next steps, we will install kafka, zookeeper and JRE8.
+Kafka, like almost all modern infrastructure projects, has three ways of building things: through the command line, through programming, and through a web console (in this case the Confluent Control Center). The management (creation, modification, and destruction) of Kafka brokers can be done through programs written in most modern programming languages. If the language is not supported, it could be managed through the Kafka REST API. The previous section showed how to build a broker using the command line. In later chapters, we will see how to do this process through programming.

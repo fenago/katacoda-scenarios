@@ -13,24 +13,28 @@
       "text": "steps/2/text.md"
     },    
 	{
-      "title": "Installation",
+      "title": "Install Java and telnet",
       "text": "steps/3/text.md"
     },
 	{
-      "title": "Start Kafka",
+      "title": "Install Kafka & Zookeeper",
       "text": "steps/4/text.md"
     },
   {
-      "title": "Zookeeper",
+      "title": "Start Kafka",
       "text": "steps/5/text.md"
     },
     {
-        "title": "Publish & Subscribe",
+        "title": "Zookeeper",
         "text": "steps/6/text.md"
     },
     {
-        "title": "Kafka Stop",
+        "title": "Install kafkacat",
         "text": "steps/7/text.md"
+    },
+    {
+        "title": "Kafka Stop",
+        "text": "steps/8/text.md"
     }],
     "intro": {
       "text": "intro.md",
@@ -38,6 +42,22 @@
     },
     "finish": {
       "text": "finish.md"
+    },
+    "assets": {
+      "client": [
+        {
+          "file": "install.sh",
+          "target": "~/"
+        },
+        {
+          "file": "start.sh",
+          "target": "~/"
+        },
+        {
+          "file": "stop.sh",
+          "target": "~/"
+        }
+      ]
     }
   },
   "environment": {

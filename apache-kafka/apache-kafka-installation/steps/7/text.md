@@ -1,11 +1,12 @@
-In this step, we will shutdown. We will also verify that the kafka is not running anymore. `./stop.sh`{{copy}}
+kafkacat is a generic command-line non-JVM utility used to test and debug Apache Kafka deployments. kafkacat can be used to produce, consume, and list topic and partition information for Kafka. kafkacat is netcat for Kafka, and it is a tool for inspecting and creating data in Kafka.
 
-#### Verify
-We can try publish a message to kafka topic.
-`echo "Hello, World" | ~/kafka/bin/kafka-console-producer.sh --broker-list localhost:9092 --topic TestTopic > /dev/null`{{copy}}
+kafkacat is similar to the Kafka console producer and Kafka console consumer, but more powerful.
 
-You should get following message as output. Connection could not be established, broker may not be available.
+kafkacat is an open source utility and it is not included in Confluent Platform. It is available at https://github.com/edenhill/kafkacat.
 
-```
-[2019-08-21 16:14:58,029] WARN [Producer clientId=console-producer] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Broker may not be available. (org.apache.kafka.clients.NetworkClient)
-```
+To install kafkacat on modern Linux, type the following:
+
+Copy
+yes | apt-get install kafkacat
+
+To subscribe to amazingTopic and redundantTopic and print to stdout, type the following:

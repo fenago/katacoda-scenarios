@@ -1,11 +1,37 @@
-In this step, we will shutdown. We will also verify that the kafka is not running anymore. `./stop.sh`{{copy}}
+The last step is how to read the generated messages. Kafka also has a powerful command that enables messages to be consumed from the command line. Remember that all of these command-line tasks can also be done programmatically. As the producer, each line in the input is considered a message from the producer. 
 
-#### Verify
-We can try publish a message to kafka topic.
-`echo "Hello, World" | ~/kafka/bin/kafka-console-producer.sh --broker-list localhost:9092 --topic TestTopic > /dev/null`{{copy}}
+Run the following command:
 
-You should get following message as output. Connection could not be established, broker may not be available.
+`~/kafka/bin/kafka-console-consumer --topic amazingTopic --bootstrap-server localhost:9092 --from-beginning`{{execute}} 
+
+The output should be as follows:
 
 ```
-[2019-08-21 16:14:58,029] WARN [Producer clientId=console-producer] Connection to node -1 (localhost/127.0.0.1:9092) could not be established. Broker may not be available. (org.apache.kafka.clients.NetworkClient)
+Fool me once shame on you
+Fool me twice shame on me
 ```
+
+The parameters are the topic's name and the name of the broker producer. Also, the --from-beginning parameter indicates that messages should be consumed from the beginning instead of the last messages in the log (now test it, generate many more messages, and don't specify this parameter).
+
+There are more useful parameters for this command, some important ones are as follows:
+
+- **--fetch-size:** This is the amount of data to be fetched in a single request. The size in bytes follows as argument. The default value is 1,024 x 1,024.
+- **--socket-buffer-size:** This is the size of the TCP RECV. The size in bytes follows this parameter. The default value is 2 x 1024 x 1024.
+- **--formater:** This is the name of the class to use for formatting messages for display. The default value is NewlineMessageFormatter.
+- **--autocommit.interval.ms:** This is the time interval at which to save the current offset in milliseconds. The time in milliseconds follows as argument. The default value is 10,000.
+- **--max-messages:** This is the maximum number of messages to consume before exiting. If not set, the consumption is continuous. The number of messages follows as the argument.
+- **--skip-message-on-error:** If there is an error while processing a message, the system should skip it instead of halting.
+
+
+The most requested forms of this command are as follows:
+
+To consume just one message, use the following:
+`~/kafka/bin/kafka-console-consumer --topic  amazingTopic --bootstrap-server localhost:9092 --max-messages 1`{{execute}} 
+ 
+To consume one message from an offset, use the following:
+`~/kafka/bin/kafka-console-consumer --topic  amazingTopic --bootstrap-server localhost:9092 --max-messages 1 --formatter 'kafka.coordinator.GroupMetadataManager$OffsetsMessageFormatter'`{{execute}} 
+
+To consume messages from a specific consumer group, use the following:
+`~/kafka/bin/kafka-console-consumer –topic amazingTopic -- bootstrap-server localhost:9092 --new-consumer --consumer-property group.id=my-group`{{execute}} 
+
+**Note** Press `Ctrl + C` after receiving the message to quit above script.
