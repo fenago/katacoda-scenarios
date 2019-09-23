@@ -6,6 +6,8 @@ Recall that the print of the Stream is an instant photo of the KTable at a certa
 
 ```
 props.put("commit.interval.ms", 0);
+```
+
 This line says that the results of the KTable will be printed when they are modified, that is, it will print new values every second. If you run the program, the value of the KTable will be printed with each update (every second), shown as follows:
 
 ```
@@ -32,7 +34,8 @@ This line says that the results of the KTable will be printed when they are modi
 1532529100000 7
 1532529100000 8
 ...
- 
+```
+
 
  
 

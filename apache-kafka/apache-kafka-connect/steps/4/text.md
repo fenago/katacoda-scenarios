@@ -22,7 +22,7 @@ public class SparkProcessor {
     (new SparkProcessor("localhost:9092")).process();
   }
 }
-Listing 8.2: SparkProcessor.java
+```
 
 Note that, as in previous examples, the main method invoked the process() method with the IP address and the port of the Kafka brokers.
 
@@ -33,6 +33,8 @@ SparkSession spark = SparkSession.builder()
     .appName("kioto")
     .master("local[*]")
     .getOrCreate();
+```
+
 In Spark, the application name must be the same for each member in the cluster, so here we call it Kioto (original, isn't it?).
 
 As we are going to run the application locally, we are setting the Spark master to local[*], which means that we are creating a number of threads equivalent to the machine CPU cores.

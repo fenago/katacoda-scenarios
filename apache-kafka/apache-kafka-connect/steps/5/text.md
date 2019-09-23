@@ -9,6 +9,8 @@ Using this Spark Kafka connector, we can read data with Spark Structured Streami
     .option("kafka.bootstrap.servers", brokers)
     .option("subscribe", Constants.getHealthChecksTopic())
     .load();
+````
+
 Simply by saying Kafka format, we can read a stream from the topic specified in the subscribe option, running on the brokers specified.
 
 
@@ -22,4 +24,6 @@ StreamingQuery consoleOutput =
     .outputMode("append")
     .format("console")
     .start();
+```
+
 The first line is optional, because we really don't need to assign the result to an object, just the code execution.

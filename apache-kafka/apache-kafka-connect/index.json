@@ -5,15 +5,15 @@
   "time": "15 minutes",
   "details": {
     "steps": [{
-      "title": "",
+      "title": "Clone Repository",
       "text": "steps/1/text.md"
     },
     {
-      "title": "",
+      "title": "Kafka Connect in a nutshell",
       "text": "steps/2/text.md"
     },    
 	{
-      "title": "",
+      "title": "Install Gradle",
       "text": "steps/3/text.md"
     },
 	{

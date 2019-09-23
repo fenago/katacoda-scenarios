@@ -1,7 +1,5 @@
 Now, what we are going to do is to calculate the uptimes. As is to be expected, Spark does not have a built-in function to calculate the number of days between two dates, so we are going to create a user-defined function.
 
-If we remember the KSQL chapter, it is also possible to build and use new UDFs in KSQL.
-
 To achieve this, the first thing we do is build a function that receives as input a java.sql.Timestamp, as shown in the following code (this is how timestamps are represented in the Spark DataSets) and returns an integer with the number of days from that date:
 
 ```

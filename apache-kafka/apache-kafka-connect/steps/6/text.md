@@ -16,12 +16,6 @@ The Dataset console output is now human-readable, and is shown as follows:
 +--------------------------+
  ```
 
- 
-
- 
-
- 
-
 The next step is to provide the fields list to specify the data structure of the JSON message, as follows:
 
 ```
@@ -43,6 +37,8 @@ Dataset<Row> healthCheckNestedDs =
     healthCheckJsonDf.select(
         functions.from_json(
             new Column("value"), struct).as("healthCheck"));
+```
+
 If we print the Dataset at this point, we can see the columns nested as we indicated in the schema:
 
 ```
