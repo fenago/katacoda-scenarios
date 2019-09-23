@@ -9,7 +9,7 @@ When we say that the window is of 10 seconds, we mean that we will make aggregat
 
 Create the src/main/java/kioto/events directory and, inside it, create a file called EventProducer.java with the contents of Listing 6.5, shown as follows:
 
-Copy
+```
 package kioto.events;
 import ...
 public final class EventProducer {
@@ -37,7 +37,7 @@ The event generator is a Java KafkaProducer, so declare the same properties as a
 
 The generator code is very simple, and the first thing that is required is a timer that generates an event every second. The timer triggers 0.3 seconds after every second to avoid messages sent at 0.998 seconds, for example. The produce() method is shown as follows:
 
-Copy
+```
 private void produce() {
   long now = System.currentTimeMillis();
   long delay = 1300 - Math.floorMod(now, 1000);
@@ -59,7 +59,7 @@ When the timer is triggered, the run method is executed. We send one event each 
 
 In the sendMessage() method, we just assign the timestamp of the event, shown as follows:
 
-Copy
+```
 private void sendMessage(long id, long ts, String info) {
   long window = ts / 10000 * 10000;
   String value = "" + window + ',' + id + ',' + info;

@@ -4,7 +4,7 @@ In this section, we will use all our knowledge so far to build a CustomStreamsPr
 
 Now, in the src/main/java/kioto/custom directory, create a file called CustomStreamsProcessor.java with the contents of Listing 6.3, shown as follows:
 
-Copy
+```
 import ...
 public final class CustomStreamsProcessor {
   private final String brokers;
@@ -25,11 +25,11 @@ All the magic happens inside the process() method.
 
 The first step in a Kafka Streams application is to get a StreamsBuilder instance, shown as follows:
 
-Copy
+```
 StreamsBuilder streamsBuilder = new StreamsBuilder();
 We can reuse the Serdes built in the previous chapters. The following code creates a KStream that deserializes the values of the messages as HealthCheckobjects.
 
-Copy
+```
 Serde customSerde = Serdes.serdeFrom(
   new HealthCheckSerializer(), new HealthCheckDeserializer());
  

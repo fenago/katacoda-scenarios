@@ -1,20 +1,20 @@
 To build the project, run this command from the kioto directory:
 
-Copy
+```
 $ gradle build
 If everything is correct, the output is something like the following:
 
-Copy
+```
 BUILD SUCCESSFUL in 1s
  6 actionable task: 6 up-to-date
 The first step is to run a console consumer for the uptimes topic, shown as follows:
-Copy
+```
       $ ./bin/kafka-console-consumer --bootstrap-server localhost:9092 
       --topic uptimes --property print.key=true
 From our IDE, run the main method of the AvroStreamsProcessor
 From our IDE, run the main method of the AvroProducer (built in previous chapters)
 The output on the console consumer for the uptimes topic should be similar to the following:
-Copy
+```
        EW05-HV36 33
        BO58-SB28 20
        DV03-ZT93 46

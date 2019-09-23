@@ -2,7 +2,7 @@ Now, to incorporate the serializer in our producer, there are two requisites tha
 
 The following is the content of Listing 4.12, the constructor method for CustomProducer:
 
-Copy
+```
 import kioto.serde.HealthCheckSerializer;
 import org.apache.kafka.clients.producer.KafkaProducer;
 import org.apache.kafka.clients.producer.Producer;

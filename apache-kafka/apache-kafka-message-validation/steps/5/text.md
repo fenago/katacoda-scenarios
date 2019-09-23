@@ -1,6 +1,6 @@
 Our Reader invokes the process() method; this method belonging to the Producer class. As with the consumer interface, the producer interface encapsulates all of the common behavior of the Kafka producers. The two producers in this chapter implement this producer interface.
 
-In a file called Producer.java, located in the src/main/java/monedero directory, copy the content of Listing 2.6:
+Open a file called `Producer.java`, located in the src/main/java/monedero directory using vscode explorer:
 
 ```
 package monedero;

@@ -2,7 +2,7 @@ Now, in the src/main/java/kioto/custom directory, create a file called CustomPro
 
 The following is the content of Listing 4.16, CustomProcessor.java (part 1):
 
-Copy
+```
 package kioto.custom;
 import ...
 
@@ -36,7 +36,7 @@ Now, in the src/main/java/kioto/customdirectory, let's complete the CustomProces
 
 The following is the content of Listing 4.17, CustomProcessor.java (part 2):
 
-Copy
+```
 public final void process() {
     consumer.subscribe(Collections.singletonList(
              Constants.getHealthChecksTopic()));           //1

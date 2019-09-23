@@ -3,7 +3,7 @@ In this section we will see how to use all this power gathered together: Apache 
 
 Now, we are going to use Avro format in our messages, as we did in previous chapters. We consumed this data by configuring the Schema Registry URL and using the Kafka Avro deserializer. For Kafka Streams, we need to use a Serde, so we added the dependency in the Gradle build file, given as follows:
 
-Copy
+```
 compile 'io.confluent:kafka-streams-avro-serde:5.0.0'
 This dependency has the GenericAvroSerde and specific avroSerde explained in previous chapters. Both Serde implementations allow us to work with Avro records.
 
@@ -21,7 +21,7 @@ This dependency has the GenericAvroSerde and specific avroSerde explained in pre
 
 Now, in the src/main/java/kioto/avro directory, create a file called AvroStreamsProcessor.java with the contents of Listing 6.4, shown as follows:
 
-Copy
+```
 import ...
 public final class AvroStreamsProcessor {
   private final String brokers;
@@ -45,15 +45,15 @@ One main difference with the previous code listings is the specification of the 
 
 The first step in a Kafka Streams Application is to get a StreamsBuilder instance, given as follows:
 
-Copy
+```
 StreamsBuilder streamsBuilder = new StreamsBuilder();
 The seconds step is to get an instance of the GenericAvroSerdeobject, shown as follows:
 
-Copy
+```
 GenericAvroSerde avroSerde = new GenericAvroSerde();
 As we are using the GenericAvroSerde, we need to configure it with the Schema Registry URL (as in previous chapters); it is shown in the following code:
 
-Copy
+```
 avroSerde.configure(
   Collections.singletonMap("schema.registry.url", schemaRegistryUrl), false);
 The configure() method of GenericAvroSerde receives a map as a parameter; as we just need a map with a single entry, we used the singleton map method.
@@ -64,7 +64,7 @@ The configure() method of GenericAvroSerde receives a map as a parameter; as we 
 
 Now, we can create a KStream using this Serde. The following code generates an Avro Stream that contains GenericRecordobjects:
 
-Copy
+```
 KStream avroStream =
   streamsBuilder.stream( Constants.getHealthChecksAvroTopic(),
     Consumed.with(Serdes.String(), avroSerde));
@@ -72,7 +72,7 @@ Note how we request the name of the AvroTopic, and that we have to specify the s
 
 To deserealize the values for the HealthCheck Stream, we apply the same methods used in previous chapters inside the lambda of the mapValues() method with one argument (v->), shown as follows:
 
-Copy
+```
 KStream healthCheckStream = avroStream.mapValues((v -> {
   GenericRecord healthCheckAvro = (GenericRecord) v;
   HealthCheck healthCheck = new HealthCheck(
@@ -88,7 +88,7 @@ KStream healthCheckStream = avroStream.mapValues((v -> {
 }));
 And again, the rest of the code of the process() method remains the same as in previous sections, shown as follows:
 
-Copy
+```
 KStream uptimeStream = healthCheckStream.map(((KeyValueMapper)(k, v)-> {
   HealthCheck healthCheck = (HealthCheck) v;
   LocalDate startDateLocal = healthCheck.getLastStartedAt().toInstant()

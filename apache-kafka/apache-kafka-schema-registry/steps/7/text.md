@@ -1,7 +1,7 @@
 Fetching a schema by its global unique ID
 To fetch a schema, you can use the following command:
 
-Copy
+```
 curl -X GET http://localhost:8081/schemas/ids/1
 The output should be something like this:
 

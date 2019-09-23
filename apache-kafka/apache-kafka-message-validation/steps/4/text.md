@@ -1,10 +1,11 @@
-So, let's proceed with the first step. Build a Kafka worker that reads individual raw messages from the  input-messagestopic. We say in the Kafka jargon that a consumer is needed. If you recall, in the first chapter we built a command-line producer to write events to a topic and a command-line consumer to read the events from that topic. Now, we will code the same consumer in Java.
+
+**Note:** Final code was already cloned from github for this scenario. You can just understand the application design and run it using the instructions.
+
+Let's proceed with the first step. Build a Kafka worker that reads individual raw messages from the input-messages topic. We say in the Kafka jargon that a consumer is needed. If you recall, in the first chapter we built a command-line producer to write events to a topic and a command-line consumer to read the events from that topic. Now, we will code the same consumer in Java.
 
 For our project, a consumer is a Java interface that contains all of the necessary behavior for all classes that implement consumers.
 
- 
-
-Create a file called `Consumer.java` in the src/main/java/monedero/directory with the content of Listing 2.4:
+Create a file called `Consumer.java` in the src/main/java/monedero/directory:
 
 ```
 package monedero;
@@ -29,7 +30,7 @@ public interface Consumer {
 
 The consumer interface encapsulates the common behavior of the Kafka consumers. The consumer interface has the createConfig method that sets all of the properties needed by all of the Kafka consumers. Note that the deserializers are of the StringDeserializertype because the Kafka consumer reads Kafka key-value records where the value are of the type string.
 
-Now, create a file called `Reader.java` in the src/main/java/monedero/directory with the content of Listing 2.5:
+Now, create a file called `Reader.java` in the src/main/java/monedero/directory:
 
 ```
 package monedero;

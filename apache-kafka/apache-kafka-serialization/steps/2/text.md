@@ -51,7 +51,7 @@ jar {
 
 Some library dependencies added to the application are as follows:
 
-kafka_2.12, the necessary dependencies for Apache Kafka
-javafaker, the necessary dependencies for JavaFaker
-jackson-core, for JSON parsing and manipulation
-kafka-avro-serializer, to serialize in Kafka with Apache Avro
+- **kafka_2.12**, the necessary dependencies for Apache Kafka
+- **javafaker**, the necessary dependencies for JavaFaker
+- **jackson-core**, for JSON parsing and manipulation
+- **kafka-avro-serializer**, to serialize in Kafka with Apache Avro

@@ -4,14 +4,17 @@ If we remember the KSQL chapter, it is also possible to build and use new UDFs i
 
 To achieve this, the first thing we do is build a function that receives as input a java.sql.Timestamp, as shown in the following code (this is how timestamps are represented in the Spark DataSets) and returns an integer with the number of days from that date:
 
-Copy
+```
 private final int uptimeFunc(Timestamp date) {
     LocalDate localDate = date.toLocalDateTime().toLocalDate();
     return Period.between(localDate, LocalDate.now()).getDays();
 }
+```
+
 The next step is to generate a Spark UDF as follows:
 
-Copy
+```
 Dataset<Row> processedDs = healthCheckDs
     .withColumn( "lastStartedAt", new Column("uptime"));
+```
 And finally, apply that UDF to the lastStartedAt column to create a new column in the Dataset called uptime.

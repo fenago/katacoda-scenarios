@@ -8,7 +8,7 @@ In the src/main/java/kioto/serdedirectory, create a file called HealthCheckSeria
 
 The following is the content of Listing 4.11, HealthCheckSerializer.java: 
 
-Copy
+```
 package kioto.serde;
 import com.fasterxml.jackson.core.JsonProcessingException;
 import kioto.Constants;

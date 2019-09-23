@@ -1,6 +1,6 @@
 From our IDE, run the main method of the AvroProducer.
 The output on the console consumer should be similar to the one shown here:
-Copy
+```
 HEALTH_CHECKLake JeromyGE50-GF78HYDROELECTRICRUNNING�����Y,B227.30.250.185
 HEALTH_CHECKLockmanlandMW69-LS32GEOTHERMALRUNNING֗���YB72.194.121.48
 HEALTH_CHECKEast IsidrofortIH27-WB64NUCLEARSHUTTING_DOWN�̤��YB88.136.134.241

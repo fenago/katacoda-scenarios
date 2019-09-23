@@ -1,11 +1,10 @@
-The constants
 The first step is to code our Constants class. This class is a static class with all of the Constants needed in our project.
 
 Open the project with your favorite IDE and, under the src/main/java/kiotodirectory, create a file called Constants.java with the content of Listing 4.3.
 
 The following is the content of Listing 4.3, Constants.java: 
 
-Copy
+```
 package kioto;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import com.fasterxml.jackson.databind.SerializationFeature;

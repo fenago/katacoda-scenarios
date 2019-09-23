@@ -9,4 +9,4 @@ Recall, to display the topics running in our cluster type, use the following:
 `~/kafka/bin/kafka-topics.sh --list --zookeeper localhost:2181`{{execute T1}} 
 
 In the same command-line terminal, start the console producer running the input-topic topic, as follows:
-`~/kafka/bin/kafka-console-producer --broker-list localhost:9092 --topic input-topic`{{execute T1}} 
+`~/kafka/bin/kafka-console-producer.sh --broker-list localhost:9092 --topic input-topic`{{execute T1}} 

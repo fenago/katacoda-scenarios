@@ -4,11 +4,11 @@ The first thought to consider is that in streaming aggregation, and in streaming
 
 Recall that the print of the Stream is an instant photo of the KTable at a certain time. Therefore, the results of a KTable are only valid at the time of the output. It is important to remember that in the future, the values of the KTable may be different. Now, to see results more frequently, change the value of the commit interval to zero, shown as follows:
 
-Copy
+```
 props.put("commit.interval.ms", 0);
 This line says that the results of the KTable will be printed when they are modified, that is, it will print new values every second. If you run the program, the value of the KTable will be printed with each update (every second), shown as follows:
 
-Copy
+```
 1532529080000 6
 1532529080000 7
 1532529080000 8

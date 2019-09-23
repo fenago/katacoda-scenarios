@@ -2,7 +2,7 @@ Now, in the src/main/java/kioto/custom directory, create a file called CustomPro
 
 The following is the content of Listing 4.13, CustomProducer.java:
 
-Copy
+```
 package kioto.plain;
 import ...
 public final class CustomProducer {

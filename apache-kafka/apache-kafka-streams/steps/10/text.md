@@ -3,7 +3,7 @@ We can reuse the Serdes built on the previous chapters. The following code creat
 
 The StreamsBuilder is used to consume data from a topic. The same as in previous sections, to obtain a KStream from a topic, we use the stream() method of the StreamsBuilder, shown as follows:
 
-Copy
+```
 KStream healthCheckStream =
   streamsBuilder.stream( Constants.getHealthChecksTopic(),
     Consumed.with(Serdes.String(), customSerde));
@@ -11,7 +11,7 @@ We use the implementation where we can also specify the serializers, as in this 
 
 The magic here is that the rest of the code of the process() method remains the same as in the previous section; it is also shown as follows:
 
-Copy
+```
 KStream uptimeStream = healthCheckStream.map(((KeyValueMapper)(k, v)-> {
   HealthCheck healthCheck = (HealthCheck) v;
   LocalDate startDateLocal = healthCheck.getLastStartedAt().toInstant()

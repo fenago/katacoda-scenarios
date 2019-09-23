@@ -1,4 +1,3 @@
-Java plain consumer
 As we already know, to build a Kafka message consumer, we use the Java client library—in particular, the consumer API (in the following chapters, we will see how to use Kafka Streams and KSQL).
 
 Let's create a Kafka consumer that we will use to receive the input messages.
@@ -7,7 +6,7 @@ As we already know, there are two requisites that all of the Kafka consumers sho
 
 The following is the content of Listing 4.8, the constructor method for plain consumer:
 
-Copy
+```
 import org.apache.kafka.clients.consumer.KafkaConsumer;
 import org.apache.kafka.clients.consumer.Consumer;
 import org.apache.kafka.common.serialization.StringSerializer;

@@ -1,6 +1,6 @@
 The first step is to define the Avro schema. As a reminder, our HealthCheck class looks like Listing 5.1:
 
-Copy
+```
 public final class HealthCheck {
  private String event;
  private String factory;
@@ -15,7 +15,7 @@ Listing 5.1: HealthCheck.java
 
 Now, with the representation of this message in Avro format, the schema (that is, the template) of all the messages of this type in Avro would be Listing 5.2:
 
-Copy
+```
 {
  "name": "HealthCheck",
  "namespace": "kioto.avro",

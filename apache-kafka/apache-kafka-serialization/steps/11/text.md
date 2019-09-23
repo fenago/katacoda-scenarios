@@ -1,7 +1,7 @@
 From our IDE, run the main method of PlainProcessor
 From our IDE, run the main method of PlainProducer
 The output on the console consumer for the uptimes topic should be similar to the following:
-Copy
+```
 EW05-HV36   33
 BO58-SB28   20
 DV03-ZT93   46

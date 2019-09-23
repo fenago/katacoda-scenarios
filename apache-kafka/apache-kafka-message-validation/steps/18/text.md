@@ -1,6 +1,8 @@
 In the fourth command-line terminal, start up the processing engine. From the project root directory (where the gradle jar command were executed), run the following command:
 
-`java -jar ./build/libs/monedero-0.1.0.jar localhost:9092 foo input-topic valid-messages invalid-messages`{{execute T4}} 
+`cd ~/kafka/Chapter02/monedero && java -jar ./build/libs/monedero-0.1.0.jar localhost:9092 foo input-topic valid-messages invalid-messages`{{execute T4}} 
+
+**Important:** Interface will keep switching back to terminal 1 because producer is running there after executing above command, you can manually switch by clicking `terminal 4`.
 
 From the first command-line terminal (the console producer), send the following three messages (remember to type enter between messages and execute each one in just one line):
 

@@ -2,7 +2,7 @@
 
 Now, in the src/main/java/kioto/avro directory, create a file called AvroProducer.java with the contents of Listing 5.4:
 
-Copy
+```
 package kioto.avro;
 import ...
 public final class AvroProducer {

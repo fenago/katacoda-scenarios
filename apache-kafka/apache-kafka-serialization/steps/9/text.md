@@ -3,7 +3,7 @@ Now that we're in the src/main/java/kioto/plain directory, let's complete the Pl
 
 The following is the content of Listing 4.10, PlainProcessor.java (part 2):
 
-Copy
+```
  public final void process() {
     consumer.subscribe(Collections.singletonList(
                Constants.getHealthChecksTopic()));           //1

@@ -1,18 +1,18 @@
 
  From a new command-line window, we execute the same command, shown as follows:
-Copy
+```
 $ java -cp ./build/libs/kioto-0.1.0.jar 
 kioto.plain.PlainStreamsProcessor
 The output should be something like the following:
 
-Copy
+```
 2017/07/05 15:03:18.045 INFO ... Setting newly assigned 
 partitions [healthchecks-2, healthchecks -3]
 If we remember the theory of Chapter 1, Configuring Kafka, when we created our topic, we specified that it had four partitions. This nice message from Kafka Streams is telling us that the application was assigned to partitions two and three of our topic.
 
 Take a look at the following log:
 
-Copy
+```
 ...
 2017/07/05 15:03:18.045 INFO ... Revoking previously assigned partitions [healthchecks -0, healthchecks -1, healthchecks -2, healthchecks -3]
 2017/07/05 15:03:18.044 INFO ... State transition from RUNNING to PARTITIONS_REVOKED

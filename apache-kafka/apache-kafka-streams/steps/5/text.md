@@ -1,7 +1,7 @@
 
 In the third step, we are going to calculate the uptime and send it to the uptimeStream, as shown in the following block:
 
-Copy
+```
 KStream uptimeStream = healthCheckStream.map(((KeyValueMapper)(k, v)-> {
   HealthCheck healthCheck = (HealthCheck) v;
   LocalDate startDateLocal = healthCheck.getLastStartedAt().toInstant()
@@ -19,7 +19,7 @@ The map() here could be read as follows: for each element in the input stream, w
 
 The last step is to write these values into the uptimes topic, shown as follows:
 
-Copy
+```
 uptimeStream.to( Constants.getUptimesTopic(), 
   Produced.with(Serdes.String(), Serdes.String()));
 Again, I will emphasize it until I get tired: it is widely recommended to declare the data types of our Streams. Always stating, in this case for example, that key value pairs are of type (String, String).
@@ -34,7 +34,7 @@ Finally, it is time to start the Kafka Streams engine.
 
 Before starting it, we need to specify the topology and two properties, the broker and the application ID, shown as follows:
 
-Copy
+```
 Topology topology = streamsBuilder.build();
 Properties props = new Properties();
 props.put("bootstrap.servers", this.brokers);

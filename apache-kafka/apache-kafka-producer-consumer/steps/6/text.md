@@ -18,7 +18,7 @@ As we can see, the kafka-console-producer command receives the following paramet
 - **--broker-list:** This specifies the Zookeeper servers specified as a comma-separated list in the form, hostname:port.
 - **--topic:** This parameter is followed by the name of the target topic.
 - **--sync:** This specifies whether the messages should be sent synchronously.
-- **--compression-codec: This specifies the compression codec used to produce the messages. The possible options are: none, gzip, snappy, or lz4. If not specified, the default is gzip.
+- **--compression-codec:** This specifies the compression codec used to produce the messages. The possible options are: none, gzip, snappy, or lz4. If not specified, the default is gzip.
 - **--batch-size:** If the messages are not sent synchronously, but the message size is sent in a single batch, this value is specified in bytes.
 - **--message-send-max-retries:** As the brokers can fail receiving messages, this parameter specifies the number of retries before a producer gives up and drops the message. This number must be a positive integer.
 - **--retry-backoff-ms:** In case of failure, the node leader election might take some time. This parameter is the time to wait before producer retries after this election. The number is the time in milliseconds.

@@ -7,7 +7,7 @@ In the src/main/java/kioto/serde directory, create a file called HealthCheckDese
 
 The following is the content of Listing 4.14, HealthCheckDeserializer.java: 
 
-Copy
+```
 package kioto.serde;
 import kioto.Constants;
 import kioto.HealthCheck;

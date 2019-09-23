@@ -4,7 +4,7 @@ Now, in order to incorporate the deserializer in our consumer, there are two req
 
 The following is the content of Listing 4.15, the constructor method for CustomConsumer:
 
-Copy
+```
 import kioto.HealthCheck;
 import kioto.serde.HealthCheckDeserializer;
 import org.apache.kafka.clients.consumer.KafkaConsumer;

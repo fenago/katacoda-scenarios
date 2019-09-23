@@ -2,7 +2,7 @@ Now, let's solve the problem of counting how many events are in each window. For
 
 In the src/main/java/kioto/events directory, create a file called EventProcessor.java with the contents of Listing 6.6, shown as follows:
 
-Copy
+```
 package kioto.events;
 import ...
 public final class EventProcessor {
@@ -21,7 +21,7 @@ Listing 6.6: EventProcessor.java
 
 All the processing logic is contained in the process() method. The first step is to create a StreamsBuilder to create the KStream, shown as follows:
 
-Copy
+```
 StreamsBuilder streamsBuilder = new StreamsBuilder();
 KStream stream = streamsBuilder.stream(
   "events", Consumed.with(Serdes.String(), Serdes.String()));
@@ -31,7 +31,7 @@ If you remember, we have each step as a transformation from one stream to anothe
 
 The next step is to build a KTable. To do so, we first use the groupBy() function, which receives a key-value pair, and we assign a key called "foo", because it is not relevant but we need to specify one. Then, we apply the windowedBy() function, specifying that the window will be 10 seconds long. Finally, we use the count() function, so we are producing key-value pairs with String as keys and long as values. This number is the count of the events for each window (the key is the window start time):
 
-Copy
+```
 KTable aggregates = stream
   .groupBy( (k, v) -> "foo", Serialized.with(Serdes.String(), Serdes.String()))
   .windowedBy( TimeWindows.of(10000L) )
@@ -46,7 +46,7 @@ KTable aggregates = stream
 
 If you have problems with the conceptual visualization of the KTable, which keys are of type KTable<Windowed<String>> and values are of type long, and printing it (in the KSQL chapter we will see how to do it), would be something like the one, as follows:
 
-Copy
+```
 key | value
  ----------------- |-------
  1532529050000:foo | 10
@@ -58,7 +58,7 @@ The key has the window ID and the utility aggregation key with value "foo". The 
 
 Next, as we need to output the KTable to a topic, we need to convert it to a KStream as follows:
 
-Copy
+```
 aggregates
   .toStream()
   .map( (ws, i) -> new KeyValue( ""+((Windowed)ws).window().start(), ""+i))
@@ -67,7 +67,7 @@ The toStream() method of the KTable returns a KStream. We use a map() function t
 
 Finally, as in previous sections, we need to start the topology and the application, shown as follows:
 
-Copy
+```
 Topology topology = streamsBuilder.build();
 Properties props = new Properties();
 props.put("bootstrap.servers", this.brokers);

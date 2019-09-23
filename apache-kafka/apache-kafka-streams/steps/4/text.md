@@ -1,6 +1,6 @@
 Now, in the src/main/java/kioto/plaindirectory, create a file called PlainStreamsProcessor.java with the contents of Listing 6.2, shown as follows:
 
-Copy
+```
 import ...
 public final class PlainStreamsProcessor {
   private final String brokers;
@@ -19,13 +19,13 @@ Listing 6.2: PlainStreamsProcessor.java
 
 All the magic happens inside the process() method. The first step in a Kafka Streams application is to get a StreamsBuilder instance, as shown in the following code:
 
-Copy
+```
 StreamsBuilder streamsBuilder = new StreamsBuilder();
 The StreamsBuilder is an object that allows building a topology. A topology in Kafka Streams is a structural description of a data pipeline. The topology is a succession of steps that involve transformations between streams. A topology is a very important concept in streams; it is also used in other technologies such as Apache Storm.
 
 The StreamsBuilder is used to consume data from a topic. There are other two important concepts in the context of Kafka Streams: a KStream, a representation of a stream of records, and a KTable, a log of the changes in a stream (we will see KTables in detail in Chapter 7, KSQL). To obtain a KStream from a topic, we use the stream() method of the StreamsBuilder, shown as follows:
 
-Copy
+```
 KStream healthCheckJsonStream = 
   streamsBuilder.stream( Constants.getHealthChecksTopic(), 
     Consumed.with(Serdes.String(), Serdes.String()));
@@ -43,7 +43,7 @@ Don't let the serializers be specified through application-wide properties, beca
 
 We have obtained a JSON stream. The next step in the topology is to obtain the HealthCheck object stream, and we do so by building the following Stream:
 
-Copy
+```
 KStream healthCheckStream = healthCheckJsonStream.mapValues((v -> {
   try {
     return Constants.getJsonMapper().readValue(

@@ -13,23 +13,23 @@
       "text": "steps/2/text.md"
     },    
 	{
-      "title": "Reading from Kafka",
+      "title": "The constants",
       "text": "steps/3/text.md"
     },
 	{
-      "title": "Reading from Kafka",
+      "title": "HealthCheck message",
       "text": "steps/4/text.md"
     },
   {
-      "title": "Writing to Kafka",
+      "title": "Java PlainProducer",
       "text": "steps/5/text.md"
     },
     {
-        "title": "Writing to Kafka",
+        "title": "Running the PlainProducer",
         "text": "steps/6/text.md"
     },
     {
-        "title": "Running the processing engine",
+        "title": "Java plain consumer",
         "text": "steps/7/text.md"
     },
     {

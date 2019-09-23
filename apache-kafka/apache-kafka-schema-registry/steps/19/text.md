@@ -1,7 +1,7 @@
 Java AvroProcessor
 Now, in the src/main/java/kioto/avro directory, create a file called AvroProcessor.java with the contents of Listing 5.6:
 
-Copy
+```
 package kioto.plain;
 import ...
 public final class AvroProcessor {
@@ -31,7 +31,7 @@ In the first section, we declare an AvroConsumer, as in Listing 5.5
 In the second section, we declare an AvroProducer, as in Listing 5.4
 Now, in the src/main/java/kioto/avro directory, let's complete the AvroProcessor.java file with the contents of Listing 5.7:
 
-Copy
+```
 public final void process() {
   consumer.subscribe(Collections.singletonList(
     Constants.getHealthChecksAvroTopic())); //1

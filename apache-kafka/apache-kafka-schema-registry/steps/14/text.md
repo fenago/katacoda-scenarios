@@ -7,21 +7,21 @@ Before we start with the code, remember that in the last chapter we added the li
 
 Confluent's repository is specified in the following line:
 
-Copy
+```
 repositories {
  ...
  maven { url 'https://packages.confluent.io/maven/' }
  }
 In the dependencies section, we should add the specific Avro libraries:
 
-Copy
+```
 dependencies {
  ...
  compile 'io.confluent:kafka-avro-serializer:5.0.0'
  }
 Do not use the libraries provided by Apache Avro, because they will not work. As we already know, to build a Kafka message producer, we use the Java client library; in particular, the producer API. As we already know, there are two requisites that all the Kafka producers should have: to be a KafkaProducer and to set the specific Properties, such as Listing 5.3:
 
-Copy
+```
 import io.confluent.kafka.serializers.KafkaAvroSerializer; 
 import org.apache.avro.Schema;
 import org.apache.avro.Schema.Parser;

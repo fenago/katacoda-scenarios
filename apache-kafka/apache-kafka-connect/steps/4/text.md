@@ -1,6 +1,6 @@
 Now, in the src/main/java/kioto/spark directory, create a file called SparkProcessor.java with the contents of Listing 8.2, shown as follows:
 
-Copy
+```
 package kioto.spark;
 import kioto.Constants;
 import org.apache.spark.sql.*;
@@ -28,7 +28,7 @@ Note that, as in previous examples, the main method invoked the process() method
 
 Now, let's fill the process() method. The first step is to initialize Spark, as demonstrated in the following block:
 
-Copy
+```
 SparkSession spark = SparkSession.builder()
     .appName("kioto")
     .master("local[*]")

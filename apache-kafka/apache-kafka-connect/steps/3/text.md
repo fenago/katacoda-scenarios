@@ -26,9 +26,12 @@ Gradle 4.10.2
 
 To use Apache Spark, we need the dependency, shown as follows:
 
-Copy
+```
 compile 'org.apache.spark:spark-sql_2.11:2.2.2'
+```
+
 To connect Apache Spark with Kafka, we need the dependency, shown as follows:
 
-Copy
+```
 compile 'org.apache.spark:spark-sql-kafka-0-10_2.11:2.2.2'
+```

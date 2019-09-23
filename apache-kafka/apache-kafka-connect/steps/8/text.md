@@ -6,13 +6,13 @@ Since we want the machine serial number to be the key, there is no problem if it
 
 We use the select() method of the Dataset class to calculate these two columns and assign them new names using the as() method, shown as follows (to do this, we could also use the alias() method of that class):
 
-Copy
+```
 Dataset<Row> resDf = processedDs.select(
     (new Column("serialNumber")).as("key"),
     processedDs.col("uptime").cast(DataTypes.StringType).as("value"));
 Our Dataset is ready and it has the format expected by the Kafka connector. The following code is to tell Spark to write these values to Kafka:
 
-Copy
+```
 //StreamingQuery kafkaOutput =
 resDf.writeStream()
    .format("kafka")
@@ -24,7 +24,7 @@ Note that we added the checkpoint location in the options. This is to ensure the
 
 Finally, we call the awaitAnyTermination() method, shown as follows:
 
-Copy
+```
 try {
   spark.streams().awaitAnyTermination();
 } catch (StreamingQueryException e) {
@@ -44,7 +44,7 @@ try {
 
 An important note is to mention that if Spark leaves a console output inside the code, it implies that all queries must call its start() method before calling any awaitTermination() method, shown as follows:
 
-Copy
+```
 firstOutput = someDataSet.writeStream
 ...
     .start()

@@ -1,6 +1,5 @@
-The first step is create a new `Validator.java` file in the src/main/java/monedero/ directory, and copy therein the content of Listing 2.9.
+The first step is open a `Validator.java` file in the src/main/java/monedero/ directory.
 
-The following is the content of Listing 2.9, Validator.java:
 
 ```
 package monedero;

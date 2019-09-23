@@ -1,16 +1,16 @@
 To run the EventProducer, we follow these steps:
 
 Create the events topic, as shown in the following block:
-Copy
+```
 $. /bin/kafka-topics --zookeeper localhost:2181 --create --topic 
 events --replication-factor 1 --partitions 4
 Run a console consumer for the events topic using the following command:
-Copy
+```
 $ ./bin/kafka-console-consumer --bootstrap-server localhost:9092 
 --topic events
 From the IDE, run the main method of the EventProducer.
 The output on the console consumer for the events topic should be similar to the following:
-Copy
+```
 1532529060000,47, on time
 1532529060000,48, on time
 1532529060000,49, on time

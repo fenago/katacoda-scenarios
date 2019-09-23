@@ -2,7 +2,7 @@ There are several connectors for Apache Spark. In this case, we are using the Da
 
 Using this Spark Kafka connector, we can read data with Spark Structured Streaming from a Kafka topic:
 
-Copy
+```
  Dataset<Row> inputDataset = spark
     .readStream()
     .format("kafka")
@@ -16,7 +16,7 @@ As with Kafka Streams, with Spark Streaming, in each step we have to generate a 
 
 In each step, if we need to print our data stream (to debug the application), we can use the following code:
 
-Copy
+```
 StreamingQuery consoleOutput =
     streamToPrint.writeStream()
     .outputMode("append")

@@ -1,11 +1,9 @@
-HealthCheck message
 The second step is to code the HealthCheck class. This class is a Plain Old Java Object (POJO). The model class is the template for the value object.
 
 Open the project with your favorite IDE and, in the src/main/java/kioto directory, create a file called HealthCheck.java with the content of Listing 4.4.
 
-The following is the content of Listing 4.4, HealthCheck.java: 
 
-Copy
+```
 package kioto;
 import java.util.Date;
 public final class HealthCheck {
@@ -18,7 +16,7 @@ public final class HealthCheck {
   private float temperature;
   private String ipAddress;
 }
-Listing 4.4: HealthCheck.java
+```
 
 With your IDE, generate the following:
 
@@ -31,7 +29,7 @@ To generate fake data with JavaFaker, our code should be as shown in Listing 4.5
 
 The following is the content of Listing 4.5, a health check mock generator with JavaFaker:
 
-Copy
+```
 HealthCheck fakeHealthCheck =
    new HealthCheck(
         "HEALTH_CHECK",
@@ -56,6 +54,6 @@ Here, we depend on the attributes order of the constructor. Other languages, suc
 
 Now, to transform our Java POJO into a JSON string, we use the method in the Constants class—something like the following:
 
-Copy
+```
 String fakeHealthCheckJson fakeHealthCheckJson = Constants.getJsonMapper().writeValueAsString(fakeHealthCheck);
 Don't forget that this method throws a JSON processing exception.
