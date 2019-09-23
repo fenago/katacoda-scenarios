@@ -1,11 +1,11 @@
 {
-  "title": "Hyperledger: Kafka & Zookeeper",
+  "title": "Apache Kafka Installation",
   "description": "Introduction to Apache Kafka",
   "difficulty": "Advanced",
   "time": "15 minutes",
   "details": {
     "steps": [{
-      "title": "Clone Repository",
+      "title": "Installation scripts",
       "text": "steps/1/text.md"
     },
     {
@@ -31,10 +31,6 @@
     {
         "title": "Install kafkacat",
         "text": "steps/7/text.md"
-    },
-    {
-        "title": "Kafka Stop",
-        "text": "steps/8/text.md"
     }],
     "intro": {
       "text": "intro.md",

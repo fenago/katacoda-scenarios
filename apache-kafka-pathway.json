@@ -4,12 +4,12 @@
   "courses": [
     {
       "course_id": "apache-kafka-installation",
-      "title": "Apache Kafka",
+      "title": "Apache Kafka Installation",
       "description": ""
     },
     {
       "course_id": "apache-kafka-producer-consumer",
-      "title": "Apache Kafka",
+      "title": "Apache Kafka Producer and Consumer",
       "description": ""
     },
     {

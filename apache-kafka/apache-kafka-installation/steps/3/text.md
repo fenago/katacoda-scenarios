@@ -6,14 +6,14 @@ Execute the following commands to install Java:
 
 This command will install the Java Runtime Environment (JRE). This will allow you to run almost all Java software.
 
-Verify the installation with: java -version
+Verify the installation with: `java -version`{{execute}} 
 
 You’ll see the following output:
 
 ```
-openjdk version "10.0.1" 2018-04-17
-OpenJDK Runtime Environment (build 10.0.1+10-Ubuntu-3ubuntu1)
-OpenJDK 64-Bit Server VM (build 10.0.1+10-Ubuntu-3ubuntu1, mixed mode)
+java version "1.8.0_201"
+Java(TM) SE Runtime Environment (build 1.8.0_201-b09)
+Java HotSpot(TM) 64-Bit Server VM (build 25.201-b09, mixed mode)
 ```
 
 #### Install telnet

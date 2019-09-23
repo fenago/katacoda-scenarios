@@ -6,7 +6,8 @@ kafkacat is an open source utility and it is not included in Confluent Platform.
 
 To install kafkacat on modern Linux, type the following:
 
-Copy
-yes | apt-get install kafkacat
+`yes | apt-get install kafkacat`{{execute}}
 
-To subscribe to amazingTopic and redundantTopic and print to stdout, type the following:
+
+You can verify kafkacat is installed on your System by running `kafkacat -h`{{execute}} command.
+

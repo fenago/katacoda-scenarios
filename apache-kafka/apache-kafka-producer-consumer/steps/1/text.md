@@ -7,6 +7,6 @@ Next, clone the following repository by copying & executing following command in
 
 #### Permissions
 Now, move in the directory which contains scripts to install kafka, copy and execute the command. We also need to change permission to execute the script using **chmod**.
-`cd setup && chmod 755 *.sh`{{execute T1}} 
+`cd kafka/setup && chmod 755 *.sh`{{execute T1}} 
 
 `./install.sh && ./start.sh`{{execute T1}} 

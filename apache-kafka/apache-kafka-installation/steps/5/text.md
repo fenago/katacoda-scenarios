@@ -1,3 +1,5 @@
-In this step, we will launch the kafka service `./start.sh`{{execute}}
+In this step, we will launch the kafka service
 
-You can get kafka logs by running `$HOME/kafka.log`{{execute}}
+Open `start.sh` by selecting vscode **Explorer** to view the contents of the bash script.  `./start.sh`{{execute}}
+
+You can get kafka logs by running `cat $HOME/kafka.log`{{execute}}

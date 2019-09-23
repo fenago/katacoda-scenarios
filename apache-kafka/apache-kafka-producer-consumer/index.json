@@ -1,5 +1,5 @@
 {
-  "title": "Hyperledger: Kafka & Zookeeper",
+  "title": "Apache Kafka Producer and Consumer",
   "description": "Introduction to Apache Kafka",
   "difficulty": "Advanced",
   "time": "15 minutes",
@@ -9,7 +9,7 @@
       "text": "steps/1/text.md"
     },
     {
-      "title": "What is Kafka?",
+      "title": "Running Kafka topics",
       "text": "steps/2/text.md"
     },    
 	{
