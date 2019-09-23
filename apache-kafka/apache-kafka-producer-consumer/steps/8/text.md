@@ -1,3 +1,5 @@
+Kafkacat is a command line utility that you can use to test and debug Apache Kafka® deployments. You can use kafkacat to produce, consume, and list topic and partition information for Kafka.
+
 kafkacat is similar to the Kafka console producer and Kafka console consumer, but more powerful.
 
 To install kafkacat on Linux, type the following:
@@ -7,7 +9,7 @@ To install kafkacat on Linux, type the following:
 To publish message to amazingTopic, run the following:
 `kafkacat -b localhost:9092 –t amazingTopic -P`{{execute}} 
 
-Type following message  `Hello kafkacat!`{{execute}} 
+Type following message and press enter in the above prompt `Hello kafkacat!`{{copy}} 
 
 **Note** Press `Ctrl + C` after sending the message to quit above prompt.
 
