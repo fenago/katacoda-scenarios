@@ -8,8 +8,18 @@ BUILD SUCCESSFUL in 57s
 5 actionable tasks: 5 executed
 ```
 
-Running the main method of the `PlainProducer` and console consumer for the uptimes topic. The output on the console consumer of the producer should be similar to the following:
+#### Kafka Consumer
+Run a console consumer for the uptimes topic, shown as follows:
 
+`~/kafka/bin/kafka-console-consumer.sh --bootstrap-server localhost:9092 --topic uptimes`{{execute}} 
+
+#### Running PlainProducer
+Run the main method of the `PlainProducer` in **terminal 2** by running following command.
+`cd ~/kafka/Chapter08/kioto && java -cp ./build/libs/kioto-0.1.0.jar kioto.plain.PlainProducer`{{execute T2}} 
+
+
+#### Output
+The output on the console consumer of the producer should be similar to the following:
 ```
 {"event":"HEALTH_CHECK","factory":"Lake Anyaport","serialNumber":"EW05-HV36","type":"WIND","status":"STARTING","lastStartedAt":"2017-09-17T11:05:26.094+0000","temperature":62.0,"ipAddress":"15.185.195.90"}
 
@@ -19,8 +29,12 @@ Running the main method of the `PlainProducer` and console consumer for the upti
 ...
 ```
 
-Running the main method of the `SparkProcessor` and console consumer for the uptimes topic. The output on the console consumer of the producer should be similar to the following:
+#### Running SparkProcessor
+Run the main method of the `SparkProcessor` in **terminal 3** by running following command.
+`cd ~/kafka/Chapter08/kioto && java -cp ./build/libs/kioto-0.1.0.jar kioto.spark.SparkProcessor`{{execute T3}} 
 
+#### Output
+The output on the console consumer for the uptimes topic should be similar to the following:
 ```
       EW05-HV36   33
       BO58-SB28   20
