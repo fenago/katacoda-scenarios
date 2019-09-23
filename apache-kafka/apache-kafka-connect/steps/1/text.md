@@ -7,7 +7,19 @@ Next, clone the following repository by copying & executing following command in
 
 #### Permissions
 Now, move in the directory which contains scripts to install kafka, copy and execute the command. We also need to change permission to execute the script using **chmod**.
-`cd HLFADV/setup/kafka && chmod 755 *.sh`{{copy}}
+`cd setup && chmod 755 *.sh`{{execute T1}} 
+
+`./install.sh && ./start.sh`{{execute T1}} 
 
 **Note:**
 The supplied commands in the next steps MUST be run from your setup/kafka sub-directory of the **HLFADV** repository clone.
+
+
+In this scenario, instead of using the Kafka Java API for producers and consumers, Kafka Streams, we are going to connect Kafka with Spark Structured Streaming, the Apache Spark solution to process streams with its Datasets API.
+
+- Spark Streaming processor
+- Reading Kafka from Spark
+- Data conversion
+- Data processing
+- Writing to Kafka from Spark
+- Running the SparkProcessor

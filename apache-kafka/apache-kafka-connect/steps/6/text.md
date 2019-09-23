@@ -1,30 +1,80 @@
-As with the consumer interface, an implementation of the producer interface is needed. In this first version, we just pass the incoming messages to another topic without modifying the messages. The implementation code is in Listing 2.7 and should be saved in a file called Writer.java in the src/main/java/m directory.
+We know that when we produced the data, it was in JSON format, although Spark reads it in binary format. To convert the binary message to string, we use the following code:
 
-The following is the content of Listing 2.7,  Writer.java:
+Copy
+Dataset<Row> healthCheckJsonDf =
+    inputDataset.selectExpr("CAST(value AS STRING)");
+The Dataset console output is now human-readable, and is shown as follows:
 
-```
-package monedero;
-import org.apache.kafka.clients.producer.KafkaProducer;
-public class Writer implements Producer {
-  private final KafkaProducer<String, String> producer;
-  private final String topic;
-  Writer(String servers, String topic) {
-    this.producer = new KafkaProducer<>(
-        Producer.createConfig(servers));//1
-    this.topic = topic;
-  }
-  @Override
-  public void process(String message) {
-    Producer.write(this.producer, this.topic, message);//2
-  }
-}
-```
+Copy
++--------------------------+
+|                     value|
++--------------------------+
+| {"event":"HEALTH_CHECK...|
++--------------------------+
+ 
 
-Listing 2.7: Writer.java
+ 
 
-In this implementation of the Producer class, we see the following: 
+ 
 
-- The `createConfig` method is invoked to set the necessary properties from the producer interface
-- The process method writes each incoming message in the output topic. As the message arrives from the topic, it is sent to the target topic.
+ 
 
-This producer implementation is very simple; it doesn't modify, validate, or enrich the messages. It just writes them to the output topic.
+The next step is to provide the fields list to specify the data structure of the JSON message, as follows:
+
+Copy
+StructType struct = new StructType()
+    .add("event", DataTypes.StringType)
+    .add("factory", DataTypes.StringType)
+    .add("serialNumber", DataTypes.StringType)
+    .add("type", DataTypes.StringType)
+    .add("status", DataTypes.StringType)
+    .add("lastStartedAt", DataTypes.StringType)
+    .add("temperature", DataTypes.FloatType)
+    .add("ipAddress", DataTypes.StringType);
+Next, we deserialize the String in JSON format. The simplest way is to use the prebuilt from_json()function in the org.apache.spark.sql.functions package, which is demonstrated in the following block:
+
+Copy
+Dataset<Row> healthCheckNestedDs =
+    healthCheckJsonDf.select(
+        functions.from_json(
+            new Column("value"), struct).as("healthCheck"));
+If we print the Dataset at this point, we can see the columns nested as we indicated in the schema:
+
+Copy
+root
+ |-- healthcheck: struct (nullable = true)
+ |    |-- event: string (nullable = true)
+ |    |-- factory: string (nullable = true)
+ |    |-- serialNumber: string (nullable = true)
+ |    |-- type: string (nullable = true)
+ |    |-- status: string (nullable = true)
+ |    |-- lastStartedAt: string (nullable = true)
+ |    |-- temperature: float (nullable = true)
+ |    |-- ipAddress: string (nullable = true)
+The next step is to flatten this Dataset, as follows:
+
+Copy
+Dataset<Row> healthCheckFlattenedDs = healthCheckNestedDs
+   .selectExpr("healthCheck.serialNumber", "healthCheck.lastStartedAt");
+To visualize the flattening, if we print the Dataset, we get the following:
+
+Copy
+root
+ |-- serialNumber: string (nullable = true)
+ |-- lastStartedAt: string (nullable = true)
+ 
+
+ 
+
+ 
+
+ 
+
+Note that we read the startup time as a string. This is because internally the from_json() function uses the Jackson library. Unfortunately, there is no way to specify the format of the date to be read.
+
+For these purposes, fortunately there is the to_timestamp() function in the same functions package. There is also the to_date() function if it is necessary to read only a date, ignoring the time specification. Here, we are rewriting the lastStartedAt column, similar to this:
+
+Copy
+Dataset<Row> healthCheckDs = healthCheckFlattenedDs
+    .withColumn("lastStartedAt", functions.to_timestamp(
+        new Column ("lastStartedAt"), "yyyy-MM-dd'T'HH:mm:ss.SSSZ"));

@@ -18,11 +18,6 @@
       "description": ""
     },
     {
-      "course_id": "apache-kafka-message-enrichment",
-      "title": "Apache Kafka Message Enrichment",
-      "description": ""
-    },
-    {
       "course_id": "apache-kafka-serialization",
       "title": "Apache Kafka Serialization",
       "description": ""

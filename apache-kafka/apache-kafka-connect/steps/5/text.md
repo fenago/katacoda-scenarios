@@ -1,40 +1,25 @@
-Writing to Kafka
-Our Reader invokes the process() method; this method belonging to the Producer class. As with the consumer interface, the producer interface encapsulates all of the common behavior of the Kafka producers. The two producers in this chapter implement this producer interface.
+There are several connectors for Apache Spark. In this case, we are using the Databricks Inc. (the company responsible for Apache Spark) connector for Kafka.
 
-In a file called Producer.java, located in the src/main/java/monedero directory, copy the content of Listing 2.6:
+Using this Spark Kafka connector, we can read data with Spark Structured Streaming from a Kafka topic:
 
-```
-package monedero;
-import java.util.Properties;
-import org.apache.kafka.clients.producer.KafkaProducer;
-import org.apache.kafka.clients.producer.ProducerRecord;
-public interface Producer {
-  void process(String message);                                 //1
-  static void write(KafkaProducer<String, String> producer,
-                    String topic, String message) {             //2
-    ProducerRecord<String, String> pr = new ProducerRecord<>(topic, message);
-    producer.send(pr);
-  }
-  static Properties createConfig(String servers) {              //3
-    Properties config = new Properties();
-    config.put("bootstrap.servers", servers);
-    config.put("acks", "all");
-    config.put("retries", 0);
-    config.put("batch.size", 1000);
-    config.put("linger.ms", 1);
-    config.put("key.serializer",
-"org.apache.kafka.common.serialization.StringSerializer");
-config.put("value.serializer",
-        "org.apache.kafka.common.serialization.StringSerializer"); 
-         return config;
-}
-}
-```
+Copy
+ Dataset<Row> inputDataset = spark
+    .readStream()
+    .format("kafka")
+    .option("kafka.bootstrap.servers", brokers)
+    .option("subscribe", Constants.getHealthChecksTopic())
+    .load();
+Simply by saying Kafka format, we can read a stream from the topic specified in the subscribe option, running on the brokers specified.
 
-Listing 2.6: Producer.java
 
-The producer interface has the following observations:
+As with Kafka Streams, with Spark Streaming, in each step we have to generate a new data stream in order to apply transformations and get new ones.
 
-- An abstract method called process invoked in the Reader class
-- A static method called write that sends a message to the producer in the specified topic
-- A static method called createConfig, where it sets all of the properties required for a generic producer
+In each step, if we need to print our data stream (to debug the application), we can use the following code:
+
+Copy
+StreamingQuery consoleOutput =
+    streamToPrint.writeStream()
+    .outputMode("append")
+    .format("console")
+    .start();
+The first line is optional, because we really don't need to assign the result to an object, just the code execution.

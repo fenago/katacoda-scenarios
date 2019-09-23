@@ -1,25 +1,15 @@
-We are going to build our project with Gradle. The first step is to download and install Gradle from http://www.gradle.org/downloads.
+Kafka Connect is an open source framework, part of Apache Kafka; it is used to connect Kafka with other systems, such as structured databases, column stores, key-value stores, filesystems, and search engines. 
 
-Gradle only requires a Java JDK (version 7 or higher).
-
-
-```
-==> Downloading https://services.gradle.org/distributions/gradle-4.10.2-all.zip
-==> Downloading from https://downloads.gradle.org/distributions/gradle-4.10.2-al
-######################################################################## 100.0%
-  /usr/local/Cellar/gradle/4.10.2: 203 files, 83.7MB, built in 59 seconds
-```
-
-Linux users can install Gradle with the apt-get command, as follows:
-
-`apt-get update && yes | apt-get install gradle`{{execute T1}} 
- 
-
-`gradle -v`{{execute T1}} 
-The output is something like the following:
+Kafka Connect has a wide range of built-in connectors. If we are reading from the external system, it is called a data source; if we are writing to the external system, it is called a data sink.
 
 ```
-------------------------------------------------------------
-Gradle 4.10.2
-------------------------------------------------------------
+{"event":"HEALTH_CHECK","factory":"Lake Anyaport","serialNumber":"EW05-HV36","type":"WIND","status":"STARTING","lastStartedAt":"2018-09-17T11:05:26.094+0000","temperature":62.0,"ipAddress":"15.185.195.90"}
+...
+```
+we are going to process this data to calculate the machine's uptime and to obtain a topic with messages like these three:
+
+```
+EW05-HV36   33
+BO58-SB28   20
+DV03-ZT93   46
 ```
