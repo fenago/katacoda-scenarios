@@ -13,12 +13,12 @@ BUILD SUCCESSFUL in 3s
 
 #### Kafka topics
 The broker is running on port 9092. To create the healthchecks topic, execute the following:
-`~/kafka/bin/kafka-topics --zookeeper localhost:2181 --create --topic healthchecks --replication-factor 1 --partitions 4`{{execute T2}} 
+`~/kafka/bin/kafka-topics.sh --zookeeper localhost:2181 --create --topic healthchecks --replication-factor 1 --partitions 4`{{execute T2}} 
 
 
 #### Kafka consumer
 Run a console consumer for the healthchecks topic by typing the following:
-`~/kafka/bin/kafka-console-consumer --bootstrap-server localhost:9092 --topic healthchecks`{{execute T2}} 
+`~/kafka/bin/kafka-console-consumer.sh --bootstrap-server localhost:9092 --topic healthchecks`{{execute T2}} 
 
 
 #### Run PlainProducer
@@ -36,7 +36,10 @@ The output on the console consumer should be similar to the following:
 {"event":"HEALTH_CHECK","factory":"Ramonaview","serialNumber":"DV03-ZT93","type":"SOLAR","status":"RUNNING","lastStartedAt":"2018-07-12T10:16:39.091+0000","temperature":70.0,"ipAddress":"173.141.90.85"}
 ...
  
- ```
+```
+
+**Important** Press `Ctrl + C` in terminal **1** and **3** to quit programs before proceeding.
+
 
 There is a trade-off among three factors: the availability to produce messages, the latency in the production, and the guarantee of the safe write.
 

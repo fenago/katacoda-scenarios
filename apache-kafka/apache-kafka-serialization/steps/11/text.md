@@ -4,12 +4,12 @@
 
 #### Run PlainProcessor
 Run the main method of the `PlainProcessor` in **terminal 2** by running following command.
-`java -cp ./build/libs/kioto-0.1.0.jar kioto.plain.PlainProcessor`{{execute T2}} 
+`cd ~/kafka/Chapter04/kioto && java -cp ./build/libs/kioto-0.1.0.jar kioto.plain.PlainProcessor`{{execute T2}} 
 
 
 #### Run PlainProducer
 Run the main method of the `PlainProducer` in **terminal 3** by running following command.
-`java -cp ./build/libs/kioto-0.1.0.jar kioto.plain.PlainProducer`{{execute T3}} 
+`cd ~/kafka/Chapter04/kioto && java -cp ./build/libs/kioto-0.1.0.jar kioto.plain.PlainProducer`{{execute T3}} 
 
 The output on the console consumer for the uptimes topic should be similar to the following:
 
@@ -19,6 +19,8 @@ BO58-SB28   20
 DV03-ZT93   46
 ...
 ```
+
+**Important** Press `Ctrl + C` in terminals **1**, **2**  and **3** to quit programs before proceeding.
 
 We have said that, when producing data, there are two factors to think about; one is the delivery guarantee, and the other is the partitioning.
 

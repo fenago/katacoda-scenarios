@@ -16,7 +16,7 @@ The supplied commands in the next steps MUST be run from your `Chapter04/kioto` 
 
 
 #### Serialization/Deserialization
-In modern (internet) computing, we often forget that entities must be transmitted from one computer to another. In order to be able to transmit the entities, they must first be serialized.
+In modern (internet) computing, entities must be transmitted from one computer to another. In order to be able to transmit the entities, they must first be serialized.
 
 Serialization is the process of transforming an object into a stream of bytes commonly used to transmit it from one computer to another.
 

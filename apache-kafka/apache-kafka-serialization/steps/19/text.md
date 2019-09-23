@@ -1,21 +1,17 @@
 Run a console consumer for the uptimes topic as follows:
 
-`~/kafka/bin/kafka-console-consumer --bootstrap-server localhost:9092 --topic uptimes --property print.key=true`{{execute T1}}
+`~/kafka/bin/kafka-console-consumer.sh --bootstrap-server localhost:9092 --topic uptimes --property print.key=true`{{execute T1}}
 
 
 #### Run CustomProcessor
 Run the main method of the `CustomProcessor` in **terminal 2** by running following command.
-`java -cp ./build/libs/kioto-0.1.0.jar kioto.custom.CustomProcessor`{{execute T2}} 
+`cd ~/kafka/Chapter04/kioto && java -cp ./build/libs/kioto-0.1.0.jar kioto.custom.CustomProcessor`{{execute T2}} 
 
 
 #### Run CustomProducer
 Run the main method of the `CustomProducer` in **terminal 3** by running following command.
-`java -cp ./build/libs/kioto-0.1.0.jar kioto.custom.CustomProducer`{{execute T3}} 
+`cd ~/kafka/Chapter04/kioto && java -cp ./build/libs/kioto-0.1.0.jar kioto.custom.CustomProducer`{{execute T3}} 
 
-
-
-From our IDE, run the main method of CustomProcessor
-From our IDE, run the main method of CustomProducer
 
 The output on the console consumer for the uptimes topic should be similar to the following:
 

@@ -30,6 +30,8 @@ public final class PlainProducer {
   }
   ...
 }
+```
+
 An analysis of the PlainProducer constructor includes the following:
 
 - In line //1, the list of the brokers where our producer will be running

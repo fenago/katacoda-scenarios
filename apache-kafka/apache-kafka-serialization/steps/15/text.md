@@ -1,13 +1,12 @@
 Run a console consumer for HealthChecksTopic as follows:
-`~/kafka/bin/kafka-console-consumer --bootstrap-server localhost:9092 --topic healthchecks`{{execute T1}} 
+`~/kafka/bin/kafka-console-consumer.sh --bootstrap-server localhost:9092 --topic healthchecks`{{execute T1}} 
 
 #### Run CustomProducer
 Run the main method of the `CustomProducer` in **terminal 3** by running following command.
-`java -cp ./build/libs/kioto-0.1.0.jar kioto.custom.CustomProducer`{{execute T2}} 
+`cd ~/kafka/Chapter04/kioto && java -cp ./build/libs/kioto-0.1.0.jar kioto.custom.CustomProducer`{{execute T2}} 
 
 #### Output
 The output on the console consumer should be similar to the following:
-
 ```
 {"event":"HEALTH_CHECK","factory":"Lake Anyaport","serialNumber":"EW05-HV36","type":"WIND","status":"STARTING","lastStartedAt":"2018-09-17T11:05:26.094+0000","temperature":62.0,"ipAddress":"15.185.195.90"}
 
