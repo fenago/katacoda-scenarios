@@ -23,7 +23,7 @@ public final class AvroProcessor {
     producerProps.put("value.serializer", StringSerializer.class);
     producer = new KafkaProducer<>(producerProps);
  }
-Listing 5.6: AvroProcessor.java (part 1)
+```
 
 An analysis of the first part of the AvroProcessor class shows the following:
 
@@ -73,17 +73,17 @@ public final void process() {
   AvroProcessor("localhost:9092","http://localhost:8081").process();//7
     }
 }
-Listing 5.7: AvroProcessor.java (part 2)
+```
 
 An analysis of the AvroProcessor shows the following:
 
-In line //1, the consumer is subscribed to the new Avro topic.
-In line //2, we are consuming messages of type GenericRecord.
-In line //3, the Avro record is deserialized to extract the HealthCheck object.
-In line //4, the start time is transformed into the format in the current time zone.
-In line //5, the uptime is calculated.
-In line //6, the uptime is written to the uptimes topic, using the serial number as the key and the uptime as the value. Both values are written as normal strings.
-In line //7, everything runs on the broker on the localhost in port 9092 and with the Schema Registry running on the localhost in port 8081.
+- In line `//1`, the consumer is subscribed to the new Avro topic.
+- In line `//2`, we are consuming messages of type GenericRecord.
+- In line `//3`, the Avro record is deserialized to extract the HealthCheck object.
+- In line `//4`, the start time is transformed into the format in the current time zone.
+- In line `//5`, the uptime is calculated.
+- In line `//6`, the uptime is written to the uptimes topic, using the serial number as the key and the uptime as the value. Both values are written as normal strings.
+- In line `//7`, everything runs on the broker on the localhost in port 9092 and with the Schema Registry running on the localhost in port 8081.
  
 
 As mentioned previously, the code is not type-safe; all the types are checked at runtime. So, be extremely careful with that. For example, the strings are not java.lang.String; they are of type org.apache.avro.util.Utf8. Note that we avoid the cast by calling the toString() method directly on the objects. The rest of the code remains equal.

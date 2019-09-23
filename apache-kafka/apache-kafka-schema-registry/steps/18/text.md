@@ -21,14 +21,15 @@ public final class AvroConsumer {
   }
  ...
 }
-Listing 5.5: AvroConsumer constructor
+```
 
 An analysis of the changes in the AvroConsumer constructor shows the following:
 
-In line //1, the values now are of type org.apache.avro.generic.GenericRecord
-In line //2, the constructor now receives the Schema Registry URL
-In line //3, the deserializer type for the messages' keys remains as StringDeserializer
-In line //4, the deserializer type for the values is now KafkaAvroDeserializer
-In line //5, the Schema Registry URL is added to the consumer properties
-In line //6, with these Properties, we build a KafkaConsumer with string keys and GenericRecord values: <String, GenericRecord>
+- In line `//1`, the values now are of type org.apache.avro.generic.GenericRecord
+- In line `//2`, the constructor now receives the Schema Registry URL
+- In line `//3`, the deserializer type for the messages' keys remains as StringDeserializer
+- In line `//4`, the deserializer type for the values is now KafkaAvroDeserializer
+- In line `//5`, the Schema Registry URL is added to the consumer properties
+- In line `//6`, with these Properties, we build a KafkaConsumer with string keys and GenericRecord values: `<String, GenericRecord>`
+
 It is important to note that when defining the Schema Registry URL for the deserializer to fetch schemas, the messages only contain the schema ID and not the schema itself.

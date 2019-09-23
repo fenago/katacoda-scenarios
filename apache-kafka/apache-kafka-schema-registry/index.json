@@ -9,15 +9,15 @@
       "text": "steps/1/text.md"
     },
     {
-      "title": "What is Kafka?",
+      "title": "Defining the schema",
       "text": "steps/2/text.md"
     },    
 	{
-      "title": "Installation",
+      "title": "Install Gradle",
       "text": "steps/3/text.md"
     },
 	{
-      "title": "Start Kafka",
+      "title": "Using the Schema Registry",
       "text": "steps/4/text.md"
     },
   {
@@ -49,7 +49,7 @@
         "text": "steps/11/text.md"
     },
     {
-        "title": "Coding a validator in Java",
+        "title": "",
         "text": "steps/12/text.md"
     },
     {
@@ -57,7 +57,7 @@
         "text": "steps/13/text.md"
     },
     {
-        "title": "",
+        "title": "Java AvroProducer",
         "text": "steps/14/text.md"
     },
     {
@@ -65,7 +65,7 @@
         "text": "steps/15/text.md"
     },
     {
-        "title": "",
+        "title": "Running the AvroProducer",
         "text": "steps/16/text.md"
     },
     {
@@ -81,7 +81,7 @@
         "text": "steps/19/text.md"
     },
     {
-        "title": "",
+        "title": "Running the AvroProcessor",
         "text": "steps/20/text.md"
     }],
     "intro": {

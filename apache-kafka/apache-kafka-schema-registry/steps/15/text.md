@@ -77,14 +77,14 @@ public final class AvroProducer {
     "http://localhost:8081").produce(2);
   }
 }
-Listing 5.4: AvroProducer.java
+```
 
 An analysis of the AvroProducer class shows the following:
 
-In line //1, ratePerSecond is the number of messages to send in a 1-second period
-In line //2, to simulate repetition, we use an infinite loop (try to avoid this in production)
-In line //3, now we can create GenericRecord objects using GenericRecordBuilder
-In line //4, we use a Java Future to send the record to the healthchecks-avro topic
-In line //5, we wait this time to send messages again
-In line //6, we read the result of the Future
-In line //7, everything runs on the broker on the localhost in port 9092, and with the Schema Registry running on the localhost in port 8081, sending two messages in an interval of 1 second
+- In line `//1`, ratePerSecond is the number of messages to send in a 1-second period
+- In line `//2`, to simulate repetition, we use an infinite loop (try to avoid this in production)
+- In line `//3`, now we can create GenericRecord objects using GenericRecordBuilder
+- In line `//4`, we use a Java Future to send the record to the healthchecks-avro topic
+- In line `//5`, we wait this time to send messages again
+- In line `//6`, we read the result of the Future
+- In line `//7`, everything runs on the broker on the localhost in port 9092, and with the Schema Registry running on the localhost in port 8081, sending two messages in an interval of 1 second
