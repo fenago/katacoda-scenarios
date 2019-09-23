@@ -26,15 +26,16 @@ public static void main(String[] args) {
     new CustomProducer("localhost:9092").produce(2); //6
   }
 }
-Listing 4.13: CustomProducer.java
+```
 
-An analysis of the CustomProducer class includes the following:
 
-In line //1, ratePerSecond is the number of messages to send in a one-second period
-In line //2, to simulate repetition, we use a infinite loop (try to avoid this in production)
-In line //3, we use a Java future to send the message to HealthChecksTopic
-In line //4, we wait this time to send messages again
-In line //5, we read the result of the future created previously
-In line //6, everything runs on the broker in localhost in port 9092, sending two messages in an interval of one second
+An analysis of the `CustomProducer` class includes the following:
+
+- In line `//1`, ratePerSecond is the number of messages to send in a one-second period
+- In line `//2`, to simulate repetition, we use a infinite loop (try to avoid this in production)
+- In line `//3`, we use a Java future to send the message to HealthChecksTopic
+- In line `//4`, we wait this time to send messages again
+- In line `//5`, we read the result of the future created previously
+- In line `//6`, everything runs on the broker in localhost in port 9092, sending two messages in an interval of one second
  
 

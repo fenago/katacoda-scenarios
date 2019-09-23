@@ -1,6 +1,4 @@
-Now, in the src/main/java/kioto/custom directory, create a file called CustomProcessor.java with the content of Listing 4.16.
-
-The following is the content of Listing 4.16, CustomProcessor.java (part 1):
+Now, in the src/main/java/kioto/custom directory, create a file called `CustomProcessor.java` with the content of Listing 4.16.
 
 ```
 package kioto.custom;
@@ -24,15 +22,15 @@ public final class CustomProcessor {
     producerProps.put("value.serializer", StringSerializer.class);
     producer = new KafkaProducer<>(producerProps);
   }
+```
+
 An analysis of the first part of the custom processor class includes the following:
 
-In the first part, we declare a consumer, as in Listing 4.15
-In the second part, we declare a producer, as in Listing 4.13
-Now, in the src/main/java/kioto/customdirectory, let's complete the CustomProcessor.java file with the content of Listing 4.17.
+- In the first part, we declare a consumer
+- In the second part, we declare a producer
 
- 
 
- 
+Now, in the src/main/java/kioto/customdirectory, let's complete the `CustomProcessor.java` file with the content of Listing 4.17.
 
 The following is the content of Listing 4.17, CustomProcessor.java (part 2):
 
@@ -66,12 +64,14 @@ public final void process() {
     new CustomProcessor("localhost:9092").process();
   }
 }
+```
+
 An analysis of the CustomProcessor process method includes the following:
 
-In line //1, here the consumer is created and subscribed to the source topic. This is a dynamic assignment of the partitions to our customer and join to the customer group.
-In line //2, an infinite loop to consume the records, the pool duration is passed as a parameter to the method pool. The customer waits no longer than one second before return.
-In line //3, we iterate over the records.
-In line //4, the JSON string is deserialized to extract the HealthCheck object.
-In line //5, the start time is transformed in format at the current time zone.
-In line //6, the uptime is calculated.
-In line //7, the uptime is written to the uptimes topic, using the serial number as the key and the uptime as the value. Both values are written as normal strings.
+- In line `//1`, here the consumer is created and subscribed to the source topic. This is a dynamic assignment of the partitions to our customer and join to the customer group.
+- In line `//2`, an infinite loop to consume the records, the pool duration is passed as a parameter to the method pool. The customer waits no longer than one second before return.
+- In line `//3`, we iterate over the records.
+- In line `//4`, the JSON string is deserialized to extract the HealthCheck object.
+- In line `//5`, the start time is transformed in format at the current time zone.
+- In line `//6`, the uptime is calculated.
+- In line `//7`, the uptime is written to the uptimes topic, using the serial number as the key and the uptime as the value. Both values are written as normal strings.

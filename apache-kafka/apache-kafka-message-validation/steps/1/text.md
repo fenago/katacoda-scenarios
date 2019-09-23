@@ -9,7 +9,7 @@ Next, clone the following repository by copying & executing following command in
 Now, move in the directory which contains scripts to install kafka, copy and execute the command. We also need to change permission to execute the script using **chmod**.
 `cd kafka/setup && chmod 755 *.sh`{{execute T1}} 
 
-`./install.sh && ./start.sh && cd ../kafka/Chapter02/monedero`{{execute T1}} 
+`./install.sh && ./start.sh && cd ../Chapter02/monedero`{{execute T1}} 
 
 **Note:**
 The supplied commands in the next steps MUST be run from your `Chapter02/monedero` sub-directory of the **kafka** repository clone.

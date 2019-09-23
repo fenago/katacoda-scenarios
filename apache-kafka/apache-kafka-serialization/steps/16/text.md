@@ -1,11 +1,7 @@
 
 In a similar way, to build a custom deserializer, we need to create a class that implements the org.apache.kafka.common.serialization.Deserializer interface. We must indicate how to convert an array of bytes into a custom type (deserialization).
 
-In the src/main/java/kioto/serde directory, create a file called HealthCheckDeserializer.java with the content of Listing 4.14.
-
- 
-
-The following is the content of Listing 4.14, HealthCheckDeserializer.java: 
+In the src/main/java/kioto/serde directory, Open a file called `HealthCheckDeserializer.java`:
 
 ```
 package kioto.serde;
@@ -31,7 +27,7 @@ public final class HealthCheckDeserializer implements Deserializer {
   @Override
   public void configure(Map configs, boolean isKey) {}
 }
-Listing 4.14: HealthCheckDeserializer.java
+```
 
 Note that the deserializer class is located in a module called kafka-clients in the org.apache.kafka route. The objective here is to use the deserializer class instead of Jackson (manually).
 

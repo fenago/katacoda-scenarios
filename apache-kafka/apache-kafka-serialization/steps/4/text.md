@@ -42,18 +42,23 @@ HealthCheck fakeHealthCheck =
         faker.date().past(100, TimeUnit.DAYS),           //5
         faker.number().numberBetween(100L, 0L),          //6
         faker.internet().ipV4Address());                 //7
+```
+
 The following is an analysis of how to generate fake health check data:
 
-In line //1, address().city() generates a fictitious city name
-In line //2, in the expression ? for alpha # for numeric, true if alpha is uppercase
-In line //3, we use the machine type enum in Constants , and a fake number between 0 and 4
-In line //4, we use the machine status enum in Constants and a fake number between 0 and 3, inclusively
-In line //5, we are saying that we want a fake date between the past 100 days from today
-In line //6, we build a fake IP address
+- In line `//1`, address().city() generates a fictitious city name
+- In line `//2`, in the expression ? for alpha # for numeric, true if alpha is uppercase
+- In line `//3`, we use the machine type enum in Constants , and a fake number between 0 and 4
+- In line `//4`, we use the machine status enum in Constants and a fake number between 0 and 3, inclusively
+- In line `//5`, we are saying that we want a fake date between the past 100 days from today
+- In line `//6`, we build a fake IP address
+
 Here, we depend on the attributes order of the constructor. Other languages, such as Kotlin, allow specifying each assigned attribute name.
 
 Now, to transform our Java POJO into a JSON string, we use the method in the Constants class—something like the following:
 
 ```
 String fakeHealthCheckJson fakeHealthCheckJson = Constants.getJsonMapper().writeValueAsString(fakeHealthCheck);
+```
+
 Don't forget that this method throws a JSON processing exception.

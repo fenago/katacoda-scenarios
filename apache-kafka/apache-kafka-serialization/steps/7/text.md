@@ -22,15 +22,17 @@ public final class PlainConsumer {
   }
   ...
 }
+```
  
 
 An analysis of the plain consumer constructor includes the following:
 
-In line //1, the group ID of our consumer, in this case, healthcheck-processor
-In line //2, the list of brokers where our consumer will be running
-In line //3, the deserializer type for the messages' keys (we will see deserializers later)
-In line //4, the deserializer type for the messages' values, in this case, values are strings
-In line //5, with these properties, we build a KafkaConsumer with string keys and string values, for example,  <String, String>
+- In line `//1`, the group ID of our consumer, in this case, healthcheck-processor
+- In line `//2`, the list of brokers where our consumer will be running
+- In line `//3`, the deserializer type for the messages' keys (we will see deserializers later)
+- In line `//4`, the deserializer type for the messages' values, in this case, values are strings
+- In line `//5`, with these properties, we build a KafkaConsumer with string keys and string values
+
 For the customers, we need to provide a group ID to specify the consumer group that our consumer will join.
 
 In the case that multiple consumers are started in parallel, through different threads or through different processes, each consumer will be assigned with a subset of the topic partitions. In our example, we created our topic with four partitions, which means that, to consume the data in parallel, we could create up to four consumers.

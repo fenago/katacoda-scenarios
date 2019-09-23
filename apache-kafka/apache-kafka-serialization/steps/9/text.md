@@ -1,7 +1,7 @@
 
-Now that we're in the src/main/java/kioto/plain directory, let's complete the PlainProcessor.java file with the content of Listing 4.10.
+Now that we're in the src/main/java/kioto/plain directory, let's have  look at the `PlainProcessor.java` file:
 
-The following is the content of Listing 4.10, PlainProcessor.java (part 2):
+The following is the content of `PlainProcessor.java` (part 2):
 
 ```
  public final void process() {
@@ -39,17 +39,17 @@ The following is the content of Listing 4.10, PlainProcessor.java (part 2):
     (new PlainProcessor("localhost:9092")).process();
   }
 }
-Listing 4.10: PlainProcessor.java (part 2)
+````
 
 An analysis of the PlainProcessor includes the following:
 
-- In line //1, the consumer is created and subscribed to the source topic. This is a dynamic assignment of the partitions to our customer and join to the customer group. 
-- In line //2, an infinite loop to consume the records, the pool duration is passed as a parameter to the method pool. The customer waits no longer than one second before return.
-- In line //3, we iterate over the records.
-- In line //4, the JSON string is deserialized to extract the health check object.
-- In line //5, the start time is transformed formatted at the current time zone.
-- In line //6, the uptime is calculated.
-- In line //7, the uptime is written to the uptimes topic, using the serial number as the key and the uptime as value. Both values are written as normal strings.
+- In line `//1`, the consumer is created and subscribed to the source topic. This is a dynamic assignment of the partitions to our customer and join to the customer group. 
+- In line `//2`, an infinite loop to consume the records, the pool duration is passed as a parameter to the method pool. The customer waits no longer than one second before return.
+- In line `//3`, we iterate over the records.
+- In line `//4`, the JSON string is deserialized to extract the health check object.
+- In line `//5`, the start time is transformed formatted at the current time zone.
+- In line `//6`, the uptime is calculated.
+- In line `//7`, the uptime is written to the uptimes topic, using the serial number as the key and the uptime as value. Both values are written as normal strings.
 
 The moment at which the broker returns records to the client also depends on the fetch.min.bytes value; its default is 1, and is the minimum data amount to wait before the broker is available to the client. Our broker returns as soon as 1 byte of data is available, while waiting a maximum of one second.
 

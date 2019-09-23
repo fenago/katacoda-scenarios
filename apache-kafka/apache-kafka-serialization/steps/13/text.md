@@ -16,8 +16,11 @@ public final class CustomProducer {
     props.put("value.serializer", HealthCheckSerializer.class); //3
     producer = new KafkaProducer<>(props);                      //4
   }
+```
+
 An analysis of the CustomProducer constructor includes the following:
 
-In line //1, this is the list of the brokers where our producer will be running.
-In line //2, the serializer type for the messages' keys in this case keys remains as strings. In line //3, this is the serializer type for the messages' values, in this case, the values are HealthCheck.
-In line //4, with these properties we build a KafkaProducer with string keys and HealthCheck values, for example, <String, HealthCheck>.
+- In line `//1`, this is the list of the brokers where our producer will be running.
+- In line `//2`, the serializer type for the messages' keys in this case keys remains as strings.
+- In line `//3`, this is the serializer type for the messages' values,- In this case, the values are HealthCheck.
+- In line `//4`, with these properties we build a KafkaProducer with string keys and HealthCheck values.

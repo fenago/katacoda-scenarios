@@ -17,7 +17,10 @@ Gradle 4.10.2
 ```
 
 
-The following is the content of Listing 4.2, the Kioto Gradle build file:
+**Note:** Final code was already cloned from github for this scenario. You can just understand the application design and run it using the instructions.
+
+
+The following content is of the Kioto Gradle build file:
 
 ```
 apply plugin: 'java'
