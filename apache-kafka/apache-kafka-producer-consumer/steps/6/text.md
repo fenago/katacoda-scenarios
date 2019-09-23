@@ -9,7 +9,7 @@ In a command-line window, run the following commands to sent messages to the ser
 
 `echo "Fool me twice shame on me" | ~/kafka/bin/kafka-console-producer.sh --broker-list localhost:9092 --topic amazingTopic > /dev/null`{{execute}}
 
-These lines push two messages into the amazingTopic running on the localhost cluster on the 9092 port.
+These lines push two messages into the amazingTopic running on the localhost cluster on the `9092` port.
 
 This command is also the simplest way to check whether a broker with a specific topic is up and running as it is expected.
 

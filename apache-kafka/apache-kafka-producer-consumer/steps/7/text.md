@@ -2,7 +2,7 @@ The last step is how to read the generated messages. Kafka also has a powerful c
 
 Run the following command:
 
-`~/kafka/bin/kafka-console-consumer --topic amazingTopic --bootstrap-server localhost:9092 --from-beginning`{{execute}} 
+`~/kafka/bin/kafka-console-consumer.sh --topic amazingTopic --bootstrap-server localhost:9092 --from-beginning`{{execute}} 
 
 The output should be as follows:
 
@@ -10,6 +10,8 @@ The output should be as follows:
 Fool me once shame on you
 Fool me twice shame on me
 ```
+
+**Note** Press `Ctrl + C` after receiving the message to quit above script.
 
 The parameters are the topic's name and the name of the broker producer. Also, the --from-beginning parameter indicates that messages should be consumed from the beginning instead of the last messages in the log (now test it, generate many more messages, and don't specify this parameter).
 
@@ -26,12 +28,6 @@ There are more useful parameters for this command, some important ones are as fo
 The most requested forms of this command are as follows:
 
 To consume just one message, use the following:
-`~/kafka/bin/kafka-console-consumer --topic  amazingTopic --bootstrap-server localhost:9092 --max-messages 1`{{execute}} 
- 
-To consume one message from an offset, use the following:
-`~/kafka/bin/kafka-console-consumer --topic  amazingTopic --bootstrap-server localhost:9092 --max-messages 1 --formatter 'kafka.coordinator.GroupMetadataManager$OffsetsMessageFormatter'`{{execute}} 
-
-To consume messages from a specific consumer group, use the following:
-`~/kafka/bin/kafka-console-consumer –topic amazingTopic -- bootstrap-server localhost:9092 --new-consumer --consumer-property group.id=my-group`{{execute}} 
-
-**Note** Press `Ctrl + C` after receiving the message to quit above script.
+```
+~/kafka/bin/kafka-console-consumer.sh --topic  amazingTopic --bootstrap-server localhost:9092 --max-messages 1
+```

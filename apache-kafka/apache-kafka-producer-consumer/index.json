@@ -17,19 +17,19 @@
       "text": "steps/3/text.md"
     },
 	{
-      "title": "Start Kafka",
+      "title": "Kafka Topics",
       "text": "steps/4/text.md"
     },
   {
-      "title": "Zookeeper",
+      "title": "Kafka Topics...",
       "text": "steps/5/text.md"
     },
     {
-        "title": "Publish & Subscribe",
+        "title": "A command-line message producer",
         "text": "steps/6/text.md"
     },
     {
-        "title": "A command-line message producer",
+        "title": "A command-line message consumer",
         "text": "steps/7/text.md"
     },
     {
