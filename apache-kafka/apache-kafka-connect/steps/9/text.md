@@ -8,6 +8,8 @@ BUILD SUCCESSFUL in 57s
 5 actionable tasks: 5 executed
 ```
 
+**Note:** If above command fails first time, you can try again.
+
 Running the main method of the `PlainProducer` and console consumer for the uptimes topic. The output on the console consumer of the producer should be similar to the following:
 
 ```

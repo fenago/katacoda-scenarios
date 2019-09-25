@@ -4,9 +4,11 @@ To build the project, run this command from the kioto directory:
 If everything is correct, the output is something like the following:
 
 ```
-BUILD SUCCESSFUL in 57s
-5 actionable tasks: 5 executed
+BUILD SUCCESSFUL in 3s
+1 actionable task: 1 executed
 ```
+
+**Note:** If above command fails first time, you can try again.
 
 #### Kafka Consumer
 Run a console consumer for the uptimes topic, shown as follows:

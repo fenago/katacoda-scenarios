@@ -10,6 +10,7 @@ BUILD SUCCESSFUL in 3s
 
 
 **Note:** 
+- If above gradle command fails first time, you can try again.
 - Following two commands will run in **terminal 2** (It will open automatically on executing command). 
 - Interface will keep switching back to terminal 1 because producer is running there after executing above command, you can manually switch by clicking `terminal 2`.
 

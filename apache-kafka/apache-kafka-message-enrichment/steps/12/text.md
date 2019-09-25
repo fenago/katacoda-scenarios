@@ -9,6 +9,8 @@ BUILD SUCCESSFUL in 8s
 2 actionable tasks: 2 executed
 ```
 
+**Note:** If above command fails first time, you can try again.
+
 To run the project, we need four different command-line windows. Folllowing figure shows the command-line windows arrangement:
 
 ![](https://github.com/fenago/katacoda-scenarios/raw/master/apache-kafka/apache-kafka-message-enrichment/steps/12/1.jpg)

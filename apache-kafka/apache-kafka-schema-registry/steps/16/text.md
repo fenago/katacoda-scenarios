@@ -8,6 +8,7 @@ BUILD SUCCESSFUL in 3s
  1 actionable task: 1 executed
 ```
 
+**Note:** If above command fails first time, you can try again.
 
 #### Kafka Consumer
 The broker is running on port 9092. To create the `healthchecks-avro` topic, execute the following command:

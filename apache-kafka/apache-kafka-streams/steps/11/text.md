@@ -8,6 +8,7 @@ BUILD SUCCESSFUL in 1s
 6 actionable task: 6 up-to-date
 ```
 
+**Note:** If above command fails first time, you can try again.
 
 The first step is to run a console consumer in **terminal 1** for the uptimes topic, shown as follows:
 `~/kafka/bin/kafka-console-consumer.sh --bootstrap-server localhost:9092 --topic uptimes --property print.key=true`{{execute T1}} 
