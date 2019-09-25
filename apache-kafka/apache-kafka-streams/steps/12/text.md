@@ -105,5 +105,3 @@ props.put("application.id", "kioto");
 KafkaStreams streams = new KafkaStreams(topology, props);
 streams.start();
 ```
-
-Note that the code could be cleaner: we could create our own Serde that includes the deserialization code, so we can directly deserialize Avro Objects into HealthCheckObjects. To achieve this, this class has to extend the generic Avro deserializer. We leave this as an exercise for you.
