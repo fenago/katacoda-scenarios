@@ -10,6 +10,7 @@ Linux users can install Gradle with the apt-get command, as follows:
 `yes | apt-get install gradle`{{execute T1}} 
 
 `gradle -v`{{execute T1}} 
+
 The output is something like the following:
 
 ```

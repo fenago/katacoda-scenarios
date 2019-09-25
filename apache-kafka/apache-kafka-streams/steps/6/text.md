@@ -1,13 +1,12 @@
 To build the project, run this command from the kioto directory:
+`gradle build`{{execute T1}}
 
-```
-$ gradle build
 If everything is correct, the output is something like the following:
 
 ```
 BUILD SUCCESSFUL in 1s
 6 actionable task: 6 up-to-date
-
+```
 
 The first step is to run a console consumer in **terminal 1** for the uptimes topic, shown in the following code snippet:
 `~/kafka/bin/kafka-console-consumer.sh --bootstrap-server localhost:9092 --topic uptimes --property print.key=true`{{execute T1}}
