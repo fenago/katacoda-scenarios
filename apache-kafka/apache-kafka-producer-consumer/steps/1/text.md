@@ -2,7 +2,7 @@ In this step, we will setup VScode editor and clone respository.
 
 Click **IDE Editor** tab to open Visual Studio and click explorer.
 
-Next, clone the following repository by copying & executing following command.
+Clone the following repository by copying & executing following command.
 `git clone https://github.com/athertahir/kafka.git`{{execute}}
 
 #### Install Kafka/Zookeeper
