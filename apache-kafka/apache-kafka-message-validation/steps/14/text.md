@@ -1,8 +1,10 @@
-At the moment, the ProcessingEngine class coordinates the Reader and Writer classes. It contains the main method to coordinate them. We have to edit the ProcessingEngine class located in the src/main/java/monedero/ directory and change Writer with Validator, as in Listing 2.10.
+**Important:** This step is required to be completed before proceeding. Copy following code and replace **ProcessingEngine.java** file located inside `kafka/Chapter02/monedero/src/main/java/monedero/` as shown below:
 
-The following is the content of Listing 2.10, ProcessingEngine.java:
+![](https://github.com/fenago/katacoda-scenarios/raw/master/apache-kafka/apache-kafka-message-validation/steps/14/1.JPG)
 
-```
+At the moment, the ProcessingEngine class coordinates the Reader and Writer classes. It contains the main method to coordinate them. We have to edit the ProcessingEngine class located in the src/main/java/monedero/ directory and change Writer with Validator:
+
+<pre class="file" data-target="clipboard">
 package monedero;
 public class ProcessingEngine {
   public static void main(String[] args) {
@@ -16,7 +18,7 @@ public class ProcessingEngine {
     reader.run(validator);
   }
 }
-```
+</pre>
 
 ProcessingEngine receives five arguments from the command line:
 

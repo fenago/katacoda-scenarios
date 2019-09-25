@@ -20,8 +20,8 @@ public class ProcessingEngine {
 
 The processing engine receives the following five arguments from the command line:
 
-args[0]servers indicates the host and port of the Kafka broker
-args[1]groupId indicates that the consumer is part of this Kafka consumer group
-args[2]input topic indicates the topic where the reader reads from
-args[3]validTopic indicates the topic where valid messages are sent
-args[4]invalidTopic indicates the topic where invalid messages are sent
+- **args[0]:** servers, indicates the host and port of the Kafka broker
+- **args[1]:** groupId, indicates that the consumer is part of this Kafka consumer group
+- **args[2]:** inputTopic, the topic where Reader reads from
+- **args[3]:** validTopic, the topic where valid messages are sent
+- **args[4]:** invalidTopic, the topic where invalid messages are sent

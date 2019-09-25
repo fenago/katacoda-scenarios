@@ -1,4 +1,3 @@
-Extracting the currency price
 At the moment, Monedero has a service that validates the messages that are well formed. The service also enriches the messages with the customer's geographic location.
 
 Recall that the Monedero core business is the cryptocurrencies exchange. So now, the business asks us for a service that returns the requested currency price online at a specific time.

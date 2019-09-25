@@ -13,16 +13,3 @@ Now, move in the directory which contains scripts to install kafka, copy and exe
 
 **Note:**
 The supplied commands in the next steps MUST be run from your `Chapter03/monedero` sub-directory of the **kafka** repository clone.
-
-#### Case Study
-Let's present our case study. We need to model the systems of Monedero, a fictional company whose core business is cryptocurrency exchange. Monedero wants to base its IT infrastructure on an enterprise service bus (ESB) built with Apache Kafka. The Monedero IT department wants to unify the service backbone across the organization. Monedero also has worldwide, web-based, and mobile-app-based clients, so a real-time response is fundamental.
-
-In this scenario, we will cover the following topics:
-
-- Modeling the messages in JSON format
-- Setting up a Kafka project with Gradle
-- Reading from Kafka with a Java client
-- Writing to Kafka with a Java client
-- Running a processing engine pipeline
-- Coding a Validator in Java
-- Running the validation
