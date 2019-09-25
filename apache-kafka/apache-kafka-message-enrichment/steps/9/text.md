@@ -1,14 +1,14 @@
-In the first command-line terminal, move to the Confluent directory and start it, as follows:
-`~/kafka/bin/confluent start`{{execute T1}} 
+The customer consults the ETH price event, starts in the client's web browser, and is dispatched to Kafka through some HTTP event collector. The second step is to enrich the message with the currency price from open exchange rates service.
 
-Once the control center (Zookeeper and Kafka included) is running in the same command-line terminal, generate the two necessary topics, as follows:
+In summary, here are the architecture steps for the Monedero processing engine:
 
-`~/kafka/bin/kafka-topics.sh --create --zookeeper localhost:2181 --replication-factor 1 --partitions 1 --topic input-topic`{{execute T1}} 
+- Read the individual events from a Kafka topic called input-messages
+- Validate the message, sending any defective event to a specific Kafka topic called invalid-messages
+- Enrich the message with the currency price from open exchange rates service
+- Write the enriched messages in a Kafka topic called valid-messages
 
-`~/kafka/bin/kafka-topics.sh --create --zookeeper localhost:2181 --replication-factor 1 --partitions 1 --topic output-topic`{{execute T1}} 
+The final version of the stream processing engine is detailed in Figure 3.2:
 
-Recall, to display the topics running in our cluster type, use the following:
-`~/kafka/bin/kafka-topics.sh --list --zookeeper localhost:2181`{{execute T1}} 
+![](https://github.com/fenago/katacoda-scenarios/raw/master/apache-kafka/apache-kafka-message-enrichment/steps/9/1.png)
 
-In the same command-line terminal, start the console producer running the input-topic topic, as follows:
-`~/kafka/bin/kafka-console-producer --broker-list localhost:9092 --topic input-topic`{{execute T1}} 
+The processing engine reads the messages from the input-messages topic, validates the messages, routes the defective ones to invalid-messages queue, enriches the messages with geographic location and price, and finally, writes them to valid-messages queue.

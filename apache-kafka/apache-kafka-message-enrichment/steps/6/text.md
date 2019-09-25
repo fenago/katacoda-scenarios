@@ -1,30 +1,82 @@
-As with the consumer interface, an implementation of the producer interface is needed. In this first version, we just pass the incoming messages to another topic without modifying the messages. The implementation code is in Listing 2.7 and should be saved in a file called Writer.java in the src/main/java/m directory.
 
-The following is the content of Listing 2.7,  Writer.java:
+Now, let's create a file called Enricher.java in the src/main/java/monedero/directory with the content of Listing 3.3:
 
 ```
 package monedero;
+
+import com.fasterxml.jackson.databind.JsonNode;
+import com.fasterxml.jackson.databind.ObjectMapper;
+import com.fasterxml.jackson.databind.node.ObjectNode;
+import com.maxmind.geoip.Location;
+import monedero.extractors.GeoIPService;
 import org.apache.kafka.clients.producer.KafkaProducer;
-public class Writer implements Producer {
+import java.io.IOException;
+
+public final class Enricher implements Producer {
   private final KafkaProducer<String, String> producer;
-  private final String topic;
-  Writer(String servers, String topic) {
-    this.producer = new KafkaProducer<>(
-        Producer.createConfig(servers));//1
-    this.topic = topic;
+  private final String validMessages;
+  private final String invalidMessages;
+  private static final ObjectMapper MAPPER = new ObjectMapper();
+  public Enricher(String servers, String validMessages, String 
+    invalidMessages) {
+    this.producer = new KafkaProducer<> 
+    (Producer.createConfig(servers));
+    this.validMessages = validMessages;
+    this.invalidMessages = invalidMessages;
   }
   @Override
   public void process(String message) {
-    Producer.write(this.producer, this.topic, message);//2
+    try {
+      // this method below is filled below  
+    } catch (IOException e) {
+      Producer.write(this.producer, this.invalidMessages, "{\"error\": \""
+          + e.getClass().getSimpleName() + ": " + e.getMessage() + "\"}");
+    }
   }
 }
 ```
 
-Listing 2.7: Writer.java
+As expected, the Enricher class implements the producer interface; therefore the Enricher is a producer.
 
-In this implementation of the Producer class, we see the following: 
+Let's fill the code of the process() method.
 
-- The `createConfig` method is invoked to set the necessary properties from the producer interface
-- The process method writes each incoming message in the output topic. As the message arrives from the topic, it is sent to the target topic.
+If the customer message does not have an IP address, the message is automatically sent to invalid-messages topic, as follows:
 
-This producer implementation is very simple; it doesn't modify, validate, or enrich the messages. It just writes them to the output topic.
+```
+      final JsonNode root = MAPPER.readTree(message);
+      final JsonNode ipAddressNode =   
+        root.path("customer").path("ipAddress");
+      if (ipAddressNode.isMissingNode()) {
+        Producer.write(this.producer, this.invalidMessages,
+            "{\"error\": \"customer.ipAddress is missing\"}");
+      } else {
+        final String ipAddress = ipAddressNode.textValue();
+```
+
+The Enricher class invokes the getLocationmethod of GeoIPService , as follows:
+
+```
+final Location location = new GeoIPService().getLocation(ipAddress);
+ 
+
+ 
+
+The country and the city of the location are added to the customer message, as in the example:
+
+```
+        ((ObjectNode) root).with("customer").put("country",  
+             location.countryName); 
+        ((ObjectNode) root).with("customer").put("city", 
+             location.city);
+```
+The enriched message is written to the valid-messages queue, as follows:
+
+```
+        Producer.write(this.producer, this.validMessages, 
+           MAPPER.writeValueAsString(root));
+    }
+```
+
+Note that the location object brings more interesting data; for this example, just the city and the country are extracted. For example, the MaxMind database can give us much more precision than the one exploited in this example. In effect, the online API can accurately show the exact location of an IP.
+
+Also note that here we have a very simple validation. In the next chapter, we will see how to validate the schema correctness. For the moment, think of other validations that are missing to have a system that meets the business requirements.

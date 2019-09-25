@@ -1,17 +1,46 @@
-Reading from Kafka
-Now that we have our project skeleton, let's recall the project requirements for the stream processing engine. Remember that our event customer consults ETH price occurs outside Monedero and that these messages may not be well formed, that is, they may have defects. The first step in our pipeline is to validate that the input events have the correct data and the correct structure. Our project will be called ProcessingEngine.
+Open the build.gradle file on the Monedero project created in Chapter 2, Message Validation, and add the lines highlighted in Listing 3.1.
 
-The ProcessingEngine specification shall create a pipeline application that does the following:
+The following is the content of Listing 3.1, the Monedero build.gradle file:
 
-Reads each message from a Kafka topic called input-messages
-Validates each message, sending any invalid event to a specific Kafka topic called invalid-messages
-Writes the correct messages in a Kafka topic called valid-messages
-These steps are detailed in Figure 2.1, the first sketch for the pipeline processing engine:
+Copy
+apply plugin: 'java'
+apply plugin: 'application'
+sourceCompatibility = '1.8'
+mainClassName = 'monedero.ProcessingEngine'
+repositories {
+  mavenCentral()
+}
+version = '0.2.0'
+dependencies {
+    compile group: 'org.apache.kafka', name: 'kafka_2.12', version:                                                                                                                                              
+                                                            '2.0.0'
+compile group: 'com.maxmind.geoip', name: 'geoip-api', version:                                         
+                                                            '1.3.1'
+    compile group: 'com.fasterxml.jackson.core', name: 'jackson-core', version: '2.9.7'
+}
+jar {
+  manifest {
+    attributes 'Main-Class': mainClassName
+  } from {
+    configurations.compile.collect {
+      it.isDirectory() ? it : zipTree(it)
+    }
+  }
+  exclude "META-INF/*.SF"
+  exclude "META-INF/*.DSA"
+  exclude "META-INF/*.RSA"
+}
+Listing 3.1: build.gradle
 
+Note that the first change is the switch from version 0.1.0 to version 0.2.0 .
 
-Figure 2.1: The processing engine reads events from the input-messages topic, validates the messages, and routes the defective ones to invalid-messages topic and the correct ones to valid-messages topic
+The second change is to add the MaxMind's GeoIP version 1.3.1 to our project.
 
-The processing engine stream construction has two phases:
+From the project root directory, run the following command to rebuild the app:
 
-Create a simple Kafka worker that reads from the input-messages topic in Kafka and writes the events to another topic
-Modify the Kafka worker to make the validation
+Copy
+$ gradle jar
+The output is something like the following:
+
+Copy
+...BUILD SUCCESSFUL in 8s

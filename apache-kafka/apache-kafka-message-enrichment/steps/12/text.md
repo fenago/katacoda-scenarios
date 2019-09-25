@@ -1,16 +1,18 @@
-The Writer class implements the producer interface. The idea is to modify that Writer and build a validation class with minimum effort. The Validator process is as follows:
+To rebuild the project from the monedero directory, run the following command:
 
-- Read the Kafka messages from the input-messages topic
-- Validate the messages, sending defective messages to the invalid-messages topic
-- Write the well-formed messages to valid-messages topic
-A
-t the moment, for this example, the definition of a valid message is a message t0 which the following applies:
-- It is in JSON format
-- It contains the four required fields: event, customer, currency, and timestamp
+gradle jar
+ 
 
-If these conditions are not met, a new error message in JSON format is generated, sending it to the invalid-messages Kafka topic. The schema of this error message is very simple:
+If everything is OK, the output should be similar to the following:
 
 ```
-{"error": "Failure description" }
+...
+BUILD SUCCESSFUL in 8s
+2 actionable tasks: 2 executed
 ```
 
+To run the project, we need four different command-line windows. Figure 3.3 shows the command-line windows arrangement:
+
+![](https://github.com/fenago/katacoda-scenarios/raw/master/apache-kafka/apache-kafka-message-enrichment/steps/12/1.jpg)
+
+The four terminal windows to test the processing engine including: message producer, valid message consumer, invalid message consumer, and the processing engine itself

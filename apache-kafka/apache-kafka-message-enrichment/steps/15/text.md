@@ -1,17 +1,3 @@
+In the fourth command-line terminal, start up the processing engine. From the project root directory (where the gradle jar command were executed) run this command:
 
-
-To rebuild the project from the monedero directory, run the following command:
-`gradle jar`{{execute T1}} 
-
-If everything is OK, the output should be similar to the following:
-
-```
-...
-BUILD SUCCESSFUL
-...
-```
-
-To run the project, we need four different command-line windows. Figure 2.3 shows the command-line windows arrangement:
-
-
-Figure 2.3: The four terminal windows to test the processing engine including: message producer, valid-message consumer, invalid-message consumer, and the processing engine itself
+`cd ~/kafka/Chapter03/monedero && java -jar ./build/libs/monedero-0.1.0.jar localhost:9092 foo input-topic valid-messages invalid-messages`{{execute T4}} 

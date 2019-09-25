@@ -1,25 +1,13 @@
-We are going to build our project with Gradle. The first step is to download and install Gradle from http://www.gradle.org/downloads.
+In this scenario, we will work with our fictitious company that is dedicated to the exchange of cryptocurrencies. If we remember in the previous scenario, the messages of Monedero were validated.
 
-Gradle only requires a Java JDK (version 7 or higher).
+In this context, we understand enrichment as adding extra data that was not in the original message. In this scenario, we will see how to enrich a message with geographic location using the MaxMind database and how to extract the current value of the exchange rate using the Open Exchange data. If we remember the events that we modeled for Monedero, each one included the IP address of the customer's computer.
 
 
-```
-==> Downloading https://services.gradle.org/distributions/gradle-4.10.2-all.zip
-==> Downloading from https://downloads.gradle.org/distributions/gradle-4.10.2-al
-######################################################################## 100.0%
-  /usr/local/Cellar/gradle/4.10.2: 203 files, 83.7MB, built in 59 seconds
-```
+This scenario covers the following topics:
 
-Linux users can install Gradle with the apt-get command, as follows:
-
-`apt-get update && yes | apt-get install gradle`{{execute T1}} 
- 
-
-`gradle -v`{{execute T1}} 
-The output is something like the following:
-
-```
-------------------------------------------------------------
-Gradle 4.10.2
-------------------------------------------------------------
-```
+- How extraction works
+- How enrichment works
+- Extracting the location given an IP address
+- Extracting the currency price given a currency
+- Enriching messages with a currency price
+- Running a processing engine
