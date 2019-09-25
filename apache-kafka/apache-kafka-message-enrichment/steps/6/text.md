@@ -1,5 +1,5 @@
 
-Now, let's create a file called Enricher.java in the src/main/java/monedero/directory with the content of Listing 3.3:
+Now, let's open a file in **vscode** explorer called Enricher.java in the src/main/java/monedero/directory with the content:
 
 ```
 package monedero;

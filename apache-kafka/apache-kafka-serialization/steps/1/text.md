@@ -12,8 +12,8 @@ Now, move in the directory which contains scripts to install kafka, copy and exe
 `./install.sh && ./start.sh && cd ../Chapter04/kioto`{{execute T1}} 
 
 **Note:**
-The supplied commands in the next steps MUST be run from your `Chapter04/kioto` sub-directory of the **kafka** repository clone.
-
+- The supplied commands in the next steps MUST be run from your `Chapter04/kioto` sub-directory of the **kafka** repository clone.
+- Final code was already cloned from github for this scenario. You can just understand the application code in the next steps and run it using the instructions.
 
 #### Serialization/Deserialization
 In modern (internet) computing, entities must be transmitted from one computer to another. In order to be able to transmit the entities, they must first be serialized.

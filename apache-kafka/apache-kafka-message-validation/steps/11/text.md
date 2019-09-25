@@ -16,7 +16,6 @@ Go to the `first` command-line terminal (the message producer) and send the foll
 
 `{"event": "CUSTOMER_CONSULTS_ETHPRICE", "customer": {"id": "15887564", "name": "Mills, Lindsay", "ipAddress": "186.46.129.15"}, "currency": {"name": "ethereum", "price": "USD"}, "timestamp": "2018-09-28T19:51:35Z"}`{{execute T1}} 
 
-If everything is working fine, the messages typed in the console-producer should be appearing in the console-consumer window, because the processing engine is copying from `input-topic` to `output-topic`.
+If everything is working fine, the messages typed in the console-producer should be appearing in the console-consumer window, because the processing engine is copying from `input-topic` to `output-topic`. Switch back to `terminal 2` to confirm.
 
-
-**Note:** Use `Ctrl` + `C` in terminal 1 to stop the producer before proceeding to next step.
+**Note:** Press `Ctrl` + `C` in terminal 1, 2 & 3 to stop everything before proceeding to next step.

@@ -5,7 +5,7 @@ Let's proceed with the first step. Build a Kafka worker that reads individual ra
 
 For our project, a consumer is a Java interface that contains all of the necessary behavior for all classes that implement consumers.
 
-Create a file called `Consumer.java` in the src/main/java/monedero/directory:
+Open a file called `Consumer.java` in the src/main/java/monedero/directory:
 
 ```
 package monedero;
@@ -30,7 +30,7 @@ public interface Consumer {
 
 The consumer interface encapsulates the common behavior of the Kafka consumers. The consumer interface has the createConfig method that sets all of the properties needed by all of the Kafka consumers. Note that the deserializers are of the StringDeserializertype because the Kafka consumer reads Kafka key-value records where the value are of the type string.
 
-Now, create a file called `Reader.java` in the src/main/java/monedero/directory:
+Now, open a file in **vscode** explorer called `Reader.java` in the src/main/java/monedero/directory:
 
 ```
 package monedero;

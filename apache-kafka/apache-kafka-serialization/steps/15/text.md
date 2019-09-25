@@ -5,6 +5,8 @@ Run a console consumer  in **terminal 1** for HealthChecksTopic as follows:
 Run the main method of the `CustomProducer` in **terminal 2** by running following command.
 `cd ~/kafka/Chapter04/kioto && java -cp ./build/libs/kioto-0.1.0.jar kioto.custom.CustomProducer`{{execute T2}} 
 
+**Note:** Press `Ctrl` + `C` in terminal 1 and 2 to stop everything before proceeding to next step.
+
 #### Output
 The output on the console consumer should be similar to the following:
 ```

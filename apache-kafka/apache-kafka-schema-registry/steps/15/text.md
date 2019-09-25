@@ -1,6 +1,6 @@
 
 
-Now, in the src/main/java/kioto/avro directory, create a file called AvroProducer.java with the contents of Listing 5.4:
+Now, in the src/main/java/kioto/avro directory, open a file in **vscode** explorer called AvroProducer.java with the contents of Listing 5.4:
 
 ```
 package kioto.avro;

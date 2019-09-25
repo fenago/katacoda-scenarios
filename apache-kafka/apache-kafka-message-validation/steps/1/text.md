@@ -12,7 +12,8 @@ Now, move in the directory which contains scripts to install kafka, copy and exe
 `./install.sh && ./start.sh && cd ../Chapter02/monedero`{{execute T1}} 
 
 **Note:**
-The supplied commands in the next steps MUST be run from your `Chapter02/monedero` sub-directory of the **kafka** repository clone.
+- The supplied commands in the next steps MUST be run from your `Chapter02/monedero` sub-directory of the **kafka** repository clone.
+- Final code was already cloned from github for this scenario. You can just understand the application code in the next steps and run it using the instructions.
 
 #### Case Study
 Let's present our case study. We need to model the systems of Monedero, a fictional company whose core business is cryptocurrency exchange. Monedero wants to base its IT infrastructure on an enterprise service bus (ESB) built with Apache Kafka. The Monedero IT department wants to unify the service backbone across the organization. Monedero also has worldwide, web-based, and mobile-app-based clients, so a real-time response is fundamental.

@@ -1,10 +1,10 @@
 To run the EventProcessor, follow these steps:
 
 Create the aggregates topic as follows:
-`~/kafka/bin/kafka-topics --zookeeper localhost:2181 --create --topic aggregates --replication-factor 1 --partitions 4`{{execute T1}} 
+`~/kafka/bin/kafka-topics.sh --zookeeper localhost:2181 --create --topic aggregates --replication-factor 1 --partitions 4`{{execute T1}} 
 
 Run a console consumer for the aggregates topic, as follows:
-`~/kafka/bin/kafka-console-consumer --bootstrap-server localhost:9092 --topic aggregates --property print.key=true`{{execute T1}} 
+`~/kafka/bin/kafka-console-consumer.sh --bootstrap-server localhost:9092 --topic aggregates --property print.key=true`{{execute T1}} 
 
 #### Run EventProducer
 Run the main method of the `EventProducer` in **terminal 2** by running following command.

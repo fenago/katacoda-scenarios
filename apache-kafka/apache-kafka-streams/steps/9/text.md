@@ -2,7 +2,7 @@ Summing up what has happened so far, in previous chapters we saw how to make a p
 
 In this section, we will use all our knowledge so far to build a CustomStreamsProcessor with Kafka Streams to use our own SerDe.
 
-Now, in the src/main/java/kioto/custom directory, create a file called CustomStreamsProcessor.java with the contents of Listing 6.3, shown as follows:
+Now, in the src/main/java/kioto/custom directory, open a file in **vscode** explorer called CustomStreamsProcessor.java with the contents of Listing 6.3, shown as follows:
 
 ```
 import ...

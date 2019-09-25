@@ -1,8 +1,7 @@
 
- From a new command-line window, we execute the same command, shown as follows:
-```
-$ java -cp ./build/libs/kioto-0.1.0.jar 
-kioto.plain.PlainStreamsProcessor
+From a new command-line window, we execute the same command, shown as follows:
+`java -cp ./build/libs/kioto-0.1.0.jar kioto.plain.PlainStreamsProcessor
+
 The output should be something like the following:
 
 ```

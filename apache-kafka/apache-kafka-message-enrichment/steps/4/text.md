@@ -1,4 +1,4 @@
-Open a file called GeoIPService.java in the src/main/java/monedero/extractors directory containing the content of Listing 3.2:
+Open a file called GeoIPService.java in the src/main/java/monedero/extractors directory containing the content:
 
 ```
 package monedero.extractors;

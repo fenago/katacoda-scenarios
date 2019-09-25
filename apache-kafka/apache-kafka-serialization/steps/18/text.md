@@ -1,4 +1,4 @@
-Now, in the src/main/java/kioto/custom directory, create a file called `CustomProcessor.java` with the content of Listing 4.16.
+Now, in the src/main/java/kioto/custom directory, open a file in **vscode** explorer called `CustomProcessor.java` with the content of Listing 4.16.
 
 ```
 package kioto.custom;

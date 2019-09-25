@@ -1,4 +1,4 @@
-Now, in the src/main/java/kioto/spark directory, create a file called SparkProcessor.java with the contents of Listing 8.2, shown as follows:
+Now, in the src/main/java/kioto/spark directory, open a file in **vscode** explorer called SparkProcessor.java with the contents of Listing 8.2, shown as follows:
 
 ```
 package kioto.spark;

@@ -1,4 +1,4 @@
-Now, in the src/main/java/kioto/plaindirectory, create a file called `PlainStreamsProcessor.java` with the content shown as follows:
+Now, in the src/main/java/kioto/plaindirectory, open a file in **vscode** explorer called `PlainStreamsProcessor.java` with the content shown as follows:
 
 ```
 import ...

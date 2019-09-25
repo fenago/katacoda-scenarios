@@ -29,14 +29,6 @@
         "text": "steps/6/text.md"
     },
     {
-        "title": "Scaling out with Kafka Streams",
-        "text": "steps/7/text.md"
-    },
-    {
-        "title": "Scaling out with Kafka Streams...",
-        "text": "steps/8/text.md"
-    },
-    {
         "title": "Java CustomStreamsProcessor",
         "text": "steps/9/text.md"
     },

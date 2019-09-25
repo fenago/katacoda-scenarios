@@ -1,6 +1,6 @@
 Now, let's solve the problem of counting how many events are in each window. For this, we will use Kafka Streams. When we do this type of analysis, it is said that we are doing streaming aggregation.
 
-In the src/main/java/kioto/events directory, create a file called `EventProcessor.java` with the contents as shown follows:
+In the src/main/java/kioto/events directory, open a file in **vscode** explorer called `EventProcessor.java` with the contents as shown follows:
 
 ```
 package kioto.events;

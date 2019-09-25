@@ -13,7 +13,7 @@ Run the main method of the `CustomProducer` in **terminal 3** by running followi
 `cd ~/kafka/Chapter04/kioto && java -cp ./build/libs/kioto-0.1.0.jar kioto.custom.CustomProducer`{{execute T3}} 
 
 
-The output on the console consumer for the uptimes topic should be similar to the following:
+The output on the console consumer **(terminal 1)** for the `uptimes` topic should be similar to the following:
 
 ```
 EW05-HV36   33

@@ -10,7 +10,7 @@ compile 'io.confluent:kafka-streams-avro-serde:5.0.0'
 This dependency has the GenericAvroSerde and specific avroSerde explained in previous chapters. Both Serde implementations allow us to work with Avro records.
 
 
-Now, in the src/main/java/kioto/avro directory, create a file called AvroStreamsProcessor.java with the contents of Listing 6.4, shown as follows:
+Now, in the src/main/java/kioto/avro directory, open a file in **vscode** explorer called AvroStreamsProcessor.java with the contents of Listing 6.4, shown as follows:
 
 ```
 import ...

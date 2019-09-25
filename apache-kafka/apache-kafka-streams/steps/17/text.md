@@ -12,6 +12,8 @@ Run a console consumer in **terminal 1** for the events topic using the followin
 Run the main method of the `EventProducer` in **terminal 2** by running following command.
 `cd ~/kafka/Chapter06/kioto && java -cp ./build/libs/kioto-0.1.0.jar kioto.events.EventProducer`{{execute T2}} 
 
+**Note:** Press `Ctrl` + `C` in terminal 1 and 2 to stop everything before proceeding to next step.
+
 The output on the console consumer for the events topic should be similar to the following:
 ```
 1532529060000,47, on time

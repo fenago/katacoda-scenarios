@@ -16,11 +16,11 @@ The first step is to run a console consumer for the uptimes topic, shown as foll
 
 #### Run AvroStreamsProcessor
 Run the main method of the `AvroStreamsProcessor` in **terminal 2** by running following command.
-`cd ~/kafka/Chapter04/kioto && java -cp ./build/libs/kioto-0.1.0.jar kioto.avro.AvroStreamsProcessor`{{execute T2}} 
+`cd ~/kafka/Chapter06/kioto && java -cp ./build/libs/kioto-0.1.0.jar kioto.avro.AvroStreamsProcessor`{{execute T2}} 
 
 #### Run AvroProducer
 Run the main method of the `AvroProducer` in **terminal 3** by running following command.
-`cd ~/kafka/Chapter04/kioto && java -cp ./build/libs/kioto-0.1.0.jar kioto.avro.AvroProducer`{{execute T3}} 
+`cd ~/kafka/Chapter06/kioto && java -cp ./build/libs/kioto-0.1.0.jar kioto.avro.AvroProducer`{{execute T3}} 
 
 The output on the console consumer for the uptimes topic should be similar to the following:
 ```

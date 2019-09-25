@@ -1,4 +1,4 @@
-Now, let's create a file called OpenExchangeService.java in the src/main/java/monedero/extractorsdirectory with the content of Listing 3.4:
+Now, let's open a file in **vscode** explorer called OpenExchangeService.java in the src/main/java/monedero/extractorsdirectory with the content:
 
 ```
 package monedero.extractors;

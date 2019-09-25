@@ -26,4 +26,4 @@ Gradle 4.10.2
 ------------------------------------------------------------
 ```
 
-Open the build.gradle file on the Monedero project inside in Chapter3 folder using vscode explorer and see its contents.
+Open the `build.gradle` file on the Monedero project inside in `Chapter3` folder using **vscode** explorer and see its contents.

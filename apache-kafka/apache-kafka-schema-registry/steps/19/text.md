@@ -1,4 +1,4 @@
-Now, in the src/main/java/kioto/avro directory, create a file called AvroProcessor.java with the contents of Listing 5.6:
+Now, in the src/main/java/kioto/avro directory, open a file in **vscode** explorer called AvroProcessor.java with the contents of Listing 5.6:
 
 ```
 package kioto.plain;

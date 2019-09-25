@@ -1,4 +1,4 @@
-Now, in the src/main/java/kioto/custom directory, create a file called CustomProducer.java with the content of Listing 4.13.
+Now, in the src/main/java/kioto/custom directory, open a file in **vscode** explorer called CustomProducer.java with the content of Listing 4.13.
 
 The following is the content of Listing 4.13, CustomProducer.java:
 

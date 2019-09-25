@@ -8,7 +8,7 @@ To simplify things, our generator will constantly send events at a fixed rate. A
 
 When we say that the window is of 10 seconds, we mean that we will make aggregations every 10 seconds. Remember that the objective of the test is that the late events are counted in the correct window.
 
-Create the src/main/java/kioto/events directory and, inside it, create a file called EventProducer.java with the contents of Listing 6.5, shown as follows:
+Create the src/main/java/kioto/events directory and, inside it, open a file in **vscode** explorer called EventProducer.java with the contents of Listing 6.5, shown as follows:
 
 ```
 package kioto.events;

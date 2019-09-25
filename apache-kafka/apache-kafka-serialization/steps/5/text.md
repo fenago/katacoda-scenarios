@@ -7,13 +7,13 @@ The first thing we need is a data source; to make it simple we need to produce o
 
 {"event":"HEALTH_CHECK","factory":"Duckburg","serialNumber":"NB49-XL51","type":"NUCLEAR","status":"RUNNING","lastStartedAt":"2018-08-18T05:42:29.648+0000","temperature":49.0,"ipAddress":"42.181.105.188"}
 ...
+```
+
 Let's start by creating a Kafka producer that we will use to send the input messages.
 
-As we already know, there are two requisites that all of the Kafka producers should have: they must be KafkaProducer and have specific properties set, as shown in Listing 4.6.
-
+As we already know, there are two requisites that all of the Kafka producers should have: they must be KafkaProducer and have specific properties set, as shown below.
  
-
-The following is the content of Listing 4.6, the constructor method for PlainProducer:
+The following content, the constructor method for PlainProducer:
 
 ```
 import org.apache.kafka.clients.producer.KafkaProducer;
@@ -34,17 +34,17 @@ public final class PlainProducer {
 
 An analysis of the PlainProducer constructor includes the following:
 
-- In line //1, the list of the brokers where our producer will be running
-- In line //2, the serializer type for the messages' keys (we will see serializers later)
-- In line //3, the serializer type for the messages' values (in this case, the values are strings)
-- In line //4, with these properties we build a KafkaProducer with string keys and string values, for example,  <String, String>
+- In line `//1`, the list of the brokers where our producer will be running
+- In line `//2`, the serializer type for the messages' keys (we will see serializers later)
+- In line `//3`, the serializer type for the messages' values (in this case, the values are strings)
+- In line `//4`, with these properties we build a KafkaProducer with string keys and string values, for example,  <String, String>
 
 **Note** that properties behave like a HashMap; in languages such as Kotlin, the properties assignment could be made using the =operator, rather than by calling a method
 
 
 We are using a string serializer for both keys and values: in this first approach, we will serialize the values to JSON manually using Jackson. We will see later how to write a custom serializer.
 
-Now, in the src/main/java/kioto/plain directory, create a file called PlainProducer.java with the content of Listing 4.7.
+Now, in the src/main/java/kioto/plain directory, open a file in **vscode** explorer called PlainProducer.java with the content of Listing 4.7.
 
 The following is the content of Listing 4.7, PlainProducer.java: 
 

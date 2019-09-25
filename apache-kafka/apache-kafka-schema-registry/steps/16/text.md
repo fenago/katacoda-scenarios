@@ -9,6 +9,7 @@ BUILD SUCCESSFUL in 3s
 ```
 
 
+#### Kafka Consumer
 The broker is running on port 9092. To create the `healthchecks-avro` topic, execute the following command:
 `~/kafka/bin/kafka-topics.sh --zookeeper localhost:2181 --create --topic healthchecks-avro --replication-factor 1 --partitions 4`{{execute}} 
 

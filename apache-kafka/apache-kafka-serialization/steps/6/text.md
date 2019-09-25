@@ -9,7 +9,9 @@ BUILD SUCCESSFUL in 3s
 ```
 
 
-**Note:** Commands below will run in **terminal 2** (It will open automatically on executing command). 
+**Note:** 
+- Following two commands will run in **terminal 2** (It will open automatically on executing command). 
+- Interface will keep switching back to terminal 1 because producer is running there after executing above command, you can manually switch by clicking `terminal 2`.
 
 #### Kafka topics
 The broker is running on port 9092. To create the healthchecks topic, execute the following:
@@ -38,7 +40,7 @@ The output on the console consumer should be similar to the following:
  
 ```
 
-**Important** Press `Ctrl + C` in terminal **1** and **3** to quit programs before proceeding.
+**Important** Press `Ctrl + C` in terminal **1** and **2** to quit programs before proceeding.
 
 
 There is a trade-off among three factors: the availability to produce messages, the latency in the production, and the guarantee of the safe write.

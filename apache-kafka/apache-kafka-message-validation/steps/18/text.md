@@ -4,7 +4,9 @@ In the fourth command-line terminal, start up the processing engine. From the pr
 
 **Important:** Interface will keep switching back to terminal 1 because producer is running there after executing above command, you can manually switch by clicking `terminal 4`.
 
-From the first command-line terminal (the console producer), send the following three messages (remember to type enter between messages and execute each one in just one line):
+
+#### Send Messages
+From the **first** command-line terminal (the console producer), send the following three messages (remember to type enter between messages and execute each one in just one line):
 
 
 `{"event": "CUSTOMER_CONSULTS_ETHPRICE", "customer": {"id": "14862768", "name": "Snowden, Edward", "ipAddress": "95.31.18.111"}, "currency": {"name": "ethereum", "price": "RUB"}, "timestamp": "2018-09-28T09:09:09Z"}`{{execute T1}} 

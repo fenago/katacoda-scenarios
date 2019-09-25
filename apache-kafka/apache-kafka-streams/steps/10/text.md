@@ -7,6 +7,8 @@ The StreamsBuilder is used to consume data from a topic. The same as in previous
 KStream healthCheckStream =
   streamsBuilder.stream( Constants.getHealthChecksTopic(),
     Consumed.with(Serdes.String(), customSerde));
+```
+
 We use the implementation where we can also specify the serializers, as in this example, we have to specify the serializer for the key, and the serializer for the value for the Consumed class, in this case the key is a String (always null), and the serializer for the value is our new customSerde.
 
 The magic here is that the rest of the code of the process() method remains the same as in the previous section; it is also shown as follows:

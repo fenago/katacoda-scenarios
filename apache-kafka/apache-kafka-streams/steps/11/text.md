@@ -12,13 +12,18 @@ BUILD SUCCESSFUL in 1s
 The first step is to run a console consumer in **terminal 1** for the uptimes topic, shown as follows:
 `~/kafka/bin/kafka-console-consumer.sh --bootstrap-server localhost:9092 --topic uptimes --property print.key=true`{{execute T1}} 
 
+
+**Note:** 
+- Following two commands will run in **terminal 2 & 3** respectively (It will open automatically on executing command). 
+- Interface will keep switching back to terminal 1 because consumer is running there after executing above command, you can manually switch by clicking `terminal 2` or `terminal 3`.
+
 #### Run CustomStreamsProcessor
 Run the main method of the `CustomStreamsProcessor` in **terminal 2** by running following command.
-`cd ~/kafka/Chapter04/kioto && java -cp ./build/libs/kioto-0.1.0.jar kioto.custom.CustomStreamsProcessor`{{execute T2}} 
+`cd ~/kafka/Chapter06/kioto && java -cp ./build/libs/kioto-0.1.0.jar kioto.custom.CustomStreamsProcessor`{{execute T2}} 
 
 #### Run CustomProducer
 Run the main method of the `CustomProducer` in **terminal 3** by running following command.
-`cd ~/kafka/Chapter04/kioto && java -cp ./build/libs/kioto-0.1.0.jar kioto.custom.CustomProducer`{{execute T3}} 
+`cd ~/kafka/Chapter06/kioto && java -cp ./build/libs/kioto-0.1.0.jar kioto.custom.CustomProducer`{{execute T3}} 
 
 The output on the console consumer for the uptimes topic should be similar to the following:
 

@@ -1,4 +1,4 @@
-Now, in the src/main/java/kioto/plaindirectory, create a file called PlainProcessor.java with the content of Listing 4.9.
+Now, in the src/main/java/kioto/plaindirectory, open a file in **vscode** explorer called PlainProcessor.java with the content of Listing 4.9.
 
 The following is the content of Listing 4.9, PlainProcessor.java (part 1):
 

@@ -7,7 +7,7 @@ To install kafkacat on Linux, type the following:
 
 #### Publish
 To publish message to amazingTopic, run the following:
-`kafkacat -b localhost:9092 –t amazingTopic -P`{{execute}} 
+`kafkacat -P -b localhost -t amazingTopic`{{execute}} 
 
 Type following message and press enter in the above prompt `Hello kafkacat!`{{copy}} 
 
@@ -15,4 +15,4 @@ Type following message and press enter in the above prompt `Hello kafkacat!`{{co
 
 #### Subscribe
 To subscribe to amazingTopic and print to stdout, type the following:
-`kafkacat -b localhost:9092 –t amazingTopic -C`{{execute}} 
+`kafkacat -C -b localhost -t amazingTopic`{{execute}} 

@@ -1,6 +1,6 @@
 The first step is to code our `Constants` class. This class is a static class with all of the Constants needed in our project.
 
-Open the project with your favorite IDE and, under the src/main/java/kiotodirectory, create a file called `Constants.java` with the content:
+Open the project with your favorite IDE and, under the src/main/java/kiotodirectory, open a file in **vscode** explorer called `Constants.java` with the content:
 
 ```
 package kioto;

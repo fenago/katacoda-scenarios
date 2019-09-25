@@ -4,7 +4,7 @@ We have seen how to use `StringSerializer` in the producer and `StringDeserializ
 
 To build a custom serializer, we need to create a class that implements the org.apache.kafka.common.serialization.Serializer interface. This is a generic type, so we can indicate the custom type to be converted into an array of bytes (serialization).
 
-In the src/main/java/kioto/serdedirectory, create a file called HealthCheckSerializer.java with the content of Listing 4.11.
+In the src/main/java/kioto/serdedirectory, open a file in **vscode** explorer called HealthCheckSerializer.java with the content of Listing 4.11.
 
 The following is the content of Listing 4.11, HealthCheckSerializer.java: 
 

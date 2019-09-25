@@ -57,5 +57,5 @@ The other configuration property is fetch.max.bytes, which defines the amount of
 
 If there are no records available, the broker returns an empty list.
 
-Note that we could reuse the producer that generates the mock data, but it is clearer to use another producer to write uptimes.
+**Note** that we could reuse the producer that generates the mock data, but it is clearer to use another producer to write uptimes.
 

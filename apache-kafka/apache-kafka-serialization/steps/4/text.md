@@ -1,6 +1,6 @@
 The second step is to code the HealthCheck class. This class is a Plain Old Java Object (POJO). The model class is the template for the value object.
 
-Open the project with your favorite IDE and, in the src/main/java/kioto directory, create a file called HealthCheck.java with the content of Listing 4.4.
+Open the project with your favorite IDE and, in the src/main/java/kioto directory, open a file in **vscode** explorer called HealthCheck.java with the content of Listing 4.4.
 
 
 ```

@@ -1,6 +1,6 @@
 Now that the final version of the Enricher class is coded, we have to compile and execute it.
 
-As we know, the ProcessingEngine class contains the main method to coordinate the reader and writer classes. Now, let's modify the ProcessingEngine.java file on the src/main/java/monedero/directory and replace Validator with Enricher as in the highlighted code in Listing 3.6:
+As we know, the ProcessingEngine class contains the main method to coordinate the reader and writer classes. Now, let's modify the ProcessingEngine.java file on the src/main/java/monedero/directory and replace Validator with Enricher as in the highlighted code:
 
 ```
 package monedero;

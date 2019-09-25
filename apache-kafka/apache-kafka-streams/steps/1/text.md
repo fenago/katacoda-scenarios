@@ -12,7 +12,8 @@ Now, move in the directory which contains scripts to install kafka, copy and exe
 `./install.sh && ./start.sh && cd ../Chapter06/kioto`{{execute T1}} 
 
 **Note:**
-The supplied commands in the next steps MUST be run from your `Chapter06/kioto` sub-directory of the **kafka** repository clone.
+- The supplied commands in the next steps MUST be run from your `Chapter06/kioto` sub-directory of the **kafka** repository clone.
+- Final code was already cloned from github for this scenario. You can just understand the application code in the next steps and run it using the instructions.
 
 
 In this scenario, instead of using the Kafka Java API for producers and consumers as in previous chapters, we are going to use Kafka Streams, the Kafka module for stream processing.
