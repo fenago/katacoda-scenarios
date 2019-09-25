@@ -16,7 +16,7 @@ The first step is to run a console consumer in **terminal 1** for the uptimes to
 
 **Note:** 
 - Following two commands will run in **terminal 2 & 3** respectively (It will open automatically on executing command). 
-- Interface will keep switching back to terminal 1 because consumer is running there after executing above command, you can manually switch by clicking `terminal 2` or `terminal 3`.
+- Interface will keep switching back to terminal 1 because consumer is running there after executing command, you can manually switch by clicking `terminal 2` or `terminal 3`.
 
 #### Run CustomStreamsProcessor
 Run the main method of the `CustomStreamsProcessor` in **terminal 2** by running following command.

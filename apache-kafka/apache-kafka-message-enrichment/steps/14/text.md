@@ -1,5 +1,5 @@
 **Important:** 
-- Interface will keep switching back to terminal 1 because producer is running there after executing above command, you can manually switch by clicking `terminal 2` or `terminal 3`.
+- Interface will keep switching back to terminal 1 because producer is running there after executing command, you can manually switch by clicking `terminal 2` or `terminal 3`.
 - Commands below will run in **terminal 2 & 3** (It will open automatically on executing command). You can also open it by clicking `+` icon and selecting `new terminal`
 
 #### Kafka Consumers

@@ -14,5 +14,5 @@ HEALTH_CHECKPort EmeliaportDJ83-UO93GEOTHERMALRUNNING���Y�A190.160.48.12
 ```
 
 **Important:** 
-- Interface will keep switching back to terminal 1 because consumer is running there after executing above command, you can manually switch by clicking `terminal 2`.
+- Interface will keep switching back to terminal 1 because consumer is running there after executing command, you can manually switch by clicking `terminal 2`.
 - Press `Ctrl` + `C` in terminal 1 and 2 to stop everything before proceeding to next step.

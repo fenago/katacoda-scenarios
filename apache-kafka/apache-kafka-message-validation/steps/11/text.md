@@ -4,7 +4,7 @@ In the third command-line terminal, start the processing engine. Go to the proje
 
 Now, the show consists in reading all of the events from input-topic and writing them in output-topic.
 
-**Important:** Interface will keep switching back to terminal 1 because producer is running there after executing above command, you can manually switch by clicking `terminal 3`.
+**Important:** Interface will keep switching back to terminal 1 because producer is running there after executing command, you can manually switch by clicking `terminal 3`.
 
 
 #### First terminal

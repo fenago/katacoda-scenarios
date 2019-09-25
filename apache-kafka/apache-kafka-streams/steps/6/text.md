@@ -14,7 +14,7 @@ The first step is to run a console consumer in **terminal 1** for the uptimes to
 `~/kafka/bin/kafka-console-consumer.sh --bootstrap-server localhost:9092 --topic uptimes --property print.key=true`{{execute T1}}
 
 **Note:**
-- Interface will keep switching back to terminal 1 because consumer is running there after executing above command, you can manually switch by clicking different terminal.
+- Interface will keep switching back to terminal 1 because consumer is running there after executing command, you can manually switch by clicking different terminal.
 - Commands below will run in **terminal 2 & 3** respectively (It will open automatically on executing command). You can also open it by clicking `+` icon and selecting `new terminal`
 
 
