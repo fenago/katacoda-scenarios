@@ -45,10 +45,6 @@
         "text": "steps/12/text.md"
     },
     {
-        "title": "Running the AvroStreamsProcessor",
-        "text": "steps/13/text.md"
-    },
-    {
         "title": "Late event processing",
         "text": "steps/14/text.md"
     },

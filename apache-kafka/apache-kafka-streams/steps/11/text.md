@@ -25,6 +25,8 @@ Run the main method of the `CustomStreamsProcessor` in **terminal 2** by running
 Run the main method of the `CustomProducer` in **terminal 3** by running following command.
 `cd ~/kafka/Chapter06/kioto && java -cp ./build/libs/kioto-0.1.0.jar kioto.custom.CustomProducer`{{execute T3}} 
 
+**Important:** Press `Ctrl` + `C` in terminal 1, 2 & 3 to stop everything before proceeding to next step.
+
 The output on the console consumer for the uptimes topic should be similar to the following:
 
 ```

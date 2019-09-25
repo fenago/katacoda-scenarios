@@ -27,6 +27,8 @@ The first step in a Kafka Streams application is to get a StreamsBuilder instanc
 
 ```
 StreamsBuilder streamsBuilder = new StreamsBuilder();
+```
+
 We can reuse the Serdes built in the previous chapters. The following code creates a KStream that deserializes the values of the messages as HealthCheckobjects.
 
 ```

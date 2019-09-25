@@ -25,7 +25,7 @@ StreamsBuilder streamsBuilder = new StreamsBuilder();
 
 The StreamsBuilder is an object that allows building a topology. A topology in Kafka Streams is a structural description of a data pipeline. The topology is a succession of steps that involve transformations between streams. A topology is a very important concept in streams; it is also used in other technologies such as Apache Storm.
 
-The StreamsBuilder is used to consume data from a topic. There are other two important concepts in the context of Kafka Streams: a KStream, a representation of a stream of records, and a KTable, a log of the changes in a stream (we will see KTables in detail in Chapter 7, KSQL). To obtain a KStream from a topic, we use the stream() method of the StreamsBuilder, shown as follows:
+The StreamsBuilder is used to consume data from a topic. There are other two important concepts in the context of Kafka Streams: a KStream, a representation of a stream of records, and a KTable, a log of the changes in a stream. To obtain a KStream from a topic, we use the stream() method of the StreamsBuilder, shown as follows:
 
 ```
 KStream healthCheckJsonStream = 
