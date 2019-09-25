@@ -8,11 +8,6 @@
       "description": ""
     },
     {
-      "course_id": "apache-kafka-message-enrichment",
-      "title": "Apache Kafka Message Enrichment",
-      "description": ""
-    },
-    {
       "course_id": "apache-kafka-producer-consumer",
       "title": "Apache Kafka Producer and Consumer",
       "description": ""
@@ -20,6 +15,11 @@
     {
       "course_id": "apache-kafka-message-validation",
       "title": "Apache Kafka Message Validation",
+      "description": ""
+    },
+    {
+      "course_id": "apache-kafka-message-enrichment",
+      "title": "Apache Kafka Message Enrichment",
       "description": ""
     },
     {

@@ -1,46 +1,29 @@
-Open the build.gradle file on the Monedero project created in Chapter 2, Message Validation, and add the lines highlighted in Listing 3.1.
 
-The following is the content of Listing 3.1, the Monedero build.gradle file:
+We are going to build our project with Gradle. The first step is to download and install Gradle.
 
-Copy
-apply plugin: 'java'
-apply plugin: 'application'
-sourceCompatibility = '1.8'
-mainClassName = 'monedero.ProcessingEngine'
-repositories {
-  mavenCentral()
-}
-version = '0.2.0'
-dependencies {
-    compile group: 'org.apache.kafka', name: 'kafka_2.12', version:                                                                                                                                              
-                                                            '2.0.0'
-compile group: 'com.maxmind.geoip', name: 'geoip-api', version:                                         
-                                                            '1.3.1'
-    compile group: 'com.fasterxml.jackson.core', name: 'jackson-core', version: '2.9.7'
-}
-jar {
-  manifest {
-    attributes 'Main-Class': mainClassName
-  } from {
-    configurations.compile.collect {
-      it.isDirectory() ? it : zipTree(it)
-    }
-  }
-  exclude "META-INF/*.SF"
-  exclude "META-INF/*.DSA"
-  exclude "META-INF/*.RSA"
-}
-Listing 3.1: build.gradle
+Gradle only requires a Java JDK (version 7 or higher).
 
-Note that the first change is the switch from version 0.1.0 to version 0.2.0 .
+```
+==> Downloading https://services.gradle.org/distributions/gradle-4.10.2-all.zip
+==> Downloading from https://downloads.gradle.org/distributions/gradle-4.10.2-al
+######################################################################## 100.0%
+  /usr/local/Cellar/gradle/4.10.2: 203 files, 83.7MB, built in 59 seconds
+```
 
-The second change is to add the MaxMind's GeoIP version 1.3.1 to our project.
+Linux users can install Gradle with the apt-get command, as follows:
 
-From the project root directory, run the following command to rebuild the app:
+`apt-get update`{{execute T1}} 
+ 
+`yes | apt-get install gradle`{{execute T1}} 
 
-Copy
-$ gradle jar
+`gradle -v`{{execute T1}} 
+
 The output is something like the following:
 
-Copy
-...BUILD SUCCESSFUL in 8s
+```
+------------------------------------------------------------
+Gradle 4.10.2
+------------------------------------------------------------
+```
+
+Open the build.gradle file on the Monedero project inside in Chapter3 folder using vscode explorer and see its contents.
