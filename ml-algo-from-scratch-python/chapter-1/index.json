@@ -60,6 +60,10 @@
         { 
           "file": "african-diabetes.csv", 
           "target": "~/"  
+        },  
+        { 
+          "file": "blueflag.csv", 
+          "target": "~/"  
         }
       ]
     }
