@@ -1,0 +1,104 @@
+{
+  "title": "Diagnose and Tune LSTMs",
+  "description": "Run Python Code with Jupyter Notebooks.",
+  "difficulty": "Beginner",
+  "time": "25 minutes",
+  "details": {
+    "steps": [{
+      "title": "Jupyter Notebook",
+      "text": "steps/1/step1.md"
+    },
+    {
+      "title": "Underfit",
+      "text": "steps/2/step2.md",
+      "answer": "steps/2/answer.md"
+    },    
+    {
+      "title": "Altenative Underfit",
+      "text": "steps/3/step3.md",
+      "answer": "steps/3/answer.md"
+    },
+    {
+      "title": "Good Fit",
+      "text": "steps/4/step4.md",
+      "answer": "steps/4/answer.md"
+    },
+    {
+      "title": "Overfit",
+      "text": "steps/5/step5.md",
+      "answer": "steps/5/answer.md"
+    },
+    {
+      "title": "Multiple Runs",
+      "text": "steps/6/step6.md",
+      "answer": "steps/6/answer.md"
+    },
+    {
+      "title": "Memory Cells",
+      "text": "steps/7/step7.md",
+      "answer": "steps/7/answer.md"
+    },
+    {
+      "title": "Batch Size",
+      "text": "steps/7/step7.md",
+      "answer": "steps/7/answer.md"
+    }],
+    "intro": {
+      "text": "intro.md",
+      "code": "set-env.sh"
+    },
+    "finish": {
+      "text": "finish.md"
+    },
+    "assets": {
+      "client": [
+        { 
+          "file": "prepareContainer.sh",  
+          "target": "~/"  
+        },    
+        { 
+          "file": "diagnostic-goodfit.ipynb",  
+          "target": "~/"
+        },
+        { 
+          "file": "diagnostic-multiple.ipynb",   
+          "target": "~/"  
+        },  
+        { 
+          "file": "diagnostic-overfit.ipynb", 
+          "target": "~/"  
+        },  
+        { 
+          "file": "diagnostic-underfit-1.ipynb", 
+          "target": "~/"  
+        },  
+        { 
+          "file": "diagnostic-underfit-2.ipynb", 
+          "target": "~/"  
+        },  
+        { 
+          "file": "tune-batch-size.ipynb", 
+          "target": "~/"  
+        },  
+        { 
+          "file": "tune-memory-cell.ipynb", 
+          "target": "~/"  
+        }
+      ]
+    }
+  },
+  "environment": {
+    "uilayout": "terminal-iframe",
+    "showdashboard": true,
+    "dashboards": [
+      {
+        "name": "Jupyter Notebook",
+        "port": 8888
+      }
+    ],
+    "uimessage1": "\u001b[32mYour Interactive Bash Terminal.\r\n"
+  },
+  "backend": {
+    "imageid": "docker"
+  }
+}

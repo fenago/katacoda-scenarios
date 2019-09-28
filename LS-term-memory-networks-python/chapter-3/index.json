@@ -1,0 +1,131 @@
+{
+  "title": "How to Prepare Data for LSTMs",
+  "description": "Run Python Code with Jupyter Notebooks.",
+  "difficulty": "Beginner",
+  "time": "20 minutes",
+  "details": {
+    "steps": [{
+      "title": "Jupyter Notebook",
+      "text": "steps/1/step1.md"
+    },
+    {
+      "title": "Normalize Series Data",
+      "text": "steps/2/step2.md",
+      "answer": "steps/2/answer.md"
+    },    
+    {
+      "title": "Standardize Series Data",
+      "text": "steps/3/step3.md",
+      "answer": "steps/3/answer.md"
+    },
+    {
+      "title": "One Hot Encoding",
+      "text": "steps/4/step4.md",
+      "answer": "steps/4/answer.md"
+    },
+    {
+      "title": "Pre-Sequence Padding",
+      "text": "steps/5/step5.md",
+      "answer": "steps/5/answer.md"
+    },
+    {
+      "title": "Post-Sequence Padding",
+      "text": "steps/6/step6.md",
+      "answer": "steps/6/answer.md"
+    },
+    {
+      "title": "Pre-Sequence Truncation",
+      "text": "steps/7/step7.md",
+      "answer": "steps/7/answer.md"
+    },
+    {
+      "title": "Post-Sequence Truncation",
+      "text": "steps/8/step8.md",
+      "answer": "steps/8/answer.md"
+    },
+    {
+      "title": "Shift Sequence",
+      "text": "steps/9/step9.md",
+      "answer": "steps/9/answer.md"
+    },
+    {
+      "title": "Shift Forward",
+      "text": "steps/10/step10.md",
+      "answer": "steps/10/answer.md"
+    },
+    {
+      "title": "Shift Backward",
+      "text": "steps/11/step11.md",
+      "answer": "steps/11/answer.md"
+    }],
+    "intro": {
+      "text": "intro.md",
+      "code": "set-env.sh"
+    },
+    "finish": {
+      "text": "finish.md"
+    },
+    "assets": {
+      "client": [
+        { 
+          "file": "prepareContainer.sh",  
+          "target": "~/"  
+        },    
+        { 
+          "file": "normalize.ipynb",  
+          "target": "~/"
+        },
+        { 
+          "file": "one-hot-encode.ipynb",   
+          "target": "~/"  
+        },  
+        { 
+          "file": "post-seq-padding.ipynb", 
+          "target": "~/"  
+        },  
+        { 
+          "file": "post-seq-truncate.ipynb", 
+          "target": "~/"  
+        },  
+        { 
+          "file": "pre-seq-padding.ipynb", 
+          "target": "~/"  
+        },  
+        { 
+          "file": "pre-seq-truncate.ipynb", 
+          "target": "~/"  
+        },  
+        { 
+          "file": "shift-backward.ipynb", 
+          "target": "~/"  
+        },  
+        { 
+          "file": "shift-forward.ipynb", 
+          "target": "~/"  
+        },  
+        { 
+          "file": "shift-sequence.ipynb", 
+          "target": "~/"  
+        },  
+        { 
+          "file": "standardize.ipynb", 
+          "target": "~/"  
+        }
+      ]
+    }
+  },
+  "environment": {
+    "uilayout": "terminal-iframe",
+    "showdashboard": true,
+    "dashboards": [
+      {
+        "name": "Jupyter Notebook",
+        "port": 8888
+      }
+    ],
+    "uimessage1": "\u001b[32mYour Interactive Bash Terminal.\r\n"
+  },
+  "backend": {
+    "imageid": "docker"
+  }
+}

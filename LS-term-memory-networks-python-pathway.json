@@ -1,0 +1,56 @@
+{
+  "title": "Long Short-Term Memory Networks",
+  "description": "in Python",
+  "courses": [
+    {
+      "course_id": "chapter-3",
+      "title": "Chapter - 3",
+      "description": "Prepare Data for LSTMs"
+    },
+    {
+      "course_id": "chapter-4",
+      "title": "Chapter - 4",
+      "description": "Develop LSTMs in Keras"
+    },
+    {
+      "course_id": "chapter-6",
+      "title": "Chapter - 6",
+      "description": "Develop Vanilla LSTMs"
+    },
+    {
+      "course_id": "chapter-7",
+      "title": "Chapter - 7",
+      "description": "Develop Stacked LSTMs"
+    },
+    {
+      "course_id": "chapter-8",
+      "title": "Chapter - 8",
+      "description": "Develop CNN LSTMs"
+    },
+    {
+      "course_id": "chapter-9",
+      "title": "Chapter - 9",
+      "description": "Develop Encoder-Decoder LSTMs"
+    },
+    {
+      "course_id": "chapter-10",
+      "title": "Chapter - 10",
+      "description": "Develop Bidirectional LSTMs"
+    },
+    {
+      "course_id": "chapter-11",
+      "title": "Chapter - 11",
+      "description": "Develop Generative LSTMs"
+    },
+    {
+      "course_id": "chapter-12",
+      "title": "Chapter - 12",
+      "description": "Diagnose and Tune LSTMs"
+    },
+    {
+      "course_id": "chapter-13",
+      "title": "Chapter - 13",
+      "description": "Make Predictions with LSTMs"
+    }
+  ]
+}
