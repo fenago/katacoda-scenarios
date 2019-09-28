@@ -1,0 +1,90 @@
+{
+  "title": "k-Nearest Neighbors",
+  "description": "Run Python Code with Jupyter Notebooks.",
+  "difficulty": "Beginner",
+  "time": "20 minutes",
+  "details": {
+    "steps": [{
+      "title": "Jupyter Notebook",
+      "text": "steps/1/step1.md"
+    },
+    {
+      "title": "Euclidean Distance",
+      "text": "steps/2/step2.md",
+      "answer": "steps/2/answer.md"
+    },    
+    {
+      "title": "Get Neighbors",
+      "text": "steps/3/step3.md",
+      "answer": "steps/3/answer.md"
+    },
+    {
+      "title": "Make Predictions",
+      "text": "steps/4/step4.md",
+      "answer": "steps/4/answer.md"
+    },
+    {
+      "title": "Ormer Case Study as Classification.",
+      "text": "steps/5/step5.md",
+      "answer": "steps/5/answer.md"
+    },
+    {
+      "title": "Ormer Case Study as Regression.",
+      "text": "steps/6/step6.md",
+      "answer": "steps/6/answer.md"
+    }],
+    "intro": {
+      "text": "intro.md",
+      "code": "set-env.sh"
+    },
+    "finish": {
+      "text": "finish.md"
+    },
+    "assets": {
+      "client": [
+        { 
+          "file": "prepareContainer.sh",  
+          "target": "~/"  
+        },    
+        { 
+          "file": "euclidean-distance.ipynb",  
+          "target": "~/"
+        },
+        { 
+          "file": "get-neighbors.ipynb",   
+          "target": "~/"  
+        },  
+        { 
+          "file": "knn-classification-ormer.ipynb", 
+          "target": "~/"  
+        },  
+        { 
+          "file": "knn-regression-ormer.ipynb", 
+          "target": "~/"  
+        },  
+        { 
+          "file": "predictions.ipynb", 
+          "target": "~/"  
+        },  
+        { 
+          "file": "ormer.csv", 
+          "target": "~/"  
+        }
+      ]
+    }
+  },
+  "environment": {
+    "uilayout": "terminal-iframe",
+    "showdashboard": true,
+    "dashboards": [
+      {
+        "name": "Jupyter Notebook",
+        "port": 8888
+      }
+    ],
+    "uimessage1": "\u001b[32mYour Interactive Bash Terminal.\r\n"
+  },
+  "backend": {
+    "imageid": "docker"
+  }
+}

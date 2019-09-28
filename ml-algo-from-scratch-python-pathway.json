@@ -1,0 +1,96 @@
+{
+  "title": "Machine Learning for IT Professionals",
+  "description": "in Python",
+  "courses": [
+    {
+      "course_id": "chapter-1",
+      "title": "Chapter - 1",
+      "description": "Load Data From CSV"
+    },
+    {
+      "course_id": "chapter-2",
+      "title": "Chapter - 2",
+      "description": "Scale Machine Learning Data"
+    },
+    {
+      "course_id": "chapter-3",
+      "title": "Chapter - 3",
+      "description": "Algorithm Evaluation Methods"
+    },
+    {
+      "course_id": "chapter-4",
+      "title": "Chapter - 4",
+      "description": "Evaluation Metrics"
+    },
+    {
+      "course_id": "chapter-5",
+      "title": "Chapter - 5",
+      "description": "Baseline Models"
+    },
+    {
+      "course_id": "chapter-6",
+      "title": "Chapter - 6",
+      "description": "Algorithm Test Harnesses"
+    },
+    {
+      "course_id": "chapter-7",
+      "title": "Chapter - 7",
+      "description": "Simple Linear Regression"
+    },
+    {
+      "course_id": "chapter-8",
+      "title": "Chapter - 8",
+      "description": "Multivariate Linear Regression"
+    },
+    {
+      "course_id": "chapter-9",
+      "title": "Chapter - 9",
+      "description": "Logistic Regression"
+    },
+    {
+      "course_id": "chapter-10",
+      "title": "Chapter - 10",
+      "description": "Perceptron"
+    },
+    {
+      "course_id": "chapter-11",
+      "title": "Chapter - 11",
+      "description": "Classification and Regression Trees"
+    },
+    {
+      "course_id": "chapter-12",
+      "title": "Chapter - 12",
+      "description": "Naive Bayes"
+    },
+    {
+      "course_id": "chapter-13",
+      "title": "Chapter - 13",
+      "description": "k-Nearest Neighbors"
+    },
+    {
+      "course_id": "chapter-14",
+      "title": "Chapter - 14",
+      "description": "Learning Vector Quantization"
+    },
+    {
+      "course_id": "chapter-15",
+      "title": "Chapter - 15",
+      "description": "Backpropagation"
+    },
+    {
+      "course_id": "chapter-16",
+      "title": "Chapter - 16",
+      "description": "Bootstrap Aggregation"
+    },
+    {
+      "course_id": "chapter-17",
+      "title": "Chapter - 17",
+      "description": "Random Forest"
+    },
+    {
+      "course_id": "chapter-18",
+      "title": "Chapter - 18",
+      "description": "Stacked Generalization"
+    }
+  ]
+}
