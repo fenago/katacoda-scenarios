@@ -16,6 +16,16 @@
       "course_id": "apache-spark-scala-advanced",
       "title": "Apache Spark Advanced",
       "description": ""
+    },
+    {
+      "course_id": "apache-spark-install",
+      "title": "Apache Spark Installation",
+      "description": ""
+    },
+    {
+      "course_id": "apache-spark-rdd",
+      "title": "Apache Spark RDD",
+      "description": ""
     }
   ]
 }
