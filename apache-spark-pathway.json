@@ -1,0 +1,21 @@
+{
+  "title": "Apache Spark",
+  "description": "Introduction to Apache Spark",
+  "courses": [
+    {
+      "course_id": "apache-spark-scala",
+      "title": "Apache Spark Basics",
+      "description": ""
+    },
+    {
+      "course_id": "apache-spark-scala-loops",
+      "title": "Apache Spark Loops",
+      "description": ""
+    },
+    {
+      "course_id": "apache-spark-scala-advanced",
+      "title": "Apache Spark Advanced",
+      "description": ""
+    }
+  ]
+}
