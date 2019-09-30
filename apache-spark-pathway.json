@@ -38,8 +38,13 @@
       "description": ""
     },
     {
+      "course_id": "apache-spark-rdd-persistence",
+      "title": "Apache Spark RDD Caching and Persistence",
+      "description": ""
+    },
+    {
       "course_id": "apache-spark-paired-rdd",
-      "title": "Apache Spark Paired RDD ",
+      "title": "Apache Spark Paired RDD",
       "description": ""
     },
     {
@@ -50,6 +55,26 @@
     {
       "course_id": "apache-spark-paired-rdd-joins",
       "title": "Apache Spark Paired RDD Joins",
+      "description": ""
+    },
+    {
+      "course_id": "apache-spark-accumulators-v1",
+      "title": "Apache Spark Accumulators V1",
+      "description": ""
+    },
+    {
+      "course_id": "apache-spark-accumulators-v2",
+      "title": "Apache Spark Accumulators V2",
+      "description": ""
+    },
+    {
+      "course_id": "apache-spark-accumulators-custom",
+      "title": "Apache Spark Accumulators Custom",
+      "description": ""
+    },
+    {
+      "course_id": "apache-spark-broadcast-variables",
+      "title": "Apache Spark Broadcast Variables",
       "description": ""
     }
   ]
