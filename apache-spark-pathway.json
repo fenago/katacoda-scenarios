@@ -76,6 +76,26 @@
       "course_id": "apache-spark-broadcast-variables",
       "title": "Apache Spark Broadcast Variables",
       "description": ""
+    },
+    {
+      "course_id": "apache-spark-dataframe-using-datasource",
+      "title": "Apache Spark - Creating Data Frame using Data Source API",
+      "description": ""
+    },
+    {
+      "course_id": "apache-spark-dataframe-using-rdd-structtype",
+      "title": "Apache Spark - Creating Data Frame from an RDD and StructType",
+      "description": ""
+    },
+    {
+      "course_id": "apache-spark-querying-data",
+      "title": "Apache Spark - Querying data using Spark SQL",
+      "description": ""
+    },
+    {
+      "course_id": "apache-spark-joins-sql-operations",
+      "title": "Apache Spark - Joins using Spark SQL",
+      "description": ""
     }
   ]
 }
