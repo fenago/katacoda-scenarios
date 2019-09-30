@@ -26,6 +26,31 @@
       "course_id": "apache-spark-rdd",
       "title": "Apache Spark RDD",
       "description": ""
+    },
+    {
+      "course_id": "apache-spark-wordcount",
+      "title": "Apache Spark WordCount",
+      "description": ""
+    },
+    {
+      "course_id": "apache-spark-ui",
+      "title": "Apache Spark WebUI",
+      "description": ""
+    },
+    {
+      "course_id": "apache-spark-paired-rdd",
+      "title": "Apache Spark Paired RDD ",
+      "description": ""
+    },
+    {
+      "course_id": "apache-spark-paired-rdd-advanced",
+      "title": "Apache Spark Paired RDD Advanced",
+      "description": ""
+    },
+    {
+      "course_id": "apache-spark-paired-rdd-joins",
+      "title": "Apache Spark Paired RDD Joins",
+      "description": ""
     }
   ]
 }

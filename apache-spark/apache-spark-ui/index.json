@@ -1,0 +1,54 @@
+{
+  "title": "Apache Spark WebUI",
+  "description": "Introduction to Apache Spark",
+  "difficulty": "Advanced",
+  "time": "15 minutes",
+  "details": {
+    "steps": [{
+      "title": "Installation scripts",
+      "text": "steps/1/text.md"
+    },
+    {
+      "title": "What is Spark?",
+      "text": "steps/2/text.md"
+    },    
+	{
+      "title": "Install Java and telnet",
+      "text": "steps/3/text.md"
+    },
+	{
+      "title": "Install Spark & Zookeeper",
+      "text": "steps/4/text.md"
+    },
+  {
+      "title": "Start Spark",
+      "text": "steps/5/text.md"
+    },
+    {
+        "title": "Zookeeper",
+        "text": "steps/6/text.md"
+    },
+    {
+        "title": "Install sparkcat",
+        "text": "steps/7/text.md"
+    },
+    {
+        "title": "",
+        "text": "steps/8/text.md"
+    }],
+    "intro": {
+      "text": "intro.md",
+      "credits": ""
+    },
+    "finish": {
+      "text": "finish.md"
+    }
+  },
+  "environment": {
+    "uilayout": "vscode",
+    "uimessage1": "\u001b[32mBrought to you by https://LearningVoyage.com\u001b[m\r\n"
+  },
+  "backend": {
+    "imageid": "ubuntu"
+  }
+}
