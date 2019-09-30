@@ -4,17 +4,17 @@
   "courses": [
     {
       "course_id": "apache-spark-scala",
-      "title": "Apache Spark Basics",
+      "title": "Apache Spark Scala Basics",
       "description": ""
     },
     {
       "course_id": "apache-spark-scala-loops",
-      "title": "Apache Spark Loops",
+      "title": "Apache Spark Scala Loops",
       "description": ""
     },
     {
       "course_id": "apache-spark-scala-advanced",
-      "title": "Apache Spark Advanced",
+      "title": "Apache Spark Scala Advanced",
       "description": ""
     },
     {

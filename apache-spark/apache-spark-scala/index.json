@@ -1,5 +1,5 @@
 {
-  "title": "Apache Spark Installation",
+  "title": "Apache Spark Scala",
   "description": "Introduction to Apache Spark",
   "difficulty": "Advanced",
   "time": "15 minutes",
@@ -35,6 +35,14 @@
     {
         "title": "",
         "text": "steps/8/text.md"
+    },
+    {
+        "title": "",
+        "text": "steps/9/text.md"
+    },
+    {
+        "title": "",
+        "text": "steps/10/text.md"
     }],
     "intro": {
       "text": "intro.md",
