@@ -96,6 +96,36 @@
       "course_id": "apache-spark-joins-sql-operations",
       "title": "Apache Spark - Joins using Spark SQL",
       "description": ""
+    },
+    {
+      "course_id": "apache-spark-dataset-using-datasource",
+      "title": "Apache Spark - Creating Dataset using Data Source API",
+      "description": ""
+    },
+    {
+      "course_id": "apache-spark-dataset-from-rdd",
+      "title": "Apache Spark - Creating Dataset from an RDD",
+      "description": ""
+    },
+    {
+      "course_id": "apache-spark-aggregate-collection-functions",
+      "title": "Apache Spark - Aggregate and Collection Functions",
+      "description": ""
+    },
+    {
+      "course_id": "apache-spark-date-time-functions",
+      "title": "Apache Spark Date/Time Functions",
+      "description": ""
+    },
+    {
+      "course_id": "apache-spark-math-string-functions",
+      "title": "Apache Spark Math and String Functions",
+      "description": ""
+    },
+    {
+      "course_id": "apache-spark-window-functions",
+      "title": "Apache Spark Window Functions",
+      "description": ""
     }
   ]
 }
