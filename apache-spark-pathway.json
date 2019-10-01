@@ -126,6 +126,46 @@
       "course_id": "apache-spark-window-functions",
       "title": "Apache Spark Window Functions",
       "description": ""
+    },
+    {
+      "course_id": "apache-spark-currying-partially-applied-functions",
+      "title": "Apache Spark Currying and Partially Applied Functions",
+      "description": ""
+    },
+    {
+      "course_id": "apache-spark-user-defined-functions",
+      "title": "Apache Spark Writing User Defined Function",
+      "description": ""
+    },
+    {
+      "course_id": "apache-spark-writing-untyped-udaf",
+      "title": "Apache Spark Writing Untyped UDAF",
+      "description": ""
+    },
+    {
+      "course_id": "apache-spark-untyped-typed-udaf",
+      "title": "Apache Spark Typed and Untyped UDAF",
+      "description": ""
+    },
+    {
+      "course_id": "apache-spark-file-formats-text",
+      "title": "Apache Spark File Formats - Text",
+      "description": ""
+    },
+    {
+      "course_id": "apache-spark-file-formats-csv-json",
+      "title": "Apache Spark File Formats - CSV and JSON",
+      "description": ""
+    },
+    {
+      "course_id": "apache-spark-file-formats-parquet-orc",
+      "title": "Apache Spark File Formats - Parquet and ORC",
+      "description": ""
+    },
+    {
+      "course_id": "apache-spark-file-formats-hadoop-sequence",
+      "title": "Apache Spark File Formats - Hadoop and Sequence",
+      "description": ""
     }
   ]
 }
