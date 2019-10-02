@@ -1,11 +1,10 @@
 <pre class="file" data-target="clipboard">
-# Hint: You can copy Solution to ClipBoard from Solution tab in Step 2
+# Hint: You can copy Solution to ClipBoard from Solution Tab
 # Rescale data (between 0 and 1)
-
 from pandas import read_csv
 from numpy import set_printoptions
 from sklearn.preprocessing import MinMaxScaler
-filename = 'pima-indians-diabetes.data.csv'
+filename = 'african-diabetes.data.csv'
 names = ['preg', 'plas', 'pres', 'skin', 'test', 'mass', 'pedi', 'age', 'class']
 dataframe = read_csv(filename, names=names)
 array = dataframe.values

@@ -2,24 +2,24 @@
   "title": "Load Machine Learning Data",
   "description": "Run Python Code with Jupyter Notebooks.",
   "difficulty": "Beginner",
-  "time": "10 minutes",
+  "time": "20 minutes",
   "details": {
     "steps": [{
       "title": "Jupyter Notebook",
       "text": "steps/1/step1.md"
     },
     {
-      "title": "Load CSV Files with the Python Standard Library ",
+      "title": "Load CSV",
       "text": "steps/2/step2.md",
       "answer": "steps/2/answer.md"
     },    
     {
-      "title": "Load CSV Files with NumPy",
+      "title": "Load CSV Using Numpy",
       "text": "steps/3/step3.md",
       "answer": "steps/3/answer.md"
     },
     {
-      "title": "Load CSV Files with Pandas",
+      "title": "Load CSV Using Pandas",
       "text": "steps/4/step4.md",
       "answer": "steps/4/answer.md"
     }],
@@ -37,19 +37,19 @@
           "target": "~/"  
         },    
         { 
-          "file": "load-csv-using-python-standerd-library.ipynb",  
+          "file": "load-csv.ipynb",  
           "target": "~/"
         },
         { 
-          "file": "load-csv-using-numpy.ipynb",   
+          "file": "load-csv-numpy.ipynb",   
           "target": "~/"  
         },  
         { 
-          "file": "load-csv-using-panda.ipynb", 
+          "file": "load-csv-pandas.ipynb", 
           "target": "~/"  
         },
         { 
-          "file": "pima-indians-diabetes.data.csv", 
+          "file": "african-diabetes.data.csv", 
           "target": "~/"  
         }
       ]

@@ -1,10 +1,9 @@
 <pre class="file" data-target="clipboard">
-# Hint: You can copy Solution to ClipBoard from Solution tab in Step 4
+# Hint: You can copy Solution to ClipBoard from Solution tab in Step 7
 # Pairwise Pearson correlations
-
 from pandas import read_csv
 from pandas import set_option
-filename = "pima-indians-diabetes.data.csv"
+filename = "african-diabetes.data.csv"
 names = ['preg', 'plas', 'pres', 'skin', 'test', 'mass', 'pedi', 'age', 'class']
 data = read_csv(filename, names=names)
 set_option('display.width', 100)
@@ -13,3 +12,4 @@ correlations = data.corr(method='pearson')
 print(correlations)
 
 </pre>
+

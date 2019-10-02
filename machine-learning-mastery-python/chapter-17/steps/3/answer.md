@@ -1,13 +1,12 @@
 <pre class="file" data-target="clipboard">
 # Hint: You can copy Solution to ClipBoard from Solution Tab in Step 3
 # Save Model Using joblib
-
 from pandas import read_csv
 from sklearn.model_selection import train_test_split
 from sklearn.linear_model import LogisticRegression
 from sklearn.externals.joblib import dump
 from sklearn.externals.joblib import load
-filename = 'pima-indians-diabetes.data.csv'
+filename = 'african-diabetes.data.csv'
 names = ['preg', 'plas', 'pres', 'skin', 'test', 'mass', 'pedi', 'age', 'class']
 dataframe = read_csv(filename, names=names)
 array = dataframe.values
@@ -20,7 +19,8 @@ model.fit(X_train, Y_train)
 # save the model to disk
 filename = 'finalized_model.sav'
 dump(model, filename)
-# some time later...
+
+
 # load the model from disk
 loaded_model = load(filename)
 result = loaded_model.score(X_test, Y_test)

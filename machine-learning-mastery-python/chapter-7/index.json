@@ -42,7 +42,7 @@
           "target": "~/"  
         },    
         { 
-          "file": "binarize-data.ipynb",  
+          "file": "binarization.ipynb",  
           "target": "~/"
         },
         { 
@@ -52,13 +52,13 @@
         { 
           "file": "rescale-data.ipynb", 
           "target": "~/"  
-        },
+        },  
         { 
-          "file": "standardize-data.ipynb", 
+          "file": "standardize.ipynb", 
           "target": "~/"  
-        },
+        },  
         { 
-          "file": "pima-indians-diabetes.data.csv", 
+          "file": "african-diabetes.data.csv", 
           "target": "~/"  
         }
       ]

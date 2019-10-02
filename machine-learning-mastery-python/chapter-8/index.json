@@ -19,7 +19,7 @@
       "answer": "steps/3/answer.md"
     },
     {
-      "title": "Principal Component Analysis",
+      "title": "Principle Component Analysis",
       "text": "steps/4/step4.md",
       "answer": "steps/4/answer.md"
     },
@@ -42,23 +42,23 @@
           "target": "~/"  
         },    
         { 
-          "file": "feature-importance.ipynb",  
+          "file": "feature-extraction.ipynb",  
           "target": "~/"
         },
         { 
-          "file": "principle-component.ipynb",   
+          "file": "feature-importance.ipynb",   
           "target": "~/"  
         },  
         { 
-          "file": "recursive-feature.ipynb", 
+          "file": "pca.ipynb", 
           "target": "~/"  
-        },
+        },  
         { 
           "file": "univariate-selection.ipynb", 
           "target": "~/"  
-        },
+        },  
         { 
-          "file": "pima-indians-diabetes.data.csv", 
+          "file": "african-diabetes.data.csv", 
           "target": "~/"  
         }
       ]

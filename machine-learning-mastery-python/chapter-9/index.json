@@ -9,12 +9,12 @@
       "text": "steps/1/step1.md"
     },
     {
-      "title": "Split into Train and Test Sets",
+      "title": "Train and Test Sets",
       "text": "steps/2/step2.md",
       "answer": "steps/2/answer.md"
     },    
     {
-      "title": "K-fold Cross-Validation",
+      "title": "k-fold Cross-Validation",
       "text": "steps/3/step3.md",
       "answer": "steps/3/answer.md"
     },
@@ -42,23 +42,23 @@
           "target": "~/"  
         },    
         { 
-          "file": "k-fold-cross.ipynb",  
+          "file": "cross-validation.ipynb",  
           "target": "~/"
         },
         { 
-          "file": "leave-one-cross.ipynb",   
+          "file": "loocv.ipynb",   
           "target": "~/"  
         },  
         { 
-          "file": "random-test-train.ipynb", 
+          "file": "shuffle-split.ipynb", 
           "target": "~/"  
-        },
+        },  
         { 
-          "file": "split-into-train-test.ipynb", 
+          "file": "test-train.ipynb", 
           "target": "~/"  
-        },
+        },  
         { 
-          "file": "pima-indians-diabetes.data.csv", 
+          "file": "african-diabetes.data.csv", 
           "target": "~/"  
         }
       ]

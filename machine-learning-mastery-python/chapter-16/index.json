@@ -2,7 +2,7 @@
   "title": "Improve Performance with Algorithm Tuning",
   "description": "Run Python Code with Jupyter Notebooks.",
   "difficulty": "Beginner",
-  "time": "20 minutes",
+  "time": "15 minutes",
   "details": {
     "steps": [{
       "title": "Jupyter Notebook",
@@ -32,15 +32,15 @@
           "target": "~/"  
         },    
         { 
-          "file": "grid-search-parameter-tuning.ipynb",  
+          "file": "grid-search.ipynb",  
           "target": "~/"
         },
         { 
-          "file": "random-search-tuning.ipynb",   
+          "file": "random-search.ipynb",   
           "target": "~/"  
         },
         { 
-          "file": "pima-indians-diabetes.data.csv", 
+          "file": "african-diabetes.data.csv", 
           "target": "~/"  
         }
       ]

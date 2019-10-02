@@ -1,1 +1,1 @@
-Welcome to The exercise of Loading Machine Learning Data!
+Welcome to The Exercise of Load Machine Learning Data!

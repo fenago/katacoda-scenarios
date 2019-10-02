@@ -1,11 +1,10 @@
 <pre class="file" data-target="clipboard">
 # Hint: You can copy Solution to ClipBoard from Solution Tab in Step 3
 # Standardize data (0 mean, 1 stdev)
-
 from sklearn.preprocessing import StandardScaler
 from pandas import read_csv
 from numpy import set_printoptions
-filename = 'pima-indians-diabetes.data.csv'
+filename = 'african-diabetes.data.csv'
 names = ['preg', 'plas', 'pres', 'skin', 'test', 'mass', 'pedi', 'age', 'class']
 dataframe = read_csv(filename, names=names)
 array = dataframe.values
@@ -17,5 +16,6 @@ rescaledX = scaler.transform(X)
 # summarize transformed data
 set_printoptions(precision=3)
 print(rescaledX[0:5,:])
+
 
 </pre>

@@ -1,7 +1,6 @@
 <pre class="file" data-target="clipboard">
-# Hint: You can copy Solution to ClipBoard from Solution tab in Step 2
+# Hint: You can copy Solution to ClipBoard from Solution Tab
 # Compare Algorithms
-
 from pandas import read_csv
 from matplotlib import pyplot
 from sklearn.model_selection import KFold
@@ -13,7 +12,7 @@ from sklearn.discriminant_analysis import LinearDiscriminantAnalysis
 from sklearn.naive_bayes import GaussianNB
 from sklearn.svm import SVC
 # load dataset
-filename = 'pima-indians-diabetes.data.csv'
+filename = 'african-diabetes.data.csv'
 names = ['preg', 'plas', 'pres', 'skin', 'test', 'mass', 'pedi', 'age', 'class']
 dataframe = read_csv(filename, names=names)
 array = dataframe.values
@@ -45,5 +44,6 @@ ax = fig.add_subplot(111)
 pyplot.boxplot(results)
 ax.set_xticklabels(names)
 pyplot.show()
+
 
 </pre>

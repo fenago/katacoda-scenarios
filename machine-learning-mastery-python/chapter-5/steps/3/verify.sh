@@ -1,1 +1,1 @@
-docker ps | grep ubuntu > /dev/null && echo "done"
+echo "done"

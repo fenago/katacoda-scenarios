@@ -1,0 +1,108 @@
+{
+  "title": "Spot-Check Regression Algorithms",
+  "description": "Run Python Code with Jupyter Notebooks",
+  "difficulty": "Beginner",
+  "time": "25 minutes",
+  "details": {
+    "steps": [{
+      "title": "Jupyter Notebook",
+      "text": "steps/1/step1.md"
+    },
+    {
+      "title": "Linear Regression",
+      "text": "steps/2/step2.md",
+      "answer": "steps/2/answer.md"
+    },    
+    {
+      "title": "Ridge Regression",
+      "text": "steps/3/step3.md",
+      "answer": "steps/3/answer.md"
+    },
+    {
+      "title": "LASSO Linear Regression",
+      "text": "steps/4/step4.md",
+      "answer": "steps/4/answer.md"
+    },
+    {
+      "title": "Elastic Net Regression",
+      "text": "steps/5/step5.md",
+      "answer": "steps/5/answer.md"
+    },
+    {
+      "title": "k-Nearest Neighbors",
+      "text": "steps/6/step6.md",
+      "answer": "steps/6/answer.md"
+    },
+    {
+      "title": "Classification and Regression Trees",
+      "text": "steps/7/step7.md",
+      "answer": "steps/7/answer.md"
+    },
+    {
+      "title": "Support Vector Machines",
+      "text": "steps/8/step8.md",
+      "answer": "steps/8/answer.md"
+    }],
+    "intro": {
+      "text": "intro.md",
+      "code": "set-env.sh"
+    },
+    "finish": {
+      "text": "finish.md"
+    },
+    "assets": {
+      "client": [
+        { 
+          "file": "prepareContainer.sh",  
+          "target": "~/"  
+        },    
+        { 
+          "file": "decision-trees.ipynb",  
+          "target": "~/"
+        },
+        { 
+          "file": "elasticnet-regression.ipynb",   
+          "target": "~/"  
+        },  
+        { 
+          "file": "knn-regression.ipynb", 
+          "target": "~/"  
+        },  
+        { 
+          "file": "lasso-regression.ipynb", 
+          "target": "~/"  
+        },  
+        { 
+          "file": "linear-regression.ipynb", 
+          "target": "~/"  
+        },  
+        { 
+          "file": "ridge-regression.ipynb", 
+          "target": "~/"  
+        },  
+        { 
+          "file": "svm-regression.ipynb", 
+          "target": "~/"  
+        },  
+        { 
+          "file": "shelter.csv", 
+          "target": "~/"  
+        }
+      ]
+    }
+  },
+  "environment": {
+    "uilayout": "terminal-iframe",
+    "showdashboard": true,
+    "dashboards": [
+      {
+        "name": "Jupyter Notebook",
+        "port": 8888
+      }
+    ],
+    "uimessage1": "\u001b[32mYour Interactive Bash Terminal.\r\n"
+  },
+  "backend": {
+    "imageid": "docker"
+  }
+}

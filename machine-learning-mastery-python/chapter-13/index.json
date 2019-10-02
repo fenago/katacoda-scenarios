@@ -2,14 +2,14 @@
   "title": "Compare Machine Learning Algorithms",
   "description": "Run Python Code with Jupyter Notebooks.",
   "difficulty": "Beginner",
-  "time": "20 minutes",
+  "time": "10 minutes",
   "details": {
     "steps": [{
       "title": "Jupyter Notebook",
       "text": "steps/1/step1.md"
     },
     {
-      "title": "Compare Machine Learning Algorithms Consistently",
+      "title": "Python Crash Course",
       "text": "steps/2/step2.md",
       "answer": "steps/2/answer.md"
     }],
@@ -27,11 +27,11 @@
           "target": "~/"  
         },    
         { 
-          "file": "compare-algorithms.ipynb",  
+          "file": "race-algorithm.ipynb",  
           "target": "~/"
         },
         { 
-          "file": "pima-indians-diabetes.data.csv", 
+          "file": "african-diabetes.data.csv",   
           "target": "~/"  
         }
       ]

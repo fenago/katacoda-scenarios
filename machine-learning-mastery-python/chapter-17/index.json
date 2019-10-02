@@ -1,20 +1,20 @@
 {
-  "title": "Save and Load Machine Learning Models",
+  "title": "Improve Performance with Algorithm Tuning",
   "description": "Run Python Code with Jupyter Notebooks.",
   "difficulty": "Beginner",
-  "time": "20 minutes",
+  "time": "15 minutes",
   "details": {
     "steps": [{
       "title": "Jupyter Notebook",
       "text": "steps/1/step1.md"
     },
     {
-      "title": "Finalize Your Model with pickle",
+      "title": "Grid Search Parameter Tuning",
       "text": "steps/2/step2.md",
       "answer": "steps/2/answer.md"
     },    
     {
-      "title": "Finalize Your Model with Joblib",
+      "title": "Random Search Parameter Tuning",
       "text": "steps/3/step3.md",
       "answer": "steps/3/answer.md"
     }],
@@ -32,15 +32,15 @@
           "target": "~/"  
         },    
         { 
-          "file": "save-model-using-joblib.ipynb",  
+          "file": "grid-search.ipynb",  
           "target": "~/"
         },
         { 
-          "file": "save-model-using-pickle.ipynb",   
+          "file": "random-search.ipynb",   
           "target": "~/"  
         },
         { 
-          "file": "pima-indians-diabetes.data.csv", 
+          "file": "african-diabetes.data.csv", 
           "target": "~/"  
         }
       ]

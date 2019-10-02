@@ -1,8 +1,8 @@
 {
   "title": "Understand Your Data With Descriptive Statistics",
-  "description": "Run Python Code with Jupyter Notebooks.",
+  "description": "Run Python Code with Jupyter Notebooks",
   "difficulty": "Beginner",
-  "time": "10 minutes",
+  "time": "25 minutes",
   "details": {
     "steps": [{
       "title": "Jupyter Notebook",
@@ -61,31 +61,31 @@
           "target": "~/"
         },
         { 
-          "file": "correlation-between-attributes.ipynb",   
+          "file": "data-types.ipynb",   
           "target": "~/"  
         },  
         { 
-          "file": "data-types-of-attribute.ipynb", 
+          "file": "dimensions.ipynb", 
           "target": "~/"  
-        },
+        },  
         { 
-          "file": "dimensions-of-your-data.ipynb", 
+          "file": "head.ipynb", 
           "target": "~/"  
-        },
+        },  
         { 
-          "file": "peek-your-data.ipynb", 
+          "file": "pairwise-correlation.ipynb", 
           "target": "~/"  
-        },
+        },  
         { 
-          "file": "skew-of-univariate.ipynb", 
+          "file": "skew.ipynb", 
           "target": "~/"  
-        },
+        },  
         { 
-          "file": "statistical-summary.ipynb", 
+          "file": "statistics.ipynb", 
           "target": "~/"  
-        },
+        },  
         { 
-          "file": "pima-indians-diabetes.data.csv", 
+          "file": "african-diabetes.data.csv", 
           "target": "~/"  
         }
       ]

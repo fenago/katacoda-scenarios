@@ -1,13 +1,12 @@
 <pre class="file" data-target="clipboard">
 # Hint: You can copy Solution to ClipBoard from Solution tab in Step 2
 # Save Model Using Pickle
-
 from pandas import read_csv
 from sklearn.model_selection import train_test_split
 from sklearn.linear_model import LogisticRegression
 from pickle import dump
 from pickle import load
-filename = 'pima-indians-diabetes.data.csv'
+filename = 'african-diabetes.data.csv'
 names = ['preg', 'plas', 'pres', 'skin', 'test', 'mass', 'pedi', 'age', 'class']
 dataframe = read_csv(filename, names=names)
 array = dataframe.values
@@ -20,7 +19,7 @@ model.fit(X_train, Y_train)
 # save the model to disk
 filename = 'finalized_model.sav'
 dump(model, open(filename, 'wb'))
-# some time later...
+
 # load the model from disk
 loaded_model = load(open(filename, 'rb'))
 result = loaded_model.score(X_test, Y_test)

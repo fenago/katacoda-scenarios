@@ -1,13 +1,12 @@
 <pre class="file" data-target="clipboard">
-# Hint: You can copy Solution to ClipBoard from Solution tab in Step 2
-# Feature Extraction with Univariate Statistical Tests (Chi-squared for #classification)
-
+# Hint: You can copy Solution to ClipBoard from Solution Tab
+# Feature Extraction with Univariate Statistical Tests (Chi-squared for classification)
 from pandas import read_csv
 from numpy import set_printoptions
 from sklearn.feature_selection import SelectKBest
 from sklearn.feature_selection import chi2
 # load data
-filename = 'pima-indians-diabetes.data.csv'
+filename = 'african-diabetes.data.csv'
 names = ['preg', 'plas', 'pres', 'skin', 'test', 'mass', 'pedi', 'age', 'class']
 dataframe = read_csv(filename, names=names)
 array = dataframe.values
@@ -22,5 +21,7 @@ print(fit.scores_)
 features = fit.transform(X)
 # summarize selected features
 print(features[0:5,:])
+
+
 
 </pre>

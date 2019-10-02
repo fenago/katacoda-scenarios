@@ -1,0 +1,99 @@
+{
+  "title": "Spot-Check Classification Algorithms",
+  "description": "Run Python Code with Jupyter Notebooks",
+  "difficulty": "Beginner",
+  "time": "25 minutes",
+  "details": {
+    "steps": [{
+      "title": "Jupyter Notebook",
+      "text": "steps/1/step1.md"
+    },
+    {
+      "title": "Logistic Regression",
+      "text": "steps/2/step2.md",
+      "answer": "steps/2/answer.md"
+    },    
+    {
+      "title": "Linear Discriminant Analysis",
+      "text": "steps/3/step3.md",
+      "answer": "steps/3/answer.md"
+    },
+    {
+      "title": "k-Nearest Neighbors",
+      "text": "steps/4/step4.md",
+      "answer": "steps/4/answer.md"
+    },
+    {
+      "title": "Naive Bayes",
+      "text": "steps/5/step5.md",
+      "answer": "steps/5/answer.md"
+    },
+    {
+      "title": "Classification and Regression Trees",
+      "text": "steps/6/step6.md",
+      "answer": "steps/6/answer.md"
+    },
+    {
+      "title": "Support Vector Machines",
+      "text": "steps/7/step7.md",
+      "answer": "steps/7/answer.md"
+    }],
+    "intro": {
+      "text": "intro.md",
+      "code": "set-env.sh"
+    },
+    "finish": {
+      "text": "finish.md"
+    },
+    "assets": {
+      "client": [
+        { 
+          "file": "prepareContainer.sh",  
+          "target": "~/"  
+        },    
+        { 
+          "file": "cart-classification.ipynb",  
+          "target": "~/"
+        },
+        { 
+          "file": "guassian-naive-bayes.ipynb",   
+          "target": "~/"  
+        },  
+        { 
+          "file": "knn-classification.ipynb", 
+          "target": "~/"  
+        },  
+        { 
+          "file": "lda-classification.ipynb", 
+          "target": "~/"  
+        },  
+        { 
+          "file": "logistic-regression.ipynb", 
+          "target": "~/"  
+        },  
+        { 
+          "file": "svm-classification.ipynb", 
+          "target": "~/"  
+        },  
+        { 
+          "file": "african-diabetes.data.csv", 
+          "target": "~/"  
+        }
+      ]
+    }
+  },
+  "environment": {
+    "uilayout": "terminal-iframe",
+    "showdashboard": true,
+    "dashboards": [
+      {
+        "name": "Jupyter Notebook",
+        "port": 8888
+      }
+    ],
+    "uimessage1": "\u001b[32mYour Interactive Bash Terminal.\r\n"
+  },
+  "backend": {
+    "imageid": "docker"
+  }
+}

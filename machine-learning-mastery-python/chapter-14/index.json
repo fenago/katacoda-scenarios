@@ -2,7 +2,7 @@
   "title": "Automate Machine Learning Workflows with Pipelines",
   "description": "Run Python Code with Jupyter Notebooks.",
   "difficulty": "Beginner",
-  "time": "20 minutes",
+  "time": "15 minutes",
   "details": {
     "steps": [{
       "title": "Jupyter Notebook",
@@ -32,15 +32,15 @@
           "target": "~/"  
         },    
         { 
-          "file": "data-preparation-and-pipeline.ipynb",  
+          "file": "feature-union.ipynb",  
           "target": "~/"
         },
         { 
-          "file": "feature-extraction-modeling-pipeline.ipynb",   
+          "file": "standardiza-model.ipynb",   
           "target": "~/"  
-        },
+        },  
         { 
-          "file": "pima-indians-diabetes.data.csv", 
+          "file": "african-diabetes.data.ipynb", 
           "target": "~/"  
         }
       ]

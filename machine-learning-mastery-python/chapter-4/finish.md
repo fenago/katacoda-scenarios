@@ -1,1 +1,1 @@
-Congratulations , You've completed the task of Loading Machine Learning Data!
+Congratulations , You've Completed the Task of Load Machine Learning Data!
