@@ -1,0 +1,113 @@
+{
+  "title": "Matrices and Matrix Arithmetic",
+  "description": "Run Python Code with Jupyter Notebooks.",
+  "difficulty": "Beginner",
+  "time": "20 minutes",
+  "details": {
+    "steps": [{
+      "title": "Jupyter Notebook",
+      "text": "steps/1/step1.md"
+    },
+    {
+      "title": "Matrix Creation",
+      "text": "steps/2/step2.md",
+      "answer": "steps/2/answer.md"
+    },    
+    {
+      "title": "Matrix Addition",
+      "text": "steps/3/step3.md",
+      "answer": "steps/3/answer.md"
+    },
+    {
+      "title": "Matrix Subtraction",
+      "text": "steps/4/step4.md",
+      "answer": "steps/4/answer.md"
+    },
+    {
+      "title": "Matrix Multiplication (Hadamard Product)",
+      "text": "steps/5/step5.md",
+      "answer": "steps/5/answer.md"
+    },
+    {
+      "title": "Matrix Division",
+      "text": "steps/6/step6.md",
+      "answer": "steps/6/answer.md"
+    },
+    {
+      "title": "Matrix Dot Multiplication",
+      "text": "steps/7/step7.md",
+      "answer": "steps/7/answer.md"
+    },
+    {
+      "title": "Matrix-Vector Multiplication",
+      "text": "steps/8/step8.md",
+      "answer": "steps/8/answer.md"
+    },
+    {
+      "title": "Matrix-Scalar Multiplication",
+      "text": "steps/9/step9.md",
+      "answer": "steps/9/answer.md"
+    }],
+    "intro": {
+      "text": "intro.md",
+      "code": "set-env.sh"
+    },
+    "finish": {
+      "text": "finish.md"
+    },
+    "assets": {
+      "client": [
+        { 
+          "file": "prepareContainer.sh",  
+          "target": "~/"  
+        },    
+        { 
+          "file": "matrix-addition.ipynb",  
+          "target": "~/"
+        },
+        { 
+          "file": "matrix-creation.ipynb",   
+          "target": "~/"  
+        },  
+        { 
+          "file": "matrix-division.ipynb", 
+          "target": "~/"  
+        },  
+        { 
+          "file": "matrix-dot-product.ipynb", 
+          "target": "~/"  
+        },  
+        { 
+          "file": "matrix-hadamard-product.ipynb", 
+          "target": "~/"  
+        },  
+        { 
+          "file": "matrix-scalar-multiply.ipynb", 
+          "target": "~/"  
+        },  
+        { 
+          "file": "matrix-subtration.ipynb", 
+          "target": "~/"  
+        },  
+        { 
+          "file": "matrix-vector-multiply.ipynb", 
+          "target": "~/"  
+        }
+      ]
+    }
+  },
+  "environment": {
+    "uilayout": "terminal-iframe",
+    "showdashboard": true,
+    "dashboards": [
+      {
+        "name": "Jupyter Notebook",
+        "port": 8888
+      }
+    ],
+    "uimessage1": "\u001b[32mYour Interactive Bash Terminal.\r\n"
+  },
+  "backend": {
+    "imageid": "docker"
+  }
+}

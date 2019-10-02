@@ -1,0 +1,86 @@
+{
+  "title": "Basics of Linear Algebra for Machine Learning",
+  "description": "in Python",
+  "courses": [
+    {
+      "course_id": "chapter-4",
+      "title": "Chapter - 4",
+      "description": "Introduction to NumPy Arrays"
+    },
+    {
+      "course_id": "chapter-5",
+      "title": "Chapter - 5",
+      "description": "Index, Slice and Reshape NumPy Arrays"
+    },
+    {
+      "course_id": "chapter-6",
+      "title": "Chapter - 6",
+      "description": "NumPy Array Broadcasting"
+    },
+    {
+      "course_id": "chapter-7",
+      "title": "Chapter - 7",
+      "description": "Vectors and Vector Arithmetic"
+    },
+    {
+      "course_id": "chapter-8",
+      "title": "Chapter - 8",
+      "description": "Vector Norms"
+    },
+    {
+      "course_id": "chapter-9",
+      "title": "Chapter - 9",
+      "description": "Matrices and Matrix Arithmetic"
+    },
+    {
+      "course_id": "chapter-10",
+      "title": "Chapter - 10",
+      "description": "Types of Matrices"
+    },
+    {
+      "course_id": "chapter-11",
+      "title": "Chapter - 11",
+      "description": "Matrix Operations"
+    },
+    {
+      "course_id": "chapter-12",
+      "title": "Chapter - 12",
+      "description": "Sparse Matrices"
+    },
+    {
+      "course_id": "chapter-13",
+      "title": "Chapter - 13",
+      "description": "Tensors and Tensor Arithmetic"
+    },
+    {
+      "course_id": "chapter-14",
+      "title": "Chapter - 14",
+      "description": "Matrix Decompositions"
+    },
+    {
+      "course_id": "chapter-15",
+      "title": "Chapter - 15",
+      "description": "Eigendecomposition"
+    },
+    {
+      "course_id": "chapter-16",
+      "title": "Chapter - 16",
+      "description": "Singular Value Decomposition"
+    },
+    {
+      "course_id": "chapter-17",
+      "title": "Chapter - 17",
+      "description": "Introduction to Multivariate Statistics"
+    },
+    {
+      "course_id": "chapter-18",
+      "title": "Chapter - 18",
+      "description": "Principal Component Analysis"
+    },
+    {
+      "course_id": "chapter-19",
+      "title": "Chapter - 19",
+      "description": "Linear Regression"
+    }
+  ]
+}

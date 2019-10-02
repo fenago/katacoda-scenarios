@@ -1,0 +1,194 @@
+{
+  "title": "Index, Slice and Reshape NumPy Arrays",
+  "description": "Run Python Code with Jupyter Notebooks.",
+  "difficulty": "Beginner",
+  "time": "40 minutes",
+  "details": {
+    "steps": [{
+      "title": "Jupyter Notebook",
+      "text": "steps/1/step1.md"
+    },
+    {
+      "title": "Create One-Dimensional Array",
+      "text": "steps/2/step2.md",
+      "answer": "steps/2/answer.md"
+    },    
+    {
+      "title": "Create Two-Dimensional Array",
+      "text": "steps/3/step3.md",
+      "answer": "steps/3/answer.md"
+    },
+    {
+      "title": "One-Dimensional Indexing",
+      "text": "steps/4/step4.md",
+      "answer": "steps/4/answer.md"
+    },
+    {
+      "title": "Index Array Out of Bounds",
+      "text": "steps/5/step5.md",
+      "answer": "steps/5/answer.md"
+    },
+    {
+      "title": "Negative Array Indexing",
+      "text": "steps/6/step6.md",
+      "answer": "steps/6/answer.md"
+    },
+    {
+      "title": "Two-Dimensional Indexing",
+      "text": "steps/7/step7.md",
+      "answer": "steps/7/answer.md"
+    },
+    {
+      "title": "Index Row of Two-Dimensional Array",
+      "text": "steps/8/step8.md",
+      "answer": "steps/8/answer.md"
+    },
+    {
+      "title": "One-Dimensional Slicing",
+      "text": "steps/9/step9.md",
+      "answer": "steps/9/answer.md"
+    },
+    {
+      "title": "Slice a Subset of a One-Dimensional Array",
+      "text": "steps/10/step10.md",
+      "answer": "steps/10/answer.md"
+    },
+    {
+      "title": "Negative Slicing of a One-Dimensional Array",
+      "text": "steps/11/step11.md",
+      "answer": "steps/11/answer.md"
+    },
+    {
+      "title": "Split Input and Output Features",
+      "text": "steps/12/step12.md",
+      "answer": "steps/12/answer.md"
+    },
+    {
+      "title": "Split Train and Test Rows",
+      "text": "steps/13/step13.md",
+      "answer": "steps/13/answer.md"
+    },
+    {
+      "title": "Shape of One-Dimensional Array",
+      "text": "steps/14/step14.md",
+      "answer": "steps/14/answer.md"
+    },
+    {
+      "title": "Shape of Two-Dimensional Array",
+      "text": "steps/15/step15.md",
+      "answer": "steps/15/answer.md"
+    },
+    {
+      "title": "Row and Column Shape of Two-Dimensional Array",
+      "text": "steps/16/step16.md",
+      "answer": "steps/16/answer.md"
+    },
+    {
+      "title": "Reshape 1D to 2D Array",
+      "text": "steps/17/step17.md",
+      "answer": "steps/17/answer.md"
+    },
+    {
+      "title": "Reshape 2D to 3D Array",
+      "text": "steps/18/step18.md",
+      "answer": "steps/18/answer.md"
+    }],
+    "intro": {
+      "text": "intro.md",
+      "code": "set-env.sh"
+    },
+    "finish": {
+      "text": "finish.md"
+    },
+    "assets": {
+      "client": [
+        { 
+          "file": "prepareContainer.sh",  
+          "target": "~/"  
+        },    
+        { 
+          "file": "create-1-d.ipynb",  
+          "target": "~/"
+        },
+        { 
+          "file": "create-2-d.ipynb",   
+          "target": "~/"  
+        },  
+        { 
+          "file": "index-1-d.ipynb", 
+          "target": "~/"  
+        },  
+        { 
+          "file": "index-1-d-error.ipynb", 
+          "target": "~/"  
+        },  
+        { 
+          "file": "index-1-d-negative.ipynb", 
+          "target": "~/"  
+        },  
+        { 
+          "file": "index-2-d.ipynb", 
+          "target": "~/"  
+        },  
+        { 
+          "file": "index-firstcolm-2-d.ipynb", 
+          "target": "~/"  
+        },  
+        { 
+          "file": "reshape-1d-to-2d.ipynb", 
+          "target": "~/"  
+        },  
+        { 
+          "file": "reshape-2d-to-3d.ipynb", 
+          "target": "~/"  
+        },  
+        { 
+          "file": "separate-input-output.ipynb", 
+          "target": "~/"  
+        },  
+        { 
+          "file": "separate-train-test.ipynb", 
+          "target": "~/"  
+        },  
+        { 
+          "file": "shape-1d.ipynb", 
+          "target": "~/"  
+        },  
+        { 
+          "file": "shape-2d.ipynb", 
+          "target": "~/"  
+        },  
+        { 
+          "file": "shape-col-rows-2d.ipynb", 
+          "target": "~/"  
+        },  
+        { 
+          "file": "slice-1-d.ipynb", 
+          "target": "~/"  
+        },  
+        { 
+          "file": "slice-negative-1d.ipynb", 
+          "target": "~/"  
+        },  
+        { 
+          "file": "slice-subset-1d.ipynb", 
+          "target": "~/"  
+        }
+      ]
+    }
+  },
+  "environment": {
+    "uilayout": "terminal-iframe",
+    "showdashboard": true,
+    "dashboards": [
+      {
+        "name": "Jupyter Notebook",
+        "port": 8888
+      }
+    ],
+    "uimessage1": "\u001b[32mYour Interactive Bash Terminal.\r\n"
+  },
+  "backend": {
+    "imageid": "docker"
+  }
+}

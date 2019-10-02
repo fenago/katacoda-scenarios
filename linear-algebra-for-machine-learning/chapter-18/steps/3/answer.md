@@ -1,0 +1,23 @@
+<pre class="file" data-target="clipboard">
+# Hint: You can copy Solution to ClipBoard from Solution Tab in Step 3
+# principal component analysis with scikit-learn
+from numpy import array
+from sklearn.decomposition import PCA
+# define matrix
+A = array([
+	[2, 3],
+	[4, 6],
+	[9, 8]])
+print(A)
+# create the transform
+pca = PCA(2)
+# fit transform
+pca.fit(A)
+# access values and vectors
+print(pca.components_)
+print(pca.explained_variance_)
+# transform data
+B = pca.transform(A)
+print(B)
+
+</pre>

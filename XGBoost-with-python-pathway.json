@@ -1,0 +1,66 @@
+{
+  "title": "XGboost",
+  "description": "in Python",
+  "courses": [
+    {
+      "course_id": "chapter-4",
+      "title": "Chapter - 4",
+      "description": "Develop Your First XGBoost Model in Python with scikit-learn"
+    },
+    {
+      "course_id": "chapter-5",
+      "title": "Chapter - 5",
+      "description": "Data Preparation for Gradient Boosting"
+    },
+    {
+      "course_id": "chapter-6",
+      "title": "Chapter - 6",
+      "description": "How to Evaluate XGBoost Models"
+    },
+    {
+      "course_id": "chapter-7",
+      "title": "Chapter - 7",
+      "description": "Visualize Individual Trees Within A Model"
+    },
+    {
+      "course_id": "chapter-8",
+      "title": "Chapter - 8",
+      "description": "Save and Load Trained XGBoost Models"
+    },
+    {
+      "course_id": "chapter-9",
+      "title": "Chapter - 9",
+      "description": "Feature Importance With XGBoost and Feature Selection"
+    },
+    {
+      "course_id": "chapter-10",
+      "title": "Chapter - 10",
+      "description": "Monitor Training Performance and Early Stopping"
+    },
+    {
+      "course_id": "chapter-11",
+      "title": "Chapter - 11",
+      "description": "Tune Multithreading Support for XGBoost"
+    },
+    {
+      "course_id": "chapter-12",
+      "title": "Chapter - 12",
+      "description": "Train XGBoost Models in the Cloud with Amazon Web Services"
+    },
+    {
+      "course_id": "chapter-14",
+      "title": "Chapter - 14",
+      "description": "Tune the Number and Size of Decision Trees with XGBoost"
+    },
+    {
+      "course_id": "chapter-15",
+      "title": "Chapter - 15",
+      "description": "Tune Learning Rate and Number of Trees with XGBoost"
+    },
+    {
+      "course_id": "chapter-16",
+      "title": "Chapter - 16",
+      "description": "Tuning Stochastic Gradient Boosting with XGBoost"
+    }
+  ]
+}
