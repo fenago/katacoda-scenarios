@@ -9,7 +9,7 @@
       "text": "steps/1/text.md"
     },
     {
-      "title": "What is Spark?",
+      "title": "RDD Caching and Persistence",
       "text": "steps/2/text.md"
     },    
 	{
