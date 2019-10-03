@@ -3,7 +3,7 @@ If you do not want the last iteration to be included, you can use the keyword un
 `:paste`{{execute}}
 
 
-//Entering paste mode (ctrl-D to finish)
+After pasting following code in the scala terminal, Press  `Ctrl` + `D` to run code.
 
 ```for ( i <- 1 until 5) {
 	val sum = i + i
@@ -16,7 +16,7 @@ We can also use an if statement within the for loop as shown below.
 
 `:paste`{{execute}}
 
-//Entering paste mode (ctrl-D to finish)
+After pasting following code in the scala terminal, Press  `Ctrl` + `D` to run code.
 
 ```val friends = List("Chandler", "Monica", "Rachel", "Ross", "Joey", "Phoebe")
 for(friend <- friends if friend == "Chandler"){

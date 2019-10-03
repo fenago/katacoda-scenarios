@@ -7,7 +7,6 @@ Loops are an essential part of any programming language and it is no different w
 `if (numOfKids > 2) println ("They are Phoebe Buffay's kids.") else println ("Parent unknown!")`{{execute}}
 
  
-
 As you can see from the screenshot, the console only prints out the statement which is true based on the condition.
 
 You can also write the if loop in the REPL in multiple lines using the paste mode as shown below. From the Scala prompt enter the following command and hit enter.
@@ -18,16 +17,16 @@ This will take you to the paste mode with a prompt to enter your code as shown i
 
 
 You can now enter Scala code in multiple lines. Once you are done with your code press Ctrl + D to come out of the paste mode and execute the code.
+`:paste`{{execute}}
 
-```:paste
-//Entering paste mode (ctrl-D to finish)
+After pasting following code in the scala terminal, Press  `Ctrl` + `D` to run code.
 
-val numOfKids = 3
+```val numOfKids = 3
 if (numOfKids > 2) {
 println("They are Phoebe Buffay's kids.")
 } else {
 println("Parent unknown!")
 }
-```{{copy}}
+```{{execute}}
 
 The code is executed as soon as you have exited from the paste mode and result is displayed as shown in the screenshot above.

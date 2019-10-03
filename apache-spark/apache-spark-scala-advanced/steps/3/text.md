@@ -1,12 +1,11 @@
 **Step 4:** Let us now look at pattern matching. Pattern matching is, as said before, a core feature in Scala. Pattern matching is similar to that of switch in other languages.
 
 Enter into the paste mode and execute the following code.
+`:paste`{{execute}}
 
-```:paste
-//Entering paste mode (ctrl-D to finish)
+After pasting following code in the scala terminal, Press  `Ctrl` + `D` to run code.
 
-val job = "Transponster"
-
+```val job = "Transponster"
 job match {
 case "Masseuse" => println("That's Phoebe")
 case "Chef" => println("That's Monica")
@@ -15,7 +14,7 @@ case "Transponster" => println("That's Chandler")
 case "Actor" => println ("That's Joey")
 case "Paleontologist" => println("That's Ross")
 case _ => println("Unknown job role")
-}
+}```{{execute}}
 
 
 
