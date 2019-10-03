@@ -1,5 +1,3 @@
-Collections
-Task 5: Functions
 Task 1: Let us first create a function that does not have any parameters or a return type. Enter into the paste mode in Scala console and execute the following code.
 
 ```:paste

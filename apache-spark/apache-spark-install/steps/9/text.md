@@ -2,9 +2,9 @@
 
 Let us now see how we can access the first and the rest of elements using head and tail.
 
-scala>println(shows.head)
+`println(shows.head)
 
-scala>println(shows.tail)
+`println(shows.tail)
 
  
 

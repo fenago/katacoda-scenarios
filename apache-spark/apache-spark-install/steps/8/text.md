@@ -15,9 +15,9 @@ Let us now print the list.
 
 We can also access the individual items in the list using their index.
 
-scala>println(s"The TV show at position 0 is ${shows(0)}")
+`println(s"The TV show at position 0 is ${shows(0)}")
 
-scala>println(s"The TV show at position 1 is ${shows(1)}")
+`println(s"The TV show at position 1 is ${shows(1)}")
 
-scala>println(s"The TV show at position 4 is ${shows(4)}")
+`println(s"The TV show at position 4 is ${shows(4)}")
  
