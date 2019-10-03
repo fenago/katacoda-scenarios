@@ -3,5 +3,5 @@ Now that we have Spark installed in our machines. Let us begin coding with Spark
 
 
 We need following packages to perform the lab exercise: 
-●	Java Development Kit
-●	Scala
+- Java Development Kit
+- Scala

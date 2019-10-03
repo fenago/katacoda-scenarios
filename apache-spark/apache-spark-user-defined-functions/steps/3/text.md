@@ -3,6 +3,6 @@ Spark SQL has tons of built-in functions available to process data. These functi
 
 We can classify such custom written functions in two types.
 
-●	User-Defined Functions (UDFs)
-●	User-Defined Aggregate Functions (UADFs)
+- User-Defined Functions (UDFs)
+- User-Defined Aggregate Functions (UADFs)
 

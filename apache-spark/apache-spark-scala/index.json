@@ -5,15 +5,15 @@
   "time": "15 minutes",
   "details": {
     "steps": [{
-      "title": "",
+      "title": "What is Scala?",
       "text": "steps/1/text.md"
     },
     {
-      "title": "What is Spark?",
+      "title": "Introduction",
       "text": "steps/2/text.md"
     },    
 	{
-      "title": "",
+      "title": "Download and Install JDK",
       "text": "steps/3/text.md"
     },
 	{

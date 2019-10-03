@@ -13,16 +13,16 @@ val arithmetic = casted
 
 
 
-●	The datediff function is used to calculate the date difference between two dates. Here we have used the current_date method to get the present date and get the difference from the date in date column.
+- The datediff function is used to calculate the date difference between two dates. Here we have used the current_date method to get the present date and get the difference from the date in date column.
 
-●	The date_add and date_sub functions are used to add and subtract the number of days from the date in date column. The function takes the date column and the number of days  as arguments.
+- The date_add and date_sub functions are used to add and subtract the number of days from the date in date column. The function takes the date column and the number of days  as arguments.
 
 
-●	The add_months function is used to add number of months to the date in date column. The function takes the date column and the number of months  as arguments.
+- The add_months function is used to add number of months to the date in date column. The function takes the date column and the number of months  as arguments.
 
-●	The last_day and next_day functions are used to get the last day of the month and next day of the month for the day of the week for the date in date column respectively. The next_day function takes date column and the day of week as arguments.
+- The last_day and next_day functions are used to get the last day of the month and next day of the month for the day of the week for the date in date column respectively. The next_day function takes date column and the day of week as arguments.
 
-●	The months_between function is used to get the number of months between two days. We have used the present date using current_date function and date column as the arguments.
+- The months_between function is used to get the number of months between two days. We have used the present date using current_date function and date column as the arguments.
 
  The following output is shown when we use the show method.
 
