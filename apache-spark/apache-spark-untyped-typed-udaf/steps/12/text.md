@@ -17,7 +17,8 @@ The output which calculates average of all the ratings is as shown in the screen
 
 This completes the Typed UADF task.
 
-Task 6 is complete!
+Task is complete!
+
 
 
 SUMMARY

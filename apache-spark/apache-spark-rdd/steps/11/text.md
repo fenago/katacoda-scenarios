@@ -32,4 +32,4 @@ Similarly, we can also use the reduce function to multiply all the numbers in nu
 
 These are a few basic RDD operations. We shall look at more of these operations in detail in our next chapter which is entirely dedicated to RDDs. 
 
-Task 4 is complete!
+Task is complete!

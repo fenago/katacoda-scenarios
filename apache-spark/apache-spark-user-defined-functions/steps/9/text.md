@@ -23,7 +23,8 @@ The following output is shown.
  
 With this we have written, registered and use a UDF.
 
-Task 3 is complete!
+Task is complete!
+
 
 
 

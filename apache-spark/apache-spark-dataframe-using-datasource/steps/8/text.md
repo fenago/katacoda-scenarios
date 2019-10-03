@@ -7,4 +7,5 @@ We simply call the select method on users dataFrame and pass the required column
 
 We can load data to Spark using this same method for any format like json, parqet, ORC, Avro, etc. Please check the link in References section for more info.
 
-Task 1 is complete!
+Task is complete!
+

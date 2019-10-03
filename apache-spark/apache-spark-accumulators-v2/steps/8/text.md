@@ -14,4 +14,4 @@ With this we have successfully implementd Accumulators for Spark 2.x.
 
  
 
-Task 4 is complete!
+Task is complete!

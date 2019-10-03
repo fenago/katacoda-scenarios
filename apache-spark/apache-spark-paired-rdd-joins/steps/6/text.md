@@ -26,4 +26,5 @@ You can then similarly perform the rest of the joins such as left outer join and
 
 It is recommended to perform joins using dataframes rather than RDDs as it can have the benefit of catalyst optimizer when performed using dataframes. We shall look at dataframes in our upcoming chapters.
 
-Task 5 is complete!
+Task is complete!
+

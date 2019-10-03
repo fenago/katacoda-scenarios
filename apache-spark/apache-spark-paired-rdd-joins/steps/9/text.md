@@ -9,7 +9,8 @@ println(mappedCol)
 
 The result is shown as an ArrayBuffer for all the values of the key.
 
-Task 6 is complete!
+Task is complete!
+
 
 
 

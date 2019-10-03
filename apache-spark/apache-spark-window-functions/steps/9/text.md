@@ -45,7 +45,8 @@ The following output is shown when we run the program.
 
  
 
-Task 6 is complete!
+Task is complete!
+
 
 
 

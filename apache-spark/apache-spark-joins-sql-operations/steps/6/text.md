@@ -18,5 +18,6 @@ You should see the joined table as shown in the screenshot below.
 
  
 
-Task 5 is complete!
+Task is complete!
+
  

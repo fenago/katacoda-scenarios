@@ -20,7 +20,8 @@ The output is as shown in the screenshot below.
 
  
 
-Task 6 is complete!
+Task is complete!
+
 
 
 SUMMARY

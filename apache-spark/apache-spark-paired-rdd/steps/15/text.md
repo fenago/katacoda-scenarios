@@ -7,4 +7,5 @@ Finally, you can sort the results in descending order when sortByKey is used by 
 
 val sorted = avgRatings.sortByKey(false)
 
-Task 3 is complete!
+Task is complete!
+

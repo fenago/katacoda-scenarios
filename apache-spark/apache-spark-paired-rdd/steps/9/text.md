@@ -20,4 +20,5 @@ You should have the output in the console with the key-value pairs as shown in t
 
 The first element in the tuple is the key (userId) and the second element in the tuple is a value (ratings).
 
-Task 2 is complete!
+Task is complete!
+

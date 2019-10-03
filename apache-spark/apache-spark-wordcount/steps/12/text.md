@@ -17,4 +17,5 @@ As you can see from the screenshot above, the toDebugString method displays the 
 
 The number inside the paranthesis is to denote the number of parallel tasks. In our case it is only 1. The higher number denotes a high level of parallelism.
 
-Task 5 is complete!
+Task is complete!
+

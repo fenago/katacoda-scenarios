@@ -14,4 +14,5 @@ The result is as shown in the screenshot above.
 
 **Step 4:** We have also created a prod function in the previous task. You can also apply partial functions on that function as well. Please complete this step by yourself as a lab challenge.
 
-Task 2 is complete!
+Task is complete!
+

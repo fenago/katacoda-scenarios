@@ -12,4 +12,4 @@ The following output is shown.
  
 We have successfully written a UDAF, registered and used it in the Spark application.
 
-Task 5 is complete!
+Task is complete!

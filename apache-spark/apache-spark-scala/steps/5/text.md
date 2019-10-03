@@ -20,4 +20,5 @@ As you can see from the screenshot, the output is shown below immediately as soo
 
 You are now back to the terminal prompt.
 
-Task 2 is complete!
+Task is complete!
+

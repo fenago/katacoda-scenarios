@@ -24,4 +24,5 @@ Please make sure you correctly enter all the opening and closing flower brackets
 
 Let us now go back to the previous program counters and refer this object there.
 
-Task 2 is complete!
+Task is complete!
+

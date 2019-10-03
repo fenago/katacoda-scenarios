@@ -32,4 +32,5 @@ We can also access the elements of a tuple and print it out to the console as sh
 
 As always, play around with tuples and practice as much as possible.
 
-Task 6 is complete!
+Task is complete!
+

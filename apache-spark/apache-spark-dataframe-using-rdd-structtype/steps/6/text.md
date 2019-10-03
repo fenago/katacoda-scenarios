@@ -27,4 +27,4 @@ The output is as shown in the screenshot below.
 
  
 
-Task 2 is complete!
+Task is complete!

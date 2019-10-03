@@ -21,4 +21,4 @@ We are declaring a new variable called goodRecords and simply extracting (map) t
 
 We have successfully implemented Accumulators and also separated good records with bad records.
 
-Task 3 is complete!
+Task is complete!

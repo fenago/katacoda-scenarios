@@ -16,5 +16,6 @@ You should see the file saved as shown below.
  
 
 
-Task 1 is complete!
+Task is complete!
+
 

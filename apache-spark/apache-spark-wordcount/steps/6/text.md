@@ -15,4 +15,5 @@ With this we have successfully created an RDD using the text file.
 
 This completes the process of creating a SparkContext object and creating the first RDD by loading the data using the textFile API.
 
-Task 2 is complete!
+Task is complete!
+

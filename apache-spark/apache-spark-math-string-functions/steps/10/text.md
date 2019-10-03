@@ -17,4 +17,5 @@ Here we have extracted the first word and space after it using the substring fun
 
 These are only a few string functions and there are many available out there. Please practice with as many functions as you can.
 
-Task 5 is complete!
+Task is complete!
+

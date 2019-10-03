@@ -8,7 +8,8 @@ As you can see from the screenshot above, we were successfully able to read the 
 
 Please try to read the data using new hadoop API as a lab challenge.
 
-Task 6 is complete!
+Task is complete!
+
 
 
 SUMMARY
