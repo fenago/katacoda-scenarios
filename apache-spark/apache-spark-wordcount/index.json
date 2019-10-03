@@ -41,15 +41,15 @@
         "text": "steps/9/text.md"
     },
     {
-        "title": "",
+        "title": "Run Program",
         "text": "steps/10/text.md"
     },
     {
-        "title": "",
+        "title": "Spark Program – Saving Data",
         "text": "steps/11/text.md"
     },
     {
-        "title": "",
+        "title": "Spark Program – Lineage Graph",
         "text": "steps/12/text.md"
     }],
     "intro": {
