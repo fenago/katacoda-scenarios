@@ -5,7 +5,7 @@
   "time": "15 minutes",
   "details": {
     "steps": [{
-      "title": "Installation scripts",
+      "title": "",
       "text": "steps/1/text.md"
     },
     {
@@ -29,7 +29,7 @@
         "text": "steps/6/text.md"
     },
     {
-        "title": "Install sparkcat",
+        "title": "",
         "text": "steps/7/text.md"
     },
     {

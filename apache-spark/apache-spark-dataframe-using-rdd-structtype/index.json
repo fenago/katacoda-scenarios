@@ -5,7 +5,7 @@
   "time": "15 minutes",
   "details": {
     "steps": [{
-      "title": "Installation scripts",
+      "title": "",
       "text": "steps/1/text.md"
     },
     {
@@ -13,11 +13,11 @@
       "text": "steps/2/text.md"
     },    
 	{
-      "title": "Install Java and telnet",
+      "title": "",
       "text": "steps/3/text.md"
     },
 	{
-      "title": "Install Spark & Zookeeper",
+      "title": "",
       "text": "steps/4/text.md"
     },
   {
@@ -25,11 +25,11 @@
       "text": "steps/5/text.md"
     },
     {
-        "title": "Zookeeper",
+        "title": "",
         "text": "steps/6/text.md"
     },
     {
-        "title": "Install sparkcat",
+        "title": "",
         "text": "steps/7/text.md"
     },
     {
