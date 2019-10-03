@@ -1,0 +1,113 @@
+{
+  "title": "Gaussian and Summary Stats",
+  "description": "Run Python Code with Jupyter Notebooks",
+  "difficulty": "Beginner",
+  "time": "30 minutes",
+  "details": {
+    "steps": [{
+      "title": "Jupyter Notebook",
+      "text": "steps/1/step1.md"
+    },
+    {
+      "title": "Gaussian Distribution",
+      "text": "steps/2/step2.md",
+      "answer": "steps/2/answer.md"
+    },    
+    {
+      "title": "Dataset",
+      "text": "steps/3/step3.md",
+      "answer": "steps/3/answer.md"
+    },
+    {
+      "title": "Dataset with More Bins",
+      "text": "steps/4/step4.md",
+      "answer": "steps/4/answer.md"
+    },
+    {
+      "title": "Mean",
+      "text": "steps/5/step5.md",
+      "answer": "steps/5/answer.md"
+    },
+    {
+      "title": "Median",
+      "text": "steps/6/step6.md",
+      "answer": "steps/6/answer.md"
+    },
+    {
+      "title": "Variance Plot",
+      "text": "steps/7/step7.md",
+      "answer": "steps/7/answer.md"
+    },
+    {
+      "title": "Variance",
+      "text": "steps/8/step8.md",
+      "answer": "steps/8/answer.md"
+    },
+    {
+      "title": "Standard Deviation",
+      "text": "steps/9/step9.md",
+      "answer": "steps/9/answer.md"
+    }],
+    "intro": {
+      "text": "intro.md",
+      "code": "set-env.sh"
+    },
+    "finish": {
+      "text": "finish.md"
+    },
+    "assets": {
+      "client": [
+        { 
+          "file": "prepareContainer.sh",  
+          "target": "~/"  
+        },    
+        { 
+          "file": "mean.ipynb",  
+          "target": "~/"
+        },
+        { 
+          "file": "median.ipynb",   
+          "target": "~/"  
+        },  
+        { 
+          "file": "dataset.ipynb", 
+          "target": "~/"  
+        },  
+        { 
+          "file": "dataset-more-bin.ipynb", 
+          "target": "~/"  
+        },  
+        { 
+          "file": "variance-plots.ipynb", 
+          "target": "~/"  
+        },  
+        { 
+          "file": "variance.ipynb", 
+          "target": "~/"  
+        },  
+        { 
+          "file": "stdev.ipynb", 
+          "target": "~/"  
+        },  
+        { 
+          "file": "guassian.ipynb", 
+          "target": "~/"  
+        }
+      ]
+    }
+  },
+  "environment": {
+    "uilayout": "terminal-iframe",
+    "showdashboard": true,
+    "dashboards": [
+      {
+        "name": "Jupyter Notebook",
+        "port": 8888
+      }
+    ],
+    "uimessage1": "\u001b[32mYour Interactive Bash Terminal.\r\n"
+  },
+  "backend": {
+    "imageid": "docker"
+  }
+}

@@ -1,0 +1,86 @@
+{
+  "title": "Rank Significance Tests",
+  "description": "Run Python Code with Jupyter Notebooks",
+  "difficulty": "Beginner",
+  "time": "25 minutes",
+  "details": {
+    "steps": [{
+      "title": "Jupyter Notebook",
+      "text": "steps/1/step1.md"
+    },
+    {
+      "title": "Test Data",
+      "text": "steps/2/step2.md",
+      "answer": "steps/2/answer.md"
+    },    
+    {
+      "title": "Mann-Whitney U Test",
+      "text": "steps/3/step3.md",
+      "answer": "steps/3/answer.md"
+    },
+    {
+      "title": "Wilcoxon Signed-Rank Test",
+      "text": "steps/4/step4.md",
+      "answer": "steps/4/answer.md"
+    },
+    {
+      "title": "Kruskal-Wallis H Test",
+      "text": "steps/5/step5.md",
+      "answer": "steps/5/answer.md"
+    },
+    {
+      "title": "Friedman Test",
+      "text": "steps/6/step6.md",
+      "answer": "steps/6/answer.md"
+    }],
+    "intro": {
+      "text": "intro.md",
+      "code": "set-env.sh"
+    },
+    "finish": {
+      "text": "finish.md"
+    },
+    "assets": {
+      "client": [
+        { 
+          "file": "prepareContainer.sh",  
+          "target": "~/"  
+        },    
+        { 
+          "file": "dataset.ipynb",  
+          "target": "~/"
+        },
+        { 
+          "file": "friedman.ipynb",   
+          "target": "~/"  
+        },  
+        { 
+          "file": "kruskal-wallis.ipynb", 
+          "target": "~/"  
+        },  
+        { 
+          "file": "mann-whitney.ipynb", 
+          "target": "~/"  
+        },  
+        { 
+          "file": "wilcoxon.ipynb", 
+          "target": "~/"  
+        }
+      ]
+    }
+  },
+  "environment": {
+    "uilayout": "terminal-iframe",
+    "showdashboard": true,
+    "dashboards": [
+      {
+        "name": "Jupyter Notebook",
+        "port": 8888
+      }
+    ],
+    "uimessage1": "\u001b[32mYour Interactive Bash Terminal.\r\n"
+  },
+  "backend": {
+    "imageid": "docker"
+  }
+}
