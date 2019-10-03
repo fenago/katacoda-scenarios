@@ -1,5 +1,5 @@
 
-Step 3: Let us now run some queries. First, let us run a basic query to select all the users from table who belong to the state Florida.
+**Step 3:** Let us now run some queries. First, let us run a basic query to select all the users from table who belong to the state Florida.
 
 val foridaUsers = spark.sql("SELECT * FROM users WHERE  state = \”FL\”")
 

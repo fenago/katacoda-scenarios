@@ -1,5 +1,5 @@
 
-Step 2: Let us first use the countByKey function to check the number of ratings per movie on our joined RDD.
+**Step 2:** Let us first use the countByKey function to check the number of ratings per movie on our joined RDD.
 
 val count = joined.countByKey()
 
@@ -9,7 +9,7 @@ println(count)
 
 
 
-Step 3: Let us now use the collectAsMap function on the joined RDD.
+**Step 3:** Let us now use the collectAsMap function on the joined RDD.
 
 val mappedCol = joined.collectAsMap()
 println(mappedCol)

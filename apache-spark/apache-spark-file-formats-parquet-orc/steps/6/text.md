@@ -1,4 +1,4 @@
-Step 4: We can also save a parquet file using compression as shown below.
+**Step 4:** We can also save a parquet file using compression as shown below.
 
 scala> parquetData
 .write

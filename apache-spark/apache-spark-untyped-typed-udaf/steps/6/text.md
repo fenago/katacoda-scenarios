@@ -1,4 +1,4 @@
-Step 4: Let us finally use the UDAF in our SQL query as shown below.
+**Step 4:** Let us finally use the UDAF in our SQL query as shown below.
 
 val average = sparkSession.sql("SELECT userId,  averageUDAF(rating) AS avgRating FROM ratings GROUP BY userId")
 

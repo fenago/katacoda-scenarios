@@ -1,4 +1,4 @@
-Step 3: Let us run a job. Create a List of few numbers and create an RDD from that list as shown below.
+**Step 3:** Let us run a job. Create a List of few numbers and create an RDD from that list as shown below.
 
 scala> val num = List(1, 2, 3, 4)
 scala> val numRDD = sc.parallelize(num)

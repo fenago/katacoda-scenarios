@@ -1,5 +1,5 @@
 
-Step 4: Let us now use explode function. The explode function takes each element in the collection and generates a new row. 
+**Step 4:** Let us now use explode function. The explode function takes each element in the collection and generates a new row. 
 
 val exploded = numDS.select($"numbers", explode($"numbers").as("exploded"))
  

@@ -4,7 +4,7 @@
 
  
 
-Step 10: Let us now write some code to read the input data. We will also need to import the implicits.
+**Step 10:** Let us now write some code to read the input data. We will also need to import the implicits.
 
 import sparkSession.implicits._
 
@@ -21,7 +21,7 @@ Do not worry if this code doesn’t make sense. Just think this as a way to read
 
  
 
-Step 11: Let us now apply our custom accumulator in the foreach higher order function and print the result to console.
+**Step 11:** Let us now apply our custom accumulator in the foreach higher order function and print the result to console.
 
 data.foreach(record => {
       countByMovie.add((record.location, 1))

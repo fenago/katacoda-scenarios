@@ -1,5 +1,5 @@
 
-Step 6: Let us now convert the timestamp which is of String type to timestamp type.
+**Step 6:** Let us now convert the timestamp which is of String type to timestamp type.
 
 val castedTimeStamp = timeStampDS.select($"id", $"name", $"timeStamp".cast("timestamp")).cache()
 

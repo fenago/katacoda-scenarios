@@ -1,6 +1,6 @@
  
 
-Step 2: Let us first use the split method to split the strings by space as below.
+**Step 2:** Let us first use the split method to split the strings by space as below.
 
 val splitted = quoteDS.select(split($"value", " ").as("splits"))
 
@@ -15,7 +15,7 @@ splitted.show()
 
 As you can see from the screenshot above, the rows have now been splitted by whitespace.
 
-Step 3: Next, let us use the explode function which we have learned in this exercise to create column for each element in the collection.
+**Step 3:** Next, let us use the explode function which we have learned in this exercise to create column for each element in the collection.
 
 val exploded = splitted.select(explode($"splits").as("explode"))
 

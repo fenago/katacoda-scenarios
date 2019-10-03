@@ -1,4 +1,4 @@
-Step 5: Now that we have our paired RDD, let us group all the tags by movieID using the groupByKey function.
+**Step 5:** Now that we have our paired RDD, let us group all the tags by movieID using the groupByKey function.
 
 val grouped = RDDPair.groupByKey()
 

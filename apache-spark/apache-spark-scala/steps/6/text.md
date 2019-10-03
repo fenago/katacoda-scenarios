@@ -1,7 +1,7 @@
 Task 3: Scala Basics
 Let us now get familiar and start writing some Scala code to get acquainted with Scala syntax and basic programming constructs.
 
-Step 1: Fire up your terminal and go into the Scala console by entering scala and hitting enter. Once you see the scala prompt, enter the following piece of code and hit enter
+**Step 1:** Fire up your terminal and go into the Scala console by entering scala and hitting enter. Once you see the scala prompt, enter the following piece of code and hit enter
 
 scala> val name: String = “Learning Voyage”
 

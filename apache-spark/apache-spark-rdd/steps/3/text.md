@@ -1,4 +1,4 @@
-Step 1: Let us create a RDD using the parallelize keyword. Fire up the spark-shell from the terminal and create a list as shown below.
+**Step 1:** Let us create a RDD using the parallelize keyword. Fire up the spark-shell from the terminal and create a list as shown below.
 
 $ spark-shell
 

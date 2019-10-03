@@ -1,4 +1,4 @@
-Step 4: Let us now look into more data types as discussed in Data Types in Scala section and see how we can create them.
+**Step 4:** Let us now look into more data types as discussed in Data Types in Scala section and see how we can create them.
 
  
 Loops

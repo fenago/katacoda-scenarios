@@ -1,5 +1,5 @@
 
-Step 8: Finally, let us use couple of conversion functions to convert the dates into different formats.
+**Step 8:** Finally, let us use couple of conversion functions to convert the dates into different formats.
 
 val conversions = timeStampDS
     .withColumn("unixTime", unix_timestamp($"timeStamp"))

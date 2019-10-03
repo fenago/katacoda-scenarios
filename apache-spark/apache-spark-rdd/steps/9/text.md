@@ -1,4 +1,4 @@
-Step 3: Let us now use filter function using the contains method and filter out an RDD which satisfies the filter criteria. Create a new list as shown below and then filter out a string.
+**Step 3:** Let us now use filter function using the contains method and filter out an RDD which satisfies the filter criteria. Create a new list as shown below and then filter out a string.
 
 scala> val friends = (“Monica”, “Chandler”, “Ross”, “Phoebe”, “Rachel”, “Joey”)
 

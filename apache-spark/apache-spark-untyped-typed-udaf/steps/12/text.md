@@ -1,5 +1,5 @@
 
-Step 9: Let us now use of UDAF we wrote in this task. We have to call the toColumn method on our UDAF and give it a name using the name method as shown below.
+**Step 9:** Let us now use of UDAF we wrote in this task. We have to call the toColumn method on our UDAF and give it a name using the name method as shown below.
 
 val averageRating = averageTypedUDAF.toColumn.name("averageRating")
 

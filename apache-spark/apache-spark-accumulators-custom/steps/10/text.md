@@ -1,5 +1,5 @@
 
-Step 12: Let us now run the program. You should see the output with count for each movie in a List collection as shown in the screenshot below.
+**Step 12:** Let us now run the program. You should see the output with count for each movie in a List collection as shown in the screenshot below.
 
  
 

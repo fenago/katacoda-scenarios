@@ -8,7 +8,7 @@ In the previous task, we have implemented a UDF. In this task let is implement a
 
 While we write a UADF, we need to implement few methods similar to what we did in Lab exercise 5, Task 5 Implementing Custom Accumulators.
 
-Step 1: We shall be using the same file ratings_head.csv which we have used in the previous task. Let us use the average UDAF which we are about to implement to calculate the average rating per user.
+**Step 1:** We shall be using the same file ratings_head.csv which we have used in the previous task. Let us use the average UDAF which we are about to implement to calculate the average rating per user.
 
 ratings_head.csv - http://bit.ly/2X3r2wb
 

@@ -1,4 +1,4 @@
-Step 1: Open a terminal and start the spark-shell by entering the following command.
+**Step 1:** Open a terminal and start the spark-shell by entering the following command.
 
 $ spark-shell
 

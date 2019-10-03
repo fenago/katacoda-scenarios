@@ -1,5 +1,5 @@
 
-Step 6: Let us now perform some operations with our dataset. The following code below is used to find the total count of each rating.
+**Step 6:** Let us now perform some operations with our dataset. The following code below is used to find the total count of each rating.
 
 val ratingCount = movies.groupBy("rating").count()
  

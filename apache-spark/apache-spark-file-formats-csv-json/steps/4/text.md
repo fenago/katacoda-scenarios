@@ -5,13 +5,13 @@
 Task 2: CSV Files
 Let us now look at reading and writing CSV files to Spark. We have been reading and writing CSV files in the previous chapters. However, let us also see some of many options that can be used while reading and writing CSV files.
 
-Step 1: Download the file ratings.csv from the URL below and save it to the IdeaProjects/Spark/chapter_10 folder.
+**Step 1:** Download the file ratings.csv from the URL below and save it to the IdeaProjects/Spark/chapter_10 folder.
 
 ratings.csv - http://bit.ly/2L8IEBS
 
 Each line of this file represents one rating of one movie by one user, and has the following format: userId, movieId, rating, timestamp
 
-Step 2: Let us now read this file to Spark from Spark shell using few options.
+**Step 2:** Let us now read this file to Spark from Spark shell using few options.
 
 scala> val data = spark
 .read

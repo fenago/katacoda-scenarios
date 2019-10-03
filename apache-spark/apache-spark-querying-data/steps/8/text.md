@@ -1,6 +1,6 @@
 
 
-Step 5: Let us now look at the count of users by state and also arrange them in descending order of their count.
+**Step 5:** Let us now look at the count of users by state and also arrange them in descending order of their count.
 
 Note: You may comment out the previous queries to avoid processing them again.
 val userCountByState = spark.sql("SELECT state, count(*) AS count FROM users GROUP BY state ORDER BY count DESC)

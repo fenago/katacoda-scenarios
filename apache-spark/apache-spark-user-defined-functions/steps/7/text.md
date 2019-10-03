@@ -1,6 +1,6 @@
 
 
-Step 4: Let us call the UDF decrUDF using the DataFrame API using the select method, as shown below.
+**Step 4:** Let us call the UDF decrUDF using the DataFrame API using the select method, as shown below.
 
 val ratingDecDf = ratings.select($"*", decrUDF($"rating").as("ratingDec"))
 

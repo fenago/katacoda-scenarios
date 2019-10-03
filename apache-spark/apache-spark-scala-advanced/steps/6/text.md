@@ -1,4 +1,4 @@
-Step 3: Let us now look at Higher Order Functions. Higher Order functions are the functions which take other functions as parameters. Let us understand this with an example.
+**Step 3:** Let us now look at Higher Order Functions. Higher Order functions are the functions which take other functions as parameters. Let us understand this with an example.
 
 In the scala console, enter the following code.
 

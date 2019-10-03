@@ -1,4 +1,4 @@
-Step 2: Let us now look at map collection. Let us first create a map of elements.
+**Step 2:** Let us now look at map collection. Let us first create a map of elements.
 
 scala> val couples = Map(“Chandler” -> “Monica”, “Ross” -> “Rachel”, “Phoebe” -> “Mike”)
 

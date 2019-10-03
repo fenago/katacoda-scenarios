@@ -1,6 +1,6 @@
 
 
-Step 5: Next, let us use the timestamp functions. Since we have only created a date type in the previous dataset, let us create a timestamp type instead of date type. First, let us create the dataset and rename the columns as shown below.
+**Step 5:** Next, let us use the timestamp functions. Since we have only created a date type in the previous dataset, let us create a timestamp type instead of date type. First, let us create the dataset and rename the columns as shown below.
 
 val timeStamp = spark.createDataset(Seq(
   (1, "Ernesto", "2015-09-24 00:01:12"),

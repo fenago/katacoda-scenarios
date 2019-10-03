@@ -1,4 +1,4 @@
-Step 5: Once we have the required imports, we need to write the main function similar to that of Java. This is the starting point for the compiler to execute our program. 
+**Step 5:** Once we have the required imports, we need to write the main function similar to that of Java. This is the starting point for the compiler to execute our program. 
 
 def main(args: Array[String]): Unit = {
 
@@ -6,7 +6,7 @@ The main function takes an argument args which is an Array of String type and do
 
  
 
-Step 6: Let us declare the level of logging to only log the error and fatal messages.
+**Step 6:** Let us declare the level of logging to only log the error and fatal messages.
 
 Logger.getLogger("Org").setLevel(Level.ERROR)
 

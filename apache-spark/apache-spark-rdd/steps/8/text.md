@@ -1,4 +1,4 @@
-Step 2: You can access the first element of the RDD using the first method as shown below.
+**Step 2:** You can access the first element of the RDD using the first method as shown below.
 
 scala> lettersRDD.first
 

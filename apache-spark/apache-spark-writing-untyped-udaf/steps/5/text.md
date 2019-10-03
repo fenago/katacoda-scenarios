@@ -1,5 +1,5 @@
 
-Step 2: Create a new Scala object and name it averageUDAF. Next, we will need the following imports to implement a UADF. We haven’t used some of these imports so far. We shall learn about them as we continue with our program.
+**Step 2:** Create a new Scala object and name it averageUDAF. Next, we will need the following imports to implement a UADF. We haven’t used some of these imports so far. We shall learn about them as we continue with our program.
 
 import org.apache.spark.sql.expressions.{MutableAggregationBuffer, UserDefinedAggregateFunction}
 import org.apache.spark.sql.types._

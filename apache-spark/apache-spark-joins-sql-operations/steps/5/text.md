@@ -1,4 +1,4 @@
-Step 4: Let us now read both the files as shown below.
+**Step 4:** Let us now read both the files as shown below.
 
 val movies = spark.read
   .format("csv")

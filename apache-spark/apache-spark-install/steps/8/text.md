@@ -1,7 +1,7 @@
 Task 6: Collections
 Let us now look at few collections in Scala.
 
-Step 1: Let us create a list and apply various transformations or operations over it.
+**Step 1:** Let us create a list and apply various transformations or operations over it.
 
 scala> val shows: List[String] = List(“F.R.I.E.N.D.S”, “The Big Bang Theory”, “Game of Thrones”, “Breaking Bad”, “The Mentalist”)
 

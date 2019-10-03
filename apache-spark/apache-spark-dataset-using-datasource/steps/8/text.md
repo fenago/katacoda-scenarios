@@ -1,5 +1,5 @@
 
-Step 7: Let us now write some functional style programming using our Dataset. First, we shall extract the two columns userId and rating from the movies dataset using the map function.
+**Step 7:** Let us now write some functional style programming using our Dataset. First, we shall extract the two columns userId and rating from the movies dataset using the map function.
 
 val users = movies.map(x => (x.userId, x.rating))
 

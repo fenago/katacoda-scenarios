@@ -1,5 +1,5 @@
 
-Step 3: Let us call the show method and run the program.
+**Step 3:** Let us call the show method and run the program.
 
 agg.show()
 
@@ -7,7 +7,7 @@ The following result should be shown.
 
  
 
-Step 4: As we can see from the screenshot above, the column names are not so nice. We can assign our own column names using the as method.
+**Step 4:** As we can see from the screenshot above, the column names are not so nice. We can assign our own column names using the as method.
 
 val aggAlias = movies.select(
   avg("rating").as("avgRating")

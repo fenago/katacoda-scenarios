@@ -1,5 +1,5 @@
 
-Step 2: Let us cast the date column and convert it to date type using the cast function as shown below.
+**Step 2:** Let us cast the date column and convert it to date type using the cast function as shown below.
 
 val casted = datesDS.select($"id", $"name", $"date".cast("date")).cache()
 

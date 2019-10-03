@@ -1,4 +1,4 @@
-Step 5: To run this program within the IDE, simply click on the play button and Run program as shown in the screenshot. The program will the then be compiled and executed.
+**Step 5:** To run this program within the IDE, simply click on the play button and Run program as shown in the screenshot. The program will the then be compiled and executed.
 
 
 

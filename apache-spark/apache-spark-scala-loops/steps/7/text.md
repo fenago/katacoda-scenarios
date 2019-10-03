@@ -1,7 +1,7 @@
 Task 4: Loops
 Loops are an essential part of any programming language and it is no different with Scala. Let us now look at the loops concept and write some code to get familiar with them.
 
-Step 1: Let us start the loops concept with the if loop. Fire up the Scala console if you haven’t already and type in the following code.
+**Step 1:** Let us start the loops concept with the if loop. Fire up the Scala console if you haven’t already and type in the following code.
 
 scala> val numOfKids = 3
 

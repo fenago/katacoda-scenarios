@@ -1,6 +1,6 @@
 
 
-Step 5: Let us now use even more math functions.
+**Step 5:** Let us now use even more math functions.
 
 val mathFuncs3 = numbersDS.select(pow($"numbers", 2), round($"numbers"), sin($"numbers"), tan($"numbers"))
 
@@ -20,7 +20,7 @@ The following result is shown.
 
  
 
-Step 6: Let us finally conclude math functions with a couple more of them.
+**Step 6:** Let us finally conclude math functions with a couple more of them.
 
 val mathFuncs4 = numbersDS.select(sqrt($"numbers"), log10($"numbers"), $"numbers" + Math.PI)
 

@@ -1,4 +1,4 @@
-Step 8: We now have a SparkContext object created. We can now use this object and load data using the textFile API as we have done in the Spark Shell. 
+**Step 8:** We now have a SparkContext object created. We can now use this object and load data using the textFile API as we have done in the Spark Shell. 
  
 
 Download a text file from the URL below and save it in the path IdeaProjects/Spark/chapter_4/treasure_island.txt. Please create new directories as required. The IdeaProjects folder is present in your Home folder.

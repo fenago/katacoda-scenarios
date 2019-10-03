@@ -1,5 +1,5 @@
 
-Step 6: Finally, we can use our RDD which is structRecords and schema as parameters for createDataFrame method to create a dataFrame.
+**Step 6:** Finally, we can use our RDD which is structRecords and schema as parameters for createDataFrame method to create a dataFrame.
 
 val recordsDf = ss.sqlContext.createDataFrame(structRecords, schema)
 

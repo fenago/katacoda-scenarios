@@ -1,5 +1,5 @@
 
-Step 2: Let us now load this file to Spark using the Spark Shell with the following code.
+**Step 2:** Let us now load this file to Spark using the Spark Shell with the following code.
 
 scala> val ratings = spark
 .read

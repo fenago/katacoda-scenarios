@@ -1,7 +1,7 @@
 
  
 
-Step 4: Let us now declare a private HashMap variable called movieCount which will hold the final count of our CountByMovie Accumulator.
+**Step 4:** Let us now declare a private HashMap variable called movieCount which will hold the final count of our CountByMovie Accumulator.
 
 private val movieCount = new HashMap[Int, Int]()
 
@@ -13,7 +13,7 @@ def reset() = {
 
  
 
-Step 5: We now have to implement the add method to specify the aggregation logic for local accumulators, i.e., the tasks which run on executors. All the tasks running on executors will run the method to aggregate data locally.
+**Step 5:** We now have to implement the add method to specify the aggregation logic for local accumulators, i.e., the tasks which run on executors. All the tasks running on executors will run the method to aggregate data locally.
  
 
 

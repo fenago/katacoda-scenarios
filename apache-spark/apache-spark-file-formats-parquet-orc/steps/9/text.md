@@ -1,6 +1,6 @@
 
 
-Step 3: We can now simply write to an ORC format similar to what we have been doing with other file formats so far.
+**Step 3:** We can now simply write to an ORC format similar to what we have been doing with other file formats so far.
 
 scala> orcData
 .write

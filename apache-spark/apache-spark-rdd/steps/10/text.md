@@ -1,4 +1,4 @@
-Step 4: Let’s now use a map function on the friendsRDD and output a tuple with the first character in each element and the name itself.
+**Step 4:** Let’s now use a map function on the friendsRDD and output a tuple with the first character in each element and the name itself.
 
 scala> val pairs = friendsRDD.map(name => (name.charAt(0), name))
 

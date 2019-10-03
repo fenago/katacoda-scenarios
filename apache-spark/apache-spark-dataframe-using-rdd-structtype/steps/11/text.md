@@ -1,4 +1,4 @@
-Step 7: Let us finally run our program and check the output. The output is as shown in the screenshot below.
+**Step 7:** Let us finally run our program and check the output. The output is as shown in the screenshot below.
 
 
 

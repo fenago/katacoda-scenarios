@@ -1,5 +1,5 @@
 
-Step 4: Let us now write some code to get the count for all the users for each state. We first need to import the implicits as shown below.
+**Step 4:** Let us now write some code to get the count for all the users for each state. We first need to import the implicits as shown below.
 
 import spark.implicits._
 

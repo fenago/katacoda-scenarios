@@ -1,7 +1,7 @@
 
  
 
-Step 4: Let us now use some more math functions.
+**Step 4:** Let us now use some more math functions.
 
 val mathFuncs2 = numbersDS.select(factorial($"numbers"), floor($"numbers"), hex($"numbers"), log($"numbers"))
 

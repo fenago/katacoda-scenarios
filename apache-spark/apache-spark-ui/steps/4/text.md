@@ -1,4 +1,4 @@
-Step 2: Now open your web browser and navigate to the web interface URL displayed in your Spark Shell. You should see the Spark web interface as shown in the screenshot below.
+**Step 2:** Now open your web browser and navigate to the web interface URL displayed in your Spark Shell. You should see the Spark web interface as shown in the screenshot below.
 
  
  

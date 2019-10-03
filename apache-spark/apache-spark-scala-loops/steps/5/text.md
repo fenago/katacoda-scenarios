@@ -1,4 +1,4 @@
-Step 5: Let us now look at various ways we can print to the console. Using all the above variables we created in the previous step, let us concatenate them all in one string using ‘+’ symbol as shown below.
+**Step 5:** Let us now look at various ways we can print to the console. Using all the above variables we created in the previous step, let us concatenate them all in one string using ‘+’ symbol as shown below.
 
 scala> println(“Printing to console using concatenation: ” + name + num + longNum + decimal + decimalf + letter + lieDetector)
 

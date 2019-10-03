@@ -1,4 +1,4 @@
-Step 4: We can also use the function literals in the parameters instead of using the name of the function as shown below.
+**Step 4:** We can also use the function literals in the parameters instead of using the name of the function as shown below.
 
 scala> highSquared(6, x => x * x)
 

@@ -1,5 +1,5 @@
 
-Step 3: Let us write this back to the filesystem in Parquet format.
+**Step 3:** Let us write this back to the filesystem in Parquet format.
 
 scala> parquetData
 .write

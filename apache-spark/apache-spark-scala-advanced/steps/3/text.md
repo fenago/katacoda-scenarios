@@ -1,4 +1,4 @@
-Step 4: Let us now look at pattern matching. Pattern matching is, as said before, a core feature in Scala. Pattern matching is similar to that of switch in other languages.
+**Step 4:** Let us now look at pattern matching. Pattern matching is, as said before, a core feature in Scala. Pattern matching is similar to that of switch in other languages.
 
 Enter into the paste mode and execute the following code.
 

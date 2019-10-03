@@ -1,4 +1,4 @@
-Step 3: Let us now create a tuple and see how we can access its elements.
+**Step 3:** Let us now create a tuple and see how we can access its elements.
 
 scala> val showInfo = (1994, “Friends”, 8.8, 2011, “Game Of Thrones”, 9.4, 2010, “Sherlock”, 9.1)
 

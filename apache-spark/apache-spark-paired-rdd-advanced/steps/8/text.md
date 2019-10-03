@@ -1,4 +1,4 @@
-Step 6: We can also extract the keys and values to separate RDDs as shown below.
+**Step 6:** We can also extract the keys and values to separate RDDs as shown below.
 
 val RDDKeys = flattened.keys
 

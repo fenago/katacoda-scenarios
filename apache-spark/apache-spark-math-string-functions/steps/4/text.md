@@ -1,5 +1,5 @@
 
-Step 3: Let us now perform various math functions on the dataset. All these functions are self explanatory.
+**Step 3:** Let us now perform various math functions on the dataset. All these functions are self explanatory.
 
 val mathFuncs1 = numbersDS.select(abs($"numbers"), ceil($"numbers"), exp($"numbers"), cos($"numbers"))
 

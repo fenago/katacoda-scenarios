@@ -1,5 +1,5 @@
 
-Step 4: Create a paired RDD as in Task 2 by writing the main function, setting error log level (optional), creating a SparkContext object and loading the file using the textFile API.
+**Step 4:** Create a paired RDD as in Task 2 by writing the main function, setting error log level (optional), creating a SparkContext object and loading the file using the textFile API.
 
 def main(args: Array[String]): Unit = {
 

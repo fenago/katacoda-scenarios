@@ -1,6 +1,6 @@
 
 
-Step 3: We can also use the modes we have learned in our theory. Let us see an example.
+**Step 3:** We can also use the modes we have learned in our theory. Let us see an example.
 
 scala> val dataNew = spark
 .read

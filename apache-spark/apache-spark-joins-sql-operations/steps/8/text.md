@@ -1,5 +1,5 @@
 
-Step 2: Now that we have the dataFrame created, let us perform an operation to select all the users from Florida using the DataFrame API.
+**Step 2:** Now that we have the dataFrame created, let us perform an operation to select all the users from Florida using the DataFrame API.
 
 val foridaUsers = users.select(“*”).where(“state = \”FL\”")
 

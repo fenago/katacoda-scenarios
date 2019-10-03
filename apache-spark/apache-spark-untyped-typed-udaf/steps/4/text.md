@@ -4,7 +4,7 @@ Task 5: Using Untyped UDAF
 
 Now that we have successfully written our untyped UDAF, let us use it find the average rating per user.
 
-Step 1: Let us create a new object avgRatingUDAF within the UDAF which we have written in the previous task. Next, write the main function and also create a Spark Session object as shown below.
+**Step 1:** Let us create a new object avgRatingUDAF within the UDAF which we have written in the previous task. Next, write the main function and also create a Spark Session object as shown below.
 
 object avgRatingUDAF {
 

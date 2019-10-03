@@ -1,5 +1,5 @@
 
-Step 5: Remember, we have also wrapped all the good records in the Right object. We can use it in our if condition with else object here as well.
+**Step 5:** Remember, we have also wrapped all the good records in the Right object. We can use it in our if condition with else object here as well.
 
 
 
@@ -11,7 +11,7 @@ else {
 We are declaring a new variable called goodRecords and simply extracting (map) the fields from the Right object using the right method. Finally, we can print them out to the console in the next line.
 
  
-Step 6: Let us now run it and see the good records as shown in the screenshot below.
+**Step 6:** Let us now run it and see the good records as shown in the screenshot below.
 
 
 

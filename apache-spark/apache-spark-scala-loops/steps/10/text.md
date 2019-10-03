@@ -1,4 +1,4 @@
-Step 3: Let us now look at while and do while loops. The while construct is similar to that of other programming languages. However, in functional programming, the use of while loops is discouraged. 
+**Step 3:** Let us now look at while and do while loops. The while construct is similar to that of other programming languages. However, in functional programming, the use of while loops is discouraged. 
 
 Enter into the paste mode and execute the following code.
 

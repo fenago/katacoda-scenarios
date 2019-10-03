@@ -1,5 +1,5 @@
 
-Step 4: Now let us load both the files using textFile API and also split the fields by comma delimiter. We shall be using the map function to split the fields for every record in the RDDs.
+**Step 4:** Now let us load both the files using textFile API and also split the fields by comma delimiter. We shall be using the map function to split the fields for every record in the RDDs.
 
 def main(args: Array[String]): Unit = {
 

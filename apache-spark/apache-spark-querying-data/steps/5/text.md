@@ -1,11 +1,11 @@
 
-Step 1: We shall be using the file us-500.csv, for this task as input source. Please create a new object and name it sqlQueries. Perform all the steps you performed in Task 1 and come back here. Your program should look something like the screenshot shown below.
+**Step 1:** We shall be using the file us-500.csv, for this task as input source. Please create a new object and name it sqlQueries. Perform all the steps you performed in Task 1 and come back here. Your program should look something like the screenshot shown below.
 
 
 
  
 
-Step 2: Let us first assign a view for our dataFrame so that we can run queries against it. In simple words, we are just creating a table for our dataFrame so that we can reference it while we run SQL queries against it. 
+**Step 2:** Let us first assign a view for our dataFrame so that we can run queries against it. In simple words, we are just creating a table for our dataFrame so that we can reference it while we run SQL queries against it. 
 
 users.createOrReplaceTempView("users")
 

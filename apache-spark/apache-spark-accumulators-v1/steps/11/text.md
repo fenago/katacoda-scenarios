@@ -1,8 +1,8 @@
 Task 3: Implementing Counters
 
-Step 1: Navigate back to the counters object in IDE and continue from where we left in Task 1.
+**Step 1:** Navigate back to the counters object in IDE and continue from where we left in Task 1.
 
-Step 2: Let us now write a foreach action which parses each row through our recordParser object, which we have implemented in the previous task.
+**Step 2:** Let us now write a foreach action which parses each row through our recordParser object, which we have implemented in the previous task.
 
 data.foreach(row => {
   val parsedRecords = recordParser.parse(row)

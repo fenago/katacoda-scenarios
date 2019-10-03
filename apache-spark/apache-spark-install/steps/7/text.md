@@ -1,6 +1,6 @@
 
 
-Step 5: Let us now test the Spark installation by accessing the Spark Shell. To do so, execute the following command.
+**Step 5:** Let us now test the Spark installation by accessing the Spark Shell. To do so, execute the following command.
 
 $ spark-shell
 

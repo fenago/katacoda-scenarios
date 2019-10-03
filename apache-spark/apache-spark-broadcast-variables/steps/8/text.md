@@ -1,5 +1,5 @@
 
-Step 6: Finally, let us use our broadcast variable to look up the name of movie based on its movie Id. We use the ‘-‘ symbol to sort in descending order.
+**Step 6:** Finally, let us use our broadcast variable to look up the name of movie based on its movie Id. We use the ‘-‘ symbol to sort in descending order.
 
 val sortedMoviesWithNames = sorted.map(x => (broadNames.value(x._1), x._2))
 

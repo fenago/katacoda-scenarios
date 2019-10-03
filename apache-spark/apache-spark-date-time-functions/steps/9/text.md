@@ -1,5 +1,5 @@
 
-Step 7: Let us now extract the attributes from timestamp column as we did for the date column couple of steps ago.
+**Step 7:** Let us now extract the attributes from timestamp column as we did for the date column couple of steps ago.
 
 val extractedTs = timeStampDS
   .withColumn("second", second($"timeStamp"))

@@ -1,5 +1,5 @@
 
-Step 7: Now that we have set our input, buffer and output schema, we have to initialize our buffer (0, 0) using the initialize method.
+**Step 7:** Now that we have set our input, buffer and output schema, we have to initialize our buffer (0, 0) using the initialize method.
  
 
 
@@ -9,7 +9,7 @@ def initialize(buffer: MutableAggregationBuffer): Unit = {
 
 The initialize method takes buffer of type MutableAggregationBuffer and returns nothing. The MutableAggregationBuffer as the name suggests is mutable and is used for aggregation purposes. The two columns in the buffer sum and count are initialized to 0. The first buffer is of type Double and second is of type Long.
 
-Step 8: At this point of time, we have specified schema for input, buffer and output. We have also initialized the buffer with zero. We now have to write the logic so that tasks know how to update the buffer.
+**Step 8:** At this point of time, we have specified schema for input, buffer and output. We have also initialized the buffer with zero. We now have to write the logic so that tasks know how to update the buffer.
 
 We do this using the update method as shown below.
 

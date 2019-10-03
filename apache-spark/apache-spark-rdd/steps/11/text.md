@@ -24,7 +24,7 @@ def square(x: Int): Int = {
 }
 numRDD.map(square)
 
-Step 5: For the numRDD we created in the previous step, let us use the reduce function to add all the numbers.
+**Step 5:** For the numRDD we created in the previous step, let us use the reduce function to add all the numbers.
 scala> val sumRDD = numRDD.reduce((a, b) => (a + b))
  
 Similarly, we can also use the reduce function to multiply all the numbers in numRDD.

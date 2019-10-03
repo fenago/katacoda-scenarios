@@ -1,5 +1,5 @@
 
-Step 4: Let us now run a query to check the count of total users who belong to state “New Jersey”.
+**Step 4:** Let us now run a query to check the count of total users who belong to state “New Jersey”.
 
 val totalUsersNJ = spark.sql("SELECT count(*) AS NJ_Count FROM users WHERE state = \”NJ\”")
 totalUsersNJ.show()

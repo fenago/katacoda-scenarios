@@ -1,12 +1,12 @@
 
-Step 4: Now that we have our dataFrames, let us create a temp view so that we can run our join query against them.
+**Step 4:** Now that we have our dataFrames, let us create a temp view so that we can run our join query against them.
 
 movies.createOrReplaceTempView("movies")
 ratings.createOrReplaceTempView("ratings")
 
 
 
-Step 5: We now have our views. All we need to do now is to perform the join. We can join this using the SQL query as shown below.
+**Step 5:** We now have our views. All we need to do now is to perform the join. We can join this using the SQL query as shown below.
 
 val joinedDf = spark.sql("SELECT * FROM movies JOIN ratings ON movies.movieId = ratings.movieId”
 

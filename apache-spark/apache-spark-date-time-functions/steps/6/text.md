@@ -1,6 +1,6 @@
 
 
-Step 4: Let us now use the arithmetic functions to manipulate the date.
+**Step 4:** Let us now use the arithmetic functions to manipulate the date.
 
 val arithmetic = casted
   .withColumn("ageInDays", datediff(current_date(), $"date"))

@@ -1,5 +1,5 @@
 
-Step 4: Let us now write the main function for our program and create a SparkSession object as shown below.
+**Step 4:** Let us now write the main function for our program and create a SparkSession object as shown below.
 
 def main(args: Array[String]): Unit = {
 
@@ -13,7 +13,7 @@ def main(args: Array[String]): Unit = {
 
 
 
-Step 5: Since our aim is to convert an RDD to a Dataset, we must use the textFile API in the SparkContext object to read the file and create an RDD.
+**Step 5:** Since our aim is to convert an RDD to a Dataset, we must use the textFile API in the SparkContext object to read the file and create an RDD.
 
 val input = ss.sparkContext.textFile("chapter_8/mlb_players.csv")
 

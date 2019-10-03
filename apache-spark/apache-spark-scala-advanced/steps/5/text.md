@@ -1,4 +1,4 @@
-Step 2: Let us now create a function which takes parameters and has a return type.
+**Step 2:** Let us now create a function which takes parameters and has a return type.
 
 scala> :paste
 //Entering paste mode (ctrl-D to finish)

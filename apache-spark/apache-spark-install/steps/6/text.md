@@ -1,6 +1,6 @@
 
 
-Step 4: Let us now set up the environment variables for Spark. Execute the following command to do so.
+**Step 4:** Let us now set up the environment variables for Spark. Execute the following command to do so.
 
 $ sudo vi ~/.bashrc
 

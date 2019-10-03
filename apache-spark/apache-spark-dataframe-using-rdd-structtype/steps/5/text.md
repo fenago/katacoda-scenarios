@@ -1,6 +1,6 @@
 
 
-Step 5: Since our aim is to convert an RDD to a DataFrame, we must use the textFile API in the SparkContext object to read the file and create an RDD.
+**Step 5:** Since our aim is to convert an RDD to a DataFrame, we must use the textFile API in the SparkContext object to read the file and create an RDD.
 
 val input = ss.sparkContext.textFile("chapter_7/mlb_players.csv")
 
@@ -16,7 +16,7 @@ The first line of code takes the first record from the RDD, which in our case is
 
  
 
-Step 6: The next step is to split the fields based on a comma so that we can assign each indivudual field to its appropriate case class field.
+**Step 6:** The next step is to split the fields based on a comma so that we can assign each indivudual field to its appropriate case class field.
 
 val fields = records.map(record => record.split(","))
 

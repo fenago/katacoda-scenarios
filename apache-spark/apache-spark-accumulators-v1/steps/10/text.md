@@ -1,4 +1,4 @@
-Step 4: This is the step where we perform the error handling by using an if loop. The condition for if  will check if a record has 4 fields by using the length method.
+**Step 4:** This is the step where we perform the error handling by using an if loop. The condition for if  will check if a record has 4 fields by using the length method.
 
 If there are 4 fields in a record, we simply access each field based on its index and store it in the case class records using the Right object.. If there are less than 4 fields, we pass the record as is using the Left object.
 

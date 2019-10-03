@@ -1,4 +1,4 @@
-Step 2: Let us now look at for loops. Enter in to the paste mode and execute the following code.
+**Step 2:** Let us now look at for loops. Enter in to the paste mode and execute the following code.
 
 scala> :paste
 //Entering paste mode (ctrl-D to finish)
