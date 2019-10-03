@@ -24,7 +24,7 @@
     },
     {
       "course_id": "apache-spark-rdd",
-      "title": "Apache Spark RDD",
+      "title": "Apache Spark Creating RDDs from Spark-Shell",
       "description": ""
     },
     {
