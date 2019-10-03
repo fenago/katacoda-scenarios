@@ -54,7 +54,7 @@
     },
     {
       "course_id": "apache-spark-paired-rdd-joins",
-      "title": "Apache Spark Paired RDD Joins",
+      "title": "Apache Spark Paired RDD Joins & Actions",
       "description": ""
     },
     {

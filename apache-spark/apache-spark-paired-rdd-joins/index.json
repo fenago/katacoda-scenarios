@@ -1,5 +1,5 @@
 {
-  "title": "Apache Spark Installation",
+  "title": "Apache Spark Paired RDD Joins & Actions",
   "description": "Introduction to Apache Spark",
   "difficulty": "Advanced",
   "time": "15 minutes",
@@ -29,7 +29,7 @@
         "text": "steps/6/text.md"
     },
     {
-        "title": "",
+        "title": "Performing Actions on Paired RDDs",
         "text": "steps/7/text.md"
     },
     {

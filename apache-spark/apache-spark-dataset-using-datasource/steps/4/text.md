@@ -5,7 +5,9 @@ import org.apache.spark.sql.SparkSession
 
 Next, we need to write a case class so that we can specify the schema for our fields. This case class is what it makes a Dataset and differentiates from DataFrame. While loading the file, we simply refer to this case class object to create a dataset.
 
+```
 private case class Movies(userId: Int, movieId: Int, rating: Double, timestamp: String)
+```
 
 We have created a case class and named it Movies by specifying the fields and its types.
 
