@@ -3,7 +3,7 @@
 
 Now that you are sure that you have the Spark tar file, untar the Spark tar file to /usr/share directory using the command below.
 
-`sudo tar –xvf spark-2.4.2-bin-hadoop2.7.tgz –C /usr/share
+`tar –xvf spark-2.4.2-bin-hadoop2.7.tgz –C /usr/share
 
  
 
