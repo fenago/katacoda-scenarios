@@ -16,4 +16,4 @@ scala> textData.saveAsTextFile(“IdeaProjects/Spark/chapter_10/output”)
 
 Let us now check if the save was successful. For that open a new terminal and check the contents using the command below.
 
-$ cat IdeaProjects/Spark/chapter_10/output/part-00000
+`cat IdeaProjects/Spark/chapter_10/output/part-00000

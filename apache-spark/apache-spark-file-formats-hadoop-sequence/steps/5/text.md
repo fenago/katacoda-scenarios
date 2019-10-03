@@ -6,7 +6,7 @@ scala> seqRDD.saveAsSequenceFile(“IdeaProjects/Spark/chapter_10/seqOut”)
 
 You may run a cat command from another terminal to check if the save was successful, but the file will not be human readable as shown in the screenshot below.
 
-$ cat IdeaProjects/Spark/chapter_10/seqOut/part*
+`cat IdeaProjects/Spark/chapter_10/seqOut/part*`{{execute}}
 
  
  

@@ -20,7 +20,7 @@ After clicking the download link, you will be taken to a page with mirror site t
 
 **Step 3:** The download will be saved to the Downloads directory by default. Execute the following command to change the directory to Downloads folder.
 
-$ cd Downloads
+`cd Downloads`{{execute}}
 
  
 RDD op.
@@ -29,4 +29,4 @@ IntelliJ D/l & Ins
 Configure IntelliJ
 Once you are in the Downloads directory, you may optionally check if Spark has been downloaded using the ls command.
 
-$ ls
+`ls`{{execute}}

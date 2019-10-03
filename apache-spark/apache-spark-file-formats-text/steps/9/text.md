@@ -9,7 +9,7 @@ Please make sure that you only have one string column while you save the text fi
 
 **Step 4:** Use the following command to check if the save was successful. You will have to use the new terminal to run this command, as this won’t be executed in Spark shell.
 
-$ cat IdeaProjects/Spark/chapter_10/output1/part*
+`cat IdeaProjects/Spark/chapter_10/output1/part*`{{execute}}
 
 You should see the file saved as shown below.
 

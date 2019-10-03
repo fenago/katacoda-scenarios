@@ -1,6 +1,6 @@
 After the installation is completed successfully, type scala in your terminal and you will be prompted with a Scala prompt.
 
-$ scala
+`scala`{{execute}}
 
  
 

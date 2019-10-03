@@ -9,7 +9,7 @@ scala> multiJson.write
 
 You can check the output by running the following command from a new terminal.
 
-$ cat IdeaProjects/Spark/chapter_10/output3/part*
+`cat IdeaProjects/Spark/chapter_10/output3/part*`{{execute}}
 
  
 

@@ -10,7 +10,7 @@ Here, we have used an option called sep which replaces the delimiter from comma 
 
 **Step 5:** Let us check if the save was successful as we desired.
 
-$ cat IdeaProjects/Spark/chapter_10/output2/part*
+`cat IdeaProjects/Spark/chapter_10/output2/part*`{{execute}}
 
  
 

@@ -12,6 +12,6 @@ Loops
 Functions
 Collections
 
-So, to overcome this we can substitute the variables within a string using an s prefix in the print statement before the double quotes as shown below. Each variable has a $ prefix.
+So, to overcome this we can substitute the variables within a string using an s prefix in the print statement before the double quotes as shown below. Each variable has a `prefix.
 
 scala> println(s“Printing to console using variable substitution: $name $num $longNum $decimal $decimalf $letter $lieDetector”)

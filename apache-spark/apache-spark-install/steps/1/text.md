@@ -3,7 +3,7 @@ Note: Java Development Kit (JDK) is a prerequisite to install Spark. Make sure y
 
 **Step 1:** Verify if your machine has Java installed by executing the following command as shown below.
 
-$ java –version
+`java –version`{{execute}}
 
  
 

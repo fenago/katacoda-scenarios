@@ -1,9 +1,9 @@
-Task 2: Download and Install Scala
 Now that we have installed Java, we are ready to install Scala and start writing some Scala code!
 
-**Step 1:** Run the following command from the terminal to install Scala.
+**Step 1:** Run the following commands from the terminal to install Scala.
 
-$ sudo apt-get install scala
+wget www.scala-lang.org/files/archive/scala-2.12.8.deb
+dpkg -i scala-2.12.8.deb
 
  
 
@@ -11,10 +11,5 @@ The prompt will ask you to hit ‘Y’ after running the above command as shown 
 
 **Step 2:** Verify your Scala installation version by running the following command.
  
-Loops
-
-Functions
-Collections
-
-$ scala -version
+`scala -version`{{execute}}
 

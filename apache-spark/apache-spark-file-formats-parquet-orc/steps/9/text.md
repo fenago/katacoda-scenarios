@@ -11,7 +11,7 @@ scala> orcData
 
 Similar to Parquet, ORC is also not human readable and you will only see gibberish data when used the cat command as shown below.
 
-$ cat IdeaProjects/Spark/chapter_10/output5/part*
+`cat IdeaProjects/Spark/chapter_10/output5/part*`{{execute}}
 
  
 

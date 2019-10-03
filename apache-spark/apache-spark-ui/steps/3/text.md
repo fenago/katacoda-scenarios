@@ -1,20 +1,9 @@
 **Step 1:** Open a terminal and start the spark-shell by entering the following command.
 
-$ spark-shell
+`spark-shell`{{execute}}
 
 The Spark shell should show you that the web interface is available at the following URL as shown below.
 
-
-
-
-
-
-
- 
-Saving Data
-
-Lineage Graph
-Web Interface
 
  
 
