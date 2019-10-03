@@ -8,9 +8,9 @@ userdata1.parquet - http://bit.ly/2kfIhJ4
 
 **Step 2:** Let us no read this Parquet file to Spark using the code below.
 
- scala> val parquetData = spark
+ ```val parquetData = spark
 .read
-.load(“IdeaProjects/Spark/chapter_10/userdata1.parquet”)
+.load("IdeaProjects/Spark/chapter_10/userdata1.parquet")
 
 Please see that we need not mention the format here as Parquet is default file format in Spark. However, you may explicitly mention the format as we did in the previous tasks if you desire so.
 You should see the following output when you call the show method on the dataframe.

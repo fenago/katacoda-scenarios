@@ -9,7 +9,7 @@ The folder should contain a total of 6 files. Please save them all in the IdeaPr
 
 **Step 4:** Let us read these files using the wholeTextFiles method. This will read all the files present in books folder. Please switch back to Spark-shell and read the files using the code below.
 
-scala> val textFiles = sc.wholeTextFiles(“IdeaProjects/Spark/chapter_10/books”)
+```val textFiles = sc.wholeTextFiles("IdeaProjects/Spark/chapter_10/books")
 
 This will return you a RDD[String, String] which is a paired RDD as shown below.
 

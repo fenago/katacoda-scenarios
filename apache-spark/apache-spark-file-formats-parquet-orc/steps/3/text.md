@@ -5,10 +5,10 @@ Parquet is a widely used file format in Spark because of the optimizations it pr
 Parquet has only a couple of options while reading and writing the data. The following is an example to read a Parquet file.
 
 spark.read
-.format(“parquet”)
-.load(“/usr/local/files/sample.parquet”)
+.format("parquet")
+.load("/usr/local/files/sample.parquet")
 
 We can also read without specifying the schema as shown below.
 
 spark.read
-.load(“/usr/local/files/sample.parquet”)
+.load("/usr/local/files/sample.parquet")

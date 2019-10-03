@@ -1,9 +1,9 @@
 
 **Step 3:** Let us write this back to the filesystem as shown below.
 
-scala> ratings
+```ratings
 .write
-.text(“IdeaProjects/Spark/chapter_10/output1”)
+.text("IdeaProjects/Spark/chapter_10/output1")
 
 Please make sure that you only have one string column while you save the text file successfully. Also, make sure the output directory (in this case, output1) doesn’t exist before you perform the write action.
 

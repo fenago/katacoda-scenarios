@@ -10,7 +10,7 @@ Before we start writing custom functions, let us look and currying functions. We
 
 **Step 2:** Let us now define a simple currying function with two parameter groups as shown below to understand the concept of curried functions.
 
-scala> def sum(x: Int) (y: Int): Int = {
+```def sum(x: Int) (y: Int): Int = {
 | x + y
 | }
 

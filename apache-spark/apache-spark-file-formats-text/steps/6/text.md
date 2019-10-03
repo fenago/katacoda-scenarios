@@ -1,7 +1,7 @@
 
 **Step 5:** Let us simply print the file names by using the keys method on textFiles RDD as shown below.
 
-scala> textFiles.keys.collect.foreach(println)
+```textFiles.keys.collect.foreach(println)
 
 
 

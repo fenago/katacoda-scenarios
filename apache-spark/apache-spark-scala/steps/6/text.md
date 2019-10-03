@@ -3,7 +3,7 @@ Let us now get familiar and start writing some Scala code to get acquainted with
 
 **Step 1:** Fire up your terminal and go into the Scala console by entering scala and hitting enter. Once you see the scala prompt, enter the following piece of code and hit enter
 
-scala> val name: String = “Learning Voyage”
+```val name: String = "Learning Voyage"
 
 
  
@@ -18,6 +18,6 @@ The above line of code is used to declare an immutable variable named name of ty
 
 You can now use the variable name and use it inside the println function as shown below. This will print the value (String) associated with the variable (which is Learning Voyage in this case) to the console.
 
-scala> println(name)
+```println(name)
 
  

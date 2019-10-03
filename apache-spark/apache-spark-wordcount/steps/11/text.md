@@ -4,7 +4,7 @@ The output displayed in the console is useful while developing but in the real t
 
 **Step 1:** We shall be using the saveAsTextFile API to save the output of our program to the disk. Simply replace the collect statement from the previous task with this line of code.
 
-count.saveAsTextFile(“chapter_4/word_count/output”)
+count.saveAsTextFile("chapter_4/word_count/output")
 
 We shall be saving the output to the following path IdeaProjects/Spark/chapter_4/word_count/output. You need not create the directories word_count and output. They will be automatically created. In fact the compiler will throw an error if the output directory is already present.
 

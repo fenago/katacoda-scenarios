@@ -7,8 +7,10 @@ Let us now work with Hadoop and Sequence Files. These files are popular file for
 Sequence Files
 **Step 1:** Let us first create an RDD using the parallelize method as shown below.
 
-scala> val seqRDD = sc.parallelize(List((“Ernesto”, 2000), (“Learning”, 4500), (“Lee”, “8000”)))
- 
+```
+val seqRDD = sc.parallelize(List(("Ernesto", 2000), ("Learning", 4500), ("Lee", "8000")))
+```
+
 This will create and RDD[(String, Int)] as shown below.
 
  

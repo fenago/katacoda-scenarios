@@ -3,18 +3,18 @@
 Enter into the paste mode and execute the following code.
 
 
-scala> :paste
+```:paste
 //Entering paste mode (ctrl-D to finish)
 
 var friends = 0
 
-val names = List(“Chandler”, “Monica”, “Rachel”, “Phoebe”, “Ross”, “Joey”)
+val names = List("Chandler", "Monica", "Rachel", "Phoebe", "Ross", "Joey")
 
-println(“The names of friends are:”)
+println("The names of friends are:")
 
 while (friends < 6){
 
-println(s“${names(friends)}”)
+println(s"${names(friends)}")
 
 friends += 1
 

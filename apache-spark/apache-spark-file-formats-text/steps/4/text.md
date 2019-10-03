@@ -1,7 +1,7 @@
 
 **Step 2:** Open the terminal and fire up the Spark shell. Let us load the text file using the code below.
 
-scala> val textData = sc.textFile(“IdeaProjects/Spark/chapter_10/treasure_island.txt”)
+```val textData = sc.textFile("IdeaProjects/Spark/chapter_10/treasure_island.txt")
 
 This will read the data and create an RDD[String] as shown below. We can read data from any filesystem such as HDFS, AWS, Azure etc, this way just by providing the complete path or fully qualified URL of that purticular filesystem. We can then perform all the RDD operations or convert to a DataFrame or Dataset as required.
 
@@ -10,7 +10,7 @@ This will read the data and create an RDD[String] as shown below. We can read da
 
  
 
-scala> textData.saveAsTextFile(“IdeaProjects/Spark/chapter_10/output”)
+```textData.saveAsTextFile("IdeaProjects/Spark/chapter_10/output")
 
  
 

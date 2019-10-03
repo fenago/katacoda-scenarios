@@ -5,7 +5,7 @@ RDD op.
 IntelliJ D/l & Ins
 Configure IntelliJ
 
-scala> val count_ratings = ratings.count
+```val count_ratings = ratings.count
 
  
 As you can see from the screenshot above, the count of the total records (ratings) present in the RDD has been returned as a new RDD called count_ratings.

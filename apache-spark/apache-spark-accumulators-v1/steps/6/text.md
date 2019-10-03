@@ -2,4 +2,4 @@
 
 val badRecords = sc.accumulator(0, "bad records")
 
-You will see a warning “Symbol Accumulator is deprecated”. You may ignore this warning as this is older Accumulator API for Spark 1.x.
+You will see a warning "Symbol Accumulator is deprecated". You may ignore this warning as this is older Accumulator API for Spark 1.x.

@@ -6,7 +6,7 @@ Loops
 Functions
 
 
-scala> name = name + “ Inc”
+```name = name + " Inc"
 
  
 

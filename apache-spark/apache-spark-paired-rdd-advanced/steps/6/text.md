@@ -7,7 +7,7 @@ def main(args: Array[String]): Unit = {
 
 val sc = new SparkContext("local[*]", "Paired RDD Operations")
 
-val data = sc.textFile(“chapter_5/tags.csv”)
+val data = sc.textFile("chapter_5/tags.csv")
 
 Now create an RDD pair by parsing the data RDD using the recordsParser function.
 

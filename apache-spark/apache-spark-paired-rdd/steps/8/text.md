@@ -17,7 +17,7 @@ val sc = new SparkContext("local[*]", "Friends By First Name")
 
 Now that we have the SparkContext object created, let us load our file using the textFile API.
 
-val data = sc.textFile(“chapter_5/ratings.csv”)
+val data = sc.textFile("chapter_5/ratings.csv")
 
  
 We now have an RDD loaded.

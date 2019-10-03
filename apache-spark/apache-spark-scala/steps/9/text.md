@@ -10,18 +10,18 @@ Unlike the traditional collections such as List, Map, Set etc which can contain 
 Option Monadic Collection
 The Option Monadic Collection helps us deal with the NullPointerException. As explained earler, Option Monadic Collection also contains two objects called Some and None. Let us create a case class which stores employee information.
 
-scala> val welcome: Option[String] = Some(“Welcome to Learning Voyage”)
+```val welcome: Option[String] = Some("Welcome to Learning Voyage")
 
 You can now retrieve the value using the get method as String is wrapped into an option.
 
-scala> welcome.get
+```welcome.get
 
 Similarly, you can also set the None object to the variable as shown below.
 
-scala> val welcome: Option[String] = None
+```val welcome: Option[String] = None
 
 Since there is no value set for our variable, we can use getOrElse method to set a value on the fly as shown below.
 
-scala> welcome.getOrElse(“Ernesto Lee Website”)
+```welcome.getOrElse("Ernesto Lee Website")
 
 This is a very basic example of using Option collection. You can use them in variety of cases like pattern matching, case class etc.

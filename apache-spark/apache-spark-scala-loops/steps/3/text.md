@@ -6,21 +6,21 @@ Loops
 Functions
 Collections
 
-scala> val num: Int = 255
+```val num: Int = 255
 
 The above piece of code creates an immutable variable num of type Integer with a value of 255. Similarly, we can create immutable variables of all the other data types as shown below.
 
-scala> val longNum: Long = 89416414
+```val longNum: Long = 89416414
 
-scala> val decimal: Double = 85.5545
+```val decimal: Double = 85.5545
 
-scala> val decimalf: Float = 54.24f
+```val decimalf: Float = 54.24f
 
-scala> val letter: Char = ‘f’
+```val letter: Char = ‘f’
 
 Please note that there are only single quotes for Char type while there are double quotes for a String type.
 
-scala> val lieDetector: Boolean = true
+```val lieDetector: Boolean = true
 
 
  

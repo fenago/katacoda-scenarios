@@ -8,7 +8,7 @@ ratings.createOrReplaceTempView("ratings")
 
 **Step 5:** We now have our views. All we need to do now is to perform the join. We can join this using the SQL query as shown below.
 
-val joinedDf = spark.sql("SELECT * FROM movies JOIN ratings ON movies.movieId = ratings.movieId”
+val joinedDf = spark.sql("SELECT * FROM movies JOIN ratings ON movies.movieId = ratings.movieId"
 
 Finally, let us call the show method on our joinedDf dataFrame and run the program.
 

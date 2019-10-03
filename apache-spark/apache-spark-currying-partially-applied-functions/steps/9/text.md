@@ -1,12 +1,12 @@
 
 **Step 3:** Similarly, let is partially apply the sumProd function which we created in the step 2 of previous task.
 
-scala> val sumProdObj = sumProd(5, 6)_
+```val sumProdObj = sumProd(5, 6)_
 
 
 We can then pass the held back parameters at a later time as shown below.
 
-scala> sumProdObj(7, 8)
+```sumProdObj(7, 8)
 
  
 

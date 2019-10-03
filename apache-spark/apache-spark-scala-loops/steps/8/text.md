@@ -1,6 +1,6 @@
 **Step 2:** Let us now look at for loops. Enter in to the paste mode and execute the following code.
 
-scala> :paste
+```:paste
 //Entering paste mode (ctrl-D to finish)
 
 for (i <- 1 to 5) {

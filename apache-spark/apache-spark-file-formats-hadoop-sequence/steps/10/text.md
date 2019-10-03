@@ -1,6 +1,6 @@
 **Step 5:** Finally let us call the collect method and check the output from the RDD.
 
-scala> hadoopRDD.collect()
+```hadoopRDD.collect()
 
 
 

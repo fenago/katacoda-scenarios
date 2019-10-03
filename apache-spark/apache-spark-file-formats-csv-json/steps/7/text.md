@@ -12,7 +12,7 @@ example_1.json - http://bit.ly/2lRFI06
 
 **Step 2:** The following code is used to read the single line JSON file.
 
-scala> val jsonData = spark.read
-.format(“json”)
-.option(“multiLine”, “false”)
-.load(“IdeaProjects/Spark/chapter_10/example_1.json”)
+```val jsonData = spark.read
+.format("json")
+.option("multiLine", "false")
+.load("IdeaProjects/Spark/chapter_10/example_1.json")

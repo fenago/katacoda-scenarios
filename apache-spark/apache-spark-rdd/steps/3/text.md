@@ -2,11 +2,11 @@
 
 `spark-shell`{{execute}}
 
-scala> val friends = List(“Chandler”, “Rachel”, “Phoebe”, “Joey”, “Ross”)
+```val friends = List("Chandler", "Rachel", "Phoebe", "Joey", "Ross")
 
 Now, let us use the parallelize keyword and create an RDD for the list we have created above.
 
-scala> val friendsRDD = sc.parallelize(friends) 
+```val friendsRDD = sc.parallelize(friends) 
 
  
 

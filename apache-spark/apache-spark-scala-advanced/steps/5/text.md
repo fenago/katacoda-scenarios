@@ -1,15 +1,15 @@
 **Step 2:** Let us now create a function which takes parameters and has a return type.
 
-scala> :paste
+```:paste
 //Entering paste mode (ctrl-D to finish)
 
 def married(name: String, times: Int): String = {
-return name + “ has married ” + times + “ times”
+return name + " has married " + times + " times"
 }
 
 Now, exit out of the paste mode and simply call this function by its name.
 
-married(“Ross”, 3)
+married("Ross", 3)
 
  
 

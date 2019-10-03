@@ -1,6 +1,6 @@
 If you do not want the last iteration to be included, you can use the keyword until instead of to. For example,
 
-scala> :paste
+```:paste
 //Entering paste mode (ctrl-D to finish)
 
 for ( i <- 1 until 5) {
@@ -23,12 +23,12 @@ Collections
  
 We can also use an if statement within the for loop as shown below.
 
-scala> :paste
+```:paste
 //Entering paste mode (ctrl-D to finish)
 
-val friends = List(“Chandler”, “Monica”, “Rachel”, “Ross”, “Joey”, “Phoebe”)
-for(friend <- friends if friend == “Chandler”){
-println(s“The king of sarcasm is $friend”)
+val friends = List("Chandler", "Monica", "Rachel", "Ross", "Joey", "Phoebe")
+for(friend <- friends if friend == "Chandler"){
+println(s"The king of sarcasm is $friend")
 }
 
 

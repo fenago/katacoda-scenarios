@@ -4,10 +4,10 @@ The partially applied functions as the name suggests are applied partially by on
 
 For example, we can partially apply the function which we created above using currying.
 
-Scala> val part = sum(54)_
+```val part = sum(54)_```
 
 This will return us a function object called part.
 
 We can now pass the parameter which we held back as shown below.
 
-Scala> part(6)
+```part(6)```

@@ -4,7 +4,7 @@ Ratings.csv - http://bit.ly/2L8IEBS
 
 Each line of this file represents one rating of one movie by one user, and has the following format: userId,movieId,rating,timestamp
 
-scala> val ratings = sc.textFile(“chapter_3/ratings.csv”)
+```val ratings = sc.textFile("chapter_3/ratings.csv")
 
  
 

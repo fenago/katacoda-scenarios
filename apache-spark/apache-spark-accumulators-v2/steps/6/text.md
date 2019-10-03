@@ -5,5 +5,5 @@ import sparkSession.implicits._
 
 val options = Map("header" -> "false", "InferSchema" -> "true")
 
-val data = sparkSession.read.text(“chapter_6/ratings-malformed.csv”).as[String]
+val data = sparkSession.read.text("chapter_6/ratings-malformed.csv").as[String]
 

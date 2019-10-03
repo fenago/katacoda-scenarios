@@ -6,7 +6,7 @@ Loops
 Functions
 Collections
 
-scala> :paste
+```:paste
 //Entering paste mode (ctrl-D to finish)
 
 var i = 0

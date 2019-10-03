@@ -13,15 +13,15 @@ Each line of this file represents one rating of one movie by one user, and has t
 
 **Step 2:** Let us now read this file to Spark from Spark shell using few options.
 
-scala> val data = spark
+```val data = spark
 .read
-.format(“csv”)
-.option(“InferSchema”, “true”)
-.option(“header”, “false”)
-.option(“nullValue”, “Null”)
-.load(“IdeaProjects/Spark/chapter_10/ratings.csv”)
+.format("csv")
+.option("InferSchema", "true")
+.option("header", "false")
+.option("nullValue", "Null")
+.load("IdeaProjects/Spark/chapter_10/ratings.csv")
 
-We have used a new option here which is called NullValue. This will replace all the null values with the provided string, which is Null in this case. The default is “”. Please check the references section for all the options that can be used while reading or writing CSV files. All the options can be used in this way or inside a map object.
+We have used a new option here which is called NullValue. This will replace all the null values with the provided string, which is Null in this case. The default is "". Please check the references section for all the options that can be used while reading or writing CSV files. All the options can be used in this way or inside a map object.
 
 We can then call the show method as shown in the screenshot below to check if it was successful.
  

@@ -7,7 +7,7 @@ treasure_island.txt - http://bit.ly/2LBFLtt
 
 Once you have the file downloaded and saved in the desired location, write the following line of code to load the file to create an RDD.
 
-val data = sc.textFile(“chapter_4/treasure_island.txt”)
+val data = sc.textFile("chapter_4/treasure_island.txt")
 
 With this we have successfully created an RDD using the text file.
 

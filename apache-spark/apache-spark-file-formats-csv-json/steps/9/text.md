@@ -1,9 +1,9 @@
 
 **Step 6:** Let us now write this dataframe to the filsesystem.
 
-scala> multiJson.write
-.format(“json”)
-.save(“IdeaProjects/Spark/chapter_10/output3”)
+```multiJson.write
+.format("json")
+.save("IdeaProjects/Spark/chapter_10/output3")
 
  
 

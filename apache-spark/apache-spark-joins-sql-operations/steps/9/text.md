@@ -1,6 +1,6 @@
 
 
-**Step 3:** Let us now run a query to check the count of total users who belong to state “New York”.
+**Step 3:** Let us now run a query to check the count of total users who belong to state "New York".
  
 
 

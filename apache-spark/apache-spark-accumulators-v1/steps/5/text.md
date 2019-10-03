@@ -1,6 +1,6 @@
 **Step 4:** Now that we have the SparkContext object created, let us load our file using the textFile API.
 
-val data = sc.textFile(“chapter_6/ratings-malformed.csv”)
+val data = sc.textFile("chapter_6/ratings-malformed.csv")
 
  
 
