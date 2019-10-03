@@ -6,12 +6,8 @@
 
 Once you run, the above command, a screen similar to the screenshot shows confirming the successful installation of Spark.
  
-RDD op.
+![](https://github.com/athertahir/apache-spark/raw/master/Screenshots/Chapter 3/Selection_018.png)
 
-IntelliJ D/l & Ins
-Configure IntelliJ
-
- 
 
 Task is complete!
 

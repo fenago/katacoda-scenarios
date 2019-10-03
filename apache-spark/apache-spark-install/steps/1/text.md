@@ -1,10 +1,22 @@
-Task 1: Download and Install Spark
-Note: Java Development Kit (JDK) is a prerequisite to install Spark. Make sure you have installed it if you have not performed the Lab Exercise 1. Please follow the steps in task 1 of Lab Exercise 1 and then come back here to Install Spark.
+Note: Java Development Kit (JDK) is a prerequisite to install Spark.
 
-**Step 1:** Verify if your machine has Java installed by executing the following command as shown below.
+**Step 1:** From the terminal, run the following commands to install JDK (Java Development Kit).
 
-`java –version`{{execute}}
+`apt-get update`{{execute}} 
 
- 
+This will update the package index. You might be asked to enter your password after you run the command above. 
 
-You will see the version displayed in the terminal as shown in the screenshot above. If you do not say the Java version displayed, your machine does not have Java installed. Please install JDK before continuing to next step.
+**Step 2:** Once you run the above command, run the following command to actually download and install JDK.
+
+`apt-get --assume-yes install default-jdk`{{execute}} 
+
+
+**Step 3:** Verify the installation with: `java -version`{{execute}} 
+
+You'll see the following output:
+
+```
+java version "1.8.0_201"
+Java(TM) SE Runtime Environment (build 1.8.0_201-b09)
+Java HotSpot(TM) 64-Bit Server VM (build 25.201-b09, mixed mode)
+```
