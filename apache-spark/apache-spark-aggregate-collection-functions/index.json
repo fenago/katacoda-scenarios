@@ -9,7 +9,7 @@
       "text": "steps/1/text.md"
     },
     {
-      "title": "What is Spark?",
+      "title": "Prerequisites",
       "text": "steps/2/text.md"
     },    
 	{
@@ -21,7 +21,7 @@
       "text": "steps/4/text.md"
     },
   {
-      "title": "Start Spark",
+      "title": "",
       "text": "steps/5/text.md"
     },
     {
@@ -29,7 +29,7 @@
         "text": "steps/6/text.md"
     },
     {
-        "title": "",
+        "title": "Collection Functions",
         "text": "steps/7/text.md"
     },
     {

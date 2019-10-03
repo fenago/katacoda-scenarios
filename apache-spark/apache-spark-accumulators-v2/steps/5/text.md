@@ -4,9 +4,9 @@
 
 We shall be using longAccumulator in our code as we only need the count of type Long. 
 
+```
 val badRecords = sparkSession.sparkContext.longAccumulator("Bad Records")
-
- 
+```
 
 The longAccumulator object is wrapped in the sparkContext object which in turn is wrapped with the sparkSession object. The initial value for longAccumulator is set to zero (0) by default. We need not initiate it as we did in Spark 1.x API for Accumulator. All we need to do is set a name for our Accumulator. We have named it Bad Records. You are free to use any name as you like.
 

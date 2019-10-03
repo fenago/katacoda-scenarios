@@ -1,5 +1,5 @@
 {
-  "title": "Apache Spark Installation",
+  "title": "Apache Spark - Querying data using Spark SQL",
   "description": "Introduction to Apache Spark",
   "difficulty": "Advanced",
   "time": "15 minutes",
@@ -9,15 +9,15 @@
       "text": "steps/1/text.md"
     },
     {
-      "title": "What is Spark?",
+      "title": "What is Spark SQL?",
       "text": "steps/2/text.md"
     },    
 	{
-      "title": "",
+      "title": "Spark SQL Architecture",
       "text": "steps/3/text.md"
     },
 	{
-      "title": "",
+      "title": "Querying data using Spark SQL",
       "text": "steps/4/text.md"
     },
   {

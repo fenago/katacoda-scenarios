@@ -1,12 +1,12 @@
 
 **Step 3:** Let us now extract the indivudual attributes from the date object such as day, month, year etc. We shall be using various functions to add columns for each function using the withColumn method.
 
-val extracted = casted
+```val extracted = casted
   .withColumn("year", year($"date"))
   .withColumn("month", month($"date"))
   .withColumn("dayOfYear", dayofyear($"date"))
   .withColumn("quarter", quarter($"date"))
-  .withColumn("weekOfYear", weekofyear($"date"))
+  .withColumn("weekOfYear", weekofyear($"date"))```{{execute}} 
 
  
 

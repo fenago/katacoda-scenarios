@@ -1,9 +1,9 @@
 
 **Step 8:** Finally, let us use couple of conversion functions to convert the dates into different formats.
 
-val conversions = timeStampDS
+```val conversions = timeStampDS
     .withColumn("unixTime", unix_timestamp($"timeStamp"))
-    .withColumn("fromUnix", from_unixtime($"unixTime"))
+    .withColumn("fromUnix", from_unixtime($"unixTime"))```{{execute}} 
 
 - The unix_timestamp function is used to convert the timestamp to unix timestamp.
 
@@ -11,7 +11,7 @@ val conversions = timeStampDS
 
 The following output is shown when we use the show method.
 
-conversions.show()
+`conversions.show()`{{execute}} 
 
 
  

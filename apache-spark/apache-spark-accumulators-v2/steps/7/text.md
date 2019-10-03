@@ -4,12 +4,14 @@
 
 Since we know that our records contain 4 fields and if there are less than four fields in a record, we treat it as a bad record.
 
+```
 data.foreach(record => {
   val fields = record.split(",")
 
   if (fields.size != 4)
 	badRecords.add(1)
 })
+```
 
  
 

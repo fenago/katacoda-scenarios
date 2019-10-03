@@ -1,5 +1,3 @@
-Task 5: Joins using Spark SQL
-
 Let us now use Spark SQL to join two dataFrames.
 
 **Step 1:** Download the ratings.csv file from the URL below. This file contains four columns: userId, movieID, rating and timestamp.

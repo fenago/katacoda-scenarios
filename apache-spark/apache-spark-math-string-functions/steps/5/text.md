@@ -3,7 +3,7 @@
 
 **Step 4:** Let us now use some more math functions.
 
-val mathFuncs2 = numbersDS.select(factorial($"numbers"), floor($"numbers"), hex($"numbers"), log($"numbers"))
+`val mathFuncs2 = numbersDS.select(factorial($"numbers"), floor($"numbers"), hex($"numbers"), log($"numbers"))`{{execute}} 
 
 - The factorial functions returns the factorial of the number.
 
@@ -15,7 +15,7 @@ val mathFuncs2 = numbersDS.select(factorial($"numbers"), floor($"numbers"), hex(
 
 Let us check the result using the show method.
 
-mathFuncs2.show()
+`mathFuncs2.show()`{{execute}} 
  
 
 The following result is shown.

@@ -1,4 +1,3 @@
-Task 6: Window Functions
 Let us look at window functions. Window functions are little different when compared to other built in functions. These are the functions which are applied over a window i.e., a set of rows rather than each row. For example, we can find out the salary for each employee by department and rank them from high to low or vice versa.
 
 Let us perform this task in IntelliJ IDE. However, you may choose to perform it in the Spark shell as well.

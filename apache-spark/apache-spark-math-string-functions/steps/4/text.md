@@ -1,7 +1,7 @@
 
 **Step 3:** Let us now perform various math functions on the dataset. All these functions are self explanatory.
 
-val mathFuncs1 = numbersDS.select(abs($"numbers"), ceil($"numbers"), exp($"numbers"), cos($"numbers"))
+`val mathFuncs1 = numbersDS.select(abs($"numbers"), ceil($"numbers"), exp($"numbers"), cos($"numbers"))`{{execute}} 
 
 - The abs function returns the absolute value of the number.
 
@@ -13,7 +13,7 @@ val mathFuncs1 = numbersDS.select(abs($"numbers"), ceil($"numbers"), exp($"numbe
 
 Let us check the result using the show method.
 
-mathFuncs1.show()
+`mathFuncs1.show()`{{execute}} 
 
 The following result is shown.
 

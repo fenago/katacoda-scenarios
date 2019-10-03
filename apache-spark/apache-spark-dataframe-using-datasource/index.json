@@ -1,5 +1,5 @@
 {
-  "title": "Apache Spark Installation",
+  "title": "Apache Spark - Creating Data Frame using DataSource API",
   "description": "Introduction to Apache Spark",
   "difficulty": "Advanced",
   "time": "15 minutes",
@@ -9,7 +9,7 @@
       "text": "steps/1/text.md"
     },
     {
-      "title": "What is Spark?",
+      "title": "Prerequisites",
       "text": "steps/2/text.md"
     },    
 	{

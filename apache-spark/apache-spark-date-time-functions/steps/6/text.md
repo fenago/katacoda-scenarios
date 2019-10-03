@@ -2,14 +2,14 @@
 
 **Step 4:** Let us now use the arithmetic functions to manipulate the date.
 
-val arithmetic = casted
+```val arithmetic = casted
   .withColumn("ageInDays", datediff(current_date(), $"date"))
   .withColumn("addedDays", date_add($"date", 25))
   .withColumn("subtrDays", date_sub($"date", 16))
   .withColumn("addedMonths", add_months($"date", 4))
   .withColumn("lastDay", last_day($"date"))
   .withColumn("nextDay", next_day($"date", "tuesday"))
-  .withColumn("monthsBetween", months_between(current_date(), $"date", true))
+  .withColumn("monthsBetween", months_between(current_date(), $"date", true))```{{execute}} 
 
 
 
@@ -26,7 +26,7 @@ val arithmetic = casted
 
  The following output is shown when we use the show method.
 
-arithmetic.show()
+`arithmetic.show()`{{execute}} 
 
 
  

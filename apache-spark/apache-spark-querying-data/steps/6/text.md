@@ -7,14 +7,13 @@ We use the sql method in our SparkSession object which is spark and enter the fo
 
 Next, we can simply call show method on floridaUsers dataFrame to check the results.
 
+```
 results.floridaUsers.show()
-
-
-
- 
+```
 
 Run the program and you should have the result as shown in the screenshot below with the top 20 users who belong to State 'FL'.
 
- 
+To run this program from the terminal, simply run the following command. The program will the then be compiled and executed.
+`sbt "runMain training.sqlQueries"`{{execute}} 
 
 You can also use the collect, foreach and print to print all the records as we used to in the previous exercises.

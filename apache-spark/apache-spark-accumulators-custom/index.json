@@ -9,11 +9,11 @@
       "text": "steps/1/text.md"
     },
     {
-      "title": "What is Spark?",
+      "title": "Prerequisites",
       "text": "steps/2/text.md"
     },    
 	{
-      "title": "",
+      "title": "Implementing Custom Accumulators V2",
       "text": "steps/3/text.md"
     },
 	{
