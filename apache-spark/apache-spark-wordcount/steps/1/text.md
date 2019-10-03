@@ -2,9 +2,9 @@ Let's first setup VScode editor and clone respository. Clone the following repos
 `git clone https://github.com/athertahir/apache-spark.git`{{execute}}
 
 Now, move in the directory which contains the source code.
+
 `cd apache-spark/`{{execute}}
 
-sbt "runMain training.createDS"
 
 **Note:**
 - The supplied commands in the next steps MUST be run from your `apache-spark` directory. 

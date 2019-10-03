@@ -5,6 +5,7 @@ Parquet is Spark's default file format. Let us read and write Parquet files in S
 
 userdata1.parquet - http://bit.ly/2kfIhJ4
 
+We already have cloned a github repository which contains a required file. Open `apache-spark/Files/chapter_10` to view file.
 
 **Step 2:** Let us no read this Parquet file to Spark using the code below.
 

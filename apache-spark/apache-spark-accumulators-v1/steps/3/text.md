@@ -7,6 +7,6 @@ In this task and the next two, we shall be looking at Accumulators API in Spark 
 
 Ratings-malformed.csv - http://bit.ly/2WuTese
 
-Please save this file in IdeaProjects/Spark/chapter_6 folder. (Please create a folder named chapter_6 in the home folder.)
+We already have cloned a github repository which contains a required file. Open `apache-spark/Files/chapter_6` to view file.
 
-Please note that this file is different from the file we used in the previous lab exercises. This file has malformed records.
+Please note that this file has malformed records.

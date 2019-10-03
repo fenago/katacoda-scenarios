@@ -6,4 +6,4 @@ As we did in the previous lab exercise to create an DataFrame from an RDD, we sh
 
 mlb_players.csv - http://bit.ly/2JhzVJj
 
-Please save this file in IdeaProjects/Spark/chapter_8 folder. 
+We already have cloned a github repository which contains a required file. Open `apache-spark/Files/chapter_8` to view file.

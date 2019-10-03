@@ -5,11 +5,11 @@
   "time": "15 minutes",
   "details": {
     "steps": [{
-      "title": "",
+      "title": "Clone Repository",
       "text": "steps/1/text.md"
     },
     {
-      "title": "What is Spark?",
+      "title": "Prerequisites",
       "text": "steps/2/text.md"
     },    
 	{
@@ -29,7 +29,7 @@
         "text": "steps/6/text.md"
     },
     {
-        "title": "",
+        "title": "Spark Program – Performing Operations",
         "text": "steps/7/text.md"
     },
     {

@@ -5,4 +5,4 @@ Task 1: Creating a Tuple
 
 ratings.csv - http://bit.ly/2QmnAH9
 
-Please save this file in IdeaProjects/Spark/chapter_5 folder. (Please create a folder named chapter_5 in the home folder.)
+We already have cloned a github repository which contains a required file. Open `apache-spark/Files/chapter_5` to view file.

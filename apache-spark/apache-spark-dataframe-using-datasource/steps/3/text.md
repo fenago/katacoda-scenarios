@@ -5,4 +5,4 @@ Task 1: Creating Data Frame using Data Source API
 
 us-500.csv - http://bit.ly/2LmgDW2
 
-Please save this file in IdeaProjects/Spark/chapter_7 folder. (Please create a folder named chapter_7 in the home folder.)
+We already have cloned a github repository which contains a required file. Open `apache-spark/Files/chapter_7` to view file.

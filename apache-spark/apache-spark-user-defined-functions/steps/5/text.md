@@ -9,7 +9,7 @@ Now that we have learned about curried and partially applied functions, let us l
 
 ratings_head.csv - http://bit.ly/2X3r2wb
 
-Please save this file in IdeaProjects/Spark/chapter_9 folder.
+We already have cloned a github repository which contains a required file. Open `apache-spark/Files/chapter_9` to view file.
 
 **Step 2:** Open IntelliJ IDE, create a new Scala object and name it decrRatingUDF. We shall be using the following imports in our application.
 

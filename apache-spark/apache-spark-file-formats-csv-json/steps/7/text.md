@@ -10,6 +10,8 @@ JSON is also one of the popular file formats around which stands for JavaScrit O
 
 example_1.json - http://bit.ly/2lRFI06
 
+We already have cloned a github repository which contains a required file. Open `apache-spark/Files/chapter_10` to view file.
+
 **Step 2:** The following code is used to read the single line JSON file.
 
 ```val jsonData = spark.read

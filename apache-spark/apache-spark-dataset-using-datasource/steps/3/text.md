@@ -6,4 +6,4 @@ Creating a Dataset is similar to that of a DataFrame with some minor changes.
 
 ratings-head.csv - http://bit.ly/2FPdhHE
 
-Please save this file in IdeaProjects/Spark/chapter_8 by creating a new folder.
+We already have cloned a github repository which contains a required file. Open `apache-spark/Files/chapter_8` to view file.
