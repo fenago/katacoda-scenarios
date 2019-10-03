@@ -15,7 +15,7 @@ val data = sparkSession.read.format("com.databricks.spark.csv")
 .load(input)
 .as[User]
 
-Do not worry if this code doesn’t make sense. Just think this as a way to read the input data, as we used to do with SparkContext object in the previous exercises. Everything will start to make sense once we cover the next couple of chapters.
+Do not worry if this code doesn't make sense. Just think this as a way to read the input data, as we used to do with SparkContext object in the previous exercises. Everything will start to make sense once we cover the next couple of chapters.
 
  
 

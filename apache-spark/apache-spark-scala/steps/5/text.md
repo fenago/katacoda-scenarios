@@ -4,7 +4,7 @@ After the installation is completed successfully, type scala in your terminal an
 
  The scala prompt is the interactive shell where you can write and run Scala code. This interactive shell is also known as `REPL`.
 
-**Step 4:** You can now start writing Scala code! Let’s start by printing the classic "Hello world!" from the shell. To do this simply type the following code and hit enter on your keyboard.
+**Step 4:** You can now start writing Scala code! Let's start by printing the classic "Hello world!" from the shell. To do this simply type the following code and hit enter on your keyboard.
 
 `println("Hello World!")`{{execute}}
 

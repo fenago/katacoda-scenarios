@@ -6,12 +6,12 @@ This will update the package index. You might be asked to enter your password af
 
 **Step 2:** Once you run the above command, run the following command to actually download and install JDK.
 
-`apt-get install default-jdk`{{execute}} 
+`apt-get --assume-yes install default-jdk`{{execute}} 
 
 
 Verify the installation with: `java -version`{{execute}} 
 
-You’ll see the following output:
+You'll see the following output:
 
 ```
 java version "1.8.0_201"

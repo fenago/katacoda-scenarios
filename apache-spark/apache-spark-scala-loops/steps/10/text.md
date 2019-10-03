@@ -2,10 +2,11 @@
 
 Enter into the paste mode and execute the following code.
 
+`:paste`{{execute}}
 
-```:paste
 //Entering paste mode (ctrl-D to finish)
 
+```
 var friends = 0
 
 val names = List("Chandler", "Monica", "Rachel", "Phoebe", "Ross", "Joey")
@@ -18,18 +19,7 @@ println(s"${names(friends)}")
 
 friends += 1
 
-}
-
-
-
-
- 
-Loops
-
-Functions
-Collections
-
- 
+}```{{execute}}
 
 In the code above, we have first declared an Integer variable with a value of 6 and then a list of names of type String. Next, we print out a header so that the output makes sense and then write the While loop. The loop starts with a keyword while and then the condition inside the parentheses. The condition we set here is to continue the loop until value of friends is less than 6. Next, we use String interpolation to substitute the variables within the print statement. Please see that we have used curly braces, as we have substituted a variable named friends as a value to the variable  names. So that every time the loop runs, we are accessing each element of the list by its index starting from 0. Finally we increment the variable friends with 1.
 

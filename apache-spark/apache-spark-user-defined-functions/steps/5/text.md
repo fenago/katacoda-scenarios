@@ -20,7 +20,7 @@ Next, let us define our user defined function using val keyword instead of using
 
 val decrUDF = udf((input: Double) => input - 0.5)
 
-The syntax to define a function using val is a bit different than what we have been using so far with def function. Here we are simply assigning a function literal to an immutable variable. Also, we haven’t specified the return type for the function as we can make use of Scala type inference to take care of the return type.
+The syntax to define a function using val is a bit different than what we have been using so far with def function. Here we are simply assigning a function literal to an immutable variable. Also, we haven't specified the return type for the function as we can make use of Scala type inference to take care of the return type.
 
 
 We are then passing the function literal inside the udf function. The udf  function takes a column as parameter and returns a column. Since we will be passing the entire column of our dataset Ratings as input to the decrUDF function in the application, we are using this udf function.

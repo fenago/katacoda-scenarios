@@ -8,7 +8,7 @@ al newRDD = seqData.map
 }
 ```
 
-As you can see from the screenshot above, we now have the RDD[(String, Int)]. We can now simply perform all the operations we usually do on RDDs. We have to use the toString method when converting from Hadoop’s Text type and the get method for other data types.
+As you can see from the screenshot above, we now have the RDD[(String, Int)]. We can now simply perform all the operations we usually do on RDDs. We have to use the toString method when converting from Hadoop's Text type and the get method for other data types.
 
 **Step 5:** Let us now collect the RDD and check out the results.
 

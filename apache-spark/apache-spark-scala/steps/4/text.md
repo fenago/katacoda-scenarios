@@ -11,3 +11,8 @@ Now that we have installed Java, we are ready to install Scala and start writing
  
 `scala -version`{{execute}}
 
+You will get following output.
+
+```
+Scala code runner version 2.12.8 -- Copyright 2002-2018, LAMP/EPFL and Lightbend, Inc.
+```

@@ -28,7 +28,7 @@ The filter function we used above is a higher order function which takes another
 	name.contains("Chandler")
 	}
 
-Let’s call the function with the parameter friends which is a List of type String.
+Let's call the function with the parameter friends which is a List of type String.
 
 ```find(friends)
 

@@ -23,7 +23,7 @@ val removeHeader = input.mapPartitionsWithIndex((index, itr) => {
   if (index == 0) itr.drop(1) else itr
 })
 
-In the previous approach to remove the header, we were using filter method to filter out the first record from the RDD. This approach works well when there is small data. But, Spark isn’t developed for small data. We will be using huge data in realtime environment.
+In the previous approach to remove the header, we were using filter method to filter out the first record from the RDD. This approach works well when there is small data. But, Spark isn't developed for small data. We will be using huge data in realtime environment.
 
 Consider a scenario where we have a billion records in our RDD. When we use the filter function, the filter condition is tested for each and every record of RDD. Just to filter out one record, we end up testing the condition for all the billion records. To overcome this, we can use the mapPartitionWithIndex function. This higher order function provides us with an entire partition of RDD with index unlike map function which provides us with each record. We can then pass our logic which is to drop the first record in the partition if the partition index is 0, else return the partition as is. So, the condition inside if statement is only verified per partition basis instead of per record. This condition is only tested based on the number of partitions and not on the number of records making it efficient.
  

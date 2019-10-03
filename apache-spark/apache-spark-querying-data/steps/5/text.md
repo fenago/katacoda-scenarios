@@ -9,6 +9,6 @@
 
 users.createOrReplaceTempView("users")
 
-We are using the createOrReplaceTempView method to create a temporary table named users if it doesn’t exist, or replace a view if it already exist with the same name. This temporary table is available till the SparkSession is active. Once the session ends, the table will not be available anymore. Hence the name temp view. You can also persist the table using saveAsTable method.
+We are using the createOrReplaceTempView method to create a temporary table named users if it doesn't exist, or replace a view if it already exist with the same name. This temporary table is available till the SparkSession is active. Once the session ends, the table will not be available anymore. Hence the name temp view. You can also persist the table using saveAsTable method.
 
 

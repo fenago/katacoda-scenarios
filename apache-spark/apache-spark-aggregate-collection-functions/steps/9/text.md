@@ -29,4 +29,4 @@ posExploded.show()
 
  
 
-Since we haven’t used the as method to specify the names of the columns, the default column names pos and col are created for us.
+Since we haven't used the as method to specify the names of the columns, the default column names pos and col are created for us.

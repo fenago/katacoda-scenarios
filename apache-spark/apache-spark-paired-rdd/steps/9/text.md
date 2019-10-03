@@ -4,7 +4,7 @@ val RDDPair = data.map(parseRecords)
 
 
 
-That’s it. We now have our paired RDD. You can optionally take a look at the RDDPair by simply printing it out to the console using the code below.
+That's it. We now have our paired RDD. You can optionally take a look at the RDDPair by simply printing it out to the console using the code below.
 
  RDDPair.collect.foreach(println)
 

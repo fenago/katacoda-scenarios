@@ -2,10 +2,10 @@
 
 The above line uses the take() function to return first five elements of the RDD. This is an action which triggers the evaluation. The RDD data is now computed by loading it from the file system and then the action is performed. 
 
-Now, let’s say we need to count the elements in our RDD. 
+Now, let's say we need to count the elements in our RDD. 
 
 
-Now, let’s say we need to count the elements in our RDD. 
+Now, let's say we need to count the elements in our RDD. 
 
 ```data.count()
 

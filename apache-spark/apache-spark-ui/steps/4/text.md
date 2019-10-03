@@ -7,4 +7,4 @@ Saving Data
 Lineage Graph
 Web Interface
 
-Since there is no job running, you won’t be able to see any metrics.
+Since there is no job running, you won't be able to see any metrics.

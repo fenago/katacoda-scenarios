@@ -8,7 +8,7 @@ Now that we have a map collection, let us try to access the value by the key.
 
  
 
-As you can see from the screenshot above, we were able to access the value based on it’s key.
+As you can see from the screenshot above, we were able to access the value based on it's key.
 
 But if we try to access a value for a non existing key, an exception is thrown as shown in the screenshot. 
 

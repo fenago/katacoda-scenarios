@@ -25,5 +25,5 @@ Task 6 is complete!
 
 SUMMARY
 
-In this chapter we have looked at basics of Spark SQL. We have learned what is Spark SQL, why it is required and it’s architecture in detail.
+In this chapter we have looked at basics of Spark SQL. We have learned what is Spark SQL, why it is required and it's architecture in detail.
 In the labs, we have had our hands on creating a dataFrame, converting an RDD to dataFrame using the toDF method and StructType. We have then used SQL queries and dataFrame API to process data.

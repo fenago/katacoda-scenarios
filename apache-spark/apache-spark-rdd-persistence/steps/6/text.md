@@ -1,4 +1,4 @@
-Let’s go back to our example and see how we can use cache() and persist() methods.
+Let's go back to our example and see how we can use cache() and persist() methods.
 
 ```val data = sc.textFile("/some/path/records.txt")
 

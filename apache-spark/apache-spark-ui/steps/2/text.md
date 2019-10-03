@@ -4,5 +4,5 @@ We can access the Spark web interface to monitor the execution of Spark applicat
 
 http://[driverHostname]:4040
 
-The driverhostname is usually an IP address in the realtime environment and 4040 is the Spark’s port by default. 
+The driverhostname is usually an IP address in the realtime environment and 4040 is the Spark's port by default. 
 

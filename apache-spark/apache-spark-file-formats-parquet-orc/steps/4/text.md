@@ -1,5 +1,5 @@
 Task 4: Parquet Files
-Parquet is Spark’s default file format. Let us read and write Parquet files in Spark.
+Parquet is Spark's default file format. Let us read and write Parquet files in Spark.
 
 **Step 1:** Download the file userdata1.parquet from the URL below and save it to the IdeaProjects/Spark/chapter_10 folder.
 

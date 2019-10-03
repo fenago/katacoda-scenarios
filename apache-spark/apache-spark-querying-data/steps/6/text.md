@@ -3,7 +3,7 @@
 
 val foridaUsers = spark.sql("SELECT * FROM users WHERE  state = \"FL\"")
 
-We use the sql method in our SparkSession object which is spark and enter the following query. We have simply enterd a query to select all the records from our users table who belong to state FL. Since the values of State are String, we have to enclose them in double quotes and use the escape character ‘\’.
+We use the sql method in our SparkSession object which is spark and enter the following query. We have simply enterd a query to select all the records from our users table who belong to state FL. Since the values of State are String, we have to enclose them in double quotes and use the escape character '\'.
 
 Next, we can simply call show method on floridaUsers dataFrame to check the results.
 
@@ -13,7 +13,7 @@ results.floridaUsers.show()
 
  
 
-Run the program and you should have the result as shown in the screenshot below with the top 20 users who belong to State ‘FL’.
+Run the program and you should have the result as shown in the screenshot below with the top 20 users who belong to State 'FL'.
 
  
 
