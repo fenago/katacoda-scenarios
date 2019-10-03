@@ -1,0 +1,37 @@
+<pre class="file" data-target="clipboard">
+# Hint: You can copy Solution to ClipBoard from Solution tab in Step 5
+# bootstrap confidence intervals
+from numpy.random import seed
+from numpy.random import rand
+from numpy.random import randint
+from numpy import mean
+from numpy import median
+from numpy import percentile
+# seed the random number generator
+seed(0)
+# generate dataset
+dataset = 0.7 + rand(100) * 0.8
+# bootstrap
+scores = list()
+for _ in range(10):
+	# bootstrap sample
+	indices = randint(0, 100, 100)
+	sample = dataset[indices]
+	# calculate and store statistic
+	statistic = mean(sample)
+	scores.append(statistic)
+print('50th percentile (median) = %.3f' % median(scores))
+# calculate 95% confidence intervals (100 - alpha)
+alpha = 6.0
+# calculate lower percentile (e.g. 2.5)
+lower_p = alpha / 2.0
+# retrieve observation at lower percentile
+lower = max(0.0, percentile(scores, lower_p))
+print('%.1fth percentile = %.3f' % (lower_p, lower))
+# calculate upper percentile (e.g. 97.5)
+upper_p = (100 - alpha) + (alpha / 2.0)
+# retrieve observation at upper percentile
+upper = min(1.0, percentile(scores, upper_p))
+print('%.1fth percentile = %.3f' % (upper_p, upper))
+</pre>
+

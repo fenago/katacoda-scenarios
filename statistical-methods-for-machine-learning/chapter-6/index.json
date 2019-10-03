@@ -1,0 +1,149 @@
+{
+  "title": "Random Numbers",
+  "description": "Run Python Code with Jupyter Notebooks.",
+  "difficulty": "Beginner",
+  "time": "35 minutes",
+  "details": {
+    "steps": [{
+      "title": "Jupyter Notebook",
+      "text": "steps/1/step1.md"
+    },
+    {
+      "title": "Seed The Random Number Generator",
+      "text": "steps/2/step2.md",
+      "answer": "steps/2/answer.md"
+    },    
+    {
+      "title": "Random Floating Point Values",
+      "text": "steps/3/step3.md",
+      "answer": "steps/3/answer.md"
+    },
+    {
+      "title": "Random Integer Values",
+      "text": "steps/4/step4.md",
+      "answer": "steps/4/answer.md"
+    },
+    {
+      "title": "Random Gaussian Values",
+      "text": "steps/5/step5.md",
+      "answer": "steps/5/answer.md"
+    },
+    {
+      "title": "Randomly Choosing From a List",
+      "text": "steps/6/step6.md",
+      "answer": "steps/6/answer.md"
+    },
+    {
+      "title": "Random Subsample From a List",
+      "text": "steps/7/step7.md",
+      "answer": "steps/7/answer.md"
+    },
+    {
+      "title": "Randomly Shuffle a List",
+      "text": "steps/8/step8.md",
+      "answer": "steps/8/answer.md"
+    },
+    {
+      "title": "Numpy Seed The Random Number Generator",
+      "text": "steps/9/step9.md",
+      "answer": "steps/9/answer.md"
+    },
+    {
+      "title": "Numpy Array of Random Floating Point Values",
+      "text": "steps/10/step10.md",
+      "answer": "steps/10/answer.md"
+    },
+    {
+      "title": "Numpy Array of Random Integer Values",
+      "text": "steps/11/step11.md",
+      "answer": "steps/11/answer.md"
+    },
+    {
+      "title": "Numpy Array of Random Gaussian Values",
+      "text": "steps/12/step12.md",
+      "answer": "steps/12/answer.md"
+    },
+    {
+      "title": "Shuffle NumPy Array",
+      "text": "steps/13/step13.md",
+      "answer": "steps/13/answer.md"
+    }],
+    "intro": {
+      "text": "intro.md",
+      "code": "set-env.sh"
+    },
+    "finish": {
+      "text": "finish.md"
+    },
+    "assets": {
+      "client": [
+        { 
+          "file": "prepareContainer.sh",  
+          "target": "~/"  
+        },    
+        { 
+          "file": "numpy-rand.ipynb",  
+          "target": "~/"
+        },
+        { 
+          "file": "numpy-randint.ipynb",   
+          "target": "~/"  
+        },  
+        { 
+          "file": "numpy-randn.ipynb", 
+          "target": "~/"  
+        },  
+        { 
+          "file": "numpy-seed.ipynb", 
+          "target": "~/"  
+        },  
+        { 
+          "file": "numpy-shuffle.ipynb", 
+          "target": "~/"  
+        },  
+        { 
+          "file": "python-choice.ipynb", 
+          "target": "~/"  
+        },  
+        { 
+          "file": "python-gauss.ipynb", 
+          "target": "~/"  
+        },  
+        { 
+          "file": "python-randint.ipynb", 
+          "target": "~/"  
+        },  
+        { 
+          "file": "python-random.ipynb", 
+          "target": "~/"  
+        },  
+        { 
+          "file": "python-sample.ipynb", 
+          "target": "~/"  
+        },  
+        { 
+          "file": "python-seed.ipynb", 
+          "target": "~/"  
+        },  
+        { 
+          "file": "python-shuffle.ipynb", 
+          "target": "~/"  
+        }
+      ]
+    }
+  },
+  "environment": {
+    "uilayout": "terminal-iframe",
+    "showdashboard": true,
+    "dashboards": [
+      {
+        "name": "Jupyter Notebook",
+        "port": 8888
+      }
+    ],
+    "uimessage1": "\u001b[32mYour Interactive Bash Terminal.\r\n"
+  },
+  "backend": {
+    "imageid": "docker"
+  }
+}

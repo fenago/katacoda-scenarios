@@ -1,42 +1,52 @@
 {
-  "title": "Matrix Operations",
-  "description": "Run Python Code with Jupyter Notebooks.",
+  "title": "Make Data Normal",
+  "description": "Run Python Code with Jupyter Notebooks",
   "difficulty": "Beginner",
-  "time": "10 minutes",
+  "time": "35 minutes",
   "details": {
     "steps": [{
       "title": "Jupyter Notebook",
       "text": "steps/1/step1.md"
     },
     {
-      "title": "Transpose",
+      "title": "Histogram Plot of a Small Sample",
       "text": "steps/2/step2.md",
       "answer": "steps/2/answer.md"
     },    
     {
-      "title": "Inverse",
+      "title": "Histogram Plot of a Large Sample",
       "text": "steps/3/step3.md",
       "answer": "steps/3/answer.md"
     },
     {
-      "title": "Trace",
+      "title": "Data Resolution",
       "text": "steps/4/step4.md",
       "answer": "steps/4/answer.md"
     },
     {
-      "title": "Determinant",
+      "title": "Extreme Values",
       "text": "steps/5/step5.md",
       "answer": "steps/5/answer.md"
     },
     {
-      "title": "Rank Vector",
+      "title": "Long Tails",
       "text": "steps/6/step6.md",
       "answer": "steps/6/answer.md"
     },
     {
-      "title": "Rank Matrix",
+      "title": "Long Tails Truncated",
       "text": "steps/7/step7.md",
       "answer": "steps/7/answer.md"
+    },
+    {
+      "title": "Exponential Distribution",
+      "text": "steps/8/step8.md",
+      "answer": "steps/8/answer.md"
+    },
+    {
+      "title": "Box-Cox transform",
+      "text": "steps/9/step9.md",
+      "answer": "steps/9/answer.md"
     }],
     "intro": {
       "text": "intro.md",
@@ -52,23 +62,35 @@
           "target": "~/"  
         },    
         { 
-          "file": "encode-decoder-lstm.ipynb",  
+          "file": "boxcox.ipynb",  
           "target": "~/"
         },
         { 
-          "file": "problem-gen-pairs.ipynb",   
+          "file": "data-resolution.ipynb",   
           "target": "~/"  
         },  
         { 
-          "file": "problem-int-encoder.ipynb", 
+          "file": "exponential.ipynb", 
           "target": "~/"  
         },  
         { 
-          "file": "problem-one-hot.ipynb", 
+          "file": "extreme-events.ipynb", 
           "target": "~/"  
         },  
         { 
-          "file": "problem-pad.ipynb", 
+          "file": "long-tail.ipynb", 
+          "target": "~/"  
+        },  
+        { 
+          "file": "long-tail-truncated.ipynb", 
+          "target": "~/"  
+        },  
+        { 
+          "file": "sample-size-large.ipynb", 
+          "target": "~/"  
+        },  
+        { 
+          "file": "sample-size-small.ipynb", 
           "target": "~/"  
         }
       ]

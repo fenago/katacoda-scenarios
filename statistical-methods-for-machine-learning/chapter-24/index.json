@@ -1,40 +1,40 @@
 {
-  "title": "Matrix Operations",
-  "description": "Run Python Code with Jupyter Notebooks.",
+  "title": "Normality Tests",
+  "description": "Run Python Code with Jupyter Notebooks",
   "difficulty": "Beginner",
-  "time": "10 minutes",
+  "time": "25 minutes",
   "details": {
     "steps": [{
       "title": "Jupyter Notebook",
       "text": "steps/1/step1.md"
     },
     {
-      "title": "Transpose",
+      "title": "Test Dataset",
       "text": "steps/2/step2.md",
       "answer": "steps/2/answer.md"
     },    
     {
-      "title": "Inverse",
+      "title": "Histogram Plot",
       "text": "steps/3/step3.md",
       "answer": "steps/3/answer.md"
     },
     {
-      "title": "Trace",
+      "title": "Quantile-Quantile Plot",
       "text": "steps/4/step4.md",
       "answer": "steps/4/answer.md"
     },
     {
-      "title": "Determinant",
+      "title": "Shapiro-Wilk Test",
       "text": "steps/5/step5.md",
       "answer": "steps/5/answer.md"
     },
     {
-      "title": "Rank Vector",
+      "title": "D'Agostino's K2 Test",
       "text": "steps/6/step6.md",
       "answer": "steps/6/answer.md"
     },
     {
-      "title": "Rank Matrix",
+      "title": "Anderson-Darling Test",
       "text": "steps/7/step7.md",
       "answer": "steps/7/answer.md"
     }],
@@ -52,23 +52,27 @@
           "target": "~/"  
         },    
         { 
-          "file": "encode-decoder-lstm.ipynb",  
+          "file": "anderson-darling.ipynb",  
           "target": "~/"
         },
         { 
-          "file": "problem-gen-pairs.ipynb",   
+          "file": "dagostinos.ipynb",   
           "target": "~/"  
         },  
         { 
-          "file": "problem-int-encoder.ipynb", 
+          "file": "dataset.ipynb", 
           "target": "~/"  
         },  
         { 
-          "file": "problem-one-hot.ipynb", 
+          "file": "histogram.ipynb", 
           "target": "~/"  
         },  
         { 
-          "file": "problem-pad.ipynb", 
+          "file": "qq-plot.ipynb", 
+          "target": "~/"  
+        },  
+        { 
+          "file": "shapiro-wilk.ipynb", 
           "target": "~/"  
         }
       ]
