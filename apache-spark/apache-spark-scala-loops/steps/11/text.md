@@ -2,7 +2,7 @@ Now, enter into the paste mode again and execute the following code to perform a
 
 `:paste`{{execute}}
 
-After pasting following code in the scala terminal, Press  `Ctrl` + `D` to run code.
+**Note:** After pasting following code in the scala terminal, Press  `Ctrl` + `D` to run code.
 
 ```var i = 0
 

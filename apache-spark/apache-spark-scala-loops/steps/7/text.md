@@ -19,7 +19,7 @@ This will take you to the paste mode with a prompt to enter your code as shown i
 You can now enter Scala code in multiple lines. Once you are done with your code press Ctrl + D to come out of the paste mode and execute the code.
 `:paste`{{execute}}
 
-After pasting following code in the scala terminal, Press  `Ctrl` + `D` to run code.
+**Note:** After pasting following code in the scala terminal, Press  `Ctrl` + `D` to run code.
 
 ```val numOfKids = 3
 if (numOfKids > 2) {

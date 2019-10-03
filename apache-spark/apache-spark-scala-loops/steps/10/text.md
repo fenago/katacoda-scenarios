@@ -4,7 +4,7 @@ Enter into the paste mode and execute the following code.
 
 `:paste`{{execute}}
 
-After pasting following code in the scala terminal, Press  `Ctrl` + `D` to run code.
+**Note:** After pasting following code in the scala terminal, Press  `Ctrl` + `D` to run code.
 
 ```
 var friends = 0

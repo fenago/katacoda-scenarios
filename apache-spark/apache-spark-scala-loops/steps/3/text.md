@@ -1,3 +1,7 @@
+Type `scala` in your terminal and you will be prompted with a Scala prompt.
+
+`scala`{{execute}}
+
 **Step 1:** Let us now look into more data types as discussed in Data Types in Scala section and see how we can create them.
 
 `val num: Int = 255`{{execute}}

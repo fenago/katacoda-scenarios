@@ -2,7 +2,7 @@
 
 `:paste`{{execute}}
 
-After pasting following code in the scala terminal, Press  `Ctrl` + `D` to run code.
+**Note:** After pasting following code in the scala terminal, Press  `Ctrl` + `D` to run code.
 
 ```def married(name: String, times: Int): String = {
 return name + " has married " + times + " times"
