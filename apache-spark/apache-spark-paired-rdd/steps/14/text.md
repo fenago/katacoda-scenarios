@@ -1,8 +1,9 @@
 
 **Step 6:** We can also sort the result on either column using the sortBy function as shown below.
 
+```
 val sorted = avgRatings.sortBy(x => x._2)
- 
+```
 
 
 The above line is used to sort the second field which is the value (Average rating) in the ascending order by default. The sorted result is as shown below.
@@ -10,7 +11,9 @@ The above line is used to sort the second field which is the value (Average rati
 
 However, if you want to sort it in descending order, you can simply use the dash (-) symbol as shown below.
 
+```
 val sorted = avgRatings.sortBy(x => -x._2)
+```
 
 You will have the results sorted in descending order when you run the program as shown below.
 
@@ -18,6 +21,8 @@ You will have the results sorted in descending order when you run the program as
 
 However, if you want to sort it in descending order, you can simply use the dash (-) symbol as shown below.
 
+```
 val sorted = avgRatings.sortBy(x => -x._2)
+```
 
 You will have the results sorted in descending order when you run the program as shown below.

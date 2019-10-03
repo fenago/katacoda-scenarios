@@ -2,9 +2,10 @@
 
 To achieve this, we must first compute the number of ratings by an user using the mapValues function. 
 
+```
 val mappedRatings = RDDPair.mapValues(x => (x,1))
+```
 
 This transformation converts each rating value to a tuple of (ratings, 1). So we will be having our Paired RDD as (userId, (ratings, 1)).
- 
 
-You may optionally print out the mappedRatings to the console as in the previous task, to check how the result is displayed.
+You may optionally print out the mappedRatings to the console, to check how the result is displayed.
