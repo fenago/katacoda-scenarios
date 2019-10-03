@@ -1,6 +1,6 @@
 
 
-Step 3: Let us now declare a case class for the dataset we are about to load as shown below.
+**Step 3:** Let us now declare a case class for the dataset we are about to load as shown below.
 
 case class Ratings(userId: Int, movieID: Int, rating: Double, timeStamp: String)
 

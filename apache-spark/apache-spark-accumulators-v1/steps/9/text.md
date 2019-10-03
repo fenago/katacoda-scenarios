@@ -1,4 +1,4 @@
-Step 3: Let us now define a parse function which takes input record of type String as argument. The return type is an Either monadic collection which will either return String as Left object or a records case class as Right object.
+**Step 3:** Let us now define a parse function which takes input record of type String as argument. The return type is an Either monadic collection which will either return String as Left object or a records case class as Right object.
 
 Do not worry if you do not understand this as of now. All this makes sense when you look at the rest of the code.
 

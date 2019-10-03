@@ -1,6 +1,6 @@
-Step 2: You can access the first element of the RDD using the first method as shown below.
+**Step 2:** You can access the first element of the RDD using the first method as shown below.
 
-scala> lettersRDD.first
+```lettersRDD.first```
 
  
 
@@ -8,10 +8,10 @@ As you can see from the screenshot above, the first element in the RDD has been 
 
 You can use the take(n) method to read the n elements from your RDD. Where n is number of elements starting from the first element you want to read.
 
-scala> lettersRDD.take(4)
+```lettersRDD.take(4)```
 
 
 But if you want to view all the elements in the RDD, you have to use collect method as shown below. Please note that using collect on a large dataset is not recommended, as collect will bring all the data of an RDD to the Driver program and load it in its memory. 
 
-scala> lettersRDD.collect
+```lettersRDD.collect```
 

@@ -1,6 +1,6 @@
 
 
-Step 2: Let us first use the built in aggregation functions. In the following piece of code, we are performing multiple aggreagations at once.
+**Step 2:** Let us first use the built in aggregation functions. In the following piece of code, we are performing multiple aggreagations at once.
 
 
 

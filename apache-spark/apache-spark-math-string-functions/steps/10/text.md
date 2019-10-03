@@ -1,4 +1,4 @@
-Step 5: Finally, let us look at  substring and trim functons to extract a part of string and trim the whitespaces before and after the string respectively.
+**Step 5:** Finally, let us look at  substring and trim functons to extract a part of string and trim the whitespaces before and after the string respectively.
 
 val sub = quoteDS.select(substring($"value", 0, 2).as("firstWord"))
 
@@ -17,4 +17,5 @@ Here we have extracted the first word and space after it using the substring fun
 
 These are only a few string functions and there are many available out there. Please practice with as many functions as you can.
 
-Task 5 is complete!
+Task is complete!
+

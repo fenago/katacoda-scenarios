@@ -1,6 +1,6 @@
 
 
-Step 5: Now that we have both the datasets loaded and splitted by comma delimiter, let us create a tuple of two elements (Paired RDD) so that we can perform a join on both the RDDs based on key. The key here will be the movieID.
+**Step 5:** Now that we have both the datasets loaded and splitted by comma delimiter, let us create a tuple of two elements (Paired RDD) so that we can perform a join on both the RDDs based on key. The key here will be the movieID.
 
 To create a tuple, we use the map function with the first element (key) of the tuple as movieID which is second field in the rating RDD and first field in movie RDD. The second element (value) of the tuple will be the entire records from both the RDDs.
 
@@ -10,7 +10,7 @@ val movie_record = movie.map(x => (x(0).toInt, movies(x(0).toInt, x(1).toString,
 
  
 
-Step 6: The next step is to simply perform the join as shown below.
+**Step 6:** The next step is to simply perform the join as shown below.
 
 val joined = rating_record.join(movie_record)
 
@@ -26,4 +26,5 @@ You can then similarly perform the rest of the joins such as left outer join and
 
 It is recommended to perform joins using dataframes rather than RDDs as it can have the benefit of catalyst optimizer when performed using dataframes. We shall look at dataframes in our upcoming chapters.
 
-Task 5 is complete!
+Task is complete!
+

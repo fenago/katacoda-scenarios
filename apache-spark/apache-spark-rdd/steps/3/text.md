@@ -1,12 +1,12 @@
-Step 1: Let us create a RDD using the parallelize keyword. Fire up the spark-shell from the terminal and create a list as shown below.
+**Step 1:** Let us create a RDD using the parallelize keyword. Fire up the spark-shell from the terminal and create a list as shown below.
 
-$ spark-shell
+`spark-shell`{{execute}}
 
-scala> val friends = List(“Chandler”, “Rachel”, “Phoebe”, “Joey”, “Ross”)
+```val friends = List("Chandler", "Rachel", "Phoebe", "Joey", "Ross")
 
 Now, let us use the parallelize keyword and create an RDD for the list we have created above.
 
-scala> val friendsRDD = sc.parallelize(friends) 
+```val friendsRDD = sc.parallelize(friends) 
 
  
 

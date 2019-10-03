@@ -1,4 +1,4 @@
-Step 1: At this point, we have a paired RDD with userId as key and ratings as value. We now have to compute the sum of user ratings and divide them by the number of ratings so that we can get the average rating by an user.
+**Step 1:** At this point, we have a paired RDD with userId as key and ratings as value. We now have to compute the sum of user ratings and divide them by the number of ratings so that we can get the average rating by an user.
 
 To achieve this, we must first compute the number of ratings by an user using the mapValues function. 
 

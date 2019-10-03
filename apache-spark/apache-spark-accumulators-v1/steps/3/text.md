@@ -3,7 +3,7 @@ Task 1: Using Accumulator method
 
 In this task and the next two, we shall be looking at Accumulators API in Spark 1.x to count the number of malformed records and separate the malformed records from the good records.
 
-Step 1: Download the ratings-malformed.csv file from the URL below. This file contains four columns: userId, movieID, rating and timestamp.
+**Step 1:** Download the ratings-malformed.csv file from the URL below. This file contains four columns: userId, movieID, rating and timestamp.
 
 Ratings-malformed.csv - http://bit.ly/2WuTese
 

@@ -1,5 +1,5 @@
 
-Step 6: We can also sort the result on either column using the sortBy function as shown below.
+**Step 6:** We can also sort the result on either column using the sortBy function as shown below.
 
 val sorted = avgRatings.sortBy(x => x._2)
  

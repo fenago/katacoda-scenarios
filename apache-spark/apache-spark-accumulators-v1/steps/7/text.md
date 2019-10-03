@@ -4,4 +4,5 @@ With this we have successfully set the initial value for accumulator and named t
 
 We shall come back to this program in Task 3, once we have figured out how to separate bad records with good records so that we can count the number of bad records.
 
-Task 1 is complete!
+Task is complete!
+

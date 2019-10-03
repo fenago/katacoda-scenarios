@@ -1,6 +1,6 @@
 
 
-Step 5: Now that we have a pairedRDD, we can use the reduceByKey function to count the number of of times each movie has been rated as shown below.
+**Step 5:** Now that we have a pairedRDD, we can use the reduceByKey function to count the number of of times each movie has been rated as shown below.
 
 val count = records.reduceByKey((x,y) => x + y)
 

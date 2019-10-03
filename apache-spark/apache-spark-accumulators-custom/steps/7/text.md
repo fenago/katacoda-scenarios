@@ -1,6 +1,6 @@
 
 
-Step 7: Next, there are a couple of methods required to complete our implementation of custom accumulator. Ther are the isZero method and the copy method.
+**Step 7:** Next, there are a couple of methods required to complete our implementation of custom accumulator. Ther are the isZero method and the copy method.
 
 def isZero(): Boolean = {
   movieCount.isEmpty

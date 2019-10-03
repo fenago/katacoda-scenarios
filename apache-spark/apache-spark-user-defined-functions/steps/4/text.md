@@ -2,7 +2,7 @@ The difference between UDF and UADF is that, the UDF performs the user-defined o
 Steps to implement User Defined function
 User defined functions (UDF & UDAF) can be implemented by following these three steps.
 
-●	Writing a User Defined Function.
-●	Registering the User Defined Function in Spark Application.
-●	Using the User Defined Function in Spark SQL or in the DataFrame API.
+- Writing a User Defined Function.
+- Registering the User Defined Function in Spark Application.
+- Using the User Defined Function in Spark SQL or in the DataFrame API.
 

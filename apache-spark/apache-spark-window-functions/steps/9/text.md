@@ -1,7 +1,7 @@
 
 As a challenge, please find out the second highest salary from each department using the dense_rank function.
 
-Step 7: Similarly, let us look at the row_number and percent_rank.
+**Step 7:** Similarly, let us look at the row_number and percent_rank.
 
 The row_number function as the name suggest provides a row number for each row starting from 1 irrespective of duplicates. The numbers are neither skipped nor are repeated.
 
@@ -25,7 +25,7 @@ The following output is shown when we run the program.
 
  
 
-Step 8: Let us finally look at lead and lag functions. The lead and lag functions are used to find how much the value of next row is leading or lagging when compared to the current row.
+**Step 8:** Let us finally look at lead and lag functions. The lead and lag functions are used to find how much the value of next row is leading or lagging when compared to the current row.
 
 val leads = lead($"pay", 1, 0).over(window)
 employeeDS.select($"*", leads.as("lead")).show()
@@ -45,7 +45,8 @@ The following output is shown when we run the program.
 
  
 
-Task 6 is complete!
+Task is complete!
+
 
 
 

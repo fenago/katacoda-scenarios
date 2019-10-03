@@ -6,16 +6,16 @@ Hadoop files are the output of Hadoop MapReduce jobs. We can read Hadoop files w
  
 
 
-Step 1: Download the file part-r-00000 from the URL below and save it to the IdeaProjects/Spark/chapter_10 folder.
+**Step 1:** Download the file part-r-00000 from the URL below and save it to the IdeaProjects/Spark/chapter_10 folder.
 
 part-r-00000 - http://bit.ly/2lSqdFy
 
 This file is the output of a Word Count MapReduce job. It contains words as keys and values as the count separated by tab
 
-Step 2: Before we read the file, we first need the following imports. We need to import the datatypes for both keys and values and also the input format. The keys are of type Text, values are Text and the input format is KeyValueTextInputFormat.
+**Step 2:** Before we read the file, we first need the following imports. We need to import the datatypes for both keys and values and also the input format. The keys are of type Text, values are Text and the input format is KeyValueTextInputFormat.
 
-scala> import org.apache.hadoop.io.Text
-scala> import org.apache.hadoop.mapred.KeyValueTextInputFormat
+```import org.apache.hadoop.io.Text
+```import org.apache.hadoop.mapred.KeyValueTextInputFormat
  
 
 

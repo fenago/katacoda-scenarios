@@ -1,8 +1,8 @@
 
 
-Step 5: Let us now test the Spark installation by accessing the Spark Shell. To do so, execute the following command.
+**Step 5:** Let us now test the Spark installation by accessing the Spark Shell. To do so, execute the following command.
 
-$ spark-shell
+`spark-shell`{{execute}}
 
 Once you run, the above command, a screen similar to the screenshot shows confirming the successful installation of Spark.
  
@@ -13,4 +13,5 @@ Configure IntelliJ
 
  
 
-Task 1 is complete!
+Task is complete!
+

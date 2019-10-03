@@ -1,5 +1,5 @@
 
-Step 3: Now, write the main function and create the SparkSession object as shown below.
+**Step 3:** Now, write the main function and create the SparkSession object as shown below.
 
 def main(args: Array[String]): Unit = {
 

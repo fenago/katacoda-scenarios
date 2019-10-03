@@ -1,5 +1,5 @@
 
-Step 6: Let us now find the third highest salary from each department.
+**Step 6:** Let us now find the third highest salary from each department.
 
 val rankedDS =  employeeDS.select($"*", ranked.as("rank"))
 val second = rankedDS.where("rank = 3")

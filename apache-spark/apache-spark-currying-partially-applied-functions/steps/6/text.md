@@ -1,15 +1,15 @@
 
-Step 3: We can also define currying functions with multiple parameters inside each parameter group as shown below.
+**Step 3:** We can also define currying functions with multiple parameters inside each parameter group as shown below.
 
-scala> def sumProd(a: Int, x: Int) (b: Int, y: Int): Int = {
+```def sumProd(a: Int, x: Int) (b: Int, y: Int): Int = {
 	| a * b + x * y
 	| }
-
+```
  
 
-Step 4: We can also define a currying function in such a way that we can tranform a function which takes two or more parameters into a function that takes only one parameter.
+**Step 4:** We can also define a currying function in such a way that we can tranform a function which takes two or more parameters into a function that takes only one parameter.
 
-scala> def prod(a: Int) = (b: Int) => a * b
+```def prod(a: Int) = (b: Int) => a * b```
 
  
 

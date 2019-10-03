@@ -5,7 +5,7 @@ Let us now perform actions on the paired RDDs and also look at caching and persi
 
  
 
-Step 1: We shall be using the joined RDD for all the actions we perform in this task. Since we shall be using this RDD more than once, let us persist it before performing these actions so that the application does not process all the transformations over and over again whenever an action is called.
+**Step 1:** We shall be using the joined RDD for all the actions we perform in this task. Since we shall be using this RDD more than once, let us persist it before performing these actions so that the application does not process all the transformations over and over again whenever an action is called.
 
 joined.persist(StorageLevel.MEMORY_AND_DISK_SER)
 

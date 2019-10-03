@@ -1,27 +1,27 @@
-Step 2: Let us now look at map collection. Let us first create a map of elements.
+**Step 2:** Let us now look at map collection. Let us first create a map of elements.
 
-scala> val couples = Map(“Chandler” -> “Monica”, “Ross” -> “Rachel”, “Phoebe” -> “Mike”)
+```val couples = Map("Chandler" -> "Monica", "Ross" -> "Rachel", "Phoebe" -> "Mike")
 
 Now that we have a map collection, let us try to access the value by the key.
 
-scala> println(couples(“Chandler”)
+```println(couples("Chandler")```
 
  
 
-As you can see from the screenshot above, we were able to access the value based on it’s key.
+As you can see from the screenshot above, we were able to access the value based on it's key.
 
 But if we try to access a value for a non existing key, an exception is thrown as shown in the screenshot. 
 
-scala> println(couples(“Joey”)
+```println(couples("Joey")```
 
  
 
 To overcome this problem, we use the getOrElse method and specify a default value when the key does not exist.
 
-scala> val unknown = util.Try(couples(“Joey”)) getOrElse “Not Known”
+```val unknown = util.Try(couples("Joey")) getOrElse "Not Known"```
 
 
-scala> println(unknown)
+```println(unknown)```
 
  
 

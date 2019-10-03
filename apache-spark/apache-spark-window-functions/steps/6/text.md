@@ -1,12 +1,12 @@
 
 
-Step 4: Now that we have loaded our file, let us first create a window. We shall create a window to partition by the department and order by pay in descending order.
+**Step 4:** Now that we have loaded our file, let us first create a window. We shall create a window to partition by the department and order by pay in descending order.
 
 val window = Window.partitionBy($"dept").orderBy($"pay".desc)
 
 we have called the partitionBy and orderBy method on the Window object to create a window. The partitionBy method creates partitions for each department withing the window and orderBy method will order the rows by pay in descending order.
 
-Step 5: Let us first use the rank  function to get the pay for each employee by department in desceinding order. 
+**Step 5:** Let us first use the rank  function to get the pay for each employee by department in desceinding order. 
 
 val ranked = rank().over(window)
 

@@ -1,5 +1,5 @@
 
-Step 4: Let us now load our file using the code as shown below.
+**Step 4:** Let us now load our file using the code as shown below.
 
 val users = spark.read
   .format("csv")

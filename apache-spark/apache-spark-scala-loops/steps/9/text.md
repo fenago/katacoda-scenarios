@@ -1,35 +1,27 @@
 If you do not want the last iteration to be included, you can use the keyword until instead of to. For example,
 
-scala> :paste
-//Entering paste mode (ctrl-D to finish)
+`:paste`{{execute}}
 
-for ( i <- 1 until 5) {
+
+**Note:** After pasting following code in the scala terminal, Press  `Ctrl` + `D` to run code.
+
+```for ( i <- 1 until 5) {
 	val sum = i + i
 	println(sum)
-}
+}```{{execute}}
 
-
-
-
-
-
-
- 
-Loops
-
-Functions
-Collections
 
  
 We can also use an if statement within the for loop as shown below.
 
-scala> :paste
-//Entering paste mode (ctrl-D to finish)
+`:paste`{{execute}}
 
-val friends = List(“Chandler”, “Monica”, “Rachel”, “Ross”, “Joey”, “Phoebe”)
-for(friend <- friends if friend == “Chandler”){
-println(s“The king of sarcasm is $friend”)
-}
+**Note:** After pasting following code in the scala terminal, Press  `Ctrl` + `D` to run code.
+
+```val friends = List("Chandler", "Monica", "Rachel", "Ross", "Joey", "Phoebe")
+for(friend <- friends if friend == "Chandler"){
+println(s"The king of sarcasm is $friend")
+}```{{execute}}
 
 
 In the above example, we are looping through the list of collection called friends, with an if condition. We filter out all the items except for one element and substitute the variable in the print statement. Please see that we are using double equals operator to compare two strings.

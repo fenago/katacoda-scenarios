@@ -2,11 +2,11 @@ Task 5: Math and String Functions
 Math Functions
 There are a number of math functions which can be applied to columns with numbers. Let us now look at few of them.
 
-Step 1: Let us first create a collection with data as shown below. Please make sure you have the imports from the previous section already imported. You will have to import them again if you have closed the Spark Session.
+**Step 1:** Let us first create a collection with data as shown below. Please make sure you have the imports from the previous section already imported. You will have to import them again if you have closed the Spark Session.
 
 val numbers = List(5, 4, 9.4, 25, 8, 7.7, 6, 52)
 
-Step 2: Next, let us convert the collection to dataset using the toDS method and rename the column as numbers using the withColumnRenamed method. The default column name when you create a dataset is value. Hence we change the default column name to numbers.
+**Step 2:** Next, let us convert the collection to dataset using the toDS method and rename the column as numbers using the withColumnRenamed method. The default column name when you create a dataset is value. Hence we change the default column name to numbers.
 
 
 

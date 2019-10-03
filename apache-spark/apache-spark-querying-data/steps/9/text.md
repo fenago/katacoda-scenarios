@@ -1,4 +1,4 @@
-Step 6: Instead of using the show method, let us now look how we can save this file. You may comment out or remove the line with the show method from the previous step.
+**Step 6:** Instead of using the show method, let us now look how we can save this file. You may comment out or remove the line with the show method from the previous step.
 
 Before we save the file, there is one important thing we need to know about how SparkSQL creates tasks. For the second stage of DAG, the number of tasks created to process the data are 200 by default. But in Spark core, the number of tasks in second stage is always equal to number of tasks in first stage. For example, consider we have two stages stage 0 and stage 1. For stage 0, the number of tasks created will be equal to the number of input splits. Next, in Spark core, the number of tasks in stage 1 are equal to the number of tasks in stage 0. However, in SparkSQL, the number of tasks in stage 1 will be 200 by default.
 
@@ -34,5 +34,6 @@ Open the file and you should have the values as shown below.
 
 This way you can perform any operations using the SQL data manipulation language. 
 
-Task 4 is complete!
+Task is complete!
+
 

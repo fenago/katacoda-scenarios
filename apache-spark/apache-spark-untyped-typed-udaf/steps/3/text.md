@@ -1,8 +1,8 @@
 UDAF types
 The user defined aggregate functions (UDAF) can be further classified into two types. 
 
-●	Typed user defined aggregate function
-●	Untyped user defined aggregate function
+- Typed user defined aggregate function
+- Untyped user defined aggregate function
 
 
 The Typed user defined aggregate function is applied to Datasets where we get the structure (schema) of rows using the case class, while the Untyped user defined aggregate function is applied to DataFrames.

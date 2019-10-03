@@ -1,12 +1,12 @@
 
 
-Step 4: We can now use the collect function to collect the final result from the RDD and display it on the console using the following line of code. This action triggers DAG and the job is executed.
+**Step 4:** We can now use the collect function to collect the final result from the RDD and display it on the console using the following line of code. This action triggers DAG and the job is executed.
 
 avgRatings.collect.foreach(println)
 
  
 
-Step 5: Run the program by clicking on the play icon and Run option as shown in the screenshot below.
+**Step 5:** Run the program by clicking on the play icon and Run option as shown in the screenshot below.
 
  
 

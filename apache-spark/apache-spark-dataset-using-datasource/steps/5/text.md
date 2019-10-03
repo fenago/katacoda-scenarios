@@ -1,5 +1,5 @@
 
-Step 4: Before, we load the file using the DataSource API, we neet to import the implicits. This import is required to create a Dataset.
+**Step 4:** Before, we load the file using the DataSource API, we neet to import the implicits. This import is required to create a Dataset.
 
 import spark.implicits._
 

@@ -1,6 +1,6 @@
 
 
-Step 6: The next step is similar to what we have done in the previous exercise while creating a DataFrame from RDD. We split the fields based on a comma so that we can assign each individual field to its appropriate case class field.
+**Step 6:** The next step is similar to what we have done in the previous exercise while creating a DataFrame from RDD. We split the fields based on a comma so that we can assign each individual field to its appropriate case class field.
 
 val fields = removeHeader.map(record => record.split(","))
 

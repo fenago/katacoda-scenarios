@@ -1,6 +1,6 @@
-Step 5: Finally let us call the collect method and check the output from the RDD.
+**Step 5:** Finally let us call the collect method and check the output from the RDD.
 
-scala> hadoopRDD.collect()
+```hadoopRDD.collect()
 
 
 
@@ -8,7 +8,8 @@ As you can see from the screenshot above, we were successfully able to read the 
 
 Please try to read the data using new hadoop API as a lab challenge.
 
-Task 6 is complete!
+Task is complete!
+
 
 
 SUMMARY

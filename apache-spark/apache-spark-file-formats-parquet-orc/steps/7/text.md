@@ -4,5 +4,5 @@ ORC is yet another columnar file format which stands for Optiimized Row columnar
 ORC supports complex data structures, is splittable and can be compressed. ORC is not human readable. The following shows an example of reading an ORC file.
 
 spark.read
-.format(“orc”)
-.load(“/usr/local/files/sample.orc”)
+.format("orc")
+.load("/usr/local/files/sample.orc")

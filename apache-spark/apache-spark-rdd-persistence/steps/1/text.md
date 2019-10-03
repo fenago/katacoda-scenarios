@@ -3,5 +3,5 @@ RDD Caching and RDD Persistence play very important role in processing data with
 
 
 We need following packages to perform the lab exercise: 
-●	Java Development Kit
-●	Scala
+- Java Development Kit
+- Scala

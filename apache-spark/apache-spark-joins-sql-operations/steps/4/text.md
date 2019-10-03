@@ -1,5 +1,5 @@
 
-Step 3: Create a new Scala object and name it sqlJoins. Then import the following:
+**Step 3:** Create a new Scala object and name it sqlJoins. Then import the following:
 
 import org.apache.spark.sql.SparkSession
 

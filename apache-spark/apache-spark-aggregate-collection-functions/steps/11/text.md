@@ -1,5 +1,5 @@
 
-Step 6: Let us now use the sort_array function to sort the collection in ascending or descending order.
+**Step 6:** Let us now use the sort_array function to sort the collection in ascending or descending order.
 
 val sorted = numDS.select($"numbers", sort_array($"numbers", false).as("sorted"))
 
@@ -13,4 +13,5 @@ sorted.show()
 
 There are many other functions which can be applied. Please check the link in references section and try to practice with all the functions.
 
-Task 3 is complete!
+Task is complete!
+

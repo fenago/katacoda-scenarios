@@ -3,9 +3,11 @@ Function currying in Scala is used to create partially applied functions. The cu
 
 For example,
 
-Scala> def sum(a: Int) (b:Int): Int = {
+```
+def sum(a: Int) (b:Int): Int = {
 > a + b
 > }
+```
 
 There can also be multiple parameters in each parameter group. We can then use this curried function and create partially applied functions.
 

@@ -1,5 +1,5 @@
 
-Step 4: Let us now write some code to get the count for all the users for each state. We first need to import the implicits as shown below.
+**Step 4:** Let us now write some code to get the count for all the users for each state. We first need to import the implicits as shown below.
 
 import spark.implicits._
 
@@ -20,10 +20,11 @@ The output is as shown in the screenshot below.
 
  
 
-Task 6 is complete!
+Task is complete!
+
 
 
 SUMMARY
 
-In this chapter we have looked at basics of Spark SQL. We have learned what is Spark SQL, why it is required and it’s architecture in detail.
+In this chapter we have looked at basics of Spark SQL. We have learned what is Spark SQL, why it is required and it's architecture in detail.
 In the labs, we have had our hands on creating a dataFrame, converting an RDD to dataFrame using the toDF method and StructType. We have then used SQL queries and dataFrame API to process data.

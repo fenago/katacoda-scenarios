@@ -1,12 +1,12 @@
 
-Step 3: The first method is to specify the inputSchema i.e., the data types of input parameters we will be passing for this UDAF.
+**Step 3:** The first method is to specify the inputSchema i.e., the data types of input parameters we will be passing for this UDAF.
 
 def inputSchema: StructType = StructType(Array(StructField("inputColumn", DoubleType)))
 
 
 The inputSchema method returns a StructType. The inputColumn is of DoubleType as the ratings column is of type Double is enclosed in an array of StructField, which is in turn enclosed in StructType. We are assigning schema to the input by using the StructType and StructField methods as this is a untyped UDAF.
 
-Step 4: Next, we have to specify the bufferSchema method. The bufferSchema tells how the data is being aggregated when the tasks are working inside the executors.
+**Step 4:** Next, we have to specify the bufferSchema method. The bufferSchema tells how the data is being aggregated when the tasks are working inside the executors.
 
 To understand this better, consider we have ratings column with four rows as shown below.
 

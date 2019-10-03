@@ -1,5 +1,5 @@
 
-Step 2: Open IDE, right-click the training package which you have created in previous exercise and hover over New and then click on Scala Class. When prompted, enter ratingsByMovies as the name and click on the dropdown for Kind and select Object. We will be needing the following imports for our Spark App.
+**Step 2:** Open IDE, right-click the training package which you have created in previous exercise and hover over New and then click on Scala Class. When prompted, enter ratingsByMovies as the name and click on the dropdown for Kind and select Object. We will be needing the following imports for our Spark App.
 
 import org.apache.spark.SparkContext
 import scala.io.Source

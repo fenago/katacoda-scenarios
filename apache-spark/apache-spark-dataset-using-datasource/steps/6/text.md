@@ -1,5 +1,5 @@
 
-Step 5: We can now use the show method as well as printSchema method to check the first 20 records in our Dataset and the schema associated with the Dataset.
+**Step 5:** We can now use the show method as well as printSchema method to check the first 20 records in our Dataset and the schema associated with the Dataset.
 
 movies.printSchema()
 

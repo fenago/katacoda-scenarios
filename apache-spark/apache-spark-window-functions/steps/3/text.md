@@ -3,7 +3,7 @@ Let us look at window functions. Window functions are little different when comp
 
 Let us perform this task in IntelliJ IDE. However, you may choose to perform it in the Spark shell as well.
 
-Step 1: Download the employee.csv file from the URL below. This file contains four columns: userId, movieID, rating and timestamp.
+**Step 1:** Download the employee.csv file from the URL below. This file contains four columns: userId, movieID, rating and timestamp.
 
 employee.csv - http://bit.ly/2Z3atOx
 

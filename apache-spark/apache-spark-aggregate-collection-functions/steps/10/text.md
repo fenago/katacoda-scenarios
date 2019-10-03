@@ -1,5 +1,5 @@
 
-Step 5: Let us now use size function to check the size of each of the collections in our datasets. The size function simply returns the size of the collection similar to the length method.
+**Step 5:** Let us now use size function to check the size of each of the collections in our datasets. The size function simply returns the size of the collection similar to the length method.
 
 
 

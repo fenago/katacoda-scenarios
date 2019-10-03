@@ -1,5 +1,5 @@
 
-Step 3: Let us use the println function to print the number of bad records in our input dataset.
+**Step 3:** Let us use the println function to print the number of bad records in our input dataset.
 
 println("The number of bad records in the input are  " + badRecords.value)
   }
@@ -11,7 +11,7 @@ To retrieve the value from our accumulator which is badRecords, we use the value
 
  
 
-Step 4: Finally, let us run our code and check the output. You should see the number of bad records as shown in the screenshot below.
+**Step 4:** Finally, let us run our code and check the output. You should see the number of bad records as shown in the screenshot below.
 
  
 

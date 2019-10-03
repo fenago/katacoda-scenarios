@@ -5,47 +5,47 @@
   "time": "15 minutes",
   "details": {
     "steps": [{
-      "title": "Installation scripts",
+      "title": "Why Scala?",
       "text": "steps/1/text.md"
     },
     {
-      "title": "What is Spark?",
+      "title": "Install Prerequisites",
       "text": "steps/2/text.md"
     },    
 	{
-      "title": "Install Java and telnet",
+      "title": "Pattern Matching",
       "text": "steps/3/text.md"
     },
 	{
-      "title": "Install Spark & Zookeeper",
+      "title": "Functions",
       "text": "steps/4/text.md"
     },
   {
-      "title": "Start Spark",
+      "title": "Functions",
       "text": "steps/5/text.md"
     },
     {
-        "title": "Zookeeper",
+        "title": "Higher Order Functions",
         "text": "steps/6/text.md"
     },
     {
-        "title": "Install sparkcat",
+        "title": "Functions",
         "text": "steps/7/text.md"
     },
     {
-        "title": "",
+        "title": "Collections",
         "text": "steps/8/text.md"
     },
     {
-        "title": "",
+        "title": "Collections",
         "text": "steps/9/text.md"
     },
     {
-        "title": "",
+        "title": "Collections",
         "text": "steps/10/text.md"
     },
     {
-        "title": "",
+        "title": "Collections",
         "text": "steps/11/text.md"
     }],
     "intro": {

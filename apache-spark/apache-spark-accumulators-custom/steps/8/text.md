@@ -1,5 +1,5 @@
 
-Step 8: Create a new object by right-clicking the training package which you have created in previous exercises and hover over New and then click on Scala Class. When prompted, enter countByMovieMain as the name and click on the dropdown for Kind and select Object. Enter the import as shown below.
+**Step 8:** Create a new object by right-clicking the training package which you have created in previous exercises and hover over New and then click on Scala Class. When prompted, enter countByMovieMain as the name and click on the dropdown for Kind and select Object. Enter the import as shown below.
 
 import org.apache.spark.sql.SparkSession
 
@@ -14,7 +14,7 @@ case class Movies(userId: Int, movieId: Int, rating : Double, timeStamp: String)
 
  
 
-Step 9: Let us now write our main function and create a SparkSession object. 
+**Step 9:** Let us now write our main function and create a SparkSession object. 
 
 def main(args: Array[String]) {
 

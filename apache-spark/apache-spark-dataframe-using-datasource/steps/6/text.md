@@ -1,7 +1,7 @@
 
 
 
-Step 5: We now have successfully created a dataFrame named users. Let us now print it to console along with the schema.
+**Step 5:** We now have successfully created a dataFrame named users. Let us now print it to console along with the schema.
 
    users.printSchema()
 
@@ -16,7 +16,7 @@ We call printSchema method to display the inferred schema and show method to dis
 
 The show method is an action and so this the point where the DAG is actually executed. 
 
-Step 6: Let us run this program and check the output. You should see the schema as shown below.
+**Step 6:** Let us run this program and check the output. You should see the schema as shown below.
 
 
  

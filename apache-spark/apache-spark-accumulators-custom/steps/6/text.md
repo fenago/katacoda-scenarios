@@ -1,6 +1,6 @@
 
 
-Step 6: The next step is to implement the merge method which actually aggregates all the values from executors and provides with the final count.
+**Step 6:** The next step is to implement the merge method which actually aggregates all the values from executors and provides with the final count.
 
 
 def merge(tuples: AccumulatorV2[(Int, Int), HashMap[Int, Int]]): Unit = {

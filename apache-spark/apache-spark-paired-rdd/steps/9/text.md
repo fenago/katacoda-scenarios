@@ -1,10 +1,10 @@
-Step 3: Finally let us create our pairedRDD. To do this, we have to pass the parseRecords function as an argument to the map higher order function so that all the records in the data RDD are parsed as per the logic in our parseRecords function. The following line of code does that work.
+**Step 3:** Finally let us create our pairedRDD. To do this, we have to pass the parseRecords function as an argument to the map higher order function so that all the records in the data RDD are parsed as per the logic in our parseRecords function. The following line of code does that work.
 
 val RDDPair = data.map(parseRecords)
 
 
 
-That’s it. We now have our paired RDD. You can optionally take a look at the RDDPair by simply printing it out to the console using the code below.
+That's it. We now have our paired RDD. You can optionally take a look at the RDDPair by simply printing it out to the console using the code below.
 
  RDDPair.collect.foreach(println)
 
@@ -20,4 +20,5 @@ You should have the output in the console with the key-value pairs as shown in t
 
 The first element in the tuple is the key (userId) and the second element in the tuple is a value (ratings).
 
-Task 2 is complete!
+Task is complete!
+
