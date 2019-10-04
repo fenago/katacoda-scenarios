@@ -2,7 +2,7 @@
 
 userdata1.orc - http://bit.ly/2kfQi0J
 
-We already have cloned a github repository which contains a required file. Open `apache-spark/Files/chapter_10` to view file.
+**Note:** We already have cloned a github repository which contains a required file. Open `apache-spark/Files/chapter_10` to view file.
 
 **Step 2:** Reading an ORC file is similar to what we have been doing so far through out this exercise.
 

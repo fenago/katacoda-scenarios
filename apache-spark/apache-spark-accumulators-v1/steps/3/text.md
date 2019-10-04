@@ -7,6 +7,6 @@ In this task and the next two, we shall be looking at Accumulators API in Spark 
 
 Ratings-malformed.csv - http://bit.ly/2WuTese
 
-We already have cloned a github repository which contains a required file. Open `apache-spark/Files/chapter_6` to view file.
+**Note:** We already have cloned a github repository which contains a required file. Open `apache-spark/Files/chapter_6` to view file.
 
 Please note that this file has malformed records.

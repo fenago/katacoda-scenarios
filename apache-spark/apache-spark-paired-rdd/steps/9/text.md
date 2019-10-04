@@ -16,6 +16,8 @@ Once you write this line of code, run the program by clicking the play icon and 
 
 You should have the output in the console with the key-value pairs as shown in the screenshot below.
 
+![](https://github.com/athertahir/apache-spark/raw/master/Screenshots/Chapter 5/Selection_016.png)
+
 The first element in the tuple is the key (userId) and the second element in the tuple is a value (ratings).
 
 Task is complete!

@@ -10,7 +10,7 @@
 
 example_2.json - http://bit.ly/2lL3IST
 
-We already have cloned a github repository which contains a required file. Open `apache-spark/Files/chapter_10` to view file.
+**Note:** We already have cloned a github repository which contains a required file. Open `apache-spark/Files/chapter_10` to view file.
 
 
 **Step 5:** The following code is used to read the single line JSON file.

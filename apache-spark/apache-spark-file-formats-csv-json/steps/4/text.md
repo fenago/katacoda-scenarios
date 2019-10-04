@@ -4,7 +4,7 @@ Let us now look at reading and writing CSV files to Spark. We have been reading 
 
 ratings.csv - http://bit.ly/2L8IEBS
 
-We already have cloned a github repository which contains a required file. Open `apache-spark/Files/chapter_10` to view file.
+**Note:** We already have cloned a github repository which contains a required file. Open `apache-spark/Files/chapter_10` to view file.
 
 Each line of this file represents one rating of one movie by one user, and has the following format: userId, movieId, rating, timestamp
 

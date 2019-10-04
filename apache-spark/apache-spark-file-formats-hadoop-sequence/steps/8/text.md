@@ -5,7 +5,7 @@ Hadoop files are the output of Hadoop MapReduce jobs. We can read Hadoop files w
 
 part-r-00000 - http://bit.ly/2lSqdFy
 
-We already have cloned a github repository which contains a required file. Open `apache-spark/Files/chapter_10` to view file.
+**Note:** We already have cloned a github repository which contains a required file. Open `apache-spark/Files/chapter_10` to view file.
 
 This file is the output of a Word Count MapReduce job. It contains words as keys and values as the count separated by tab
 

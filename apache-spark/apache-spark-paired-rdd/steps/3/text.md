@@ -4,4 +4,4 @@ Let us start this exercise by executing a program which computes the average rat
 
 ratings.csv - http://bit.ly/2QmnAH9
 
-We already have cloned a github repository which contains a required file. Open `apache-spark/Files/chapter_5` to view file.
+**Note:** We already have cloned a github repository which contains a required file. Open `apache-spark/Files/chapter_5` to view file.

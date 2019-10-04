@@ -6,4 +6,4 @@ While we write a UADF, we need to implement few methods similar to what we did i
 
 ratings_head.csv - http://bit.ly/2X3r2wb
 
-We already have cloned a github repository which contains a required file. Open `apache-spark/Files/chapter_9` to view file.
+**Note:** We already have cloned a github repository which contains a required file. Open `apache-spark/Files/chapter_9` to view file.

@@ -10,4 +10,4 @@ Let us first read and write text files to Spark using the RDD API.
 
 treasure_island.txt - http://bit.ly/2LBFLtt
 
-We already have cloned a github repository which contains a required file. Open `apache-spark/Files/chapter_10` to view file.
+**Note:** We already have cloned a github repository which contains a required file. Open `apache-spark/Files/chapter_10` to view file.

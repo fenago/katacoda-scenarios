@@ -4,5 +4,5 @@ Let us implement a Custom Accumulator which counts the number of times each movi
 
 Ratings_head.csv - http://bit.ly/2X3r2wb
 
-We already have cloned a github repository which contains a required file. Open `apache-spark/Files/chapter_6` to view file.
+**Note:** We already have cloned a github repository which contains a required file. Open `apache-spark/Files/chapter_6` to view file.
 

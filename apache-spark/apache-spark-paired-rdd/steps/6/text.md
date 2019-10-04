@@ -11,4 +11,6 @@ val userId = records(0).toInt
 val ratings = records(2).toFloat
 ```
 
+![](https://github.com/athertahir/apache-spark/raw/master/Screenshots/Chapter 5/Selection_011.png)
+
 The records variable contains of 4 fields. We can simply access them based on the index starting from 0. So, we simply extract the userId which is the first field to the variable userId and ratings which is the third field to the variable ratings.

@@ -5,7 +5,7 @@
   "time": "15 minutes",
   "details": {
     "steps": [{
-      "title": "",
+      "title": "Clone Repository",
       "text": "steps/1/text.md"
     },
     {
@@ -45,23 +45,23 @@
         "text": "steps/10/text.md"
     },
     {
-        "title": "",
+        "title": "Performing Operations on Paired RDD...",
         "text": "steps/11/text.md"
     },
     {
-        "title": "",
+        "title": "Performing Operations on Paired RDD...",
         "text": "steps/12/text.md"
     },
     {
-        "title": "",
+       "title": "Performing Operations on Paired RDD...",
         "text": "steps/13/text.md"
     },
     {
-        "title": "",
+        "title": "Performing Operations on Paired RDD...",
         "text": "steps/14/text.md"
     },
     {
-        "title": "",
+        "title": "Performing Operations on Paired RDD...",
         "text": "steps/15/text.md"
     }],
     "intro": {

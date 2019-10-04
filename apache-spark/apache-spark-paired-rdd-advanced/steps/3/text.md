@@ -4,4 +4,4 @@ In the previous tasks, we have only performed a couple operations on the Paired 
 
 tags.csv - http://bit.ly/2YTVGFk
 
-We already have cloned a github repository which contains a required file. Open `apache-spark/Files/chapter_5` to view file.
+**Note:** We already have cloned a github repository which contains a required file. Open `apache-spark/Files/chapter_5` to view file.

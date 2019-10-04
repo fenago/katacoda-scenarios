@@ -5,4 +5,4 @@ Task 1: Creating Data Frame using Data Source API
 
 us-500.csv - http://bit.ly/2LmgDW2
 
-We already have cloned a github repository which contains a required file. Open `apache-spark/Files/chapter_7` to view file.
+**Note:** We already have cloned a github repository which contains a required file. Open `apache-spark/Files/chapter_7` to view file.

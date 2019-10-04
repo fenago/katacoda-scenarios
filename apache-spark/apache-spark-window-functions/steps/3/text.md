@@ -6,4 +6,4 @@ Let us perform this task in IntelliJ IDE. However, you may choose to perform it 
 
 employee.csv - http://bit.ly/2Z3atOx
 
-We already have cloned a github repository which contains a required file. Open `apache-spark/Files/chapter_8` to view file.
+**Note:** We already have cloned a github repository which contains a required file. Open `apache-spark/Files/chapter_8` to view file.
