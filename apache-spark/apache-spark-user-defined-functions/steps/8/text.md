@@ -5,10 +5,11 @@ We have used the same Scala object to apply the UDF using Spark SQL.
 
 **Step 6:** Let us now define a function to decrease the rating by 0.5 using the def keyword. Please define this function outside the main function as shown in the screenshot below
  
-
+```
 def decrUDF2(input: Double): Double = {
 
   input - 0.5
 }
+```
 
  

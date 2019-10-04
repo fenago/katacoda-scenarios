@@ -1,15 +1,14 @@
-**Step 4:** Let us finally use the UDAF in our SQL query as shown below.
 
-val average = sparkSession.sql("SELECT userId,  averageUDAF(rating) AS avgRating FROM ratings GROUP BY userId")
+Now, that we have the required imports and case classes defined, we need to extend our object to inherit Aggregator abstract class as shown below.
 
-Let us check the result using the show method as shown below
+```
+object MyAverageAggregator extends Aggregator[Ratings, Average, Double] {
+```
 
-average.show()
+The Aggregator abstract class takes three parameters. They are the input, buffer and output type. The input is Ratings, the buffer is Average and the output type is Double.
 
-The following output is shown.
-
+The program should now look like the one as shown in the screenshot.
 
  
-We have successfully written a UDAF, registered and used it in the Spark application.
 
-Task is complete!
+Please ignore the error you see for object name. This will go away once we implement all the required methods for UDAF as in the previous tasks.

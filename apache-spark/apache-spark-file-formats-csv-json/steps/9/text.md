@@ -3,15 +3,14 @@
 
 ```multiJson.write
 .format("json")
-.save("IdeaProjects/Spark/chapter_10/output3")
+.save("/home/scrapbook/tutorial/apache-spark/Files/chapter_10/output3")```{{execute}}
 
  
 
 You can check the output by running the following command from a new terminal.
 
-`cat IdeaProjects/Spark/chapter_10/output3/part*`{{execute}}
+`cat /home/scrapbook/tutorial/apache-spark/Files/chapter_10/output3/part*`{{execute}}
 
  
-
 Task is complete!
 

@@ -1,11 +1,9 @@
 
 **Step 5:** Let us simply print the file names by using the keys method on textFiles RDD as shown below.
 
-```textFiles.keys.collect.foreach(println)
+`textFiles.keys.collect.foreach(println)`{{execute}} 
 
-
-
- 
+![](https://github.com/athertahir/apache-spark/raw/master/Screenshots/Chapter 10/Selection_006.png)
 
 We can also get the values by using the values method. We can also perform all the operations which you can apply on paired RDDs such as mapValues, reduceByKey, sortByKey etc.
 

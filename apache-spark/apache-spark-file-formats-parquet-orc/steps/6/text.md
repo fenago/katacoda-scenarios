@@ -3,7 +3,7 @@
 ```parquetData
 .write
 .option("codec", "gzip")
-.save("IdeaProjects/Spark/chapter_10/output5")
+.save("/home/scrapbook/tutorial/apache-spark/Files/chapter_10/output5")```{{execute}}
 
 Task is complete!
 

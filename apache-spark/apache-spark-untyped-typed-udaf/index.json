@@ -1,5 +1,5 @@
 {
-  "title": "Apache Spark Installation",
+  "title": "Apache Spark Typed UDAF",
   "description": "Introduction to Apache Spark",
   "difficulty": "Advanced",
   "time": "15 minutes",
@@ -13,11 +13,11 @@
       "text": "steps/2/text.md"
     },    
 	{
-      "title": "",
+      "title": "UDAF types",
       "text": "steps/3/text.md"
     },
 	{
-      "title": "",
+      "title": "Task: Typed UDAF",
       "text": "steps/4/text.md"
     },
   {
@@ -43,14 +43,6 @@
     {
         "title": "",
         "text": "steps/10/text.md"
-    },
-    {
-        "title": "",
-        "text": "steps/11/text.md"
-    },
-    {
-        "title": "",
-        "text": "steps/12/text.md"
     }],
     "intro": {
       "text": "intro.md",

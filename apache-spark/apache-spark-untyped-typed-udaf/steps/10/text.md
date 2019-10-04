@@ -1,34 +1,38 @@
 
-**Step 5:** We now have to implement the merge function so that the buffer outputs from all the tasks are merged.
+**Step 9:** Let us now use of UDAF we wrote in this task. We have to call the toColumn method on our UDAF and give it a name using the name method as shown below.
 
-def merge(b1: Average, b2: Average): Average = {
-  b1.sum += b2.sum
-  b1.count += b2.count
-  b1
-}
+```
+val averageRating = averageTypedUDAF.toColumn.name("averageRating")
+```
 
-This function simply adds the sum and counts of all the buffers and returns back the buffer.
+Let us now use the select method for the UDAF as shown below.
 
-The program at this point should look like in the screenshot below.
+```
+val avg = ds.select(averageRating)
+```
 
+Finally, let us call the show method and run the program.
 
+```
+avg.show()
+```
 
+#### Compile and Run
+To run this program from the terminal, simply run the following command. The program will the then be compiled and executed.
+`sbt "runMain training.averageUDAF"`{{execute}} 
+
+The output which calculates average of all the ratings is as shown in the screenshot below.
+ 
+![](https://github.com/athertahir/apache-spark/raw/master/Screenshots/Chapter 9/Selection_034.png) 
  
 
-**Step 6:** Next, similar to the evaluate method in the previous task we have to implement the finish method. The finish method contains the logic to compute the average i.e., dividing the sum with count.
+This completes the Typed UADF task.
 
-def finish(reduction: Average): Double = reduction.sum / reduction.count
-
-
-**Step 7:** We now have to implement the encoders for buffer and output values using the bufferEncoder and outputEncoder. These encoders are required for serialization purposes to translate between the Scala and Spark types.
-
-def bufferEncoder: Encoder[Average] = Encoders.product
-def outputEncoder: Encoder[Double] = Encoders.scalaDouble
+Task is complete!
 
 
 
-The error below the object name should have been gone by now as we have implemented all the methods required to create a typed UDAF.
+SUMMARY
 
-The program should now look like the one shown in the screenshot.
-
- 
+In this chapter we have looked at User Defined Functions, which is the custom functions Spark. We have learned what UDFs and UDAFs are, why they are required and when they are used. We have also learned Scala programming concepts called function currying and partially applied functions
+In the labs, we have had our hands on Scala function currying and partially applied functions. We have then used UDFs and two types of UDAFs to process data.

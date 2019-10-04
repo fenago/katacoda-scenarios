@@ -9,9 +9,12 @@
 , "header" -> "false"
 , "nullValue" -> "Null"
 , "mode" -> "FAILFAST"))
-.load("IdeaProjects/Spark/chapter_10/ratings.csv")
+.load("/home/scrapbook/tutorial/apache-spark/Files/chapter_10/ratings.csv")```{{execute}}
 
-```dataNew.show()
+
+`dataNew.show()`{{execute}}
+
+![](https://github.com/athertahir/apache-spark/raw/master/Screenshots/Chapter 10/Selection_009.png)
 
 
  

@@ -1,25 +1,35 @@
 
-**Step 2:** Create a new Scala object and name it averageTypedUDAF. Next, we will need the following imports to implement a UADF. We haven't used some of these imports so far. We shall learn about them as we continue with our program.
+**Step 5:** We now have to implement the merge function so that the buffer outputs from all the tasks are merged.
 
-import org.apache.spark.sql.expressions.Aggregator
-import org.apache.spark.sql.{Encoder, Encoders, SparkSession}
+```
+def merge(b1: Average, b2: Average): Average = {
+  b1.sum += b2.sum
+  b1.count += b2.count
+  b1
+}
+```
 
-Next we have to declare the case classes to specify schema for both input and buffer. However, we need not use StructType here as we did with Untyped UDAF. As we will be loading the input as Dataset and not DataFrame, the schema is associated with the case class.
+This function simply adds the sum and counts of all the buffers and returns back the buffer.
 
-case class Ratings(userId: Int, movieID: Int, rating: Double, timeStamp: String)
-case class Average(var sum: Double, var count: Long)
+The program at this point should look like in the screenshot below.
 
-The first case class Ratings specifies the input schema and the second case class Average specifies the buffer schema. Please not that we have used var keyword to define mutable fields in Average buffer as the buffer keeps on updated when task process each row as explained in previous tasks.
+![](https://github.com/athertahir/apache-spark/raw/master/Screenshots/Chapter 9/Selection_031.png)
 
-Now, that we have the required imports and case classes defined, we need to extend our object to inherit Aggregator abstract class as shown below.
+**Step 6:** Next, similar to the evaluate method in the previous task we have to implement the finish method. The finish method contains the logic to compute the average i.e., dividing the sum with count.
 
-object MyAverageAggregator extends Aggregator[Ratings, Average, Double] {
+def finish(reduction: Average): Double = reduction.sum / reduction.count
 
 
-The Aggregator abstract class takes three parameters. They are the input, buffer and output type. The input is Ratings, the buffer is Average and the output type is Double.
+**Step 7:** We now have to implement the encoders for buffer and output values using the bufferEncoder and outputEncoder. These encoders are required for serialization purposes to translate between the Scala and Spark types.
 
-The program should now look like the one as shown in the screenshot.
 
- 
+def bufferEncoder: Encoder[Average] = Encoders.product
+def outputEncoder: Encoder[Double] = Encoders.scalaDouble
 
-Please ignore the error you see for object name. This will go away once we implement all the required methods for UDAF as in the previous tasks.
+
+
+The error below the object name should have been gone by now as we have implemented all the methods required to create a typed UDAF.
+
+The program should now look like the one shown in the screenshot.
+
+![](https://github.com/athertahir/apache-spark/raw/master/Screenshots/Chapter 9/Selection_032.png) 

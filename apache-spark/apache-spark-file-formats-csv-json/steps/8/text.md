@@ -2,9 +2,11 @@
 
 **Step 3:** Let us check if we were able to load the JSON file successfully.
 
-```jsonData.show()```
+```jsonData.show()```{{execute}}
 
-**Step 4:** Let us now load the multi line JSON file. Download the file example_2.json from the URL below and save it to the IdeaProjects/Spark/chapter_10 folder.
+![](https://github.com/athertahir/apache-spark/raw/master/Screenshots/Chapter 10/Selection_011.png
+
+**Step 4:** Let us now load the multi line JSON file. Download the file example_2.json from the URL below and save it to the /home/scrapbook/tutorial/apache-spark/Files/chapter_10 folder.
 
 example_2.json - http://bit.ly/2lL3IST
 
@@ -16,5 +18,4 @@ We already have cloned a github repository which contains a required file. Open 
 ```val multiJson = spark.read
 .format("json")
 .option("multiLine", "true")
-.load("IdeaProjects/Spark/chapter_10/example_2.json")
-```
+.load("/home/scrapbook/tutorial/apache-spark/Files/chapter_10/example_2.json")```{{execute}}

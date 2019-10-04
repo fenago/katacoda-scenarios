@@ -144,7 +144,7 @@
     },
     {
       "course_id": "apache-spark-untyped-typed-udaf",
-      "title": "Apache Spark Typed and Untyped UDAF",
+      "title": "Apache Spark Typed UDAF",
       "description": ""
     },
     {

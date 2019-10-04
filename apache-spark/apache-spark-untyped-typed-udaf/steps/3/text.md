@@ -1,5 +1,4 @@
-UDAF types
-The user defined aggregate functions (UDAF) can be further classified into two types. 
+The user defined aggregate functions (UDAF) can be classified into two types. 
 
 - Typed user defined aggregate function
 - Untyped user defined aggregate function

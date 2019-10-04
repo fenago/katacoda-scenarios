@@ -13,11 +13,11 @@
       "text": "steps/2/text.md"
     },    
 	{
-      "title": "",
+      "title": "UDAF types",
       "text": "steps/3/text.md"
     },
 	{
-      "title": "",
+      "title": "Task: Writing Untyped UDAF",
       "text": "steps/4/text.md"
     },
   {
@@ -39,6 +39,18 @@
     {
         "title": "",
         "text": "steps/9/text.md"
+    },
+    {
+        "title": "Task: Using Untyped UDAF",
+        "text": "steps/10/text.md"
+    },
+    {
+        "title": "",
+        "text": "steps/11/text.md"
+    },
+    {
+        "title": "",
+        "text": "steps/12/text.md"
     }],
     "intro": {
       "text": "intro.md",

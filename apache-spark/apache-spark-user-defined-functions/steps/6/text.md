@@ -31,4 +31,4 @@ val ratings = spark
 
 The program should now look something like the screenshot below.
 
-  
+![](https://github.com/athertahir/apache-spark/raw/master/Screenshots/Chapter 9/Selection_011.png)

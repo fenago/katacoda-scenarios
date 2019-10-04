@@ -1,20 +1,31 @@
 
-**Step 3:** Let us now implement the methods from the Aggregator abstract class. The first method is the zero method which initializes the buffer to zero. This is similar to initialize method which we have used in the previous task.
-
-def zero: Average = Average(0, 0L)
+**Step 8:** Let us now use this typed UDAF. Create a new object within the program as shown in the screenshot and name it avgTypedUDAF. Define the main function and also create the Spark Session.
 
 
 
-**Step 4:** Next, we have to implement the reduce method which is similar to update method used in the previous task. The reduce method provides the logic to specify how the tasks should process the rows and columns of dataset.
+```
+object avgTypedUDAF {
 
+  def main(args: Array[String]) {
 
+    val sparkSession = SparkSession.builder
+      .master("local[*]")
+      .appName("Average ratings Typed UDAF")
+      .getOrCreate()
+```
 
-def reduce(buffer: Average, rat: Ratings): Average = {
-  buffer.sum += rat.rating
-  buffer.count += 1
-  buffer
-}
+next, load the file.
 
-The reduce method takes the buffer which is of type Average and the input ratings. The buffer is then updated for each row in the rating column along with the count. Once all the records are processed, the final value of the buffer for each task is returned.
+```
+val ds = sparkSession.read
+	.format("csv")
+	.options(Map("InferSchema" -> "true", "header" -> "true"))
+  	.load("chapter_9/ratings_head.csv")
+	.as[Ratings]
+```
 
-At this point, we have buffer outputs of each task. We now have to merge them to get the final sum and count of all the records.
+The program should look like the screenshot below.
+![](https://github.com/athertahir/apache-spark/raw/master/Screenshots/Chapter 9/Selection_033.png) 
+ 
+
+ 

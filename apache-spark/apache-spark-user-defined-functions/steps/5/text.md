@@ -1,9 +1,5 @@
 
-
-######################################################
-Task 3: Writing User Defined Function
-
-Now that we have learned about curried and partially applied functions, let us look how to write a user defined function. We will be writing a user defined function to decrease the rating of each movie by 0.5. We will be calling the UDF by using both Spark SQL and Dataframe APIs.
+Let's have a look how to write a user defined function. We will be writing a user defined function to decrease the rating of each movie by 0.5. We will be calling the UDF by using both Spark SQL and Dataframe APIs.
 
 **Step 1:** Download the ratings_head.csv file from the URL below. This file contains four columns: userId, movieID, rating and timestamp.
 
@@ -11,14 +7,19 @@ ratings_head.csv - http://bit.ly/2X3r2wb
 
 We already have cloned a github repository which contains a required file. Open `apache-spark/Files/chapter_9` to view file.
 
+
 **Step 2:** Open IntelliJ IDE, create a new Scala object and name it decrRatingUDF. We shall be using the following imports in our application.
 
+```
 import org.apache.spark.sql.SparkSession
 import org.apache.spark.sql.functions._
+```
 
 Next, let us define our user defined function using val keyword instead of using def keyword.
 
+```
 val decrUDF = udf((input: Double) => input - 0.5)
+```
 
 The syntax to define a function using val is a bit different than what we have been using so far with def function. Here we are simply assigning a function literal to an immutable variable. Also, we haven't specified the return type for the function as we can make use of Scala type inference to take care of the return type.
 
@@ -29,4 +30,4 @@ There are not many differences when it comes between val and def keyword to defi
 
 The program at this point of time should look like the screenshot as shown below.
 
- 
+![](https://github.com/athertahir/apache-spark/raw/master/Screenshots/Chapter 9/Selection_010.png)

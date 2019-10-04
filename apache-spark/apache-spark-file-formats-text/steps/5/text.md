@@ -9,11 +9,10 @@ We already have cloned a github repository which contains a required files. Open
 
 **Step 4:** Let us read these files using the wholeTextFiles method. This will read all the files present in books folder. Please switch back to Spark-shell and read the files using the code below.
 
-```val textFiles = sc.wholeTextFiles("IdeaProjects/Spark/chapter_10/books")
+`val textFiles = sc.wholeTextFiles("/home/scrapbook/tutorial/apache-spark/Files/chapter_10/books")`{{execute}} 
 
 This will return you a RDD[String, String] which is a paired RDD as shown below.
 
- 
 
 This paired RDD contains the name of the files as keys and the entire content of files as values.
 
