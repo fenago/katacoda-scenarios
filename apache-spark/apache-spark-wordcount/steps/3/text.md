@@ -1,4 +1,4 @@
-**Step 4:** Now that we have editor to start writing the Spark code, the first thing we need to do is to include the import statements from Spark libraries. This program requires the following imports.
+**Step 1:** Now that we have editor to start writing the Spark code, the first thing we need to do is to include the import statements from Spark libraries. This program requires the following imports.
 
 ```
 import org.apache.spark._

@@ -2,7 +2,7 @@
 
 `:paste`{{execute}}
 
-Entering paste mode (ctrl-D to finish)
+**Note:** After pasting following code in the scala terminal, Press  `Ctrl` + `D` to run code.
 
 ```for (i <- 1 to 5) {
 	val sum = i + i

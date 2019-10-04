@@ -1,4 +1,4 @@
-**Step 2:** Open IDE if not already, right-click the training package which you have created in previous exercise and hover over New and then click on Scala Class. When prompted, enter CountByMovie as the name of the Class. Please see that this is a class we are creating for this task and not an object. Enter the imports as shown below.
+**Step 2:** Click **IDE Editor** tab to open Visual Studio and open solution explorer and open `apache-spark/src/main/scala/training/CountByMovie.scala` to view scala file.
 
 ```
 import org.apache.spark.util.AccumulatorV2

@@ -19,9 +19,6 @@ We will cover following topics in this scenario.
 - Creating a Tuple
 - Creating a Paired RDD
 - Performing Operations on Paired RDD
-- Performing more Operations on Paired RDD
-- Performing Joins on Paired RDD
-- Performing Actions on Paired RDD
 
 We need the following packages to perform the lab exercise: 
 - Java Development Kit

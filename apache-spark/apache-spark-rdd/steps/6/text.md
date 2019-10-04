@@ -1,4 +1,4 @@
-**Step 4:** We can also create an RDD from data present in Hadoop Distributed File System (HDFS) using the same textFile API. But instead of local path, we have to provide a HDFS path.
+We can also create an RDD from data present in Hadoop Distributed File System (HDFS) using the same textFile API. But instead of local path, we have to provide a HDFS path.
 
 ```
 val ratings = sc.textFile("hdfs://dev_server:9000/file.txt")

@@ -1,6 +1,21 @@
-RDD Caching and RDD Persistence play very important role in processing data with Spark. With caching and persistence, we will be able to store the RDD in-memory so that we do not have to recompute or evaluate the same RDD again, if required. This is an optimization technique which helps to complete jobs more quickly by saving the evaluation of RDD in memory.
-
-
 We need following packages to perform the lab exercise: 
 - Java Development Kit
-- Scala
+- pyspark
+
+
+#### JAVA
+Verify the installation with: `java -version`{{execute}} 
+
+You'll see the following output:
+
+```
+java version "1.8.0_201"
+Java(TM) SE Runtime Environment (build 1.8.0_201-b09)
+Java HotSpot(TM) 64-Bit Server VM (build 25.201-b09, mixed mode)
+```
+
+
+#### Install pyspark
+PySpark is available in pypi. To install just run `pip install pyspark`{{execute}} 
+
+The Python packaging for Spark is not intended to replace all of the other use cases. This Python packaged version of Spark is suitable for interacting with an existing cluster (be it Spark standalone, YARN, or Mesos) - but does not contain the tools required to set up your own standalone Spark cluster.

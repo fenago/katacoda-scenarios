@@ -1,4 +1,4 @@
-Click on the Executors link in the navigation bar to monitor the executors.
+Click on the `Executors` link in the navigation bar to monitor the executors.
 
 ![](https://github.com/athertahir/apache-spark/raw/master/Screenshots/Chapter 4/Selection_029.png)
 

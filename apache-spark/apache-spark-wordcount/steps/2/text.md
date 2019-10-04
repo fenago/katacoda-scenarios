@@ -30,12 +30,16 @@ Java HotSpot(TM) 64-Bit Server VM (build 25.201-b09, mixed mode)
 
 **Step 2:** Verify your Scala installation version by running the following command.
  
-`sbt -version`{{execute}}
+`sbt sbtVersion`{{execute}}
 
 You will get following output.
 
 ```
-Scala code runner version 2.12.8 -- Copyright 2002-2018, LAMP/EPFL and Lightbend, Inc.
+[info] Loading project definition from /home/scrapbook/tutorial/apache-spark/project
+[info] Loading settings for project apache-spark from build.sbt ...
+[info] Set current project to Spark (in build file:/home/scrapbook/tutorial/apache-spark/)
+[info] 1.3.2
 ```
+
 
 

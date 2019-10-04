@@ -4,7 +4,7 @@ To overcome this limitation, we have a createDataFrame method, which takes an RD
 
 We shall be using the same input file `mlb_players.csv` for this task as well. However, you are highly encouraged to use another input file and play around.
 
-**Step 1:** Open IDE, right-click the training package which you have created in previous exercise and hover over New and then click on Scala Class. When prompted, enter createDf as the name and click on the dropdown for Kind and select Object. Enter the import as shown below.
+**Step 1:** Click **IDE Editor** tab to open Visual Studio and open solution explorer and open `apache-spark/src/main/scala/training/createDf.scala` to view scala file.
 
 import org.apache.spark.sql.SparkSession
 import org.apache.spark.sql.Row

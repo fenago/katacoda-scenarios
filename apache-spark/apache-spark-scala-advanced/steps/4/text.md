@@ -8,8 +8,9 @@ Let us first create a function that does not have any parameters or a return typ
 println("Hello there!")
 }```{{execute}}
 
-Now, exit out of the paste mode and simply call this function by its name.
-`hello()`{{execute}}
+Now, simply call this function by its name.
+`hello`{{execute}}
 
+![](https://github.com/athertahir/apache-spark/raw/master/Screenshots/Chapter 2/Selection_039.png) 
 
 As you can see from the screenshot above, Scala has automatically inferred the return type as unit which means no return type. Unit is similar to that of Void in Java.

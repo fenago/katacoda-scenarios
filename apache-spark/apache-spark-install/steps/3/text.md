@@ -3,11 +3,10 @@
 
 Download URL : http://spark.apache.org/downloads.html
 
-`wget https://www.apache.org/dyn/closer.lua/spark/spark-2.4.4/spark-2.4.4-bin-hadoop2.7.tgz`{{execute}}
+`wget https://www-us.apache.org/dist/spark/spark-2.4.4/spark-2.4.4-bin-hadoop2.7.tgz`{{execute}}
 
 After running the above command, your download should start. The download may take a while depending upon your internet connection.
 
- 
 **Step 3:** The download will be saved in the current directory by default. You may optionally check if Spark has been downloaded using the ls command.
 
 `ls`{{execute}}

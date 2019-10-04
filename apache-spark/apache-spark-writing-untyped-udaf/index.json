@@ -1,5 +1,5 @@
 {
-  "title": "Apache Spark Installation",
+  "title": "",
   "description": "Introduction to Apache Spark",
   "difficulty": "Advanced",
   "time": "15 minutes",
@@ -21,7 +21,7 @@
       "text": "steps/4/text.md"
     },
   {
-      "title": "Start Spark",
+      "title": "",
       "text": "steps/5/text.md"
     },
     {

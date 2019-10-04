@@ -5,16 +5,16 @@
   "time": "15 minutes",
   "details": {
     "steps": [{
-      "title": "",
+      "title": "Prerequisites",
       "text": "steps/1/text.md"
     },
     {
-      "title": "Prerequisites",
-      "text": "steps/2/text.md"
+      "title": "Task: Spark Web Interface",
+      "text": "steps/3/text.md"
     },    
 	{
       "title": "",
-      "text": "steps/3/text.md"
+      "text": "steps/2/text.md"
     },
 	{
       "title": "",

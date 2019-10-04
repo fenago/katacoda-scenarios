@@ -5,11 +5,11 @@
   "time": "15 minutes",
   "details": {
     "steps": [{
-      "title": "Download and Install Spark",
+      "title": "What is Spark?",
       "text": "steps/1/text.md"
     },
     {
-      "title": "Prerequisites",
+      "title": "Install Java",
       "text": "steps/2/text.md"
     },    
 	{
@@ -21,7 +21,7 @@
       "text": "steps/4/text.md"
     },
   {
-      "title": "Start Spark",
+      "title": "",
       "text": "steps/5/text.md"
     },
     {

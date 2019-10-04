@@ -23,9 +23,12 @@ These are a few transformations we can apply over a list. There are so many more
 shows.<press tab key>
 ```
 
+![](https://github.com/athertahir/apache-spark/raw/master/Screenshots/Chapter 2/Selection_050.png) 
 
 If you are not sure what a function does, you can type its name after the dot operator and press tab twice. The console will show you what the function expects you to pass in. For example,
 
 ```
 shows.reduce<press tab key twice>
 ```
+
+![](https://github.com/athertahir/apache-spark/raw/master/Screenshots/Chapter 2/Selection_051.png) 

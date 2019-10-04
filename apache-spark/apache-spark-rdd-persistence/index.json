@@ -5,19 +5,19 @@
   "time": "15 minutes",
   "details": {
     "steps": [{
-      "title": "",
+      "title": "RDD Caching and Persistence",
       "text": "steps/1/text.md"
     },
     {
-      "title": "RDD Caching and Persistence",
+      "title": "Prerequisites",
       "text": "steps/2/text.md"
     },    
 	{
-      "title": "",
+      "title": "RDD",
       "text": "steps/3/text.md"
     },
 	{
-      "title": "",
+      "title": "RDD",
       "text": "steps/4/text.md"
     },
   {
@@ -29,11 +29,11 @@
         "text": "steps/6/text.md"
     },
     {
-        "title": "",
+        "title": "Persist",
         "text": "steps/7/text.md"
     },
     {
-        "title": "",
+        "title": "Unpersist",
         "text": "steps/8/text.md"
     }],
     "intro": {

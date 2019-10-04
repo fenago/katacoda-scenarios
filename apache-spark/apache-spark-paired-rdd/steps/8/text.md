@@ -1,5 +1,3 @@
-Task 2: Creating a Paired RDD
-
 Let us now write the main function for our program where we create our paired RDD and perform operations over the paired RDD.
 
 **Step 1:** Write the following main function and error log level as shown below.
