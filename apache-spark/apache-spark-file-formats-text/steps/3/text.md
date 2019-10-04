@@ -1,5 +1,3 @@
-Task 1: Text Files
-
 Let us begin this lab exercise by reading and writing text files in Spark using both DataSource API and RDD API. For ease and simplicity let us perform these tasks in Spark Shell.
 
 

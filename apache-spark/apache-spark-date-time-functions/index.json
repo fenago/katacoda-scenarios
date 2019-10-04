@@ -4,44 +4,41 @@
   "difficulty": "Advanced",
   "time": "15 minutes",
   "details": {
-    "steps": [{
-      "title": "",
-      "text": "steps/1/text.md"
-    },
+    "steps": [
     {
       "title": "Prerequisites",
       "text": "steps/2/text.md"
     },    
 	{
-      "title": "",
+      "title": "Date/Time functions",
       "text": "steps/3/text.md"
     },
 	{
-      "title": "",
+      "title": "Date/Time functions...",
       "text": "steps/4/text.md"
     },
   {
-      "title": "",
+      "title": "Date/Time functions...",
       "text": "steps/5/text.md"
     },
     {
-        "title": "",
+        "title": "Date/Time functions...",
         "text": "steps/6/text.md"
     },
     {
-        "title": "",
+        "title": "Date/Time functions...",
         "text": "steps/7/text.md"
     },
     {
-        "title": "",
+        "title": "Date/Time functions...",
         "text": "steps/8/text.md"
     },
     {
-        "title": "",
+        "title": "Date/Time functions...",
         "text": "steps/9/text.md"
     },
     {
-        "title": "",
+        "title": "Date/Time functions...",
         "text": "steps/10/text.md"
     }],
     "intro": {

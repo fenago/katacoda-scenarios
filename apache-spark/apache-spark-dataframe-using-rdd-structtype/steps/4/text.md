@@ -1,6 +1,5 @@
 
  
-
 **Step 3:** Let us now create a case class so that we can define schema to our dataFrame. The names which we specify for attributes of case class object will get mapped as column names for our dataFrame. This will make sense when we run the program.
 
 ```
@@ -18,7 +17,6 @@ def main(args: Array[String]): Unit = {
     .master("local[*]")
     .getOrCreate()
 ```
-
 
 
  

@@ -16,11 +16,7 @@ Now, move in the directory which contains the source code.
 The aim of the following lab exercises is to read and write various file formats in Spark applications.
 We will cover following topics in this scenario.
 - Text Files
-- CSV Files
-- JSON Files
-- Parquet Files
-- ORC Files
-- Hadoop and Sequence Files
+
 
 We need the following packages to perform the lab exercises: 
 - Java Development Kit

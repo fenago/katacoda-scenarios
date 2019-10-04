@@ -2,7 +2,7 @@ In the previous task, we have created a dataFrame from an RDD. We have used a ca
 
 To overcome this limitation, we have a createDataFrame method, which takes an RDD and schema as parameters to create a dataFrame. Let us create a dataFrame using createDataFrame method.
 
-We shall be using the same input file `mlb_players.csv` for this task as well. However, you are highly encouraged to use another input file and play around.
+We shall be using the same input file `mlb_players.csv` for this task as well. 
 
 **Step 1:** Click **IDE Editor** tab to open Visual Studio and open solution explorer and open `apache-spark/src/main/scala/training/createDf.scala` to view scala file.
 

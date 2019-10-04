@@ -4,10 +4,7 @@
   "difficulty": "Advanced",
   "time": "15 minutes",
   "details": {
-    "steps": [{
-      "title": "",
-      "text": "steps/1/text.md"
-    },
+    "steps": [
     {
       "title": "Prerequisites",
       "text": "steps/2/text.md"
