@@ -15,7 +15,7 @@ Now, move in the directory which contains the source code.
 ![](https://github.com/fenago/katacoda-scenarios/raw/master/apache-spark/1.JPG)
 
 The aim of the following lab exercises is to start writing Spark SQL code in Intellij to learn about Data Frames.
-The labs for this chapter include the following exercises.
+We will cover following topics in this scenario.
 - Joins using Spark SQL
 - Operations using DataFrame API
 
