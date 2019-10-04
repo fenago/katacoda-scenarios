@@ -1,5 +1,5 @@
 
-**Step 3:** Create a new object in the IDE and name it joins. Import all the required import statements as shown below. Next, let us a declare a case class with fields according to the columns in both the files along with their data types.
+**Step 3:** Click **IDE Editor** tab to open Visual Studio and open solution explorer and open `apache-spark/src/main/scala/training/joins.scala` to view scala file.
 
 ```
 import org.apache.spark._

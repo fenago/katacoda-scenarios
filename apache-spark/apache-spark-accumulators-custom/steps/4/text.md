@@ -12,9 +12,3 @@ The first import is version two of Accumulator. The second import is an mutable 
 ```
 class CountByMovie extends  AccumulatorV2[(Int, Int), HashMap[Int, Int]]{
 ```
-
-You may ignore the red error asking to implement merge method under the class name for now. This error will be gone once we implement all the methods in the code.
-
-
-
-

@@ -13,47 +13,47 @@
       "text": "steps/2/text.md"
     },    
 	{
-      "title": "",
+      "title": "Task: Using Accumulator method",
       "text": "steps/3/text.md"
     },
 	{
-      "title": "",
+      "title": "Using Accumulator method...",
       "text": "steps/4/text.md"
     },
   {
-      "title": "",
+      "title": "Using Accumulator method...",
       "text": "steps/5/text.md"
     },
     {
-        "title": "",
+        "title": "Using Accumulator method...",
         "text": "steps/6/text.md"
     },
     {
-        "title": "",
+        "title": "Using Accumulator method...",
         "text": "steps/7/text.md"
     },
     {
-        "title": "",
+        "title": "Task: Implementing Record Parser",
         "text": "steps/8/text.md"
     },
     {
-        "title": "",
+        "title": "Implementing Record Parser",
         "text": "steps/9/text.md"
     },
     {
-        "title": "",
+        "title": "Implementing Record Parser",
         "text": "steps/10/text.md"
     },
     {
-        "title": "",
+        "title": "Task: Implementing Counters",
         "text": "steps/11/text.md"
     },
     {
-        "title": "",
+        "title": "Implementing Counters...",
         "text": "steps/12/text.md"
     },
     {
-        "title": "",
+        "title": "Compile and Run",
         "text": "steps/13/text.md"
     }],
     "intro": {

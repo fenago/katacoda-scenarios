@@ -1,4 +1,4 @@
-Before proceeding with this task, please comment out or remove the following statement from the previous task.
+**Important:** Before proceeding with this task, please comment out the following statement from the previous task as shown below.
 
 ```
 RDDPair.collect.foreach(println)

@@ -13,19 +13,19 @@
       "text": "steps/2/text.md"
     },    
 	{
-      "title": "",
+      "title": "Task: Performing Joins on Paired RDDs",
       "text": "steps/3/text.md"
     },
 	{
-      "title": "",
+      "title": "Performing Joins on Paired RDDs...",
       "text": "steps/4/text.md"
     },
   {
-      "title": "",
+      "title": "Performing Joins on Paired RDDs...",
       "text": "steps/5/text.md"
     },
     {
-        "title": "",
+        "title": "Performing Joins on Paired RDDs...",
         "text": "steps/6/text.md"
     },
     {
@@ -33,11 +33,11 @@
         "text": "steps/7/text.md"
     },
     {
-        "title": "",
+        "title":"Performing Actions on Paired RDDs...",
         "text": "steps/8/text.md"
     },
     {
-        "title": "",
+        "title": "Performing Actions on Paired RDDs...",
         "text": "steps/9/text.md"
     }],
     "intro": {

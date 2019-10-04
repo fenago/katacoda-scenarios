@@ -12,3 +12,9 @@ val sorted = avgRatings.sortByKey(false)
 
 Task is complete!
 
+
+**Important:** You can run all of above one by one be editing `avgRatings.scala` using **vscode** editor before running program.
+
+To run the program from the terminal, simply run the following command. The program will the then be compiled and executed.
+
+`sbt "runMain training.avgRatings"`{{execute}} 

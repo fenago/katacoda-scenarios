@@ -14,6 +14,8 @@ We are declaring a new variable called goodRecords and simply extracting (map) t
 **Step 6:** Let us now run it and see the good records as shown in the screenshot below.
 `sbt "runMain training.counters"`{{execute}} 
 
+![](https://github.com/athertahir/apache-spark/raw/master/Screenshots/Chapter 6/Selection_013.png)
+
 We have successfully implemented Accumulators and also separated good records with bad records.
 
 Task is complete!

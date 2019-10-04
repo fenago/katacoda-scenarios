@@ -1,5 +1,3 @@
-Task 2: Implementing Record Parser
-
 **Step 1:** To implement a record parser, we shall create yet another Scala object and name it recordParser. Please follow the steps associated with creating a new Scala object. No imports are required for this object.
 
 You should end up with the object as shown below.

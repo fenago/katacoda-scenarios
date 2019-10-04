@@ -18,11 +18,8 @@ val sorted = avgRatings.sortBy(x => -x._2)
 You will have the results sorted in descending order when you run the program as shown below.
 
 
-
 However, if you want to sort it in descending order, you can simply use the dash (-) symbol as shown below.
 
 ```
 val sorted = avgRatings.sortBy(x => -x._2)
 ```
-
-You will have the results sorted in descending order when you run the program as shown below.
