@@ -13,7 +13,7 @@ Now, move in the directory which contains the source code.
 
 ![](https://github.com/fenago/katacoda-scenarios/raw/master/apache-spark/1.JPG)
 
-The aim of the following lab exercises is to start writing Spark SQL code in Intellij to learn about Datasets and built-in functions.
+The aim of the following lab exercises is to start writing Spark SQL code in **vscode** editor to learn about Datasets and built-in functions.
 We will cover following topics in this scenario.
 - Window Functions
 

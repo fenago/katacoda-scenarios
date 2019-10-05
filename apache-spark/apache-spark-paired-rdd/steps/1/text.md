@@ -14,7 +14,7 @@ Now, move in the directory which contains the source code.
 ![](https://github.com/fenago/katacoda-scenarios/raw/master/apache-spark/1.JPG)
 
 
-The aim of the following lab exercises is to start writing Spark code in Intellij to learn about Paired RDDs.
+The aim of the following lab exercises is to start writing Spark code in **vscode** editor to learn about Paired RDDs.
 We will cover following topics in this scenario.
 - Creating a Tuple
 - Creating a Paired RDD
