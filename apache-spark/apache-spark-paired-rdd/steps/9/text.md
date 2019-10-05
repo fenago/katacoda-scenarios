@@ -12,7 +12,10 @@ That's it. We now have our paired RDD. You can optionally take a look at the RDD
 
 PS: Using collect is not recommended if your data is very big. When collect is used, all the data is shuffled to the driver node and if there is not enough memory available in the driver node, the job will throw an memory exception error.
 
-Once you write this line of code, run the program by clicking the play icon and then clicking on the Run option as shown below. Make sure you have the appropriate closing flower braces at the end of the code.
+#### Compile and Run
+To run this program from the terminal, simply run the following command. The program will the then be compiled and executed.
+
+`sbt "runMain training.avgRatings"`{{execute}} 
 
 You should have the output in the console with the key-value pairs as shown in the screenshot below.
 

@@ -24,6 +24,8 @@ joined.collect.foreach(println)
 
 The output with the joined results can be seen as shown in the screenshot below.
 
+![](https://github.com/athertahir/apache-spark/raw/master/Screenshots/Chapter 5/Selection_038.png)
+
 You can then similarly perform the rest of the joins such as left outer join and right outer join.
 
 It is recommended to perform joins using dataframes rather than RDDs as it can have the benefit of catalyst optimizer when performed using dataframes. We shall look at dataframes in our upcoming scenarios.

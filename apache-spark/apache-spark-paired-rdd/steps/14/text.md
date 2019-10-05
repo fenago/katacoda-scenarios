@@ -1,3 +1,9 @@
+You can also sort the result by the key by referring the first element in the sortBy function or simply using the sortByKey function key as shown below.
+
+```
+val sorted = avgRatings.sortByKey()
+```
+
 
 **Step 6:** We can also sort the result on either column using the sortBy function as shown below.
 

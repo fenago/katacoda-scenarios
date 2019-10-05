@@ -14,10 +14,4 @@ avgRatings.collect.foreach(println)
 
 Once the job is finished, check the output in the console as shown in the screenshot below.
 
-![](https://github.com/athertahir/apache-spark/raw/master/Screenshots/Chapter 5/Selection_0213.png)
-
-You can also sort the result by the key by referring the first element in the sortBy function or simply using the sortByKey function key as shown below.
-
-```
-val sorted = avgRatings.sortByKey()
-```
+![](https://github.com/athertahir/apache-spark/raw/master/Screenshots/Chapter 5/Selection_023.png)

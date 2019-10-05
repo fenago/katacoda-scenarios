@@ -8,6 +8,7 @@ val look = joined.lookup(25)
 println(mappedCol)
 ```
 
+#### Compile and Run
 To run this program from the terminal, simply run the following command. The program will the then be compiled and executed.
 `sbt "runMain training.joins"`{{execute}} 
 

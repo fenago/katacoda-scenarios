@@ -13,6 +13,7 @@ grouped.collect.foreach(println)
 
 The output is as shown in the screenshot below with all the tags for a movie are grouped together.
 
+![](https://github.com/athertahir/apache-spark/raw/master/Screenshots/Chapter 5/Selection_031.png)
 
 **Step 5:** To run this program from the terminal, simply run the following command. The program will the then be compiled and executed.
 
