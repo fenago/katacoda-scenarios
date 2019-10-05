@@ -4,7 +4,7 @@
 
 ```jsonData.show()```{{execute}}
 
-![](https://github.com/athertahir/apache-spark/raw/master/Screenshots/Chapter 10/Selection_011.png
+![](https://github.com/athertahir/apache-spark/raw/master/Screenshots/Chapter 10/Selection_011.png)
 
 **Step 4:** Let us now load the multi line JSON file. Download the file example_2.json from the URL below and save it to the /home/scrapbook/tutorial/apache-spark/Files/chapter_10 folder.
 

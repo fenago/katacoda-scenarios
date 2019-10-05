@@ -16,8 +16,3 @@ Now, move in the directory which contains the source code.
 The aim of the following lab exercises is to start writing Spark SQL code in Intellij to learn about Datasets and built-in functions.
 We will cover following topics in this scenario.
 - Creating Dataset using DataSource API
-
-We need the following packages to perform the lab exercises: 
-- Java Development Kit
-- Scala
-- Spark

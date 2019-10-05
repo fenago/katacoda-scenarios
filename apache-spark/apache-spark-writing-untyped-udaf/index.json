@@ -1,11 +1,11 @@
 {
-  "title": "",
+  "title": "Apache Spark Writing Untyped UDAF",
   "description": "Introduction to Apache Spark",
   "difficulty": "Advanced",
   "time": "15 minutes",
   "details": {
     "steps": [{
-      "title": "",
+      "title": "Clone Repository",
       "text": "steps/1/text.md"
     },
     {
