@@ -2,8 +2,6 @@
 
 `apt-get update`{{execute}} 
 
-This will update the package index. You might be asked to enter your password after you run the command above. 
-
 **Step 2:** Once you run the above command, run the following command to actually download and install JDK.
 
 `apt-get --assume-yes install default-jdk`{{execute}} 

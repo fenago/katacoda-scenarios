@@ -6,7 +6,7 @@ The output displayed in the console is useful while developing but in the real t
 count.saveAsTextFile("chapter_4/word_count/output")
 ```
 
-**Important:** You need to add above line in `wordCount.scala` using **vscode** editor before running program again.
+**Important:** You need to uncomment above line in `wordCount.scala` using **vscode** editor before running program again.
 
 We shall be saving the output to the following path IdeaProjects/Spark/chapter_4/word_count/output. You need not create the directories word_count and output. They will be automatically created. In fact the compiler will throw an error if the output directory is already present.
 
@@ -15,10 +15,9 @@ We shall be saving the output to the following path IdeaProjects/Spark/chapter_4
  
 `sbt "runMain training.wordCount"`{{execute}} 
 
-Open the `part-00000` file and you should see the result as shown in the screenshot below.
+Open the `part-00000` file and you should see the result as shown below.
 
 `ls ~/apache-spark/chapter_4/word_count/output`{{execute}} 
 
 `cat ~/apache-spark/chapter_4/word_count/output/part-00000`{{execute}} 
 
-![](https://github.com/athertahir/apache-spark/raw/master/Screenshots/Chapter 4/Selection_020.png)

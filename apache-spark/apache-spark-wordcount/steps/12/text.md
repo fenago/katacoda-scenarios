@@ -8,10 +8,12 @@ count.toDebugString.foreach(print)
 
 **Important:** 
 - You need to add above line in `wordCount.scala` using **vscode** editor before running program again. 
-- Also, uncomment line **22** as shown below.
-![](https://github.com/athertahir/apache-spark/raw/master/Screenshots/Chapter 10/save.JPG)
-Please note that we have used print inside foreach and not println.
+- Also, comment line **22** which we added in the previous step as shown below.
 
+![](https://github.com/athertahir/apache-spark/raw/master/Screenshots/comment.JPG)
+
+
+Please note that we have used print inside foreach and not println.
 
 **Step 2:** Run the program as you did before and you should see the output as shown below.
 

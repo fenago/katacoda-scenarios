@@ -18,4 +18,6 @@ As you can see in the screenshot, we have concatenated a new string to the same 
 
 `println(newName)`{{execute}} 
 
+![](https://github.com/athertahir/apache-spark/raw/master/Screenshots/Chapter 2/Selection_020.png)
+
 As you can see from the screenshot above, we have applied the transformations on the immutable objects and achieve the same result as using the mutable objects.

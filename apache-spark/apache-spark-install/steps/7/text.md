@@ -8,7 +8,7 @@ Once you run, the above command, a screen similar to the screenshot shows confir
  
 ![](https://github.com/athertahir/apache-spark/raw/master/Screenshots/Chapter 3/Selection_018.png)
 
-**Note:** It might not work first time, please run above command again in that case.
+**Note:** It might not work first time, Type `Ctrl` + `C` to quit and run `spark-shell`{{execute}} command again in that case.
 
 Run `:q`{{execute}} to exit `spark-shell`.
 

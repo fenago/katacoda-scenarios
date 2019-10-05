@@ -7,5 +7,3 @@ val words = data.flatMap(line => line.split(" "))
 ```
 
 The above piece of code splits each line into a seperate word. The logic we apply to split the line is by a white space character. The flatMap function takes the data RDD and splits each line of word by a space character.
-
-As a lab challenge, apply a map function to see how the output looks like instead of flatMap function. After you see the output from map function, apply flatten function to compare the result of flatMap function and the result of map and flatten function.

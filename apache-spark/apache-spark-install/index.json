@@ -6,6 +6,9 @@
   "details": {
     "steps": [{
       "title": "What is Spark?",
+      "text": "steps/0/text.md"
+    },{
+      "title": "Why Spark?",
       "text": "steps/1/text.md"
     },
     {
@@ -13,23 +16,23 @@
       "text": "steps/2/text.md"
     },    
 	{
-      "title": "",
+      "title": "Install Spark...",
       "text": "steps/3/text.md"
     },
 	{
-      "title": "",
+      "title": "Install Spark...",
       "text": "steps/4/text.md"
     },
   {
-      "title": "",
+      "title": "Install Spark...",
       "text": "steps/5/text.md"
     },
     {
-        "title": "",
+        "title": "Environment Variables",
         "text": "steps/6/text.md"
     },
     {
-        "title": "",
+        "title": "Spark Shell",
         "text": "steps/7/text.md"
     },
     {

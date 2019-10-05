@@ -22,14 +22,3 @@ Let's call the function with the parameter friends which is a List of type Strin
 ![](https://github.com/athertahir/apache-spark/raw/master/Screenshots/Chapter 3/Selection_026.png)
 
 
-The code below 
-
-`friendsRDD.filter(name=> name.contains("Chandler"))`{{execute}} 
-
-is same as
-
-```def find(name: List[String]): Boolean = {
-	name.contains("Chandler")
-}
-friendsRDD.filter(find)```{{execute}} 
-

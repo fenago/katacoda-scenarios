@@ -14,7 +14,7 @@ But if we try to access a value for a non existing key, an exception is thrown a
 
 `println(couples("Joey"))`{{execute}} 
 
- 
+![](https://github.com/athertahir/apache-spark/raw/master/Screenshots/Chapter 2/Selection_053.png)  
 
 To overcome this problem, we use the getOrElse method and specify a default value when the key does not exist.
 
