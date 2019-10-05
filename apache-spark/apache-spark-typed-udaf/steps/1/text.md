@@ -14,7 +14,6 @@ Now, move in the directory which contains the source code.
 ![](https://github.com/fenago/katacoda-scenarios/raw/master/apache-spark/1.JPG)
 
 We will cover following topics in this scenario.
-- Using Untyped UDAF
 - Typed UDAF
 
 We need the following packages to perform the lab exercises: 
