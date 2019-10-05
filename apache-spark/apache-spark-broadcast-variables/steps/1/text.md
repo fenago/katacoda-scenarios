@@ -14,14 +14,4 @@ Now, move in the directory which contains the source code.
 ![](https://github.com/fenago/katacoda-scenarios/raw/master/apache-spark/1.JPG)
 
 We will cover following topics in this scenario.
-- Using Accumulator Method
-- Implementing Record Parser
-- Implementing Counters
-- Implementing Accumulators V2
-- Implementing Custom Accumulators
 - Using Broadcast variables
-
-We need the following packages to perform the lab exercise: 
-- Java Development Kit
-- Scala
-- Spark
