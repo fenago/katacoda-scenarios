@@ -16,10 +16,10 @@ This will read the data and create an RDD[String] as shown below. We can read da
 
 **Important:** 
 - Commands below will run in **terminal 2** (It will open automatically on executing command). You can also open it by clicking `+` icon and selecting `new terminal`
-- Interface will keep switching back to terminal 1 because producer is running there after executing command, you can manually switch by clicking `terminal 2`.
+- Interface will keep switching back to terminal `1` after executing command, you can manually switch by clicking `terminal 2`.
 
 Let us now check if the save was successful. For that open a new terminal and check the contents using the command below.
 
-`ls ~/apache-spark/Files/chapter_7/output`{{execute T2}} 
+`ls ~/apache-spark/Files/chapter_10/output`{{execute T2}} 
 
-`cat ~/apache-spark/Files/chapter_10/output/part-00000 T2`{{execute T2}} 
+`cat ~/apache-spark/Files/chapter_10/output/part-00000`{{execute T2}} 

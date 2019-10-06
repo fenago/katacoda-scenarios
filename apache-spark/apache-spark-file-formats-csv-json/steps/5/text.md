@@ -2,6 +2,11 @@
 
 **Step 3:** We can also use the modes we have learned in our theory. Let us see an example.
 
+Enter into the paste mode and execute the following code.
+`:paste`{{execute}}
+
+**Note:** After pasting following code in the scala terminal, Press  `Ctrl` + `D` to run code.
+
 ```val dataNew = spark
 .read
 .format("csv")

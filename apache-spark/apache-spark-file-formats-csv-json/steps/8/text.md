@@ -15,7 +15,12 @@ example_2.json - http://bit.ly/2lL3IST
 
 **Step 5:** The following code is used to read the single line JSON file.
 
+Enter into the paste mode and execute the following code.
+`:paste`{{execute}}
+
+**Note:** After pasting following code in the scala terminal, Press  `Ctrl` + `D` to run code.
+
 ```val multiJson = spark.read
-.format("json")
-.option("multiLine", "true")
-.load("/home/scrapbook/tutorial/apache-spark/Files/chapter_10/example_2.json")```{{execute}}
+    .format("json")
+    .option("multiLine", "true")
+    .load("/home/scrapbook/tutorial/apache-spark/Files/chapter_10/example_2.json")```{{execute}}

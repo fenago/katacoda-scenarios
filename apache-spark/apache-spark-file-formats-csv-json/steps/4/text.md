@@ -10,6 +10,11 @@ Each line of this file represents one rating of one movie by one user, and has t
 
 **Step 2:** Let us now read this file to Spark from Spark shell using few options.
 
+Enter into the paste mode and execute the following code.
+`:paste`{{execute}}
+
+**Note:** After pasting following code in the scala terminal, Press  `Ctrl` + `D` to run code.
+
 ```val data = spark
 .read
 .format("csv")
