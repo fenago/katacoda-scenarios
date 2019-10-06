@@ -15,8 +15,3 @@ Now, move in the directory which contains the source code.
 
 We will cover following topics in this scenario.
 - Typed UDAF
-
-We need the following packages to perform the lab exercises: 
-- Java Development Kit
-- Scala
-- Spark

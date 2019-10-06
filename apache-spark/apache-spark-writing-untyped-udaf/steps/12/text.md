@@ -13,7 +13,7 @@ average.show()
 
 #### Compile and Run
 To run this program from the terminal, simply run the following command. The program will the then be compiled and executed.
-`sbt "runMain training.averageUDAF"`{{execute}} 
+`sbt "runMain training.avgRatingUDAF"`{{execute}} 
 
 The following output is shown.
 
