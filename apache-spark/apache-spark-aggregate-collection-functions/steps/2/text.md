@@ -1,3 +1,28 @@
 We need following packages to perform the lab exercise: 
 - Java Development Kit
-- Scala
+- SBT
+
+
+#### JAVA
+Verify the installation with: `java -version`{{execute}} 
+
+You'll see the following output:
+
+```
+java version "1.8.0_201"
+Java(TM) SE Runtime Environment (build 1.8.0_201-b09)
+Java HotSpot(TM) 64-Bit Server VM (build 25.201-b09, mixed mode)
+```
+
+
+#### Install SBT
+
+**Step 1:** Run the following commands from the terminal to install sbt.
+
+`echo "deb https://dl.bintray.com/sbt/debian /" | tee -a /etc/apt/sources.list.d/sbt.list`{{execute}} 
+
+`curl -sL "https://keyserver.ubuntu.com/pks/lookup?op=get&search=0x2EE0EA64E40A89B84B2DF73499E82A75642AC823" | apt-key add`{{execute}} 
+
+`apt-get update`{{execute}} 
+
+`apt-get install sbt`{{execute}} 

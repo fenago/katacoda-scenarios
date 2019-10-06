@@ -5,7 +5,7 @@
   "time": "15 minutes",
   "details": {
     "steps": [{
-      "title": "",
+      "title": "Clone Repository",
       "text": "steps/1/text.md"
     },
     {
@@ -13,7 +13,7 @@
       "text": "steps/2/text.md"
     },    
 	{
-      "title": "",
+      "title": "Task: Aggregate and Collection Functions",
       "text": "steps/3/text.md"
     },
 	{

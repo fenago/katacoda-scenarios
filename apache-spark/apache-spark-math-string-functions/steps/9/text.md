@@ -8,11 +8,9 @@
 
 Let us use the show method to display the datasets as shown below.
 
-
 ```upCase.show()
 lowCase.show()```{{execute}}
 
-
- 
+![](https://github.com/athertahir/apache-spark/raw/master/Screenshots/Chapter 8/Selection_049.png)
 
 

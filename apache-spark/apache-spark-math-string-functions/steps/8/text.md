@@ -10,12 +10,13 @@ Let us use the show method to display the dataset as shown below.
 
 `splitted.show()`{{execute}}
  
+![](https://github.com/athertahir/apache-spark/raw/master/Screenshots/Chapter 8/Selection_045.png)
 
 As you can see from the screenshot above, the rows have now been splitted by whitespace.
 
 **Step 3:** Next, let us use the explode function which we have learned in this exercise to create column for each element in the collection.
 
-`val exploded = splitted.select(explode($"splits").as("explode"))
+`val exploded = splitted.select(explode($"splits").as("explode"))`{{execute}} 
 
 Let us use the show method to display the dataset as shown below.
 
@@ -30,3 +31,5 @@ The first function we use is to find out the length of each word using the lengt
 Let us use the show method to display the dataset as shown below.
 
 `strLen.show()`{{execute}}
+
+![](https://github.com/athertahir/apache-spark/raw/master/Screenshots/Chapter 8/Selection_047.png)

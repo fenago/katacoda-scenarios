@@ -8,8 +8,7 @@ aggAlias.show()
 
 The following result should be shown.
 
-
- 
+![](https://github.com/athertahir/apache-spark/raw/master/Screenshots/Chapter 8/Selection_020.png)
 
 As you can see from the screenshot above, the column names appear as we have specified.
 

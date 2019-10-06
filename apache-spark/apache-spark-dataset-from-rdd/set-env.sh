@@ -8,5 +8,7 @@ yes | apt-get install sbt
 
 sbt sbtVersion
 
+sbt sbtVersion
+
 clear
 

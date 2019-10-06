@@ -7,10 +7,10 @@ There are a plethora of String functions available in Spark. Let us look at few 
   "I have a dream.",
   "I came, I saw, I conquered.")```{{execute}} 
 
-val quoteDS = quote.toDS().cache()
+`val quoteDS = quote.toDS().cache()`{{execute}} 
 
 Let us use the show method to display the dataset as shown below.
 
+`quoteDS.show()`{{execute}} 
 
-quoteDS.show()
-
+![](https://github.com/athertahir/apache-spark/raw/master/Screenshots/Chapter 8/Selection_044.png)
