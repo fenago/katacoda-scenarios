@@ -15,8 +15,14 @@ As you can see from the screenshot above, the header is displayed correctly alon
 users.select("last_name").show()
 ```
 
+![](https://github.com/athertahir/apache-spark/raw/master/Screenshots/Chapter 7/Selection_008.png)
+
+**Important:** You need to uncomment above line in `users.scala` using **vscode** editor before running program again.
+
+`sbt "runMain training.users"`{{execute}} 
+
 The output is as shown in the screenshot below.
 
+![](https://github.com/athertahir/apache-spark/raw/master/Screenshots/Chapter 7/Selection_009.png)
 
- 
 

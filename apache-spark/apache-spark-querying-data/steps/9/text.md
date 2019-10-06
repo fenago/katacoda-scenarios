@@ -23,11 +23,19 @@ Similar to reading the file using read and load methods, we use write and save m
 
  
 
-After you run the program, the process should finish with an exit code of 0 indicating successful processing and the output should be available in the file system with only one file in the saved location.
+Now run the program as you did in the previous task and check the output directory. You should see two files: part-00000 and a _SUCCESS file. The output is saved in part-00000 file.
+ 
+`sbt "runMain training.sqlQueries"`{{execute}} 
 
+#### Output Files
 
-Open the file and you should have the values as shown below.
+`ls ~/apache-spark/chapter_7/output`{{execute}} 
 
+`cat ~/apache-spark/chapter_4/word_count/output/part-00000*`{{copy}} 
+
+Open the `part-00000-<guid>` file and you should see the result as shown below.
+
+![](https://github.com/athertahir/apache-spark/raw/master/Screenshots/Chapter 7/Selection_034.png)
 
 This way you can perform any operations using the SQL data manipulation language. 
 
