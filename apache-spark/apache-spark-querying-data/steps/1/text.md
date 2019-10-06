@@ -17,8 +17,3 @@ Now, move in the directory which contains the source code.
 The aim of the following lab exercises is to start writing Spark SQL code in **vscode** editor to learn about Data Frames.
 We will cover following topics in this scenario.
 - Querying data using Spark SQL
-
-We need the following packages to perform the lab exercise: 
-- Java Development Kit
-- Scala
-- Spark

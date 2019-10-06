@@ -5,8 +5,8 @@
   "time": "15 minutes",
   "details": {
     "steps": [{
-      "title": "",
-      "text": "steps/1/text.md"
+      "title": "Clone Repository",
+      "text":  "steps/1/text.md"
     },
     {
       "title": "Prerequisites",
@@ -45,6 +45,7 @@
         "text": "steps/10/text.md"
     }],
     "intro": {
+      "code": "set-env.sh",
       "text": "intro.md",
       "credits": ""
     },
