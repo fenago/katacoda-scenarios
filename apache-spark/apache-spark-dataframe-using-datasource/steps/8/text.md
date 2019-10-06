@@ -1,4 +1,4 @@
-Selecting multiple columns…
+We can select multiple columns using following code:
 
 ```
 users.select("first_name", "last_name").show()

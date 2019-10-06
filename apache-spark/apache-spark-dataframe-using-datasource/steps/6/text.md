@@ -18,18 +18,3 @@ We call printSchema method to display the inferred schema and show method to dis
 
 The show method is an action and so this the point where the DAG is actually executed. 
 
-**Step 6:** Let us run this program and check the output. You should see the schema as shown below.
-
-To run this program from the terminal, simply run the following command. The program will the then be compiled and executed.
-`sbt "runMain training.users"`{{execute}} 
- 
-As you can see, the schema been correctly discovered by Spark for each and every column in the dataFrame. Please note that if a column has values of more than one data type, Spark will infer it as String.
-The output of dataFrame users is as shown below.
-
- 
-
-
-
- 
-
-As you can see from the screenshot above, the header is displayed correctly along with the records.

@@ -17,9 +17,3 @@ The aim of the following lab exercises is to start writing Spark SQL code in **v
 We will cover following topics in this scenario.
 - Creating Data Frame from an RDD
 - Creating Data Frame using StructType
-
-
-We need the following packages to perform the lab exercise: 
-- Java Development Kit
-- Scala
-- Spark
