@@ -16,11 +16,11 @@ Now run the program as you did in the previous task and check the output directo
 
 #### Output Files
 
-`ls ~/apache-spark/chapter_7/output`{{execute}} 
+`ls ~/apache-spark/Files/chapter_7/output`{{execute}} 
 
-`cat ~/apache-spark/chapter_4/word_count/output/part-00000*`{{copy}} 
+`cat ~/apache-spark/Files/chapter_7/output/part-*`{{execute}} 
 
-Open the `part-00000-<guid>` file and you should see the result as shown below.
+Open the `part-00000-<guid>` file and you should see the result.
 
 ![](https://github.com/athertahir/apache-spark/raw/master/Screenshots/Chapter 7/Selection_034.png)
 

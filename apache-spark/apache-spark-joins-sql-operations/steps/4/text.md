@@ -1,5 +1,5 @@
 
-**Step 3:** Create a new Scala object and name it sqlJoins. Then import the following:
+**Step 3:** Click **IDE Editor** tab to open Visual Studio and open solution explorer and open `apache-spark/src/main/scala/training/sqlJoins.scala` to view scala file.
 
 ```
 import org.apache.spark.sql.SparkSession

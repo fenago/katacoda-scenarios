@@ -18,4 +18,7 @@ nyUserCount.show()
 
 The output is as shown in the screenshot below.
 
+![](https://github.com/athertahir/apache-spark/raw/master/Screenshots/Chapter 7/Selection_044.png)
+
+ 
 

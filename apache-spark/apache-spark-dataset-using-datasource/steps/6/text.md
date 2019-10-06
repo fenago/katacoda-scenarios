@@ -7,11 +7,9 @@ movies.printSchema()
 movies.show()
 ```
  
+The following schema will be shown when we run the program.
 
-The following schema is shown when we run the program.
+![](https://github.com/athertahir/apache-spark/raw/master/Screenshots/Chapter 8/Selection_005.png)
 
- 
-
-And the result as shown below.
 
  

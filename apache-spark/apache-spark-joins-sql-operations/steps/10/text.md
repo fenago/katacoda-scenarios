@@ -22,6 +22,6 @@ To run this program from the terminal, simply run the following command. The pro
 
 The output is as shown in the screenshot below.
 
-
+![](https://github.com/athertahir/apache-spark/raw/master/Screenshots/Chapter 7/Selection_047.png)
  
 Task is complete!
