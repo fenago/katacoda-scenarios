@@ -6,7 +6,15 @@ userdata1.parquet - http://bit.ly/2kfIhJ4
 
 **Note:** We already have cloned a github repository which contains a required file. Open `apache-spark/Files/chapter_10` to view file.
 
+
 **Step 2:** Let us no read this Parquet file to Spark using the code below.
+
+Open the terminal and fire up the Spark shell `spark-shell`{{execute T1}}.
+
+Enter into the paste mode and execute the following code.
+`:paste`{{execute}}
+
+**Note:** After pasting following code in the scala terminal, Press  `Ctrl` + `D` to run code.
 
  ```val parquetData = spark
 .read
