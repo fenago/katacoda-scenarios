@@ -1,7 +1,7 @@
 
 **Step 3:** Let us now read the file using the hadoopFile API as shown below. This is the old Hadoop API.
 
-`val hadoopData = sc.hadoopFile[Text, IntWritable, KeyValueTextInputFormat]("//home/scrapbook/tutorial/apache-spark/Files/chapter_10/part-r-00000")`{{execute T1}} 
+`val hadoopData = sc.hadoopFile[Text, IntWritable, KeyValueTextInputFormat]("/home/scrapbook/tutorial/apache-spark/Files/chapter_10/part-r-00000")`{{execute T1}} 
 
 ![](https://github.com/athertahir/apache-spark/raw/master/Screenshots/Chapter 10/Selection_025.png)
 

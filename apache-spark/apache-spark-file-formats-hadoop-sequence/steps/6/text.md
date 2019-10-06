@@ -1,6 +1,11 @@
 
 **Step 4:** However, since these are Hadoop data types, we cannot access the keys directly. We need to convert them to Java data types as shown below. The job will fail if we do not convert the data types and collect.
 
+Enter into the paste mode and execute the following code.
+`:paste`{{execute}}
+
+**Note:** After pasting following code in the scala terminal, Press  `Ctrl` + `D` to run code.
+
 ```val newRDD = seqData.map
 {
 	case (x, y) => (x.toString, y.get())
