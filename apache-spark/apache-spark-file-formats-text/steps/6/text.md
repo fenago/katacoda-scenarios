@@ -1,7 +1,7 @@
 
 **Step 5:** Let us simply print the file names by using the keys method on textFiles RDD as shown below.
 
-`textFiles.keys.collect.foreach(println)`{{execute}} 
+`textFiles.keys.collect.foreach(println)`{{execute T1}} 
 
 ![](https://github.com/athertahir/apache-spark/raw/master/Screenshots/Chapter 10/Selection_006.png)
 

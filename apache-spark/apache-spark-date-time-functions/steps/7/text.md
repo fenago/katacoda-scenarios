@@ -27,6 +27,7 @@ Enter into the paste mode and execute the following code.
 
 Let us print the schema so that we can compare it with the timestamp type in the next step.
 
-timeStampDS.printSchema()
+`timeStampDS.printSchema()`{{execute}} 
+
 
 

@@ -23,6 +23,8 @@ The program should look something like the screenshot shown below.
 ratingDecDf.show()
 ```
 
+**Important:** You need to uncomment above line in `decrRatingUDF.scala` using **vscode** editor before running program again.
+
 #### Compile and Run
 To run this program from the terminal, simply run the following command. The program will the then be compiled and executed.
 `sbt "runMain training.decrRatingUDF"`{{execute}} 

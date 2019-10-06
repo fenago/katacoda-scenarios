@@ -14,7 +14,7 @@ Enter into the paste mode and execute the following code.
 
 - The from_unixtime function is used to cconvert the unix time which we obtained above.
 
-The following output is shown when we use the show method.
+The output is shown when we use the show method.
 
 `conversions.show()`{{execute}} 
 

@@ -2,7 +2,7 @@
 
 **Step 3:** Let us check if we were able to load the JSON file successfully.
 
-```jsonData.show()```{{execute}}
+`jsonData.show()`{{execute}}
 
 ![](https://github.com/athertahir/apache-spark/raw/master/Screenshots/Chapter 10/Selection_011.png)
 

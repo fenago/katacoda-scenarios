@@ -17,6 +17,7 @@ Enter into the paste mode and execute the following code.
   .withColumn("monthsBetween", months_between(current_date(), $"date", true))```{{execute}} 
 
 
+`arithmetic.show()`{{execute}} 
 
 - The datediff function is used to calculate the date difference between two dates. Here we have used the current_date method to get the present date and get the difference from the date in date column.
 
@@ -29,9 +30,6 @@ Enter into the paste mode and execute the following code.
 
 - The months_between function is used to get the number of months between two days. We have used the present date using current_date function and date column as the arguments.
 
- The following output is shown when we use the show method.
-
-`arithmetic.show()`{{execute}} 
 
 
  
