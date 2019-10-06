@@ -25,11 +25,11 @@ Java HotSpot(TM) 64-Bit Server VM (build 25.201-b09, mixed mode)
 
 `apt-get update`{{execute}} 
 
-`apt-get install sbt`{{execute}} 
+`apt-get install sbt && sbt sbtVersion`{{execute}} 
 
 **Step 2:** Verify your sbt installation version by running the following command.	
 
-`sbt sbtVersion`{{execute}}	
+`clear && sbt sbtVersion`{{execute}}	
 
 You will get following output.
 
