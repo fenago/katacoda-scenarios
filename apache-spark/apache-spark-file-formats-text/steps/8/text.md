@@ -2,7 +2,7 @@
 **Step 2:** Let us now load this file to Spark using the Spark Shell with the following code.
 
 Enter into the paste mode and execute the following code.
-`:paste`{{execute}}
+`:paste`{{execute T1}}
 
 **Note:** After pasting following code in the scala terminal, Press  `Ctrl` + `D` to run code.
 

@@ -19,11 +19,11 @@ We know that the save was successful by looking at SEQ at the beginning of the f
 **Step 3:** Let us now read this Sequence file we just saved. Reading Sequence files is a bit different to what we have been doing so far. While reading the Sequence file, we need to specify the key and value data types also.
 
 Enter into the paste mode and execute the following code.
-`:paste`{{execute}}
+`:paste`{{execute T1}}
 
 **Note:** After pasting following code in the scala terminal, Press  `Ctrl` + `D` to run code.
 
-```val seqData = sc.sequenceFile("/home/scrapbook/tutorial/apache-spark/Files/chapter_10/seqOut/part-00000"
+```val seqData = sc.sequenceFile("/home/scrapbook/tutorial/apache-spark/Files/chapter_10/seqOut/part-00001"
 ,classOf[org.apache.hadoop.io.Text]
 ,classOf[org.apache.hadoop.io.IntWritable])```{{execute T1}}
  

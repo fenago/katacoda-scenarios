@@ -9,6 +9,11 @@ We now have an RDD from Hadoop MapReduce output. However, in order to access the
 
 **Step 4:** Convert the data types from Hadoop types as shown below.
 
+Enter into the paste mode and execute the following code.
+`:paste`{{execute T1}}
+
+**Note:** After pasting following code in the scala terminal, Press  `Ctrl` + `D` to run code.
+
 ```val hadoopRDD = hadoopData.map
 {
 	case (x, y) => (x.toString, y.toString)

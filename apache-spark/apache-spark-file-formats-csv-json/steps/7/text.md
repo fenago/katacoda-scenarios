@@ -15,7 +15,7 @@ example_1.json - http://bit.ly/2lRFI06
 **Step 2:** The following code is used to read the single line JSON file.
 
 Enter into the paste mode and execute the following code.
-`:paste`{{execute}}
+`:paste`{{execute T1}}
 
 **Note:** After pasting following code in the scala terminal, Press  `Ctrl` + `D` to run code.
 

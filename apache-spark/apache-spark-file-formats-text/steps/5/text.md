@@ -13,7 +13,7 @@ books - http://bit.ly/2kupo5v
 
 This will return you a RDD[String, String] which is a paired RDD as shown below.
 
-![](https://github.com/athertahir/apache-spark/raw/master/Screenshots/Chapter 10/Selection_005.png)
+![](https://github.com/athertahir/apache-spark/raw/master/Screenshots/Chapter 10/Selection_004.png)
 
 This paired RDD contains the name of the files as keys and the entire content of files as values.
 
