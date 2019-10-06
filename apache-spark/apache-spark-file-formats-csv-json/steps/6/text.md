@@ -2,14 +2,14 @@
 **Step 4:** Let us now write this dataframe back to the filesystem in CSV format.
 
 Enter into the paste mode and execute the following code.
-`:paste`{{execute}}
+`:paste`{{execute T1}}
 
 **Note:** After pasting following code in the scala terminal, Press  `Ctrl` + `D` to run code.
 
 ```dataNew.write
     .format("csv")
     .option("sep", "|")
-    .save("/home/scrapbook/tutorial/apache-spark/Files/chapter_10/output2")```{{execute}}
+    .save("/home/scrapbook/tutorial/apache-spark/Files/chapter_10/output2")```{{execute T1}}
 
 Here, we have used an option called sep which replaces the delimiter from comma to a pipe.
 

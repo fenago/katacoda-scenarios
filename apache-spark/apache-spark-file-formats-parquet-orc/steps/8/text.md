@@ -9,10 +9,10 @@ userdata1.orc - http://bit.ly/2kfQi0J
 ```val orcData = spark
 .read
 .format("orc")
-.load("/home/scrapbook/tutorial/apache-spark/Files/chapter_10/userdata1_orc")```{{execute}}
+.load("/home/scrapbook/tutorial/apache-spark/Files/chapter_10/userdata1_orc")```{{execute T1}}
 
 
- `orcData.show()`{{execute}} 
+ `orcData.show()`{{execute T1}} 
 
 You should see the following output when you call the show method on the dataframe.
 

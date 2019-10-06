@@ -12,17 +12,17 @@ userdata1.parquet - http://bit.ly/2kfIhJ4
 Open the terminal and fire up the Spark shell `spark-shell`{{execute T1}}.
 
 Enter into the paste mode and execute the following code.
-`:paste`{{execute}}
+`:paste`{{execute T1}}
 
 **Note:** After pasting following code in the scala terminal, Press  `Ctrl` + `D` to run code.
 
  ```val parquetData = spark
 .read
-.load("/home/scrapbook/tutorial/apache-spark/Files/chapter_10/userdata1.parquet")```{{execute}}
+.load("/home/scrapbook/tutorial/apache-spark/Files/chapter_10/userdata1.parquet")```{{execute T1}}
 
 Please see that we need not mention the format here as Parquet is default file format in Spark. However, you may explicitly mention the format as we did in the previous tasks if you desire so.
 
-`parquetData.show()`{{execute}} 
+`parquetData.show()`{{execute T1}} 
 
 You should see the following output when you call the show method on the dataframe.
 

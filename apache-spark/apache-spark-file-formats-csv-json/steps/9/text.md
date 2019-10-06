@@ -2,13 +2,13 @@
 **Step 6:** Let us now write this dataframe to the filsesystem.
 
 Enter into the paste mode and execute the following code.
-`:paste`{{execute}}
+`:paste`{{execute T1}}
 
 **Note:** After pasting following code in the scala terminal, Press  `Ctrl` + `D` to run code.
 
 ```multiJson.write
     .format("json")
-    .save("/home/scrapbook/tutorial/apache-spark/Files/chapter_10/output3")```{{execute}}
+    .save("/home/scrapbook/tutorial/apache-spark/Files/chapter_10/output3")```{{execute T1}}
 
  
 #### Output

@@ -11,7 +11,7 @@ Each line of this file represents one rating of one movie by one user, and has t
 **Step 2:** Let us now read this file to Spark from Spark shell using few options.
 
 Enter into the paste mode and execute the following code.
-`:paste`{{execute}}
+`:paste`{{execute T1}}
 
 **Note:** After pasting following code in the scala terminal, Press  `Ctrl` + `D` to run code.
 
@@ -21,7 +21,7 @@ Enter into the paste mode and execute the following code.
 .option("InferSchema", "true")
 .option("header", "false")
 .option("nullValue", "Null")
-.load("/home/scrapbook/tutorial/apache-spark/Files/chapter_10/ratings.csv")```{{execute}}
+.load("/home/scrapbook/tutorial/apache-spark/Files/chapter_10/ratings.csv")```{{execute T1}}
 
 We have used a new option here which is called NullValue. This will replace all the null values with the provided string, which is Null in this case. The default is "". Please check the references section for all the options that can be used while reading or writing CSV files. All the options can be used in this way or inside a map object.
 

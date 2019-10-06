@@ -16,5 +16,5 @@ example_1.json - http://bit.ly/2lRFI06
 ```val jsonData = spark.read
 .format("json")
 .option("multiLine", "false")
-.load("/home/scrapbook/tutorial/apache-spark/Files/chapter_10/example_1.json")```{{execute}}
+.load("/home/scrapbook/tutorial/apache-spark/Files/chapter_10/example_1.json")```{{execute T1}}
 
