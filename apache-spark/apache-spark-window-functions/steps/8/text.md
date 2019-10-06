@@ -15,4 +15,5 @@ employeeDS.select($"*", denseRanked.as("dense_rank")).show()
 
 The following output is shown when we run the program.
 
- 
+![](https://github.com/athertahir/apache-spark/raw/master/Screenshots/Chapter 8/Selection_054.png)
+

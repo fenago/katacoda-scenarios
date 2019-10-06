@@ -16,14 +16,16 @@ To run this program from the terminal, simply run the following command. The pro
 
 The following output is shown when we run the program.
 
+![](https://github.com/athertahir/apache-spark/raw/master/Screenshots/Chapter 8/Selection_055.png)
 
 
 The percent_rank calculates the percent rank of a given row based on the following formula. 
 
+```
 (rank - 1) / (the number of rows in the window or partition - 1)
+```
 
-For example, if the rank of a row is 11 and there are 101 rows in the partition, the rank will be 11-1/101-1 or 10/100 or 0.1. The percent rank ranges from 0 to 
-1. The first row will always have a percent rank of 0.
+For example, if the rank of a row is 11 and there are 101 rows in the partition, the rank will be 11-1/101-1 or 10/100 or 0.1. The percent rank ranges from `0` to `1`. The first row will always have a percent rank of 0.
 
 ```
 val percentRank = percent_rank().over(window)
@@ -31,3 +33,5 @@ employeeDS.select($"*", percentRank.as("percentRank")).show()
 ```
 
 The following output is shown when we run the program.
+
+![](https://github.com/athertahir/apache-spark/raw/master/Screenshots/Chapter 8/Selection_056.png)

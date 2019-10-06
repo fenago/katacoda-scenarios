@@ -5,7 +5,7 @@
   "time": "15 minutes",
   "details": {
     "steps": [{
-      "title": "",
+      "title": "Clone Repository",
       "text": "steps/1/text.md"
     },
     {
@@ -13,38 +13,39 @@
       "text": "steps/2/text.md"
     },    
 	{
-      "title": "",
+      "title": "Window Functions",
       "text": "steps/3/text.md"
     },
 	{
-      "title": "",
+      "title": "Window Functions...",
       "text": "steps/4/text.md"
     },
   {
-      "title": "",
+      "title": "Window Functions...",
       "text": "steps/5/text.md"
     },
     {
-        "title": "",
+        "title": "Window Functions...",
         "text": "steps/6/text.md"
     },
     {
-        "title": "",
+        "title": "Window Functions...",
         "text": "steps/7/text.md"
     },
     {
-        "title": "",
+        "title": "Window Functions...",
         "text": "steps/8/text.md"
     },
     {
-        "title": "",
+        "title": "Window Functions...",
         "text": "steps/9/text.md"
     },
     {
-        "title": "",
+        "title": "Window Functions...",
         "text": "steps/10/text.md"
     }],
     "intro": {
+      "code": "set-env.sh",
       "text": "intro.md",
       "credits": ""
     },

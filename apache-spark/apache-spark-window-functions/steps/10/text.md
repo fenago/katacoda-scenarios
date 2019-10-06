@@ -10,7 +10,7 @@ The lead function takes three arguments. The first is the column name, second is
 
 The following output is shown when we run the program.
 
- 
+![](https://github.com/athertahir/apache-spark/raw/master/Screenshots/Chapter 8/Selection_057.png)
 
 Similarly, there is lag function which calculates the lag.
 
@@ -21,7 +21,12 @@ employeeDS.select($"*", lags.as("lag")).show()
 
 The following output is shown when we run the program.
 
- 
+![](https://github.com/athertahir/apache-spark/raw/master/Screenshots/Chapter 8/Selection_058.png)
+
+
+#### Compile and Run
+To run this program from the terminal, simply run the following command. The program will the then be compiled and executed.
+`sbt "runMain training.window"`{{execute}} 
 
 Task is complete!
 

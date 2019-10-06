@@ -24,4 +24,6 @@ employeeDS.select($"*", ranked.as("rank")).show()
 
 You should have the following output when you run this program.
 
+![](https://github.com/athertahir/apache-spark/raw/master/Screenshots/Chapter 8/Selection_053.png)
+
  
