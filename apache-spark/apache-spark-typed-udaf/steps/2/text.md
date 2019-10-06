@@ -15,16 +15,19 @@ Java HotSpot(TM) 64-Bit Server VM (build 25.201-b09, mixed mode)
 ```
 
 
-#### Install SBT
+#### SBT
+Verify your sbt installation version by running the following command.	
 
-**Step 1:** Run the following commands from the terminal to install sbt.
+`sbt sbtVersion`{{execute}}	
 
-`echo "deb https://dl.bintray.com/sbt/debian /" | tee -a /etc/apt/sources.list.d/sbt.list`{{execute}} 
+You will get following output. If you get an error first time, please run the command again.
 
-`curl -sL "https://keyserver.ubuntu.com/pks/lookup?op=get&search=0x2EE0EA64E40A89B84B2DF73499E82A75642AC823" | apt-key add`{{execute}} 
+```	
+[info] Loading project definition from /home/scrapbook/tutorial/apache-spark/project	
+[info] Loading settings for project apache-spark from build.sbt ...	
+[info] Set current project to Spark (in build file:/home/scrapbook/tutorial/apache-spark/)	
+[info] 1.3.2
+```
 
-`apt-get update`{{execute}} 
-
-`apt-get install sbt`{{execute}} 
 
 
