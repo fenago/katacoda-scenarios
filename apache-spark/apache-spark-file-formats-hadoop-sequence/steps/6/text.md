@@ -4,7 +4,7 @@
 ```al newRDD = seqData.map
 {
 	case (x, y) => (x.toString, y.get())
-}```{{execute}}
+}```{{execute T1}}
 
 ![](https://github.com/athertahir/apache-spark/raw/master/Screenshots/Chapter 10/Selection_022.png)
 

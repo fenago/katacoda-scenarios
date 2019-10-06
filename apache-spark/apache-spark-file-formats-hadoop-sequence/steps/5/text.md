@@ -2,11 +2,11 @@
 
 **Step 2:** Let is now write the RDD to Sequence file format using the saveAsSequenceFile method as shown below.
 
-`seqRDD.saveAsSequenceFile("/home/scrapbook/tutorial/apache-spark/Files/chapter_10/seqOut")`{{execute}}
+`seqRDD.saveAsSequenceFile("/home/scrapbook/tutorial/apache-spark/Files/chapter_10/seqOut")`{{execute T1}}
 
 You may run a cat command from another terminal to check if the save was successful, but the file will not be human readable as shown in the screenshot below.
 
-`cat /home/scrapbook/tutorial/apache-spark/Files/chapter_10/seqOut/part*`{{execute}}
+`cat /home/scrapbook/tutorial/apache-spark/Files/chapter_10/seqOut/part*`{{execute T1}}
 
  
  
@@ -17,7 +17,7 @@ We know that the save was successful by looking at SEQ at the beginning of the f
 ```val seqData = sc
 .SequenceFile("/home/scrapbook/tutorial/apache-spark/Files/chapter_10/seqOut/part-00000"
 ,classOf[org.apache.hadoop.io.Text]
-,classOf[org.apache.hadoop.io.IntWritable])```{{execute}}
+,classOf[org.apache.hadoop.io.IntWritable])```{{execute T1}}
  
 
 Since this is a Hadoop file format, we need to specify the data types in Hadoop. We have specified the Text and IntWritable types as the types for keys and values since our keys are of String and values are of Int.

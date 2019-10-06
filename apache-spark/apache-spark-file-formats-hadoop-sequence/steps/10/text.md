@@ -1,6 +1,6 @@
 **Step 5:** Finally let us call the collect method and check the output from the RDD.
 
-`hadoopRDD.collect()`{{execute}}
+`hadoopRDD.collect()`{{execute T1}}
 
 ![](https://github.com/athertahir/apache-spark/raw/master/Screenshots/Chapter 10/Selection_027.png)
 

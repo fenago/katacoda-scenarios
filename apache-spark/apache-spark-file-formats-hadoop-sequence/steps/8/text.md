@@ -12,7 +12,7 @@ This file is the output of a Word Count MapReduce job. It contains words as keys
 **Step 2:** Before we read the file, we first need the following imports. We need to import the datatypes for both keys and values and also the input format. The keys are of type Text, values are Text and the input format is KeyValueTextInputFormat.
 
 ```import org.apache.hadoop.io.Text
-import org.apache.hadoop.mapred.KeyValueTextInputFormat```{{execute}}
+import org.apache.hadoop.mapred.KeyValueTextInputFormat```{{execute T1}}
  
 
 
