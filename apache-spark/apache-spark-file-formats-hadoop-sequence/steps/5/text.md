@@ -23,7 +23,7 @@ Enter into the paste mode and execute the following code.
 
 **Note:** After pasting following code in the scala terminal, Press  `Ctrl` + `D` to run code.
 
-```val seqData = sc.SequenceFile("/home/scrapbook/tutorial/apache-spark/Files/chapter_10/seqOut/part-00000"
+```val seqData = sc.sequenceFile("/home/scrapbook/tutorial/apache-spark/Files/chapter_10/seqOut/part-00000"
 ,classOf[org.apache.hadoop.io.Text]
 ,classOf[org.apache.hadoop.io.IntWritable])```{{execute T1}}
  
