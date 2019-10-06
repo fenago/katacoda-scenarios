@@ -6,10 +6,9 @@ Enter into the paste mode and execute the following code.
 
 **Note:** After pasting following code in the scala terminal, Press  `Ctrl` + `D` to run code.
 
-```dataNew.write
-    .format("csv")
-    .option("sep", "|")
-    .save("/home/scrapbook/tutorial/apache-spark/Files/chapter_10/output2")```{{execute T1}}
+```dataNew.write.format("csv")
+.option("sep", "|")
+.save("/home/scrapbook/tutorial/apache-spark/Files/chapter_10/output2")```{{execute T1}}
 
 Here, we have used an option called sep which replaces the delimiter from comma to a pipe.
 

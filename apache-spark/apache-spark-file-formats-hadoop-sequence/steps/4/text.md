@@ -9,4 +9,5 @@ Open the terminal and fire up the Spark shell `spark-shell`{{execute T1}}
 
 This will create and RDD[(String, Int)] as shown below.
 
+![](https://github.com/athertahir/apache-spark/raw/master/Screenshots/Chapter 10/Selection_019.png)
  

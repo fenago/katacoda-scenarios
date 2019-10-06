@@ -10,6 +10,8 @@ Each line of this file represents one rating of one movie by one user, and has t
 
 **Step 2:** Let us now read this file to Spark from Spark shell using few options.
 
+Open the terminal and fire up the Spark shell `spark-shell`{{execute T1}}.
+
 Enter into the paste mode and execute the following code.
 `:paste`{{execute T1}}
 
@@ -27,3 +29,4 @@ We have used a new option here which is called NullValue. This will replace all 
 
 We can then call the show method as shown in the screenshot below to check if it was successful.
  
+ ![](https://github.com/athertahir/apache-spark/raw/master/Screenshots/Chapter 10/Selection_008.png)

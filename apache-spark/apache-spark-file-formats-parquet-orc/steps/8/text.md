@@ -6,6 +6,11 @@ userdata1.orc - http://bit.ly/2kfQi0J
 
 **Step 2:** Reading an ORC file is similar to what we have been doing so far through out this exercise.
 
+Enter into the paste mode and execute the following code.
+`:paste`{{execute T1}}
+
+**Note:** After pasting following code in the scala terminal, Press  `Ctrl` + `D` to run code.
+
 ```val orcData = spark
 .read
 .format("orc")

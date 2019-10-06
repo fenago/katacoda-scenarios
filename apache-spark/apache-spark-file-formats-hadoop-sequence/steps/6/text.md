@@ -1,7 +1,7 @@
 
 **Step 4:** However, since these are Hadoop data types, we cannot access the keys directly. We need to convert them to Java data types as shown below. The job will fail if we do not convert the data types and collect.
 
-```al newRDD = seqData.map
+```val newRDD = seqData.map
 {
 	case (x, y) => (x.toString, y.get())
 }```{{execute T1}}
@@ -12,7 +12,7 @@ As you can see from the screenshot above, we now have the RDD[(String, Int)]. We
 
 **Step 5:** Let us now collect the RDD and check out the results.
 
-`newRDD.collect()`
+`newRDD.collect()`{{execute T1}}
  
 ![](https://github.com/athertahir/apache-spark/raw/master/Screenshots/Chapter 10/Selection_023.png)
 
