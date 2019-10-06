@@ -8,9 +8,7 @@ Fire up the spark-shell from the terminal `spark-shell`{{execute}}
 
 **Step 2:** Next, let us convert the collection to dataset using the toDS method and rename the column as numbers using the withColumnRenamed method. The default column name when you create a dataset is value. Hence we change the default column name to numbers.
 
-```val numbersDS = numbers.toDS()
-.withColumnRenamed("value", "numbers")
-.cache()```{{execute}} 
+```val numbersDS = numbers.toDS().withColumnRenamed("value", "numbers").cache()```{{execute}} 
 
 The dataset should now be created with the renamed column.
 

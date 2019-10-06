@@ -17,5 +17,7 @@ Let us check the result using the show method.
 
 The following result is shown.
 
+![](https://github.com/athertahir/apache-spark/raw/master/Screenshots/Chapter 8/Selection_040.png)
+
  
 

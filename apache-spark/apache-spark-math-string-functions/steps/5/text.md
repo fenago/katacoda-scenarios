@@ -17,7 +17,8 @@ Let us check the result using the show method.
 
 `mathFuncs2.show()`{{execute}} 
  
-
 The following result is shown.
+
+![](https://github.com/athertahir/apache-spark/raw/master/Screenshots/Chapter 8/Selection_042.png)
 
  

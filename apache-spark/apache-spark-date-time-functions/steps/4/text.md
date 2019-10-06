@@ -8,6 +8,4 @@ Let us print the schema to check if we were able to successfully convert the dat
 ```casted.printSchema()
 casted.show()```{{execute}} 
 
- 
-
-As you can see from the screenshot above, we have successfully casted the date column as date type.
+As you can see, we have successfully casted the date column as date type.

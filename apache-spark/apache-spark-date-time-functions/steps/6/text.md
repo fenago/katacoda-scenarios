@@ -2,6 +2,11 @@
 
 **Step 4:** Let us now use the arithmetic functions to manipulate the date.
 
+Enter into the paste mode and execute the following code.
+`:paste`{{execute}}
+
+**Note:** After pasting following code in the scala terminal, Press  `Ctrl` + `D` to run code.
+
 ```val arithmetic = casted
   .withColumn("ageInDays", datediff(current_date(), $"date"))
   .withColumn("addedDays", date_add($"date", 25))

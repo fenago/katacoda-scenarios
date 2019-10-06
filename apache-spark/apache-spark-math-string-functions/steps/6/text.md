@@ -15,7 +15,8 @@ Let us check the result using the show method.
 
 The following result is shown.
 
- 
+![](https://github.com/athertahir/apache-spark/raw/master/Screenshots/Chapter 8/Selection_043.png)
+
 
 **Step 6:** Let us finally conclude math functions with a couple more of them.
 
@@ -31,7 +32,9 @@ Let us check the result using the show method.
 `mathFuncs4.show()`{{execute}} 
 
 
-
 The following result is shown.
 
+![](https://github.com/athertahir/apache-spark/raw/master/Screenshots/Chapter 8/Selection_044.png)
+
+ 
 
