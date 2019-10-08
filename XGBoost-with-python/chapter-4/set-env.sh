@@ -17,6 +17,7 @@ docker exec -it jupyter bash -c './prepareContainer.s'
 # # restart the docker container
 docker restart jupyter
 echo 'restarted Jupyter container'
+pip install xgboost
 # perhaps clone a GitHub repo inside the Jupyter container
 #docker exec -it jupyter git clone https://github.com/lucasjellema/DataAnalytics--IntroductionDataWrangling-JupyterNotebooks
 # and more stuff?
