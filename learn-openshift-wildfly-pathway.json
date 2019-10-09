@@ -1,0 +1,34 @@
+{
+  "title": "OpenShift WildFly",
+  "description": "Get Started with OpenShift & WildFly",
+  "courses": [
+    {
+      "course_id": "microservice-wildfly-swarm",
+      "id": "microservice-wildfly-swarm",
+      "title": "Enterprise Microservices with WildFly Swarm"
+    },
+    {
+      "course_id": "microservice-spring-boot",
+      "id": "microservice-spring-boot",
+      "title": "Microservices with Spring Boot"
+    },
+    {
+      "course_id": "continuous-delivery",
+      "id": "continuous-delivery",
+      "title": "Continuous Delivery"
+    },
+    {
+      "course_id": "debug-app",
+      "id": "debug-app",
+      "title": "Debugging Applications"
+    },
+	{
+      "course_id": "rhoar-getting-started-wfswarm",
+      "title": "WildFly Swarm development"
+    },
+	{
+      "course_id": "java-batch-processing",
+      "title": "Java EE Batch Processing with OpenShift, WildFly & JBeret"
+    }
+  ]
+}
