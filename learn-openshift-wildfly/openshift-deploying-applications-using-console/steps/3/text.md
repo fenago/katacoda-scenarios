@@ -1,5 +1,7 @@
 We will deploy and access wildfly application using OpenShift web console.
 
+Click `Try Sample Repository` to use sample github repository.
+
 ![](https://github.com/fenago/katacoda-scenarios/raw/master/learn-openshift-wildfly/openshift-deploying-applications-using-console/steps/3/deploy.JPG)
 
 ![](https://github.com/fenago/katacoda-scenarios/raw/master/learn-openshift-wildfly/openshift-deploying-applications-using-console/steps/3/deploy2.JPG)

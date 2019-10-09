@@ -11,17 +11,21 @@
       "answer": "steps/1/answer.md"
     },
     {
-      "title": "Step 2 - Deploying Image",
+      "title": "Step 2 - Web Console",
+      "text": "steps/0/text.md"
+    }, 
+    {
+      "title": "Step 3 - Deploying Application",
       "text": "steps/2/text.md",
       "verify": "steps/2/verify.sh"
     },    
 	{
-      "title": "Step 3 - Create Route",
+      "title": "Step 4 - Deploying Application",
       "text": "steps/3/text.md",
       "verify": "steps/3/verify.sh"
     },
 	{
-      "title": "Step 4 - Delete Application",
+      "title": "Step 5 - Delete Application",
       "text": "steps/4/text.md",
       "verify": "steps/4/verify.sh",
       "answer": "steps/4/answer.md"
