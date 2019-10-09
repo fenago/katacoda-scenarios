@@ -70,7 +70,5 @@ If the application is not ready yet, you will see messages like the following, w
 is needed to build and deploy the application:
 
 ```text
-Application is not available
-
-The application is currently not serving requests at this endpoint. It may not have been started or is still starting.
+Connecting to Port 80
 ```

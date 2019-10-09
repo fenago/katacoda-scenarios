@@ -44,7 +44,7 @@ it cannot be restarted.
 
 To schedule a job execution:
 
-``curl -s -X POST -H 'Content-Type:application/json' --data "" -d '{"jobName":"csv2db", "initialDelay":1, "interval":60}' "http://intro-jberet-jberet-lab.[[HOST_SUBDOMAIN]]-80-[[KATACODA_HOST]].environments.katacoda.com/intro-jberet/api/jobs/csv2db/schedule" | python -m json.tool``{{execute}}
+``curl -s -X POST -H 'Content-Type:application/json' -d '{"jobName":"csv2db", "initialDelay":1, "interval":60}' "http://intro-jberet-jberet-lab.[[HOST_SUBDOMAIN]]-80-[[KATACODA_HOST]].environments.katacoda.com/intro-jberet/api/jobs/csv2db/schedule" | python -m json.tool``{{execute}}
 
 And you will see the resultant job schedule information as output:
 
