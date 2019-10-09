@@ -1,9 +1,9 @@
-Our sample application [intro-jberet](https://github.com/jberet/intro-jberet)
+Our sample application [intro-jberet](https://github.com/athertahir/intro-jberet)
 demonstrates basic concepts and programming model in batch processing, such as
 job, step (batchlet- and chunk-type steps), batch properties, item reader and writer.
 
 The job structure and flow are defined in the job XML file 
-[csv2db](https://github.com/jberet/intro-jberet/blob/master/src/main/resources/META-INF/batch-jobs/csv2db.xml).
+[csv2db](https://github.com/athertahir/intro-jberet/blob/master/src/main/resources/META-INF/batch-jobs/csv2db.xml).
 It contains 2 steps:
 
 * ``csv2db.step1``: a batchlet-type step, which performs a specific task: initializing table ``MOVIES``.

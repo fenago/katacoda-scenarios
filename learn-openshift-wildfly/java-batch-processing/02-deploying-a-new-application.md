@@ -1,6 +1,6 @@
 To create our new Java batch application based on WildFly image, run the command:
 
-``oc new-app wildfly~https://github.com/jberet/intro-jberet.git``{{execute}}
+``oc new-app wildfly~https://github.com/athertahir/intro-jberet.git``{{execute}}
 
 And the output should look something like this:
 
@@ -13,7 +13,7 @@ And the output should look something like this:
 
     Tags: builder, wildfly, wildfly10
 
-    * A source build using source code from https://github.com/jberet/intro-jberet.git will be created
+    * A source build using source code from https://github.com/athertahir/intro-jberet.git will be created
       * The resulting image will be pushed to image stream "intro-jberet:latest"
       * Use 'start-build' to trigger a new build
     * This image will be deployed in deployment config "intro-jberet"

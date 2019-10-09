@@ -7,7 +7,7 @@ Now you are probably interested in expanding your work with OpenShift in a less 
 For hints and ideas of where to start next check out the resources below.
 
 ### JBeret Resources:
-* [Sample Application Used in this Course](https://github.com/jberet/intro-jberet)
+* [Sample Application Used in this Course](https://github.com/athertahir/intro-jberet)
 * [Project JBeret Github Source Repository](https://github.com/jberet/jsr352)
 * [Project JBeret Community Forum](https://developer.jboss.org/en/jberet/)
 * [Project JBeret JIRA Issues](https://issues.jboss.org/browse/JBERET-355?jql=project%20%3D%20JBERET)

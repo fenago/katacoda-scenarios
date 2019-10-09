@@ -6,7 +6,7 @@ It usually involves large volume of data or intensive computation. It is used ac
 many industries to tackle tasks like data ETL (extract, transform and load), recurring
 account statement generation, periodic security scanning, financial portfolio analysis, etc.
  
- [The sample batch application](https://github.com/jberet/intro-jberet)
+ [The sample batch application](https://github.com/athertahir/intro-jberet)
  demonstrates basic batch processing operations, such as
   
  * composing a job with both batchlet step and chunk step
@@ -14,10 +14,6 @@ account statement generation, periodic security scanning, financial portfolio an
  * start/restart/stop/abandon/schedule job executions
  * list job and step execution details and status
  
-## Before you get started
-
-If you are not familiar with the OpenShift Container Platform, it's worth taking a few minutes to understand the basics of the platform as well as the environment that you will be using for this self paced tutorial.  Head on over to [Learning OpenShift - Getting Started](https://learn.openshift.com/introduction/getting-started/).
-
 ## About project JBeret
 
 [Project JBeret](https://github.com/jberet/jsr352) implements
