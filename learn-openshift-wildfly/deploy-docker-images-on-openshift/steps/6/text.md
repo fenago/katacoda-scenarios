@@ -18,4 +18,7 @@ NAME           HOST/PORT                                    PATH      SERVICES  
 demo-wildfly   demo-wildfly-myproject.192.168.1.66.xip.io             demo-wildfly   8080-tcp   
 ```
 
-If you prefer you can browse through the console and click on the router to test the application!
+#### cURL
+
+Run the curl command to test the application!
+`curl -I demo-wildfly-myapp.[[HOST_SUBDOMAIN]]-80-[[KATACODA_HOST]].environments.katacoda.com`{{execute}}
