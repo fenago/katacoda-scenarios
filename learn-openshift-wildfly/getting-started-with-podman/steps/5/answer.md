@@ -1,1 +1,0 @@
-``oc delete all --selector app=blog-django-py``{{execute}}

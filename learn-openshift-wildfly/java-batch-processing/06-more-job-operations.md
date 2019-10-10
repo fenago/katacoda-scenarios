@@ -101,7 +101,7 @@ Your output may be like this:
   }
 ]
 ```
-From the above output, we can see there is 1 job schedule, which has been fulfilled once with job execution id ``4``.
+From the above output, we can see there is 1 job schedule, which has been fulfilled once.
 Its status remains ``SCHEDULED``, since it's a recurring job schedule with more job executions to come.
 
 To cancel the above recurring job schedule:
