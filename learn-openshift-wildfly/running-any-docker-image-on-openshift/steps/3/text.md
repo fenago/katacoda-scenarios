@@ -1,6 +1,6 @@
 Next thing will be creating a Binary Build that will hold our Image. You can do it through the "oc new-build" command:
 
-oc new-build --binary --name=mywildfly -l app=mywildfly
+`oc new-build --binary --name=mywildfly -l app=mywildfly`{{execute}}
 
 ![](https://github.com/fenago/katacoda-scenarios/raw/master/learn-openshift-wildfly/running-any-docker-image-on-openshift/steps/3/1.JPG)
 

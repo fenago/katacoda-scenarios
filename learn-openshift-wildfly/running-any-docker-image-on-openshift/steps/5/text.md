@@ -1,6 +1,6 @@
 Now that the ImageStream is available, let's create an application in the current project which uses this ImageStream:
 
-oc new-app --image-stream=mywildfly
+`oc new-app --image-stream=mywildfly`{{execute}}
 
 ```
 --> Found image 57af1ff (48 seconds old) in image stream "myproject/mywildfly" under tag "latest" for "mywildfly"

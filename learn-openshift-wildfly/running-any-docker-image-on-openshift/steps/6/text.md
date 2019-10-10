@@ -7,6 +7,7 @@ route.route.openshift.io/mywildfly exposed
 ```
 
 And verify the Route URL with:
+
 `oc get route`{{execute}} 
 
 ```

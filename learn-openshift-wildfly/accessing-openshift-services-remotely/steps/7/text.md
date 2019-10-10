@@ -20,4 +20,4 @@ Ok, last step will be port-forwarding the port 9990 which is used both by the CL
 
 `oc port-forward wildfly-1-<update> 9990:9990`{{copy}}
 
-**Important:** Run above below in **terminal 2** . You can open it by clicking `+` icon and selecting `new terminal`
+**Important:** Run above command in **terminal 2** . You can open it by clicking `+` icon and selecting `new terminal`
