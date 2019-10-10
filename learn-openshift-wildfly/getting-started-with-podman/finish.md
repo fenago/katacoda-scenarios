@@ -1,1 +1,1 @@
-You've completed your Openshift Services and Routes Lab Exercise!
+You've completed your Lab Exercise!

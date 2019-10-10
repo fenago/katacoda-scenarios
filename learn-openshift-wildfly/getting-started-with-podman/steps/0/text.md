@@ -1,15 +1,10 @@
-To begin, click on the **Dashboard** tab on your screen. This will open the web console on your browser.
+Podman is a container runtime which provides the same features of Docker. The main difference is that it doesn’t require any running daemon (like dockerd) to run on your system. Pods and containers processes are created as children of the Podman tool. Besides it, it can also run without root privileges. So let’s see how we can use it to run some simple Linux containers and WildFly application server.
 
-You should see an **OKD** window with **Username** and **Password** forms.
+Installing Podman
+The installation of podman is quite simple: all you need is using the yum/dnf tool to install the "podman" library:
 
-![](https://github.com/fenago/katacoda-scenarios/raw/master/learn-openshift-wildfly/openshift-deploying-applications-using-console/steps/0/ocp-login.png)
+```
+--------- CentOS --------------
+```
 
-For this scenario, log in by entering the following:
-
-**Username:** `developer`{{copy}}
-
-**Password:** `developer`{{copy}}
-
-You will see list of projects. Select ``myproject`` to see  _Overview_ page.
-
-![](https://github.com/fenago/katacoda-scenarios/raw/master/learn-openshift-wildfly/openshift-deploying-applications-using-console/steps/2/deploy.JPG)
+`sudo yum -y install podman`{{execute}}

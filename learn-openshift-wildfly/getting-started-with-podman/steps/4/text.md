@@ -1,12 +1,7 @@
-Running following command to list all the resources created in the project:
-``oc get all -o name``{{execute}}
 
-This will display output similar to:
 
-```
-```
+We can check the virtual IP Address that has been assigned to your container and reach it out:
+`podman inspect wildfly | grep "IPAddress"`{{execute}}
 
-# Task
-To complete this step, delete resources for the application by using the `--selector` parameter.
-
-You can verify that the resources have been deleted by: ``oc get all -o name``{{execute}}
+Update the container ip and run following command:
+`curl <container-ip>:8080 | grep "WildFly"`{{copy}}

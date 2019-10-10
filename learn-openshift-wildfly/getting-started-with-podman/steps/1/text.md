@@ -1,7 +1,14 @@
-In this step, you need to login and create a project in OpenShift.
 
-Running the folowing command to login to the OpenShift cluster
-`oc login -u developer -p developer --insecure-skip-tls-verify [[HOST_SUBDOMAIN]]-8443-[[KATACODA_HOST]].environments.katacoda.com`{{execute}}
+One of the simplest examples could be running an HelloWorld container.
 
-# Task
-To complete this step, create a new project called ``myproject`` using CLI.
+The CLI for Podman is compatible with Docker, meaning it should feel familiar. For example, if you were to build a new image, you can use a Dockerfile and build it using podman build command. For example:
+
+```cat > Dockerfile <<EOF
+FROM fedora:28
+RUN dnf -y install cowsay
+EOF```{{execute}}
+
+
+Now build the image with:
+`podman build . -t hello-world`{{execute}}
+

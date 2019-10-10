@@ -1,1 +1,1 @@
-In this Lab we will get introduced to Openshift Services and Routes
+In this Lab we will get introduced to Podman
