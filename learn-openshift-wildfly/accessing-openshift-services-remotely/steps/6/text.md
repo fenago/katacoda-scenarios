@@ -1,6 +1,6 @@
 Let's see another example so that we can connect to Wildfly application server CLI or Web console. Let's create the application at first:
 
-`oc new-app jboss/wildfly --name=wildfly`{{execute}}
+`oc new-app jboss/wildfly --name=wildfly`{{execute T1}}
 
 ```
 --> Found Docker image d59073d (11 days old) from Docker Hub for "jboss/wildfly"
@@ -20,10 +20,10 @@ Let's see another example so that we can connect to Wildfly application server C
 
 #### Expose Application
 Let's check that the service is available:
-`oc get services`{{execute}}
+`oc get services`{{execute T1}}
 
 Let's expose the route for this service:
-`oc expose service wildfly`{{execute}}
+`oc expose service wildfly`{{execute T1}}
 
 ```
 route "wildfly" exposed

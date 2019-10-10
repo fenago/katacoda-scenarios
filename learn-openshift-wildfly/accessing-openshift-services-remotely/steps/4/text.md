@@ -1,6 +1,6 @@
  We have created a route, however even with a route connection to the container is still limited to http. Thus, it is necessary to port-forward the route to localhost using the oc tool. Let's see the pod name:
 
-`oc get pods`{{execute}}
+`oc get pods`{{execute T1}}
 
 Copy pod name and let's forward this pod through the port `3306` as follows:
 

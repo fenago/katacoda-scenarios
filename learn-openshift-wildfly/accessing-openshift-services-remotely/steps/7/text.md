@@ -1,6 +1,6 @@
 Ok, now before port-forwarding, we will create a management user, by executing the add-user command remotely on the pod:
 
-`oc get pods`{{execute}}
+`oc get pods`{{execute T1}}
 
 ```
 NAME              READY     STATUS    RESTARTS   AGE

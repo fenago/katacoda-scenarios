@@ -8,10 +8,10 @@ Out of the box Openshift uses the router component to let external clients acces
 Now we will add an application out of the available templates:
 Once ready, open a terminal and at the command prompt, enter the following command to create a Java web application.
 
-`oc get templates -n openshift`{{execute}}
+`oc get templates -n openshift`{{execute T1}}
 
 For our example, we will create a mysql database, and let the template assign some defaults:
-`oc new-app mysql-ephemeral --name=mysqldemo`{{execute}}
+`oc new-app mysql-ephemeral --name=mysqldemo`{{execute T1}}
 
 
 #### Output
