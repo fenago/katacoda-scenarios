@@ -7,6 +7,9 @@
   "details": {
     "steps": [{
       "title": "Openshift CLI",
+      "text": "steps/0/text.md"
+    },{
+      "title": "Openshift CLI",
       "text": "steps/1/text.md"
     },
     {

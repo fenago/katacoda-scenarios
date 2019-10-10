@@ -1,47 +1,38 @@
-The first S2I lab will use a very simple WildFly application that displays the WildFly configuration using a standard WildFly function—myapp(). It's composed of a single index.wildfly file, with the following content:
+Installing WildFly Operator
+We will follow the instructions contained in https://operatorhub.io/operator/wildfly
 
-#### Create Application
-Once ready, open a terminal and at the command prompt, enter the following command to create a Java web application.
+So at first install the Operator Lifecycle Manager (OLM), which is a tool to help manage the Operators running on your cluster.
 
-`oc new-app --name=myapp wildfly~https://github.com/openshiftdemos/os-sample-java-web.git`{{execute}}
+1
+curl -sL https://github.com/operator-framework/operator-lifecycle-manager/releases/download/0.10.0/install.sh | bash -s 0.10.0
+Then, we can install WildFly Operator itself by running kubectl against WildFly's Operator YAML file:
 
-And the output should look something like this:
+1
+2
+$ kubectl create -f https://operatorhub.io/install/wildfly.yaml
+subscription.operators.coreos.com/my-wildfly created
+After installing, verify that the Operator is listed in your resources with:
 
-```
---> Found image 0fe7da4 (4 weeks old) in image stream "wildfly" in project "openshift" under tag "10.0" for "wildfly"
+kubectl get csv -n operators
+ 
+NAME                      DISPLAY   VERSION   REPLACES                  PHASE
+wildfly-operator.v0.2.0   WildFly   0.2.0     wildfly-operator.v0.1.0   Succeeded
+So from now, you have a Custom Resource Definition named WildFlyServer which can be used to deliver new instances of WildFly Application Server. At minimum, you can provide an application image to it and it will be built on the top of WildFly:
 
-    WildFly 10.0.0.Final
-    --------------------
-    Platform for building and running JEE applications on WildFly 10.0.0.Final
+1
+2
+3
+4
+5
+6
+7
+apiVersion: wildfly.org/v1alpha1
+kind: WildFlyServer
+metadata:
+  name: quickstart
+spec:
+  applicationImage: 'quay.io/jmesnil/wildfly-operator-quickstart:16.0'
+  size: 1
+Notice the parameter applicationImage which refererences a Docker Image and size which is the number of Pods that will be started with that Image.
 
-    Tags: builder, wildfly, wildfly10
-
-    * A source build using source code from https://github.com/openshiftdemos/os-sample-java-web.git will be created
-      * The resulting image will be pushed to image stream "myapp:latest"
-    * This image will be deployed in deployment config "myapp"
-    * Port 8080/tcp will be load balanced by service "myapp"
-      * Other containers can access this service through the hostname "myapp"
-
---> Creating resources with label app=myapp ...
-    imagestream "myapp" created
-    buildconfig "myapp" created
-    deploymentconfig "myapp" created
-    service "myapp" created
---> Success
-    Build scheduled, use 'oc logs -f bc/myapp' to track its progress.
-    Run 'oc status' to view your app.
-The --name=myapp names the application. By default it would be the base name of the URL without extension, in our case os-sample-java-web, but it’s much nicer to have the application named myapp and that’s what we did using this switch.
-```
-
-OpenShift automatically linked wildfly with version 10.0 of the WildFly image, that corresponds to the current latest version. You could as well use wildfly:10 as prefix to deploy using the specific version, e.g.
-
-```
-oc new-app wildfly:10.0~https://github.com/openshiftdemos/os-sample-java-web.git
-```
-
-The preceding command does the following:
-
-- Uses myapp as a path to the application's source code
-- Automatically detects the programming language
-- Initiates the build process
-- Creates a number of OpenShift resources
+Let's see now a more complex example which involves a custom WildFly configuration to be loaded by the Operator.

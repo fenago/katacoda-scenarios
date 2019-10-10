@@ -1,28 +1,19 @@
-The build process takes some time. During the first phase, you can see a container with -build in its name. This container is deployed from the WildFly builder image and is responsible for build operations:
-`oc get pod`{{execute}}
+Clustering WildFly using the Operator
+To install a WildFly cluster, we will need to provide the HA XML configuration as a ConfigMap that is accessible by the Operator. Let's see how to do it. First of all, some grants are required, so provide to your user the service account Role for your project with:
 
-
-**Note:** Please wait for the deployment to complete and all the pods to be running, It will take around **2 minutes** to complete.
-
-
-After some time, the application will be available. That means that the application's pod should be in a Running state:
-`oc get pod`{{execute}}
-
+oc policy add-role-to-user view system:serviceaccount:$(oc project -q):default -n $(oc project -q)
 
 ```
-NAME              READY  STATUS     RESTARTS  AGE
-myapp-1-build   0/1    Completed  0         39s
-myapp-1-h9xt5   1/1    Running    0         4s
+role "view" added: "system:serviceaccount:myproject:default"
 ```
 
-OpenShift built and deployed the myapp application, which is now available by using its service IP. Let's try to access our application using the curl command:
-`oc get svc`{{execute}}
+#### Git Clone
+Clone the following repository by executing following command in the terminal.
+`git clone https://github.com/athertahir/openshift-wildfly.git`{{execute}}
 
-```
-NAME    CLUSTER-IP    EXTERNAL-IP PORT(S)            AGE
-myapp **172.30.54.195** <none>      8080/TCP,8443/TCP  1h
-```
+Now, move in the directory which contains the yaml files.
 
-`curl -s http://<svc-ip>:8080 | head -n 10`{{copy}}
+`cd wildfly-operator/`{{execute}}
 
-**Note:** The myapp() function displays the WildFly configuration as an HTML table.
+In the next step, we will use the example configuration from GitHub: https://github.com/wildfly/wildfly-operator/tree/master/examples/clustering
+

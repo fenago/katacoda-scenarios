@@ -1,18 +1,18 @@
-In this step, we will learn OpenShift CLI using the command _oc_.
 
-Before we begin, make sure that your OpenShift is up and running. Let's login as system:admin user since managing quotas & limits requires admin privileges:
-`oc login -u system:admin`{{execute}}
+In order to install the Operator we need to make sure kubectl binary is installed on your machine. You can download the latest release with the command:
 
-# Output
+curl -LO https://storage.googleapis.com/kubernetes-release/release/`curl -s https://storage.googleapis.com/kubernetes-release/release/stable.txt`/bin/linux/amd64/
+kubectl
+
+Then, make the kubectl binary executable.
+chmod +x ./kubectl
+
+Move the binary in to your PATH.
+sudo mv ./kubectl /usr/local/bin/kubectl
+
+And finally test to ensure the version you installed is up-to-date:
+kubectl version
 
 ```
-Login successful.
-
-You don't have any projects. You can try to create a new project, by running
-
-    oc new-project <projectname>
+Client Version: version.Info{Major:"1", Minor:"15", GitVersion:"v1.15.3", GitCommit:"2d3c76f9091b6bec110a5e63777c332469e0cba2", GitTreeState:"clean", BuildDate:"2019-08-19T11:13:54Z", GoVersion:"go1.12.9", Compiler:"gc", Platform:"linux/amd64"}
 ```
-
-To create a new project called ``myapp`` run the command:
-`oc new-project myapp`{{execute}}
-

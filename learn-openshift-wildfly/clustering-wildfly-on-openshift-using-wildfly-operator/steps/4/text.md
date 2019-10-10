@@ -1,28 +1,32 @@
-A summary of the build process can be displayed by running the oc status or oc status -v commands:
 
+The standalone XML file must be put in a ConfigMap that is available to the operator. The standaloneConfigMap must provide the name of this ConfigMap as well as the key corresponding to the name of standalone XML file.
 
-`oc status -v`{{execute}}
+Pick up the standalone-openshift.xml from the config folder and create a ConfigMap with:
+`kubectl create configmap clusterbench-config-map --from-file config/standalone-openshift.xml`{{execute}}
 
-View details with 'oc describe <resource>/<name>' or list everything with 'oc get all'.
-The preceding command shows that deployment #1 has been rolled out. It can also contain some useful information for troubleshooting the build, in case something goes wrong.
+Now, we will add the Custom Resource Definition, which is available in the crds folder:
+`kubectl apply -f crds/clusterbench.yaml`{{execute}}
 
-There is another way to display build logs with low-level details—using the oc logs command. We need to show the log for the buildconfig (or just bc) entity, which can be displayed, as follows, by using the oc logs bc/myapp command:
-`oc logs bc/myapp`{{execute}}
+Great! The cluster has been created. As you can see from the CRD, the clusterbench.yaml file will start 2 Pods in Cluster:
 
 ```
-Cloning "https://github.com/neoncyrex/myapp.git" ...
-  Commit: 638030df45052ad1d9300248babe0b141cf5dbed (initial commit)
-  Author: vagrant <vagrant@openshift.example.com>
-  Date: Sat Jun 2 04:22:59 2018 +0000
----> Installing application source...
-=> sourcing 20-copy-config.sh ...
----> 05:00:11 Processing additional arbitrary httpd configuration provided by s2i ...
-=> sourcing 00-documentroot.conf ...
-=> sourcing 50-mpm-tuning.conf ...
-=> sourcing 40-ssl-certs.sh ...
-Pushing image 172.30.1.1:5000/myapp/myapp:latest ...
-...
-Push successful
+apiVersion: wildfly.org/v1alpha1
+kind: WildFlyServer
+metadata:
+  name: clusterbench
+spec:
+  applicationImage: "quay.io/jmesnil/clusterbench-ee7:17.0"
+  size: 2
+  standaloneConfigMap:
+    name: clusterbench-config-map
+    key: standalone-openshift.xml
 ```
 
-The preceding output gives us some insight into how builds work.
+This is verified by:
+`oc get pods`{{execute}}
+
+```
+NAME             READY     STATUS    RESTARTS   AGE
+clusterbench-0   1/1       Running   0          3m
+clusterbench-1   1/1       Running   0          2m
+```
