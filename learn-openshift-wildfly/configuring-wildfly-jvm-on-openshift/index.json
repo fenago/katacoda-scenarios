@@ -6,9 +6,7 @@
   "details": {
     "steps": [{
       "title": "Step 1 - Creating Project",
-      "text": "steps/1/text.md",
-	    "verify": "steps/1/verify.sh",
-      "answer": "steps/1/answer.md"
+      "text": "steps/1/text.md"
     },
     {
       "title": "Step 2 - Web Console",
@@ -25,11 +23,17 @@
       "verify": "steps/3/verify.sh"
     },
 	{
-      "title": "Step 5 - Delete Application",
-      "text": "steps/4/text.md",
-      "verify": "steps/4/verify.sh",
-      "answer": "steps/4/answer.md"
-    }],
+      "title": "Step 5 - ",
+      "text": "steps/4/text.md"
+    },
+    {
+        "title": "Step 6 - ",
+        "text": "steps/5/text.md"
+      },
+      {
+          "title": "Step 7 - ",
+          "text": "steps/6/text.md"
+        }],
     "intro": {
       "courseData": "env-init.sh",
       "code": "set-env.sh",
@@ -39,6 +43,9 @@
       "text": "finish.md"
     }
   },
+  "files": [
+    "limits.json"
+  ],
   "environment": {
     "showdashboard": true,
     "dashboards": [{"name": "Dashboard", "port": 8443}],

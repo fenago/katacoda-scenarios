@@ -4,4 +4,6 @@ Running the folowing command to login to the OpenShift cluster
 `oc login -u developer -p developer --insecure-skip-tls-verify [[HOST_SUBDOMAIN]]-8443-[[KATACODA_HOST]].environments.katacoda.com`{{execute}}
 
 # Task
-To complete this step, create a new project called ``myproject`` using CLI.
+To complete this step, create a new project called ``demowildfly`` using CLI.
+
+``oc new-project demowildfly``{{execute}}

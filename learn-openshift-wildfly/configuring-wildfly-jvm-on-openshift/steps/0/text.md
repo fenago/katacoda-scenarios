@@ -10,6 +10,6 @@ For this scenario, log in by entering the following:
 
 **Password:** `developer`{{copy}}
 
-You will see list of projects. Select ``myproject`` to see  _Overview_ page.
+You will see list of projects. Select ``demowildfly`` to see  _Overview_ page.
 
 ![](https://github.com/fenago/katacoda-scenarios/raw/master/learn-openshift-wildfly/openshift-deploying-applications-using-console/steps/2/deploy.JPG)

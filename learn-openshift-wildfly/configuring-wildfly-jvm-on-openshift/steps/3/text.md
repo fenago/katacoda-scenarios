@@ -1,16 +1,15 @@
-We will deploy and access wildfly application using OpenShift web console.
-
-Click `Try Sample Repository` to use sample github repository.
-
-![](https://github.com/fenago/katacoda-scenarios/raw/master/learn-openshift-wildfly/openshift-deploying-applications-using-console/steps/3/deploy.JPG)
-
-![](https://github.com/fenago/katacoda-scenarios/raw/master/learn-openshift-wildfly/openshift-deploying-applications-using-console/steps/3/deploy2.JPG)
+The build process takes some time. During the first phase, you can see a container with -build in its name. This container is deployed from the WildFly builder image and is responsible for build operations:
+`oc get pod`{{execute}}
 
 
-# Protip
-Openshift uses _Route_ to make application accessible outside of the OpenShift cluster. You can verify that the application is accesible using route by clicking route url.
+**Note:** Please wait for the deployment to complete and all the pods to be running, It will take around **2 minutes** to complete.
 
-**Note:** It will take **up to 3 minutes** before it's accessible.
 
-![](https://github.com/fenago/katacoda-scenarios/raw/master/learn-openshift-wildfly/openshift-deploying-applications-using-console/steps/3/deploy3.JPG)
+After some time, the application will be available. That means that the application's pod should be in a Running state:
+`oc get pod`{{execute}}
 
+```
+NAME              READY  STATUS     RESTARTS  AGE
+myapp-1-build   0/1    Completed  0         39s
+myapp-1-h9xt5   1/1    Running    0         4s
+```
