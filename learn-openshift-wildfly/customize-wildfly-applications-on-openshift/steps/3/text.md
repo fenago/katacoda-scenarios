@@ -1,16 +1,9 @@
-We will deploy and access wildfly application using OpenShift web console.
+To build the application on Openshift specify the root folder as Git Repository URL: `https://github.com/fmarchioni/mastertheboss`{{copy}}
 
-Click `Try Sample Repository` to use sample github repository.
+Next, specify the subfolder `openshift/modules`{{copy}} as path:
 
-![](https://github.com/fenago/katacoda-scenarios/raw/master/learn-openshift-wildfly/openshift-deploying-applications-using-console/steps/3/deploy.JPG)
+![](https://github.com/fenago/katacoda-scenarios/raw/master/learn-openshift-wildfly/customize-wildfly-applications-on-openshift/steps/3/deploy.JPG)
 
-![](https://github.com/fenago/katacoda-scenarios/raw/master/learn-openshift-wildfly/openshift-deploying-applications-using-console/steps/3/deploy2.JPG)
+![](https://github.com/fenago/katacoda-scenarios/raw/master/learn-openshift-wildfly/customize-wildfly-applications-on-openshift/steps/3/deploy2.JPG)
 
-
-# Protip
-Openshift uses _Route_ to make application accessible outside of the OpenShift cluster. You can verify that the application is accesible using route by clicking route url.
-
-**Note:** It will take **up to 3 minutes** before it's accessible.
-
-![](https://github.com/fenago/katacoda-scenarios/raw/master/learn-openshift-wildfly/openshift-deploying-applications-using-console/steps/3/deploy3.JPG)
 

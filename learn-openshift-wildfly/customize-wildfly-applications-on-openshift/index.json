@@ -6,29 +6,27 @@
   "details": {
     "steps": [{
       "title": "Step 1 - Creating Project",
-      "text": "steps/1/text.md",
-	    "verify": "steps/1/verify.sh",
-      "answer": "steps/1/answer.md"
+      "text": "steps/0/text.md"
     },
     {
       "title": "Step 2 - Web Console",
-      "text": "steps/0/text.md"
+      "text": "steps/1/text.md"
     }, 
     {
       "title": "Step 3 - Deploying Application",
-      "text": "steps/2/text.md",
-      "verify": "steps/2/verify.sh"
+      "text": "steps/2/text.md"
+    },   
+    {
+      "title": "Step 4 - Deploying Application",
+      "text": "steps/22/text.md"
     },    
 	{
-      "title": "Step 4 - Deploying Application",
-      "text": "steps/3/text.md",
-      "verify": "steps/3/verify.sh"
+      "title": "Step 5 - Deploying Application",
+      "text": "steps/4/text.md"
     },
 	{
-      "title": "Step 5 - Delete Application",
-      "text": "steps/4/text.md",
-      "verify": "steps/4/verify.sh",
-      "answer": "steps/4/answer.md"
+      "title": "Step 6 - Delete Application",
+      "text": "steps/5/text.md"
     }],
     "intro": {
       "courseData": "env-init.sh",

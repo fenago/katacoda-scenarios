@@ -1,1 +1,1 @@
-``oc delete all --selector app=blog-django-py``{{execute}}
+``oc delete all --selector app=openshift-jee-sample``{{execute}}

@@ -5,3 +5,5 @@ Running the folowing command to login to the OpenShift cluster
 
 # Task
 To complete this step, create a new project called ``myproject`` using CLI.
+
+``oc new-project myproject``{{execute}}

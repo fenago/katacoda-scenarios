@@ -1,16 +1,38 @@
-In this step, you will deploy existing Docker image in OpenShift using the *Web Console*.
+In this scenario, we will add custom modules and deployments to WildFly on Openshift. It is available on github at https://github.com/fmarchioni/mastertheboss/tree/master/openshift/module, will show how to add external modules and deployments during the Source to Image process.
 
-You can deploy your application using web console as well as with `cli` tools. To deploy using web, click on the `Add to project` in the top bar. Then type `wildfly`{{copy}} into the Filter by keyword text field. And you will see list of WildFly based templates similar to:
+![](https://github.com/fenago/katacoda-scenarios/raw/master/learn-openshift-wildfly/openshift-deploying-applications-using-console/steps/2/1.png)
 
+As you can see from the above picture, you can use the following folders:
 
-#### Deploy Application
-- Click  *Add to Project* button from *Overview* page.
-- Type `wildfly`{{copy}} into the Filter.
-- Choose the *wildfly* template.
+- **modules:** Place here modules just like you would do in a bare-metal installation of WildFly. They will be automatically uploaded on WildFly
+- **deployments:** Place here artifacts that are to be deployed on the application server.
 
+![](https://github.com/fenago/katacoda-scenarios/raw/master/learn-openshift-wildfly/openshift-deploying-applications-using-console/steps/2/1.JPG)
 
-![](https://github.com/fenago/katacoda-scenarios/raw/master/learn-openshift-wildfly/openshift-deploying-applications-using-console/steps/2/deploy2.JPG)
+The module.xml loads the itext JAR file and uploads it into the application server.
 
+```
+<module xmlns="urn:jboss:module:1.1" name="com.itext">
+ 
+    <properties>
+        <property name="jboss.api" value="private"/>
+    </properties>
+ 
+      <resources>
+        <resource-root path="itext-5.0.5.jar"/> 
+    </resources>
+ 
+</module>
+```
 
-![](https://github.com/fenago/katacoda-scenarios/raw/master/learn-openshift-wildfly/openshift-deploying-applications-using-console/steps/2/deploy3.JPG)
+In order to link the library with the application server add a jboss-deployment-structure.xml file:
 
+```
+<jboss-deployment-structure>
+  <deployment>
+    <dependencies>
+      <module name="com.itext" />
+    </dependencies>
+    </deployment>
+</jboss-deployment-structure>
+```
