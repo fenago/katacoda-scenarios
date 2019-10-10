@@ -1,28 +1,12 @@
-The build process takes some time. During the first phase, you can see a container with -build in its name. This container is deployed from the WildFly builder image and is responsible for build operations:
-`oc get pod`{{execute}}
+We will learn now how to load in a Pod a Docker image available from Docker Hub. Let's say you want the custom image "wildfly-100-centos7":
 
-
-**Note:** Please wait for the deployment to complete and all the pods to be running, It will take around **2 minutes** to complete.
-
-
-After some time, the application will be available. That means that the application's pod should be in a Running state:
-`oc get pod`{{execute}}
-
+`docker search wildfly-100-centos7`{{execute}}
 
 ```
-NAME              READY  STATUS     RESTARTS  AGE
-myapp-1-build   0/1    Completed  0         39s
-myapp-1-h9xt5   1/1    Running    0         4s
+INDEX       NAME                                             DESCRIPTION                                     STARS     OFFICIAL   AUTOMATED
+docker.io   docker.io/openshift/wildfly-100-centos7          A Centos7 based WildFly v10.0 image for us...   1       
 ```
 
-OpenShift built and deployed the myapp application, which is now available by using its service IP. Let's try to access our application using the curl command:
-`oc get svc`{{execute}}
+This is a WildFly intended for use with OpenShift which is enabled for `Source-To-Image`.
 
-```
-NAME    CLUSTER-IP    EXTERNAL-IP PORT(S)            AGE
-myapp **172.30.54.195** <none>      8080/TCP,8443/TCP  1h
-```
-
-`curl -s http://<svc-ip>:8080 | head -n 10`{{copy}}
-
-**Note:** The myapp() function displays the WildFly configuration as an HTML table.
+**Source-to-Image (S2I)** is a mechanism for building custom Docker images. It produces ready-to-run images by injecting application source into a Docker image and assembling a new Docker image. The new image incorporates the base image and built source

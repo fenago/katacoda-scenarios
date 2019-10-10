@@ -1,1 +1,1 @@
-In this Lab we will get learn to Deploy Applications using SourceCode.
+In this Lab we will get learn how to run any Docker image on Openshift.

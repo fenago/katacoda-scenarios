@@ -1,28 +1,17 @@
-A summary of the build process can be displayed by running the oc status or oc status -v commands:
+The great thing is that you can do all this with a single command. So let's say you want to load the image "openshift/wildfly-100-centos7" and produce a new image using the source code available on https://github.com/fmarchioni/mastertheboss in the folder "openshift-demo"
+
+(Have a look at the application here: https://github.com/fmarchioni/mastertheboss/tree/master/os-demo)
+
+Here's the command which does the magic:
+
+`oc new-app openshift/wildfly-100-centos7~https://github.com/fmarchioni/mastertheboss   --context-dir=os-demo --name=demo-wildfly`{{execute}}
+
+As you can see from the output several things happen:
+
+- The image is searched in DockerHub. It's found and then loaded
+- An image stream will be created for it that will track the source image
+- A source build using source code from https://github.com/fmarchioni/mastertheboss will be created
+- This image will be deployed in deployment config "demo-wildfly"
 
 
-`oc status -v`{{execute}}
-
-View details with 'oc describe <resource>/<name>' or list everything with 'oc get all'.
-The preceding command shows that deployment #1 has been rolled out. It can also contain some useful information for troubleshooting the build, in case something goes wrong.
-
-There is another way to display build logs with low-level details—using the oc logs command. We need to show the log for the buildconfig (or just bc) entity, which can be displayed, as follows, by using the oc logs bc/myapp command:
-`oc logs bc/myapp`{{execute}}
-
-```
-Cloning "https://github.com/neoncyrex/myapp.git" ...
-  Commit: 638030df45052ad1d9300248babe0b141cf5dbed (initial commit)
-  Author: vagrant <vagrant@openshift.example.com>
-  Date: Sat Jun 2 04:22:59 2018 +0000
----> Installing application source...
-=> sourcing 20-copy-config.sh ...
----> 05:00:11 Processing additional arbitrary httpd configuration provided by s2i ...
-=> sourcing 00-documentroot.conf ...
-=> sourcing 50-mpm-tuning.conf ...
-=> sourcing 40-ssl-certs.sh ...
-Pushing image 172.30.1.1:5000/myapp/myapp:latest ...
-...
-Push successful
-```
-
-The preceding output gives us some insight into how builds work.
+![](https://github.com/fenago/katacoda-scenarios/raw/master/learn-openshift-wildfly/deploy-docker-images-on-openshift/steps/4/1.JPG)

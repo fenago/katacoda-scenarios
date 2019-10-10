@@ -1,31 +1,21 @@
-We now have all the information on how to build an application from source code. OpenShift puts together all the information (provided by you and inferred from the source code) and starts a new build. Each build has a sequential number, starting from 1. You can display all builds by running the following command:
-
-
-`oc get build`{{execute}}
+And here is the service which is now available:
+`oc get svc`{{execute}}
 
 ```
-NAME      TYPE   FROM        STATUS   STARTED     DURATION
-myapp-1 Source Git@638030d Complete 2 hours ago 34s
+NAME           CLUSTER-IP       EXTERNAL-IP   PORT(S)    AGE
+demo-wildfly   172.30.182.135   <none>        8080/TCP   34s
 ```
 
-This build is reported as Complete, as our application is already up and running.
+In order to enable using the service to external clients, we will create a route which will expose the http port 8080 of the service:
+`oc expose svc demo-wildfly`{{execute}}
 
-Starting a new build
-If an application's source code was updated, you can trigger the rebuild process by running the oc start-build command. The build itself is managed by the build configuration.
+As you can see, now the demo application is exposed through a router:
 
-First, we need to gather information on all available build configurations:
-`oc get bc`{{execute}}
-
-As you can see, we only have one build, myapp, and it was deployed only once; hence, the number 1.
-
-Let's start a new build, as follows:
-`oc start-build myapp`{{execute}}
-
-`oc get pod`{{execute}}
+`oc get routes`{{execute}}
 
 ```
-NAME             READY  STATUS    RESTARTS AGE
-myapp-1-build  0/1    Completed 0        2h
-myapp-1-h9xt5  1/1    Running   0        2h
-myapp-2-build  0/1    Init:0/2  0        3s
+NAME           HOST/PORT                                    PATH      SERVICES       PORT       TERMINATION
+demo-wildfly   demo-wildfly-myproject.192.168.1.66.xip.io             demo-wildfly   8080-tcp   
 ```
+
+If you prefer you can browse through the console and click on the router to test the application!
