@@ -1,4 +1,4 @@
-The first S2I lab will use a very simple WildFly application that displays the WildFly configuration using a standard WildFly function—myapp(). It's composed of a single index.wildfly file, with the following content:
+The sample [application](https://github.com/openshiftdemos/os-sample-java-web.git) used in this tutorial is a simple Java Web application with a single Jsp file that prints out a `Hello World` message.
 
 #### Create Application
 Once ready, open a terminal and at the command prompt, enter the following command to create a Java web application.

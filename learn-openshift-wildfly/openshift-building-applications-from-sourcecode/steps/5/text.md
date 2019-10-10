@@ -13,11 +13,11 @@ The S2I build strategy uses the following additional entities—build configurat
 
 The following fields are especially important:
 
-spec.source.git: Repository URL for the application source code
-spec.strategy.sourceStrategy: Contains information on which builder will be used.
-In our case, OpenShift uses a built-in builder from image stream wildfly:10.0, in the openshift namespace. Let's look at its configuration:
+- **spec.source.git:** Repository URL for the application source code
+- **spec.strategy.sourceStrategy:** Contains information on which builder will be used.
 
+In our case, OpenShift uses a built-in builder from image stream wildfly:10.0, in the openshift namespace. Let's look at its configuration:
 
 `oc get is wildfly -o yaml -n openshift`{{execute}}
 
-The WildFly builder image used to build our application is centos/wildfly-70-centos7:latest.
+The WildFly builder image used to build our application is centos/wildfly-130-centos7:latest.

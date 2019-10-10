@@ -24,5 +24,3 @@ myapp **172.30.54.195** <none>      8080/TCP,8443/TCP  1h
 ```
 
 `curl -s http://<svc-ip>:8080 | head -n 10`{{copy}}
-
-**Note:** The myapp() function displays the WildFly configuration as an HTML table.

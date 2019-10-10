@@ -4,6 +4,13 @@ Running following command to list all the resources created in the project:
 This will display output similar to:
 
 ```
+pod/demo-1-build
+service/demo
+deploymentconfig.apps.openshift.io/demo
+buildconfig.build.openshift.io/demo
+build.build.openshift.io/demo-1
+imagestream.image.openshift.io/demo
+route.route.openshift.io/demo
 ```
 
 # Task
