@@ -1,6 +1,6 @@
 {
   "icon": "fa-openshift",
-  "title": "Building WildFly Applications from Source Code",
+  "title": "Clustering WildFly on Openshift using WildFly Operator",
   "description": "Get started with building WildFly applications from source code",
   "difficulty": "beginner",
   "time": "15 minutes",

@@ -7,8 +7,8 @@ You can deploy your application using web console as well as with `cli` tools. T
 - Choose the *wildfly* template.
 
 
-![](https://github.com/fenago/katacoda-scenarios/raw/master/learn-openshift-wildfly/openshift-deploying-applications-using-console/steps/2/deploy2.JPG)
+![](https://github.com/fenago/katacoda-scenarios/raw/master/learn-openshift-wildfly/customize-wildfly-applications-on-openshift/steps/2/deploy2.JPG)
 
 
-![](https://github.com/fenago/katacoda-scenarios/raw/master/learn-openshift-wildfly/openshift-deploying-applications-using-console/steps/2/deploy3.JPG)
+![](https://github.com/fenago/katacoda-scenarios/raw/master/learn-openshift-wildfly/customize-wildfly-applications-on-openshift/steps/2/deploy3.JPG)
 

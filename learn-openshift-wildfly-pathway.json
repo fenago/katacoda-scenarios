@@ -13,11 +13,11 @@
     },
 	{
       "course_id": "customize-wildfly-applications-on-openshift",
-      "title": "Deploying Applications Using WebConsole"
+      "title": "Customize WildFly applications on Openshift"
     },
 	{
       "course_id": "clustering-wildfly-on-openshift-using-wildfly-operator",
-      "title": "Deploying Applications Using WebConsole"
+      "title": "Clustering WildFly on Openshift using WildFly Operator"
     },
 	{
       "course_id": "deploy-docker-images-on-openshift",

@@ -1,16 +1,16 @@
 {
-  "title": "Deploying Applications Using Web Console",
+  "title": "Customize WildFly applications on Openshift",
   "description": "",
   "difficulty": "beginner",
   "time": "15 minutes",
   "details": {
     "steps": [{
       "title": "Step 1 - Creating Project",
-      "text": "steps/0/text.md"
+      "text": "steps/1/text.md"
     },
     {
       "title": "Step 2 - Web Console",
-      "text": "steps/1/text.md"
+      "text": "steps/0/text.md"
     }, 
     {
       "title": "Step 3 - Deploying Application",
@@ -22,11 +22,15 @@
     },    
 	{
       "title": "Step 5 - Deploying Application",
-      "text": "steps/4/text.md"
+      "text": "steps/3/text.md"
     },
 	{
-      "title": "Step 6 - Delete Application",
-      "text": "steps/5/text.md"
+      "title": "Step 6 - Access Application",
+      "text": "steps/4/text.md"
+    },
+    {
+        "title": "Step 7 - Delete Application",
+        "text": "steps/5/text.md"
     }],
     "intro": {
       "courseData": "env-init.sh",
