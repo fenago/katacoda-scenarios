@@ -1,6 +1,6 @@
 {
   "icon": "fa-openshift",
-  "title": "Building WildFly Applications from Source Code",
+  "title": "Accessing Openshift services remotely",
   "description": "Get started with building WildFly applications from source code",
   "difficulty": "beginner",
   "time": "15 minutes",
@@ -10,35 +10,35 @@
       "text": "steps/1/text.md"
     },
     {
-      "title": "",
+      "title": "Mysql Template",
       "text": "steps/2/text.md"
     },    
 	{
-      "title": "",
+      "title": "Mysql Template",
       "text": "steps/3/text.md"
     },
     {
-      "title": "",
+      "title": "Mysql Template",
       "text": "steps/4/text.md"
     },
 	{
-      "title": "",
+      "title": "Mysql Template",
       "text": "steps/5/text.md"
     },
     {
-        "title": "",
+        "title": "WildFly Template",
         "text": "steps/6/text.md"
     },
     {
-        "title": "",
+        "title": "WildFly Template",
         "text": "steps/7/text.md"
     },
     {
-        "title": "",
+        "title": "Download Jboss CLI",
         "text": "steps/8/text.md"
     },
     {
-        "title": "",
+        "title": "Jboss CLI",
         "text": "steps/9/text.md"
     }],
     "intro": {

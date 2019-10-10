@@ -9,6 +9,8 @@ wildfly-1-5sgcj   1/1       Running   0          1m
 
 `oc exec -it wildfly-1-<update> -- /bin/bash -c "/opt/jboss/wildfly/bin/add-user.sh -m -u admin -p admin123"`{{copy}}
 
+#### Output
+
 ```
 Added user 'admin' to file '/opt/jboss/wildfly/standalone/configuration/mgmt-users.properties'
 Added user 'admin' to file '/opt/jboss/wildfly/domain/configuration/mgmt-users.properties'

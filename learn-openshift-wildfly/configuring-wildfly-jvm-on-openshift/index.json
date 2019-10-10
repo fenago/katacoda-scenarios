@@ -23,15 +23,15 @@
       "verify": "steps/3/verify.sh"
     },
 	{
-      "title": "Step 5 - ",
+      "title": "Step 5 - Environment Variable",
       "text": "steps/4/text.md"
     },
     {
-        "title": "Step 6 - ",
+        "title": "Step 6 - LimitRange",
         "text": "steps/5/text.md"
       },
       {
-          "title": "Step 7 - ",
+          "title": "Step 7 - LimitRange",
           "text": "steps/6/text.md"
         }],
     "intro": {
@@ -49,7 +49,7 @@
   "environment": {
     "showdashboard": true,
     "dashboards": [{"name": "Dashboard", "port": 8443}],
-    "uilayout": "terminal-iframe",
+    "uilayout": "terminal-editor",
     "uimessage1": "\u001b[32mBrought to you by https://LearningVoyage.com\u001b[m\r\n"
   },
   "backend": {

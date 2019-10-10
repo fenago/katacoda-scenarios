@@ -1,6 +1,6 @@
 Now let's move into wildfly land. You might wonder how WildFly runs with Podman: we have just checked it: it's pretty simple just replace the docker command line with podman:
 
-`podman run --name=widfly -d -p 8080:8080 jboss/wildfly`{{execute}}
+`podman run -d -p 8080:8080 docker.io/jboss/wildfly`{{execute}}
 
 ![](https://github.com/fenago/katacoda-scenarios/raw/master/learn-openshift-wildfly/getting-started-with-podman/steps/3/1.png)
 

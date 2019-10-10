@@ -6,7 +6,7 @@ Copy pod name and let's forward this pod through the port `3306` as follows:
 
 **Important:** Run command below in **terminal 2** . You can open it by clicking `+` icon and selecting `new terminal`
 
-oc port-forward mysql-1-2fzj2 3306:3306
+`oc port-forward mysql-1-<update> 3306:3306`{{copy}}
 
 ```
 Forwarding from 127.0.0.1:3306 -> 3306

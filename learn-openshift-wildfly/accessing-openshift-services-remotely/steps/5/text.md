@@ -4,7 +4,7 @@ Great. The shell will hang on. Now let's try to connect from the host to the rem
 
 As you can see we managed to connect to the remote database.
 
-u`se sampledb;`{{execute}}
+`use sampledb;`{{execute}}
 
 `show databases;`{{execute}}
 
