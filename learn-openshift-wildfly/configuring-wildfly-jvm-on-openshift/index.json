@@ -49,7 +49,7 @@
   "environment": {
     "showdashboard": true,
     "dashboards": [{"name": "Dashboard", "port": 8443}],
-    "uilayout": "terminal-editor",
+    "uilayout": "editor-terminal",
     "uimessage1": "\u001b[32mBrought to you by https://LearningVoyage.com\u001b[m\r\n"
   },
   "backend": {

@@ -7,7 +7,7 @@ As you can see from the above picture, you can use the following folders:
 - **modules:** Place here modules just like you would do in a bare-metal installation of WildFly. They will be automatically uploaded on WildFly
 - **deployments:** Place here artifacts that are to be deployed on the application server.
 
-![](https://github.com/fenago/katacoda-scenarios/raw/master/learn-openshift-wildfly/customize-wildfly-applications-on-openshift/steps/2/1.JPG)
+![](https://github.com/fenago/katacoda-scenarios/raw/master/learn-openshift-wildfly/customize-wildfly-applications-on-openshift/steps/2/2.JPG)
 
 The module.xml loads the itext JAR file and uploads it into the application server.
 

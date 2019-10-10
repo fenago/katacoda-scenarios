@@ -1,7 +1,7 @@
 
 In order to install the Operator we need to make sure kubectl binary is installed on your machine. You can download the latest release with the command:
 
-`curl -LO https://storage.googleapis.com/kubernetes-release/release/`curl -s https://storage.googleapis.com/kubernetes-release/release/stable.txt`/bin/linux/amd64/kubectl`{{execute}}
+```curl -LO https://storage.googleapis.com/kubernetes-release/release/`curl -s https://storage.googleapis.com/kubernetes-release/release/stable.txt`/bin/linux/amd64/kubectl```{{execute}}
 
 Then, make the kubectl binary executable.
 `chmod +x ./kubectl`{{execute}}
