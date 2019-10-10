@@ -12,7 +12,7 @@ Clone the following repository by executing following command in the terminal.
 
 Now, move in the directory which contains the yaml files.
 
-`cd wildfly-operator/`{{execute}}
+`cd openshift-wildfly/wildfly-operator/`{{execute}}
 
-In the next step, we will use the example configuration from GitHub: https://github.com/wildfly/wildfly-operator/tree/master/examples/clustering
+In the next step, we will use the example configuration from GitHub: https://github.com/athertahir/openshift-wildfly/tree/master/wildfly-operator
 

@@ -30,3 +30,5 @@ NAME             READY     STATUS    RESTARTS   AGE
 clusterbench-0   1/1       Running   0          3m
 clusterbench-1   1/1       Running   0          2m
 ```
+
+**Note:** Please wait for few seconds to see pods status running.

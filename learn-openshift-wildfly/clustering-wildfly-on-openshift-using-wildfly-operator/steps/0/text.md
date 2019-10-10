@@ -14,5 +14,5 @@ You don't have any projects. You can try to create a new project, by running
 ```
 
 To create a new project called ``myapp`` run the command:
-`oc new-project myapp`{{execute}}
+`oc new-project myproject`{{execute}}
 
