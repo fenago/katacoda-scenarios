@@ -6,7 +6,9 @@ Out of the box, the WildFly application server configures the JVM settings throu
 
 ![](https://github.com/fenago/katacoda-scenarios/raw/master/learn-openshift-wildfly/configuring-wildfly-jvm-on-openshift/steps/4/2.JPG)
 
-`JAVA_OPTS_EXT`{{copy}} : `-Dx=1`{{copy}}
+**Name:** `JAVA_OPTS_EXT`{{copy}} 
+
+**Value:** `-Dx=1`{{copy}}
 
 ![](https://github.com/fenago/katacoda-scenarios/raw/master/learn-openshift-wildfly/configuring-wildfly-jvm-on-openshift/steps/4/1.png)
 

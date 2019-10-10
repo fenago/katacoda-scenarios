@@ -2,7 +2,7 @@ The build process takes some time. During the first phase, you can see a contain
 `oc get pod`{{execute}}
 
 
-**Note:** Please wait for the deployment to complete and all the pods to be running, It will take around **2 minutes** to complete.
+**Note:** Please wait for the deployment to complete and all the pods to be running, It will take around **4-5 minutes** to complete.
 
 
 After some time, the application will be available. That means that the application's pod should be in a Running state:
