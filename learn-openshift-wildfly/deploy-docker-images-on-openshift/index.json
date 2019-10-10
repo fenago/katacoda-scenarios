@@ -10,23 +10,23 @@
       "text": "steps/1/text.md"
     },
     {
-      "title": "",
+      "title": "Openshift templates",
       "text": "steps/2/text.md"
     },    
 	{
-      "title": "",
+      "title": "Docker search",
       "text": "steps/3/text.md"
     },
     {
-      "title": "",
+      "title": "Run Application",
       "text": "steps/4/text.md"
     },
 	{
-      "title": "",
+      "title": "Image streams",
       "text": "steps/5/text.md"
     },
     {
-        "title": "",
+        "title": "Expose Route",
         "text": "steps/6/text.md"
     },
     {

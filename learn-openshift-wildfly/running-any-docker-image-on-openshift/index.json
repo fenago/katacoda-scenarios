@@ -10,27 +10,27 @@
       "text": "steps/1/text.md"
     },
     {
-      "title": "",
+      "title": "Dockerfile",
       "text": "steps/2/text.md"
     },    
 	{
-      "title": "",
+      "title": "Binary Build",
       "text": "steps/3/text.md"
     },
     {
-      "title": "",
+      "title": "Start Build",
       "text": "steps/4/text.md"
     },
 	{
-      "title": "",
+      "title": "ImageStream ",
       "text": "steps/5/text.md"
     },
     {
-        "title": "Route",
+        "title": "Expose Route",
         "text": "steps/6/text.md"
     },
     {
-        "title": "",
+        "title": "Port Forward",
         "text": "steps/7/text.md"
     }],
     "intro": {

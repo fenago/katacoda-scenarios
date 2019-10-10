@@ -1,4 +1,4 @@
- we have created a route, however even with a route connection to the container is still limited to http. Thus, it is necessary to port-forward the route to localhost using the oc tool. Let's see the pod name:
+ We have created a route, however even with a route connection to the container is still limited to http. Thus, it is necessary to port-forward the route to localhost using the oc tool. Let's see the pod name:
 
 `oc get pods`{{execute}}
 

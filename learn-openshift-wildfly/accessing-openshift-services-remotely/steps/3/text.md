@@ -1,4 +1,4 @@
-Ok, take note of user, password and database name and let's move on. The mysql service should be available:
+Take note of **user**, **password** and database name from `new-app` command output and let's move on. The mysql service should be available:
 
 `oc get services`{{execute}}
 

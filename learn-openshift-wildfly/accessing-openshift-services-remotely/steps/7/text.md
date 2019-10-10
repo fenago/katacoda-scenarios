@@ -7,6 +7,8 @@ NAME              READY     STATUS    RESTARTS   AGE
 wildfly-1-5sgcj   1/1       Running   0          1m
 ```
 
+**Note:** Please wait for few seconds to see pods status running.
+
 `oc exec -it wildfly-1-<update> -- /bin/bash -c "/opt/jboss/wildfly/bin/add-user.sh -m -u admin -p admin123"`{{copy}}
 
 #### Output
