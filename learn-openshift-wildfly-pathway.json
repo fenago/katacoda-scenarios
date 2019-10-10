@@ -12,6 +12,34 @@
       "title": "Deploying Applications Using WebConsole"
     },
 	{
+      "course_id": "customize-wildfly-applications-on-openshift",
+      "title": "Deploying Applications Using WebConsole"
+    },
+	{
+      "course_id": "clustering-wildfly-on-openshift-using-wildfly-operator",
+      "title": "Deploying Applications Using WebConsole"
+    },
+	{
+      "course_id": "deploy-docker-images-on-openshift",
+      "title": "Deploy Docker images on Openshift"
+    },
+	{
+      "course_id": "deploy-docker-images-on-openshift",
+      "title": "Running any Docker image on Openshift"
+    },
+	{
+      "course_id": "configuring-wildfly-jvm-on-openshift",
+      "title": "Configuring WildFly JVM on Openshift"
+    },
+	{
+      "course_id": "accessing-openshift-services-remotely",
+      "title": "Accessing Openshift services remotely"
+    },
+	{
+      "course_id": "getting-started-with-podman",
+      "title": "Getting started with Podman"
+    },
+	{
       "course_id": "java-batch-processing",
       "title": "Java EE Batch Processing with OpenShift, WildFly & JBeret"
     }
