@@ -1,27 +1,17 @@
+As last step, we will verify that we can actually login with the management user that has been incldued in the Image. For this purpose we need to define a PortForward to reach the port 9990 in the Pod where the Application us running. Let's check the Pod list:
 
-OpenShift started a new build, versioned as 2, which is present in the names of the pods spawned by the new build. Once everything is complete, your application will be redeployed:
-`oc get pod`{{execute}}
+oc get pods
 
 
-The latest version of the build is now 2:
-`oc get bc`{{execute}}
+![](https://github.com/fenago/katacoda-scenarios/raw/master/learn-openshift-wildfly/running-any-docker-image-on-openshift/steps/7/1.JPG)
 
-```
-NAME    TYPE   FROM       LATEST
-myapp Source Git@master 2
-```
+Now we will forward the Port 9990 to the equivalent Port on localhost:
 
-A list of all builds is kept by OpenShift for future inspection:
-`oc get build`{{execute}}
+oc port-forward mywildfly-1-mzkmf 9990:9990
 
 ```
-NAME      TYPE   FROM        STATUS   STARTED            DURATION
-myapp-1 Source Git@638030d Complete 2 hours ago        34s
-myapp-2 Source Git@638030d Complete About a minute ago 7s
+Forwarding from 127.0.0.1:9990 -> 9990
+Forwarding from [::1]:9990 -> 9990
 ```
 
-
-Use the following code to clean everything up for the next lab:
-`oc delete all --all`{{execute}}
-
-`oc delete project myapp`{{execute}}
+Try connecting using web console, you will be prompted to enter Username and Password.

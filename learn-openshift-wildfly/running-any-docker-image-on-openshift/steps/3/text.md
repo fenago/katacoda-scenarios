@@ -1,28 +1,22 @@
-The build process takes some time. During the first phase, you can see a container with -build in its name. This container is deployed from the WildFly builder image and is responsible for build operations:
-`oc get pod`{{execute}}
+Next thing will be creating a Binary Build that will hold our Image. You can do it through the "oc new-build" command:
 
+oc new-build --binary --name=mywildfly -l app=mywildfly
 
-**Note:** Please wait for the deployment to complete and all the pods to be running, It will take around **2 minutes** to complete.
+![](https://github.com/fenago/katacoda-scenarios/raw/master/learn-openshift-wildfly/running-any-docker-image-on-openshift/steps/3/1.JPG)
 
+Great. Now verify that the Binary Build has been correctly added:
 
-After some time, the application will be available. That means that the application's pod should be in a Running state:
-`oc get pod`{{execute}}
-
-
-```
-NAME              READY  STATUS     RESTARTS  AGE
-myapp-1-build   0/1    Completed  0         39s
-myapp-1-h9xt5   1/1    Running    0         4s
-```
-
-OpenShift built and deployed the myapp application, which is now available by using its service IP. Let's try to access our application using the curl command:
-`oc get svc`{{execute}}
+`oc get bc`{{execute}}
 
 ```
-NAME    CLUSTER-IP    EXTERNAL-IP PORT(S)            AGE
-myapp **172.30.54.195** <none>      8080/TCP,8443/TCP  1h
+NAME                TYPE      FROM      LATEST
+mywildfly           Docker    Binary    0
 ```
 
-`curl -s http://<svc-ip>:8080 | head -n 10`{{copy}}
+As it is, the Binary Build does not contain any reference to a Dockerfile. We can edit its configuration to include, in the dockerfilePath param, the location where our Dockerfile is (in our case, it's in the current folder):
 
-**Note:** The myapp() function displays the WildFly configuration as an HTML table.
+`oc patch bc/mywildfly -p '{"spec":{"strategy":{"dockerStrategy":{"dockerfilePath":"Dockerfile"}}}}'`{{execute}}
+
+```
+buildconfig.build.openshift.io/mywildfly patched
+```

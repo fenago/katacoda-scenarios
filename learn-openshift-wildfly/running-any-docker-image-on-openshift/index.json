@@ -10,27 +10,27 @@
       "text": "steps/1/text.md"
     },
     {
-      "title": "Building a simple WildFly application",
+      "title": "",
       "text": "steps/2/text.md"
     },    
 	{
-      "title": "Build & Deploy",
+      "title": "",
       "text": "steps/3/text.md"
     },
     {
-      "title": "Openshift Build Process",
+      "title": "",
       "text": "steps/4/text.md"
     },
 	{
-      "title": "Understanding the WildFly build process",
+      "title": "",
       "text": "steps/5/text.md"
     },
     {
-        "title": "Trigger New Build",
+        "title": "Route",
         "text": "steps/6/text.md"
     },
     {
-        "title": "Cleanup Resources",
+        "title": "",
         "text": "steps/7/text.md"
     }],
     "intro": {
@@ -42,6 +42,9 @@
       "text": "finish.md"
     }
   },
+  "files": [
+    "Dockerfile"
+  ],
   "environment": {
     "showdashboard": true,
     "dashboards": [{"name": "Dashboard", "port": 8443}],

@@ -1,31 +1,17 @@
-We now have all the information on how to build an application from source code. OpenShift puts together all the information (provided by you and inferred from the source code) and starts a new build. Each build has a sequential number, starting from 1. You can display all builds by running the following command:
+We are almost done. We only need to expose the Route to external clients:
 
-
-`oc get build`{{execute}}
-
-```
-NAME      TYPE   FROM        STATUS   STARTED     DURATION
-myapp-1 Source Git@638030d Complete 2 hours ago 34s
-```
-
-This build is reported as Complete, as our application is already up and running.
-
-Starting a new build
-If an application's source code was updated, you can trigger the rebuild process by running the oc start-build command. The build itself is managed by the build configuration.
-
-First, we need to gather information on all available build configurations:
-`oc get bc`{{execute}}
-
-As you can see, we only have one build, myapp, and it was deployed only once; hence, the number 1.
-
-Let's start a new build, as follows:
-`oc start-build myapp`{{execute}}
-
-`oc get pod`{{execute}}
+`oc expose svc/mywildfly`{{execute}} 
 
 ```
-NAME             READY  STATUS    RESTARTS AGE
-myapp-1-build  0/1    Completed 0        2h
-myapp-1-h9xt5  1/1    Running   0        2h
-myapp-2-build  0/1    Init:0/2  0        3s
+route.route.openshift.io/mywildfly exposed
 ```
+
+And verify the Route URL with:
+`oc get route`{{execute}} 
+
+```
+NAME                HOST/PORT                                         PATH      SERVICES            PORT       TERMINATION   WILDCARD
+mywildfly           mywildfly-myproject.192.168.42.5.nip.io                     mywildfly           8080-tcp                 None
+```
+
+As you can see, the application is available:
