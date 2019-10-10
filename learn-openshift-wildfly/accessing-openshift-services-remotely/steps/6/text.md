@@ -1,31 +1,30 @@
-We now have all the information on how to build an application from source code. OpenShift puts together all the information (provided by you and inferred from the source code) and starts a new build. Each build has a sequential number, starting from 1. You can display all builds by running the following command:
+Let's see another example so that we can connect to Wildfly application server CLI or Web console. Let's create the application at first:
 
-
-`oc get build`{{execute}}
-
-```
-NAME      TYPE   FROM        STATUS   STARTED     DURATION
-myapp-1 Source Git@638030d Complete 2 hours ago 34s
-```
-
-This build is reported as Complete, as our application is already up and running.
-
-Starting a new build
-If an application's source code was updated, you can trigger the rebuild process by running the oc start-build command. The build itself is managed by the build configuration.
-
-First, we need to gather information on all available build configurations:
-`oc get bc`{{execute}}
-
-As you can see, we only have one build, myapp, and it was deployed only once; hence, the number 1.
-
-Let's start a new build, as follows:
-`oc start-build myapp`{{execute}}
-
-`oc get pod`{{execute}}
+`oc new-app jboss/wildfly --name=wildfly`{{execute}}
 
 ```
-NAME             READY  STATUS    RESTARTS AGE
-myapp-1-build  0/1    Completed 0        2h
-myapp-1-h9xt5  1/1    Running   0        2h
-myapp-2-build  0/1    Init:0/2  0        3s
+--> Found Docker image d59073d (11 days old) from Docker Hub for "jboss/wildfly"
+ 
+    * An image stream will be created as "wildfly:latest" that will track this image
+    * This image will be deployed in deployment config "wildfly"
+    * Port 8080/tcp will be load balanced by service "wildfly"
+      * Other containers can access this service through the hostname "wildfly"
+ 
+--> Creating resources ...
+    imagestream "wildfly" created
+    deploymentconfig "wildfly" created
+    service "wildfly" created
+--> Success
+    Run 'oc status' to view your app.
+```
+
+#### Expose Application
+Let's check that the service is available:
+`oc get services`{{execute}}
+
+Let's expose the route for this service:
+`oc expose service wildfly`{{execute}}
+
+```
+route "wildfly" exposed
 ```

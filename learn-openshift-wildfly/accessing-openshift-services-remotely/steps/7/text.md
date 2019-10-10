@@ -1,27 +1,21 @@
+Ok, now before port-forwarding, we will create a management user, by executing the add-user command remotely on the pod:
 
-OpenShift started a new build, versioned as 2, which is present in the names of the pods spawned by the new build. Once everything is complete, your application will be redeployed:
-`oc get pod`{{execute}}
-
-
-The latest version of the build is now 2:
-`oc get bc`{{execute}}
+`oc get pods`{{execute}}
 
 ```
-NAME    TYPE   FROM       LATEST
-myapp Source Git@master 2
+NAME              READY     STATUS    RESTARTS   AGE
+wildfly-1-5sgcj   1/1       Running   0          1m
 ```
 
-A list of all builds is kept by OpenShift for future inspection:
-`oc get build`{{execute}}
+`oc exec -it wildfly-1-<update> -- /bin/bash -c "/opt/jboss/wildfly/bin/add-user.sh -m -u admin -p admin123"`{{copy}}
 
 ```
-NAME      TYPE   FROM        STATUS   STARTED            DURATION
-myapp-1 Source Git@638030d Complete 2 hours ago        34s
-myapp-2 Source Git@638030d Complete About a minute ago 7s
+Added user 'admin' to file '/opt/jboss/wildfly/standalone/configuration/mgmt-users.properties'
+Added user 'admin' to file '/opt/jboss/wildfly/domain/configuration/mgmt-users.properties'
 ```
 
+Ok, last step will be port-forwarding the port 9990 which is used both by the CLI and the Web console:
 
-Use the following code to clean everything up for the next lab:
-`oc delete all --all`{{execute}}
+`oc port-forward wildfly-1-<update> 9990:9990`{{copy}}
 
-`oc delete project myapp`{{execute}}
+**Important:** Run above below in **terminal 2** . You can open it by clicking `+` icon and selecting `new terminal`

@@ -1,28 +1,15 @@
-A summary of the build process can be displayed by running the oc status or oc status -v commands:
+ we have created a route, however even with a route connection to the container is still limited to http. Thus, it is necessary to port-forward the route to localhost using the oc tool. Let's see the pod name:
 
+`oc get pods`{{execute}}
 
-`oc status -v`{{execute}}
+Copy pod name and let's forward this pod through the port `3306` as follows:
 
-View details with 'oc describe <resource>/<name>' or list everything with 'oc get all'.
-The preceding command shows that deployment #1 has been rolled out. It can also contain some useful information for troubleshooting the build, in case something goes wrong.
+**Important:** Run command below in **terminal 2** . You can open it by clicking `+` icon and selecting `new terminal`
 
-There is another way to display build logs with low-level details—using the oc logs command. We need to show the log for the buildconfig (or just bc) entity, which can be displayed, as follows, by using the oc logs bc/myapp command:
-`oc logs bc/myapp`{{execute}}
+oc port-forward mysql-1-2fzj2 3306:3306
 
 ```
-Cloning "https://github.com/neoncyrex/myapp.git" ...
-  Commit: 638030df45052ad1d9300248babe0b141cf5dbed (initial commit)
-  Author: vagrant <vagrant@openshift.example.com>
-  Date: Sat Jun 2 04:22:59 2018 +0000
----> Installing application source...
-=> sourcing 20-copy-config.sh ...
----> 05:00:11 Processing additional arbitrary httpd configuration provided by s2i ...
-=> sourcing 00-documentroot.conf ...
-=> sourcing 50-mpm-tuning.conf ...
-=> sourcing 40-ssl-certs.sh ...
-Pushing image 172.30.1.1:5000/myapp/myapp:latest ...
-...
-Push successful
+Forwarding from 127.0.0.1:3306 -> 3306
+Forwarding from [::1]:3306 -> 3306
+Handling connection for 3306
 ```
-
-The preceding output gives us some insight into how builds work.
