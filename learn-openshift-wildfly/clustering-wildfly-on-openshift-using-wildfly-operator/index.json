@@ -9,31 +9,31 @@
       "title": "Openshift CLI",
       "text": "steps/0/text.md"
     },{
-      "title": "Openshift CLI",
+      "title": "Requirements to install Operators",
       "text": "steps/1/text.md"
     },
     {
-      "title": "Building a simple WildFly application",
+      "title": "Installing WildFly Operator",
       "text": "steps/2/text.md"
     },    
 	{
-      "title": "Build & Deploy",
+      "title": "Clustering WildFly using the Operator",
       "text": "steps/3/text.md"
     },
     {
-      "title": "Openshift Build Process",
+      "title": "Clustering WildFly using the Operator...",
       "text": "steps/4/text.md"
     },
 	{
-      "title": "Understanding the WildFly build process",
+      "title": "Openshift Service",
       "text": "steps/5/text.md"
     },
     {
-        "title": "Trigger New Build",
+        "title": "Openshift Scale",
         "text": "steps/6/text.md"
     },
     {
-        "title": "Cleanup Resources",
+        "title": "Access Application",
         "text": "steps/7/text.md"
     }],
     "intro": {

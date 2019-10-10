@@ -1,7 +1,6 @@
-Clustering WildFly using the Operator
 To install a WildFly cluster, we will need to provide the HA XML configuration as a ConfigMap that is accessible by the Operator. Let's see how to do it. First of all, some grants are required, so provide to your user the service account Role for your project with:
 
-oc policy add-role-to-user view system:serviceaccount:$(oc project -q):default -n $(oc project -q)
+`oc policy add-role-to-user view system:serviceaccount:$(oc project -q):default -n $(oc project -q)`{{execute}}
 
 ```
 role "view" added: "system:serviceaccount:myproject:default"

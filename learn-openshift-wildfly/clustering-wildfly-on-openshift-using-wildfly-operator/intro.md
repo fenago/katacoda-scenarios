@@ -1,1 +1,1 @@
-In this Lab we will get learn to Deploy Applications using SourceCode.
+In this Lab we will get learn to Cluster WildFly on Openshift using WildFly Operator.

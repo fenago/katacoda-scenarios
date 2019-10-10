@@ -25,7 +25,7 @@
       "text": "steps/4/text.md"
     },
     {
-        "title": "Step 5 - Podman Login(Optional",
+        "title": "Step 6 - Podman Login(Optional)",
         "text": "steps/5/text.md"
   }],
     "intro": {
@@ -44,7 +44,7 @@
     "uimessage1": "\u001b[32mBrought to you by https://LearningVoyage.com\u001b[m\r\n"
   },
   "backend": {
-      "trainingid": "openshift-3-11",
-      "imageid": "openshift-3-11"
+      "trainingid": "openshift-3-6",
+      "imageid": "openshift-3-6"
   }
 }

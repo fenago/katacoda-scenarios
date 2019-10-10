@@ -12,3 +12,6 @@ EOF```{{execute}}
 Now build the image with:
 `podman build . -t hello-world`{{execute}}
 
+
+**Note:** Please wait for the above command to complete, It will take around 2 minutes to complete.
+
