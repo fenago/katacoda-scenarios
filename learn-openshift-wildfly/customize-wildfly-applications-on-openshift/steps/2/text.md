@@ -1,4 +1,4 @@
-In this scenario, we will add custom modules and deployments to WildFly on Openshift. It is available on github at https://github.com/fmarchioni/mastertheboss/tree/master/openshift/module, will show how to add external modules and deployments during the Source to Image process.
+In this scenario, we will add custom modules and deployments to WildFly on Openshift. It is available on [github](https://github.com/fmarchioni/mastertheboss/tree/master/openshift/module), will show how to add external modules and deployments during the Source to Image process.
 
 ![](https://github.com/fenago/katacoda-scenarios/raw/master/learn-openshift-wildfly/customize-wildfly-applications-on-openshift/steps/2/1.png)
 
@@ -36,3 +36,4 @@ In order to link the library with the application server add a jboss-deployment-
     </deployment>
 </jboss-deployment-structure>
 ```
+

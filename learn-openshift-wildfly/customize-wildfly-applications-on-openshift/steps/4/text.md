@@ -7,4 +7,4 @@ Openshift uses _Route_ to make application accessible outside of the OpenShift c
 
 Here is the application in action:
 
-![](https://github.com/fenago/katacoda-scenarios/raw/master/learn-openshift-wildfly/customize-wildfly-applications-on-openshift/steps/3/1.png)
+![](https://github.com/fenago/katacoda-scenarios/raw/master/learn-openshift-wildfly/customize-wildfly-applications-on-openshift/steps/4/1.png)

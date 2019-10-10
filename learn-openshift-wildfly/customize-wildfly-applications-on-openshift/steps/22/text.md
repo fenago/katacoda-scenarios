@@ -5,6 +5,7 @@ You can deploy your application using web console as well as with `cli` tools. T
 - Click  *Add to Project* button from *Overview* page.
 - Type `wildfly`{{copy}} into the Filter.
 - Choose the *wildfly* template.
+- Click *Next* and then select `view advanced options`.
 
 
 ![](https://github.com/fenago/katacoda-scenarios/raw/master/learn-openshift-wildfly/customize-wildfly-applications-on-openshift/steps/2/deploy2.JPG)
@@ -12,3 +13,5 @@ You can deploy your application using web console as well as with `cli` tools. T
 
 ![](https://github.com/fenago/katacoda-scenarios/raw/master/learn-openshift-wildfly/customize-wildfly-applications-on-openshift/steps/2/deploy3.JPG)
 
+
+![](https://github.com/fenago/katacoda-scenarios/raw/master/learn-openshift-wildfly/customize-wildfly-applications-on-openshift/steps/2/deploy4.JPG)
