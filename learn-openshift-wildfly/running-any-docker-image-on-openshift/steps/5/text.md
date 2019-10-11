@@ -18,3 +18,5 @@ Now that the ImageStream is available, let's create an application in the curren
     Run 'oc status' to view your app.
 ```
 
+Please wait for the deployment to complete and all the pods to be running, It will take around **2 minutes** to complete.
+`oc get pods`{{execute}}
