@@ -32,17 +32,17 @@ There are two obvious AI and Blockchain Use Cases:
 ** We are going to look at the use case of how to create a marketplace. **
 We won't use NNs here as they are harder to implement from scratch on Solidity because of the limitations of the blockchain, so we'll work with simpler algorithms that you can expand as you need. 
 Here's how our protocol will work:
-**
+
 1. A user publishes a set of data, an evaluation function (our ML model), and the reward for completing the task to the smart contract in ETH.
 
 2. Those that want to fulfil the task will download the published data from the first user to train the given ML model in order to generate a trained program that will be given back to the smart contract.
 
-3. External users will take a look at all the published solutions for that particular task to determine who is the winner. The buyer will determine the winner based on their preference. **
+3. External users will take a look at all the published solutions for that particular task to determine who is the winner. The buyer will determine the winner based on their preference. 
 
 From this protocol, we can establish the following process that the users will follow:
 **
 1. A buyer, someone who wants their model trained, deploys a smart contract that contains the following data:
---* Their model definition in the constructor—for instance, DNN.
+⋅⋅* Their model definition in the constructor—for instance, DNN.
 --* The datasets to train—for instance, an array of handwritten digit images made of 30 x 30 pixels. Each image is an array of 30 x 30 pixels (900 pixels) where each pixel is another array containing information about the position of the pixel and whether it's black or white (we don't want colors in this image to avoid complexity)—for instance [[0, true], [1, false]] will represent a 2 x 1 pixel image where the first pixel is black while the other is white. This dataset will be published to an external website that people can freely access to train the model. In our constructor we will provide a URL, namely https://example.com/dataset.
 --* The reward for training the model is paid in Ethereum, and this arrangement set up in the payable constructor.
 2. The contract is published and sellers begin to participate in the task of training the model. From the dataset, 90% of the data will be used to train the model while the remaining 10% will be used to test the results from the program to verify its accuracy. To make sure sellers don't copy each other, different random datasets will be given to different participants.
