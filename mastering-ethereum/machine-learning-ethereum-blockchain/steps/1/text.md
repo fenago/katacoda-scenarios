@@ -13,7 +13,7 @@ We are going to build a marketplace to buy and sell computing power from users t
 
 Ethereum comes into the equation when we need to deal with storing permanent records of the transactions that took place in our ML marketplace along with the trained model that the buyer requested from their parameters so that it's accessible anytime. The idea is to create a place where people from all around the world can start earning money from a new use of their hardware as an alternative to mining, while also providing a secure system for ML algorithms.
 
-** We will use GPUs to train our machine learning programs because they are great at processing lots of parallel operations at the same time, so that we can go through large batches of input quickly, faster than with a CPU. We'll also use Ethereum as the default payment currency to process decentralized transactions with ease. **
+**_ We will use GPUs to train our machine learning programs because they are great at processing lots of parallel operations at the same time, so that we can go through large batches of input quickly, faster than with a CPU. We'll also use Ethereum as the default payment currency to process decentralized transactions with ease. **
 
 Most machine learning models nowadays are based on neural networks (NN), which are abstractions of how a human brain works, translated to computers. It's based on virtual individual neurons that receive an input and produce an output if a condition is met. For instance, say that a simple neuron contains the following statement:
 
