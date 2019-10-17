@@ -1,0 +1,10 @@
+<pre class="file" data-target="clipboard">
+# Hint: You can copy Solution to ClipBoard from Solution Tab
+# multiplicative decompose a contrived multiplicative time series
+from matplotlib import pyplot
+from statsmodels.tsa.seasonal import seasonal_decompose
+series = [i**5.0 for i in range(1,1000)]
+result = seasonal_decompose(series, model='multiplicative', freq=1)
+result.plot()
+pyplot.show()
+</pre>

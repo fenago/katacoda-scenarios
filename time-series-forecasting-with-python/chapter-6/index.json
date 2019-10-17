@@ -1,0 +1,153 @@
+{
+  "title": "Data Visualization",
+  "description": "Run Python Code with Jupyter Notebooks",
+  "difficulty": "Beginner",
+  "time": "35 minutes",
+  "details": {
+    "steps": [{
+      "title": "Jupyter Notebook",
+      "text": "steps/1/step1.md"
+    },
+    {
+      "title": "Line Plot",
+      "text": "steps/2/step2.md",
+      "answer": "steps/2/answer.md"
+    },    
+    {
+      "title": "Dot Plot",
+      "text": "steps/3/step3.md",
+      "answer": "steps/3/answer.md"
+    },
+    {
+      "title": "Stacked Line Plots",
+      "text": "steps/4/step4.md",
+      "answer": "steps/4/answer.md"
+    },
+    {
+      "title": "Histogram",
+      "text": "steps/5/step5.md",
+      "answer": "steps/5/answer.md"
+    },
+    {
+      "title": "Density Plots",
+      "text": "steps/6/step6.md",
+      "answer": "steps/6/answer.md"
+    },
+    {
+      "title": "Box and Whisker Plots by Interval",
+      "text": "steps/7/step7.md",
+      "answer": "steps/7/answer.md"
+    },
+    {
+      "title": "Boxplot of Monthly Data",
+      "text": "steps/8/step8.md",
+      "answer": "steps/8/answer.md"
+    },
+    {
+      "title": "Heat Maps",
+      "text": "steps/9/step9.md",
+      "answer": "steps/9/answer.md"
+    },
+    {
+      "title": "Heat Map of Monthly Data",
+      "text": "steps/10/step10.md",
+      "answer": "steps/10/answer.md"
+    },
+    {
+      "title": "Lag Scatter Plots",
+      "text": "steps/11/step11.md",
+      "answer": "steps/11/answer.md"
+    },
+    {
+      "title": "Multiple Scatter Plots",
+      "text": "steps/12/step12.md",
+      "answer": "steps/12/answer.md"
+    },
+    {
+      "title": "Autocorrelation Plots",
+      "text": "steps/13/step13.md",
+      "answer": "steps/13/answer.md"
+    }],
+    "intro": {
+      "text": "intro.md",
+      "code": "set-env.sh"
+    },
+    "finish": {
+      "text": "finish.md"
+    },
+    "assets": {
+      "client": [
+        { 
+          "file": "prepareContainer.sh",  
+          "target": "~/"  
+        },    
+        { 
+          "file": "autocorrelation.ipynb",  
+          "target": "~/"
+        },
+        { 
+          "file": "boxplot-monthly.ipynb",   
+          "target": "~/"  
+        },  
+        { 
+          "file": "boxplot-yearly.ipynb", 
+          "target": "~/"  
+        },  
+        { 
+          "file": "density-plot.ipynb", 
+          "target": "~/"  
+        },  
+        { 
+          "file": "dot-line-plot.ipynb", 
+          "target": "~/"  
+        },  
+        { 
+          "file": "heat-map-monthly.ipynb", 
+          "target": "~/"  
+        },
+        { 
+          "file": "heat-map-yearly.ipynb", 
+          "target": "~/"  
+        },
+        { 
+          "file": "histogram.ipynb", 
+          "target": "~/"  
+        },
+        { 
+          "file": "line-plot.ipynb", 
+          "target": "~/"  
+        },
+        { 
+          "file": "multiple-scatter-plots.ipynb", 
+          "target": "~/"  
+        },
+        { 
+          "file": "scatter-plot.ipynb", 
+          "target": "~/"  
+        },
+        { 
+          "file": "stacked-line.ipynb", 
+          "target": "~/"  
+        },  
+        { 
+          "file": "routine-heat.csv", 
+          "target": "~/"  
+        }
+      ]
+    }
+  },
+  "environment": {
+    "uilayout": "terminal-iframe",
+    "showdashboard": true,
+    "dashboards": [
+      {
+        "name": "Jupyter Notebook",
+        "port": 8888
+      }
+    ],
+    "uimessage1": "\u001b[32mYour Interactive Bash Terminal.\r\n"
+  },
+  "backend": {
+    "imageid": "docker"
+  }
+}

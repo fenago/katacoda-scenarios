@@ -1,0 +1,142 @@
+{
+  "title": "Introduction to Time Series Forecasting",
+  "description": "in Python",
+  "courses": [
+
+    {
+      "course_id": "chapter-4",
+      "title": "Chapter - 4",
+      "description": "Load and Explore Time Series Data"
+    },
+    {
+      "course_id": "chapter-5",
+      "title": "Chapter - 5",
+      "description": "Basic Feature Engineering"
+    },
+    {
+      "course_id": "chapter-6",
+      "title": "Chapter - 6",
+      "description": "Data Visualization"
+    },
+    {
+      "course_id": "chapter-7",
+      "title": "Chapter - 7",
+      "description": "Resampling and Interpolation"
+    },
+    {
+      "course_id": "chapter-8",
+      "title": "Chapter - 8",
+      "description": "Power Transforms"
+    },
+    {
+      "course_id": "chapter-9",
+      "title": "Chapter - 9",
+      "description": "Moving Average Smoothing"
+    },
+    {
+      "course_id": "chapter-10",
+      "title": "Chapter - 10",
+      "description": "A Gentle Introduction to White Noise"
+    },
+    {
+      "course_id": "chapter-11",
+      "title": "Chapter - 11",
+      "description": "A Gentle Introduction to the Random Walk"
+    },
+    {
+      "course_id": "chapter-12",
+      "title": "Chapter - 12",
+      "description": "Decompose Time Series Data"
+    },
+    {
+      "course_id": "chapter-13",
+      "title": "Chapter - 13",
+      "description": "Use and Remove Trends"
+    },
+    {
+      "course_id": "chapter-14",
+      "title": "Chapter - 14",
+      "description": "Use and Remove Seasonality"
+    },
+    {
+      "course_id": "chapter-15",
+      "title": "Chapter - 15",
+      "description": "Stationarity in Time Series Data"
+    },
+    {
+      "course_id": "chapter-16",
+      "title": "Chapter - 16",
+      "description": "Backtest Forecast Models"
+    },
+    {
+      "course_id": "chapter-17",
+      "title": "Chapter - 17",
+      "description": "Forecasting Performance Measures"
+    },
+    {
+      "course_id": "chapter-18",
+      "title": "Chapter - 18",
+      "description": "Persistence Model for Forecasting"
+    },
+    {
+      "course_id": "chapter-19",
+      "title": "Chapter - 19",
+      "description": "Visualize Residual Forecast Errors"
+    },
+    {
+      "course_id": "chapter-20",
+      "title": "Chapter - 20",
+      "description": "Reframe Time Series Forecasting Problems"
+    },
+    {
+      "course_id": "chapter-22",
+      "title": "Chapter - 22",
+      "description": "Autoregression Models for Forecasting"
+    },
+    {
+      "course_id": "chapter-23",
+      "title": "Chapter - 23",
+      "description": "Moving Average Models for Forecasting"
+    },
+    {
+      "course_id": "chapter-24",
+      "title": "Chapter - 24",
+      "description": "ARIMA Model for Forecasting"
+    },
+    {
+      "course_id": "chapter-25",
+      "title": "Chapter - 25",
+      "description": "Autocorrelation and Partial Autocorrelation"
+    },
+    {
+      "course_id": "chapter-26",
+      "title": "Chapter - 26",
+      "description": "Grid Search ARIMA Model Hyperparameters"
+    },
+    {
+      "course_id": "chapter-27",
+      "title": "Chapter - 27",
+      "description": "Save Models and Make Predictions"
+    },
+    {
+      "course_id": "chapter-28",
+      "title": "Chapter - 28",
+      "description": "Forecast Confidence Intervals"
+    },
+    {
+      "course_id": "chapter-30",
+      "title": "Chapter - 30",
+      "description": "Project: Monthly Armed Stealing in Boston"
+    },
+    {
+      "course_id": "chapter-31",
+      "title": "Chapter - 31",
+      "description": "Project: Annual Water Usage in Baltimore"
+    },
+    {
+      "course_id": "chapter-32",
+      "title": "Chapter - 32",
+      "description": "Project: Monthly Sales of French Wine"
+    }
+  ]
+}

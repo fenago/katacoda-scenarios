@@ -1,0 +1,108 @@
+{
+  "title": "Autoregression Models for Forecasting",
+  "description": "Run Python Code with Jupyter Notebooks",
+  "difficulty": "Beginner",
+  "time": "35 minutes",
+  "details": {
+    "steps": [{
+      "title": "Jupyter Notebook",
+      "text": "steps/1/step1.md"
+    },
+    {
+      "title": "Quick Check for Autocorrelation",
+      "text": "steps/2/step2.md",
+      "answer": "steps/2/answer.md"
+    },    
+    {
+      "title": "Correlation of Lag=1",
+      "text": "steps/3/step3.md",
+      "answer": "steps/3/answer.md"
+    },
+    {
+      "title": "Autocorrelation Plots",
+      "text": "steps/4/step4.md",
+      "answer": "steps/4/answer.md"
+    },
+    {
+      "title": "Autocorrelation Plots",
+      "text": "steps/5/step5.md",
+      "answer": "steps/5/answer.md"
+    },
+    {
+      "title": "Persistence Model",
+      "text": "steps/6/step6.md",
+      "answer": "steps/6/answer.md"
+    },
+    {
+      "title": "Autoregression Model",
+      "text": "steps/7/step7.md",
+      "answer": "steps/7/answer.md"
+    },
+    {
+      "title": "Autoregression Model Prediction",
+      "text": "steps/8/step8.md",
+      "answer": "steps/8/answer.md"
+    }],
+    "intro": {
+      "text": "intro.md",
+      "code": "set-env.sh"
+    },
+    "finish": {
+      "text": "finish.md"
+    },
+    "assets": {
+      "client": [
+        { 
+          "file": "prepareContainer.sh",  
+          "target": "~/"  
+        },    
+        { 
+          "file": "autocorrelation.ipynb",  
+          "target": "~/"
+        },
+        { 
+          "file": "autocorrelation-plot.ipynb",   
+          "target": "~/"  
+        },  
+        { 
+          "file": "correlation.ipynb", 
+          "target": "~/"  
+        },  
+        { 
+          "file": "lag-plot.ipynb", 
+          "target": "~/"  
+        },  
+        { 
+          "file": "model.ipynb", 
+          "target": "~/"  
+        },  
+        { 
+          "file": "model-prediction.ipynb", 
+          "target": "~/"  
+        },  
+        { 
+          "file": "persistence.ipynb", 
+          "target": "~/"  
+        },  
+        { 
+          "file": "routine-heat.csv", 
+          "target": "~/"  
+        }
+      ]
+    }
+  },
+  "environment": {
+    "uilayout": "terminal-iframe",
+    "showdashboard": true,
+    "dashboards": [
+      {
+        "name": "Jupyter Notebook",
+        "port": 8888
+      }
+    ],
+    "uimessage1": "\u001b[32mYour Interactive Bash Terminal.\r\n"
+  },
+  "backend": {
+    "imageid": "docker"
+  }
+}

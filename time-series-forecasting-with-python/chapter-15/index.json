@@ -1,0 +1,148 @@
+{
+  "title": "Stationarity in Time Series Data",
+  "description": "Run Python Code with Jupyter Notebooks",
+  "difficulty": "Beginner",
+  "time": "40 minutes",
+  "details": {
+    "steps": [{
+      "title": "Jupyter Notebook",
+      "text": "steps/1/step1.md"
+    },
+    {
+      "title": "Stationary Time Series",
+      "text": "steps/2/step2.md",
+      "answer": "steps/2/answer.md"
+    },    
+    {
+      "title": "Non-Stationary Time Series",
+      "text": "steps/3/step3.md",
+      "answer": "steps/3/answer.md"
+    },
+    {
+      "title": "Routine Births Dataset",
+      "text": "steps/4/step4.md",
+      "answer": "steps/4/answer.md"
+    },
+    {
+      "title": "Statistics of Partitioned Time Series Data",
+      "text": "steps/5/step5.md",
+      "answer": "steps/5/answer.md"
+    },
+    {
+      "title": "Travelers Dataset",
+      "text": "steps/6/step6.md",
+      "answer": "steps/6/answer.md"
+    },
+    {
+      "title": "Histogram",
+      "text": "steps/7/step7.md",
+      "answer": "steps/7/answer.md"
+    },
+    {
+      "title": "Log Histogram",
+      "text": "steps/8/step8.md",
+      "answer": "steps/8/answer.md"
+    },
+    {
+      "title": "Statistics of Partitioned Log Transformed Time Series Data",
+      "text": "steps/9/step9.md",
+      "answer": "steps/9/answer.md"
+    },
+    {
+      "title": "Stationarity Test of Time Series Data",
+      "text": "steps/10/step10.md",
+      "answer": "steps/10/answer.md"
+    },
+    {
+      "title": "Stationarity Test of Time Series Data",
+      "text": "steps/11/step11.md",
+      "answer": "steps/11/answer.md"
+    },
+    {
+      "title": "Stationarity Test of Log Transformed Time Series Data",
+      "text": "steps/12/step12.md",
+      "answer": "steps/12/answer.md"
+    }],
+    "intro": {
+      "text": "intro.md",
+      "code": "set-env.sh"
+    },
+    "finish": {
+      "text": "finish.md"
+    },
+    "assets": {
+      "client": [
+        { 
+          "file": "prepareContainer.sh",  
+          "target": "~/"  
+        },    
+        { 
+          "file": "histogram-airline.ipynb",  
+          "target": "~/"
+        },
+        { 
+          "file": "histogram-births.ipynb",   
+          "target": "~/"  
+        },  
+        { 
+          "file": "histogram-log-airline.ipynb", 
+          "target": "~/"  
+        },  
+        { 
+          "file": "load-airline.ipynb", 
+          "target": "~/"  
+        },  
+        { 
+          "file": "load-births.ipynb", 
+          "target": "~/"  
+        },  
+        { 
+          "file": "stats-airline.ipynb", 
+          "target": "~/"  
+        },  
+        { 
+          "file": "stats-births.ipynb", 
+          "target": "~/"  
+        },  
+        { 
+          "file": "stats-log-airline.ipynb", 
+          "target": "~/"  
+        },  
+        { 
+          "file": "test-airline.ipynb", 
+          "target": "~/"  
+        },  
+        { 
+          "file": "test-births.ipynb", 
+          "target": "~/"  
+        },  
+        { 
+          "file": "test-log-airline.ipynb", 
+          "target": "~/"  
+        },  
+        { 
+          "file": "global-travelers.csv", 
+          "target": "~/"  
+        },  
+        { 
+          "file": "routine-births.csv", 
+          "target": "~/"  
+        }
+      ]
+    }
+  },
+  "environment": {
+    "uilayout": "terminal-iframe",
+    "showdashboard": true,
+    "dashboards": [
+      {
+        "name": "Jupyter Notebook",
+        "port": 8888
+      }
+    ],
+    "uimessage1": "\u001b[32mYour Interactive Bash Terminal.\r\n"
+  },
+  "backend": {
+    "imageid": "docker"
+  }
+}

@@ -1,0 +1,90 @@
+{
+  "title": "Resampling and Interpolation",
+  "description": "Run Python Code with Jupyter Notebooks",
+  "difficulty": "Beginner",
+  "time": "20 minutes",
+  "details": {
+    "steps": [{
+      "title": "Jupyter Notebook",
+      "text": "steps/1/step1.md"
+    },
+    {
+      "title": "Upsample to Daily Intervals",
+      "text": "steps/2/step2.md",
+      "answer": "steps/2/answer.md"
+    },    
+    {
+      "title": "Upsample to Daily Intervals with Linear Interpolation",
+      "text": "steps/3/step3.md",
+      "answer": "steps/3/answer.md"
+    },
+    {
+      "title": "Upsample to Daily Intervals with Spline Interpolation",
+      "text": "steps/4/step4.md",
+      "answer": "steps/4/answer.md"
+    },
+    {
+      "title": "Downsampling Data",
+      "text": "steps/5/step5.md",
+      "answer": "steps/5/answer.md"
+    },
+    {
+      "title": "Downsample to Yearly Intervals",
+      "text": "steps/6/step6.md",
+      "answer": "steps/6/answer.md"
+    }],
+    "intro": {
+      "text": "intro.md",
+      "code": "set-env.sh"
+    },
+    "finish": {
+      "text": "finish.md"
+    },
+    "assets": {
+      "client": [
+        { 
+          "file": "prepareContainer.sh",  
+          "target": "~/"  
+        },    
+        { 
+          "file": "downsample-quarterly.ipynb",  
+          "target": "~/"
+        },
+        { 
+          "file": "downsample-yearly.ipynb",   
+          "target": "~/"  
+        },  
+        { 
+          "file": "upsample.ipynb", 
+          "target": "~/"  
+        },  
+        { 
+          "file": "upsample-interpolate.ipynb", 
+          "target": "~/"  
+        },  
+        { 
+          "file": "upsample-spline.ipynb", 
+          "target": "~/"  
+        },  
+        { 
+          "file": "haircare-business.csv", 
+          "target": "~/"  
+        }
+      ]
+    }
+  },
+  "environment": {
+    "uilayout": "terminal-iframe",
+    "showdashboard": true,
+    "dashboards": [
+      {
+        "name": "Jupyter Notebook",
+        "port": 8888
+      }
+    ],
+    "uimessage1": "\u001b[32mYour Interactive Bash Terminal.\r\n"
+  },
+  "backend": {
+    "imageid": "docker"
+  }
+}

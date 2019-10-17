@@ -1,0 +1,99 @@
+{
+  "title": "Use and Remove Seasonality",
+  "description": "Run Python Code with Jupyter Notebooks",
+  "difficulty": "Beginner",
+  "time": "25 minutes",
+  "details": {
+    "steps": [{
+      "title": "Jupyter Notebook",
+      "text": "steps/1/step1.md"
+    },
+    {
+      "title": "Seasonal Adjustment with Differencing",
+      "text": "steps/2/step2.md",
+      "answer": "steps/2/answer.md"
+    },    
+    {
+      "title": "Calculate and Plot Monthly Average",
+      "text": "steps/3/step3.md",
+      "answer": "steps/3/answer.md"
+    },
+    {
+      "title": "Deseasonalize Monthly Data by Differencing",
+      "text": "steps/4/step4.md",
+      "answer": "steps/4/answer.md"
+    },
+    {
+      "title": "Deseasonalize a Time Series Using Month-based Differencing",
+      "text": "steps/5/step5.md",
+      "answer": "steps/5/answer.md"
+    },
+    {
+      "title": "Seasonal Adjustment with Modeling",
+      "text": "steps/6/step6.md",
+      "answer": "steps/6/answer.md"
+    },
+    {
+      "title": "Deseasonalize by Differencing with a Polynomial Model",
+      "text": "steps/7/step7.md",
+      "answer": "steps/7/answer.md"
+    }],
+    "intro": {
+      "text": "intro.md",
+      "code": "set-env.sh"
+    },
+    "finish": {
+      "text": "finish.md"
+    },
+    "assets": {
+      "client": [
+        { 
+          "file": "prepareContainer.sh",  
+          "target": "~/"  
+        },    
+        { 
+          "file": "differencing.ipynb",  
+          "target": "~/"
+        },
+        { 
+          "file": "differencing-monthly.ipynb",   
+          "target": "~/"  
+        },  
+        { 
+          "file": "model-differenced.ipynb", 
+          "target": "~/"  
+        },  
+        { 
+          "file": "model-seasonality.ipynb", 
+          "target": "~/"  
+        },  
+        { 
+          "file": "monthly-average.ipynb", 
+          "target": "~/"  
+        },  
+        { 
+          "file": "monthly-differenced.ipynb", 
+          "target": "~/"  
+        },  
+        { 
+          "file": "routine-heat.csv", 
+          "target": "~/"  
+        }
+      ]
+    }
+  },
+  "environment": {
+    "uilayout": "terminal-iframe",
+    "showdashboard": true,
+    "dashboards": [
+      {
+        "name": "Jupyter Notebook",
+        "port": 8888
+      }
+    ],
+    "uimessage1": "\u001b[32mYour Interactive Bash Terminal.\r\n"
+  },
+  "backend": {
+    "imageid": "docker"
+  }
+}
