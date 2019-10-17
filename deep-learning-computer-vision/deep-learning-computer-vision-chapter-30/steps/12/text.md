@@ -18,7 +18,8 @@ trainX, trainy, testX, testy = data[
 print(
 'Dataset: train=%d, test=%d
 ' % (trainX.shape[0], testX.shape[0]))
-Listing 30.28: Example of loading the face embedding dataset.
+```
+
 Next, the data requires some minor preparation prior to modeling. First, it is a good practice
 to normalize the face embedding vectors. It is a good practice because the vectors are often
 compared to each other using a distance metric. In this context, vector normalization means
@@ -47,7 +48,7 @@ testy = out_encoder.transform(testy)
 ```
 
 Next, we can fit a model. It is common to use a Linear Support Vector Machine (SVM)
-when working with normalized face embedding inputs. This is because the method is very30.6. How to Develop a Face Classification System 510
+when working with normalized face embedding inputs. This is because the method is very
 effective at separating the face embedding vectors. We can fit a linear SVM to the training
 data using the SVC class in scikit-learn and setting the kernel argument to ‘linear’. We may
 also want probabilities later when making predictions, which can be configured by setting the
