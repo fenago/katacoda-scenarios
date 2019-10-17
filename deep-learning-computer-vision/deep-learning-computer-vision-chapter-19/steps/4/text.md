@@ -21,6 +21,8 @@ Keras API and creates a plot of the first nine images in the training dataset.
 We can run the code now. Click **IDE Editor** tab to open Visual Studio and open solution explorer and open `deep-learning-python/chapter_19/01_load_dataset.py` to view file.
 
 #### Run Code
+**Note:** It will take some time to complete.
+
 Now, run the python code by running: `python 01_load_dataset.py`{{execute}}
 
 Running the example loads the Fashion-MNIST train and test dataset and prints their shape.

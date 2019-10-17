@@ -6,24 +6,32 @@
    "details":{
       "steps":[
          {
+            "title":"Introduction",
+            "text":"steps/0/text.md"
+         },
+         {
             "title":"Jupyter Notebook",
             "text":"steps/1/text.md"
          },
          {
-            "title":"",
+            "title":"Classify Photographs of Dogs and Cats",
             "text":"steps/2/text.md"
          },
          {
-            "title":"",
+            "title":"Classify Photographs of Dogs and Cats",
             "text":"steps/3/text.md"
          },
          {
-            "title":"",
+             "title":"Classify Photographs of Dogs and Cats",
             "text":"steps/4/text.md"
          },
          {
-            "title":"",
+             "title":"Classify Photographs of Dogs and Cats",
             "text":"steps/5/text.md"
+         },
+         {
+             "title":"Classify Photographs of Dogs and Cats",
+            "text":"steps/6/text.md"
          }
       ],
       "intro":{

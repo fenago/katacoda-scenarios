@@ -113,11 +113,6 @@
       "description": "Run Python Code with Jupyter Notebooks."
     },
     {
-      "course_id": "deep-learning-computer-vision-chapter-25",
-      "title": "How to Perform Object Detection With Mask R-CNN",
-      "description": "Run Python Code with Jupyter Notebooks."
-    },
-    {
       "course_id": "deep-learning-computer-vision-chapter-26-01",
       "title": "How to Develop a New Object Detection Model",
       "description": "Run Python Code with Jupyter Notebooks."

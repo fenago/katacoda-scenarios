@@ -8,4 +8,6 @@ also build upon the possible improvement offered by using ‘same’ padding
 We can run the code now. Click **IDE Editor** tab to open Visual Studio and open solution explorer and open `deep-learning-python/chapter_18/04_baseline_with_padding_more_filters.py` to view file.
 
 #### Run Code
+**Note:** It will take some time to complete.
+
 Now, run the python code by running: `python 04_baseline_with_padding_more_filters.py`{{execute}}
