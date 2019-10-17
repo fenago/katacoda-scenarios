@@ -5,7 +5,7 @@ git clone https://github.com/athertahir/deep-learning-python.git
 # copy the script into the container; note: the resulting file is owned by root and it not executable
 docker cp ~/tutorial/deep-learning-python/prepareContainer.sh jupyter:/tmp/prepareContainerRoot.sh
 
-docker cp  ~/tutorial/deep-learning-python/. jupyter:/home/jovyan/work
+docker cp  ~/tutorial/deep-learning-python/chapter_09/. jupyter:/home/jovyan/work
 
 # copy the script to make it accessible and executable 
 docker exec -it jupyter bash -c 'sudo chmod -R 777 ~ && cp /tmp/prepareContainerRoot.sh ~/prepareContainer.sh && chmod +x ~/prepareContainer.sh && ~/prepareContainer.sh'

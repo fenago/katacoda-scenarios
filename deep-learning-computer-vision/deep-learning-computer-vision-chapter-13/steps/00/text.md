@@ -1,6 +1,3 @@
-
-Pooling Layers
-
 Convolutional layers in a convolutional neural network systematically apply learned filters to
 input images in order to create feature maps that summarize the presence of those features
 in the input. Convolutional layers prove very effective, and stacking convolutional layers in
@@ -45,7 +42,7 @@ specified, rather than learned. Two common functions used in the pooling operati
 the feature map.
 
 The result of using a pooling layer and creating downsampled or pooled feature maps is a
-summarized version of the features detected in the input. They are useful as small changes13.3. Detecting Vertical Lines 135
+summarized version of the features detected in the input. They are useful as small changes
 in the location of the feature in the input detected by the convolutional layer will result in a
 pooled feature map with the feature in the same location. This capability added by pooling is
 called the model’s invariance to local translation.
