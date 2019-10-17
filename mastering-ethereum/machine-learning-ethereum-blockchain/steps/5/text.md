@@ -26,3 +26,4 @@ function cost(int256[] memory _results, int256 _weight, int256 _bias, int256[] m
 ```
 
 As you can see, we've included the prediction function inside the for loop to calculate the result minus the prediction squared so that we can calculate the error from the cost function. This will be used by sellers who want to optimize a specific linear regression from a buyer to make accurate predictions.
+Grincalaitis, Merunus. Mastering Etheruem. Packt, 2019.
