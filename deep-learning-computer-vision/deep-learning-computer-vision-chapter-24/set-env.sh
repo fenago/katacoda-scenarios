@@ -1,0 +1,1 @@
+pip install keras tensorflow matplotlib pillow numpy==1.16.0

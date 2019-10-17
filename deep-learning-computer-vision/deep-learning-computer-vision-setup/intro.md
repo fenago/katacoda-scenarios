@@ -1,0 +1,1 @@
+In this scenario, we will setup python & install deep learning libraries.
