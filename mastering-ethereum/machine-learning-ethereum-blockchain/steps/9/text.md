@@ -18,3 +18,4 @@ As you can see, we've created a Python class that runs the train function in the
 `python linearRegression.py`{{execute}}
 
 You'll see that the program is constantly reducing the error by taking small steps toward the minimum until it gets to a point where it doesn't improve much. That's okay: we expect it to make precise predictions, but without 100% accuracy. You can then take the final weight and bias to make predictions on your own for that machine learning model.
+Grincalaitis, Merunus. Mastering Etheruem. Packt, 2019.
