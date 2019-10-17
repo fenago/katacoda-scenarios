@@ -1,0 +1,52 @@
+{
+   "title":"How to Scale Image Pixel Data with Keras",
+   "description":"",
+   "difficulty":"Beginner",
+   "time":"10 minutes",
+   "details":{
+      "steps":[
+         {
+            "title":"Pixel Data",
+            "text":"steps/1/text.md"
+         },
+         {
+            "title":"Tutorial Overview",
+            "text":"steps/2/text.md"
+         },
+         {
+            "title":"Clone Repository",
+            "text":"steps/3/text.md"
+         },
+         {
+            "title":"Load the MNIST dataset",
+            "text":"steps/4/text.md"
+         },
+         {
+            "title":"ImageDataGenerator Class for Pixel Scaling",
+            "text":"steps/5/text.md"
+         },
+         {
+            "title":"How to Normalize Images With ImageDataGenerator",
+            "text":"steps/6/text.md"
+         },
+         {
+            "title":"How to Normalize Images With ImageDataGenerator",
+            "text":"steps/7/text.md"
+         }
+      ],
+      "intro":{
+         "text":"intro.md",
+         "code":"set-env.sh"
+      },
+      "finish":{
+         "text":"finish.md"
+      }
+   },
+   "environment":{
+      "uilayout":"vscode",
+      "uimessage1": "\u001b[32mBrought to you by https://LearningVoyage.com\u001b[m\r\n"
+   },
+   "backend":{
+      "imageid":"ubuntu"
+   }
+}

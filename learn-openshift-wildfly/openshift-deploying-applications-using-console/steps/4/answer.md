@@ -1,0 +1,1 @@
+``oc delete all --selector app=openshift-jee-sample``{{execute}}

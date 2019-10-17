@@ -1,14 +1,16 @@
+**Step 2:** Click **IDE Editor** tab to open Visual Studio and open solution explorer and open `apache-spark/src/main/scala/training/ratingsByMovies.scala` to view scala file.
 
-**Step 2:** Open IDE, right-click the training package which you have created in previous exercise and hover over New and then click on Scala Class. When prompted, enter ratingsByMovies as the name and click on the dropdown for Kind and select Object. We will be needing the following imports for our Spark App.
 
+```
 import org.apache.spark.SparkContext
 import scala.io.Source
+```
 
 The first import is as we know to create the SparkContext object. The second is Scala specific import which helps us read the movies.csv file.
  
-
 Let us now define a function which would load the movie names to a Map object.
 
+```
 def loadMovieNames(): Map[Int, String] = {
 
   var movieNames: Map[Int, String] = Map()
@@ -22,6 +24,7 @@ def loadMovieNames(): Map[Int, String] = {
   }
   movieNames
 }
+```
 
 We are defining a function called loadMovieNames which does not take any arguments and returns a Map object which maps Int to String. We then declare a movieNames variable of type Map which maps Int to String and initialize it as an empty map.
 

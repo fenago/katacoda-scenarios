@@ -1,6 +1,8 @@
 Let us now get familiar and start writing some Scala code to get acquainted with Scala syntax and basic programming constructs.
 
-**Step 1:** Go into the Scala console by entering `scala`{{execute}} and hitting enter. Once you see the scala prompt, enter the following piece of code.
+**Step 1:** Go into the Scala console by running `scala`{{execute}}. 
+
+Once you see the scala prompt, enter the following piece of code.
 
 `val name: String = "Learning Voyage"`{{execute}} 
 

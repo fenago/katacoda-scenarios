@@ -1,27 +1,27 @@
 {
-  "title": "Apache Spark Installation",
+  "title": "Apache Spark Installation - Writing User Defined Function",
   "description": "Introduction to Apache Spark",
   "difficulty": "Advanced",
   "time": "15 minutes",
   "details": {
     "steps": [{
-      "title": "",
+      "title": "Clone Repository",
       "text": "steps/1/text.md"
     },
     {
-      "title": "What is Spark?",
+      "title": "Prerequisites",
       "text": "steps/2/text.md"
     },    
 	{
-      "title": "",
+      "title": "Why User-Defined Functions?",
       "text": "steps/3/text.md"
     },
 	{
-      "title": "",
+      "title": "UDF vs UADF",
       "text": "steps/4/text.md"
     },
   {
-      "title": "Start Spark",
+      "title": "Task: Writing User Defined Function",
       "text": "steps/5/text.md"
     },
     {
@@ -41,6 +41,7 @@
         "text": "steps/9/text.md"
     }],
     "intro": {
+      "code": "set-env.sh",
       "text": "intro.md",
       "credits": ""
     },

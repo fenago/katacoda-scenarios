@@ -2,7 +2,7 @@
   "title": "Matrix Operations",
   "description": "Run Python Code with Jupyter Notebooks.",
   "difficulty": "Beginner",
-  "time": "10 minutes",
+  "time": "20 minutes",
   "details": {
     "steps": [{
       "title": "Jupyter Notebook",
@@ -52,23 +52,27 @@
           "target": "~/"  
         },    
         { 
-          "file": "encode-decoder-lstm.ipynb",  
+          "file": "inverse.ipynb",  
           "target": "~/"
         },
         { 
-          "file": "problem-gen-pairs.ipynb",   
+          "file": "matrix-determinent.ipynb",   
           "target": "~/"  
         },  
         { 
-          "file": "problem-int-encoder.ipynb", 
+          "file": "rank-matrix.ipynb", 
           "target": "~/"  
         },  
         { 
-          "file": "problem-one-hot.ipynb", 
+          "file": "rank-vector.ipynb", 
           "target": "~/"  
         },  
         { 
-          "file": "problem-pad.ipynb", 
+          "file": "trace.ipynb", 
+          "target": "~/"  
+        },  
+        { 
+          "file": "transpose.ipynb", 
           "target": "~/"  
         }
       ]

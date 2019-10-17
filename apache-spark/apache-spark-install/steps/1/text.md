@@ -1,10 +1,8 @@
-Task 1: Download and Install Spark
-Note: Java Development Kit (JDK) is a prerequisite to install Spark. Make sure you have installed it if you have not performed the Lab Exercise 1. Please follow the steps in task 1 of Lab Exercise 1 and then come back here to Install Spark.
+Why use Spark when we have Hadoop? Well, Spark excels as a unified platform for processing huge data at very high speeds for various data processing requirements (will be discussed later in this chapter). Also, Spark is an in-memory processing framework. Spark is considered as a successor of Apache Hadoop. Let us briefly discuss the advantages of Spark over Hadoop.
 
-**Step 1:** Verify if your machine has Java installed by executing the following command as shown below.
 
-`java –version`{{execute}}
+#### Data Processing with Spark
 
- 
+In Spark, the data is read from the disk, processed in-memory but instead of spilling it back to disk, Spark can retain the data within the memory for further processing. So, if the processed data is again required for further processing, the data is already present in the memory and the Spark application processes the data eliminating the IO latency and therefore the overall time to process the job is significantly reduced. 
 
-You will see the version displayed in the terminal as shown in the screenshot above. If you do not say the Java version displayed, your machine does not have Java installed. Please install JDK before continuing to next step.
+![](https://github.com/athertahir/apache-spark/raw/master/Screenshots/spark.JPG)

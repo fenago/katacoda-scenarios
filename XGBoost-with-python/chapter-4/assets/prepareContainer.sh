@@ -3,7 +3,8 @@ pip install --upgrade pip
 # cd word_cloud && pip install -e . 
 # cp  ~/word_cloud/*clouds.ipynb  ~/work/Example_word_clouds.ipynb
 pip install plotly 
-pip install matplotlib_venn 
+pip install matplotlib_venn
+pip install xgboost
 pip install cufflinks 
 pip install gender-guesser
 pip install -U nltk

@@ -1,0 +1,1 @@
+In this scenario, you will learn how to Perform Face Classification with FaceNet.

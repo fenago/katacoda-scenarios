@@ -19,7 +19,9 @@ Now, let us pass this function as a parameter to another function.
 
 Here, we are defining a function named highSquared which takes two parameters and returns an Int. One of them is an integer named num and the another one is function named func which takes a parameter of type Int and returns an Int. In the function body, The function func takes the value of num and returns its value. Let us call this function.
 
-```val result = highSquared(4, squared)
+`val result = highSquared(4, squared)`{{execute}} 
 
-println(result)```{{execute}} 
+`println(result)`{{execute}} 
+
+![](https://github.com/athertahir/apache-spark/raw/master/Screenshots/Chapter 2/Selection_043.png) 
 

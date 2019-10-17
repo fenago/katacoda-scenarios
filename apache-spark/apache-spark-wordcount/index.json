@@ -1,19 +1,19 @@
 {
-  "title": "Apache Spark Installation",
+  "title": "Apache Spark WordCount",
   "description": "Introduction to Apache Spark",
   "difficulty": "Advanced",
   "time": "15 minutes",
   "details": {
     "steps": [{
-      "title": "",
+      "title": "Clone Repository",
       "text": "steps/1/text.md"
     },
     {
-      "title": "What is Spark?",
+      "title": "Prerequisites",
       "text": "steps/2/text.md"
     },    
 	{
-      "title": "",
+      "title": "WordCount Example",
       "text": "steps/3/text.md"
     },
 	{
@@ -21,7 +21,7 @@
       "text": "steps/4/text.md"
     },
   {
-      "title": "Start Spark",
+      "title": "",
       "text": "steps/5/text.md"
     },
     {
@@ -29,7 +29,7 @@
         "text": "steps/6/text.md"
     },
     {
-        "title": "",
+        "title": "Spark Program – Performing Operations",
         "text": "steps/7/text.md"
     },
     {
@@ -41,15 +41,15 @@
         "text": "steps/9/text.md"
     },
     {
-        "title": "",
+        "title": "Run Program",
         "text": "steps/10/text.md"
     },
     {
-        "title": "",
+        "title": "Spark Program – Saving Data",
         "text": "steps/11/text.md"
     },
     {
-        "title": "",
+        "title": "Spark Program – Lineage Graph",
         "text": "steps/12/text.md"
     }],
     "intro": {

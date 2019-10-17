@@ -1,3 +1,7 @@
-What is Scala?
-Scala is short for Scalable Language. It is called scalable language because it is scalable as per the user requirement. Scala is a Functional as well as Object Oriented Open Source Programming language which runs on top of a Java Virtual Machine (JVM). Scala is, as said above, the most preferred programming language for Spark, as Spark itself is built with Scala. Since Scala runs on top of a JVM, we can access Java libraries within the Scala code and utilize the functionalities of Java without being limited by Scala itself.
-The compiler used to compile the Scala code is scalac. The Scala compiler compiles the Scala code to a byte code which is understood by a JVM to process the code. This is similar to how Java compiles its Java code using javac compiler to a byte code to process it on a JVM.  
+Resilient Distributed Dataset also known as RDD is the basic data structure of Spark, which is immutable and fault tolerant collection of elements that can be computed and stored in parallel over a cluster of machines. Let us look at each word individually and try to understand it in detail.
+
+**Resilient:** The RDDs are fault tolerant to any data loss. Any loss in data due to hardware failure or data corruption can be recovered using the RDD lineage graph or DAG. 
+
+**Distributed:** The RDDs can be distributed over a cluster of machines in memory.
+
+**Dataset:** The RDDs can be created with any of the datasets such as a text file, JSON, CSV, Database file via JDBC etc.

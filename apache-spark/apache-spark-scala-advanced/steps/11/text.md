@@ -12,9 +12,6 @@ Let us now access the elements of the tuple based on its index. Remember, the in
 
 We can also access the elements of a tuple and print it out to the console as shown below.
 
-`println(s"${showInfo._5} is the highest rated show with "${showInfo._6} rating.")`{{execute}} 
- 
-
-As always, play around with tuples and practice as much as possible.
+`println(s"${showInfo._5} is the highest rated show with ${showInfo._6} rating.")`{{execute}} 
 
 Task is complete!

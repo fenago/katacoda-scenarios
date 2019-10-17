@@ -1,0 +1,1 @@
+In this Lab we will get learn to Cluster WildFly on Openshift using WildFly Operator.

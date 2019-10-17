@@ -1,0 +1,156 @@
+{
+  "title": "Deep Learning with Python",
+  "description": "Deep Learning for Computer Vision",
+  "courses": [
+    {
+      "course_id": "deep-learning-computer-vision-setup",
+      "title": "Deep Learning - Setup Environment",
+      "description": "Run Python Code with Jupyter Notebooks."
+    },
+    {
+      "course_id": "deep-learning-computer-vision-chapter-03",
+      "title": "How to Develop Deep Learning Models With Keras",
+      "description": "Run Python Code with Jupyter Notebooks."
+    },
+    {
+      "course_id": "deep-learning-computer-vision-chapter-04-01",
+      "title": "How to Load Images With PIL/Pillow",
+      "description": "Run Python Code with Jupyter Notebooks."
+    },
+	{
+      "course_id": "deep-learning-computer-vision-chapter-04-02",
+      "title": "How to Manipulate Images With PIL/Pillow",
+      "description": "Run Python Code with Jupyter Notebooks."
+    },
+    {
+      "course_id": "deep-learning-computer-vision-chapter-05",
+      "title": "How to Manually Scale Image Pixel Data",
+      "description": "Run Python Code with Jupyter Notebooks."
+    },
+    {
+      "course_id": "deep-learning-computer-vision-chapter-06",
+      "title": "How to Load and Manipulate Images with Keras",
+      "description": "Run Python Code with Jupyter Notebooks."
+    },
+    {
+      "course_id": "deep-learning-computer-vision-chapter-07-01",
+      "title": "How to Scale Image Pixel Data with Keras",
+      "description": "Run Python Code with Jupyter Notebooks."
+    },
+    {
+      "course_id": "deep-learning-computer-vision-chapter-07-02",
+      "title": "How to Scale Image Pixel Data with Keras",
+      "description": "Run Python Code with Jupyter Notebooks."
+    },
+    {
+      "course_id": "deep-learning-computer-vision-chapter-08",
+      "title": "How to Load Large Datasets From Directories with Keras",
+      "description": "Run Python Code with Jupyter Notebooks."
+    },
+    {
+      "course_id": "deep-learning-computer-vision-chapter-09",
+      "title": "How to Use Image Data Augmentation in Keras",
+      "description": "Run Python Code with Jupyter Notebooks."
+    },
+    {
+      "course_id": "deep-learning-computer-vision-chapter-10",
+      "title": "How to Use Different Color Channel Ordering Formats",
+      "description": "Run Python Code with Jupyter Notebooks."
+    },
+    {
+      "course_id": "deep-learning-computer-vision-chapter-11",
+      "title": "How Convolutional Layers Work",
+      "description": "Run Python Code with Jupyter Notebooks."
+    },
+    {
+      "course_id": "deep-learning-computer-vision-chapter-12-01",
+      "title": "How to Use Filter Size, Padding, and Stride",
+      "description": "Run Python Code with Jupyter Notebooks."
+    },
+	{
+      "course_id": "deep-learning-computer-vision-chapter-12-02",
+      "title": "How to Use Filter Size, Padding, and Stride",
+      "description": "Run Python Code with Jupyter Notebooks."
+    },
+    {
+      "course_id": "deep-learning-computer-vision-chapter-13",
+      "title": "How Pooling Layers Work",
+      "description": "Run Python Code with Jupyter Notebooks."
+    },
+    {
+      "course_id": "deep-learning-computer-vision-chapter-13-avg",
+      "title": "How Pooling Layers Work",
+      "description": "Run Python Code with Jupyter Notebooks."
+    },
+    {
+      "course_id": "deep-learning-computer-vision-chapter-16",
+      "title": "How to Use 1x1 Convolutions to Manage Model Complexity",
+      "description": "Run Python Code with Jupyter Notebooks."
+    },
+    {
+      "course_id": "deep-learning-computer-vision-chapter-17",
+      "title": "How To Implement Model Architecture Innovations",
+      "description": "Run Python Code with Jupyter Notebooks."
+    },
+    {
+      "course_id": "deep-learning-computer-vision-chapter-18",
+      "title": "How to Use Pre-Trained Models and Transfer Learning",
+      "description": "Run Python Code with Jupyter Notebooks."
+    },
+    {
+      "course_id": "deep-learning-computer-vision-chapter-19",
+      "title": "How to Classify Black and White Photos of Clothing",
+      "description": "Run Python Code with Jupyter Notebooks."
+    },
+    {
+      "course_id": "deep-learning-computer-vision-chapter-21-01",
+      "title": "How to Classify Photographs of Dogs and Cats",
+      "description": "Run Python Code with Jupyter Notebooks."
+    },
+    {
+      "course_id": "deep-learning-computer-vision-chapter-24",
+      "title": "How to Perform Object Detection With YOLOv3",
+      "description": "Run Python Code with Jupyter Notebooks."
+    },
+    {
+      "course_id": "deep-learning-computer-vision-chapter-25",
+      "title": "How to Perform Object Detection With Mask R-CNN",
+      "description": "Run Python Code with Jupyter Notebooks."
+    },
+    {
+      "course_id": "deep-learning-computer-vision-chapter-26-01",
+      "title": "How to Develop a New Object Detection Model",
+      "description": "Run Python Code with Jupyter Notebooks."
+    },
+    {
+      "course_id": "deep-learning-computer-vision-chapter-28-01",
+      "title": "How to Detect Faces in Photographs",
+      "description": "Run Python Code with Jupyter Notebooks."
+    },    
+	{
+      "course_id": "deep-learning-computer-vision-chapter-28-02",
+      "title": "How to Detect Faces in Photographs",
+      "description": "Run Python Code with Jupyter Notebooks."
+    },
+    {
+      "course_id": "deep-learning-computer-vision-chapter-29",
+      "title": "How to Perform Face Identification and Verification with VGGFace2",
+      "description": "Run Python Code with Jupyter Notebooks."
+    },
+    {
+      "course_id": "deep-learning-computer-vision-chapter-29-02",
+      "title": "How to Perform Face Identification and Verification with VGGFace2",
+      "description": "Run Python Code with Jupyter Notebooks."
+    },
+    {
+      "course_id": "deep-learning-computer-vision-chapter-30",
+      "title": "How to Perform Face Classification with FaceNet",
+      "description": "Run Python Code with Jupyter Notebooks."
+    },
+    {
+      "course_id": "deep-learning-computer-vision-aws",
+      "title": "How to Setup Amazon EC2 for Deep Learning on GPUs",
+      "description": "Run Python Code with Jupyter Notebooks."
+    }
+  ]
+}

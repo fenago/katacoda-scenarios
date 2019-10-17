@@ -1,0 +1,59 @@
+{
+  "title": "Configuring WildFly JVM on Openshift",
+  "description": "",
+  "difficulty": "beginner",
+  "time": "15 minutes",
+  "details": {
+    "steps": [{
+      "title": "Step 1 - Creating Project",
+      "text": "steps/1/text.md"
+    },
+    {
+      "title": "Step 2 - Web Console",
+      "text": "steps/0/text.md"
+    }, 
+    {
+      "title": "Step 3 - Deploying Application",
+      "text": "steps/2/text.md",
+      "verify": "steps/2/verify.sh"
+    },    
+	{
+      "title": "Step 4 - Deploying Application",
+      "text": "steps/3/text.md",
+      "verify": "steps/3/verify.sh"
+    },
+	{
+      "title": "Step 5 - Environment Variable",
+      "text": "steps/4/text.md"
+    },
+    {
+        "title": "Step 6 - LimitRange",
+        "text": "steps/5/text.md"
+      },
+      {
+          "title": "Step 7 - LimitRange",
+          "text": "steps/6/text.md"
+        }],
+    "intro": {
+      "courseData": "env-init.sh",
+      "code": "set-env.sh",
+      "text": "intro.md"
+    },
+    "finish": {
+      "text": "finish.md"
+    }
+  },
+  "files": [
+    "limits.json"
+  ],
+  "environment": {
+    "showdashboard": true,
+    "dashboards": [{"name": "Dashboard", "port": 8443}],
+    "uilayout": "editor-terminal",
+    "uimessage1": "\u001b[32mBrought to you by https://LearningVoyage.com\u001b[m\r\n"
+  },
+  "backend": {
+      "trainingid": "openshift-3-11",
+      "imageid": "openshift-3-11"
+  }
+}

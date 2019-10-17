@@ -3,14 +3,17 @@
 
 However, the dense_rank function doesn't skip the ranks when it encounters duplicate values. In the example above, the dense_rank will alocate same rank i.e., rank 1 for duplicate rows and then rank 2 for the next row. Let us look at this now.
 
+```
 val denseRanked = dense_rank().over(window)
+```
 
 Let us now call the show method on our dataset and add the rank column using the select function.
 
-
-
+```
 employeeDS.select($"*", denseRanked.as("dense_rank")).show()
+```
 
 The following output is shown when we run the program.
 
- 
+![](https://github.com/athertahir/apache-spark/raw/master/Screenshots/Chapter 8/Selection_054.png)
+

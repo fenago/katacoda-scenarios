@@ -1,3 +1,21 @@
-What is Scala?
-Scala is short for Scalable Language. It is called scalable language because it is scalable as per the user requirement. Scala is a Functional as well as Object Oriented Open Source Programming language which runs on top of a Java Virtual Machine (JVM). Scala is, as said above, the most preferred programming language for Spark, as Spark itself is built with Scala. Since Scala runs on top of a JVM, we can access Java libraries within the Scala code and utilize the functionalities of Java without being limited by Scala itself.
-The compiler used to compile the Scala code is scalac. The Scala compiler compiles the Scala code to a byte code which is understood by a JVM to process the code. This is similar to how Java compiles its Java code using javac compiler to a byte code to process it on a JVM.  
+We need following packages to perform the lab exercise: 
+- Java Development Kit
+- pyspark
+
+
+#### JAVA
+Verify the installation with: `java -version`{{execute}} 
+
+You'll see the following output:
+
+```
+java version "1.8.0_201"
+Java(TM) SE Runtime Environment (build 1.8.0_201-b09)
+Java HotSpot(TM) 64-Bit Server VM (build 25.201-b09, mixed mode)
+```
+
+
+#### Install pyspark
+PySpark is available in pypi. To install just run `pip install pyspark`{{execute}} 
+
+The Python packaging for Spark is not intended to replace all of the other use cases. This Python packaged version of Spark is suitable for interacting with an existing cluster (be it Spark standalone, YARN, or Mesos) - but does not contain the tools required to set up your own standalone Spark cluster.

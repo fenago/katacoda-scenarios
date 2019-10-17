@@ -24,7 +24,7 @@
     },
     {
       "course_id": "apache-spark-rdd",
-      "title": "Apache Spark RDD",
+      "title": "Apache Spark Creating RDDs from Spark-Shell",
       "description": ""
     },
     {
@@ -54,7 +54,7 @@
     },
     {
       "course_id": "apache-spark-paired-rdd-joins",
-      "title": "Apache Spark Paired RDD Joins",
+      "title": "Apache Spark Paired RDD Joins & Actions",
       "description": ""
     },
     {
@@ -143,8 +143,8 @@
       "description": ""
     },
     {
-      "course_id": "apache-spark-untyped-typed-udaf",
-      "title": "Apache Spark Typed and Untyped UDAF",
+      "course_id": "apache-spark-typed-udaf",
+      "title": "Apache Spark Typed UDAF",
       "description": ""
     },
     {

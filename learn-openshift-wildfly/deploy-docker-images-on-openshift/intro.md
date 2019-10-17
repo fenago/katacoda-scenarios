@@ -1,0 +1,1 @@
+In this Lab we will get learn how to Deploy Docker images on Openshift.

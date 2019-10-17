@@ -3,30 +3,10 @@
 
 Download URL : http://spark.apache.org/downloads.html
 
+`wget https://www-us.apache.org/dist/spark/spark-2.4.4/spark-2.4.4-bin-hadoop2.7.tgz`{{execute}}
 
+After running the above command, your download should start. The download may take a while depending upon your internet connection.
 
-
-
- 
-RDD op.
-
-IntelliJ D/l & Ins
-Configure IntelliJ
- 
-
-After clicking the download link, you will be taken to a page with mirror site to download Spark. Click the mirror link as shown below and your download should start. The download may take a while depending upon your internet connection.
-
- 
-
-**Step 3:** The download will be saved to the Downloads directory by default. Execute the following command to change the directory to Downloads folder.
-
-`cd Downloads`{{execute}}
-
- 
-RDD op.
-
-IntelliJ D/l & Ins
-Configure IntelliJ
-Once you are in the Downloads directory, you may optionally check if Spark has been downloaded using the ls command.
+**Step 3:** The download will be saved in the current directory by default. You may optionally check if Spark has been downloaded using the ls command.
 
 `ls`{{execute}}

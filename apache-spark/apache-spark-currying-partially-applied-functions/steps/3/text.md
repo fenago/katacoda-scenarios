@@ -1,4 +1,3 @@
-Function currying in Scala
 Function currying in Scala is used to create partially applied functions. The curried functions are declared with multiple parameter groups with each group enclosed in paranthesis.
 
 For example,

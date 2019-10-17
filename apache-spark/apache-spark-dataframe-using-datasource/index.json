@@ -1,19 +1,19 @@
 {
-  "title": "Apache Spark Installation",
+  "title": "Apache Spark - Creating Data Frame using DataSource API",
   "description": "Introduction to Apache Spark",
   "difficulty": "Advanced",
   "time": "15 minutes",
   "details": {
     "steps": [{
-      "title": "",
+      "title": "Clone Repository",
       "text": "steps/1/text.md"
     },
     {
-      "title": "What is Spark?",
+      "title": "Prerequisites",
       "text": "steps/2/text.md"
     },    
 	{
-      "title": "",
+      "title": "Task: Creating Data Frame using Data Source API",
       "text": "steps/3/text.md"
     },
 	{
@@ -21,7 +21,7 @@
       "text": "steps/4/text.md"
     },
   {
-      "title": "Start Spark",
+      "title": "",
       "text": "steps/5/text.md"
     },
     {
@@ -33,10 +33,11 @@
         "text": "steps/7/text.md"
     },
     {
-        "title": "",
+        "title": "Selecting multiple columns…",
         "text": "steps/8/text.md"
     }],
     "intro": {
+      "code": "set-env.sh",
       "text": "intro.md",
       "credits": ""
     },

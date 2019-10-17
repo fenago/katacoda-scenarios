@@ -1,46 +1,51 @@
 {
-  "title": "Apache Spark Installation",
+  "title": "Apache Spark - Querying data using Spark SQL",
   "description": "Introduction to Apache Spark",
   "difficulty": "Advanced",
   "time": "15 minutes",
   "details": {
     "steps": [{
-      "title": "",
+      "title": "Clone Repository",
       "text": "steps/1/text.md"
     },
     {
-      "title": "What is Spark?",
+      "title": "What is Spark SQL?",
       "text": "steps/2/text.md"
     },    
 	{
-      "title": "",
+      "title": "Spark SQL Architecture",
       "text": "steps/3/text.md"
     },
 	{
-      "title": "",
+      "title": "Querying data using Spark SQL",
       "text": "steps/4/text.md"
     },
   {
-      "title": "Start Spark",
+      "title": "Querying data using Spark SQL...",
       "text": "steps/5/text.md"
     },
     {
-        "title": "",
+        "title": "Querying data using Spark SQL...",
         "text": "steps/6/text.md"
     },
     {
-        "title": "",
+        "title": "Querying data using Spark SQL...",
         "text": "steps/7/text.md"
     },
     {
-        "title": "",
+        "title": "Querying data using Spark SQL...",
         "text": "steps/8/text.md"
     },
     {
-        "title": "",
+        "title": "Save File",
         "text": "steps/9/text.md"
+    },
+    {
+        "title": "Save File...",
+        "text": "steps/10/text.md"
     }],
     "intro": {
+      "code": "set-env.sh",
       "text": "intro.md",
       "credits": ""
     },

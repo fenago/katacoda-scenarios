@@ -1,0 +1,50 @@
+{
+  "title": "Deploying Applications Using Web Console",
+  "description": "",
+  "difficulty": "beginner",
+  "time": "15 minutes",
+  "details": {
+    "steps": [{
+      "title": "Step 1 - Installing Podman",
+      "text": "steps/0/text.md"
+    },
+    {
+      "title": "Step 2 - Building image with Podman",
+      "text": "steps/1/text.md"
+    }, 
+    {
+      "title": "Step 3 - Running containers with Podman",
+      "text": "steps/2/text.md"
+    },    
+	{
+      "title": "Step 4 - Running WildFly container with Podman",
+      "text": "steps/3/text.md"
+    },
+	{
+      "title": "Step 5 - Podman Inspect",
+      "text": "steps/4/text.md"
+    },
+    {
+        "title": "Step 6 - Podman Login(Optional)",
+        "text": "steps/5/text.md"
+  }],
+    "intro": {
+      "courseData": "env-init.sh",
+      "code": "set-env.sh",
+      "text": "intro.md"
+    },
+    "finish": {
+      "text": "finish.md"
+    }
+  },
+  "environment": {
+    "showdashboard": true,
+    "dashboards": [{"name": "Dashboard", "port": 8443}],
+    "uilayout": "terminal-iframe",
+    "uimessage1": "\u001b[32mBrought to you by https://LearningVoyage.com\u001b[m\r\n"
+  },
+  "backend": {
+      "trainingid": "openshift-3-6",
+      "imageid": "openshift-3-6"
+  }
+}

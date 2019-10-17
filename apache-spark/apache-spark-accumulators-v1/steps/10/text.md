@@ -3,7 +3,7 @@
 If there are 4 fields in a record, we simply access each field based on its index and store it in the case class records using the Right object.. If there are less than 4 fields, we pass the record as is using the Left object.
 
 
-
+```
 if (fields.length == 4)
      {
       val UserId: Int = fields(0).toInt
@@ -18,9 +18,9 @@ if (fields.length == 4)
     }
   }
 }
+```
 
 Please make sure you correctly enter all the opening and closing flower brackets if you encounter an error.
-
 
 Let us now go back to the previous program counters and refer this object there.
 

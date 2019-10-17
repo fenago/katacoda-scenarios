@@ -6,12 +6,11 @@
 
 Once you run, the above command, a screen similar to the screenshot shows confirming the successful installation of Spark.
  
-RDD op.
+![](https://github.com/athertahir/apache-spark/raw/master/Screenshots/Chapter 3/Selection_018.png)
 
-IntelliJ D/l & Ins
-Configure IntelliJ
+**Note:** It might not work first time, Type `Ctrl` + `C` to quit and run `spark-shell`{{execute}} command again in that case.
 
- 
+Run `:q`{{execute}} to exit `spark-shell`.
 
 Task is complete!
 

@@ -12,7 +12,7 @@ Now, exit out of the paste mode and simply call this function by its name.
 
 `married("Ross", 3)`{{execute}}
 
-
+![](https://github.com/athertahir/apache-spark/raw/master/Screenshots/Chapter 2/Selection_040.png) 
 
 Please note that the return type (which is String, in this case) and also the keyword return are optional. Scala can determine the return type based on the last expression in the function body as shown below.
 

@@ -5,38 +5,39 @@
   "time": "15 minutes",
   "details": {
     "steps": [{
-      "title": "",
+      "title": "Clone Repository",
       "text": "steps/1/text.md"
     },
     {
-      "title": "What is Spark?",
+      "title": "Prerequisites",
       "text": "steps/2/text.md"
     },    
 	{
-      "title": "",
+      "title": "Task: Implementing Accumulators V2",
       "text": "steps/3/text.md"
     },
 	{
-      "title": "",
+      "title": "Implementing Accumulators V2...",
       "text": "steps/4/text.md"
     },
   {
-      "title": "Start Spark",
+      "title": "Implementing Accumulators V2...",
       "text": "steps/5/text.md"
     },
     {
-        "title": "",
+        "title": "Implementing Accumulators V2...",
         "text": "steps/6/text.md"
     },
     {
-        "title": "",
+        "title": "Implementing Accumulators V2...",
         "text": "steps/7/text.md"
     },
     {
-        "title": "",
+        "title": "Implementing Accumulators V2...",
         "text": "steps/8/text.md"
     }],
     "intro": {
+      "code": "set-env.sh",
       "text": "intro.md",
       "credits": ""
     },

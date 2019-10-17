@@ -1,0 +1,47 @@
+{
+  "title": "OpenShift WildFly",
+  "icon": "fa-openshift",
+  "description": "Get Started with OpenShift & WildFly",
+  "courses": [
+  	{
+      "course_id": "openshift-building-applications-from-sourcecode",
+      "title": "Building WildFly Applications from Source Code"
+    },
+	{
+      "course_id": "openshift-deploying-applications-using-console",
+      "title": "Deploying Applications Using WebConsole"
+    },
+	{
+      "course_id": "customize-wildfly-applications-on-openshift",
+      "title": "Customize WildFly applications on Openshift"
+    },
+	{
+      "course_id": "clustering-wildfly-on-openshift-using-wildfly-operator",
+      "title": "Clustering WildFly on Openshift using WildFly Operator"
+    },
+	{
+      "course_id": "deploy-docker-images-on-openshift",
+      "title": "Deploy Docker images on Openshift"
+    },
+	{
+      "course_id": "running-any-docker-image-on-openshift",
+      "title": "Running any Docker image on Openshift"
+    },
+	{
+      "course_id": "configuring-wildfly-jvm-on-openshift",
+      "title": "Configuring WildFly JVM on Openshift"
+    },
+	{
+      "course_id": "accessing-openshift-services-remotely",
+      "title": "Accessing Openshift services remotely"
+    },
+	{
+      "course_id": "getting-started-with-podman",
+      "title": "Getting started with Podman"
+    },
+	{
+      "course_id": "java-batch-processing",
+      "title": "Java EE Batch Processing with OpenShift, WildFly & JBeret"
+    }
+  ]
+}

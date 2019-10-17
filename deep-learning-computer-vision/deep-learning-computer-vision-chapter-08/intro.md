@@ -1,0 +1,1 @@
+In this scenario, you will learn how to How to Load Large Datasets From Directories with Keras.

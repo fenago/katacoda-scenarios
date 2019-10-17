@@ -1,0 +1,1 @@
+In this Lab we will get learn how to run any Docker image on Openshift.

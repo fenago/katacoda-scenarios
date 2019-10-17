@@ -2,7 +2,7 @@
 
 **Step 5:** Let us now use even more math functions.
 
-val mathFuncs3 = numbersDS.select(pow($"numbers", 2), round($"numbers"), sin($"numbers"), tan($"numbers"))
+`val mathFuncs3 = numbersDS.select(pow($"numbers", 2), round($"numbers"), sin($"numbers"), tan($"numbers"))`{{execute}} 
 
 - The pow function returns the number raised to the power of some other number. It takes two arguments. The first argument is the column with numbers and the second argument is number which the power has to be calculated.
 
@@ -11,18 +11,16 @@ val mathFuncs3 = numbersDS.select(pow($"numbers", 2), round($"numbers"), sin($"n
 - The sin and tan functions return the sine and tangent trignometric angle respectively.
 
 Let us check the result using the show method.
-
- 
-
-mathFuncs3.show()
+`mathFuncs3.show()`{{execute}} 
 
 The following result is shown.
 
- 
+![](https://github.com/athertahir/apache-spark/raw/master/Screenshots/Chapter 8/Selection_043.png)
+
 
 **Step 6:** Let us finally conclude math functions with a couple more of them.
 
-val mathFuncs4 = numbersDS.select(sqrt($"numbers"), log10($"numbers"), $"numbers" + Math.PI)
+`val mathFuncs4 = numbersDS.select(sqrt($"numbers"), log10($"numbers"), $"numbers" + Math.PI)`{{execute}} 
 
 - The sqrt function returns the square root of the given numbers in the column.
 
@@ -31,16 +29,12 @@ val mathFuncs4 = numbersDS.select(sqrt($"numbers"), log10($"numbers"), $"numbers
 - In the third column, we have simply added the value of PI by using the Math.PI expression.
 
 Let us check the result using the show method.
-
-mathFuncs4.show()
-
-
+`mathFuncs4.show()`{{execute}} 
 
 
 The following result is shown.
 
+![](https://github.com/athertahir/apache-spark/raw/master/Screenshots/Chapter 8/Selection_044.png)
+
  
-There are many other math functions that can be applied. Please check the references section for link to all the functions.
-
-
 

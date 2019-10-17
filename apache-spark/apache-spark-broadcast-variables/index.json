@@ -1,46 +1,47 @@
 {
-  "title": "Apache Spark Installation",
+  "title": "",
   "description": "Introduction to Apache Spark",
   "difficulty": "Advanced",
   "time": "15 minutes",
   "details": {
     "steps": [{
-      "title": "",
+      "title": "Clone Repository",
       "text": "steps/1/text.md"
     },
     {
-      "title": "What is Spark?",
+      "title": "Prerequisites",
       "text": "steps/2/text.md"
     },    
 	{
-      "title": "",
+      "title": "Broadcast Variables",
       "text": "steps/3/text.md"
     },
 	{
-      "title": "",
+      "title": "Task: Using Broadcast Variables",
       "text": "steps/4/text.md"
     },
   {
-      "title": "Start Spark",
+      "title":  "Using Broadcast Variables...",
       "text": "steps/5/text.md"
     },
     {
-        "title": "",
+        "title": "Using Broadcast Variables...",
         "text": "steps/6/text.md"
     },
     {
-        "title": "",
+        "title": "Using Broadcast Variables...",
         "text": "steps/7/text.md"
     },
     {
-        "title": "",
+        "title": "Using Broadcast Variables...",
         "text": "steps/8/text.md"
     },
     {
-        "title": "",
+        "title": "Using Broadcast Variables...",
         "text": "steps/9/text.md"
     }],
     "intro": {
+      "code": "set-env.sh",
       "text": "intro.md",
       "credits": ""
     },

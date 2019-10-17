@@ -2,5 +2,8 @@
 
 Let us name the function parseRecords.
 
+```
 def parseRecords (rows: String): (Int, Float)={
+```
+
 This function takes each line of input as an argument and returns a tuple of an integer and a float.
