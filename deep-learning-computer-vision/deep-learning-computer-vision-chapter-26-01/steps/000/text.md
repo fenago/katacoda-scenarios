@@ -15,7 +15,7 @@ The library can be installed directly via pip. Change directory into the Mask RC
 directory and run the installation script. From the command line, type the following:
 
 
-`apt-get get update`{{execute}} 
+`apt-get update`{{execute}} 
 
 `apt-get install -y python`{{execute}} 
 

@@ -15,8 +15,8 @@ Now, move in the directory which contains the source code.
 
 
 #### Install Dependencies
-We need following packages to perform the lab exercise: 
+We need following packages to perform the lab exercise which have been installed already:
 - keras
 - tensorflow
 - numpy
-- pillow
+- mtcnn
