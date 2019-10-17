@@ -57,3 +57,4 @@ function getAllTrainedModels(uint256 _id) public view returns(uint256[] memory, 
 ```
 
 We have a cost function to quickly verify the results uploaded by a proposed seller, a getModel function that will be mainly used by sellers who want to get more specific information about a model, and a getAllTrainedModels function that returns the participants of a particular job. Note how we're returning the most important variables in the struct instead of the entire struct. We are doing this for the simple reason that we can't return structs yet in Solidity, so we have to separate each variable and return an array for each.
+Grincalaitis, Merunus. Mastering Etheruem. Packt, 2019.
