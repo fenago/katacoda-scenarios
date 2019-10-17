@@ -20,3 +20,4 @@ We need following packages to perform the lab exercise which have been installed
 - tensorflow
 - numpy
 - mtcnn
+- opencv-python
