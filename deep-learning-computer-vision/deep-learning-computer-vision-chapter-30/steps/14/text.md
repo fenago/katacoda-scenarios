@@ -16,7 +16,7 @@ The rest of the example is the same up until we fit the model. First, we need to
 random example from the test set, then get the embedding, face pixels, expected class prediction,
 and the corresponding name for the class.
 
-We can run the code now. Click **IDE Editor** tab to open Visual Studio and open solution explorer and open `deep-learning-python/chapter_18/07_random_face_identity_classification.py` to view file.
+We can run the code now. Click **IDE Editor** tab to open Visual Studio and open solution explorer and open `deep-learning-python/chapter_30/07_random_face_identity_classification.py` to view file.
 
 
 #### Run Code

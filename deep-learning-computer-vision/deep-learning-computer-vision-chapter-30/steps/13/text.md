@@ -1,5 +1,5 @@
 
-We can run the code now. Click **IDE Editor** tab to open Visual Studio and open solution explorer and open `deep-learning-python/chapter_18/06_face_classification.py` to view file.
+We can run the code now. Click **IDE Editor** tab to open Visual Studio and open solution explorer and open `deep-learning-python/chapter_30/06_face_classification.py` to view file.
 
 
 #### Run Code

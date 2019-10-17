@@ -32,7 +32,7 @@ print(model.inputs)
 print(model.outputs)
 ```
 
-We can run the code now. Click **IDE Editor** tab to open Visual Studio and open solution explorer and open `deep-learning-python/chapter_19/01_facenet_model.py` to view file.
+We can run the code now. Click **IDE Editor** tab to open Visual Studio and open solution explorer and open `deep-learning-python/chapter_30/01_facenet_model.py` to view file.
 
 #### Run Code
 Now, run the python code by running: `python 01_facenet_model.py`{{execute}}

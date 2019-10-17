@@ -19,7 +19,7 @@ import mtcnn
 print(mtcnn.__version__)
 ```
 
-We can run the code now. Click **IDE Editor** tab to open Visual Studio and open solution explorer and open `deep-learning-python/chapter_19/02_check_mtcnn_version.py` to view file.
+We can run the code now. Click **IDE Editor** tab to open Visual Studio and open solution explorer and open `deep-learning-python/chapter_30/02_check_mtcnn_version.py` to view file.
 
 #### Run Code
 Now, run the python code by running: `python 02_check_mtcnn_version.py`{{execute}}

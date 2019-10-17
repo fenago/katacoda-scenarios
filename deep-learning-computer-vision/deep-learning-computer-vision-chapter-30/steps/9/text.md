@@ -5,7 +5,7 @@ we can see that there are 14 photographs of Ben Affleck in the training dataset.
 the face in each photograph, and create a plot with 14 faces, with two rows of seven images
 each. 
 
-We can run the code now. Click **IDE Editor** tab to open Visual Studio and open solution explorer and open `deep-learning-python/chapter_18/03_extract_faces.py` to view file.
+We can run the code now. Click **IDE Editor** tab to open Visual Studio and open solution explorer and open `deep-learning-python/chapter_30/03_extract_faces.py` to view file.
 
 
 #### Run Code

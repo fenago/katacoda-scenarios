@@ -1,7 +1,3 @@
-
-
-
-#### How to Detect Faces for Face Recognition
 Before we can perform face recognition, we need to detect faces. Face detection is the process of
 automatically locating faces in a photograph and localizing them by drawing a bounding box
 around their extent. In this tutorial, we will also use the Multi-Task Cascaded Convolutional
