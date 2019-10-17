@@ -82,3 +82,4 @@ After that, we add the optimized weights and the bias function, as shown in the 
 
         return weight, bias
 ```
+Grincalaitis, Merunus. Mastering Etheruem. Packt, 2019.
