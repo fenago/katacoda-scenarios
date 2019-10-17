@@ -4,7 +4,7 @@ The Notebook opens in a new browser window. You can create a new notebook or ope
 You can also open the Jupyter Notebook at https://[[HOST_SUBDOMAIN]]-8888-[[KATACODA_HOST]].environments.katacoda.com/notebooks/work/08_mtcnn_face_detection_plot_landmarks1.ipynb
 
 **Note:**
-Since deep learning algorithms are resource extensive. Please **shutdown** each notebook [here](https://[[HOST_SUBDOMAIN]]-8888-[[KATACODA_HOST]].environments.katacoda.com/notebooks/work) before proceeding as shown below:
+Since deep learning algorithms are resource extensive. Please **shutdown** each notebook after running it [here](https://[[HOST_SUBDOMAIN]]-8888-[[KATACODA_HOST]].environments.katacoda.com/notebooks/work) before proceeding as shown below:
 
 Select green(running) notebooks and click `Shutdown`.
 
