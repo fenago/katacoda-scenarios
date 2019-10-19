@@ -25,3 +25,4 @@ def optimizeWeightBias(results, weight, bias, xs, learningRate):
     bias -= biasDerivative * learningRate
 return weight, bias
 ```
+Grincalaitis, Merunus. Mastering Etheruem. Packt, 2019.

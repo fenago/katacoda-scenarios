@@ -10,7 +10,7 @@ docker cp ~/tutorial/deep-learning-python/prepareContainer.sh jupyter:/tmp/prepa
 docker cp  ~/tutorial/deep-learning-python/chapter_26/. jupyter:/home/jovyan/work
 
 # copy the script to make it accessible and executable 
-docker exec -it jupyter bash -c 'sudo chmod -R 777 ~ && cp /tmp/prepareContainerRoot.sh ~/prepareContainer.sh && chmod +x ~/prepareContainer.sh && ~/prepareContainer.sh && git clone https://github.com/matterport/Mask_RCNN.git && cd Mask_RCNN && python setup.py install && cd .. && git clone https://github.com/experiencor/kangaroo.git'
+docker exec -it jupyter bash -c 'sudo chmod -R 777 ~ && cp /tmp/prepareContainerRoot.sh ~/prepareContainer.sh && chmod +x ~/prepareContainer.sh && ~/prepareContainer.sh && git clone https://github.com/matterport/Mask_RCNN.git && cd Mask_RCNN && python setup.py install && cd /home/jovyan/work && git clone https://github.com/experiencor/kangaroo.git'
 # execute the script inside the container - to install a number of packages
 #docker exec -it jupyter bash -c './prepareContainer.sh'
 # # restart the docker container

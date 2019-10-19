@@ -87,3 +87,4 @@ We are applying the cost function for one data point to see the error of the ini
 error = (20 - 352)2 / 1 = 110224 
 ```
 The error is 110224, which is a gigantic number, since we are applying it to one data point and our model isn't trained yet. Now do the same for all the data points until you generate the error for the entire dataset. Hopefully, you will understand the process to calculate the error with that example.
+Grincalaitis, Merunus. Mastering Etheruem. Packt, 2019.

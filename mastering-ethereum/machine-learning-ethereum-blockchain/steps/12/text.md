@@ -25,3 +25,4 @@ function uploadResult(uint256 _id, uint256 _weight, uint256 _bias) public {
     emit AddedResult(_id, now, msg.sender);
 }
 ```
+Grincalaitis, Merunus. Mastering Etheruem. Packt, 2019.

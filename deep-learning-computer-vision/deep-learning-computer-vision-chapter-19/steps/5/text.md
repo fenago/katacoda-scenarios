@@ -10,4 +10,6 @@ definition of the model, the evaluation of the model, and the presentation of re
 We can run the code now. Click **IDE Editor** tab to open Visual Studio and open solution explorer and open `deep-learning-python/chapter_19/02_baseline_model.py` to view file.
 
 #### Run Code
+**Note:** It will take some time to complete.
+
 Now, run the python code by running: `python 02_baseline_model.py`{{execute}}

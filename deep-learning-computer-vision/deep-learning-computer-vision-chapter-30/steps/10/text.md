@@ -3,7 +3,7 @@ dataset (e.g. train or val), extract the faces, and prepare a dataset with the n
 output label for each detected face. The load faces() function below will load all of the faces
 into a list for a given directory, e.g. 5-celebrity-faces-dataset/train/ben afflek/.
 
-We can run the code now. Click **IDE Editor** tab to open Visual Studio and open solution explorer and open `deep-learning-python/chapter_18/04_extract_faces_dataset.py` to view file.
+We can run the code now. Click **IDE Editor** tab to open Visual Studio and open solution explorer and open `deep-learning-python/chapter_30/04_extract_faces_dataset.py` to view file.
 
 
 #### Run Code

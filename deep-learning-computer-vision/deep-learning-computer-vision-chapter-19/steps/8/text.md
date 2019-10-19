@@ -16,5 +16,7 @@ We can run the code now. Click **IDE Editor** tab to open Visual Studio and open
 
 
 #### Run Code
+**Note:** It will take some time to complete.
+
 Now, run the python code by running: `python 05_save_final_model.py`{{execute}}
 

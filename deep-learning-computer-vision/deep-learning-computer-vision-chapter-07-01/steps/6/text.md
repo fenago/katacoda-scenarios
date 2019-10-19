@@ -13,8 +13,7 @@ datagen = ImageDataGenerator(rescale=1.0/255.0)
 
 The ImageDataGenerator does not need to be fit in this case because there are no global
 statistics line mean and standard deviation that need to be calculated. Next, iterators can be
-created using the generator for both the train and test datasets. We will use a batch size of
-64. This means that each of the train and test datasets of images are divided into groups of 64
+created using the generator for both the train and test datasets. We will use a batch size of 64. This means that each of the train and test datasets of images are divided into groups of 64
 images that will then be scaled when returned from the iterator. We can see how many batches
 there will be in one epoch, e.g. one pass through the training dataset, by printing the length of
 each iterator.

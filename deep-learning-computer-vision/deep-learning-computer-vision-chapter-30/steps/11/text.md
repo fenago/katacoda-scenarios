@@ -12,7 +12,7 @@ slow to create a face embedding. We can, therefore, pre-compute the face embeddi
 faces in the train and test (formally val) sets in our 5 Celebrity Faces Dataset. First, we can
 load our detected faces dataset using the load() NumPy function
 
-We can run the code now. Click **IDE Editor** tab to open Visual Studio and open solution explorer and open `deep-learning-python/chapter_18/05_predict_face_embeddings.py` to view file.
+We can run the code now. Click **IDE Editor** tab to open Visual Studio and open solution explorer and open `deep-learning-python/chapter_30/05_predict_face_embeddings.py` to view file.
 
 
 #### Run Code

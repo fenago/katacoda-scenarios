@@ -33,3 +33,4 @@ contract MachineLearningMarketplace {
 ```
 
 We've added three events to notify users that a new job or result has been added, as well as when a winner for a proposal is selected. That way, people will be notified when their proposal gets updated. Then we have a struct named Model, which represents our desired linear regression ML model with the dataset, weight, bias, and payment, among other important variables. Finally, we've added a couple of mappings to sort models created by buyers (those that pay to get their model trained) and those models created by sellers, those that train the model from the dataset and upload a specific weight and bias in order to win if they are selected by the buyer. latestId is an identifier to signify which model is the latest.
+Grincalaitis, Merunus. Mastering Etheruem. Packt, 2019.

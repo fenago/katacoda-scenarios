@@ -14,6 +14,13 @@ This will create a new local directory with the name `Mask_RCNN`.
 The library can be installed directly via pip. Change directory into the Mask RCNN project
 directory and run the installation script. From the command line, type the following:
 
+
+`apt-get update`{{execute}} 
+
+`apt-get install -y python`{{execute}} 
+
+`curl https://bootstrap.pypa.io/get-pip.py -o get-pip.py && python get-pip.py`{{execute}} 
+
 `cd Mask_RCNN`{{execute}} 
 
 `python setup.py install && cd ..`{{execute}} 

@@ -15,10 +15,7 @@ Now, move in the directory which contains the source code.
 
 
 #### Install Dependencies
-We need following packages to perform the lab exercise: 
+We need following packages to perform the lab exercise which have been already installed: 
 - keras
 - tensorflow
 - numpy
-
-To install just run following command:
- `pip install keras tensorflow numpy==1.16.0`{{execute}} 

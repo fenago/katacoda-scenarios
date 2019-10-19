@@ -13,6 +13,3 @@ through this project you will know:
 - How to configure a server instance for faster deep learning on the GPU.
 
 Let’s get started.
-
-![](https://github.com/fenago/katacoda-scenarios/raw/master/azure-functions/azure-functions-virtual-network/steps/1/1.png)
-

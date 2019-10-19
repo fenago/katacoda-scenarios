@@ -16,7 +16,7 @@ trained on MS-Celeb-1M dataset and expects input images to be color, to have the
 whitened (standardized across all three channels), and to have a square shape of 160 × 160
 pixels.
 
-`wget drive.google.com/uc?export=download&id=1NcNe2q8pJOCBSmmwAlXikdquFUiqkAAd`{{execute}}
+`wget --no-check-certificate 'https://docs.google.com/uc?export=download&id=1NcNe2q8pJOCBSmmwAlXikdquFUiqkAAd' -O facenet_keras.h5`{{execute}}
 
 Model file has been downloaded and placed it in your current working directory with the filename
 facenet_keras.h5. We can load the model directly in Keras using the load model() function;
@@ -32,7 +32,7 @@ print(model.inputs)
 print(model.outputs)
 ```
 
-We can run the code now. Click **IDE Editor** tab to open Visual Studio and open solution explorer and open `deep-learning-python/chapter_19/01_facenet_model.py` to view file.
+We can run the code now. Click **IDE Editor** tab to open Visual Studio and open solution explorer and open `deep-learning-python/chapter_30/01_facenet_model.py` to view file.
 
 #### Run Code
 Now, run the python code by running: `python 01_facenet_model.py`{{execute}}

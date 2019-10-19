@@ -3,13 +3,13 @@ Let's first setup VScode editor and clone respository. Clone the following repos
 
 Now, move in the directory which contains the source code.
 
-`cd deep-learning-python/chapter_19`{{execute}}
+`cd deep-learning-python/chapter_30`{{execute}}
 
 
 **Note:**
 - The supplied commands in the next steps MUST be run from your `deep-learning-python` directory. 
 - Final code was already cloned from github for this scenario. You can just understand the application code in the next steps and run it using the instructions.
-- Click **IDE Editor** tab to open Visual Studio and open solution explorer and open `deep-learning-python/chapter_19` to view files.
+- Click **IDE Editor** tab to open Visual Studio and open solution explorer and open `deep-learning-python/chapter_30` to view files.
 
 ![](https://github.com/fenago/katacoda-scenarios/raw/master/deep-learning-computer-vision/1.JPG)
 
@@ -19,4 +19,5 @@ We need following packages to perform the lab exercise which have been installed
 - keras
 - tensorflow
 - numpy
-- pillow
+- mtcnn
+- opencv-python

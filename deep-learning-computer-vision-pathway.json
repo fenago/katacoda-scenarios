@@ -74,7 +74,7 @@
     },
     {
       "course_id": "deep-learning-computer-vision-chapter-13",
-      "title": "How Pooling Layers Work",
+      "title": "How Max Pooling Layers Work",
       "description": "Run Python Code with Jupyter Notebooks."
     },
     {
@@ -110,11 +110,6 @@
     {
       "course_id": "deep-learning-computer-vision-chapter-24",
       "title": "How to Perform Object Detection With YOLOv3",
-      "description": "Run Python Code with Jupyter Notebooks."
-    },
-    {
-      "course_id": "deep-learning-computer-vision-chapter-25",
-      "title": "How to Perform Object Detection With Mask R-CNN",
       "description": "Run Python Code with Jupyter Notebooks."
     },
     {

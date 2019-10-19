@@ -1,6 +1,3 @@
-
-Tutorial Overview
-
 This tutorial is divided into five parts; they are:
 1. Convolutions Over Channels
 2. Problem of Too Many Feature Maps

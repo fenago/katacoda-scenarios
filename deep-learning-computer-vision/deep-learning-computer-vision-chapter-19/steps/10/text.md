@@ -6,4 +6,6 @@ pixels. Below is an image extracted from the MNIST test dataset.
 We can run the  code now. Click **IDE Editor** tab to open Visual Studio and open solution explorer and open `deep-learning-python/chapter_18/07_predict_final_model.py` to view file.
 
 #### Run Code
+**Note:** It will take some time to complete.
+
 Now, run the python code by running: `python 07_predict_final_model.py`{{execute}}

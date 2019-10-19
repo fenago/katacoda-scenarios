@@ -19,3 +19,4 @@ function optimize(int256[] memory _results, int256 _weight, int256 _bias, int256
 ```
 
 As you can see, we are calculating both derivatives by using the functions described in the preceding code block so that we can update the weight and bias with the optimized values. The learning rate is the size of the steps we take to reach the minimum point of the graph. If we take big steps, we may miss the minimum, and if we take small steps, we may take too much time to reach that minimum. In any case, it's best to keep a balanced learning rate and try different step sizes. Now we have a way to improve our prediction function.
+Grincalaitis, Merunus. Mastering Etheruem. Packt, 2019.

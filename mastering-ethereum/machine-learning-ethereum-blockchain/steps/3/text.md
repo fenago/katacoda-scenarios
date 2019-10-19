@@ -32,3 +32,4 @@ function prediction(uint256 _x, uint256 _weight, uint256 _bias) public pure retu
  return _weight * _x + _bias;
 }
 ```
+Grincalaitis, Merunus. Mastering Etheruem. Packt, 2019.
