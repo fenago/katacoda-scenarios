@@ -1,6 +1,6 @@
 docker run -d --user root -p 8888:8888 --name jupyter -e GRANT_SUDO=yes jupyter/tensorflow-notebook:2ce7c06a61a1 start-notebook.sh
 
-git clone https://github.com/khalil36/xgboost.git
+git clone https://github.com/akramsahmad/xgboost.git
 
 # copy the script into the container; note: the resulting file is owned by root and it not executable
 docker cp ~/tutorial/xgboost/prepareContainer.sh jupyter:/tmp/prepareContainerRoot.sh
