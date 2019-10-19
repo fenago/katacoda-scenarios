@@ -24,26 +24,6 @@
     },
     "finish": {
       "text": "finish.md"
-    },
-    "assets": {
-      "client": [
-        { 
-          "file": "prepareContainer.sh",  
-          "target": "~/"  
-        },    
-        { 
-          "file": "plot-tree.ipynb",  
-          "target": "~/"
-        },
-        { 
-          "file": "plot-tree-left-to-right.ipynb",   
-          "target": "~/"  
-        },  
-        { 
-          "file": "african-diabetes.csv", 
-          "target": "~/"  
-        }
-      ]
     }
   },
   "environment": {

@@ -19,22 +19,6 @@
     },
     "finish": {
       "text": "finish.md"
-    },
-    "assets": {
-      "client": [
-        { 
-          "file": "prepareContainer.sh",  
-          "target": "~/"  
-        },    
-        { 
-          "file": "first-model.ipynb",  
-          "target": "~/"
-        },
-        { 
-          "file": "african-diabetes.csv",   
-          "target": "~/"  
-        }
-      ]
     }
   },
   "environment": {

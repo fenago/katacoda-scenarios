@@ -34,42 +34,6 @@
     },
     "finish": {
       "text": "finish.md"
-    },
-    "assets": {
-      "client": [
-        { 
-          "file": "prepareContainer.sh",  
-          "target": "~/"  
-        },    
-        { 
-          "file": "chest-one-hot.ipynb",  
-          "target": "~/"
-        },
-        { 
-          "file": "blueflag-label-encode.ipynb",   
-          "target": "~/"  
-        },  
-        { 
-          "file": "stallian-missing-imputer.ipynb", 
-          "target": "~/"  
-        },  
-        { 
-          "file": "stallian-pain-missing.ipynb", 
-          "target": "~/"  
-        },  
-        { 
-          "file": "blueflag.csv", 
-          "target": "~/"  
-        },  
-        { 
-          "file": "chest-tumor.csv", 
-          "target": "~/"  
-        },  
-        { 
-          "file": "stallion-pain.csv", 
-          "target": "~/"  
-        }
-      ]
     }
   },
   "environment": {

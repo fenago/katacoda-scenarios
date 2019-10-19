@@ -19,22 +19,6 @@
     },
     "finish": {
       "text": "finish.md"
-    },
-    "assets": {
-      "client": [
-        { 
-          "file": "prepareContainer.sh",  
-          "target": "~/"  
-        },    
-        { 
-          "file": "check-num-threads.ipynb",  
-          "target": "~/"
-        },
-        { 
-          "file": "chain.csv",   
-          "target": "~/"  
-        }
-      ]
     }
   },
   "environment": {

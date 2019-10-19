@@ -24,26 +24,6 @@
     },
     "finish": {
       "text": "finish.md"
-    },
-    "assets": {
-      "client": [
-        { 
-          "file": "prepareContainer.sh",  
-          "target": "~/"  
-        },    
-        { 
-          "file": "eval-num-threads.ipynb",  
-          "target": "~/"
-        },
-        { 
-          "file": "eval-parallel-xgboost.ipynb",   
-          "target": "~/"  
-        },  
-        { 
-          "file": "chain.csv", 
-          "target": "~/"  
-        }
-      ]
     }
   },
   "environment": {

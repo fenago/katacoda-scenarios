@@ -29,30 +29,6 @@
     },
     "finish": {
       "text": "finish.md"
-    },
-    "assets": {
-      "client": [
-        { 
-          "file": "prepareContainer.sh",  
-          "target": "~/"  
-        },    
-        { 
-          "file": "automatic-feature-importance.ipynb",  
-          "target": "~/"
-        },
-        { 
-          "file": "feature-selection.ipynb",   
-          "target": "~/"  
-        },  
-        { 
-          "file": "manual-feature-importance.ipynb", 
-          "target": "~/"  
-        },  
-        { 
-          "file": "african-diabetes.csv", 
-          "target": "~/"  
-        }
-      ]
     }
   },
   "environment": {

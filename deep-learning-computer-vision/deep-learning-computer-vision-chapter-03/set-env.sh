@@ -1,7 +1,5 @@
 docker run -d --user root -p 8888:8888 --name jupyter -e GRANT_SUDO=yes jupyter/tensorflow-notebook:2ce7c06a61a1 start-notebook.sh
 
-
-
 git clone https://github.com/athertahir/deep-learning-python.git
 
 # copy the script into the container; note: the resulting file is owned by root and it not executable

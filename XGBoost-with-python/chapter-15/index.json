@@ -29,30 +29,6 @@
     },
     "finish": {
       "text": "finish.md"
-    },
-    "assets": {
-      "client": [
-        { 
-          "file": "prepareContainer.sh",  
-          "target": "~/"  
-        },    
-        { 
-          "file": "plot-performance.ipynb",  
-          "target": "~/"
-        },
-        { 
-          "file": "tune-learning-rate.ipynb",   
-          "target": "~/"  
-        },  
-        { 
-          "file": "tune-learning-rate-num-trees.ipynb", 
-          "target": "~/"  
-        },  
-        { 
-          "file": "chain.csv", 
-          "target": "~/"  
-        }
-      ]
     }
   },
   "environment": {

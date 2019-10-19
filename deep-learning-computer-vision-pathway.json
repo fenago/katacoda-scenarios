@@ -17,7 +17,7 @@
       "title": "How to Load Images With PIL/Pillow",
       "description": "Run Python Code with Jupyter Notebooks."
     },
-	{
+	  {
       "course_id": "deep-learning-computer-vision-chapter-04-02",
       "title": "How to Manipulate Images With PIL/Pillow",
       "description": "Run Python Code with Jupyter Notebooks."
@@ -67,7 +67,7 @@
       "title": "How to Use Filter Size, Padding, and Stride",
       "description": "Run Python Code with Jupyter Notebooks."
     },
-	{
+	  {
       "course_id": "deep-learning-computer-vision-chapter-12-02",
       "title": "How to Use Filter Size, Padding, and Stride",
       "description": "Run Python Code with Jupyter Notebooks."

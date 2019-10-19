@@ -24,26 +24,6 @@
     },
     "finish": {
       "text": "finish.md"
-    },
-    "assets": {
-      "client": [
-        { 
-          "file": "prepareContainer.sh",  
-          "target": "~/"  
-        },    
-        { 
-          "file": "serialize-with-joblib.ipynb",  
-          "target": "~/"
-        },
-        { 
-          "file": "serialize-with-pickle.ipynb",   
-          "target": "~/"  
-        },  
-        { 
-          "file": "african-diabetes.csv", 
-          "target": "~/"  
-        }
-      ]
     }
   },
   "environment": {
