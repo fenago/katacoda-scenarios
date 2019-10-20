@@ -1,0 +1,99 @@
+{
+  "title": "Web Scraping Using Scrapy",
+  "description": "",
+  "difficulty": "Advanced",
+  "time": "15 minutes",
+  "details": {
+    "steps": [{
+      "title": "Web scraping using Scrapy",
+      "text": "steps/1/text.md"
+    },  
+	{
+      "title": "Introduction to Scrapy",
+      "text": "steps/3/text.md"
+    },
+	{
+      "title": "Setting up a project",
+      "text": "steps/4/text.md"
+    },
+  {
+      "title": "Scrapy Project",
+      "text": "steps/5/text.md"
+    },
+    {
+        "title": "Scrapy Project",
+        "text": "steps/6/text.md"
+    },
+    {
+        "title": "Generating a Spider",
+        "text": "steps/7/text.md"
+    },
+    {
+        "title": "Generating a Spider",
+        "text": "steps/8/text.md"
+    },
+    {
+      "title": "Clone Repository",
+      "text": "steps/2/text.md"
+    },  
+    {
+        "title": "Creating an item",
+        "text": "steps/9/text.md"
+    },
+    {
+        "title": "Using XPath",
+        "text": "steps/10/text.md"
+    },
+    {
+        "title": "Using CSS Selectors",
+        "text": "steps/11/text.md"
+    },
+    {
+        "title": "Data from multiple pages",
+        "text": "steps/12/text.md"
+    },
+    {
+        "title": "Data from multiple pages",
+        "text": "steps/13/text.md"
+    },
+    {
+        "title": "Running and exporting",
+        "text": "steps/14/text.md"
+    },
+    {
+        "title": "Running and exporting",
+        "text": "steps/15/text.md"
+    },
+    {
+        "title": "Deploying a web crawler",
+        "text": "steps/16/text.md"
+    },
+    {
+        "title": "Deploying a web crawler",
+        "text": "steps/17/text.md"
+    },
+    {
+        "title": "Deploying a web crawler",
+        "text": "steps/18/text.md"
+    },
+    {
+        "title": "Deploying a web crawler",
+        "text": "steps/19/text.md"
+    }],
+    "intro": {
+      "code": "set-env.sh",
+      "text": "intro.md",
+      "credits": ""
+    },
+    "finish": {
+      "text": "finish.md"
+    }
+  },
+  "environment": {
+    "uilayout": "vscode",
+    "uimessage1": "\u001b[32mBrought to you by https://LearningVoyage.com\u001b[m\r\n"
+  },
+  "backend": {
+    "imageid": "ubuntu"
+  }
+}

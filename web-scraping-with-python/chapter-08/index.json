@@ -1,0 +1,83 @@
+{
+  "title": "",
+  "description": "",
+  "difficulty": "Advanced",
+  "time": "15 minutes",
+  "details": {
+    "steps": [{
+      "title": "Introduction",
+      "text": "steps/1/text.md"
+    },
+    {
+      "title": "Clone Repository",
+      "text": "steps/2/text.md"
+    },    
+	{
+      "title": "Introduction to Selenium",
+      "text": "steps/3/text.md"
+    },
+	{
+      "title": "Introduction to Selenium...",
+      "text": "steps/4/text.md"
+    },
+  {
+      "title": "Selenium Components",
+      "text": "steps/5/text.md"
+    },
+    {
+        "title": "Setting things up",
+        "text": "steps/6/text.md"
+    },
+    {
+        "title": "Exploring Selenium",
+        "text": "steps/7/text.md"
+    },
+    {
+        "title": "",
+        "text": "steps/8/text.md"
+    },
+    {
+        "title": "Locating web elements",
+        "text": "steps/9/text.md"
+    },
+    {
+        "title": "Locating web elements",
+        "text": "steps/10/text.md"
+    },
+    {
+      "title": "Locating web elements",
+      "text": "steps/10-01/text.md"
+    },
+    {
+        "title": "Using Selenium for web scraping",
+        "text": "steps/11/text.md"
+    },
+    {
+        "title": "Example 1 – scraping product information",
+        "text": "steps/12/text.md"
+    },
+    {
+        "title": "Example 2 – scraping book information",
+        "text": "steps/13/text.md"
+    },
+    {
+        "title": "Example 2 – scraping book information",
+        "text": "steps/14/text.md"
+    }],
+    "intro": {
+      "code": "set-env.sh",
+      "text": "intro.md",
+      "credits": ""
+    },
+    "finish": {
+      "text": "finish.md"
+    }
+  },
+  "environment": {
+    "uilayout": "vscode",
+    "uimessage1": "\u001b[32mBrought to you by https://LearningVoyage.com\u001b[m\r\n"
+  },
+  "backend": {
+    "imageid": "ubuntu"
+  }
+}

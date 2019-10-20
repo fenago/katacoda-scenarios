@@ -1,0 +1,60 @@
+{
+  "title": "",
+  "description": "",
+  "difficulty": "Advanced",
+  "time": "15 minutes",
+  "details": {
+    "steps": [
+    {
+      "title": "Introduction to web scraping",
+      "text": "steps/2/text.md"
+    },    
+	{
+      "title": "Overview",
+      "text": "steps/3/text.md"
+    },
+	{
+      "title": "Install Libraries",
+      "text": "steps/4/text.md"
+    },
+  {
+      "title": "Requests",
+      "text": "steps/5/text.md"
+    },
+    {
+        "title": "Loading URLs",
+        "text": "steps/6/text.md"
+    },
+    {
+        "title": "Requests",
+        "text": "steps/7/text.md"
+    },
+    {
+        "title": "Urllib",
+        "text": "steps/8/text.md"
+    },
+    {
+        "title": "Requests",
+        "text": "steps/9/text.md"
+    },
+    {
+        "title": "Charset ",
+        "text": "steps/10/text.md"
+    }],
+    "intro": {
+      "code": "set-env.sh",
+      "text": "intro.md",
+      "credits": ""
+    },
+    "finish": {
+      "text": "finish.md"
+    }
+  },
+  "environment": {
+    "uilayout": "vscode",
+    "uimessage1": "\u001b[32mBrought to you by https://LearningVoyage.com\u001b[m\r\n"
+  },
+  "backend": {
+    "imageid": "ubuntu"
+  }
+}
