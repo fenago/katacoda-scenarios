@@ -1,0 +1,76 @@
+{
+  "title": "Hands-On-Web-Scraping-with-Python",
+  "description": "Collect and scrape different complexities of data from the modern Web using the latest tools, best practices, and techniques",
+  "courses": [
+    {
+      "course_id": "chapter-02-01",
+      "title": "Python and the Web – Using urllib and Requests",
+      "description": ""
+    },
+    {
+      "course_id": "chapter-02-02",
+      "title": "Python and the Web – Using urllib and Requests",
+      "description": ""
+    },
+    {
+      "course_id": "chapter-03-01",
+      "title": "Using LXML, XPath, and CSS Selectors",
+      "description": ""
+    },
+    {
+      "course_id": "chapter-03-02",
+      "title": "Using LXML, XPath, and CSS Selectors",
+      "description": ""
+    },
+    {
+      "course_id": "chapter-04-01",
+      "title": "Scraping Using pyquery – a Python Library",
+      "description": ""
+    },
+    {
+      "course_id": "chapter-04-02",
+      "title": "Scraping Using pyquery – a Python Library",
+      "description": ""
+    },
+    {
+      "course_id": "chapter-05-01",
+      "title": "Web Scraping Using Beautiful Soup",
+      "description": ""
+    },
+    {
+      "course_id": "chapter-05-02",
+      "title": "Web Scraping Using Scrapy",
+      "description": ""
+    },
+    {
+      "course_id": "chapter-06",
+      "title": "Working with Secure Web",
+      "description": ""
+    },
+    {
+      "course_id": "chapter-07",
+      "title": "Data Extraction Using Web-Based APIs",
+      "description": ""
+    },
+    {
+      "course_id": "chapter-08",
+      "title": "Using Selenium to Scrape the Web",
+      "description": ""
+    },
+    {
+      "course_id": "chapter-09",
+      "title": "Using Regex to Extract Data",
+      "description": ""
+    },
+    {
+      "course_id": "chapter-10-01",
+      "title": "Managing scraped data",
+      "description": ""
+    },
+    {
+      "course_id": "chapter-10-02",
+      "title": "Analysis and visualization using pandas and matplotlib",
+      "description": ""
+    }
+  ]
+}
