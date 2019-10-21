@@ -1,0 +1,1 @@
+In this scenario, you will learn Project: Multiclass Classification Of Blue Flag.

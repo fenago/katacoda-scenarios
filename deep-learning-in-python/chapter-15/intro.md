@@ -1,0 +1,1 @@
+In this scenario, You will Understand Model Behavior During Training By Plotting History.

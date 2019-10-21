@@ -1,0 +1,55 @@
+{
+   "title":"Project: Sequence Classification of Movie Reviews",
+   "description":"Run Python Code with Jupyter Notebooks.",
+   "difficulty":"Beginner",
+   "time":"20 minutes",
+   "details":{
+      "steps":[
+         {
+            "title":"Jupyter Notebook",
+            "text":"steps/1/text.md",
+         },
+         {
+            "title":"Simple LSTM for Sequence Classification",
+            "text":"steps/2/text.md",
+            "answer": "steps/2/answer.md"
+         },
+         {
+            "title":"LSTM For Sequence Classification With Dropout",
+            "text":"steps/3/text.md",
+            "answer": "steps/3/answer.md"
+         },
+         {
+            "title":"LSTM Model with Dropout on Gates for the IMDB Dataset",
+            "text":"steps/4/text.md",
+            "answer": "steps/4/answer.md"
+         },
+         {
+            "title":"LSTM and CNN For Sequence Classification",
+            "text":"steps/5/text.md",
+            "answer": "steps/5/answer.md"
+         }
+      ],
+      "intro":{
+         "text":"intro.md",
+         "code":"set-env.sh"
+      },
+      "finish":{
+         "text":"finish.md"
+      }
+   },
+   "environment":{
+      "uilayout":"terminal-iframe",
+      "showdashboard":true,
+      "dashboards":[
+         {
+            "name":"Jupyter Notebook",
+            "port":8888
+         }
+      ],
+      "uimessage1": "\u001b[32mBrought to you by https://LearningVoyage.com\u001b[m\r\n"
+   },
+   "backend":{
+      "imageid":"docker"
+   }
+}

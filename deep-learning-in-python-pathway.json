@@ -1,0 +1,116 @@
+{
+  "title": "Deep Learning",
+  "description": "in Python",
+  "courses": [
+    {
+      "course_id": "chapter-2",
+      "title": "Chapter - 2",
+      "description": "Introduction to Theano"
+    },
+    {
+      "course_id": "chapter-3",
+      "title": "Chapter - 3",
+      "description": "Introduction to TensorFlow"
+    },
+    {
+      "course_id": "chapter-7",
+      "title": "Chapter - 7",
+      "description": "Develop Your First Neural Network With Keras"
+    },
+    {
+      "course_id": "chapter-8",
+      "title": "Chapter - 8",
+      "description": "Evaluate The Performance of Deep Learning Models"
+    },
+    {
+      "course_id": "chapter-9",
+      "title": "Chapter - 9",
+      "description": "Use Keras Models With Scikit-Learn For General Machine Learning"
+    },
+    {
+      "course_id": "chapter-10",
+      "title": "Chapter - 10",
+      "description": "Project: Multiclass Classification Of Flower Species"
+    },
+    {
+      "course_id": "chapter-11",
+      "title": "Chapter - 11",
+      "description": "Project: Binary Classification Of Signals"
+    },
+    {
+      "course_id": "chapter-12",
+      "title": "Chapter - 12",
+      "description": "Project: Regression Of Shelter Prices"
+    },
+    {
+      "course_id": "chapter-13",
+      "title": "Chapter - 13",
+      "description": "Save Your Models For Later With Serialization"
+    },
+    {
+      "course_id": "chapter-14",
+      "title": "Chapter - 14",
+      "description": "Keep The Best Models During Training With Checkpointing"
+    },
+    {
+      "course_id": "chapter-15",
+      "title": "Chapter - 15",
+      "description": "Understand Model Behavior During Training By Plotting History"
+    },
+    {
+      "course_id": "chapter-16",
+      "title": "Chapter - 16",
+      "description": "Reduce Overfitting With Dropout Regularization"
+    },
+    {
+      "course_id": "chapter-17",
+      "title": "Chapter - 17",
+      "description": "Lift Performance With Learning Rate Schedules"
+    },
+    {
+      "course_id": "chapter-19",
+      "title": "Chapter - 19",
+      "description": "Project: Handwritten Digit Recognition"
+    },
+    {
+      "course_id": "chapter-20",
+      "title": "Chapter - 20",
+      "description": "Improve Model Performance With Image Augmentation"
+    },
+    {
+      "course_id": "chapter-21",
+      "title": "Chapter - 21",
+      "description": "Project Object Recognition in Photographs"
+    },
+    {
+      "course_id": "chapter-22",
+      "title": "Chapter - 22",
+      "description": "Project: Predict Sentiment From Movie Reviews"
+    },
+    {
+      "course_id": "chapter-24",
+      "title": "Chapter - 24",
+      "description": "Time Series Prediction with Multilayer Perceptrons"
+    },
+    {
+      "course_id": "chapter-25",
+      "title": "Chapter - 25",
+      "description": "Time Series Prediction with LSTM Recurrent Neural Networks"
+    },
+    {
+      "course_id": "chapter-26",
+      "title": "Chapter - 26",
+      "description": "Project: Sequence Classification of Movie Reviews"
+    },
+    {
+      "course_id": "chapter-27",
+      "title": "Chapter - 27",
+      "description": "Understanding Stateful LSTM Recurrent Neural Networks"
+    },
+    {
+      "course_id": "chapter-28",
+      "title": "Chapter - 28",
+      "description": "Project: Text Generation With Alice in Wonderland"
+    }
+  ]
+}

@@ -1,0 +1,1 @@
+In this scenario, You will Learn Project: Sequence Classification of Movie Reviews.
