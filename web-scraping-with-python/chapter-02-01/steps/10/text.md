@@ -9,7 +9,7 @@ Using Python code, we can find charset in the HTTP header:
 `someRequest.getheader("Content-Type") #return value of header 'Content-Type'`{{execute}} 
 
 ```
-'text/html; charset=ISO-8859-1' or 'utf-8'
+'text/html'
 ```
 
 charset that was identified will be used to encode and decode with `requests.get(link).content.decode('utf-8')`{{execute}} .

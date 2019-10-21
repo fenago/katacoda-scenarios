@@ -9,15 +9,14 @@ urlencode() ensures that arguments comply with the W3C standard and are accepted
 
 `urlparse.urlencode(data)`{{execute}}
 
- 'param1=value1&param2=value2'
+`param1=value1&param2=value2`
 
 `urlparse.parse_qs(urlparse.urlencode(data))`{{execute}}
 
- {'param1': ['value1'], 'param2': ['value2']}
+`{'param1': ['value1'], 'param2': ['value2']}`
 
 `urlparse.urlencode(data).encode('utf-8')`{{execute}}
 
-    b'param1=value1&param2=value2'
 You may also need to encode the special characters in a URL before processing the request to the server:
 
 **Note:**  that urllib.parse contains the quote(), quote_plus(), and unquote() functions, which permit error-free server requests:

@@ -10,6 +10,7 @@ There are a number of functions and public attributes that exist to handle reque
 
 We can use Python's built-in dir() function to display a module's content, such as its classes, functions, and attributes, as shown in the following code:
 
+`python`{{execute}}
 
 `import urllib.request`{{execute}}
 

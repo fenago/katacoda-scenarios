@@ -11,7 +11,7 @@ Generally, a processed URLs without any specified HTTP methods are normally GET 
 
 - http://www.test-domain.com
 - http://www.test-domain.com/indexes/
-- http://www.test-domain.com/data file?id=1345322&display=yes
+- http://www.test-domain.com/datafile?id=1345322&display=yes
 
 In the preceding sections, requests were made to normal URLs such as robots.txt and sitemap.xml, both of which use the HTTP GET method. The get() function from requests accepts URLs, parameters, and headers:
 

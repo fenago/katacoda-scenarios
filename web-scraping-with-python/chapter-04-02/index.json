@@ -5,7 +5,7 @@
   "time": "15 minutes",
   "details": {
     "steps": [{
-      "title": "",
+      "title": "Introduction",
       "text": "steps/1/text.md"
     },
     {

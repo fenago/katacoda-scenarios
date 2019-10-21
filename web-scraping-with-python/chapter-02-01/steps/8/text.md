@@ -47,4 +47,15 @@ b'<?xml version="1.0" encoding="UTF-8"?>\n<sitemapindex xmlns="http://www.sitema
 
 `file.close() #closes the file handle`{{execute}} 
 
-In both cases, we were able to find the content from the respective URL and save it to individual files and locations. The contents from the preceding code was found as bytes literals, for example, `b'<!DOCTYPE … or b'<?xml`. Page content can also be retrieved in a text format, such as requests.get(link).text
+`quit`{{execute}}
+
+In both cases, we were able to find the content from the respective URL and save it to individual files and locations. The contents from the preceding code was found as bytes literals, for example, `b'<!DOCTYPE … or b'<?xml`. Page content can also be retrieved in a text format, such as `requests.get(link).text`{{execute}} 
+
+#### Verify Files
+You can verify that azure files were created successfully by running:
+
+`ls`{{execute}}
+
+`cat robots.txt`{{execute}}
+
+`cat sitemap.xml`{{execute}}

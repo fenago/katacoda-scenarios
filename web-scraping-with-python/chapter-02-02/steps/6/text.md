@@ -16,6 +16,8 @@ Exception handling deals with error handling and management in programming. Code
 
 `import urllib.error as error`{{execute}}
 
+**Note:** Please press enter to run multiline code after clicking following:
+
 ```try:  #attempting an error case
     request.urlopen("https://www.python.ogr") #wrong URL is passed to urlopen()
 except error.URLError as e:

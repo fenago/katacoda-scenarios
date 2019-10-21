@@ -29,13 +29,15 @@ pyquery can also load URLs using the Python library, urllib (default), or reques
 
 The pq object we obtained from the preceding code is being parsed using the XML parser (default) that's available from lxml, which can also be updated with the extra parser argument being passed to it:
 
-doc = pq('http://www.google.com', parser = 'html')
+`doc = pq('http://www.google.com', parser = 'html')`{{execute}}
 
 Normally, HTML code from a page source or other sources, such as files, is provided as a string to pyquery for further processing, as shown in the following code:
 
 `doc = pq('<div><p>Testing block</p><p>Second block</p></div>')`{{execute}}
 
 `print(type(doc))`{{execute}}
+
+Click **IDE Editor** tab to open Visual Studio and open solution explorer and open `web-scraping-with-python/Chapter04/test.html` to view html file.
 
 `pagesource = open('test.html','r').read() #reading locally saved HTML`{{execute}}
 

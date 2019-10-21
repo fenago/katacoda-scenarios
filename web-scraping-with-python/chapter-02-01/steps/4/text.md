@@ -1,4 +1,3 @@
-Accessing the web with Python
 Python is a programming language that's used to code various types of applications, from simple scripts to AI algorithms and web frameworks. We will be writing scripts in Python to access the URLs that we are interested in from a data extraction or scraping perspective.
 
 A number of Python libraries exist for HTTP communication and web-related purposes (including http, cookielib, urllib, requests, html, socket, json, xmlrpc, httplib2, and urllib3). We will explore and use a few of them that have been praised by the programmers' community for HTTP access or client-server communication. The urllib and requests Python modules are the ones we are interested in using. These libraries possess various functions that can be used to communicate with the web using Python and deal with HTTP requests and responses.
@@ -11,8 +10,3 @@ In order to start a few coding tasks and explore the Python-based modules straig
 The preceding command will provide us with the Python version that we currently have on our system. Let's get some information on the pip version that we are using. The following command will display the current pip version, as well as its location:
 
 `pip --version`{{execute}}
-
-It's always advisable to check for the system and library version and keep them updated unless a specific version is required.
-To update pip to its latest release, use the following command:
-
-`pip install --upgrade pip`{{execute}}
