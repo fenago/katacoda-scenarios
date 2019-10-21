@@ -2,16 +2,15 @@ In this section, we will be exploring a task that's used to process basic user a
 
 The code in this section deals with logging in and changing the login credentials, as well as with obtaining the respective messages from the page. 
 
-As we can see in the following screenshot, the HTML <form> exists with two <input> boxes that accept the username and password (that is, the login credentials) that are required to login. Login credentials are private and secure information, but for this particular testing site, the values are visible, predefined, and provided—namely, Username = "admin" and Password = "12345":
+As we can see in the following screenshot, the HTML `<form>` exists with two `<input>` boxes that accept the username and password (that is, the login credentials) that are required to login. Login credentials are private and secure information, but for this particular testing site, the values are visible, predefined, and provided—namely, Username = "admin" and Password = "12345":
+
+
+#### Login page
+To process logging in with these credentials on http://testing-ground.scraping.pro/login, we need to find the `<form>` attributes—that is, action and method—that were used on the page to process the entered credentials. As we can see, the HTTP POST method will be applied to perform form submission on http://testing-ground.scraping.pro/login?mode=login: 
 
 
 
-Login page
-To process logging in with these credentials on http://testing-ground.scraping.pro/login, we need to find the <form> attributes—that is, action and method—that were used on the page to process the entered credentials. As we can see, the HTTP POST method will be applied to perform form submission on http://testing-ground.scraping.pro/login?mode=login: 
-
-
-
-Inspecting <form> elements
+Inspecting `<form>` elements
 Let's move on and set up the code. The pyquery and requests libraries need to be imported and the required URLs need to be collected so that they can be used:
 
 ```
@@ -23,7 +22,7 @@ logoutUrl = "http://testing-ground.scraping.pro/login?mode=logout"
 postUrl="http://testing-ground.scraping.pro/login?mode=login"
 ```
 
-As shown in the following code, the responseCookies() function will accept response objects that are obtained from requests.get() before printing the headers and cookies information. Similarly, the processParams() function accepts <form>-based parameters that will be posted and prints the message that's obtained from the page:
+As shown in the following code, the responseCookies() function will accept response objects that are obtained from requests.get() before printing the headers and cookies information. Similarly, the processParams() function accepts `<form>`-based parameters that will be posted and prints the message that's obtained from the page:
 
 ```
 def responseCookies(response):
@@ -60,7 +59,7 @@ Cookies: <RequestsCookieJar[]>
 
 As shown in the preceding output, cookies is empty for both mainUrl and loginUrl and no other unique header pairs are available except Set-Cookie, with a value of tdsess=deleted; expires=Thu, 01-Jan-1970 00:00:01 GMT from loginUrl. 
 
-Now that responseA from the loginUrl <form> elements attribute name has been collected as username and password, this information will be used to create the paramsCorrect and paramsIncorrect parameter strings, which will be posted to postUrl:
+Now that responseA from the loginUrl `<form>` elements attribute name has been collected as username and password, this information will be used to create the paramsCorrect and paramsIncorrect parameter strings, which will be posted to postUrl:
 
 ```
 responseA = pq(response.text)

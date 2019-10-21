@@ -24,8 +24,7 @@ As we can see, though the pattern has been searched against multiline timeDate, 
 - **group():** Returns an individual group and can be accessed with the group name
 - **lastgroup:** Returns the name of the last group
 
-```for match in re.finditer(pattern, timeDate): # <class '_sre.SRE_Match'>
-        #for match in re.finditer(recompiled, timeDate):
+```for match in re.finditer(pattern, timeDate):
         s = match.start()
         e = match.end()
         l = match.lastindex
@@ -41,6 +40,7 @@ Let's consider the patterns pDate (implementing group(), groupdict(), start(), e
 
 `recompiled = re.compile(pDate) #compiles the pattern`{{execute}}
 
+**Note:** Please press enter to run multiline code after clicking following:
 
 ```for match in re.finditer(recompiled,timeDate): #apply pattern on timeDate
         s = match.start()

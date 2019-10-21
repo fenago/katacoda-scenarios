@@ -5,11 +5,11 @@
   "time": "15 minutes",
   "details": {
     "steps": [{
-      "title": "",
+      "title": "Introduction",
       "text": "steps/1/text.md"
     },
     {
-      "title": "",
+      "title": "Clone Repository",
       "text": "steps/2/text.md"
     },    
 	{
@@ -29,7 +29,7 @@
         "text": "steps/6/text.md"
     },
     {
-        "title": "",
+        "title": "Accessing web API and data formats",
         "text": "steps/7/text.md"
     },
     {

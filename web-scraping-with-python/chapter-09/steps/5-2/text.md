@@ -7,6 +7,8 @@ In the following code, we are trying to matchFORTRAN that was found in sentence,
 
 `fortran = matches[0] # 'or FORTRAN'`{{execute}}
 
+**Note:** Please press enter to run multiline code after clicking following:
+
 ```if re.match(r'or',fortran): 
         fortran = re.sub(r'or\s*','',fortran) #substitute 'or ' with empty string
         print(fortran)```{{execute}}
