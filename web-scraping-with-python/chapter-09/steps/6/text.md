@@ -24,6 +24,8 @@ As we can see, though the pattern has been searched against multiline timeDate, 
 - **group():** Returns an individual group and can be accessed with the group name
 - **lastgroup:** Returns the name of the last group
 
+**Note:** Please press enter to run multiline code after clicking following:
+
 ```for match in re.finditer(pattern, timeDate):
         s = match.start()
         e = match.end()

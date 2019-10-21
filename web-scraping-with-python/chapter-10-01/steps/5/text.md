@@ -20,7 +20,7 @@ Now we will write the preceding dataSet to the CSV file. The first line of the C
 
 <pre class="file" data-filename="save.py">
 
-fileCsv = open('bookdetails.csv', 'w', newline='', encoding='utf-8')
+fileCsv = open('bookdetails.csv', 'w')
 writer = csv.writer(fileCsv) #csv.writer object created
 
 writer.writerow(colNames)  #write columns from colNames
