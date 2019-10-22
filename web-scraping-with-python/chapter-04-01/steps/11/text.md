@@ -6,11 +6,13 @@ In the following code, we will be exploring a few more details that were retriev
 
 `upcomingevents = page.find('div.event-widget ul.menu li')`{{execute}}
 
+**Note:** Please press enter to run multiline code after clicking following:
+
 ```for event in upcomingevents.items():
      time = event.find('time').text()
      url = event.find('a[href*="events/python"]').attr('href')
      title = event.find('a[href*="events/python"]').text()
-     eventsList.append([time,title,url]) ```{{execute}}
+     eventsList.append([time,title,url])```{{execute}}
 
 `eventsList`{{execute}}
 
@@ -29,15 +31,15 @@ The following code illustrates a few more examples of the pyquery iterating proc
 `buttons = page.find('a.button')`{{execute}}
 
 ```for item in buttons.items():
-     print(item.text(),' :: ',item.attr('href')) ```{{execute}}
+     print(item.text(),' :: ',item.attr('href'))```{{execute}}
  
 `buttons = page.find('a.button:odd')`{{execute}}
 
 ```for item in buttons.items():
-    print(item.text(),' :: ',item.attr('href')) ```{{execute}}
+    print(item.text(),' :: ',item.attr('href'))```{{execute}}
 
  
 `buttons = page.find('a.button:even')`{{execute}}
 
 ```for item in buttons.items():
-    print(item.text(),' :: ',item.attr('href')) ```{{execute}}
+    print(item.text(),' :: ',item.attr('href'))```{{execute}}

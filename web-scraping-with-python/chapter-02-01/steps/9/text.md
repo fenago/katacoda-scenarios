@@ -1,5 +1,6 @@
 We can use the decode() method to convert bytes into a string and the encode() method to convert a string into bytes, as shown in the following code:
 
+`python`{{execute}}
 
 `link="https://www.samsclub.com/sitemap.xml"`{{execute}} 
 

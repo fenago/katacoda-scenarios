@@ -18,5 +18,5 @@ Let's confirm the differences between urlparse() and urlsplit(). The localUrl th
 
 `print(parseLink.fragment) #fragment information from URL`{{execute}}
 
-Basically, urllib.request.Request accepts data and headers-related information, and headers can be assigned to an object using add_header(); for example, object.add_header('host','hostname') or object.add_header('referer','refererUrl').
+Basically, urllib.request.Request accepts data and headers-related information, and headers can be assigned to an object using `add_header()`; for example, object.add_header('host','hostname') or object.add_header('referer','refererUrl').
 

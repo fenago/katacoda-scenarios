@@ -65,6 +65,8 @@ requests handles JSON data very effectively with its built-in decoder. As we can
 link = "https://feeds.citibikenyc.com/stations/stations.json"
 response = requests.get(link).json()```{{execute}}
 
+**Note:** Please press enter to run multiline code after clicking following:
+
 ```for i in range(10): #read 10 stationName from JSON response.
         print('Station ',response['stationBeanList'][i]['stationName'])```{{execute}}
 
@@ -78,6 +80,6 @@ Station Nassau St & Navy St
 Station Hudson St & Reade St
 ```
 
-**Note:**  that, requests uses urllib3 for session and for raw socket response. At the time of writing, requests version 2.21.0 was available.
+**Note:**  that, requests uses urllib3 for session and for raw socket response.
 
 Crawling the script might use any of the mentioned or available HTTP libraries to make web-based communications. Most of the time, functions and attributes from multiple libraries will make this task easy. In the next section, we will be using the requests library to implement the HTTP (GET/POST) methods.

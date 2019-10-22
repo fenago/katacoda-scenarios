@@ -28,4 +28,4 @@ def responseCookies(response):
 if __name__ == '__main__':
 ```
 
-For more information on HTTP and HTTP headers, please visit Chapter 1, Web Scraping Fundamentals, the Understanding Web Development and Technologies and HTTP sections. For more details on cookies, please visit https://www.aboutcookies.org/ or https://allaboutcookies.org.
+For more information on HTTP and HTTP headers, please visit Chapter 1, Web Scraping Fundamentals, the Understanding Web Development and Technologies and HTTP sections.

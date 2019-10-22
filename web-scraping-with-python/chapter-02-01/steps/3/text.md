@@ -4,11 +4,9 @@ Web scraping requires tools and techniques to be implemented and deployed using 
 
 This chapter will also provide a detailed overview of using Python libraries such as requests and urllib.
 
-In particular, we will learn about the following topics:
+In particular, we will learn about the following topic(s):
 
 - Setting Python and its required libraries, requests and urllib, to load URLs
-- A detailed overview of requests and urllib
-- Implementing HTTP methods (GET/POST)
 
 The Python libraries that are required for this chapter are as follows:
 

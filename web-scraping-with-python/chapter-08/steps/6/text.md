@@ -21,6 +21,8 @@ For the successful implementation of browser automation and application testing 
 
 `apt-get update`{{execute}}
  
-`dpkg -i google-chrome-stable_current_amd64.deb  > /dev/null 2>&1 && apt-get -f -y install`{{execute}}
+`dpkg -i google-chrome-stable_current_amd64.deb`{{execute}}
+
+`apt-get -f -y install`{{execute}}
  
 `dpkg -i google-chrome-stable_current_amd64.deb`{{execute}}

@@ -2,11 +2,9 @@ In this section, we will be demonstrating the iterating (perform repeatedly) fac
 
 In the following code, we are searching for the name and property attributes that are found in the <meta> tags that contain the word Python.org. We are also using Python's List Comprehension technique to demonstrate the one-line coding feature:
 
-
-#Find <meta> with attribute 'content' containing '..Python.org..' 
-#and list the attribute 'name' that satisfies the find()
-
 `meta=page.find('meta[content*="Python.org"]')`{{execute}}
+
+`print(meta)`{{execute}}
 
 ```
 [item.attr('name') for item in meta.items() if item.attr('name') is not None]
