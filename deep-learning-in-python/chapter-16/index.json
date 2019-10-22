@@ -7,7 +7,7 @@
       "steps":[
          {
             "title":"Jupyter Notebook",
-            "text":"steps/1/text.md",
+            "text":"steps/1/text.md"
          },
          {
             "title":"Dropout Regularization in Keras",

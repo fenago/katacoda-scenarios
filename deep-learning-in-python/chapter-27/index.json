@@ -7,7 +7,7 @@
       "steps":[
          {
             "title":"Jupyter Notebook",
-            "text":"steps/1/text.md",
+            "text":"steps/1/text.md"
          },
          {
             "title":"LSTM for Learning One-Char to One-Char Mapping",
