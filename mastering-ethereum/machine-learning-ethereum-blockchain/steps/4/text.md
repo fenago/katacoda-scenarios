@@ -1,5 +1,5 @@
 
-To train our linear-regression algorithm to generate accurate predictions, we need a cost function. A cost function is one way to analyze how well our prediction function is working for our dataset. It gives us an error rate, which is essentially the difference between the real-world result versus the prediction. The smaller the error, the better predictions we'll make. The cost function takes the real result and the prediction to output the error from our model, like so:
+To train our linear-regression algorithm to generate accurate predictions, we need a cost function. A cost function is one way to analyze how well our prediction function is working for our dataset. It gives us an error rate which is essentially the difference between the real-world result versus the prediction. The smaller the error, the better predictions we'll make. The cost function takes the real result and the prediction to output the error from our model like so:
 
 ```
 error = result - prediction
@@ -44,7 +44,7 @@ The prediction of crimes for Germany would look like the following:
 prediction = 0.1 * 3520 + 0.4 = 352.4 crimes per year
 ```
 
-We get 352.4 crimes, which we can approximate to 352 since it doesn't make sense to talk about crimes in terms of decimal points. As you can see, our prediction with that weight and bias is higher than the real result of 20 crimes per year since our model isn't trained yet. So it's normal to expect huge differences when using real values.
+We get 352.4 crimes which we can approximate to 352 since it doesn't make sense to talk about crimes in terms of decimal points. As you can see, our prediction with that weight and bias is higher than the real result of 20 crimes per year since our model isn't trained yet. So it's normal to expect huge differences when using real values.
 
 Then we calculate the cost function for all of those values. Let's see how it looks for Germany:
 

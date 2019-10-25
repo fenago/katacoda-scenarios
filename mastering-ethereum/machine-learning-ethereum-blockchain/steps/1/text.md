@@ -1,6 +1,6 @@
 # Blockchain and AI Overview
 ## Possibilities
-Blockchain and AI have been the most interesting topics in recent years for a good reason: they are the most advanced technologies that have been created to disrupt most established businesses. The fact that we can teach a computer to learn by itself is something very powerful, and means that the machine learning systems of the future will continue to evolve. Likewise with blockchain, the field of distributed computing is just beginning, and it will be the default solution for most problems in the future. So why not combine both for a revolutionary invention? It turns out that they work nicely together, and we can create very interesting dApps that benefit from both worlds, particularly by using them to create decentralized marketplaces for solving machine learning problems that reward users for their computing power.
+Blockchain and AI have been the most interesting topics in recent years for a good reason: they are the most advanced technologies that have been created to disrupt most established businesses. The fact that we can teach a computer to learn by itself is something very powerful and means that the machine learning systems of the future will continue to evolve. Likewise with blockchain, the field of distributed computing is just beginning, and it will be the default solution for most problems in the future. So why not combine both for a revolutionary invention? It turns out that they work nicely together and we can create very interesting dApps that benefit from both worlds, particularly by using them to create decentralized marketplaces for solving machine learning problems that reward users for their computing power.
 
 In this scenario, we're going to cover the following topics:
 
@@ -9,7 +9,7 @@ In this scenario, we're going to cover the following topics:
 - Building a smart contract machine learning marketplace
 
 ## Decentralized machine learning marketplaces
-We are going to build a marketplace to buy and sell computing power from users that have strong GPUs and want to help others perform machine learning to teach their algorithms to complete a task based on supervised learning, where a program learns to generate a desired output from a large quantity of input given a goal so that it programs itself.
+We are going to build a marketplace to buy and sell computing power from users that have strong GPUs and want to help others perform machine learning to teach their algorithms to complete a task based on supervised learning where a program learns to generate a desired output from a large quantity of input given a goal so that it programs itself.
 
 Ethereum comes into the equation when we need to deal with storing permanent records of the transactions that took place in our ML marketplace along with the trained model that the buyer requested from their parameters so that it's accessible anytime. The idea is to create a place where people from all around the world can start earning money from a new use of their hardware as an alternative to mining while also providing a secure system for ML algorithms.
 

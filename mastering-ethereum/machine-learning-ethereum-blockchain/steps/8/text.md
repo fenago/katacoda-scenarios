@@ -65,7 +65,7 @@ def cost(self, results, weight, bias, xs):
         return error / numberOfDataPoints
 ```
 
-After that, we add the optimized weights and the bias function, as shown in the following code:
+After that, we add the optimized weights and the bias function as shown in the following code:
 
 ```
     # Python implementation, returns the optimized weight and bias for that step
