@@ -21,7 +21,7 @@ function cost(int256[] memory _results, int256 _weight, int256 _bias, int256[] m
 }
 ```
 
-Then we have the get model function to retrieve the variables contained in the struct model, because we can't return the struct as it is right now. We have to make these types of tricks to get the struct values independently. This function is shown in the following code:
+Second, we have the get model function to retrieve the variables contained in the struct model because we can't return the struct as it is right now. We have to make these types of tricks to get the struct values independently. This function is shown in the following code:
 
 ```
 /// @notice To get a model dataset, payment and timestamp
@@ -32,7 +32,7 @@ function getModel(uint256 id) public view returns(string memory, uint256, uint25
 }
 ```
 
-Then we add another getter function that gives us all the trained models for a particular ID, as shown in the following code. This is useful for sellers who want to see what proposals they got for their particular job. If we were to implement this machine learning marketplace in a dApp, we'd have to add a few more getters for the jobs and other mappings:
+Third, we add another getter function that gives us all the trained models for a particular ID, as shown in the following code. This is useful for sellers who want to see what proposals they got for their particular job. If we were to implement this machine learning marketplace in a dApp, we'd have to add a few more getters for the jobs and other mappings:
 
 ```
 /// @notice To get all the proposed trained models for a particular id
@@ -56,5 +56,6 @@ function getAllTrainedModels(uint256 _id) public view returns(uint256[] memory, 
 }
 ```
 
-We have a cost function to quickly verify the results uploaded by a proposed seller, a getModel function that will be mainly used by sellers who want to get more specific information about a model, and a getAllTrainedModels function that returns the participants of a particular job. Note how we're returning the most important variables in the struct instead of the entire struct. We are doing this for the simple reason that we can't return structs yet in Solidity, so we have to separate each variable and return an array for each.
+We have a cost function to quickly verify the results uploaded by a proposed seller, a getModel function that will be mainly used by sellers who want to get more specific information about a model and a getAllTrainedModels function that returns the participants of a particular job. Note how we're returning the most important variables in the struct instead of the entire struct. We are doing this for the simple reason that we can't return structs yet in Solidity so we have to separate each variable and return an array for each.
+
 Grincalaitis, Merunus. Mastering Etheruem. Packt, 2019.

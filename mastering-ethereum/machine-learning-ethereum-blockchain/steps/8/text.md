@@ -28,9 +28,9 @@ function train(int256[] memory _results, int256 _weight, int256 _bias, int256[] 
 
 As you can see, we are using the optimization function along with the cost function to continuously reduce the error by updating the weight and bias parameters for the specified number of iterations.
 
-Now you should be able to create and train linear regression models to make predictions using the prediction function after training your model with the train function. The following is the full Python code for your reference, although you can see the updated version on the official GitHub at https://github.com/merlox/machine-learning-ethereum/blob/master/linearRegression.py.
+Now you should be able to create and train linear regression models to make predictions using the prediction function after training your model with the train function. The following is the full Python code for your reference although you can see the updated version on the official GitHub at https://github.com/merlox/machine-learning-ethereum/blob/master/linearRegression.py.
 
-We start by creating the constructor, which will train the model with some initial random values using the uniform library because it returns a floating number between 0 and 1, as shown in the following code:
+We start by creating the constructor which will train the model with some initial random values using the uniform library because it returns a floating number between 0 and 1 as shown in the following code:
 
 ```
 from random import uniform
@@ -49,7 +49,7 @@ def __init__(self):
         finalError = self.cost(self.results, finalWeight, finalBias, self.xs)
         print('Final weight {:.4f}, Final bias {:.4f}, Final error {:.4f}, Prediction {:.4f} out of {}, Prediction Two {:.4f} out of {}'.format(finalWeight, finalBias, finalError, self.prediction(self.xs[1], finalWeight, finalBias), self.results[1], self.prediction(self.xs[3], finalWeight, finalBias), self.results[3]))
 ```
-Then we implement the prediction and cost function, as you just learned, down below the constructor, as shown in the following code:
+Then we implement the prediction and cost function, as you just learned, down below the constructor as shown in the following code:
 
 ```
     # Python implementation

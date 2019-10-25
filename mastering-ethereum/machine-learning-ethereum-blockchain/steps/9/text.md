@@ -1,4 +1,4 @@
-Finally, we complete the code by creating the train function and initialize the class outside the scope of the class, as shown in the following code:
+Finally, we complete the code by creating the train function and initialize the class outside the scope of the class as shown in the following code:
 
 ```
     # Python implementation
@@ -17,5 +17,6 @@ LinearRegression()
 As you can see, we've created a Python class that runs the train function in the constructor. Don't worry if you're not familiar with Python; you just have to understand that the code is training our linear-regression algorithm for more precise calculations. Create a file called linearRegression.py and write the code there. Then you can run it with the following command line:
 `python linearRegression.py`{{execute}}
 
-You'll see that the program is constantly reducing the error by taking small steps toward the minimum until it gets to a point where it doesn't improve much. That's okay: we expect it to make precise predictions, but without 100% accuracy. You can then take the final weight and bias to make predictions on your own for that machine learning model.
+You'll see that the program is constantly reducing the error by taking small steps toward the minimum until it gets to a point where it doesn't improve much. That's okay. We expect it to make precise predictions, but without 100% accuracy. You can then take the final weight and bias to make predictions on your own for that machine learning model.
+
 Grincalaitis, Merunus. Mastering Etheruem. Packt, 2019.

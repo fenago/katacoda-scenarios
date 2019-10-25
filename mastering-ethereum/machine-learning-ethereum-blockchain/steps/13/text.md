@@ -31,4 +31,5 @@ function chooseResult(uint256 _id, uint256 _arrayIdSelected) public {
 ```
 
 The uploadJob function will be used by buyers to publish their dataset and payment in order to get their model trained by participants all over the world. The uploadResult function will be used by sellers to get information about a job to train the specified dataset until the error is minimized. Finally, the chooseResult function is the one that is used by buyers to select a winner proposal for a determined job. The creator of the job has three days to select a winning proposal. If after three days no one has applied, then the payment will be returned to the owner. If there are participants, but the owner hasn't selected a winner, the reward will be sent to the first participant in compensation for their speed; in that case, this function has to be executed by an external user to execute the payment.
+
 Grincalaitis, Merunus. Mastering Etheruem. Packt, 2019.

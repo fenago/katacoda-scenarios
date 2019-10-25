@@ -2,7 +2,7 @@ Our ML marketplace will work with linear regression algorithms exclusively to si
 
 - A prediction function to generate a prediction from data
 - A cost function to combine the prediction results
-- An optimization algorithm to train our algorithm with gradient descent, which will fine tune the predictions for more precise results
+- An optimization algorithm to train our algorithm with gradient descent which will fine tune the predictions for more precise results
 - A train function to improve our algorithm
 
 
