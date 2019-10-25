@@ -11,7 +11,7 @@ def train(results, weight, bias, xs, learningRate, iterations):
  return weight, bias
 ```
 
-The Solidity implementation looks pretty similar, although we have to make sure that the results and independent variables, values have the same length to avoid errors, as shown in the following code:
+The Solidity implementation looks pretty similar although we have to make sure that the results and independent variables values have the same length to avoid errors as shown in the following code:
 
 ```
 // Solidity implementation
