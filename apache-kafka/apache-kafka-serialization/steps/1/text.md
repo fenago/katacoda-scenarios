@@ -1,4 +1,4 @@
-In this step, we will setup VScode editor and clone respository.
+In this step, we will setup VScode editor and clone repository.
 
 Clone the following repository by copying & executing following command in the vscode terminal.
 `git clone https://github.com/athertahir/kafka.git`{{execute}}

@@ -1,4 +1,4 @@
-Let's first setup VScode editor and clone respository. Clone the following repository by executing following command in the terminal.
+Let's first setup VScode editor and clone repository. Clone the following repository by executing following command in the terminal.
 `git clone https://github.com/athertahir/apache-spark.git`{{execute T1}}
 
 - Click **IDE Editor** tab to open Visual Studio and open solution explorer and open `apache-spark/Files/chapter_10` to view files.

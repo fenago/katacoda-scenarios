@@ -1,4 +1,4 @@
-In this step, we will setup VScode editor and clone respository.
+In this step, we will setup VScode editor and clone repository.
 
 
 Let's run an instance of an **ubuntu** image and pass `/bin/bash`{{copy}} as argument to docker run command. We will also mount docker.sock to make docker from ther container.

@@ -1,4 +1,4 @@
-In this step, we will setup VScode editor and clone respository.
+In this step, we will setup VScode editor and clone repository.
 
 ![](https://github.com/fenago/katacoda-scenarios/raw/master/apache-kafka/1.JPG)
 	

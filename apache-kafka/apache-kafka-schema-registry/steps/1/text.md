@@ -1,4 +1,4 @@
-In this step, we will setup VScode editor and clone respository.
+In this step, we will setup VScode editor and clone repository.
 
 **Note:** Please wait for the initial setup to complete, It will take around 2 minutes to complete.
 

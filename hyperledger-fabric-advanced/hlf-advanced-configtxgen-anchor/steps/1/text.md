@@ -1,4 +1,4 @@
-In this step, we will setup VScode editor and clone respository.
+In this step, we will setup VScode editor and clone repository.
 
 Click **IDE Editor** tab to open Visual Studio and click _Terminal_ > _New Terminal_ to open the VSCode integrated terminal which wil be used to run commands.
 

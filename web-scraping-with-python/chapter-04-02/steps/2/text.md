@@ -1,4 +1,4 @@
-Let's first setup VScode editor and clone respository. Clone the following repository by executing following command in the terminal.
+Let's first setup VScode editor and clone repository. Clone the following repository by executing following command in the terminal.
 `git clone https://github.com/athertahir/web-scraping-with-python.git`{{execute}}
 
 Now, move in the directory which contains the source code.

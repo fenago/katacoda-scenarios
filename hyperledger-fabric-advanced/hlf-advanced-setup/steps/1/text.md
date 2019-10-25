@@ -1,4 +1,4 @@
-In this step, we will setup clone the HLF respository.
+In this step, we will setup clone the HLF repository.
 
 Let's clone the following repository by copying & executing following command in the terminal.
 `git clone https://github.com/fenago/HLFADV.git`{{execute}}

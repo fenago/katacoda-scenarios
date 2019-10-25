@@ -1,4 +1,4 @@
-In this step, we will setup VScode editor and clone respository.
+In this step, we will setup VScode editor and clone repository.
 
 Click **IDE Editor** tab to open Visual Studio and click explorer.
 
