@@ -1,0 +1,81 @@
+{
+  "title": "Master Machine Learning Algorithms",
+  "description": "Discover How They Work and Implement Them From Scratch",
+  "courses": [
+    {
+      "course_id": "master-machine-learning-algorithms-00",
+      "title": "Crash-Course in Spreadsheet Math",
+      "description": ""
+    },
+    {
+      "course_id": "master-machine-learning-algorithms-01",
+      "title": "Linear Regression",
+      "description": ""
+    },
+    {
+      "course_id": "master-machine-learning-algorithms-02",
+      "title": "Simple Linear Regression Tutorial",
+      "description": ""
+    },
+    {
+      "course_id": "master-machine-learning-algorithms-03",
+      "title": "Linear Regression Tutorial Using Gradient Descent",
+      "description": ""
+    },
+    {
+      "course_id": "master-machine-learning-algorithms-04",
+      "title": "Logistic Function",
+      "description": ""
+    },
+    {
+      "course_id": "master-machine-learning-algorithms-05",
+      "title": "Logistic Regression Tutorial",
+      "description": ""
+    },
+    {
+      "course_id": "master-machine-learning-algorithms-06",
+      "title": "Linear Discriminant Analysis",
+      "description": ""
+    },
+    {
+      "course_id": "master-machine-learning-algorithms-08",
+      "title": "Classification and Regression Trees",
+      "description": ""
+    },
+    {
+      "course_id": "master-machine-learning-algorithms-09",
+      "title": "Naive Bayes",
+      "description": ""
+    },
+    {
+      "course_id": "master-machine-learning-algorithms-11",
+      "title": "Gaussian Naive Bayes",
+      "description": ""
+    },
+    {
+      "course_id": "master-machine-learning-algorithms-12",
+      "title": "k-Nearest Neighbors",
+      "description": ""
+    },
+    {
+      "course_id": "master-machine-learning-algorithms-13",
+      "title": "Learning Vector Quantization",
+      "description": ""
+    },
+    {
+      "course_id": "master-machine-learning-algorithms-14",
+      "title": "Support Vector Machines",
+      "description": ""
+    },
+    {
+      "course_id": "master-machine-learning-algorithms-15",
+      "title": "Bagged Decision Trees",
+      "description": ""
+    },
+    {
+      "course_id": "master-machine-learning-algorithms-16",
+      "title": "AdaBoost Tutorial",
+      "description": ""
+    }
+  ]
+}

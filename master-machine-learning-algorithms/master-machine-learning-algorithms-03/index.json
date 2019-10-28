@@ -1,0 +1,71 @@
+{
+  "title": "Linear Regression Tutorial Using Gradient Descent",
+  "description": "",
+  "difficulty": "Advanced",
+  "time": "15 minutes",
+  "details": {
+    "steps": [{
+      "title": "Introduction",
+      "text": "steps/1/text.md"
+    },
+    {
+      "title": "Spreadsheet",
+      "text": "steps/2/text.md"
+    },    
+	{
+      "title": "Tutorial Data Set",
+      "text": "steps/3/text.md"
+    },
+	{
+      "title": "Stochastic Gradient Descent",
+      "text": "steps/4/text.md"
+    },
+  {
+      "title": "Simple Linear Regression with Stochastic Gradient Descent",
+      "text": "steps/5/text.md"
+    },
+    {
+        "title": "Gradient Descent Iteration #1",
+        "text": "steps/6/text.md"
+    },
+    {
+        "title": "Gradient Descent Iteration #1",
+        "text": "steps/7/text.md"
+    },
+    {
+        "title": "Gradient Descent Iteration #20",
+        "text": "steps/8/text.md"
+    },
+    {
+        "title": "Gradient Descent Iteration #20",
+        "text": "steps/9/text.md"
+    },
+    {
+        "title": "Summary",
+        "text": "steps/10/text.md"
+    }],
+    "intro": {
+      "code": "set-env.sh",
+      "text": "intro.md",
+      "credits": ""
+    },
+    "finish": {
+      "text": "finish.md"
+    },
+    "assets": {
+      "client": [
+        {
+          "file": "03-SimpleLinearRegressionGradientDescent.xlsx",
+          "target": "~/"
+        }
+      ]
+    }
+  },
+  "environment": {
+    "uilayout": "vscode",
+    "uimessage1": "\u001b[32mBrought to you by https://LearningVoyage.com\u001b[m\r\n"
+  },
+  "backend": {
+    "imageid": "ubuntu"
+  }
+}

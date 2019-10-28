@@ -1,0 +1,71 @@
+{
+  "title": "Crash-Course in Spreadsheet Math",
+  "description": "",
+  "difficulty": "Advanced",
+  "time": "15 minutes",
+  "details": {
+    "steps": [{
+      "title": "Introduction",
+      "text": "steps/0/text.md"
+    },
+    {
+      "title": "Spreadsheet",
+      "text": "steps/1/text.md"
+    }, 
+    {
+      "title": "Arithmetic",
+      "text": "steps/2/text.md"
+    },    
+	{
+      "title": "Arithmetic",
+      "text": "steps/3/text.md"
+    },
+	{
+      "title": "Arithmetic",
+      "text": "steps/4/text.md"
+    },
+  {
+      "title": "Statistical Summaries",
+      "text": "steps/5/text.md"
+    },
+    {
+        "title": "Statistical Summaries",
+        "text": "steps/6/text.md"
+    },
+    {
+        "title": "Random Numbers",
+        "text": "steps/7/text.md"
+    },
+    {
+        "title":"Random Numbers",
+        "text": "steps/8/text.md"
+    },
+    {
+        "title": "Flow Control",
+        "text": "steps/9/text.md"
+    }],
+    "intro": {
+      "code": "set-env.sh",
+      "text": "intro.md",
+      "credits": ""
+    },
+    "finish": {
+      "text": "finish.md"
+    },
+    "assets": {
+      "client": [
+        {
+          "file": "00-CrashCourse.xlsx",
+          "target": "~/"
+        }
+      ]
+    }
+  },
+  "environment": {
+    "uilayout": "vscode",
+    "uimessage1": "\u001b[32mBrought to you by https://LearningVoyage.com\u001b[m\r\n"
+  },
+  "backend": {
+    "imageid": "ubuntu"
+  }
+}

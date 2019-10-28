@@ -1,0 +1,79 @@
+{
+  "title": "Support Vector Machines",
+  "description": "",
+  "difficulty": "Advanced",
+  "time": "15 minutes",
+  "details": {
+    "steps": [{
+      "title": "Introduction",
+      "text": "steps/1/text.md"
+    },
+    {
+      "title": "Spreadsheet",
+      "text": "steps/2/text.md"
+    },    
+	{
+      "title": "Maximal-Margin Classifier",
+      "text": "steps/3/text.md"
+    },
+	{
+      "title": "How to Learn a SVM Model",
+      "text": "steps/4/text.md"
+    },
+  {
+      "title": "Preparing Data For SVM",
+      "text": "steps/5/text.md"
+    },
+    {
+        "title": "Tutorial Dataset",
+        "text": "steps/6/text.md"
+    },
+    {
+        "title": "Training SVM With Gradient Descent",
+        "text": "steps/7/text.md"
+    },
+    {
+        "title":"SVM Optimization Method",
+        "text": "steps/8/text.md"
+    },
+    {
+        "title": "Learn an SVM Model from Training Data",
+        "text": "steps/9/text.md"
+    },
+    {
+        "title": "Learning Iteration #2",
+        "text": "steps/10/text.md"
+    },
+    {
+        "title": "More Iterations",
+        "text": "steps/11/text.md"
+    },
+    {
+        "title": "Make Predictions with SVM Model",
+        "text": "steps/12/text.md"
+    }],
+    "intro": {
+      "code": "set-env.sh",
+      "text": "intro.md",
+      "credits": ""
+    },
+    "finish": {
+      "text": "finish.md"
+    },
+    "assets": {
+      "client": [
+        {
+          "file": "14-SupportVectorMachine.xlsx",
+          "target": "~/"
+        }
+      ]
+    }
+  },
+  "environment": {
+    "uilayout": "vscode",
+    "uimessage1": "\u001b[32mBrought to you by https://LearningVoyage.com\u001b[m\r\n"
+  },
+  "backend": {
+    "imageid": "ubuntu"
+  }
+}
