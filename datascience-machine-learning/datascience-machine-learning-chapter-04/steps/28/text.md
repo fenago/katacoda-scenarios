@@ -1,0 +1,4 @@
+
+The point is you want to keep looking at these higher levels, but at each level identify the factors that impact the thing you're trying to predict. I can keep going up to the quality of the teachers in their school, the funding of the school district, the education policies at the state level. You can see there are different factors at different levels that all feed into this thing you're trying to predict, and some of these factors might exist at more than one level. Crime rate, for example, exists at the local and state levels. You need to figure out how those all interplay with each other as well when you're doing multi-level modeling.
+
+As you can imagine, this gets very hard and very complicated very quickly. It is really way beyond the scope of this book, or any introductory book in data science. This is hard stuff. There are entire thick books about it, you could do an entire book about it that would be a very advanced topic.

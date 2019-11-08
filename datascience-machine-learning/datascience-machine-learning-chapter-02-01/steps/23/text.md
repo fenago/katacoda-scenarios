@@ -1,0 +1,6 @@
+I want you to dive in here and actually play around with it, make it real, so try out different parameters on generating that normal data. Remember, this is a measure of the shape of the distribution of the data, so what happens if I change that center point? Does it matter? Does it actually affect the shape? Why don't you try it out and find out?
+
+Try messing with the actual standard deviation, that we've specified, to see what impact that has on the shape of the graph. Maybe try a standard deviation of 30, and you know, you can see how that actually affects things. Let's make it even more dramatic, like 50. Just play around with 50. You'll see the graph starting to get a little bit fatter. Play around with different values, just get a feel of how these values work. This is the only way to really get an intuitive sense of standard deviation and variance. Mess around with some different examples and see the effect that it has.
+
+So that's standard deviation and variance in practice. You got hands on with some of it there, and I hope you played around a little bit to get some familiarity with it. These are very important concepts and we'll talk about standard deviations a lot throughout the book and no doubt throughout your career in data science, so make sure you've got that under your belt. Let's move on.
+

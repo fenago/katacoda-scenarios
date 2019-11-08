@@ -1,0 +1,7 @@
+
+**Note:**
+Even though P(B|A) is high (99%), it doesn't mean P(A|B) is high.
+
+People overlook this all the time, so if there's one lesson to be learned from Bayes' theorem, it is to always take these sorts of things with a grain of salt. Apply Bayes' theorem to these actual problems and you'll often find that what sounds like a high accuracy rate can actually be yielding very misleading results if you're dealing with a low overall incidence of a given problem. We see the same thing in cancer screening and other sorts of medical screening as well. That's a very real problem; there's a lot of people getting very, very real and very unnecessary surgery as a result of not understanding Bayes' theorem. If you're going into the medical profession with big data, please, please, please remember this theorem.
+
+So that's Bayes' theorem. Always remember that the probability of something given something else is not the same thing as the other way around, and it actually depends a lot on the base probabilities of both of those two things that you're measuring. It's a very important thing to keep in mind, and always look at your results with that in mind. Bayes' theorem gives you the tools to quantify that effect. I hope it proves useful.

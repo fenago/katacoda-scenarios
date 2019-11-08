@@ -1,0 +1,9 @@
+Let's talk in detail now about two different types of machine learning: supervised and unsupervised learning. Sometimes there can be kind of a blurry line between the two, but the basic definition of unsupervised learning is that you're not giving your model any answers to learn from. You're just presenting it with a group of data and your machine learning algorithm tries to make sense out of it given no additional information:
+
+![](https://github.com/fenago/katacoda-scenarios/raw/master/datascience-machine-learning/datascience-machine-learning-chapter-05-01/steps/4/1.jpg)
+
+Let's say I give it a bunch of different objects, like these balls and cubes and sets of dice and what not. Let's then say have some algorithm that will cluster these objects into things that are similar to each other based on some similarity metric.
+
+Now I haven't told the machine learning algorithm, ahead of time, what categories certain objects belong to. I don't have a cheat sheet that it can learn from where I have a set of existing objects and my correct categorization of it. The machine learning algorithm must infer those categories on its own. This is an example of unsupervised learning, where I don't have a set of answers that I'm getting it learn from. I'm just trying to let the algorithm gather its own answers based on the data presented to it alone.
+
+The problem with this is that we don't necessarily know what the algorithm will come up with! If I gave it that bunch of objects shown in the preceding image, is it going to group things into things that are round, things that are large versus small, things that are red versus blue, I don't know. It's going to depend on the metric that I give it for similarity between items primarily. But sometimes you'll find clusters that are surprising,and emerged that you didn't expect to see.

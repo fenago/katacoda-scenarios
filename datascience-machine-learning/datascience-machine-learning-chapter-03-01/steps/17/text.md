@@ -1,0 +1,10 @@
+Next, we're going to talk about covariance and correlation. Let's say I have two different attributes of something and I want to see if they're actually related to each other or not. This section will give you the mathematical tools you need to do so, and we'll dive into some examples and actually figure out covariance and correlation using Python. These are ways of measuring whether two different attributes are related to each other in a set of data, which can be a very useful thing to find out.
+
+#### Defining the concepts
+Imagine we have a scatter plot, and each one of the data points represents a person that we measured, and we're plotting their age on one axis versus their income on another. Each one of these dots would represent a person, for example their x value represents their age and the y value represents their income. I'm totally making this up, this is fake data.
+
+![](https://github.com/fenago/katacoda-scenarios/raw/master/datascience-machine-learning/datascience-machine-learning-chapter-03-01/steps/17/1.png)
+
+Now if I had a scatter plot that looks like the left one in the preceding image, you see that these values tend to lie all over the place, and this would tell you that there's no real correlation between age and income based on this data. For any given age, there can be a huge range of incomes and they tend to be clustered around the middle, but we're not really seeing a very clear relationship between these two different attributes of age and income. Now in contrast, in the scatter plot on the right you can see there's a very clear linear relationship between age and income.
+
+So, covariance and correlation give us a means of measuring just how tight these things are correlated. I would expect a very low correlation or covariance for the data in the left scatter plot, but a very high covariance and correlation for the data in the right scatter plot. So that's the concept of covariance and correlation. It measures how much these two attributes that I'm measuring seem to depend on each other.

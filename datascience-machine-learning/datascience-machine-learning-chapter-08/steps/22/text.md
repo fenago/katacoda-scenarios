@@ -1,0 +1,7 @@
+A common problem with real-world data is outliers. You'll always have some strange users, or some strange agents that are polluting your data, that act abnormally and atypically from the typical user. They might be legitimate outliers; they might be caused by real people and not by some sort of malicious traffic, or fake data. So sometimes, it's appropriate to remove them, sometimes it isn't. Make sure you make that decision responsibly. So, let's dive into some examples of dealing with outliers.
+
+For example, if I'm doing collaborative filtering, and I'm trying to make movie recommendations or something like that, you might have a few power users that have watched every movie ever made, and rated every movie ever made. They could end up having an inordinate influence on the recommendations for everybody else.
+
+You don't really want a handful of people to have that much power in your system. So, that might be an example where it would be a legitimate thing to filter out an outlier, and identify them by how many ratings they've actually put into the system. Or, maybe an outlier would be someone who doesn't have enough ratings.
+
+We might be looking at web log data, like we saw in our example earlier when we were doing data cleaning, outliers could be telling you that there's something very wrong with your data to begin with. It could be malicious traffic, it could be bots, or other agents that should be discarded that don't represent actual human beings that you're trying to model.

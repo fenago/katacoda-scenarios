@@ -1,0 +1,9 @@
+Another potential issue that can skew your results is selection bias. It's very important that customers are randomly assigned to either your control or your treatment groups, your A or B group.
+
+However, there are subtle ways in which that random assignment might not be random after all. For example, let's say that you're hashing your customer IDs to place them into one bucket or the other. Maybe there's some subtle bias between how that hash function affects people with lower customer IDs versus higher customer IDs. This might have the effect of putting all of your longtime, more loyal customers into the control group, and your newer customers who don't know you that well into your treatment group.
+
+What you end up measuring then is just a difference in behavior between old customers and new customers as a result. It's very important to audit your systems to make sure there is no selection bias in the actual assignment of people to the control or treatment group.
+
+You also need to make sure that assignment is sticky. If you're measuring the effect of a change over an entire session, you want to measure if they saw a change on page A but, over on page C they actually did a conversion, you have to make sure they're not switching groups in between those clicks. So, you need to make sure that within a given session, people remain in the same group, and how to define a session can become kind of nebulous as well.
+
+Now, these are all issues that using an established off-the-shelf framework like Google Experiments or Optimizely or one of those guys can help with so that you're not reinventing the wheel on all these problems. If your company does have a homegrown, in-house solution because they're not comfortable with sharing that data with outside companies, then it's worth auditing whether there is selection bias or not.

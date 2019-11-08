@@ -1,0 +1,147 @@
+{
+   "title":"",
+   "description":"Run Python Code with Jupyter Notebooks.",
+   "difficulty":"Beginner",
+   "time":"10 minutes",
+   "details":{
+      "steps":[
+         {
+            "title": "Introduction",
+            "text":"steps/1/text.md"
+         },
+         {
+            "title": "Jupyter Notebooks",
+            "text":"steps/2/text.md"
+         },
+         {
+            "title": "Bias/variance trade-off",
+            "text":"steps/3/text.md"
+         },
+         {
+            "title": "Bias/variance trade-off...",
+            "text":"steps/4/text.md"
+         },
+         {
+            "title": "Bias/variance trade-off...",
+            "text":"steps/5/text.md"
+         },
+         {
+            "title": "K-fold cross-validation to avoid overfitting",
+            "text":"steps/6/text.md"
+         },
+         {
+            "title": "Example of k-fold cross-validation using scikit-learn",
+            "text":"steps/7/text.md"
+         },
+         {
+            "title": "Example of k-fold cross-validation...",
+            "text":"steps/8/text.md"
+         },
+         {
+            "title": "Example of k-fold cross-validation...",
+            "text":"steps/9/text.md"
+         },
+         {
+            "title": "Data cleaning and normalisation",
+            "text":"steps/10/text.md"
+         },
+         {
+            "title": "",
+            "text":"steps/11/text.md"
+         },
+         {
+            "title": "",
+            "text":"steps/12/text.md"
+         },
+         {
+            "title": "Cleaning web log data",
+            "text":"steps/13/text.md"
+         },
+         {
+            "title": "Applying a regular expression on the web log",
+            "text":"steps/14/text.md"
+         },
+         {
+            "title": "",
+            "text":"steps/15/text.md"
+         },
+         {
+            "title": "Modification one - filtering the request field",
+            "text":"steps/16/text.md"
+         },
+         {
+            "title": "Modification two - filtering post requests",
+            "text":"steps/17/text.md"
+         },
+         {
+            "title": "Modification three - checking the user agents",
+            "text":"steps/17-1/text.md"
+         },
+         {
+            "title": "Filtering the activity of spiders/robots",
+            "text":"steps/17-2/text.md"
+         },
+         {
+            "title": "Modification four - applying website-specific filters",
+            "text":"steps/17-3/text.md"
+         },
+         {
+            "title": "Activity for web log data",
+            "text":"steps/18/text.md"
+         },
+         {
+            "title": "Normalizing numerical data",
+            "text":"steps/19/text.md"
+         },        
+         {
+            "title": "Normalizing numerical data...",
+            "text":"steps/20/text.md"
+         },
+         {
+            "title": "Normalizing numerical data...",
+            "text":"steps/21/text.md"
+         },
+         {
+            "title": "Detecting outliers",
+            "text":"steps/22/text.md"
+         },
+         {
+            "title": "",
+            "text":"steps/23/text.md"
+         },
+         {
+            "title": "Dealing with outliers...",
+            "text":"steps/24/text.md"
+         },
+         {
+            "title": "Dealing with outliers...",
+            "text":"steps/25/text.md"
+         },
+         {
+            "title": "Activity for outliers",
+            "text":"steps/26/text.md"
+         }
+      ],
+      "intro":{
+         "text":"intro.md",
+         "code":"set-env.sh"
+      },
+      "finish":{
+         "text":"finish.md"
+      }
+   },
+   "environment":{
+      "uilayout":"terminal-iframe",
+      "showdashboard":true,
+      "dashboards":[
+         {
+            "name":"Jupyter Notebook",
+            "port":8888
+         }
+      ],
+      "uimessage1": "\u001b[32mBrought to you by https://LearningVoyage.com\u001b[m\r\n"
+   },
+   "backend":{
+      "imageid":"docker"
+   }
+}

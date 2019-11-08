@@ -1,0 +1,5 @@
+At that point you can pull the plug on the experiment and either roll out the change more widely or remove it because it was actually having a negative effect. You can always tell people to go back and try again, use what they learned from the experiment to maybe try it again with some changes and soften the blow a little bit.
+
+The other thing that might happen is it's just not converging at all. If you're not seeing any trends over time in the p-value, it's probably a good sign that you're not going to see this converge anytime soon. It's just not going to have enough of an impact on behavior to even be measurable, no matter how long you run it.
+
+In those situations, what you want to do every day is plot on a graph for a given experiment the p-value, the t-statistic, whatever you're using to measure the success of this experiment, and if you're seeing something that looks promising, you will see that p-value start to come down over time. So, the more data it gets, the more significant your results should be getting.

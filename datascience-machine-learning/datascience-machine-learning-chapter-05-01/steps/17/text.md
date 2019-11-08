@@ -1,0 +1,7 @@
+
+What about all the other words in the English language, though? So our spam classifier should know about more than just the word "free". It should automatically pick up every word in the message, ideally, and figure out how much does that contribute to the likelihood of a particular e-mail being spam. So what we can do is train our model on every word that we encounter during training, throwing out things like "a" and "the" and "and" and meaningless words like that. Then when we go through all the words in a new e-mail, we can multiply the probability of being spam for each word together, and we get the overall probability of that e-mail being spam.
+
+Now it's called Naive Bayes for a reason. It's naive is because we're assuming that there's no relationships between the words themselves. We're just looking at each word in isolation, individually within a message, and basically combining all the probabilities of each word's contribution to it being spam or not. We're not looking at the relationships between the words. So a better spam classifier would do that, but obviously that's a lot harder.
+
+So this sounds like a lot of work. But the overall idea is not that hard, and scikit-learn in Python makes it actually pretty easy to do. It offers a feature called CountVectorizer that makes it very simple to actually split up an e-mail to all of its component words and process those words individually. Then it has a MultinomialNB function, where NB stands for Naive Bayes, which will do all the heavy lifting for Naive Bayes for us.
+

@@ -1,0 +1,7 @@
+Finally, we're going to talk about support vector machines (SVM), which is a very advanced way of clustering or classifying higher dimensional data.
+
+So, what if you have multiple features that you want to predict from? SVM can be a very powerful tool for doing that, and the results can be scarily good! It's very complicated under the hood, but the important things are understanding when to use it, and how it works at a higher level. So, let's cover SVM now.
+
+Support vector machines is a fancy name for what actually is a fancy concept. But fortunately, it's pretty easy to use. The important thing is knowing what it does, and what it's good for. So, support vector machines works well for classifying higher-dimensional data, and by that I mean lots of different features. So, it's easy to use something like k-means clustering, to cluster data that has two dimensions, you know, maybe age on one axis and income on another. But, what if I have many, many different features that I'm trying to predict from. Well, support vector machines might be a good way of doing that.
+
+Support vector machines finds higher-dimensional support vectors across which to divide the data (mathematically, these support vectors define hyperplanes). That is, mathematically, what support vector machines can do is find higher dimensional support vectors (that's where it gets its name from) that define the higher-dimensional planes that split the data into different clusters.

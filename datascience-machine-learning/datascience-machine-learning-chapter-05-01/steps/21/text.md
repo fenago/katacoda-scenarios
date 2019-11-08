@@ -1,0 +1,6 @@
+We had a pretty small dataset here, so you could try running some different e-mails through it if you want and see if you get different results. If you really want to challenge yourself, try applying train/test to this example. So the real measure of whether or not my spam classifier is good or not is not just intuitively whether it can figure out that Free Money now!!! is spam. You want to measure that quantitatively.
+
+So if you want a little bit of a challenge, go ahead and try to split this data up into a training set and a test dataset. You can actually look up online how pandas can split data up into train sets and testing sets pretty easily for you, or you can do it by hand. Whatever works for you. See if you can actually apply your MultinomialNB classifier to a test dataset and measure its performance. So, if you want a little bit of an exercise, a little bit of a challenge, go ahead and give that a try.
+
+How cool is that? We just wrote our own spam classifier just using a few lines of code in Python. It's pretty easy using scikit-learn and Python. That's Naive Bayes in action, and you can actually go and classify some spam or ham messages now that you have that under your belt. Pretty cool stuff. Let's talk about clustering next.
+

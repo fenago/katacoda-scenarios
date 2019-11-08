@@ -1,0 +1,5 @@
+If you have data that's kind of all over the place and has a lot of variance, you can go crazy and create a line that just like goes up and down to try to fit that data as closely as it can, but in fact that doesn't represent the intrinsic relationship of that data. It doesn't do a good job of predicting new values.
+
+So always start by just visualizing your data and think about how complicated does the curve really needs to be. Now you can use r-squared to measure how good your fit is, but remember, that's just measuring how well this curve fits your training data—that is, the data that you're using to actually make your predictions based off of. It doesn't measure your ability to predict accurately going forward.
+
+Later, we'll talk about some techniques for preventing overfitting called train/test, but for now you're just going to have to eyeball it to make sure that you're not overfitting and throwing more degrees at a function than you need to. This will make more sense when we explore an example, so let's do that next.

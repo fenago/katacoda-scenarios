@@ -1,0 +1,5 @@
+So how do you evaluate supervised learning? Well, the beautiful thing about supervised learning is that we can use a trick called train/test. The idea here is to split our observational data that I want my model to learn from into two groups, a training set and a testing set. So when I train/build my model based on the data that I have, I only do that with part of my data that I'm calling my training set, and I reserve another part of my data that I'm going to use for testing purposes.
+
+I can build my model using a subset of my data for training data, and then I'm in a position to evaluate the model that comes out of that, and see if it can successfully predict the correct answers for my testing data.
+
+So you see what I did there? I have a set of data where I already have the answers that I can train my model from, but I'm going to withhold a portion of that data and actually use that to test my model that was generated using the training set! That it gives me a very concrete way to test how good my model is on unseen data because I actually have a bit of data that I set aside that I can test it with.

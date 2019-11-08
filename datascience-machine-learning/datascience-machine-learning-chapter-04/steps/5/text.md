@@ -1,0 +1,7 @@
+Remember the slope-intercept equation of a line? It is y=mx+c. The slope just turns out to be the correlation between the two variables times the standard deviation in Y divided by the standard deviation in X. It might seem a little bit weird that standard deviation just kind of creeps into the math naturally there, but remember correlation had standard deviation baked into it as well, so it's not too surprising that you have to reintroduce that term.
+
+The intercept can then be computed as the mean of the Y minus the slope times the mean of X. Again, even though that's really not that difficult, Python will do it all for you, but the point is that these aren't complicated things to run. They can actually be done very efficiently.
+
+Remember that least squares minimize the sum of squared errors from each point to the line. Another way of thinking about linear regression is that you're defining a line that represents the maximum likelihood of an observation line there; that is, the maximum probability of the y value being something for a given x value.
+
+People sometimes call linear regression maximum likelihood estimation, and it's just another example of people giving a fancy name to something that's very simple, so if you hear someone talk about maximum likelihood estimation, they're really talking about regression. They're just trying to sound really smart. But now you know that term too, so you too can sound smart.

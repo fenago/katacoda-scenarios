@@ -1,0 +1,3 @@
+For an activity, if you want to go back and play with this, mess around with my input data. Go ahead and edit the code we've been exploring, and create an alternate universe where it's a topsy turvy world; for example, everyone that I gave a job offer to now doesn't get one and vice versa. See what that does to your decision tree. Just mess around with it and see what you can do and try to interpret the results.
+
+So, that's decision trees and random forests, one of the more interesting bits of machine learning, in my opinion. I always think it's pretty cool to just generate a flowchart out of thin air like that. So, hopefully you'll find that useful.

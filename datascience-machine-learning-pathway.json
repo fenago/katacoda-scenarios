@@ -1,0 +1,81 @@
+{
+  "title": "Hands-On Data Science and Python Machine Learning",
+  "description": "Fundamentals of machine learning with Python, data mining and large-scale machine learning using Apache Spark",
+  "courses": [
+    {
+      "course_id": "datascience-machine-learning-chapter-01",
+      "title": "Getting Started",
+      "description": ""
+    },
+    {
+      "course_id": "datascience-machine-learning-chapter-02-01",
+      "title": "Statistics and Probability Refresher, and Python Practice",
+      "description": ""
+    },
+	{
+      "course_id": "datascience-machine-learning-chapter-02-02",
+      "title": "Statistics and Probability Refresher, and Python Practice",
+      "description": ""
+    },
+	{
+      "course_id": "datascience-machine-learning-chapter-03-01",
+      "title": "Matplotlib and Advanced Probability Concepts",
+      "description": ""
+    },
+	{
+      "course_id": "datascience-machine-learning-chapter-03-02",
+      "title": "Matplotlib and Advanced Probability Concepts",
+      "description": ""
+    },
+	{
+      "course_id": "datascience-machine-learning-chapter-04",
+      "title": "Predictive Models",
+      "description": ""
+    },
+	{
+      "course_id": "datascience-machine-learning-chapter-05-01",
+      "title": "Machine Learning with Python",
+      "description": ""
+    },
+	{
+      "course_id": "datascience-machine-learning-chapter-05-02",
+      "title": "Machine Learning with Python",
+      "description": ""
+    },
+	{
+      "course_id": "datascience-machine-learning-chapter-05-03",
+      "title": "Machine Learning with Python",
+      "description": ""
+    },
+	{
+      "course_id": "datascience-machine-learning-chapter-06",
+      "title": "Recommender Systems",
+      "description": ""
+    },
+	{
+      "course_id": "datascience-machine-learning-chapter-07",
+      "title": "More Data Mining and Machine Learning Techniques",
+      "description": ""
+    },
+	{
+      "course_id": "datascience-machine-learning-chapter-08",
+      "title": "Dealing with Real-World Data",
+      "description": ""
+    },
+	{
+      "course_id": "datascience-machine-learning-chapter-09-01",
+      "title": "Apache Spark - Machine Learning on Big Data",
+      "description": ""
+    },
+	{
+      "course_id": "datascience-machine-learning-chapter-09-02",
+      "title": "Apache Spark - Machine Learning on Big Data",
+      "description": ""
+    },
+	{
+      "course_id": "datascience-machine-learning-chapter-10",
+      "title": "Testing and Experimental Design",
+      "description": ""
+    }
+  ]
+}

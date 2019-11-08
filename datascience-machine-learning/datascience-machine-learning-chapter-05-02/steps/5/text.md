@@ -1,0 +1,12 @@
+Let's look at a graphical example to make a little bit more sense. We'll call the first figure in the following image as A, second as B, third as C and the fourth as D.
+
+![](https://github.com/fenago/katacoda-scenarios/raw/master/datascience-machine-learning/datascience-machine-learning-chapter-05-02/steps/3/2.jpg)
+
+The gray squares in image A represent data points in our scatter plot. The axes represent some different features of something. Maybe it's age and income; it's an example I keep using, but it could be anything. And the gray squares might represent individual people or individual songs or individual something that I want to find relationships between.
+
+So I start off by just picking three points at random on my scatterplot. Could be anywhere. Got to start somewhere, right? The three points (centroids) I selected have been shown as circles in image A. So the next thing I'm going to do is for each centroid I'll compute which one of the gray points it's closest to. By doing that, the points shaded in blue are associated with this blue centroid. The green points are closest to the green centroid, and this single red point is closest to that red random point that I picked out.
+
+Of course, you can see that's not really reflective of where the actual clusters appear to be. So what I'm going to do is take the points that ended up in each cluster and compute the actual center of those points. For example, in the green cluster, the actual center of all data turns out to be a little bit lower. We're going to move the centroid down a little bit. The red cluster only had one point, so its center moves down to where that single point is. And the blue point was actually pretty close to the center, so that just moves a little bit. On this next iteration we end up with something that looks like image D. Now you can see that our cluster for red things has grown a little bit and things have moved a little bit, that is, those got taken from the green cluster.
+
+If we do that again, you can probably predict what's going to happen next. The green centroid will move a little bit, the blue centroid will still be about where it is. But at the end of the day you're going to end up with the clusters you'd probably expect to see. That's how k-means works. So it just keeps iterating, trying to find the right centroids until things start moving around and we converge on a solution.
+

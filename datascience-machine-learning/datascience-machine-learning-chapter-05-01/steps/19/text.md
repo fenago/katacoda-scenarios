@@ -1,0 +1,7 @@
+Let's go through this code in detail now. We can skip past the function definitions of readFiles() and dataFrameFromDirectory()for now and go down to the first thing that our code actually does which is to create a pandas DataFrame object.
+
+We're going to construct this from a dictionary that initially contains a little empty list for messages in an empty list of class. So this syntax is saying, "I want a DataFrame that has two columns: one that contains the message, the actual text of each e-mail; and one that contains the class of each e-mail, that is, whether it's spam or ham". So it's saying I want to create a little database of e-mails, and this database has two columns: the actual text of the e-mail and whether it's spam or not.
+
+Now we needed to put something in that database, that is, into that DataFrame, in Python syntax. So we call the two methods append() and dataFrameFromDirectory() to actually throw into the DataFrame all the spam e-mails from my spam folder, and all the ham e-mails from the ham folder.
+
+If you are playing along here, make sure you modify the path passed to the dataFrameFromDirectory() function to match wherever you installed the book materials in your system! And again, if you're on Mac or Linux, please pay attention to backslashes and forward slashes and all that stuff. In this case, it doesn't matter, but you won't have a drive letter, if you're not on Windows. So just make sure those paths are actually pointing to where your spam and ham folders are for this example.

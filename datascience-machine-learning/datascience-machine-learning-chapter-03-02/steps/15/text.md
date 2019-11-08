@@ -1,0 +1,7 @@
+We need to work out the probability of testing positively overall. We can work that out by taking the sum of probability of testing positive if you are a user and the probability of testing positive if you're not a user. So, P(B) works out to 1.3% (0.99*0.003+0.01*0.997) in this example. So we have a probability of B, the probability of testing positively for the drug overall without knowing anything else about you.
+
+Let's do the math and calculate the probability of being a user of the drug given that you tested positively.
+
+![](https://github.com/fenago/katacoda-scenarios/raw/master/datascience-machine-learning/datascience-machine-learning-chapter-03-02/steps/12/2.png)
+
+So the probability of a positive test result given that you're actually a drug user works out as the probability of being a user of the drug overall (P(A)), which is 3% (you know that 3% of the population is a drug user) multiplied by P(B|A) that is the probability of testing positively given that you're a user divided by the probability of testing positively overall which is 1.3%. Again, this test has what sounds like a very high accuracy of 99%. We have 0.3% of the population which uses a drug multiplied by the accuracy of 99% divided by the probability of testing positively overall, which is 1.3%. So the probability of being an actual user of this drug given that you tested positive for it is only 22.8%. So even though this drug test is accurate 99% of the time, it's still providing a false result in most of the cases where you're testing positive.

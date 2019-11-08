@@ -1,0 +1,7 @@
+If someone really wanted the mean average income in the United States (and not the median), you shouldn't just throw out Donald Trump because you don't like him. You know the fact is, his billions of dollars are going to push that mean amount up, even if it doesn't budge the median. So, don't fudge your numbers by throwing out outliers. But throw out outliers if it's not consistent with what you're trying to model in the first place.
+
+Now, how do we identify outliers? Well, remember our old friend standard deviation? We covered that very early in this book. It's a very useful tool for detecting outliers. You can, in a very principled matter, compute the standard deviation of a dataset that should have a more or less normal distribution. If you see a data point that's outside of one or two standard deviations, there you have an outlier.
+
+Remember, we talked earlier too about the box and whisker diagrams too, and those also have a built-in way of detecting and visualizing outliers. Those diagrams define outliers as lying outside 1.5 the interquartile range.
+
+What multiple do you choose? Well, you kind of have to use common sense, you know, there's no hard and fast rule as to what is an outlier. You have to look at your data and kind of eyeball it, look at the distribution, look at the histogram. See if there's actual things that stick out to you as obvious outliers, and understand what they are before you just throw them away.

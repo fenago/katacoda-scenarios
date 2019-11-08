@@ -1,0 +1,3 @@
+Next, we're going to talk about conditional probability. It's a very simple concept. It's trying to figure out the probability of something happening given that something else occurred. Although it sounds simple, it can be actually very difficult to wrap your head around some of the nuances of it. So get an extra cup of coffee, make sure your thinking cap's on, and if you're ready for some more challenging concepts here. Let's do this.
+
+Conditional probability is a way to measure the relationship between two things happening to each other. Let's say I want to find the probability of an event happening given that another event already happened. Conditional probability gives you the tools to figure that out.

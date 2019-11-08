@@ -1,0 +1,6 @@
+
+You can see if I take the three nearest neighbors (K=3), I have 2 drama movies and 1 science fiction movie. I would then let them all vote, and we would choose the classification of drama for this new point based on those 3 nearest neighbors. Now, if I were to expand this circle to include 5 nearest neighbors, that is K=5, I get a different answer. So, in that case I pick up 3 science fiction and 2 drama movies. If I let them all vote I would end up with a classification of science fiction for the new movie instead.
+
+Our choice of K can be very important. You want to make sure it's small enough that you don't go too far and start picking up irrelevant neighbors, but it has to be big enough to enclose enough data points to get a meaningful sample. So, often you'll have to use train/test or a similar technique to actually determine what the right value of K is for a given dataset. But, at the end of the day, you have to just start with your intuition and work from there.
+
+That's all there is to it, it's just that simple. So, it is a very simple technique. All you're doing is literally taking the k nearest neighbors on a scatter plot, and letting them all vote on a classification. It does qualify as supervised learning because it is using the training data of a set of known points, that is, known classifications, to inform the classification of a new point.

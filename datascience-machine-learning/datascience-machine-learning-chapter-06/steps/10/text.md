@@ -1,0 +1,10 @@
+Alright, so let's do it! We have some Python code that will use Pandas, and all the various other tools at our disposal, to create movie recommendations with a surprisingly little amount of code.
+
+The first thing we're going to do is show you item-based collaborative filtering in practice. So, we'll build up people who watched also watched basically, you know, people who rated things highly also rated this thing highly, so building up these movie to movie relationships. So, we're going to base it on real data that we got from the MovieLens project. So, if you go to MovieLens.org, there's actually an open movie recommender system there, where people can rate movies and get recommendations for new movies.
+
+And, they make all the underlying data publicly available for researchers like us. So, we're going to use some real movie ratings data-it is a little bit dated, it's like 10 years old, so keep that in mind, but it is real behavior data that we're going to be working with finally here. And, we will use that to compute similarities between movies. And, that data in and of itself is useful. You can use that data to say people who liked also liked. So, let's say I'm looking at a web page for a movie. the system can then say: if you liked this movie, and given that you're looking at it you're probably interested in it, then you might also like these movies. And that's a form of a recommender system right there, even though we don't even know who you are.
+
+Now, it is real-world data, so we're going to encounter some real-world problems with it. Our initial set of results aren't going to look good, so we're going to spend a little bit of extra time trying to figure out why, which is a lot of what you spend your time doing as a data scientist-correct those problems, and go back and run it again until we get results that makes sense.
+
+And finally, we'll actually do item-based collaborative filtering in its entirety, where we actually recommend movies to individuals based on their own behavior. So, let's do this,let's get started!
+

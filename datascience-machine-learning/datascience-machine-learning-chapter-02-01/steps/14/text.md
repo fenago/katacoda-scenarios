@@ -1,0 +1,3 @@
+Let's talk about standard deviation and variance. The concepts and terms you've probably heard before, but let's go into a little bit more depth about what they really mean and how you compute them. It's a measure of the spread of a data distribution, and that will make a little bit more sense in a few minutes.
+
+Standard deviation and variance are two fundamental quantities for a data distribution that you'll see over and over again in this book. So, let's see what they are, if you need a refresher.

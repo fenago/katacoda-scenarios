@@ -1,0 +1,156 @@
+{
+   "title":"",
+   "description":"Run Python Code with Jupyter Notebooks.",
+   "difficulty":"Beginner",
+   "time":"10 minutes",
+   "details":{
+      "steps":[
+         {
+            "title": "Introduction",
+            "text":"steps/1/text.md"
+         },
+         {
+            "title": "Clone Repository",
+            "text":"steps/2/text.md"
+         },
+         {
+            "title": "Spark introduction",
+            "text":"steps/3/text.md"
+         },
+         {
+            "title": "",
+            "text":"steps/4/text.md"
+         },
+         {
+            "title": "",
+            "text":"steps/5/text.md"
+         },
+         {
+            "title": "Components of Spark",
+            "text":"steps/5-1/text.md"
+         },
+         {
+            "title": "Python versus Scala for Spark",
+            "text":"steps/5-2/text.md"
+         },
+         {
+            "title": "Spark and Resilient Distributed Datasets (RDD)",
+            "text":"steps/6/text.md"
+         },
+         {
+            "title": "The SparkContext object",
+            "text":"steps/7/text.md"
+         },
+         {
+            "title": "",
+            "text":"steps/8/text.md"
+         },
+         {
+            "title": "More ways to create RDDs",
+            "text":"steps/9/text.md"
+         },
+         {
+            "title": "Using map()",
+            "text":"steps/9-1/text.md"
+         },
+         {
+            "title": "Actions",
+            "text":"steps/9-2/text.md"
+         },
+         {
+            "title": "Introducing MLlib",
+            "text":"steps/10/text.md"
+         },
+         {
+            "title": "Special MLlib data types",
+            "text":"steps/11/text.md"
+         },
+         {
+            "title": "Decision Trees in Spark with MLlib",
+            "text":"steps/12/text.md"
+         },
+         {
+            "title": "",
+            "text":"steps/13/text.md"
+         },
+         {
+            "title": "Creating the SparkContext",
+            "text":"steps/14/text.md"
+         },
+         {
+            "title": "",
+            "text":"steps/15/text.md"
+         },
+         {
+            "title": "Importing and cleaning our data",
+            "text":"steps/16/text.md"
+         },
+         {
+            "title": "",
+            "text":"steps/17/text.md"
+         },
+         {
+            "title": "",
+            "text":"steps/18/text.md"
+         },
+         {
+            "title": "",
+            "text":"steps/19/text.md"
+         },        
+         {
+            "title": "",
+            "text":"steps/20/text.md"
+         },
+         {
+            "title": "",
+            "text":"steps/21/text.md"
+         },
+         {
+            "title": "Running the script",
+            "text":"steps/22/text.md"
+         },
+         {
+            "title": "K-Means Clustering in Spark",
+            "text":"steps/23/text.md"
+         },
+         {
+            "title": "",
+            "text":"steps/24/text.md"
+         },
+         {
+            "title": "",
+            "text":"steps/25/text.md"
+         },
+         {
+            "title": "",
+            "text":"steps/26/text.md"
+         },
+         {
+            "title": "",
+            "text":"steps/27/text.md"
+         },
+         {
+            "title": "",
+            "text":"steps/28/text.md"
+         },
+         {
+            "title": "",
+            "text":"steps/29/text.md"
+         }
+      ],
+      "intro":{
+         "text":"intro.md",
+         "code":"set-env.sh"
+      },
+      "finish":{
+         "text":"finish.md"
+      }
+   },
+   "environment":{
+      "uilayout":"vscode",
+      "uimessage1": "\u001b[32mBrought to you by https://LearningVoyage.com\u001b[m\r\n"
+   },
+   "backend":{
+      "imageid":"ubuntu"
+   }
+}

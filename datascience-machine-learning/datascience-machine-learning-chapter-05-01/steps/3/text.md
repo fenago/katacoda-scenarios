@@ -1,0 +1,5 @@
+So what is machine learning? Well, if you look it up on Wikipedia or whatever, it'll say that it is algorithms that can learn from observational data and can make predictions based on it. It sounds really fancy, right? Like artificial intelligence stuff, like you have a throbbing brain inside of your computer. But in reality, these techniques are usually very simple.
+
+We've already looked at regressions, where we took a set of observational data, we fitted a line to it, and we used that line to make predictions. So by our new definition, that was machine learning! And your brain works that way too.
+
+Another fundamental concept in machine learning is something called train/test, which lets us very cleverly evaluate how good a machine learning model we've made. As we look now at unsupervised and supervised learning, you'll see why train/test is so important to machine learning.

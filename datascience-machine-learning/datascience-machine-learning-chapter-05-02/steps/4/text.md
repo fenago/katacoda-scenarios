@@ -1,0 +1,10 @@
+
+For example, where do millionaires live? I don't know, maybe there is some interesting geographical cluster where rich people tend to live, and k-means clustering could help you figure that out. Maybe I don't really know if today's genres of music are meaningful. What does it mean to be alternative these days? Not much, right? But by using k-means clustering on attributes of songs, maybe I could find interesting clusters of songs that are related to each other and come up with new names for what those clusters represent. Or maybe I can look at demographic data, and maybe existing stereotypes are no longer useful. Maybe Hispanic has lost its meaning and there's actually other attributes that define groups of people, for example, that I could uncover with clustering. Sounds fancy, doesn't it? Really complicated stuff. Unsupervised machine learning with K clusters, it sounds fancy, but as with most techniques in data science, it's actually a very simple idea.
+
+Here's the algorithm for us in plain English:
+
+Randomly pick K centroids (k-means): We start off with a randomly chosen set of centroids. So if we have a K of three we're going to look for three clusters in our group, and we will assign three randomly positioned centroids in our scatter plot.
+Assign each data point to the centroid it is closest to: We then assign each data point to the randomly assigned centroid that it is closest to.
+Recompute the centroids based on the average position of each centroid's points: Then recompute the centroid for each cluster that we come up with. That is, for a given cluster that we end up with, we will move that centroid to be the actual center of all those points.
+Iterate until points stop changing assignment to centroids: We will do it all again until those centroids stop moving, we hit some threshold value that says OK, we have converged on something here.
+Predict the cluster for new points: To predict the clusters for new points that I haven't seen before, we can just go through our centroid locations and figure out which centroid it's closest to to predict its cluster.

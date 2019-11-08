@@ -1,0 +1,13 @@
+So, our final example of MLlib is going to be using something called Term Frequency Inverse Document Frequency, or TF-IDF, which is the fundamental building block of many search algorithms. As usual, it sounds complicated, but it's not as bad as it sounds.
+
+So, first, let's talk about the concepts of TF-IDF, and how we might go about using that to solve a search problem. And what we're actually going to do with TF-IDF is create a rudimentary search engine for Wikipedia using Apache Spark in MLlib. How awesome is that? Let's get started.
+
+TF-IDF stands for Term Frequency and Inverse Document Frequency, and these are basically two metrics that are closely interrelated for doing search and figuring out the relevancy of a given word to a document, given a larger body of documents. So, for example, every article on Wikipedia might have a term frequency associated with it, every page on the Internet could have a term frequency associated with it for every word that appears in that document. Sounds fancy, but, as you'll see, it's a fairly simple concept.
+
+- **All Term Frequency** means is how often a given word occurs in a given document. So, within one web page, within one Wikipedia article, within one whatever, how common is a given word within that document? You know, what is the ratio of that word's occurrence rate throughout all the words in that document? That's it. That's all term frequency is.
+- **Document frequency** is the same idea, but this time it is the frequency of that word across the entire corpus of documents. So, how often does this word occur throughout all of the documents that I have, all the web pages, all of the articles on Wikipedia, whatever. For example, common words like "a" or "the" would have a very high document frequency, and I would expect them to also have a very high term frequency, but that doesn't necessarily mean they're relevant to a given document.
+
+You can kind of see where we're going with this. So, let's say we have a very high term frequency and a very low document frequency for a given word. The ratio of these two things can give me a measure of the relevance of that word to the document. So, if I see a word that occurs very often in a given document, but not very often in the overall space of documents, then I know that this word probably conveys some special meaning to this particular document. It might convey what this document is actually about.
+
+So, that's TF-IDF. It just stands for Term Frequency x Inverse Document Frequency, which is just a fancy way of saying term frequency over document frequency, which is just a fancy way of saying how often does this word occur in this document compared to how often it occurs in the entire body of documents? It's that simple.
+

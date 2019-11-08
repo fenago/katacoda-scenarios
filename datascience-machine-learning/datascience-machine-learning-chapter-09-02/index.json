@@ -1,0 +1,96 @@
+{
+   "title":"",
+   "description":"Run Python Code with Jupyter Notebooks.",
+   "difficulty":"Beginner",
+   "time":"10 minutes",
+   "details":{
+      "steps":[
+         {
+            "title": "Introduction",
+            "text":"steps/1/text.md"
+         },
+         {
+            "title": "Clone Repository",
+            "text":"steps/2/text.md"
+         },
+         {
+            "title": "TF-IDF",
+            "text":"steps/15/text.md"
+         },
+         {
+            "title": "TF-IDF in practice",
+            "text":"steps/16/text.md"
+         },
+         {
+            "title": "Using TF- IDF",
+            "text":"steps/17/text.md"
+         },
+         {
+            "title": "Searching wikipedia with Spark MLlib",
+            "text":"steps/18/text.md"
+         },
+         {
+            "title": "Import statements",
+            "text":"steps/19/text.md"
+         },        
+         {
+            "title": "",
+            "text":"steps/20/text.md"
+         },
+         {
+            "title": "Creating and transforming a HashingTF object",
+            "text":"steps/21/text.md"
+         },
+         {
+            "title": "Using the Wikipedia search engine algorithm",
+            "text":"steps/22/text.md"
+         },
+         {
+            "title": "Running the algorithm",
+            "text":"steps/23/text.md"
+         },
+         {
+            "title": "",
+            "text":"steps/24/text.md"
+         },
+         {
+            "title": "How Spark 2.0 MLlib works",
+            "text":"steps/25/text.md"
+         },
+         {
+            "title": "Using the Spark 2.0 DataFrame API for MLlib",
+            "text":"steps/26/text.md"
+         },
+         {
+            "title": "",
+            "text":"steps/27/text.md"
+         },
+         {
+            "title": "",
+            "text":"steps/28/text.md"
+         },
+         {
+            "title": "",
+            "text":"steps/29/text.md"
+         },
+         {
+            "title": "Run Code",
+            "text":"steps/30/text.md"
+         }
+      ],
+      "intro":{
+         "text":"intro.md",
+         "code":"set-env.sh"
+      },
+      "finish":{
+         "text":"finish.md"
+      }
+   },
+   "environment":{
+      "uilayout":"vscode",
+      "uimessage1": "\u001b[32mBrought to you by https://LearningVoyage.com\u001b[m\r\n"
+   },
+   "backend":{
+      "imageid":"ubuntu"
+   }
+}

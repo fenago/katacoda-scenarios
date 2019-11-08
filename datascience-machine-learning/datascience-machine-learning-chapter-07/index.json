@@ -1,0 +1,135 @@
+{
+   "title":"",
+   "description":"Run Python Code with Jupyter Notebooks.",
+   "difficulty":"Beginner",
+   "time":"10 minutes",
+   "details":{
+      "steps":[
+         {
+            "title": "Introduction",
+            "text":"steps/1/text.md"
+         },
+         {
+            "title": "Jupyter Notebooks",
+            "text":"steps/2/text.md"
+         },
+         {
+            "title": "K-nearest neighbors - concepts",
+            "text":"steps/3/text.md"
+         },
+         {
+            "title": "",
+            "text":"steps/4/text.md"
+         },
+         {
+            "title": "",
+            "text":"steps/5/text.md"
+         },
+         {
+            "title": "Using KNN to predict a rating for a movie",
+            "text":"steps/6/text.md"
+         },
+         {
+            "title": "Using KNN to predict a rating for a movie...",
+            "text":"steps/7/text.md"
+         },
+         {
+            "title": "Using KNN to predict a rating for a movie...",
+            "text":"steps/8/text.md"
+         },
+         {
+            "title": "Using KNN to predict a rating for a movie...",
+            "text":"steps/9/text.md"
+         },
+         {
+            "title": "Activity",
+            "text":"steps/10/text.md"
+         },
+         {
+            "title": "Dimensionality reduction and principal component analysis",
+            "text":"steps/11/text.md"
+         },
+         {
+            "title": "Principal component analysis",
+            "text":"steps/12/text.md"
+         },
+         {
+            "title": "A PCA example with the Iris dataset",
+            "text":"steps/13/text.md"
+         },
+         {
+            "title": "",
+            "text":"steps/14/text.md"
+         },
+         {
+            "title": "Activity",
+            "text":"steps/15/text.md"
+         },
+         {
+            "title": "Data warehousing overview",
+            "text":"steps/16/text.md"
+         },
+         {
+            "title": "ETL versus ELT",
+            "text":"steps/17/text.md"
+         },
+         {
+            "title": "ETL versus ELT",
+            "text":"steps/18/text.md"
+         },
+         {
+            "title": "Reinforcement learning",
+            "text":"steps/19/text.md"
+         },        
+         {
+            "title": "Reinforcement learning...",
+            "text":"steps/20/text.md"
+         },
+         {
+            "title": "Q-learning",
+            "text":"steps/21/text.md"
+         },
+         {
+            "title": "Q-learning",
+            "text":"steps/22/text.md"
+         },
+         {
+            "title": "The exploration problem",
+            "text":"steps/23/text.md"
+         },
+         {
+            "title": "Fancy words",
+            "text":"steps/24/text.md"
+         },
+         {
+            "title": "Dynamic programming",
+            "text":"steps/25/text.md"
+         },
+         {
+            "title": "Dynamic programming",
+            "text":"steps/26/text.md"
+         }
+      ],
+      "intro":{
+         "text":"intro.md",
+         "code":"set-env.sh"
+      },
+      "finish":{
+         "text":"finish.md"
+      }
+   },
+   "environment":{
+      "uilayout":"terminal-iframe",
+      "showdashboard":true,
+      "dashboards":[
+         {
+            "name":"Jupyter Notebook",
+            "port":8888
+         }
+      ],
+      "uimessage1": "\u001b[32mBrought to you by https://LearningVoyage.com\u001b[m\r\n"
+   },
+   "backend":{
+      "imageid":"docker"
+   }
+}
