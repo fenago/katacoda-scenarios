@@ -11,7 +11,7 @@ to your server using SSH, for example:
     ```
 4. If prompted, type yes and press enter.
 You are now logged into your server.
-    ![](https://github.com/athertahir/katacoda-scenarios/raw/master/deep-learning-computer-vision/deep-learning-computer-vision-aws/steps/7/1.JPG)
+    ![](https://github.com/fenago/katacoda-scenarios/raw/master/deep-learning-computer-vision/deep-learning-computer-vision-aws/steps/7/1.JPG)
 
 
 The instance will ask what Python environment you wish to use. I recommend using:

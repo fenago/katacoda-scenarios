@@ -7,7 +7,7 @@ and is maintained by Amazon. Let’s launch it as an instance.
 -  Login to your AWS console if you have not already.
         https://console.aws.amazon.com/console/home
     
-    ![](https://github.com/athertahir/katacoda-scenarios/raw/master/deep-learning-computer-vision/deep-learning-computer-vision-aws/steps/4/1.JPG)
+    ![](https://github.com/fenago/katacoda-scenarios/raw/master/deep-learning-computer-vision/deep-learning-computer-vision-aws/steps/4/1.JPG)
 
 
 - Click on EC2 for launching a new virtual server.
@@ -20,4 +20,4 @@ important otherwise you will not be able to find the image we plan to use.
 - Click Community AMIs. An AMI is an Amazon Machine Image. It is a frozen instance
 of a server that you can select and instantiate on a new virtual server.
 
-    ![](https://github.com/athertahir/katacoda-scenarios/raw/master/deep-learning-computer-vision/deep-learning-computer-vision-aws/steps/4/2.JPG)
+    ![](https://github.com/fenago/katacoda-scenarios/raw/master/deep-learning-computer-vision/deep-learning-computer-vision-aws/steps/4/2.JPG)

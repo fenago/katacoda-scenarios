@@ -11,4 +11,4 @@ Now, run the python code by running: `python 03_max_pooling.py`{{execute}}
 
 Example output from manually applying a two-dimensional filter with max pooling.
 
-![](https://github.com/athertahir/katacoda-scenarios/raw/master/deep-learning-computer-vision/deep-learning-computer-vision-chapter-13-avg/steps/5/1.JPG)
+![](https://github.com/fenago/katacoda-scenarios/raw/master/deep-learning-computer-vision/deep-learning-computer-vision-chapter-13-avg/steps/5/1.JPG)

@@ -20,4 +20,4 @@ Example output from performing object detection with the YOLOv3 model.
 A plot of the photograph is created and the three bounding boxes are plotted. We can see
 that the model has indeed successfully detected the three zebra in the photograph.
 
-![](https://github.com/athertahir/katacoda-scenarios/raw/master/deep-learning-computer-vision/deep-learning-computer-vision-chapter-24/steps/11/1.JPG)
+![](https://github.com/fenago/katacoda-scenarios/raw/master/deep-learning-computer-vision/deep-learning-computer-vision-chapter-24/steps/11/1.JPG)

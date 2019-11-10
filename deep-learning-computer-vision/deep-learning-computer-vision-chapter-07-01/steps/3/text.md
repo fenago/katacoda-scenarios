@@ -11,7 +11,7 @@ Now, move in the directory which contains the source code.
 - Final code was already cloned from github for this scenario. You can just understand the application code in the next steps and run it using the instructions.
 - Click **IDE Editor** tab to open Visual Studio and open solution explorer and open `deep-learning-python/chapter_07` to view files.
 
-![](https://github.com/athertahir/katacoda-scenarios/raw/master/deep-learning-computer-vision/1.JPG)
+![](https://github.com/fenago/katacoda-scenarios/raw/master/deep-learning-computer-vision/1.JPG)
 
 
 #### Install Dependencies
