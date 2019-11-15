@@ -5,6 +5,8 @@ And again, just like earlier, we use the wonderful pivot_table command in Pandas
 userRatings = ratings.pivot_table(index=['user_id'],
                                   columns=['title'],values='rating') 
 userRatings.head() 
+```
+
 Here, each row is the user_id, the columns are made up of all the unique movie titles in my dataset, and each cell contains a rating:
 
 ![](https://github.com/fenago/katacoda-scenarios/raw/master/datascience-machine-learning/datascience-machine-learning-chapter-06/steps/17/2.jpg)

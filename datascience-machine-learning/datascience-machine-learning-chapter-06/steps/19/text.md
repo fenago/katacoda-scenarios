@@ -5,10 +5,11 @@ It turns out that the Pandas corr function actually has a few parameters you can
 ```
 corrMatrix = userRatings.corr(method='pearson', min_periods=100) 
 corrMatrix.head() 
+```
+
 You'll notice that it also has a min_periods parameter you can give it, and that basically says I only want you to consider correlation scores that are backed up by at least, in this example, 100 people that rated both movies. Running that will get rid of the spurious relationships that are based on just a handful of people. The following is the matrix that we get after running the code:
 
 ![](https://github.com/fenago/katacoda-scenarios/raw/master/datascience-machine-learning/datascience-machine-learning-chapter-06/steps/17/4.jpg)
-
 
 It's a little bit different to what we did in the item similarities exercise where we just threw out any movie that was rated by less than 100 people. What we're doing here, is throwing out movie similarities where less than 100 people rated both of those movies, okay? So, you can see in the preceding matrix that we have a lot more NaN values.
 

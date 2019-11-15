@@ -8,6 +8,7 @@ ages
 
 Your output will be random, but should look something like the following screenshot:
 
+![](https://github.com/fenago/katacoda-scenarios/raw/master/datascience-machine-learning/datascience-machine-learning-chapter-02-01/steps/13/1.png)
 
 Now, SciPy, kind of like NumPy, is a bunch of like handy-dandy statistics functions, so we can import stats from SciPy using the following syntax. It's a little bit different than what we saw before.
 
@@ -29,15 +30,14 @@ Now if I actually create a new distribution, I would expect a completely differe
 ```
 ages = np.random.randint(18, high=90, size=500) 
 ages
-```
 
-```
 from scipy import stats 
 stats.mode(ages) 
 ```
 
 The output for randomizing the equation is as distribution is as follows:
 
+![](https://github.com/fenago/katacoda-scenarios/raw/master/datascience-machine-learning/datascience-machine-learning-chapter-02-01/steps/13/2.png)
 
 Make sure you selected that code block and then you can hit the play button to actually execute it.
 

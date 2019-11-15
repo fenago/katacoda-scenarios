@@ -58,8 +58,12 @@
             "text":"steps/12/text.md"
          },
          {
-            "title": "Analyzing the effect of outliers",
+            "title": "Calculating mode using the SciPy package",
             "text":"steps/13/text.md"
+         },
+         {
+            "title": "Some exercises",
+            "text":"steps/13-0/text.md"
          },
          {
             "title": "Standard deviation and variance",

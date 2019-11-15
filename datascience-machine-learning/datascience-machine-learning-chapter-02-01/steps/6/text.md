@@ -4,7 +4,9 @@ Median is a little bit different. The way you compute the median of the dataset 
 
 So, for example, let's use the same dataset of children in my neighborhood
 
+```
 0, 2, 3, 2, 1, 0, 0, 2, 0
+```
 
 I would sort it numerically, and I can take the number that's slap dab in the middle of the data, which turns out to be 1.
 

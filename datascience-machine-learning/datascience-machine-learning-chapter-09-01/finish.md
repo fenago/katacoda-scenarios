@@ -1,1 +1,1 @@
-You've completed your Jupyter Notebook scenario!
+You've completed your lab exercise!

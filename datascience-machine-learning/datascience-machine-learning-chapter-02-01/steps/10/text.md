@@ -11,6 +11,7 @@ plt.show()
 
 Go ahead and select the code block and hit play. It will actually create a new graph for us as follows:
 
+![](https://github.com/fenago/katacoda-scenarios/raw/master/datascience-machine-learning/datascience-machine-learning-chapter-02-01/steps/10/1.jpg)
 
 If you're not familiar with histograms or you need a refresher, the way to interpret this is that for each one of these buckets that we've discretized our data into is showing the frequency of that data.
 
