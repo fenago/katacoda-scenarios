@@ -98,7 +98,11 @@
             "text":"steps/23/text.md"
          },
          {
-            "title": "Decision trees - Predicting hiring decisions using Python...",
+            "title": "Ensemble learning – Using a random forest",
+            "text":"steps/23-0/text.md"
+         },
+         {
+            "title": "Ensemble learning – Using a random forest...",
             "text":"steps/24/text.md"
          },
          {
