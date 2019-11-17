@@ -3,7 +3,7 @@
   "description": "",
   "courses": [
   	{
-      "course_id": "machine-learning-mastery-weka-chapter-setup",
+      "course_id": "machine-learning-mastery-weka-setup",
       "title": "How to Download and Install the Weka Machine Learning Workbench",
       "description": ""
     },
