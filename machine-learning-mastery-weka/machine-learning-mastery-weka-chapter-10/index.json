@@ -1,0 +1,67 @@
+{
+   "title":"",
+   "description":"",
+   "difficulty":"Beginner",
+   "time":"10 minutes",
+   "details":{
+      "steps":[
+         {
+            "title":"Tutorial Overview",
+            "text":"steps/1.md"
+         },
+         {
+            "title": "Kali Linux Desktop",
+            "text":"steps/2.md"
+         },
+         {
+            "title": "About Data Filters in Weka",
+            "text":"steps/3.md"
+         },
+         {
+            "title": "About Data Filters in Weka...",
+            "text":"steps/4.md"
+         },
+         {
+            "title": "Normalize Your Numeric Attributes",
+            "text":"steps/5.md"
+         },
+         {
+            "title": "Normalize Your Numeric Attributes...",
+            "text":"steps/6.md"
+         },
+         {
+            "title": "Standardize Your Numeric Attributes",
+            "text":"steps/7.md"
+         },
+         {
+            "title": "Standardize Your Numeric Attributes...",
+            "text": "steps/8.md"
+         },
+         {
+            "title": "Summary",
+            "text": "steps/9.md"
+         }
+      ],
+      "intro":{
+         "text":"intro.md",
+         "code":"set-env.sh"
+      },
+      "finish":{
+         "text":"finish.md"
+      }
+   },
+   "environment":{
+      "uilayout":"terminal-iframe",
+      "showdashboard":false,
+      "dashboards":[
+         {
+            "name": "Kali Desktop",
+            "port": 6080
+         }
+      ],
+      "uimessage1": "\u001b[32mBrought to you by https://LearningVoyage.com\u001b[m\r\n"
+   },
+   "backend":{
+      "imageid":"docker"
+   }
+}

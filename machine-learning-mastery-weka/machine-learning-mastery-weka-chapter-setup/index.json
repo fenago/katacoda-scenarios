@@ -1,0 +1,59 @@
+{
+   "title":"",
+   "description":"",
+   "difficulty":"Beginner",
+   "time":"10 minutes",
+   "details":{
+      "steps":[
+         {
+            "title":"Kali Linux Desktop",
+            "text":"steps/1.md"
+         },
+         {
+            "title":"What is Weka",
+            "text":"steps/2.md"
+         },
+         {
+            "title": "Introduction to the Weka Graphical Interface",
+            "text":"steps/3.md"
+         },
+         {
+            "title": "Weka Experiment Environment",
+            "text":"steps/4.md"
+         },
+         {
+            "title": "Why You Should Use Weka",
+            "text":"steps/5.md"
+         },
+         {
+            "title": "Install JAVA",
+            "text":"steps/6.md"
+         },
+         {
+            "title": "Install Weka",
+            "text":"steps/7.md"
+         }
+      ],
+      "intro":{
+         "text":"intro.md",
+         "code":"set-env.sh"
+      },
+      "finish":{
+         "text":"finish.md"
+      }
+   },
+   "environment":{
+      "uilayout":"terminal-iframe",
+      "showdashboard":false,
+      "dashboards":[
+         {
+            "name": "Kali Desktop",
+            "port": 6080
+         }
+      ],
+      "uimessage1": "\u001b[32mBrought to you by https://LearningVoyage.com\u001b[m\r\n"
+   },
+   "backend":{
+      "imageid":"docker"
+   }
+}

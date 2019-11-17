@@ -1,0 +1,111 @@
+{
+  "title": "Machine Learning Mastery With Weka",
+  "description": "",
+  "courses": [
+  	{
+      "course_id": "machine-learning-mastery-weka-chapter-setup",
+      "title": "How to Download and Install the Weka Machine Learning Workbench",
+      "description": ""
+    },
+	{
+      "course_id": "machine-learning-mastery-weka-chapter-06",
+      "title": "A Tour of the Weka Machine Learning Workbench",
+      "description": ""
+    },
+	{
+      "course_id": "machine-learning-mastery-weka-chapter-07",
+      "title": "How To Load CSV Machine Learning Data",
+      "description": ""
+    },
+	{
+      "course_id": "machine-learning-mastery-weka-chapter-08",
+      "title": "How to Load Standard Machine Learning Datasets",
+      "description": ""
+    },
+	{
+      "course_id": "machine-learning-mastery-weka-chapter-09",
+      "title": "How to Better Understand Your Machine Learning Data",
+      "description": ""
+    },
+	{
+      "course_id": "machine-learning-mastery-weka-chapter-10",
+      "title": "How to Normalize and Standardize Your Machine Learning Data",
+      "description": ""
+    },
+	{
+      "course_id": "machine-learning-mastery-weka-chapter-11",
+      "title": "How to Transform Your Machine Learning Data",
+      "description": ""
+    },
+	{
+      "course_id": "machine-learning-mastery-weka-chapter-12",
+      "title": "How To Handle Missing Values In Machine Learning Data",
+      "description": ""
+    },
+	{
+      "course_id": "machine-learning-mastery-weka-chapter-13",
+      "title": "How to Perform Feature Selection With Machine Learning Data",
+      "description": ""
+    },
+	{
+      "course_id": "machine-learning-mastery-weka-chapter-14",
+      "title": "How to Use Machine Learning Algorithms",
+      "description": ""
+    },
+	{
+      "course_id": "machine-learning-mastery-weka-chapter-15",
+      "title": "How To Estimate The Performance of Machine Learning Algorithms",
+      "description": ""
+    },
+	{
+      "course_id": "machine-learning-mastery-weka-chapter-16",
+      "title": "How To Estimate A Baseline Performance For Your Models",
+      "description": ""
+    },
+	{
+      "course_id": "machine-learning-mastery-weka-chapter-17",
+      "title": "How To Use Top Classification Machine Learning Algorithms",
+      "description": ""
+    },
+	{
+      "course_id": "machine-learning-mastery-weka-chapter-18",
+      "title": "How To Use Top Regression Machine Learning Algorithms",
+      "description": ""
+    },
+	{
+      "course_id": "machine-learning-mastery-weka-chapter-19",
+      "title": "How to Use Top Ensemble Machine Learning Algorithms",
+      "description": ""
+    },
+	{
+      "course_id": "machine-learning-mastery-weka-chapter-20",
+      "title": "How To Compare the Performance of Machine Learning Algorithms",
+      "description": ""
+    },
+	{
+      "course_id": "machine-learning-mastery-weka-chapter-21",
+      "title": "How to Tune the Parameters of Machine Learning Algorithms",
+      "description": ""
+    },
+	{
+      "course_id": "machine-learning-mastery-weka-chapter-22",
+      "title": "How to Save Your Machine Learning Model and Make Predictions",
+      "description": ""
+    },
+	{
+      "course_id": "machine-learning-mastery-weka-chapter-23",
+      "title": "How To Work Through a Multiclass Classification Project",
+      "description": ""
+    },
+	{
+      "course_id": "machine-learning-mastery-weka-chapter-24",
+      "title": "How To Work Through a Binary Classification Project",
+      "description": ""
+    },
+	{
+      "course_id": "machine-learning-mastery-weka-chapter-25",
+      "title": "How to Work Through a Regression Machine Learning Project",
+      "description": ""
+    }
+  ]
+}

@@ -1,0 +1,103 @@
+{
+   "title": "How To Work Through a Binary Classification Project",
+   "description":"",
+   "difficulty":"Beginner",
+   "time":"10 minutes",
+   "details":{
+      "steps":[
+         {
+            "title":"Introduction",
+            "text":"steps/1.md"
+         },
+         {
+            "title": "Kali Linux Desktop",
+            "text":"steps/2.md"
+         },
+         {
+            "title": "Tutorial Overview",
+            "text":"steps/3.md"
+         },
+         {
+            "title": "Load the Dataset",
+            "text":"steps/4.md"
+         },
+         {
+            "title": "Analyze the Dataset",
+            "text":"steps/5.md"
+         },
+         {
+            "title": "Summary Statistics",
+            "text":"steps/6.md"
+         },
+         {
+            "title": "Attribute Distributions",
+            "text":"steps/7.md"
+         },
+         {
+            "title": "Attribute Interactions",
+            "text": "steps/8.md"
+         },
+         {
+            "title": "Prepare Views of the Dataset",
+            "text": "steps/9.md"
+         },
+         {
+             "title": "Normalized View",
+             "text": "steps/10.md"
+         },
+         {
+             "title": "Standardized View",
+             "text": "steps/11.md"
+         },
+         {
+             "title": "Missing Data",
+             "text": "steps/12.md"
+         },
+         {
+             "title": "Missing Data...",
+             "text": "steps/13.md"
+         },
+         {
+             "title": "Evaluate Algorithms",
+             "text": "steps/14.md"
+         },
+         {
+             "title": "Evaluate Algorithms...",
+             "text": "steps/15.md"
+         },
+         {
+             "title": "Evaluate Algorithms...",
+             "text": "steps/16.md"
+         },
+         {
+             "title": "Finalize Model and Present Results",
+             "text": "steps/17.md"
+         },
+         {
+             "title": "Summary",
+             "text": "steps/18.md"
+         }
+      ],
+      "intro":{
+         "text":"intro.md",
+         "code":"set-env.sh"
+      },
+      "finish":{
+         "text":"finish.md"
+      }
+   },
+   "environment":{
+      "uilayout":"terminal-iframe",
+      "showdashboard":false,
+      "dashboards":[
+         {
+            "name": "Kali Desktop",
+            "port": 6080
+         }
+      ],
+      "uimessage1": "\u001b[32mBrought to you by https://LearningVoyage.com\u001b[m\r\n"
+   },
+   "backend":{
+      "imageid":"docker"
+   }
+}
