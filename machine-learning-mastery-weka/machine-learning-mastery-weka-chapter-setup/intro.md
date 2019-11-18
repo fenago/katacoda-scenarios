@@ -1,1 +1,0 @@
-Welcome to Machine Learning Mastery With Weka lab Exercise!
