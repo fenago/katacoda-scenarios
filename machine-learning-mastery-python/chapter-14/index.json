@@ -40,7 +40,7 @@
           "target": "~/"  
         },  
         { 
-          "file": "african-diabetes.data.ipynb", 
+          "file": "african-diabetes.data.csv", 
           "target": "~/"  
         }
       ]
