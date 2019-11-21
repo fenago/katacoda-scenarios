@@ -32,11 +32,11 @@
           "target": "~/"  
         },    
         { 
-          "file": "grid-search.ipynb",  
+          "file": "save-model-with-pickle.ipynb",  
           "target": "~/"
         },
         { 
-          "file": "random-search.ipynb",   
+          "file": "save-model-with-joblib.ipynb",   
           "target": "~/"  
         },
         { 
