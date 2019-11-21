@@ -1,0 +1,1 @@
+pip install keras==2.1.6 tensorflow==1.12.0 numpy==1.16.0 matplotlib scikit-image

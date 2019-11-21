@@ -1,0 +1,80 @@
+{
+   "title":"How to Develop a Semi-Supervised GAN (SGAN)",
+   "description":"",
+   "difficulty":"Beginner",
+   "time":"10 minutes",
+   "details":{
+      "steps":[
+         {
+            "title":"Tutorial Overview",
+            "text":"steps/1/text.md"
+         },
+         {
+            "title":"Clone Repository",
+            "text":"steps/2/text.md"
+         },
+         {
+            "title": "How to Develop a Semi-Supervised GAN for MNIST...",
+            "text":"steps/3/text.md"
+         },
+         {
+            "title": "How to Develop a Semi-Supervised GAN for MNIST...",
+            "text":"steps/4/text.md"
+         },
+         {
+            "title": "How to Develop a Semi-Supervised GAN for MNIST...",
+            "text":"steps/5/text.md"
+         },
+         {
+            "title": "How to Develop a Semi-Supervised GAN for MNIST...",
+            "text":"steps/6/text.md"
+         },
+         {
+            "title": "How to Develop a Semi-Supervised GAN for MNIST...",
+            "text":"steps/7/text.md"
+         },
+         {
+             "title": "How to Develop a Semi-Supervised GAN for MNIST...",
+             "text": "steps/8/text.md"
+         },
+         {
+             "title": "How to Develop a Semi-Supervised GAN for MNIST...",
+             "text": "steps/9/text.md"
+         },
+         {
+             "title": "How to Develop a Semi-Supervised GAN for MNIST...",
+             "text": "steps/10/text.md"
+         },
+         {
+             "title": "How to Develop a Semi-Supervised GAN for MNIST...",
+             "text": "steps/11/text.md"
+         },
+         {
+             "title": "How to Develop a Semi-Supervised GAN for MNIST...",
+             "text": "steps/12/text.md"
+         },
+         {
+             "title": "How to Use the Final SGAN Classifier Model",
+             "text": "steps/13/text.md"
+         },
+         {
+             "title": "How to Use the Final SGAN Classifier Model...",
+             "text": "steps/14/text.md"
+         }
+      ],
+      "intro":{
+         "text":"intro.md",
+         "code":"set-env.sh"
+      },
+      "finish":{
+         "text":"finish.md"
+      }
+   },
+   "environment":{
+      "uilayout":"vscode",
+      "uimessage1": "\u001b[32mBrought to you by https://LearningVoyage.com\u001b[m\r\n"
+   },
+   "backend":{
+      "imageid":"ubuntu"
+   }
+}

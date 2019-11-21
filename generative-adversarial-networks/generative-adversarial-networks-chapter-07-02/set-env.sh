@@ -1,0 +1,1 @@
+pip install keras tensorflow numpy==1.16.0

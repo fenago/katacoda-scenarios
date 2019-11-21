@@ -1,0 +1,156 @@
+{
+  "title": "Generative Adversarial Networks with Python",
+  "description": "Deep Learning Generative Models for Image Synthesis and Image Translation",
+  "courses": [
+    {
+      "course_id": "generative-adversarial-networks-setup",
+      "title": "Setup Environment",
+      "description": ""
+    },
+	{
+      "course_id": "generative-adversarial-networks-chapter-02",
+      "title": "How to Develop Deep Learning Models With Keras",
+      "description": "Run Python Code with Jupyter Notebooks."
+    },
+    {
+      "course_id": "generative-adversarial-networks-chapter-03",
+      "title": "How to Upsample with Convolutional Neural Networks",
+      "description": "Run Python Code with Jupyter Notebooks."
+    },
+    {
+      "course_id": "generative-adversarial-networks-chapter-05-01",
+      "title": "How to Implement GAN Hacks to Train Stable Models",
+      "description": "Run Python Code with Jupyter Notebooks."
+    },
+    {
+      "course_id": "generative-adversarial-networks-chapter-05-02",
+      "title": "How to Implement GAN Hacks to Train Stable Models",
+      "description": "Run Python Code with Jupyter Notebooks."
+    },
+    {
+      "course_id": "generative-adversarial-networks-chapter-06",
+      "title": "How to Develop a 1D GAN from Scratch",
+      "description": "Run Python Code with Jupyter Notebooks."
+    },
+	{
+      "course_id": "generative-adversarial-networks-chapter-07-01",
+      "title": "How to Develop a DCGAN for Grayscale Handwritten Digits",
+      "description": "Run Python Code with Jupyter Notebooks."
+    },
+    {
+      "course_id": "generative-adversarial-networks-chapter-07-02",
+      "title": "How to Develop a DCGAN for Grayscale Handwritten Digits",
+      "description": "Run Python Code with Jupyter Notebooks."
+    },
+	{
+      "course_id": "generative-adversarial-networks-chapter-08-01",
+      "title": "How to Develop a DCGAN for Small Color Photographs",
+      "description": "Run Python Code with Jupyter Notebooks."
+    },
+    {
+      "course_id": "generative-adversarial-networks-chapter-08-02",
+      "title": "How to Develop a DCGAN for Small Color Photographs",
+      "description": "Run Python Code with Jupyter Notebooks."
+    },
+	{
+      "course_id": "generative-adversarial-networks-chapter-09",
+      "title": "How to Explore the Latent Space When Generating Faces",
+      "description": "Run Python Code with Jupyter Notebooks."
+    },
+	{
+      "course_id": "generative-adversarial-networks-chapter-10",
+      "title": "How to Identify and Diagnose GAN Failure Modes",
+      "description": "Run Python Code with Jupyter Notebooks."
+    },
+	{
+      "course_id": "generative-adversarial-networks-chapter-12",
+      "title": "How to Implement the Inception Score",
+      "description": "Run Python Code with Jupyter Notebooks."
+    },
+	{
+      "course_id": "generative-adversarial-networks-chapter-13",
+      "title": "How to Implement the Frechet Inception Distance",
+      "description": "Run Python Code with Jupyter Notebooks."
+    },
+	{
+      "course_id": "generative-adversarial-networks-chapter-15",
+      "title": "How to Develop a Least Squares GAN (LSGAN)",
+      "description": "Run Python Code with Jupyter Notebooks."
+    },
+	{
+      "course_id": "generative-adversarial-networks-chapter-16",
+      "title": "How to Develop a Wasserstein GAN (WGAN)",
+      "description": "Run Python Code with Jupyter Notebooks."
+    },
+	{
+      "course_id": "generative-adversarial-networks-chapter-17-01",
+      "title": "How to Develop a Conditional GAN (cGAN)",
+      "description": "Run Python Code with Jupyter Notebooks."
+    },
+	{
+      "course_id": "generative-adversarial-networks-chapter-17-02",
+      "title": "How to Develop a Conditional GAN (cGAN)",
+      "description": "Run Python Code with Jupyter Notebooks."
+    },
+	{
+      "course_id": "generative-adversarial-networks-chapter-18-01",
+      "title": "How to Develop an Information Maximizing GAN (InfoGAN)",
+      "description": "Run Python Code with Jupyter Notebooks."
+    },
+	{
+      "course_id": "generative-adversarial-networks-chapter-19-01",
+      "title": "How to Develop an Auxiliary Classifier GAN (AC-GAN)",
+      "description": "Run Python Code with Jupyter Notebooks."
+    },
+	{
+      "course_id": "generative-adversarial-networks-chapter-19-02",
+      "title": "How to Develop an Auxiliary Classifier GAN (AC-GAN)",
+      "description": "Run Python Code with Jupyter Notebooks."
+    },
+	{
+      "course_id": "generative-adversarial-networks-chapter-20-01",
+      "title": "How to Develop a Semi-Supervised GAN (SGAN)",
+      "description": "Run Python Code with Jupyter Notebooks."
+    },
+	{
+      "course_id": "generative-adversarial-networks-chapter-20-02",
+      "title": "How to Develop a Semi-Supervised GAN (SGAN)",
+      "description": "Run Python Code with Jupyter Notebooks."
+    },
+	{
+      "course_id": "generative-adversarial-networks-chapter-22",
+      "title": "How to Implement Pix2Pix Models",
+      "description": "Run Python Code with Jupyter Notebooks."
+    },
+	{
+      "course_id": "generative-adversarial-networks-chapter-23-01",
+      "title": "How to Develop a Pix2Pix End-to-End",
+      "description": "Run Python Code with Jupyter Notebooks."
+    },
+	{
+      "course_id": "generative-adversarial-networks-chapter-23-02",
+      "title": "How to Develop a Pix2Pix End-to-End",
+      "description": "Run Python Code with Jupyter Notebooks."
+    },
+	{
+      "course_id": "generative-adversarial-networks-chapter-25",
+      "title": "How to Implement CycleGAN Models",
+      "description": "Run Python Code with Jupyter Notebooks."
+    },
+	{
+      "course_id": "generative-adversarial-networks-chapter-26-01",
+      "title": "How to Develop the CycleGAN End-to-End",
+      "description": "Run Python Code with Jupyter Notebooks."
+    },
+	{
+      "course_id": "generative-adversarial-networks-chapter-26-02",
+      "title": "How to Develop the CycleGAN End-to-End",
+      "description": "Run Python Code with Jupyter Notebooks."
+    },
+    {
+      "course_id": "generative-adversarial-network-aws",
+      "title": "How to Setup Amazon EC2 for Deep Learning on GPUs",
+      "description": ""
+    },
+  ]
+}
