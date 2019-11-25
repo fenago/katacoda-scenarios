@@ -21,7 +21,7 @@ CSS selectors are used as a convenient alternative to XPath expressions for sele
 
 There are also a number of tools available online, which allow the conversion of a CSS selector query into an XPath expression; one of these is https://css-selector-to-xpath.appspot.com/, as seen in the following screenshot; we shouldn't always trust the tools available and results should be tested before applying them in code:
 
-![](https://github.com/athertahir/katacoda-scenarios/raw/master/web-scraping-with-python/chapter-03-01/steps/12/1.png)
+![](https://github.com/fenago/katacoda-scenarios/raw/master/web-scraping-with-python/chapter-03-01/steps/12/1.png)
 
 As described in the preceding screenshot, CSS selectors are used to select elements from a data extraction perspective and can be used in Scraper codes or even while applying styles to selected elements from a styling perspective.
 
