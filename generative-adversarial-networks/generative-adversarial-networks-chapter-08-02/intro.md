@@ -1,1 +1,1 @@
-In this scenario, you will learn how to Scale Image Pixel Data with Keras.
+Welcome to Generative Adversarial Networks with Python lab exercise!

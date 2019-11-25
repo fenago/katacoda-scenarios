@@ -1,5 +1,3 @@
-How to Implement GAN Hacks to
-Train Stable Models
 Generative Adversarial Networks, or GANs, are challenging to train. This is because the
 architecture involves both a generator and a discriminator model that compete in a zero-sum
 game. It means that improvements to one model come at the cost of a degrading of performance
