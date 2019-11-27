@@ -26,6 +26,7 @@ model.compile(loss='mse', optimizer=Adam(lr=0.0002, beta_1=0.5))
 return model
 ```
 
+
 Next, we can define a function to load the MNIST handwritten digit dataset and scale the
 pixel values to the range [-1,1] to match the images output by the generator model. Only the
 training part of the MNIST dataset is used, which contains 60,000 centered grayscale images of

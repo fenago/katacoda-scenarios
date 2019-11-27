@@ -30,7 +30,7 @@
            "text":"steps/6/text.md"
         },
         {
-           "title": "",
+           "title": "Discriminator Model",
            "text":"steps/7/text.md"
         },
         {
@@ -38,15 +38,15 @@
            "text":"steps/8/text.md"
         },
         {
-           "title": "",
+           "title": "Training the Generator Model",
            "text":"steps/9/text.md"
         },
         {
-           "title": "",
+           "title": "Training the Generator Model",
            "text":"steps/10/text.md"
         },
         {
-           "title": "",
+           "title": "Complete Example of Training the GAN",
            "text":"steps/11/text.md"
         }
      ],

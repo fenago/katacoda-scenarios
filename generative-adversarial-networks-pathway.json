@@ -52,17 +52,17 @@
 			"description": "Run Python Code with Jupyter Notebooks."
 		},
 		{
-			"course_id": "generative-adversarial-networks-chapter-09",
-			"title": "How to Explore the Latent Space When Generating Faces",
-			"description": "Run Python Code with Jupyter Notebooks."
-		},
-		{
 			"course_id": "generative-adversarial-networks-chapter-10",
 			"title": "How to Identify and Diagnose GAN Failure Modes",
 			"description": "Run Python Code with Jupyter Notebooks."
 		},
 		{
-			"course_id": "generative-adversarial-networks-chapter-12",
+			"course_id": "generative-adversarial-networks-chapter-12-01",
+			"title": "How to Implement the Inception Score",
+			"description": "Run Python Code with Jupyter Notebooks."
+		},
+		{
+			"course_id": "generative-adversarial-networks-chapter-12-02",
 			"title": "How to Implement the Inception Score",
 			"description": "Run Python Code with Jupyter Notebooks."
 		},

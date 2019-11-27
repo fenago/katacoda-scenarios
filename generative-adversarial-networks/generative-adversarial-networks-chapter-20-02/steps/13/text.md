@@ -1,4 +1,3 @@
-How to Use the Final SGAN Classifier Model
 Now that we have trained the generator and discriminator models, we can make use of them. In
 the case of the semi-supervised GAN, we are less interested in the generator model and more
 interested in the supervised model. Reviewing the results for the specific run, we can select a

@@ -1,4 +1,3 @@
-Tutorial Overview
 This tutorial is divided into three parts; they are:
 - What Is Least Squares GAN
 - How to Develop an LSGAN for MNIST

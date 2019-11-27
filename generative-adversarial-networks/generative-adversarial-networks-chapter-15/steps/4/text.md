@@ -1,4 +1,3 @@
-How to Develop an LSGAN for MNIST
 In this section, we will develop an LSGAN for the MNIST handwritten digit dataset. The first step is to define the models. Both the discriminator and the generator
 will be based on the Deep Convolutional GAN, or DCGAN, architecture. This involves the use
 of Convolution-BatchNorm-Activation layer blocks with the use of 2× 2 stride for downsampling

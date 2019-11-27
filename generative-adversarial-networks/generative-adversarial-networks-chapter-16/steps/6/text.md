@@ -26,3 +26,4 @@ opt = RMSprop(lr=0.00005)
 model.compile(loss=wasserstein_loss, optimizer=opt)
 return model
 ```
+

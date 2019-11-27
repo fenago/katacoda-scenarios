@@ -36,3 +36,4 @@ model.add(LeakyReLU(alpha=0.2))
 model.add(Conv2D(1, (7,7), activation='tanh', padding='same', kernel_initializer=init))
 return model
 ```
+

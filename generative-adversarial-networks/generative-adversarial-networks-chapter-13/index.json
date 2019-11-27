@@ -6,7 +6,7 @@
    "details":{
       "steps":[
          {
-            "title":"Tutorial Overview",
+            "title":"Introduction",
             "text":"steps/1/text.md"
          },
          {
@@ -14,7 +14,7 @@
             "text":"steps/2/text.md"
          },
          {
-            "title": "",
+            "title":"Tutorial Overview",
             "text":"steps/3/text.md"
          },
          {

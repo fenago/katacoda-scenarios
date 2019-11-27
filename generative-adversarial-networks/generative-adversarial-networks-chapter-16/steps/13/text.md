@@ -1,8 +1,8 @@
-We can run the code now. Click **IDE Editor** tab to open Visual Studio and open solution explorer and open `generative-adversarial-networks/chapter_16/01_train_lsgan.py` to view file.
+We can run the code now. Click **IDE Editor** tab to open Visual Studio and open solution explorer and open `generative-adversarial-networks/chapter_16/01_train_wgan.py` to view file.
 
 #### Run Code
 
-Now, run the python code by running: `python 01_train_lsgan.py`{{execute}}
+Now, run the python code by running: `python 01_train_wgan.py`{{execute}}
 
 Running the example is quick, taking approximately 10 minutes on modern hardware without
 a GPU. First, the loss of the critic and generator models is reported to the console each iteration

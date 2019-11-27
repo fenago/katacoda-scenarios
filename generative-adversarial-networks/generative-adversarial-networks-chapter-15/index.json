@@ -6,7 +6,7 @@
    "details":{
       "steps":[
          {
-            "title":"Tutorial Overview",
+            "title":"Introduction",
             "text":"steps/1/text.md"
          },
          {
@@ -14,39 +14,39 @@
             "text":"steps/2/text.md"
          },
          {
-            "title": "",
+            "title": "Tutorial Overview",
             "text":"steps/3/text.md"
          },
          {
-            "title": "",
+            "title": "How to Develop an LSGAN for MNIST",
             "text":"steps/4/text.md"
          },
          {
-            "title": "",
+            "title": "How to Develop an LSGAN for MNIST...",
             "text":"steps/5/text.md"
          },
          {
-            "title": "",
+            "title": "How to Develop an LSGAN for MNIST...",
             "text":"steps/6/text.md"
          },
          {
-            "title": "",
+            "title": "How to Develop an LSGAN for MNIST...",
             "text":"steps/7/text.md"
          },
          {
-             "title": "",
+             "title": "How to Develop an LSGAN for MNIST...",
              "text": "steps/8/text.md"
          },
          {
-             "title": "",
+             "title": "How to Develop an LSGAN for MNIST...",
              "text": "steps/9/text.md"
          },
          {
-             "title": "",
+             "title": "How to Develop an LSGAN for MNIST...",
              "text": "steps/10/text.md"
          },
          {
-             "title": "",
+             "title": "How to Develop an LSGAN for MNIST...",
              "text": "steps/11/text.md"
          },
          {
@@ -54,7 +54,7 @@
              "text": "steps/12/text.md"
          },
          {
-             "title": "",
+             "title": "How to Generate Images With LSGAN...",
              "text": "steps/13/text.md"
          }
       ],

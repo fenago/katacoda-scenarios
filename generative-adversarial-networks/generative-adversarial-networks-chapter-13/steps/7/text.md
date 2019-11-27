@@ -8,8 +8,11 @@ Running the example first reports the FID between the act1 activations and itsel
 0.0 as we expect (note that the sign of the score can be ignored). The distance between the two
 collections of random activations is also as we expect: a large number, which in this case was
 about 359.
+
+```
 FID (same): -0.000
 FID (different): 358.927
-Listing 13.5: Example output from calculating the FID in NumPy between two sets of activations.
+```
+
 You may want to experiment with the calculation of the FID score and test other pathological
 cases.

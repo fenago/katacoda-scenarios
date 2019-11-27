@@ -36,5 +36,6 @@ X = model.predict(latent_points)
 plot_generated(X, 5)
 ```
 
+
 Running the example generates a plot of 5 × 5, or 25, new and plausible handwritten number
 seven digits.

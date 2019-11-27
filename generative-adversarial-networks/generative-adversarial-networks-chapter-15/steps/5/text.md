@@ -1,4 +1,3 @@
-
 The generator model takes a point in latent space as input and outputs a grayscale image
 with the shape 28 × 28 pixels, where pixel values are in the range [-1,1] via the Tanh activation
 function on the output layer. The define generator() function below defines the generator
@@ -32,3 +31,4 @@ model.add(Conv2D(1, (7,7), padding='same', kernel_initializer=init))
 model.add(Activation('tanh'))
 return model
 ```
+

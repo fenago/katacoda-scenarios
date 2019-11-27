@@ -1,0 +1,1 @@
+Welcome to Generative Adversarial Networks with Python lab exercise!

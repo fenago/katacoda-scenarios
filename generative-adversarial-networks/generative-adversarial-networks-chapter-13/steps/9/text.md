@@ -20,5 +20,5 @@ You may have to install the scikit-image library if it is not already installed.
 achieved as follows:
 
 ```
-sudo pip install scikit-image
+pip install scikit-image
 ```

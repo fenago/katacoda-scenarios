@@ -2,7 +2,9 @@
 We can then test out this function to calculate the inception score for some contrived feature
 vectors. Feature vectors will probably contain small positive values and will have a length of
 2,048 elements. We can construct two lots of 10 images worth of feature vectors with small
-random numbers as follows:13.4. How to Implement the FID With NumPy 270
+random numbers as follows:
+
+```
 ...
 # define two collections of activations
 act1 = random(10*2048)
