@@ -3,7 +3,7 @@ We can run the code now. Click **IDE Editor** tab to open Visual Studio and open
 #### Run Code
 Now, run the python code by running: `python 03_train_cyclegan.py`{{execute}}
 
-Note: Running the example may take many hours to run on CPU hardware. I recommend
+**Note:** Running the example may take many hours to run on CPU hardware. I recommend
 running the example on GPU hardware if possible. If you need help, you can get started
 quickly by using an AWS EC2 instance to train the model. See the instructions in Appendix C.
 
@@ -13,7 +13,7 @@ and Generator-BtoA loss, each of which is a weighted average of adversarial, ide
 and backward cycle loss (g). If loss for the discriminator goes to zero and stays there for a long
 time, consider re-starting the training run as it is an example of a training failure.
 
-Note: Your specific results may vary given the stochastic nature of the learning algorithm.
+**Note:** Your specific results may vary given the stochastic nature of the learning algorithm.
 Consider running the example a few times and compare the average performance.
 
 ```

@@ -4,14 +4,14 @@ We can run the code now. Click **IDE Editor** tab to open Visual Studio and open
 
 Now, run the python code by running: `python 03_train_acgan.py`{{execute}}
 
-Note: Running the example may take many hours to run on CPU hardware. I recommend
+**Note:** Running the example may take many hours to run on CPU hardware. I recommend
 running the example on GPU hardware if possible. If you need help, you can get started
 quickly by using an AWS EC2 instance to train the model. See the instructions in Appendix C.
 The loss is reported each training iteration, including the real/fake and class loss for the
 discriminator on real examples (dr), the discriminator on fake examples (df), and the generator
 updated via the composite model when generating images (g).
 
-Note: Your specific results may vary given the stochastic nature of the learning algorithm.
+**Note:** Your specific results may vary given the stochastic nature of the learning algorithm.
 Consider running the example a few times and compare the average performance.
 
 ```

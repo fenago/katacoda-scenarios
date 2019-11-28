@@ -12,5 +12,5 @@ scores are inverted as part of the loss function; this means if they are reporte
 they are really positive, and if they are reported as positive, they are really negative. The sign
 of the c2 scores is unchanged.
 
-Note: Your specific results may vary given the stochastic nature of the learning algorithm.
+**Note:** Your specific results may vary given the stochastic nature of the learning algorithm.
 Consider running the example a few times and compare the average performance.

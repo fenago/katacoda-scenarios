@@ -7,7 +7,7 @@ Now, run the python code by running: `python 07_inference_sgan.py`{{execute}}
 
 Running the example loads the model and evaluates it on the MNIST dataset.
 
-Note: Your specific results may vary given the stochastic nature of the learning algorithm.
+**Note:** Your specific results may vary given the stochastic nature of the learning algorithm.
 Consider running the example a few times and compare the average performance.
 In this case, we can see that the model achieves the expected performance of 95.432% on
 the training dataset, confirming we have loaded the correct model. We can also see that the

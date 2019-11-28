@@ -8,7 +8,7 @@ Now, run the python code by running: `python 01_normal_train_gain.py`{{execute}}
 Running the example is quick, taking approximately 10 minutes on modern hardware without
 a GPU.
 
-Note: Your specific results may vary given the stochastic nature of the learning algorithm.
+**Note:** Your specific results may vary given the stochastic nature of the learning algorithm.
 Consider running the example a few times and compare the average performance.
 
 First, the loss and accuracy of the discriminator and loss for the generator model are reported

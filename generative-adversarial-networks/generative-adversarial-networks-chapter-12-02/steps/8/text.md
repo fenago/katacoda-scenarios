@@ -6,7 +6,8 @@ Now, run the python code by running: `python 03_inception_score_keras.py`{{execu
 
 Running the example first defines the 50 fake images, then calculates the inception score on
 each batch and reports the expected inception score of 1.0, with a standard deviation of 0.0.
-Note: the first time the InceptionV3 model is used, Keras will download the model weights
+
+**Note:** the first time the InceptionV3 model is used, Keras will download the model weights
 and save them into the ∼/.keras/models/ directory on your workstation. The weights are
 about 100 megabytes and may take a moment to download depending on the speed of your
 internet connection.

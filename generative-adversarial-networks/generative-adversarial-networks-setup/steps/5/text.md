@@ -1,5 +1,5 @@
 In this step, we will install Python libraries used for deep learning, specifically: Theano,
-TensorFlow, and Keras. Note: I recommend using Keras for deep learning and Keras only
+TensorFlow, and Keras. **Note:** I recommend using Keras for deep learning and Keras only
 requires one of Theano or TensorFlow to be installed. You do not need both. There may be
 problems installing TensorFlow on some Windows machines.
 

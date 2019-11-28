@@ -7,7 +7,7 @@ Now, run the python code by running: `python 02_fid_keras.py`{{execute}}
 Running the example first summarizes the shapes of the fabricated images and their rescaled
 versions, matching our expectations.
 
-Note: the first time the InceptionV3 model is used, Keras will download the model weights
+**Note:** the first time the InceptionV3 model is used, Keras will download the model weights
 and save them into the ∼/.keras/models/ directory on your workstation. The weights are
 about 100 megabytes and may take a moment to download depending on the speed of your
 internet connection.13.6. How to Calculate the FID for Real Images 275

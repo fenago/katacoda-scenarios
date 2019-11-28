@@ -12,7 +12,7 @@ and recurrent neural networks.
 
 Let’s get started.
 
-Note: It is assumed that you have a basic familiarity with deep learning and Keras.
+**Note:** It is assumed that you have a basic familiarity with deep learning and Keras.
 Nevertheless, this tutorial should provide a refresher for the Keras Sequential API, and perhaps
 an introduction to the Keras functional API. See the Appendix B for installation instructions,
 if needed.

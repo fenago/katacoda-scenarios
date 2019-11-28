@@ -4,7 +4,7 @@ We can run the code now. Click **IDE Editor** tab to open Visual Studio and open
 
 Now, run the python code by running: `python 06_train_sgan.py`{{execute}}
 
-Note: Running the example may take many hours to run on CPU hardware. I recommend
+**Note:** Running the example may take many hours to run on CPU hardware. I recommend
 running the example on GPU hardware if possible. If you need help, you can get started
 quickly by using an AWS EC2 instance to train the model. See the instructions in Appendix C.
 At the start of the run, the size of the training dataset is summarized, as is the supervised
@@ -16,7 +16,7 @@ will shrink to a small value close to zero and accuracy will hit 100%, which wil
 for the entire run. The loss of the unsupervised discriminator and generator should remain at
 modest values throughout the run if they are kept in equilibrium.
 
-Note: Your specific results may vary given the stochastic nature of the learning algorithm.
+**Note:** Your specific results may vary given the stochastic nature of the learning algorithm.
 Consider running the example a few times and compare the average performance.
 
 ```
