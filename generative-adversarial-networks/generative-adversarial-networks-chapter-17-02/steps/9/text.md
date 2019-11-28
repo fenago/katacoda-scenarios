@@ -1,7 +1,7 @@
 
 We are now ready to fit the GAN models. The model is fit for 100 training epochs, which is
 arbitrary, as the model begins generating plausible items of clothing after perhaps 20 epochs. A
-batch size of 128 samples is used, and each training epoch involves 60000 128 , or about 468 batches
+batch size of 128 samples is used, and each training epoch involves 60000/128 , or about 468 batches
 of real and fake samples and updates to the model. First, the discriminator model is updated
 for a half batch of real samples, then a half batch of fake samples, together forming one batch of
 weight updates. The generator is then updated via the composite GAN model. Importantly, the

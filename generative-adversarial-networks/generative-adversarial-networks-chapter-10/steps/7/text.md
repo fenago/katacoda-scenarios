@@ -1,11 +1,24 @@
+Now that we have defined the GAN model, we need to train it. But, before we can train
+the model, we require input data. The first step is to load and scale the MNIST dataset. The
+whole dataset is loaded via a call to the load data() Keras function, then a subset of the
+images are selected (about 5,000) that belong to class 8, e.g. are a handwritten depiction of the
+number eight. Then the pixel values must be scaled to the range [-1,1] to match the output of
+the generator model. The load real samples() function below implements this, returning the
+loaded and scaled subset of the MNIST training dataset ready for modeling.
 
-The Notebook opens in a new browser window. You can create a new notebook or open a local one. Check out the local folder `work` for several sample notebooks. Open and run `04_different_convergence_failure.ipynb` in the `work` folder.
-
-You can also open the Jupyter Notebook at https://[[HOST_SUBDOMAIN]]-8888-[[KATACODA_HOST]].environments.katacoda.com/notebooks/work/04_different_convergence_failure.ipynb
-
-**Note:**
-Since algorithms are resource extensive. Please **shutdown** each notebook after running it [here](https://[[HOST_SUBDOMAIN]]-8888-[[KATACODA_HOST]].environments.katacoda.com/notebooks/work) before proceeding as shown below:
-
-Select green(running) notebooks and click `Shutdown`.
-
-![](https://github.com/fenago/katacoda-scenarios/raw/master/deep-learning-computer-vision/2.JPG)
+```
+# load mnist images
+def load_real_samples():
+# load dataset
+(trainX, trainy), (_, _) = load_data()
+# expand to 3d, e.g. add channels
+X = expand_dims(trainX, axis=-1)
+# select all of the examples for a given class
+selected_ix = trainy == 8
+X = X[selected_ix]
+# convert from ints to floats
+X = X.astype('float32')
+# scale from [0,255] to [-1,1]
+X = (X - 127.5) / 127.5
+return X
+```

@@ -1,13 +1,20 @@
-After completing this tutorial, you will know:
-- How to identify a stable GAN training process from the generator and discriminator loss
-over time.
-- How to identify a mode collapse by reviewing both learning curves and generated images.
-- How to identify a convergence failure by reviewing learning curves of generator and
-discriminator loss over time.
-Let’s get started.
-10.1 Tutorial Overview
-This tutorial is divided into three parts; they are:
-1. How To Identify a Stable GAN
-20710.2. How To Train a Stable GAN 208
-2. How To Identify a Mode Collapse
-3. How To Identify Convergence Failure
+Let's first setup VScode editor and clone repository. Clone the following repository by executing following command in the terminal.
+`git clone https://github.com/athertahir/generative-adversarial-networks.git`{{execute}}
+
+Now, move in the directory which contains the source code.
+
+`cd generative-adversarial-networks/chapter_10`{{execute}}
+
+**Note:**
+- The supplied commands in the next steps MUST be run from your `generative-adversarial-networks` directory. 
+- Final code was already cloned from github for this scenario. You can just understand the application code in the next steps and run it using the instructions.
+- Click **IDE Editor** tab to open Visual Studio and open solution explorer and open `generative-adversarial-networks/chapter_10` to view files.
+
+![](https://github.com/fenago/katacoda-scenarios/raw/master/deep-learning-computer-vision/1.JPG)
+
+
+#### Install Dependencies
+We need following packages to perform the lab exercise which have been already installed: 
+- keras
+- tensorflow
+- numpy

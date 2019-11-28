@@ -6,7 +6,7 @@
    "details":{
       "steps":[
          {
-            "title":"Tutorial Overview",
+            "title":"What Is the Pix2Pix GAN?",
             "text":"steps/1/text.md"
          },
          {
@@ -14,68 +14,48 @@
             "text":"steps/2/text.md"
          },
          {
-            "title": "Unconditional GAN for Fashion-MNIST",
+            "title": "Satellite to Map Image Translation Dataset",
             "text":"steps/3/text.md"
          },
          {
-            "title": "Unconditional GAN for Fashion-MNIST",
+            "title": "How to Develop and Train a Pix2Pix Model",
             "text":"steps/4/text.md"
          },
          {
-            "title": "Unconditional GAN for Fashion-MNIST",
+            "title": "How to Develop and Train a Pix2Pix Model...",
             "text":"steps/5/text.md"
          },
          {
-            "title": "Unconditional GAN for Fashion-MNIST",
+            "title": "How to Develop and Train a Pix2Pix Model...",
             "text":"steps/6/text.md"
          },
          {
-            "title": "Unconditional GAN for Fashion-MNIST",
+            "title": "How to Develop and Train a Pix2Pix Model...",
             "text":"steps/7/text.md"
          },
          {
-             "title": "Unconditional GAN for Fashion-MNIST",
+             "title": "How to Develop and Train a Pix2Pix Model...",
              "text": "steps/8/text.md"
          },
          {
-             "title": "Unconditional GAN for Fashion-MNIST",
+             "title": "How to Develop and Train a Pix2Pix Model...",
              "text": "steps/9/text.md"
          },
          {
-             "title": "Unconditional GAN for Fashion-MNIST",
+             "title": "How to Develop and Train a Pix2Pix Model...",
              "text": "steps/10/text.md"
          },
          {
-             "title": "Unconditional GAN for Fashion-MNIST",
+             "title": "How to Develop and Train a Pix2Pix Model...",
              "text": "steps/11/text.md"
          },
          {
-             "title": "Unconditional GAN for Fashion-MNIST",
+             "title": "How to Develop and Train a Pix2Pix Model...",
              "text": "steps/12/text.md"
          },
          {
-             "title": "",
+             "title": "How to Translate Google Maps to Satellite Images",
              "text": "steps/13/text.md"
-         },
-         {
-             "title": "",
-             "text": "steps/14/text.md"
-         },
-         {
-             "title": "",
-             "text": "steps/15/text.md"
-         },
-         {
-             "title": "Conditional GAN for Fashion-MNIST",
-             "text": "steps/16/text.md"
-         },
-         {
-             "title": "Conditional Clothing Generation",
-             "text": "steps/17/text.md"
-         },
-         {
-             "title": "",
-             "text": "steps/18/text.md"
          }
       ],
       "intro":{
