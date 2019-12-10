@@ -9,22 +9,22 @@
     },
     {
       "course_id": "datascience-machine-learning-chapter-02-01",
-      "title": "Statistics and Probability Refresher, and Python Practice",
+      "title": "Statistics and Probability Refresher, and Python Practice - Part 1",
       "description": ""
     },
 	{
       "course_id": "datascience-machine-learning-chapter-02-02",
-      "title": "Statistics and Probability Refresher, and Python Practice",
+      "title": "Statistics and Probability Refresher, and Python Practice - Part 2",
       "description": ""
     },
 	{
       "course_id": "datascience-machine-learning-chapter-03-01",
-      "title": "Matplotlib and Advanced Probability Concepts",
+      "title": "Matplotlib and Advanced Probability Concepts - Part 1",
       "description": ""
     },
 	{
       "course_id": "datascience-machine-learning-chapter-03-02",
-      "title": "Matplotlib and Advanced Probability Concepts",
+      "title": "Matplotlib and Advanced Probability Concepts - Part 2",
       "description": ""
     },
 	{
@@ -34,17 +34,17 @@
     },
 	{
       "course_id": "datascience-machine-learning-chapter-05-01",
-      "title": "Machine Learning with Python",
+      "title": "Machine Learning with Python -       Part 1",
       "description": ""
     },
 	{
       "course_id": "datascience-machine-learning-chapter-05-02",
-      "title": "Machine Learning with Python",
+      "title": "Machine Learning with Python -       Part 2",
       "description": ""
     },
 	{
       "course_id": "datascience-machine-learning-chapter-05-03",
-      "title": "Machine Learning with Python",
+      "title": "Machine Learning with Python -       Part 3",
       "description": ""
     },
 	{
@@ -64,12 +64,12 @@
     },
 	{
       "course_id": "datascience-machine-learning-chapter-09-01",
-      "title": "Apache Spark - Machine Learning on Big Data",
+      "title": "Apache Spark - Machine Learning on Big Data - Part 1",
       "description": ""
     },
 	{
       "course_id": "datascience-machine-learning-chapter-09-02",
-      "title": "Apache Spark - Machine Learning on Big Data",
+      "title": "Apache Spark - Machine Learning on Big Data - Part 2",
       "description": ""
     },
 	{
