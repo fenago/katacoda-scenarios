@@ -6,7 +6,9 @@ OpenShift login page
 Use the developer user, with any password, to log in on the welcome page:
 
 Click `New Project` and add following data to create new project:
+
 **Name:** `my-project`{{copy}}
+
 **Display Name:** `My Project`{{copy}}
 
 

@@ -5,10 +5,10 @@ Jenkins is an open source automation tool that can be used to accelerate the app
 There are two main components in the Jenkins architecture:
 
 1. **Jenkins Master:** Your CI/CD controller, handling various tasks, such as:
-- Job scheduling
-- Distributing the workload among Jenkins Slaves
-- Jenkins Slave monitoring
-- Logging and representing job results
+    - Job scheduling
+    - Distributing the workload among Jenkins Slaves
+    - Jenkins Slave monitoring
+    - Logging and representing job results
 
 2. **Jenkins Slaves:** A set of Java-based programs that run on the remote host. Jenkins Slaves mainly execute instructions from Jenkins Masters. 
 
