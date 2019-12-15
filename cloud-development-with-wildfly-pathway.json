@@ -1,0 +1,41 @@
+{
+	"title": "Hands-On Cloud Development with WildFly",
+	"description": "Create microservices using Java EE technologies with WildFly Swarm, deploy them in the OpenShift cloud",
+	"courses": [{
+			"course_id": "cloud-development-with-wildfly-chapter-06-01",
+			"title": "Docker Concepts",
+			"description": "",
+			"time": "15 minutes"
+		},
+		{
+			"course_id": "cloud-development-with-wildfly-chapter-06-02",
+			"title": "Deploying Applications on the Cloud with OpenShift",
+			"description": ""
+		},
+		{
+			"course_id": "cloud-development-with-wildfly-chapter-07",
+			"title": "Configuring Storage for Your Applications",
+			"description": ""
+		},
+		{
+			"course_id": "cloud-development-with-wildfly-chapter-08-01",
+			"title": "Scaling and Connecting Your Services - Load balancing",
+			"description": ""
+		},
+		{
+			"course_id": "cloud-development-with-wildfly-chapter-08-02",
+			"title": "Scaling and Connecting Your Services - Service discovery",
+			"description": ""
+		},
+		{
+			"course_id": "cloud-development-with-wildfly-chapter-09",
+			"title": "Configuring Continuous Integration Using Jenkins",
+			"description": ""
+		},
+		{
+			"course_id": "cloud-development-with-wildfly-chapter-11",
+			"title": "Adding Resilience Using Hystrix",
+			"description": ""
+		}
+	]
+}

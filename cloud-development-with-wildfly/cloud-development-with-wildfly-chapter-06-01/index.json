@@ -1,0 +1,98 @@
+{
+  "title": "",
+  "description": "",
+  "difficulty": "Intermediate",
+  "time": "15 minutes",
+  "details": {
+    "steps": [{
+      "title": "Containerization",
+      "text": "steps/1.md"
+    },
+    {
+      "title": "Virtualization",
+      "text": "steps/2.md"
+    },    
+	{
+      "title": "Virtualization...",
+      "text": "steps/3.md"
+    },
+	{
+      "title": "Virtualization...",
+      "text": "steps/4.md"
+    },
+	{
+      "title": "",
+      "text": "steps/5.md"
+    },
+	{
+      "title": "",
+      "text": "steps/6.md"
+    },
+  	{
+      "title": "cgroups",
+      "text": "steps/7.md"
+    },
+    {
+      "title": "The Docker implementation of containers",
+      "text": "steps/8.md"
+    },
+    {
+      "title": "Images and containers",
+      "text": "steps/9.md"
+    },
+    {
+      "title": "Images and containers...",
+      "text": "steps/10.md"
+    },
+    {
+      "title": "Images and containers...",
+      "text": "steps/11.md"
+    },
+    {
+      "title": "Images and containers...",
+      "text": "steps/12.md"
+    },    
+	{
+      "title": "Images and containers...",
+      "text": "steps/13.md"
+    },
+	{
+      "title": "Images and containers...",
+      "text": "steps/14.md"
+    },
+	{
+      "title": "Images and containers...",
+      "text": "steps/15.md"
+    },
+	{
+      "title": "Images and containers...",
+      "text": "steps/16.md"
+    },
+  	{
+      "title": "Images and containers...",
+      "text": "steps/17.md"
+    },
+    {
+      "title": "Docker registries",
+      "text": "steps/18.md"
+    },
+    {
+      "title": "Docker wrap-up",
+      "text": "steps/19.md"
+    }],
+    "intro": {
+      "text": "intro.md",
+      "credits": ""
+    },
+    "finish": {
+      "text": "finish.md"
+    }
+  },
+  "environment": {
+    "uilayout": "terminal",
+    "uimessage1": "\u001b[32mBrought to you by https://LearningVoyage.com\u001b[m\r\n"
+  },
+  "backend": {
+    "imageid": "docker"
+  }
+}
