@@ -13,13 +13,15 @@ numSamples, numFeatures = iris.data.shape
 print numSamples 
 print numFeatures 
 print list(iris.target_names) 
+```
+
 There's a handy dandy load_iris() function built into scikit-learn that will just load that up for you with no additional work; so you can just focus on the interesting part. Let's take a look at what that dataset looks like, the output of the preceding code is as follows:
 
 ![](https://github.com/fenago/katacoda-scenarios/raw/master/datascience-machine-learning/datascience-machine-learning-chapter-07/steps/14/1.png)
 
 You can see that we are extracting the shape of that dataset, which means how many data points we have in it, that is 150, and how many features, or how many dimensions that dataset has, and that is 4. So, we have 150 Iris specimens in our dataset, with 4 dimensions of information. Again, that is the length and width of the sepal, and the length and width of the petal, for a total of 4 features, which we can think of as 4 dimensions.
 
-We can also print out the list of target names in this dataset, which are the classifications, and we can see that each Iris belongs to one of three different species: Setosa, Versicolor, or Virginica. That's the data that we're working with: 150 Iris specimens, classified into one of 3 species, and we have 4 features associated with each Iris.
+We can also print out the list of target names in this dataset, which are the classifications,and we can see that each Iris belongs to one of three different species: Setosa, Versicolor, or Virginica. That's the data that we're working with: 150 Iris specimens, classified into one of 3 species, and we have 4 features associated with each Iris.
 
 Let's look at how easy PCA is. Even though it's a very complicated technique under the hood, doing it is just a few lines of code. We're going to assign the entire Iris dataset and we're going to call it X. We will then create a PCA model, and we're going to keep n_components=2, because we want 2 dimensions, that is, we're going to go from 4 to 2.
 
@@ -29,10 +31,14 @@ We're going to use whiten=True, that means that we're going to normalize all the
 X = iris.data 
 pca = PCA(n_components=2, whiten=True).fit(X) 
 X_pca = pca.transform(X) 
+```
+
 Please think about what just happened there. We actually created a PCA model to reduce 4 dimensions down to 2, and it did that by choosing 2 4D vectors, to create hyperplanes around, to project that 4D data down to 2 dimensions. You can actually see what those 4D vectors are, those eigenvectors, by printing out the actual components of PCA. So, PCA stands for Principal Component Analysis, those principal components are the eigenvectors that we chose to define our planes about:
 
 ```
 print pca.components_ 
+```
+
 Output to the preceding code is as follows:
 
 ![](https://github.com/fenago/katacoda-scenarios/raw/master/datascience-machine-learning/datascience-machine-learning-chapter-07/steps/14/2.png)
@@ -42,6 +48,8 @@ You can actually look at those values, they're not going to mean a lot to you, b
 ```
 print pca.explained_variance_ratio_ 
 print sum(pca.explained_variance_ratio_) 
+```
+
 The PCA model gives us back something called explained_variance_ratio. Basically, that tells you how much of the variance in the original 4D data was preserved as I reduced it down to 2 dimensions. So, let's go ahead and take a look at that:
 
 ![](https://github.com/fenago/katacoda-scenarios/raw/master/datascience-machine-learning/datascience-machine-learning-chapter-07/steps/14/3.png)
