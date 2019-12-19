@@ -14,27 +14,7 @@
 		},
 		{
 			"course_id": "cloud-development-with-wildfly-chapter-07",
-			"title": "Configuring Storage for Your Applications",
-			"description": ""
-		},
-		{
-			"course_id": "cloud-development-with-wildfly-chapter-08-01",
-			"title": "Scaling and Connecting Your Services - Load balancing",
-			"description": ""
-		},
-		{
-			"course_id": "cloud-development-with-wildfly-chapter-08-02",
-			"title": "Scaling and Connecting Your Services - Service discovery",
-			"description": ""
-		},
-		{
-			"course_id": "cloud-development-with-wildfly-chapter-09",
-			"title": "Configuring Continuous Integration Using Jenkins",
-			"description": ""
-		},
-		{
-			"course_id": "cloud-development-with-wildfly-chapter-11",
-			"title": "Adding Resilience Using Hystrix",
+			"title": "Configuring Database for Your Applications",
 			"description": ""
 		}
 	]
