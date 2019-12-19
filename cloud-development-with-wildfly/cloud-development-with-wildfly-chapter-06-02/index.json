@@ -1,0 +1,82 @@
+{
+  "title": "Deploying Applications on the Cloud with OpenShift",
+  "description": "",
+  "difficulty": "Intermediate",
+  "time": "15 minutes",
+  "details": {
+    "steps": [{
+      "title": "Introduction",
+      "text": "steps/1.md"
+    },
+    {
+      "title": "",
+      "text": "steps/2.md"
+    },    
+	{
+      "title": "",
+      "text": "steps/3.md"
+    },
+	{
+      "title": "",
+      "text": "steps/4.md"
+    },
+	{
+      "title": "",
+      "text": "steps/5.md"
+    },
+	{
+      "title": "",
+      "text": "steps/6.md"
+    },
+  	{
+      "title": "",
+      "text": "steps/7.md"
+    },
+    {
+      "title": "",
+      "text": "steps/8.md"
+    },
+    {
+      "title": "",
+      "text": "steps/9.md"
+    },
+    {
+      "title": "",
+      "text": "steps/10.md"
+    },
+    {
+      "title": "",
+      "text": "steps/11.md"
+    },
+    {
+      "title": "",
+      "text": "steps/12.md"
+    },    
+	{
+      "title": "",
+      "text": "steps/13.md"
+    },
+	{
+      "title": "Cleanup Resources",
+      "text": "steps/14.md"
+    }],
+    "intro": {
+      "code": "set-env.sh",
+      "text": "intro.md",
+      "credits": ""
+    },
+    "finish": {
+      "text": "finish.md"
+    }
+  },
+  "environment": {
+    "showdashboard": true,
+    "dashboards": [{"name": "Dashboard", "port": 8443}],
+    "uilayout": "terminal-iframe",
+    "uimessage1": "\u001b[32mBrought to you by https://LearningVoyage.com\u001b[m\r\n"
+  },
+  "backend": {
+      "trainingid": "openshift-3-11",
+      "imageid": "openshift-3-11"
+  }
+}
