@@ -10,5 +10,6 @@ contract Example {
 }
 </pre>
 
+
 How does a compiler such as solc convert that code into something that the EVM can understand so that the computer can process it? Let's try to analyze it with that specific compiler. Install solc by executing the following command:
 `npm i -g solc`{{execute}}
