@@ -3,7 +3,7 @@ Smart contracts are fascinating because they are able to keep many nodes connect
 For instance, take a simple contract such as this one:
 
 <pre class="file" data-filename="Example.sol" data-target="replace">
-pragma solidity ^0.5.0;
+pragma solidity ^0.6.1;
 
 contract Example {
     uint256 myNumber = 3;
